@@ -1,0 +1,28 @@
+{
+    "h1": "California income tax calculator 2025",
+    "intro": "Calculate your estimated California state income tax for 2025 based on progressive tax brackets.",
+  
+    "sections": {
+      "howItWorks": "California uses a progressive tax system with multiple income brackets. This calculator estimates your tax based on your taxable income.",
+      "examples": "Example: Someone earning $70,000 in California might fall into multiple tax brackets. This calculator breaks down your taxes across each bracket.",
+      "limitations": "This tool does not take into account itemized deductions, credits, or local taxes. Always verify tax rules with the California Franchise Tax Board."
+    },
+  
+    "faq": [
+      {
+        "q": "Does California have progressive income tax?",
+        "a": "Yes. California uses one of the most progressive tax systems in the United States with multiple income brackets."
+      },
+      {
+        "q": "Does California tax capital gains?",
+        "a": "Yes, California taxes capital gains as regular income."
+      }
+    ],
+  
+    "meta": {
+      "title": "California income tax calculator 2025 – estimate your state taxes",
+      "description": "Estimate your 2025 California state income taxes using the official progressive tax brackets.",
+      "canonicalPath": "/tools/income-tax/california"
+    }
+  }
+  

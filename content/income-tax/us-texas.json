@@ -1,0 +1,28 @@
+{
+    "h1": "Texas income tax calculator 2025",
+    "intro": "Texas has no state income tax. Use this calculator to understand your estimated tax liability based solely on federal tax brackets.",
+  
+    "sections": {
+      "howItWorks": "Since Texas has no state-level income tax, your state tax burden is always 0%. This calculator focuses on showing the implications for your net income when only federal tax rules apply.",
+      "examples": "Example: If you earn $60,000 in Texas in 2025, the state tax is $0. Only federal taxes apply. Your effective tax rate depends on federal brackets.",
+      "limitations": "This calculator provides simplified estimations. Always verify tax rules with the IRS or an official accountant before making decisions."
+    },
+  
+    "faq": [
+      {
+        "q": "Does Texas have state income tax?",
+        "a": "No. Texas is one of the few US states that does not levy a state income tax."
+      },
+      {
+        "q": "What taxes do I pay in Texas?",
+        "a": "You pay federal income tax, Social Security, and Medicare taxes, but no Texas state income tax."
+      }
+    ],
+  
+    "meta": {
+      "title": "Texas income tax calculator 2025 – estimate your state taxes",
+      "description": "Texas has no state income tax. Calculate your estimated tax liability based on 2025 federal tax brackets.",
+      "canonicalPath": "/tools/income-tax/texas"
+    }
+  }
+  
