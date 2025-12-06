@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -69,6 +70,9 @@ export default function RootLayout({
       <body
         className={`${inter.variable} font-sans antialiased bg-slate-50 text-slate-900`}
       >
+        {/* Google Tag Manager – laddas korrekt via Next.js App Router */}
+        <GoogleTagManager gtmId="GTM-NXXQGG43" />
+
         <div className="flex min-h-screen flex-col">
           <Header />
           <main className="flex-1">
