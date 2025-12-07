@@ -1,6 +1,6 @@
 // app/sitemap.ts
 import type { MetadataRoute } from "next";
-import { incomeTaxConfigs } from "@/config/data/incomeTax";
+import { tools } from "@/config/tools";
 import { regions } from "@/config/regions";
 
 const BASE_URL = "https://lavigate.com";
@@ -24,20 +24,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: now,
   }));
 
-  // 2) Income tax-sidor per region
-  const incomeTaxRoutes: MetadataRoute.Sitemap = incomeTaxConfigs
-    .map((config) => {
-      const region = regions.find((r) => r.id === config.regionId);
-      if (!region) return null;
+  // 2) Dynamiska verktygssidor: /tools/[toolId]/[regionSlug]
+  const dynamicRoutes: MetadataRoute.Sitemap = [];
 
-      return {
-        url: `${BASE_URL}/tools/income-tax/${region.slug}`,
-        lastModified: now,
-      } as MetadataRoute.Sitemap[number];
-    })
-    .filter(
-      (route): route is MetadataRoute.Sitemap[number] => route !== null,
+  for (const tool of tools) {
+    const toolRegions = regions.filter((region) =>
+      tool.supportedRegionIds.includes(region.id)
     );
 
-  return [...staticRoutes, ...incomeTaxRoutes];
+    for (const region of toolRegions) {
+      dynamicRoutes.push({
+        url: `${BASE_URL}/tools/${tool.id}/${region.slug}`,
+        lastModified: now,
+      });
+    }
+  }
+
+  return [...staticRoutes, ...dynamicRoutes];
 }

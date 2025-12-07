@@ -1,33 +1,39 @@
 // config/regions.ts
-import type { Region } from "@/lib/types";
+export type CountryCode = "US" | "CA" | "UK" | "AU";
 
-/**
- * Temporary starter region list.
- * Vi fyller på alla regioner senare när vi har automation.
- */
+export type RegionId = string; // ISO 3166-2, t.ex. "US-TX"
+
+export type Region = {
+  id: RegionId;        // "US-TX"
+  countryCode: CountryCode;
+  slug: string;        // "texas"
+  name: string;        // "Texas"
+  displayName: string; // "Texas" eller "Texas (United States)"
+};
+
 export const regions: Region[] = [
   {
     id: "US-TX",
+    countryCode: "US",
     slug: "texas",
     name: "Texas",
-    countryCode: "US",
+    displayName: "Texas",
   },
   {
     id: "US-CA",
+    countryCode: "US",
     slug: "california",
     name: "California",
-    countryCode: "US",
+    displayName: "California",
   },
-  {
-    id: "CA-ON",
-    slug: "ontario",
-    name: "Ontario",
-    countryCode: "CA",
-  },
-  {
-    id: "AU-QLD",
-    slug: "queensland",
-    name: "Queensland",
-    countryCode: "AU",
-  },
+  // ... fler regioner sen
 ];
+
+// Helpers (bra för routen)
+export function getRegionBySlug(slug: string): Region | undefined {
+  return regions.find((r) => r.slug === slug);
+}
+
+export function getRegionById(id: RegionId): Region | undefined {
+  return regions.find((r) => r.id === id);
+}
