@@ -1,5 +1,4 @@
 // app/tools/[toolId]/[regionSlug]/page.tsx
-
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 
@@ -13,15 +12,53 @@ import IncomeTaxTool from "@/components/tools/IncomeTaxTool";
 import { AdsBlock } from "@/components/ads/AdsBlock";
 import { AffiliateBlock } from "@/components/ads/AffiliateBlock";
 
+// ---------- Typer ----------
+
 type ToolRegionParams = {
   toolId: string;
   regionSlug: string;
 };
 
+type ToolRegionPageProps = {
+  params: Promise<ToolRegionParams>;
+};
+
+// ---------- Ads-toggles & density ----------
+
+const ADS_ENABLED =
+  process.env.NEXT_PUBLIC_ADS_ENABLED === "true";
+
+type AdsDensity = "low" | "medium" | "high";
+
+const ADS_DENSITY: AdsDensity =
+  (process.env.NEXT_PUBLIC_ADS_DENSITY as AdsDensity) || "medium";
+
+/**
+ * Styr hur många annonsplatser som aktiveras.
+ * order:
+ *  1 = första under kalkylatorn
+ *  2 = mitt i innehållet
+ *  3 = längst ned på sidan
+ */
+function shouldShowAd(order: 1 | 2 | 3): boolean {
+  if (!ADS_ENABLED) return false;
+
+  if (ADS_DENSITY === "low") {
+    return order === 1;
+  }
+
+  if (ADS_DENSITY === "medium") {
+    return order === 1 || order === 2;
+  }
+
+  // "high"
+  return order === 1 || order === 2 || order === 3;
+}
+
 // ---------- Metadata ----------
 
 export async function generateMetadata(
-  { params }: { params: Promise<ToolRegionParams> }
+  { params }: ToolRegionPageProps,
 ): Promise<Metadata> {
   const { toolId, regionSlug } = await params;
 
@@ -77,9 +114,9 @@ export function generateStaticParams() {
 
 // ---------- Page-komponent ----------
 
-export default async function ToolRegionPage(
-  { params }: { params: Promise<ToolRegionParams> }
-) {
+export default async function ToolRegionPage({
+  params,
+}: ToolRegionPageProps) {
   const { toolId, regionSlug } = await params;
 
   const tool = getToolById(toolId);
@@ -104,16 +141,20 @@ export default async function ToolRegionPage(
     <ToolLayout
       title={seo.h1}
       description={seo.intro}
-      category={tool.id}              // "income-tax"
-      region={region.displayName}     // t.ex. "Texas"
+      category={tool.id}          // "income-tax"
+      region={region.displayName} // t.ex. "Texas"
     >
       {/* Kalkylatorn */}
       <IncomeTaxTool config={config} />
 
-      {/* Annonsblock under verktyget */}
-      <div className="mt-8">
-        <AdsBlock slot="tools-income-tax-below-calculator" />
-      </div>
+      {/* Ad #1 – direkt under kalkylatorn */}
+      {shouldShowAd(1) && (
+        <div className="mt-8">
+          <AdsBlock
+            slot={`${tool.id}-${region.slug}-primary`}
+          />
+        </div>
+      )}
 
       {/* SEO-sektioner */}
       <section className="mt-10 space-y-6">
@@ -124,15 +165,28 @@ export default async function ToolRegionPage(
       </section>
 
       <section className="mt-10 space-y-6">
-        <h2 className="text-xl font-semibold text-slate-900">Examples</h2>
+        <h2 className="text-xl font-semibold text-slate-900">
+          Examples
+        </h2>
         <p className="text-slate-700">{seo.sections.examples}</p>
       </section>
+
+      {/* Ad #2 – mitt i innehållet */}
+      {shouldShowAd(2) && (
+        <section className="mt-8">
+          <AdsBlock
+            slot={`${tool.id}-${region.slug}-mid`}
+          />
+        </section>
+      )}
 
       <section className="mt-10 space-y-6">
         <h2 className="text-xl font-semibold text-slate-900">
           Limitations and important notes
         </h2>
-        <p className="text-slate-700">{seo.sections.limitations}</p>
+        <p className="text-slate-700">
+          {seo.sections.limitations}
+        </p>
       </section>
 
       {/* FAQ */}
@@ -144,15 +198,28 @@ export default async function ToolRegionPage(
           <div className="space-y-4">
             {seo.faq.map((item, index) => (
               <div key={index} className="space-y-1">
-                <h3 className="font-medium text-slate-900">{item.q}</h3>
-                <p className="text-sm text-slate-700">{item.a}</p>
+                <h3 className="font-medium text-slate-900">
+                  {item.q}
+                </h3>
+                <p className="text-sm text-slate-700">
+                  {item.a}
+                </p>
               </div>
             ))}
           </div>
         </section>
       )}
 
-      {/* Affiliate */}
+      {/* Ad #3 – längst ned på sidan, efter FAQ */}
+      {shouldShowAd(3) && (
+        <section className="mt-8">
+          <AdsBlock
+            slot={`${tool.id}-${region.slug}-bottom`}
+          />
+        </section>
+      )}
+
+      {/* Affiliate – styrs internt av NEXT_PUBLIC_AFFILIATE_ENABLED */}
       <div className="mt-10">
         <AffiliateBlock id={`income-tax-${region.id}`} />
       </div>
