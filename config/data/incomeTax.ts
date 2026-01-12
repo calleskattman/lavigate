@@ -1,12 +1,19 @@
 // config/data/incomeTax.ts
 import type { RegionId } from "../regions";
 
+export type IncomeTaxBracket = {
+  from: number;
+  to: number | null;
+  rate: number;
+};
+
 export type IncomeTaxConfig = {
   regionId: RegionId;
   year: number;
   systemName: string;
-  brackets: { from: number; to: number | null; rate: number }[];
+  brackets: IncomeTaxBracket[];
   standardDeduction?: number;
+  personalExemption?: number;
   notes?: string[];
   authority: {
     name: string;
@@ -20,23 +27,21 @@ export const incomeTaxConfigs: Record<RegionId, IncomeTaxConfig> = {
     regionId: "US-TX",
     year: 2025,
     systemName: "Texas state income tax",
-    brackets: [
-      { from: 0, to: null, rate: 0 }, // Texas har ingen state income tax
-    ],
+    brackets: [{ from: 0, to: null, rate: 0 }],
     authority: {
       name: "Texas Comptroller of Public Accounts",
       url: "https://comptroller.texas.gov/",
       lastVerified: "2025-01-01",
     },
   },
+
   "US-CA": {
     regionId: "US-CA",
     year: 2025,
     systemName: "California state income tax",
     brackets: [
       { from: 0, to: 10000, rate: 0.01 },
-      // ...dummyvärden just nu
-      { from: 10000, to: null, rate: 0.02 },
+      { from: 10000, to: null, rate: 0.02 }, // placeholder
     ],
     authority: {
       name: "Franchise Tax Board",
@@ -68,9 +73,24 @@ export const incomeTaxConfigs: Record<RegionId, IncomeTaxConfig> = {
     },
   },
 
+  "US-MI": {
+    regionId: "US-MI",
+    year: 2025,
+    systemName: "Michigan state income tax",
+    brackets: [{ from: 0, to: null, rate: 0.0425 }],
+    personalExemption: 5800,
+    authority: {
+      name: "Michigan Department of Treasury",
+      url: "https://www.michigan.gov/treasury",
+      lastVerified: "2025-05-01",
+    },
+  },
+
   // fler regioner sen
 };
 
-export function getIncomeTaxConfig(regionId: RegionId): IncomeTaxConfig | undefined {
+export function getIncomeTaxConfig(
+  regionId: RegionId
+): IncomeTaxConfig | undefined {
   return incomeTaxConfigs[regionId];
 }

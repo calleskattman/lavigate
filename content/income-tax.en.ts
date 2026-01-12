@@ -36,18 +36,18 @@ export type IncomeTaxSeoEntry = {
    ========================= */
 
 export const incomeTaxSeoContent: Record<RegionId, IncomeTaxSeoEntry> = {
-  /* ---------- Texas (placeholder / scaffold) ---------- */
+  /* ---------- Texas ---------- */
   "US-TX": {
     h1: "Texas income tax calculator 2025",
     intro:
-      "Texas has no state income tax. Use this calculator to understand how the absence of state income tax affects your estimated net income.",
+      "Texas has no state income tax. Use this Texas income tax calculator to understand how the absence of state income tax affects your estimated after-tax income.",
     sections: {
       howItWorks:
-        "This calculator assumes a 0% state income tax rate for Texas. When you enter your taxable income, the estimated state income tax is $0. Federal taxes and other payroll taxes are not included.",
+        "Texas does not levy a state income tax on individual income. This calculator therefore applies a 0 percent state income tax rate to your taxable income. The result shows that no Texas state income tax is due, regardless of income level.",
       examples:
-        "Example: If you earn $60,000 in Texas in 2025, your estimated state income tax is $0 because Texas does not levy a state income tax.",
+        "Example: If you earn $60,000 in Texas in 2025, your estimated Texas state income tax is $0 because Texas does not impose a state income tax.",
       limitations:
-        "This tool only reflects Texas state income tax rules. It does not include federal taxes, local taxes, deductions, credits, or special situations.",
+        "This calculator reflects Texas state income tax rules only. It does not include federal income tax, payroll taxes, deductions, credits, or local taxes.\n\nOfficial tax information is published by the Texas Comptroller of Public Accounts (https://comptroller.texas.gov).",
     },
     faq: [
       {
@@ -55,38 +55,38 @@ export const incomeTaxSeoContent: Record<RegionId, IncomeTaxSeoEntry> = {
         a: "No. Texas does not levy a state income tax on individual income.",
       },
       {
-        q: "Do Texas residents still pay federal tax?",
-        a: "Yes. Texas residents still pay federal income tax and payroll taxes.",
+        q: "Do Texas residents still pay federal income tax?",
+        a: "Yes. Texas residents are subject to federal income tax and payroll taxes.",
       },
     ],
     meta: {
       title: "Texas income tax calculator 2025 – estimate your state taxes",
       description:
-        "Estimate your Texas state income tax for 2025. Texas has no state income tax, but this calculator helps illustrate the impact on your net income.",
+        "Estimate your Texas state income tax for 2025. Texas has no state income tax, and this calculator shows how that affects your after-tax income.",
       canonicalPath: "/tools/income-tax/texas",
     },
   },
 
-  /* ---------- California (placeholder / scaffold) ---------- */
+  /* ---------- California ---------- */
   "US-CA": {
     h1: "California income tax calculator 2025",
     intro:
-      "Use this California income tax calculator to estimate your state income tax based on progressive tax brackets.",
+      "Use this California income tax calculator to estimate your state income tax for 2025 based on progressive California income tax brackets.",
     sections: {
       howItWorks:
-        "This calculator applies simplified California state income tax brackets for 2025 and estimates state tax based on your taxable income.",
+        "California uses a progressive state income tax system with multiple tax brackets. This calculator applies simplified California income tax brackets to your taxable income to estimate your total state income tax.",
       examples:
-        "Example: If you earn $60,000 in California in 2025, your income is taxed progressively across multiple brackets to estimate your total state tax.",
+        "Example: If you earn $60,000 in California in 2025, your income is taxed progressively across several brackets. Only the portion of income within each bracket is taxed at that bracket’s rate.",
       limitations:
-        "This calculator does not include federal tax, local taxes, deductions, credits, or filing-status-specific rules.",
+        "This calculator provides a simplified estimate of California state income tax. It does not include federal tax, local taxes, filing status rules, deductions, or credits.\n\nOfficial California income tax rules are published by the California Franchise Tax Board (https://www.ftb.ca.gov).",
     },
     faq: [
       {
         q: "Does California use progressive income tax?",
-        a: "Yes. California uses a progressive income tax system with multiple tax brackets.",
+        a: "Yes. California applies progressive income tax brackets with increasing rates at higher income levels.",
       },
       {
-        q: "Are deductions included?",
+        q: "Are deductions included in this calculator?",
         a: "No. This calculator provides a simplified estimate and does not include deductions or credits.",
       },
     ],
@@ -98,42 +98,77 @@ export const incomeTaxSeoContent: Record<RegionId, IncomeTaxSeoEntry> = {
     },
   },
 
-  /* ---------- Virginia (REAL target – content comes later) ---------- */
+  /* ---------- Virginia ---------- */
   "US-VA": {
     h1: "Virginia income tax calculator 2025",
     intro:
-  "Use this Virginia income tax calculator to estimate your state income tax for 2025. Enter your Virginia taxable income and the calculator applies the official Virginia income tax brackets to estimate how much state income tax you may owe. This tool focuses only on Virginia state income tax and is intended for planning and comparison purposes.",
+      "Use this Virginia income tax calculator to estimate your state income tax for 2025. Enter your Virginia taxable income and see how Virginia income tax brackets apply to your income.",
     sections: {
       howItWorks:
-  "This Virginia income tax calculator estimates your state income tax by applying Virginia’s progressive income tax brackets to your taxable income. You enter your annual Virginia taxable income, and the calculator splits that amount across the applicable brackets. Each portion of income is taxed at its corresponding rate, and the results are added together to produce an estimated total Virginia state income tax.\n\nVirginia uses the same income tax bracket thresholds for all individual filers. This means the bracket ranges themselves do not change based on filing status. What typically differs between taxpayers is how taxable income is calculated before the rates are applied, depending on deductions, exemptions, and personal circumstances. Because of this, the calculator starts from taxable income rather than gross income.\n\nThe result includes an estimated total Virginia state income tax and an effective state tax rate. The effective rate represents the average rate paid across all brackets, which is often lower than the highest marginal rate shown in the top bracket. This approach helps you understand how Virginia income tax brackets work in practice and how changes in taxable income can affect your overall state tax liability.",
-  examples:
-  "Example 1: Taxable income of $30,000. When you enter $30,000 as Virginia taxable income, the calculator applies the lower tax rates to the first portions of income and higher rates only to the amounts that exceed each bracket threshold. The final estimate reflects the total Virginia state income tax owed for the year and shows an effective tax rate that is lower than the top marginal rate.\n\nExample 2: Comparing two income levels. If your Virginia taxable income increases from $60,000 to $70,000, the additional $10,000 is not taxed entirely at the highest rate. Only the portion of income above the top bracket threshold is taxed at the highest rate, while the rest remains taxed at lower rates. Running both values through the calculator helps illustrate how Virginia income tax brackets affect incremental income.\n\nExample 3: Planning and budgeting. If you are evaluating a job change, bonus, or side income, you can use the calculator to estimate how different taxable income amounts impact your Virginia state income tax. By testing multiple scenarios, you can better understand how changes in taxable income influence your estimated state tax and effective rate, while keeping federal taxes separate.",
-  limitations:
-  "This Virginia income tax calculator provides a simplified estimate based on published state income tax brackets and general rules. It does not account for federal income tax, local taxes, filing status differences, itemized deductions, tax credits, or special situations such as self-employment income, retirement income, or capital gains.\n\nThe calculation assumes standard bracket application and does not reflect every adjustment that may apply on an actual Virginia tax return. Individual circumstances can significantly affect the final tax owed, including exemptions, additional deductions, and changes in tax law.\n\nState income tax brackets and exemption rules used in this calculator are based on information published by the Virginia Department of Taxation (https://www.tax.virginia.gov). For official guidance and the most up-to-date rules, always refer to the Virginia Department of Taxation or consult a qualified tax professional before relying on the estimates provided.",
+        "Virginia uses a progressive state income tax system with four tax brackets. This calculator applies the Virginia income tax brackets to your taxable income and adds the tax from each bracket to estimate your total Virginia state income tax.\n\nVirginia applies the same income tax brackets to all individual filers. Differences in tax liability usually come from how taxable income is calculated, including exemptions and deductions applied before the tax rates.",
+      examples:
+        "Example 1: With $30,000 in Virginia taxable income, the lower brackets apply to the first portions of income, while higher rates apply only to income above each threshold.\n\nExample 2: Increasing taxable income from $60,000 to $70,000 does not re-tax all income at the highest rate. Only the income above the top threshold is taxed at the highest rate.",
+      limitations:
+        "This calculator provides a simplified estimate of Virginia state income tax. It does not include federal tax, local taxes, itemized deductions, credits, or special circumstances.\n\nOfficial Virginia income tax rules are published by the Virginia Department of Taxation (https://www.tax.virginia.gov).",
     },
     faq: [
       {
         q: "Does Virginia have a state income tax?",
-        a: "Yes. Virginia levies a state income tax on individual income. The tax uses a progressive bracket structure, meaning different portions of income are taxed at different rates depending on income level. All residents with taxable income may be subject to Virginia state income tax, in addition to federal income tax."
+        a: "Yes. Virginia levies a state income tax using a progressive bracket structure.",
       },
       {
-        q: "What are Virginia’s income tax brackets?",
-        a: "Virginia uses four state income tax brackets with increasing rates as income rises. The brackets apply progressively, so only the portion of income within each range is taxed at the corresponding rate. The highest marginal rate applies only to income above the top threshold, not to total income."
+        q: "Are Virginia income tax brackets the same for all filers?",
+        a: "Yes. Virginia applies the same brackets and rates regardless of filing status.",
       },
       {
-        q: "Does Virginia offer personal exemptions?",
-        a: "Yes. Virginia allows a personal exemption for each filer and dependent. Additional exemptions may apply for taxpayers who are age 65 or older or who are blind. These exemptions reduce taxable income but are subject to eligibility rules defined by the state."
+        q: "Does Virginia allow personal exemptions?",
+        a: "Yes. Virginia allows personal exemptions that reduce taxable income, subject to eligibility rules.",
       },
-      {
-        q: "Are Virginia income tax rates the same for all filing statuses?",
-        a: "Virginia applies the same tax brackets and rates regardless of filing status. However, total tax owed can still vary based on income level, available exemptions, and deductions. Filing status mainly affects how income is reported rather than the rates themselves."
-      }
-    ],    
+    ],
     meta: {
       title: "Virginia income tax calculator 2025 – estimate your state taxes",
       description:
-        "Estimate your Virginia state income tax for 2025. Calculate tax brackets, personal exemptions, and your after-tax income.",
+        "Estimate your Virginia state income tax for 2025. Calculate income tax brackets and after-tax income.",
       canonicalPath: "/tools/income-tax/virginia",
+    },
+  },
+
+  /* ---------- Michigan ---------- */
+  "US-MI": {
+    h1: "Michigan income tax calculator 2025",
+    intro:
+      "Use this Michigan income tax calculator to estimate your Michigan state income tax for the 2025 tax year. Michigan applies a flat income tax rate to taxable income and allows a personal exemption per qualifying filer or dependent.",
+    sections: {
+      howItWorks:
+        "This Michigan income tax calculator estimates Michigan state income tax using the current flat tax rate for the 2025 tax year. Michigan uses a flat state income tax system. For tax year 2025, the Michigan individual income tax rate is 4.25 percent.\n\nThe calculation starts with Michigan-taxable income and applies the flat tax rate after subtracting the applicable personal exemption amount. Michigan does not use a federal-style standard deduction. Instead, each qualifying exemption reduces taxable income by a fixed amount before the tax rate is applied.",
+      examples:
+        "Example 1: A single filer with $60,000 in Michigan-taxable income applies the personal exemption first, then the 4.25 percent flat tax rate to the remaining taxable amount.\n\nExample 2: A household with dependents applies multiple personal exemptions, reducing the taxable base before the flat tax rate is applied.\n\nExample 3: Increasing income does not change the tax rate. Michigan income tax increases proportionally because the same rate applies at all income levels.",
+      limitations:
+        "This Michigan income tax calculator provides a simplified estimate for the 2025 tax year. It does not account for federal income tax, local taxes, credits, residency rules, or special filing situations.\n\nOfficial Michigan income tax rules and rates are published by the Michigan Department of Treasury (https://www.michigan.gov/treasury).",
+    },
+    faq: [
+      {
+        q: "Does Michigan have a flat income tax?",
+        a: "Yes. Michigan uses a flat individual income tax rate that applies to all taxable income.",
+      },
+      {
+        q: "What is the Michigan income tax rate for 2025?",
+        a: "For tax year 2025, Michigan’s individual income tax rate is 4.25 percent.",
+      },
+      {
+        q: "Does Michigan have a standard deduction?",
+        a: "No. Michigan does not use a standard deduction. Instead, it applies a personal exemption amount per qualifying exemption.",
+      },
+      {
+        q: "What is the Michigan personal exemption amount for 2025?",
+        a: "For tax year 2025, the Michigan personal exemption amount is $5,800 per qualifying exemption, subject to state rules.",
+      },
+    ],
+    meta: {
+      title: "Michigan income tax calculator 2025 – estimate your state taxes",
+      description:
+        "Estimate your Michigan state income tax for 2025 using the flat tax rate and personal exemption rules. Calculate your after-tax income.",
+      canonicalPath: "/tools/income-tax/michigan",
     },
   },
 };
