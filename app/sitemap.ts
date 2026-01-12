@@ -22,9 +22,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = staticPaths.map((path) => ({
     url: `${BASE_URL}${path}`,
     lastModified: now,
+    changeFrequency: "monthly",
+    priority: path === "" ? 1 : 0.8,
   }));
 
-  // 2) Dynamiska verktygssidor: /tools/[toolId]/[regionSlug]
+  // 2) Dynamiska verktygssidor
   const dynamicRoutes: MetadataRoute.Sitemap = [];
 
   for (const tool of tools) {
@@ -34,8 +36,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     for (const region of toolRegions) {
       dynamicRoutes.push({
-        url: `${BASE_URL}/tools/${tool.id}/${region.slug}`,
+        url: `${BASE_URL}${tool.basePath}/${region.slug}`,
         lastModified: now,
+        changeFrequency: "monthly",
+        priority: 0.9,
       });
     }
   }

@@ -44,6 +44,30 @@ export const incomeTaxConfigs: Record<RegionId, IncomeTaxConfig> = {
       lastVerified: "2025-01-01",
     },
   },
+
+  "US-VA": {
+    regionId: "US-VA",
+    year: 2025,
+    systemName: "Virginia state income tax",
+    brackets: [
+      { from: 0, to: 3000, rate: 0.02 },
+      { from: 3000, to: 5000, rate: 0.03 },
+      { from: 5000, to: 17000, rate: 0.05 },
+      { from: 17000, to: null, rate: 0.0575 },
+    ],
+    notes: [
+      "Personal exemption of $930 applies per filer and per dependent.",
+      "Additional exemption of $800 applies for taxpayers age 65 or over.",
+      "Additional exemption of $800 applies for blindness.",
+      "Part-year residents must prorate exemption amounts based on residency period.",
+    ],
+    authority: {
+      name: "Virginia Department of Taxation",
+      url: "https://www.tax.virginia.gov",
+      lastVerified: "2026-01-12",
+    },
+  },
+
   // fler regioner sen
 };
 

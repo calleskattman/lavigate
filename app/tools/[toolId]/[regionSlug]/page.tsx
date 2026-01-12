@@ -1,6 +1,7 @@
 // app/tools/[toolId]/[regionSlug]/page.tsx
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import Script from "next/script";
 
 import { getToolById } from "@/config/tools";
 import { getRegionBySlug, regions } from "@/config/regions";
@@ -11,6 +12,11 @@ import { ToolLayout } from "@/components/layout/ToolLayout";
 import IncomeTaxTool from "@/components/tools/IncomeTaxTool";
 import { AdsBlock } from "@/components/ads/AdsBlock";
 import { AffiliateBlock } from "@/components/ads/AffiliateBlock";
+
+import {
+  buildFaqSchema,
+  buildIncomeTaxSoftwareSchema,
+} from "@/lib/schema";
 
 // ---------- Typer ----------
 
@@ -35,24 +41,14 @@ const ADS_DENSITY: AdsDensity =
 
 /**
  * Styr hur många annonsplatser som aktiveras.
- * order:
- *  1 = första under kalkylatorn
- *  2 = mitt i innehållet
- *  3 = längst ned på sidan
  */
 function shouldShowAd(order: 1 | 2 | 3): boolean {
   if (!ADS_ENABLED) return false;
 
-  if (ADS_DENSITY === "low") {
-    return order === 1;
-  }
+  if (ADS_DENSITY === "low") return order === 1;
+  if (ADS_DENSITY === "medium") return order === 1 || order === 2;
 
-  if (ADS_DENSITY === "medium") {
-    return order === 1 || order === 2;
-  }
-
-  // "high"
-  return order === 1 || order === 2 || order === 3;
+  return true; // high
 }
 
 // ---------- Metadata ----------
@@ -62,37 +58,25 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { toolId, regionSlug } = await params;
 
-  const tool = getToolById(toolId);
+  const tool = getToolById(toolId as any);
   const region = getRegionBySlug(regionSlug);
 
-  if (!tool || !region) {
-    return {};
-  }
-
-  // Just nu hanterar vi bara income-tax
-  if (tool.id !== "income-tax") {
+  if (!tool || !region || tool.id !== "income-tax") {
     return {};
   }
 
   const seo = incomeTaxSeoContent[region.id];
-  if (!seo) {
-    return {};
-  }
+  if (!seo) return {};
 
-  const title = seo.meta.title;
-  const description = seo.meta.description;
-  const canonical =
-    typeof seo.meta.canonicalPath === "string"
-      ? `https://lavigate.com${seo.meta.canonicalPath}`
-      : undefined;
+  const canonical = seo.meta.canonicalPath
+    ? `https://lavigate.com${seo.meta.canonicalPath}`
+    : undefined;
 
   return {
-    title,
-    description,
+    title: seo.meta.title,
+    description: seo.meta.description,
     alternates: canonical
-      ? {
-          canonical,
-        }
+      ? { canonical }
       : undefined,
   };
 }
@@ -100,33 +84,29 @@ export async function generateMetadata(
 // ---------- Static params (SSG + sitemap) ----------
 
 export function generateStaticParams() {
-  const incomeTaxTool = getToolById("income-tax");
-  if (!incomeTaxTool) return [];
+  const tool = getToolById("income-tax");
+  if (!tool) return [];
 
-  return incomeTaxTool.supportedRegionIds
+  return tool.supportedRegionIds
     .map((regionId) => regions.find((r) => r.id === regionId))
-    .filter((r): r is NonNullable<typeof r> => Boolean(r))
+    .filter(Boolean)
     .map((region) => ({
       toolId: "income-tax",
-      regionSlug: region.slug,
+      regionSlug: region!.slug,
     }));
 }
 
-// ---------- Page-komponent ----------
+// ---------- Page ----------
 
 export default async function ToolRegionPage({
   params,
 }: ToolRegionPageProps) {
   const { toolId, regionSlug } = await params;
 
-  const tool = getToolById(toolId);
+  const tool = getToolById(toolId as any);
   const region = getRegionBySlug(regionSlug);
 
-  if (!tool || !region) {
-    notFound();
-  }
-
-  if (tool.id !== "income-tax") {
+  if (!tool || !region || tool.id !== "income-tax") {
     notFound();
   }
 
@@ -137,92 +117,118 @@ export default async function ToolRegionPage({
     notFound();
   }
 
+  const pageUrl = `https://lavigate.com${tool.basePath}/${region.slug}`;
+
+  const faqSchema = seo.faq?.length
+    ? buildFaqSchema(seo.faq)
+    : null;
+
+  const softwareSchema = buildIncomeTaxSoftwareSchema({
+    content: seo,
+    pageUrl,
+  });
+
   return (
-    <ToolLayout
-      title={seo.h1}
-      description={seo.intro}
-      category={tool.id}          // "income-tax"
-      region={region.displayName} // t.ex. "Texas"
-    >
-      {/* Kalkylatorn */}
-      <IncomeTaxTool config={config} />
-
-      {/* Ad #1 – direkt under kalkylatorn */}
-      {shouldShowAd(1) && (
-        <div className="mt-8">
-          <AdsBlock
-            slot={`${tool.id}-${region.slug}-primary`}
-          />
-        </div>
+    <>
+      {/* ---------- Schema.org ---------- */}
+      {faqSchema && (
+        <Script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqSchema),
+          }}
+        />
       )}
 
-      {/* SEO-sektioner */}
-      <section className="mt-10 space-y-6">
-        <h2 className="text-xl font-semibold text-slate-900">
-          How the {region.displayName} income tax calculator works
-        </h2>
-        <p className="text-slate-700">{seo.sections.howItWorks}</p>
-      </section>
+      <Script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(softwareSchema),
+        }}
+      />
 
-      <section className="mt-10 space-y-6">
-        <h2 className="text-xl font-semibold text-slate-900">
-          Examples
-        </h2>
-        <p className="text-slate-700">{seo.sections.examples}</p>
-      </section>
+      {/* ---------- Page ---------- */}
+      <ToolLayout
+        title={seo.h1}
+        description={seo.intro}
+        category={tool.id}
+        region={region.displayName}
+      >
+        {/* Calculator */}
+        <IncomeTaxTool config={config} />
 
-      {/* Ad #2 – mitt i innehållet */}
-      {shouldShowAd(2) && (
-        <section className="mt-8">
-          <AdsBlock
-            slot={`${tool.id}-${region.slug}-mid`}
-          />
-        </section>
-      )}
-
-      <section className="mt-10 space-y-6">
-        <h2 className="text-xl font-semibold text-slate-900">
-          Limitations and important notes
-        </h2>
-        <p className="text-slate-700">
-          {seo.sections.limitations}
-        </p>
-      </section>
-
-      {/* FAQ */}
-      {seo.faq?.length > 0 && (
-        <section className="mt-10 space-y-4">
-          <h2 className="text-xl font-semibold text-slate-900">
-            FAQs about income tax in {region.displayName}
-          </h2>
-          <div className="space-y-4">
-            {seo.faq.map((item, index) => (
-              <div key={index} className="space-y-1">
-                <h3 className="font-medium text-slate-900">
-                  {item.q}
-                </h3>
-                <p className="text-sm text-slate-700">
-                  {item.a}
-                </p>
-              </div>
-            ))}
+        {/* Ad #1 */}
+        {shouldShowAd(1) && (
+          <div className="mt-8">
+            <AdsBlock slot={`${tool.id}-${region.slug}-primary`} />
           </div>
-        </section>
-      )}
+        )}
 
-      {/* Ad #3 – längst ned på sidan, efter FAQ */}
-      {shouldShowAd(3) && (
-        <section className="mt-8">
-          <AdsBlock
-            slot={`${tool.id}-${region.slug}-bottom`}
-          />
+        {/* SEO sections */}
+        <section className="mt-10 space-y-6">
+          <h2 className="text-xl font-semibold text-slate-900">
+            How the {region.displayName} income tax calculator works
+          </h2>
+          <p className="text-slate-700">{seo.sections.howItWorks}</p>
         </section>
-      )}
 
-      {/* Affiliate – styrs internt av NEXT_PUBLIC_AFFILIATE_ENABLED */}
-      <div className="mt-10">
-        <AffiliateBlock id={`income-tax-${region.id}`} />
-      </div>
-    </ToolLayout>
+        <section className="mt-10 space-y-6">
+          <h2 className="text-xl font-semibold text-slate-900">
+            Examples
+          </h2>
+          <p className="text-slate-700">{seo.sections.examples}</p>
+        </section>
+
+        {/* Ad #2 */}
+        {shouldShowAd(2) && (
+          <section className="mt-8">
+            <AdsBlock slot={`${tool.id}-${region.slug}-mid`} />
+          </section>
+        )}
+
+        <section className="mt-10 space-y-6">
+          <h2 className="text-xl font-semibold text-slate-900">
+            Limitations and important notes
+          </h2>
+          <p className="text-slate-700">
+            {seo.sections.limitations}
+          </p>
+        </section>
+
+        {/* FAQ */}
+        {seo.faq?.length > 0 && (
+          <section className="mt-10 space-y-4">
+            <h2 className="text-xl font-semibold text-slate-900">
+              FAQs about income tax in {region.displayName}
+            </h2>
+
+            <div className="space-y-4">
+              {seo.faq.map((item, index) => (
+                <div key={index} className="space-y-1">
+                  <h3 className="font-medium text-slate-900">
+                    {item.q}
+                  </h3>
+                  <p className="text-sm text-slate-700">
+                    {item.a}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
+
+        {/* Ad #3 */}
+        {shouldShowAd(3) && (
+          <section className="mt-8">
+            <AdsBlock slot={`${tool.id}-${region.slug}-bottom`} />
+          </section>
+        )}
+
+        {/* Affiliate */}
+        <div className="mt-10">
+          <AffiliateBlock id={`income-tax-${region.id}`} />
+        </div>
+      </ToolLayout>
+    </>
   );
 }
