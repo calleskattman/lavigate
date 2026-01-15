@@ -171,4 +171,43 @@ export const incomeTaxSeoContent: Record<RegionId, IncomeTaxSeoEntry> = {
       canonicalPath: "/tools/income-tax/michigan",
     },
   },
+
+  "US-MN": {
+  "h1": "Minnesota income tax calculator 2024",
+  "intro": "Minnesota applies a progressive state income tax with four brackets for Single filers. For tax year 2024, taxable income is reduced by a standard deduction and a personal exemption before bracket rates apply. This Minnesota income tax calculator provides a simplified estimate of state income tax for 2024 based on the published bracket structure, a standard deduction of 14575, and a personal exemption of 5050.",
+  "sections": {
+    "howItWorks": "For tax year 2024, Minnesota state income tax for Single filers is calculated using a progressive bracket system. This means different portions of taxable income are taxed at different rates. Before bracket rates are applied, taxable income is reduced by the standard deduction of 14575 and the personal exemption of 5050. After these reductions, the remaining taxable income is segmented across four brackets: income up to 31,690 is taxed at 5.35%, income from 31,691 to 104,090 at 6.80%, income from 104,091 to 193,240 at 7.85%, and income above 193,240 at 9.85%. The total state tax reflects the combined tax from each applicable portion of income under Minnesota’s progressive structure.",
+    "examples": "These examples illustrate how Minnesota’s progressive income tax structure applies in 2024 without relying on specific tax totals. If taxable income after deductions and exemptions falls entirely within the first bracket, all taxable income is taxed at 5.35%. When taxable income extends beyond 31,690, the portion within the first bracket remains taxed at 5.35%, while only the excess is taxed at 6.80%. If taxable income exceeds 104,090, the additional portion is taxed at 7.85%, with lower portions continuing to be taxed at their respective rates. Income above 193,240 is taxed at 9.85%, while all earlier segments remain taxed at lower bracket rates.",
+    "limitations": "Results are simplified estimates and may not match a final Minnesota income tax return. This estimate reflects only the Minnesota state income tax rules for Single filers in tax year 2024, including the stated standard deduction of 14575 and personal exemption of 5050. It does not account for Minnesota-specific credits, additional adjustments, special income categories, filing status variations, or situations where taxable income definitions differ from a simplified model. Rounding conventions and interactions between tax components may also affect final liability. For official rules and definitions, refer to the Minnesota Department of Revenue (https://www.revenue.state.mn.us/mndor-pp/19621?type=html)."
+  },
+  "faq": [
+    {
+      "q": "What does a progressive Minnesota state income tax mean for 2024?",
+      "a": "A progressive Minnesota state income tax means taxable income is divided into segments, and each segment is taxed at the rate assigned to its bracket. For 2024 Single filers, Minnesota applies four rates: 5.35%, 6.80%, 7.85%, and 9.85%. Moving into a higher bracket does not apply the higher rate to all income. Only the portion within that bracket range is taxed at the higher rate, while lower portions remain taxed at lower rates."
+    },
+    {
+      "q": "How do the standard deduction and personal exemption affect the estimate?",
+      "a": "The standard deduction and personal exemption reduce the amount of income subject to Minnesota state income tax before bracket rates are applied. For 2024, the standard deduction is 14575 and the personal exemption is 5050. In a simplified estimate, these reductions lower taxable income and can affect how much income falls into each tax bracket."
+    },
+    {
+      "q": "What are the Minnesota income tax brackets for Single filers in 2024?",
+      "a": "For 2024 Single filers, Minnesota uses four progressive income tax brackets. Income up to 31,690 is taxed at 5.35%. Income from 31,691 to 104,090 is taxed at 6.80%. Income from 104,091 to 193,240 is taxed at 7.85%. Income above 193,240 is taxed at 9.85%. Each portion of taxable income is taxed at its corresponding rate."
+    },
+    {
+      "q": "Why can an estimate differ from the final Minnesota tax amount?",
+      "a": "An estimate can differ from a final Minnesota tax amount because a simplified model does not capture every rule that affects taxable income or tax liability. This estimate includes only the Minnesota state income tax structure for Single filers in 2024, along with the stated standard deduction and personal exemption. Credits, additional adjustments, special income treatments, and detailed tax definitions can change the final result."
+    },
+    {
+      "q": "Does entering a higher bracket mean all income is taxed at the higher rate?",
+      "a": "No. Under Minnesota’s progressive income tax system for 2024, only the portion of taxable income that falls within a higher bracket is taxed at that bracket’s rate. Lower portions of income continue to be taxed at their applicable lower rates."
+    }
+  ],
+  "meta": {
+    "title": "Minnesota income tax calculator 2024 — brackets, deductions, and exemptions",
+    "description": "Minnesota income tax calculator for 2024 with progressive Single filer brackets, a standard deduction of 14575, and a personal exemption of 5050. Simplified estimate only.",
+    "canonicalPath": "/tools/income-tax/minnesota"
+  }
+},
+
+
 };

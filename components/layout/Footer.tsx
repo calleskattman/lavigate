@@ -10,9 +10,7 @@ export function Footer() {
         <span>© {year} Lavigate.</span>
 
         <span className="max-w-xl">
-          Calculators are simplified and for guidance only – always
-          double-check results and current rules with official sources before
-          making financial decisions.
+        Calculations are simplified estimates and may not match a filed return. Official sources and professional advice control for filing decisions.
         </span>
 
         <nav className="flex flex-wrap gap-3">

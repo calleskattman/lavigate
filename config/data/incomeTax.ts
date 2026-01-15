@@ -86,6 +86,26 @@ export const incomeTaxConfigs: Record<RegionId, IncomeTaxConfig> = {
     },
   },
 
+  "US-MN": {
+  regionId: "US-MN",
+  year: 2024,
+  systemName: "Minnesota state income tax",
+  brackets: [
+      { from: 0, to: 31690, rate: 0.0535 },
+      { from: 31691, to: 104090, rate: 0.068 },
+      { from: 104091, to: 193240, rate: 0.0785 },
+      { from: 193241, to: null, rate: 0.0985 }
+  ],
+  standardDeduction: 14575,
+  personalExemption: 5050,
+  notes: ["Uses Single filer brackets only. Other filing statuses are not included in v1."],
+  authority: {
+    name: "Minnesota Department of Revenue",
+    url: "https://www.revenue.state.mn.us/mndor-pp/19621?type=html",
+    lastVerified: "2026-01-14",
+  },
+},
+
   // fler regioner sen
 };
 

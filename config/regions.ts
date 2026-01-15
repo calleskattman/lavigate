@@ -41,6 +41,7 @@ export const regions: Region[] = [
     name: "Michigan",
     displayName: "Michigan",
   },  
+  { id: "US-MN", countryCode: "US", slug: "minnesota", name: "Minnesota", displayName: "Minnesota" },
   // fler regioner läggs till här senare
 ];
 

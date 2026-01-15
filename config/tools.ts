@@ -19,7 +19,7 @@ export const tools: ToolDefinition[] = [
     basePath: "/tools/income-tax",
     component: "IncomeTaxTool",
     dataKey: "incomeTax",
-    supportedRegionIds: ["US-VA", "US-MI"],
+    supportedRegionIds: ["US-VA", "US-MI", "US-MN"],
   },
 ];
 

@@ -83,7 +83,7 @@ export default function IncomeTaxTool({ config }: IncomeTaxToolProps) {
             min={0}
           />
           <p className="mt-1 text-xs text-slate-500">
-            Enter your estimated taxable income for the selected tax year.
+            Annual taxable income for the selected tax year.
           </p>
         </div>
       </div>
@@ -96,7 +96,7 @@ export default function IncomeTaxTool({ config }: IncomeTaxToolProps) {
 
         {income <= 0 ? (
           <p className="text-sm text-slate-700">
-            Enter an annual income to see your estimated tax and effective rate.
+            Shows an estimated state income tax and an effective rate based on the provided values.
           </p>
         ) : (
           <>
