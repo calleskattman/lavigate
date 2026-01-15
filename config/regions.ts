@@ -42,6 +42,12 @@ export const regions: Region[] = [
     displayName: "Michigan",
   },  
   { id: "US-MN", countryCode: "US", slug: "minnesota", name: "Minnesota", displayName: "Minnesota" },
+  { id: "US-UT", countryCode: "US", slug: "utah", name: "Utah", displayName: "Utah" },
+  { id: "US-AL", countryCode: "US", slug: "alabama", name: "Alabama", displayName: "Alabama" },
+  { id: "US-OK", countryCode: "US", slug: "oklahoma", name: "Oklahoma", displayName: "Oklahoma" },
+  { id: "US-HI", countryCode: "US", slug: "hawaii", name: "Hawaii", displayName: "Hawaii" },
+  { id: "US-KS", countryCode: "US", slug: "kansas", name: "Kansas", displayName: "Kansas" },
+  { id: "US-ID", countryCode: "US", slug: "idaho", name: "Idaho", displayName: "Idaho" },
   // fler regioner läggs till här senare
 ];
 

@@ -209,5 +209,262 @@ export const incomeTaxSeoContent: Record<RegionId, IncomeTaxSeoEntry> = {
   }
 },
 
+"US-UT": {
+  h1: "Utah Income Tax Calculator 2024",
+  intro:
+    "Utah applies a flat individual income tax rate to taxable income, with the same rate applying to all filing statuses. Utah does not provide a separate state standard deduction; instead, federal standard or itemized deductions and a per-dependent personal exemption amount are incorporated into a nonrefundable Utah taxpayer tax credit that may be phased out based on income and filing status. This Utah tax calculator provides a simplified estimate for Utah in tax year 2024 based on the Utah individual income tax structure.",
+  sections: {
+    howItWorks:
+      "Utah individual income tax for 2024 is calculated by applying a flat 4.55% rate to Utah taxable income. Utah does not use a separate state standard deduction in the same way as the federal return; instead, federal standard or itemized deductions and a per-dependent personal exemption amount of 2,046 are used as inputs to the Utah taxpayer tax credit calculation, which is nonrefundable and may be phased out based on income and filing status. This calculator applies the flat rate structure as a simplified estimate and does not model the taxpayer tax credit phase-out. Official rules and definitions are administered by the Utah State Tax Commission (https://incometax.utah.gov).",
+    examples:
+      "Because Utah uses a flat 4.55% rate, the estimated Utah income tax generally changes in a linear way with Utah taxable income. If taxable income increases, the estimated tax increases by 4.55% of the additional taxable income. In another common scenario, two taxpayers with the same taxable income can have different estimated outcomes because the nonrefundable Utah taxpayer tax credit may vary based on filing status, income thresholds, and the number of qualifying dependents, which affects the personal exemption input amount of 2,046 per dependent.",
+    limitations:
+      "Results are simplified estimates and may not match a final return. This estimate reflects a flat 4.55% rate and the concept of a 2,046 per-dependent personal exemption amount used within Utah’s taxpayer tax credit structure, but it does not capture every rule that can affect Utah taxable income, credit calculations, credit phase-out thresholds, filing status treatment, or other adjustments under Utah law. Definitions, eligibility conditions, rounding conventions, and interactions between tax components can change the final calculation. For filing and compliance, the official rules, forms, and instructions provided by the Utah State Tax Commission control.",
+  },
+  faq: [
+    {
+      q: "Is Utah a flat tax state for 2024?",
+      a: "Yes. Utah applies a single flat individual income tax rate for 2024. A flat tax means the same percentage rate applies to Utah taxable income regardless of income level or filing status.",
+    },
+    {
+      q: "What is Utah’s income tax rate for 2024?",
+      a: "For tax year 2024, Utah’s individual income tax rate is 4.55% (.0455). Under a flat-rate structure, the same rate applies across filing statuses, and estimated tax generally rises in proportion to taxable income.",
+    },
+    {
+      q: "Does Utah have a state standard deduction?",
+      a: "Utah does not provide a separate state standard deduction in the same way as the federal return. Instead, federal standard or itemized deductions are used as inputs in Utah’s taxpayer tax credit calculation rather than being subtracted as a separate Utah deduction line.",
+    },
+    {
+      q: "How does the Utah personal exemption amount work in 2024?",
+      a: "For 2024, Utah’s personal exemption amount is 2,046 per qualifying dependent and is used as an input to the nonrefundable Utah taxpayer tax credit. Whether and how it applies depends on the filer’s circumstances and Utah’s rules for qualification and credit calculation.",
+    },
+    {
+      q: "Why might an estimated Utah tax amount differ from a final return?",
+      a: "A simplified estimate may not reflect every rule that affects Utah taxable income or Utah’s taxpayer tax credit. Even with a flat 4.55% rate, the final result can differ due to credit eligibility, credit phase-out thresholds based on income and filing status, adjustments, and detailed definitions in official forms and instructions.",
+    },
+  ],
+  meta: {
+    title: "Utah Income Tax Calculator 2024 | Flat 4.55% Rate Estimate",
+    description:
+      "Utah income tax calculator for 2024 with a flat 4.55% rate and the 2,046 per-dependent personal exemption concept used in Utah’s taxpayer tax credit. Simplified estimate; final tax depends on official rules.",
+    canonicalPath: "/tools/income-tax/utah",
+  },
+},
 
+"US-AL": {
+  h1: "Alabama Income Tax Calculator 2023",
+  intro: "Alabama uses a progressive individual income tax system with marginal rates that increase by income bracket. This Alabama income tax calculator provides a simplified estimate for tax year 2023 based on Alabama’s published brackets, standard deduction rules, and personal exemption amounts.",
+  sections: {
+    howItWorks: "For tax year 2023, Alabama individual income tax is calculated using a progressive bracket system. Taxable income is first reduced by applicable deductions and exemptions, then taxed in segments at increasing rates. Income up to $500 is taxed at 2%, income from $501 to $3,000 is taxed at 4%, and income above $3,000 is taxed at 5%. Because the top rate applies at relatively low income levels, most taxable income beyond the initial brackets is subject to the 5% marginal rate.",
+    examples: "Under Alabama’s progressive structure, moving into a higher bracket does not mean all income is taxed at the higher rate. For example, if taxable income exceeds $3,000, only the portion above $3,000 is taxed at 5%, while earlier portions remain taxed at 2% and 4%. As income increases further, the total tax rises primarily due to the larger share taxed at the top marginal rate.",
+    limitations: "This calculator provides a simplified estimate based on Alabama’s published tax brackets, a base standard deduction, and a single personal exemption amount. It does not account for all deductions, credits, income adjustments, phase-out calculations, federal income tax deductibility, or special residency rules that may apply. Results may differ from a final Alabama return."
+  },
+  faq: [
+    {
+      q: "Is Alabama income tax progressive or flat?",
+      a: "Alabama uses a progressive income tax system. Taxable income is divided into brackets and taxed at increasing rates of 2%, 4%, and 5% for tax year 2023."
+    },
+    {
+      q: "What are the Alabama income tax brackets for 2023?",
+      a: "For tax year 2023, Alabama applies a 2% rate on taxable income up to $500, a 4% rate on income from $501 to $3,000, and a 5% rate on income above $3,000 for single filers."
+    },
+    {
+      q: "Does Alabama have a standard deduction?",
+      a: "Yes. Alabama allows a standard deduction that is directly subtracted from income. The amount depends on filing status and income level and may be reduced through stepwise phase-out rules. This calculator applies a simplified base standard deduction."
+    },
+    {
+      q: "Does Alabama allow a personal exemption?",
+      a: "Yes. Alabama allows personal exemptions that reduce taxable income. The exemption amount depends on filing status, and additional exemptions may apply for dependents. This calculator applies the single-filer personal exemption amount."
+    },
+    {
+      q: "Why might my estimated Alabama tax differ from my final return?",
+      a: "This estimate does not capture all Alabama-specific rules, such as federal income tax deductibility, deduction and exemption phase-outs, credits, or residency proration. Official Alabama forms and instructions determine the final tax owed."
+    }
+  ],
+  meta: {
+    title: "Alabama Income Tax Calculator 2023 | Progressive Tax Brackets",
+    description: "Alabama income tax calculator for 2023 with progressive tax brackets, standard deduction rules, and personal exemption amounts. Simplified estimate only.",
+    canonicalPath: "/tools/income-tax/alabama"
+  }
+},
+
+"US-OK": {
+  h1: "Oklahoma income tax calculator 2025",
+  intro:
+    "This calculator provides an estimated Oklahoma state income tax based on official Oklahoma Tax Commission tax tables. Because Oklahoma publishes tax tables rather than a formal marginal bracket schedule, the calculation uses a derived approximation of that structure for estimation purposes only. It is intended for Single or Married Filing Separately filers.",
+  sections: {
+    howItWorks:
+      "Oklahoma calculates individual income tax using published tax tables instead of an explicit marginal bracket schedule. This calculator derives an internal marginal structure from the official 2025 Oklahoma tax tables to estimate tax for Single or Married Filing Separately filers. It assumes the Oklahoma standard deduction where applicable and includes the standard personal exemption amount.",
+    examples:
+      "For example, with Oklahoma taxable income of $50,000, tax is estimated as $153.50 plus 4.75% of the amount over $7,200, resulting in an estimated tax of $2,186.50. With taxable income of $5,000, tax is estimated as $67.25 plus 3.75% of the amount over $4,900, or $71.00. These examples illustrate the derived structure used for estimation, not an official tax table lookup.",
+    limitations:
+      "This calculator provides an estimate only. Oklahoma publishes tax tables rather than a formal marginal bracket schedule, and the calculation shown here reflects a derived approximation used for estimation purposes. The calculator applies only to Single or Married Filing Separately filers and does not account for credits, nonresident or part-year rules, filing-status-specific tables, or all conditions that may affect a filed return.",
+  },
+  faq: [
+    {
+      q: "Does Oklahoma publish tax brackets?",
+      a: "No. Oklahoma publishes tax tables, not a formal marginal tax bracket schedule. This calculator therefore uses a derived approximation of that structure for estimation only.",
+    },
+    {
+      q: "What filing statuses does this calculator support?",
+      a: "This calculator is intended for Single or Married Filing Separately filers only and does not apply the separate tables used for other filing statuses.",
+    },
+    {
+      q: "Does Oklahoma allow a standard deduction?",
+      a: "Yes. Oklahoma allows a standard deduction that depends on filing status and whether the taxpayer claimed the federal standard deduction.",
+    },
+    {
+      q: "What is the Oklahoma personal exemption amount?",
+      a: "Oklahoma allows a personal or dependent exemption of $1,000 per exemption, with additional exemptions potentially available for eligible blind or age-65-plus taxpayers, subject to income and filing-status rules in the official instructions.",
+    },
+  ],
+  meta: {
+    title: "Oklahoma income tax calculator 2025 – estimated state tax",
+    description:
+      "Estimate Oklahoma state income tax for 2025 using official Oklahoma Tax Commission tax tables, with transparent assumptions, derived calculations, and clear limitations.",
+    canonicalPath: "/tools/income-tax/oklahoma",
+  },
+},
+
+"US-HI": {
+    h1: "Hawaii income tax calculator 2025",
+
+    intro:
+      "This calculator estimates Hawaii state income tax for tax year 2025 using the official Schedule I rate structure. It applies to single filers only and is intended to provide a simplified estimate based on published Hawaii tax rules.",
+
+    sections: {
+      howItWorks:
+        "Hawaii applies a progressive income tax system with published rate schedules by filing status. This calculator uses Schedule I, which applies to single filers. The calculation applies marginal tax rates to taxable income after the Hawaii standard deduction and personal exemption. While official instructions require using a tax table for lower income ranges, this tool applies the Schedule I rate structure across all income levels for estimation purposes.",
+
+      examples:
+        "For example, if taxable income is $50,000, the estimate reflects the progressive Schedule I rates applied to each portion of income. Higher income levels are taxed at higher marginal rates, with the top rate applying only to income above the highest threshold.",
+
+      limitations:
+        "This is an estimate, not an official tax calculation. It applies only to single filers and does not support other filing statuses. It does not use the official Hawaii tax table, does not include tax credits or special deductions, and does not account for nonresident or part-year filing rules. Actual tax liability may differ based on individual circumstances and official filing requirements.",
+    },
+
+    faq: [
+      {
+        q: "Who can use this Hawaii income tax calculator?",
+        a: "This calculator is intended for single filers only. Other filing statuses use different rate schedules and are not included.",
+      },
+      {
+        q: "Does Hawaii have different tax brackets for other filing statuses?",
+        a: "Yes. Hawaii publishes separate rate schedules for married filers, head of household, and surviving spouses.",
+      },
+      {
+        q: "Why does this calculator not use the official Hawaii tax table?",
+        a: "The official tax table is designed for filing returns. This calculator applies the published Schedule I marginal rates to provide a consistent estimate.",
+      },
+      {
+        q: "What personal exemption amount is used for 2025?",
+        a: "Hawaii publishes a personal exemption amount of $1,144, which is applied here without modeling detailed eligibility rules.",
+      },
+    ],
+
+    meta: {
+      title: "Hawaii income tax calculator 2025 – single filer estimate",
+      description:
+        "Estimate your Hawaii state income tax for 2025 as a single filer using the official Schedule I rate structure.",
+      canonicalPath: "/tools/income-tax/hawaii",
+    },
+  },
+
+  "US-KS": {
+    h1: "Kansas income tax calculator 2025",
+    intro:
+      "This page provides an estimate of Kansas state income tax for the 2025 tax year using the Kansas individual income tax rate structure that applies for tax year 2024 and later years. The estimate is based on Kansas taxable income and the current statutory two-bracket rates administered by the Kansas Department of Revenue.",
+    sections: {
+      howItWorks:
+        "Kansas imposes a state individual income tax with marginal rates that apply to Kansas taxable income. For tax years beginning in 2024 and continuing thereafter, Kansas uses a two-bracket structure for individuals. For filers who are not married filing jointly, the first bracket applies a 5.2% rate on Kansas taxable income up to 23,000, and the second bracket applies a 5.58% rate on taxable income above 23,000. The rate change for tax year 2024 and later years is described in official Kansas guidance and is tied to the amended statutory rate language.\n\n" +
+        "This calculator focuses on estimating the state income tax that results from applying the marginal rates to taxable income. The marginal structure means the higher rate applies only to the portion of taxable income above the threshold, not to the full amount. In practical terms, the first 23,000 is taxed at 5.2%, and only the income above 23,000 is taxed at 5.58% for the supported filing model.\n\n" +
+        "Official authority: Kansas Department of Revenue. Rate changes and the effective “tax year 2024 and all tax years thereafter” language are documented in Kansas Department of Revenue Notice 24-08.",
+      examples:
+        "Example 1 (Kansas taxable income: 20,000). Because 20,000 is within the first bracket, the estimated Kansas tax is 5.2% of 20,000. That produces an estimated tax of 1,040.\n\n" +
+        "Example 2 (Kansas taxable income: 23,000). At the bracket threshold, the estimated Kansas tax is 5.2% of 23,000. That produces an estimated tax of 1,196.\n\n" +
+        "Example 3 (Kansas taxable income: 60,000). The first 23,000 is taxed at 5.2% (estimated 1,196). The remaining 37,000 (60,000 minus 23,000) is taxed at 5.58% (estimated 2,064.60). The total estimated Kansas tax is 3,260.60.\n\n" +
+        "These examples illustrate how the marginal rates apply to slices of taxable income. The calculation model used here matches the standard marginal-bracket computation implied by the official bracket threshold and rates for the supported filing model.",
+      limitations:
+        "This estimate is limited to a single calculation model: individuals who are not married filing jointly. Kansas publishes separate thresholds and a base-tax amount for married individuals filing joint returns, and that joint-filer model is not supported in the calculator’s calculation logic.\n\n" +
+        "This calculator estimates tax on Kansas taxable income. It does not compute Kansas taxable income from federal adjusted gross income, Kansas additions and subtractions, itemized deductions, standard deduction, exemption allowances, or other Kansas-specific adjustments. Those inputs can materially change the taxable income amount used for the bracket calculation.\n\n" +
+        "Kansas income tax law includes definitions, special rules, and administrative guidance that may affect individual circumstances, including residency status and other state adjustments. For authoritative details, rely on official Kansas Department of Revenue publications and the controlling Kansas statute as amended for tax year 2024 and later years. Source: Kansas Department of Revenue Notice 24-08.",
+    },
+    faq: [
+      {
+        q: "What Kansas income tax rates apply for tax year 2025?",
+        a:
+          "Kansas uses the individual income tax rate structure that applies for tax year 2024 and later years. For filers who are not married filing jointly, the rates are 5.2% up to 23,000 of Kansas taxable income and 5.58% above 23,000. The official change and effective-year language are documented by the Kansas Department of Revenue in Notice 24-08.",
+      },
+      {
+        q: "Does Kansas have different income tax brackets for married filing jointly?",
+        a:
+          "Yes. Kansas provides a separate threshold and base-tax computation for married individuals filing joint returns under the amended two-bracket structure effective for tax year 2024 and later years. This calculator does not implement the married filing jointly model and estimates tax only for the non-joint (“all other individuals”) model.",
+      },
+      {
+        q: "What income does this Kansas tax estimate use?",
+        a:
+          "This estimate uses Kansas taxable income. Kansas taxable income is a state-specific figure defined under Kansas law and Kansas Department of Revenue guidance. This calculator does not derive Kansas taxable income from federal adjusted gross income or Kansas-specific deductions and exemptions.",
+      },
+      {
+        q: "Which official source documents the Kansas rate change for tax year 2024 and later years?",
+        a:
+          "Kansas Department of Revenue Notice 24-08 describes changes to individual income tax and restates the amended rate structure effective for tax year 2024 and all tax years thereafter. The authority is the Kansas Department of Revenue and the controlling Kansas statute as amended.",
+      },
+    ],
+    meta: {
+      title: "Kansas income tax calculator 2025 – estimate your Kansas state tax",
+      description:
+        "Estimate Kansas state income tax for 2025 using the official Kansas two-bracket rates (effective for tax year 2024 and later). Calculates tax from Kansas taxable income for the supported filing model.",
+      canonicalPath: "/tools/income-tax/kansas",
+    },
+  },
+
+  "US-ID": {
+  h1: "Idaho income tax calculator 2025",
+  intro:
+    "This page provides an estimate of Idaho state income tax for the 2025 tax year using the Idaho individual income tax rate structure administered by the Idaho State Tax Commission. The estimate is based on Idaho taxable income and the official flat-rate worksheet thresholds and rate that apply for tax year 2025.",
+  sections: {
+    howItWorks:
+      "Idaho imposes a state individual income tax using a flat-rate worksheet structure. For tax year 2025, Idaho applies a 0% rate to Idaho taxable income up to 4,811 for single filers and married filing separately, and applies a 5.3% rate to taxable income above that threshold.\n\n" +
+      "This calculator estimates Idaho state income tax by applying the worksheet method published in the official Idaho Form 40 instructions. If taxable income does not exceed the threshold, the estimated tax is zero. If taxable income exceeds the threshold, the excess amount above 4,811 is multiplied by 5.3%.\n\n" +
+      "Official authority: Idaho State Tax Commission. The worksheet thresholds and rate for tax year 2025 are documented in the Idaho Individual Income Tax Rate Schedule and the 2025 Form 40 instructions.",
+    examples:
+      "Example 1 (Idaho taxable income: 4,000). Because 4,000 is at or below the worksheet threshold, the estimated Idaho tax is 0.\n\n" +
+      "Example 2 (Idaho taxable income: 6,000). The amount above the threshold is 1,189 (6,000 minus 4,811). Applying the 5.3% rate produces an estimated tax of 63.02.\n\n" +
+      "Example 3 (Idaho taxable income: 50,000). The amount above the threshold is 45,189 (50,000 minus 4,811). Applying the 5.3% rate produces an estimated tax of 2,395.02.\n\n" +
+      "These examples illustrate how the Idaho worksheet applies the flat rate only to the portion of taxable income above the threshold.",
+    limitations:
+      "This estimate is limited to a single calculation model: Single and Married Filing Separately. Idaho publishes a different threshold for Married Filing Jointly, Head of Household, and Qualifying Surviving Spouse, which are not supported by this calculator.\n\n" +
+      "This calculator estimates tax on Idaho taxable income only. It does not compute Idaho taxable income from federal adjusted gross income, Idaho additions or subtractions, standard or itemized deductions, credits, or other Idaho-specific adjustments.\n\n" +
+      "Idaho income tax law includes additional rules and administrative guidance that may affect individual situations. For authoritative details, rely on official Idaho State Tax Commission publications and Form 40 instructions for tax year 2025.",
+  },
+  faq: [
+    {
+      q: "What Idaho income tax rate applies for tax year 2025?",
+      a:
+        "For tax year 2025, Idaho applies a 0% rate to taxable income up to 4,811 for single filers and married filing separately, and a 5.3% rate to taxable income above that threshold. These amounts are published by the Idaho State Tax Commission.",
+    },
+    {
+      q: "Does Idaho use different thresholds for married filing jointly?",
+      a:
+        "Yes. Idaho uses a higher worksheet threshold for Married Filing Jointly, Head of Household, and Qualifying Surviving Spouse. This calculator does not implement those filing statuses.",
+    },
+    {
+      q: "What income does this Idaho tax estimate use?",
+      a:
+        "This estimate uses Idaho taxable income as reported on Idaho Form 40, line 19. It does not derive taxable income from federal adjusted gross income or apply Idaho-specific deductions or credits.",
+    },
+    {
+      q: "Which official source documents Idaho’s tax rate for 2025?",
+      a:
+        "The Idaho State Tax Commission publishes the official rate and thresholds in the Individual Income Tax Rate Schedule and the 2025 Form 40 instructions.",
+    },
+  ],
+  meta: {
+    title: "Idaho income tax calculator 2025 – estimate your Idaho state tax",
+    description:
+      "Estimate Idaho state income tax for 2025 using the official Idaho flat-rate worksheet (0% up to 4,811, then 5.3%). Calculates tax from Idaho taxable income for single filers and married filing separately.",
+    canonicalPath: "/tools/income-tax/idaho",
+  },
+},
 };
