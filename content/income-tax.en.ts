@@ -542,5 +542,122 @@ export const incomeTaxSeoContent: Record<RegionId, IncomeTaxSeoEntry> = {
   }
 },
 
+"US-ME": {
+  h1: "Maine Income Tax Calculator 2024",
+  intro:
+    "This Maine income tax calculator provides a simplified estimate for tax year 2024 based on Tax Rate Schedule #1, which applies to Single and Married Filing Separately filers only. Maine uses a progressive state income tax system, and this estimate applies the official 2024 bracket thresholds published by Maine Revenue Services.",
+  sections: {
+    howItWorks:
+      "This estimate applies Maine’s 2024 progressive income tax rate schedule for Single and Married Filing Separately filers. Taxable income is reduced by a standard deduction of 14600 and a personal exemption deduction of 5000 before the progressive rates are applied. The modeled brackets are: income up to 26050 taxed at 5.80%, income from 26050 to 61600 taxed at 6.75%, and income above 61600 taxed at 7.15%. Each portion of income is taxed at its corresponding rate.",
+    examples:
+      "Example 1: If taxable income after the standard deduction and personal exemption falls within the first bracket, the estimate applies the 5.80% rate to that amount. Example 2: If taxable income exceeds 26050, the portion up to 26050 is taxed at 5.80%, and the portion from 26050 to 61600 is taxed at 6.75%. Example 3: If taxable income exceeds 61600, the estimate applies all three rates progressively, with the highest rate applied only to the portion above 61600.",
+    limitations:
+      "This result is a simplified estimate and not an official tax calculation. This configuration models only Tax Rate Schedule #1 for tax year 2024 and applies to Single and Married Filing Separately filers. It does not include Head of Household or Married Filing Jointly schedules, which use different brackets, deductions, and exemption rules. The calculation does not apply phaseout rules for the personal exemption or account for credits, additional deductions, special income treatments, or other provisions that may affect a final Maine income tax return. For authoritative guidance, refer to Maine Revenue Services."
+  },
+  faq: [
+    {
+      q: "Which filing statuses does this Maine income tax estimate apply to?",
+      a: "This estimate applies only to Single and Married Filing Separately filers for tax year 2024. Maine uses different tax rate schedules for Head of Household and Married Filing Jointly filers, which are not included in this calculation."
+    },
+    {
+      q: "What tax brackets are used in this Maine estimate for 2024?",
+      a: "The estimate uses Maine’s 2024 Tax Rate Schedule #1. Income up to 26050 is taxed at 5.80%, income from 26050 to 61600 is taxed at 6.75%, and income above 61600 is taxed at 7.15%."
+    },
+    {
+      q: "How are the standard deduction and personal exemption applied?",
+      a: "The estimate reduces income by a standard deduction of 14600 and a personal exemption deduction of 5000 before applying the progressive tax rates. This reflects the base amounts for Single and Married Filing Separately filers under Maine law."
+    },
+    {
+      q: "Why might this estimate differ from my actual Maine tax liability?",
+      a: "The estimate is simplified and does not include all factors that affect a final return, such as phaseout of the personal exemption at higher income levels, tax credits, additional deductions, or filing-status-specific rules not included in this model."
+    }
+  ],
+  meta: {
+    title: "Maine Income Tax Calculator 2024 | Single & MFS Brackets",
+    description:
+      "Maine income tax calculator for tax year 2024 based on Single and Married Filing Separately brackets. Includes 5.80%, 6.75%, and 7.15% rates, a 14600 standard deduction, and a 5000 personal exemption.",
+    canonicalPath: "/tools/income-tax/maine"
+  }
+},
+
+"US-DE": {
+  h1: "Delaware Income Tax Calculator 2024",
+  intro:
+    "Delaware has a progressive state income tax system. This Delaware income tax calculator provides a simplified estimate for the 2024 tax year based on the official structure used by the state. Delaware relies on a tax table when taxable income is below 60000 and applies a formula-based tax rate schedule once taxable income reaches 60000 or more. Results are simplified estimates and may not reflect every rule that can apply to an individual return.",
+  sections: {
+    howItWorks:
+      "Delaware state income tax is calculated under a progressive structure, meaning the effective outcome depends on taxable income levels. When taxable income is below 60000, Delaware uses a tax table rather than a published bracket formula. Once taxable income reaches 60000 or more, the state applies a formula-based tax rate schedule that includes a 6.60 percent rate. This estimate reflects the structure described here and does not attempt to reproduce every worksheet or table value used in official calculations.",
+    examples:
+      "Example outcomes depend on whether taxable income falls below 60000 or reaches 60000 and above. At lower income levels, the estimate reflects Delaware’s table-based approach rather than a single stated rate. At income levels of 60000 or more, the estimate reflects the published formula-based schedule and the 6.60 percent rate applied above that threshold. These examples illustrate how the system behaves rather than providing an exact tax determination.",
+    limitations:
+      "This estimate is simplified and is not a substitute for official calculations. Delaware uses a tax table for taxable income below 60000, and the exact table values are not reproduced here. For taxable income of 60000 or more, the estimate reflects the formula-based schedule described in official publications, including the 6.60 percent rate, but it may not capture all adjustments, special cases, or filing-specific computations. For authoritative guidance, refer to the Delaware Division of Revenue, Department of Finance (https://revenue.delaware.gov)."
+  },
+  faq: [
+    {
+      q: "What does a progressive income tax mean in Delaware for 2024?",
+      a:
+        "A progressive income tax system means the tax outcome changes as taxable income increases rather than applying a single flat rate to all income. In Delaware for 2024, the calculation method also differs by income level: taxable income below 60000 is handled using a tax table, while taxable income of 60000 or more follows a formula-based tax rate schedule."
+    },
+    {
+      q: "Why is a tax table used for taxable income below 60000 in Delaware?",
+      a:
+        "Delaware distinguishes between income ranges when calculating state income tax. For taxable income below 60000, the state publishes a tax table with specific tax amounts for narrow income ranges instead of a general bracket formula. Because those table values are not reproduced here, estimates for that range remain simplified."
+    },
+    {
+      q: "How is taxable income of 60000 or more treated in this estimate?",
+      a:
+        "When taxable income reaches 60000 or more, Delaware applies a formula-based tax rate schedule instead of the tax table used at lower income levels. In this summary, that schedule includes a 6.60 percent rate applied above the 60000 threshold. The estimate reflects that structure but may not include every adjustment used in official worksheets."
+    },
+    {
+      q: "Are the results exact Delaware tax amounts for 2024?",
+      a:
+        "No. The results are simplified estimates and may differ from official Delaware calculations. Below 60000, the absence of full tax table values limits precision. At 60000 and above, the estimate reflects the published schedule and rate, but additional adjustments or special rules may affect an actual return."
+    }
+  ],
+  meta: {
+    title: "Delaware Income Tax Calculator 2024 | Simplified State Tax Estimate",
+    description:
+      "Delaware Income Tax Calculator 2024 with a simplified estimate based on Delaware’s progressive system, using a tax table below 60000 and a formula-based schedule at 60000 and above.",
+    canonicalPath: "/tools/income-tax/delaware"
+  }
+},
+
+"US-MS": {
+  "h1": "Mississippi Income Tax Calculator 2025",
+  "intro": "Mississippi applies a graduated individual income tax system for Tax Year 2025. The mississippi income tax calculator provides a simplified estimate of Mississippi state income tax based on taxable income and the state’s published rate structure for 2025.",
+  "sections": {
+    "howItWorks": "Mississippi state income tax for 2025 is determined by applying marginal rates to taxable income under the Mississippi state income tax structure. For taxable income from 0 to 10000, the marginal rate is 0.00%. For taxable income from 10000 to and above, the marginal rate is 4.40% on the portion above 10000. This means income within each band is taxed at that band’s rate, rather than applying a single rate to all taxable income. For official guidance and definitions used in administration, refer to the Mississippi Department of Revenue (https://www.dor.ms.gov).",
+    "examples": "The following examples describe how the marginal structure applies to taxable income in Mississippi for 2025.\n\nExample 1: Taxable income from 0 to 10000. Under Mississippi’s 2025 structure, the marginal rate in this band is 0.00%, so taxable income within this band is not taxed by the state income tax.\n\nExample 2: Taxable income above 10000. The first 10000 of taxable income falls in the 0.00% band. Any taxable income above 10000 falls into the 4.40% marginal rate band, and only the portion above 10000 is taxed at 4.40%.",
+    "limitations": "Results are simplified estimates and may not match a filed return. This estimate is limited to the Mississippi state income tax rate structure stated for 2025 and does not incorporate details that can affect taxable income or final liability. It does not address filing status rules, adjustments, credits, withholding, payments, penalties, interest, or other return-specific calculations. It also assumes taxable income is already determined under applicable rules; differences in how taxable income is computed can materially change the outcome."
+  },
+  "faq": [
+    {
+      "q": "What does “graduated” mean for Mississippi state income tax in 2025?",
+      "a": "A graduated system applies different marginal rates to different portions of taxable income. In Mississippi for 2025, taxable income from 0 to 10000 is subject to a 0.00% marginal rate. Taxable income from 10000 to and above is subject to a 4.40% marginal rate on the portion above 10000. This structure means the rate can change as taxable income crosses the threshold, but only the amount in the higher band is taxed at the higher rate."
+    },
+    {
+      "q": "Does the 4.40% rate apply to all taxable income once income is above 10000?",
+      "a": "No. Under Mississippi’s 2025 marginal rate structure, the 4.40% rate applies only to the portion of taxable income above 10000. The portion of taxable income from 0 to 10000 remains in the 0.00% band. This distinction is important because marginal taxation does not retroactively apply the higher rate to the entire taxable income amount. The total tax is the sum of tax computed within each applicable band."
+    },
+    {
+      "q": "What income amount is used for the estimate: gross income or taxable income?",
+      "a": "The estimate is based on taxable income, not gross income. Mississippi’s published rate structure for 2025 applies to taxable income from 0 to 10000 at 0.00% and from 10000 to and above at 4.40% on the portion above 10000. Taxable income is a defined amount that can differ from gross income due to rules that determine what is included and how taxable income is computed. If taxable income is different, the estimated tax will differ accordingly."
+    },
+    {
+      "q": "Why can an estimate differ from the final Mississippi tax on a filed return?",
+      "a": "An estimate can differ because a filed return may include elements beyond the marginal rate schedule. While the 2025 Mississippi structure applies 0.00% from 0 to 10000 and 4.40% from 10000 to and above on the portion above 10000, a return can be affected by return-specific items that change taxable income or final liability. In addition, timing and reconciliation items such as withholding and payments affect the amount due or refunded, even when the underlying tax calculation is similar."
+    },
+    {
+      "q": "What are the key limitations of a simplified Mississippi income tax estimate for 2025?",
+      "a": "A simplified estimate focuses on the stated marginal rate structure and does not incorporate all factors that can affect a taxpayer’s result. For Mississippi in 2025, the estimate reflects 0.00% on taxable income from 0 to 10000 and 4.40% on taxable income from 10000 to and above for the portion above 10000. It does not account for detailed rules that may change taxable income, nor does it address credits, withholding, payments, penalties, or interest. As a result, it should be treated as an approximation rather than a filing outcome."
+    }
+  ],
+  "meta": {
+    "title": "Mississippi Income Tax Calculator 2025 | Estimate Mississippi State Income Tax",
+    "description": "Mississippi Income Tax Calculator 2025 for a simplified estimate based on Mississippi’s graduated rate structure: 0.00% from 0 to 10000 of taxable income and 4.40% on taxable income above 10000.",
+    "canonicalPath": "/tools/income-tax/mississippi"
+  }
+},
+
 
 };

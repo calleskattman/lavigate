@@ -291,6 +291,66 @@ export const incomeTaxConfigs: Record<RegionId, IncomeTaxConfig> = {
         },
       },
 
+      "US-ME": {
+  regionId: "US-ME",
+  year: 2024,
+  systemName: "Maine state income tax",
+  brackets: [
+    { from: 0, to: 26050, rate: 0.058 },
+    { from: 26050, to: 61600, rate: 0.0675 },
+    { from: 61600, to: null, rate: 0.0715 }
+  ],
+  standardDeduction: 14600,
+  personalExemption: 5000,
+  notes: [
+    "Scope: Tax year 2024 only.",
+    "Scope: ONLY Tax Rate Schedule #1 (Single and Married Filing Separately).",
+    "Head of Household and Married Filing Jointly / Qualifying Surviving Spouse schedules are not included.",
+    "Standard deduction and personal exemption amounts shown apply only to Single / Married Filing Separately filers.",
+    "Maine personal exemption is an income deduction of 5000 per exemption and may be reduced by phaseout at higher Maine adjusted gross income levels, which is not applied in this simplified estimate."
+  ],
+  authority: {
+    name: "Maine Revenue Services",
+    url: "https://www.maine.gov/revenue",
+    lastVerified: "2026-01-21"
+  }
+},
+
+"US-DE": {
+  regionId: "US-DE",
+  year: 2024,
+  systemName: "Delaware state income tax",
+  brackets: [
+    { from: 60000, to: null, rate: 0.066 }
+  ],
+  notes: [
+    "Taxable income below 60000 is calculated using an official Delaware state tax table rather than a formula-based bracket schedule. For taxable income of 60000 or more, Delaware applies a base tax of 2943.50 USD plus 6.60 percent of the amount over 60000. Filing status affects deductions and adjustments but does not change tax rate thresholds. Personal exemptions are implemented as credits in Delaware, but the exact credit amount for Tax Year 2024 is not explicitly stated in individual return instructions."
+  ],
+  authority: {
+    name: "Delaware Division of Revenue, Department of Finance",
+    url: "https://revenue.delaware.gov",
+    lastVerified: "2026-01-21"
+  }
+},
+
+"US-MS": {
+        regionId: "US-MS",
+        year: 2025,
+        systemName: "Mississippi state income tax",
+        brackets: [
+            { from: 0, to: 10000, rate: 0 },
+      { from: 10000, to: null, rate: 0.044 }
+        ],
+        
+        
+        notes: ["Mississippi Department of Revenue states that for Tax Year 2025 taxable income is taxed at 0 percent on the first 10000 and at 4.4 percent on all taxable income in excess of 10000. No tax table is used. Standard deduction and exemption amounts vary by filing status but are not specified in accessible official sources and are therefore not included."],
+        authority: {
+          name: "Mississippi Department of Revenue",
+          url: "https://www.dor.ms.gov",
+          lastVerified: "2026-01-21",
+        },
+      },
+
   // fler regioner sen
 };
 

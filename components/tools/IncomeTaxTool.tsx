@@ -59,7 +59,7 @@ export default function IncomeTaxTool({ config }: IncomeTaxToolProps) {
     });
 
   const formatPercent = (value: number) =>
-    `${(value * 100).toFixed(1).replace(".", ",")}%`;
+    `${(value * 100).toFixed(2).replace(".", ",")}%`;
 
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
