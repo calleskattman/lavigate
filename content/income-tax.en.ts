@@ -721,5 +721,80 @@ export const incomeTaxSeoContent: Record<RegionId, IncomeTaxSeoEntry> = {
   }
 },
 
+"US-MT": {
+  h1: "Montana income tax calculator 2024",
+  intro: "Montana applies a state individual income tax to ordinary income using a marginal rate system in Tax Year 2024. This Montana income tax calculator estimates state tax liability based on the official marginal rates and filing-status-specific income thresholds published by the Montana Department of Revenue, including thresholds for individual filers and certain non-individual filers such as estates and trusts.",
+  sections: {
+    howItWorks: "Montana individual income tax for 2024 is calculated using two marginal rates applied to taxable income. The income thresholds that separate these rates depend on filing status under Montana law. This includes individual filing statuses as well as estates, trusts, and pass-through entity composite filers, which follow the same thresholds as single filers. For each filing category, income within the lower range is taxed at the lower rate, and only the portion above the applicable threshold is taxed at the higher rate. Beginning in 2024, Montana taxable income generally starts from federal taxable income and is then adjusted under Montana-specific rules following the state’s tax simplification reforms. Official tax tables and filing guidance are published by the Montana Department of Revenue (https://mtrevenue.gov).",
+    examples: "Under a marginal tax system, income is taxed in layers rather than at a single flat rate. For example, income within the first range is taxed at the lower rate, while only the portion above the applicable threshold is taxed at the higher rate. Although the thresholds differ by filing status, the marginal structure remains consistent across all filer categories recognized in Montana’s 2024 tax tables.",
+    limitations: "This calculator provides an estimate based on published marginal rates and filing-status-specific thresholds for ordinary income. It does not account for all Montana-specific adjustments that may apply when converting federal taxable income to Montana taxable income, and it does not include the separate net long-term capital gains tax schedule. Final tax liability can differ based on individual circumstances and official filing calculations."
+  },
+  faq: [
+    {
+      q: "Does Montana use different income tax thresholds by filing status?",
+      a: "Yes. For Tax Year 2024, Montana applies the same two marginal tax rates to ordinary income, but the income thresholds at which those rates apply differ by filing status. The official tables also include estates, trusts, and PTE composite filers, which use the same thresholds as single filers."
+    },
+    {
+      q: "What marginal tax rates apply to Montana income tax in 2024?",
+      a: "Montana applies two marginal tax rates to ordinary income in 2024. A lower rate applies to income within the first range, and a higher rate applies only to income above the applicable filing-status threshold."
+    },
+    {
+      q: "How is Montana taxable income determined beginning in 2024?",
+      a: "Beginning in 2024, Montana generally starts with federal taxable income as the base and then applies Montana-specific adjustments. This reflects the state’s tax simplification reforms enacted under Senate Bill 399."
+    },
+    {
+      q: "Does this calculator include Montana’s capital gains tax rules?",
+      a: "No. Montana uses a separate tax schedule for net long-term capital gains beginning in 2024. This calculator estimates ordinary income tax only."
+    }
+  ],
+  meta: {
+    title: "Montana income tax calculator 2024 — estimate state tax by filing status",
+    description: "Montana income tax calculator for 2024 using official marginal rates and filing-status-specific income thresholds, including individual filers and estates and trusts, based on Montana Department of Revenue tables.",
+    canonicalPath: "/tools/income-tax/montana"
+  }
+},
+
+"US-NE": {
+  h1: "Nebraska Income Tax Calculator 2024",
+  intro:
+    "This Nebraska Income Tax Calculator 2024 provides an estimate using values that correspond to those shown in the published 2024 Nebraska Tax Calculation Schedule for Individual Income Tax. The calculation applies the schedule values for Single and Married Filing Separately taxpayers.",
+  sections: {
+    howItWorks:
+      "For tax year 2024, Nebraska publishes a Tax Calculation Schedule that specifies income ranges and applicable rates for Single and Married Filing Separately taxpayers. This calculator applies those published values to Nebraska taxable income for estimation purposes. The Nebraska standard deduction amount of 8,350 for these filing statuses is applied before the schedule-based calculation. The administering authority is the Nebraska Department of Revenue (https://revenue.nebraska.gov).",
+    examples:
+      "Example 1: If Nebraska taxable income falls within the first income range shown in the 2024 schedule, the rate associated with that range is applied.\n\nExample 2: If taxable income exceeds higher ranges shown in the schedule, the applicable rates for those ranges are applied to the corresponding portions of income.\n\nExample 3: For Single and Married Filing Separately, applying the standard deduction of 8,350 reduces Nebraska taxable income before the schedule values are applied.",
+    limitations:
+      "Results are schedule-based estimates using the published 2024 Nebraska Tax Calculation Schedule values for Single and Married Filing Separately only. This calculator does not include Nebraska tax credits, including the personal exemption credit, and does not apply to other filing statuses. Official liability is determined using Nebraska’s complete rules, schedules, and forms."
+  },
+  faq: [
+    {
+      q: "Which Nebraska tax schedule does this calculator use?",
+      a: "This calculator applies values that correspond to those shown in the 2024 Nebraska Tax Calculation Schedule for Individual Income Tax for Single and Married Filing Separately."
+    },
+    {
+      q: "Are these the official 2024 Nebraska rates and thresholds?",
+      a: "Yes. The values used correspond to the rates and income ranges shown in the published 2024 Nebraska Tax Calculation Schedule."
+    },
+    {
+      q: "Which filing statuses are covered?",
+      a: "This estimate applies only to Single and Married Filing Separately for tax year 2024. Nebraska publishes separate schedule values for other filing statuses."
+    },
+    {
+      q: "Is the Nebraska personal exemption credit included?",
+      a: "No. Nebraska provides a personal exemption credit on Form 1040N, but tax credits are not included in this estimate."
+    },
+    {
+      q: "Is this calculation final?",
+      a: "No. This is an estimate based on published schedule values. Final Nebraska income tax liability is determined using official Nebraska forms and instructions."
+    }
+  ],
+  meta: {
+    title: "Nebraska Income Tax Calculator 2024 — Schedule-Based Estimate",
+    description:
+      "Nebraska Income Tax Calculator 2024 using values that correspond to the published Nebraska Tax Calculation Schedule for Single and Married Filing Separately. Applies official 2024 thresholds, rates, and the 8,350 standard deduction.",
+    canonicalPath: "/tools/income-tax/nebraska"
+  }
+},
+
 
 };

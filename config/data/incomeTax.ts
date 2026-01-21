@@ -408,6 +408,51 @@ export const incomeTaxConfigs: Record<RegionId, IncomeTaxConfig> = {
   }
 },
 
+"US-MT": {
+  regionId: "US-MT",
+  year: 2024,
+  systemName: "Montana individual income tax",
+  brackets: [
+    { from: 0, to: 20500, rate: 0.047 },
+    { from: 20500, to: null, rate: 0.059 }
+  ],
+  notes: [
+    "Montana applies two marginal tax rates to ordinary income in Tax Year 2024. The income thresholds shown here correspond to the bracket group used for single filers, married filing separately, estates, trusts, and PTE composite tax filers. Other filing statuses use higher thresholds under Montana law.",
+    "Montana-specific standard deductions and personal exemptions were repealed effective Tax Year 2024 under Senate Bill 399.",
+    "This calculator models ordinary income tax only and does not include Montana’s separate net long-term capital gains tax schedule."
+  ],
+  authority: {
+    name: "Montana Department of Revenue",
+    url: "https://mtrevenue.gov",
+    lastVerified: "2026-01-21"
+  }
+},
+
+"US-NE": {
+  regionId: "US-NE",
+  year: 2024,
+  systemName: "Nebraska Individual Income Tax",
+  brackets: [
+    { from: 0, to: 3900, rate: 0.0246 },
+    { from: 3900, to: 23370, rate: 0.0351 },
+    { from: 23370, to: 37670, rate: 0.0501 },
+    { from: 37670, to: null, rate: 0.0584 }
+  ],
+  standardDeduction: 8350,
+  notes: [
+    "This entry applies the 2024 Nebraska Tax Calculation Schedule values for Single and Married Filing Separately taxpayers.",
+    "The bracket thresholds and rates used here correspond to those shown in the published 2024 Nebraska Tax Calculation Schedule.",
+    "The standard deduction amount of 8,350 applies only to Single and Married Filing Separately for tax year 2024.",
+    "Nebraska provides a personal exemption credit on Form 1040N; tax credits are not included in this calculation."
+  ],
+  authority: {
+    name: "Nebraska Department of Revenue",
+    url: "https://revenue.nebraska.gov",
+    lastVerified: "2026-01-21"
+  }
+},
+
+
   // fler regioner sen
 };
 

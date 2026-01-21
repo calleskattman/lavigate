@@ -55,6 +55,8 @@ export const regions: Region[] = [
   { id: "US-MS", countryCode: "US", slug: "mississippi", name: "Mississippi", displayName: "Mississippi" },
   { id: "US-OH", countryCode: "US", slug: "ohio", name: "Ohio", displayName: "Ohio" },
   { id: "US-AR", countryCode: "US", slug: "arkansas", name: "Arkansas", displayName: "Arkansas" },
+  { id: "US-MT", countryCode: "US", slug: "montana", name: "Montana", displayName: "Montana" },
+  { id: "US-NE", countryCode: "US", slug: "nebraska", name: "Nebraska", displayName: "Nebraska" },
   // fler regioner läggs till här senare
 ];
 
