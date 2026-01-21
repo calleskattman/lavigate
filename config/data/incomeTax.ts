@@ -351,6 +351,63 @@ export const incomeTaxConfigs: Record<RegionId, IncomeTaxConfig> = {
         },
       },
 
+      "US-OH": {
+  regionId: "US-OH",
+  year: 2024,
+  systemName: "Ohio state income tax",
+  brackets: [
+    {
+      from: 0,
+      to: 26050,
+      rate: 0,
+    },
+    {
+      from: 26051,
+      to: 100000,
+      rate: 0.0275,
+    },
+    {
+      from: 100001,
+      to: null,
+      rate: 0.035,
+    },
+  ],
+  notes: [
+    "Brackets apply to Ohio taxable nonbusiness income.",
+    "Ohio’s official tax tables calculate tax using base tax amounts plus a marginal rate above each bracket threshold.",
+    "This configuration provides the official bracket thresholds and marginal rates for tax year 2024.",
+    "The full Ohio tax computation includes base tax amounts that are not represented directly in this bracket structure.",
+    "Taxable business income above the business income deduction is taxed separately at a flat 3% rate."
+  ],
+  authority: {
+    name: "Ohio Department of Taxation",
+    url: "https://tax.ohio.gov/individual/file-now/annual-tax-rates",
+    lastVerified: "2026-01-21",
+  },
+},
+
+"US-AR": {
+  regionId: "US-AR",
+  year: 2024,
+  systemName: "Arkansas state income tax",
+  brackets: [
+    { from: 0, to: 5499, rate: 0.0 },
+    { from: 5500, to: 10899, rate: 0.02 },
+    { from: 10900, to: 15599, rate: 0.03 },
+    { from: 15600, to: 25699, rate: 0.034 },
+    { from: 25700, to: 92300, rate: 0.039 },
+    { from: 92301, to: null, rate: 0.039 }
+  ],
+  notes: [
+    "Arkansas publishes indexed income tax tables with percentage rates and adjustment constants calculated at the midpoint of each income range. This calculator groups the published indexed ranges into a simplified marginal structure for estimation purposes and may not exactly match Arkansas DFA tax table calculations."
+  ],
+  authority: {
+    name: "Arkansas Department of Finance and Administration",
+    url: "https://www.dfa.arkansas.gov/office/taxes/income-tax-administration/individual-income-tax/forms/",
+    lastVerified: "2026-01-21"
+  }
+},
+
   // fler regioner sen
 };
 

@@ -659,5 +659,67 @@ export const incomeTaxSeoContent: Record<RegionId, IncomeTaxSeoEntry> = {
   }
 },
 
+"US-OH": {
+  h1: "Ohio Income Tax Calculator 2024",
+  intro: "Ohio imposes a progressive state income tax on Ohio taxable nonbusiness income using marginal brackets. The official Ohio tax table expresses these brackets using base tax amounts plus a percentage of income above each threshold. This Ohio Income Tax Calculator 2024 provides an estimate based on the published 2024 bracket thresholds and marginal rates. Taxable business income is treated separately under a flat rate system.",
+  sections: {
+    howItWorks: "Ohio state income tax on taxable nonbusiness income is based on marginal brackets defined by income thresholds and rates. For tax year 2024, income from 0 to 26,050 is subject to a 0.00% rate. Income above 26,050 and up to 100,000 is subject to a 2.75% rate, and income above 100,000 is subject to a 3.50% rate. This calculator uses the published 2024 bracket thresholds and marginal rates for taxable nonbusiness income, while the official Ohio calculation also incorporates base tax amounts. Official rate information is published by the Ohio Department of Taxation.",
+    examples: "Example 1: If Ohio taxable nonbusiness income is within the first bracket, income up to 26,050 is subject to a 0.00% rate.\n\nExample 2: If Ohio taxable nonbusiness income exceeds 26,050 but does not exceed 100,000, the portion above 26,050 is subject to a 2.75% rate.\n\nExample 3: If Ohio taxable nonbusiness income exceeds 100,000, the portion above 100,000 is subject to a 3.50% rate.",
+    limitations: "Results are simplified estimates and may not match a filed return. Ohio’s official income tax calculation uses base tax amounts in combination with marginal rates for taxable nonbusiness income. This calculator reflects the published bracket thresholds and marginal rates for 2024 but does not account for all return-specific factors, income classifications, credits, or deductions. Final tax liability depends on how income is defined and reported under Ohio law."
+  },
+  faq: [
+    {
+      q: "What income do Ohio tax brackets apply to in 2024?",
+      a: "For 2024, Ohio’s progressive income tax brackets apply to Ohio taxable nonbusiness income. The brackets are defined by income thresholds and marginal rates published by the Ohio Department of Taxation."
+    },
+    {
+      q: "Does Ohio use marginal tax brackets?",
+      a: "Yes. Ohio applies marginal tax brackets to taxable nonbusiness income, meaning higher rates apply only to income above each bracket threshold."
+    },
+    {
+      q: "What are the Ohio income tax rates for 2024?",
+      a: "For tax year 2024, Ohio applies a 0.00% rate up to 26,050, a 2.75% rate on income above 26,050 up to 100,000, and a 3.50% rate on income above 100,000, based on the official Ohio tax table."
+    },
+    {
+      q: "How is taxable business income treated in Ohio?",
+      a: "Ohio treats taxable business income separately from nonbusiness income. After the business income deduction, taxable business income is subject to a flat 3% rate rather than the progressive bracket structure."
+    }
+  ],
+  meta: {
+    title: "Ohio Income Tax Calculator 2024 | Official Brackets And Rates",
+    description: "Ohio Income Tax Calculator 2024 for estimating Ohio state income tax on taxable nonbusiness income using the official 2024 bracket thresholds and marginal rates.",
+    canonicalPath: "/tools/income-tax/ohio"
+  }
+},
+
+"US-AR": {
+  "h1": "Arkansas Income Tax Calculator 2024",
+  "intro": "Arkansas imposes a progressive state individual income tax using indexed income tax tables published by the Arkansas Department of Finance and Administration. This Arkansas income tax calculator provides an estimated calculation for tax year 2024 based on the published rate structure.",
+  "sections": {
+    "howItWorks": "Arkansas state income tax is based on indexed tax tables that apply percentage rates to taxable income ranges, with adjustment constants calculated at the midpoint of each range. For estimation purposes, this calculator groups the published indexed ranges into a simplified marginal structure. For 2024, the grouped ranges are: from 0 to 5,499 at 0.00%, from 5,500 to 10,899 at 2.00%, from 10,900 to 15,599 at 3.00%, from 15,600 to 25,699 at 3.40%, and income above 25,700 taxed at 3.90%. Under this approach, higher rates apply only to the portion of income within the corresponding range.",
+    "examples": "Example 1: If taxable income is 5,000, the portion from 0 to 5,000 is taxed at 0.00% under the grouped Arkansas rate structure.\n\nExample 2: If taxable income is 12,000, the portion from 0 to 5,499 is taxed at 0.00%, the portion from 5,500 to 10,899 is taxed at 2.00%, and the portion from 10,900 to 12,000 is taxed at 3.00%.\n\nExample 3: If taxable income exceeds 25,700, the portions within each lower range are taxed at their respective rates, and only the portion above 25,700 is taxed at 3.90% under the grouped structure.",
+    "limitations": "Results are simplified estimates and may not match a filed Arkansas return. Arkansas requires exact tax table calculations that include indexed ranges and adjustment constants. This calculator does not reproduce the full indexed table or midpoint adjustments and should be used for estimation and comparison purposes only. For official calculations, refer to Arkansas DFA tax tables and forms."
+  },
+  "faq": [
+    {
+      "q": "Does this calculator exactly match Arkansas DFA tax tables for 2024?",
+      "a": "No. Arkansas publishes indexed tax tables with narrow income bands and adjustment constants that must be matched exactly for official filings. This calculator groups those published ranges to provide an estimate and may not exactly match DFA tax table results."
+    },
+    {
+      "q": "Is Arkansas income tax progressive?",
+      "a": "Yes. Arkansas applies progressively higher percentage rates to higher portions of taxable income. Although the state uses indexed tables, the overall structure applies higher rates only to income within higher ranges."
+    },
+    {
+      "q": "What is the highest Arkansas income tax rate for 2024?",
+      "a": "For 2024, the highest published Arkansas individual income tax rate is 3.90%, which applies to higher portions of taxable income under the indexed table system."
+    }
+  ],
+  "meta": {
+    "title": "Arkansas Income Tax Calculator 2024 | Estimated Brackets",
+    "description": "Estimate Arkansas state income tax for 2024 using a simplified marginal structure based on Arkansas DFA indexed tax tables. Rates include 0.00%, 2.00%, 3.00%, 3.40%, and 3.90%.",
+    "canonicalPath": "/tools/income-tax/arkansas"
+  }
+},
+
 
 };
