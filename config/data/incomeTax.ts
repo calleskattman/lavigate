@@ -255,6 +255,42 @@ export const incomeTaxConfigs: Record<RegionId, IncomeTaxConfig> = {
   },
 },
 
+"US-KY": {
+        regionId: "US-KY",
+        year: 2024,
+        systemName: "Kentucky state income tax",
+        brackets: [
+            { from: 0, to: null, rate: 0.04 }
+        ],
+        standardDeduction: 3160,
+        
+        notes: ["Kentucky does not allow a personal exemption. Instead, it provides fixed personal tax credits such as age, blindness, and other specified credits reported on Schedule ITC."],
+        authority: {
+          name: "Kentucky Department of Revenue",
+          url: "https://revenue.ky.gov/Individual/Individual-Income-Tax/Pages/default.aspx",
+          lastVerified: "2026-01-21",
+        },
+      },
+
+      "US-IA": {
+        regionId: "US-IA",
+        year: 2024,
+        systemName: "Iowa state income tax",
+        brackets: [
+            { from: 0, to: 6210, rate: 0.044 },
+      { from: 6210, to: 31050, rate: 0.0482 },
+      { from: 31050, to: null, rate: 0.057 }
+        ],
+        
+        personalExemption: 0,
+        notes: ["For tax year 2024, Iowa instructs taxpayers to enter the standard deduction or itemized deductions from federal Form 1040, line 12 (referenced as line 12e in Iowa expanded instructions). For certain Iowa computations, the deduction amount from IA 1040 line 1d is capped at the amount included in IA 1040 line 2. Iowa does not allow a personal exemption deduction for tax year 2024; the federal personal exemption amount is $0. Iowa provides exemption credits (e.g., personal/dependent/age/blind credits) which are credits against tax and are not represented by this personalExemption field. Iowa has a separate 2024 bracket schedule for married filing jointly (thresholds 0..12420..62100) which is not included in this single-bracket-list configuration."],
+        authority: {
+          name: "Iowa Department of Revenue",
+          url: "https://revenue.iowa.gov",
+          lastVerified: "2026-01-21",
+        },
+      },
+
   // fler regioner sen
 };
 

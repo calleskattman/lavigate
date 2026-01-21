@@ -467,4 +467,80 @@ export const incomeTaxSeoContent: Record<RegionId, IncomeTaxSeoEntry> = {
     canonicalPath: "/tools/income-tax/idaho",
   },
 },
+
+"US-KY": {
+  "h1": "Kentucky Income Tax Calculator 2024",
+  "intro": "Kentucky uses a flat state income tax system with a single rate applied to taxable income. This Kentucky income tax calculator provides a simplified estimate for tax year 2024 based on core statewide rules and limited assumptions.",
+  "sections": {
+    "howItWorks": "For tax year 2024, Kentucky applies a single flat state income tax rate rather than multiple progressive brackets. Taxable income is determined after applying the Kentucky standard deduction and other applicable adjustments under state rules. Once taxable income is established, the same rate applies to the full taxable amount. Under Kentucky’s state income tax structure, taxable income from 0 and above is taxed at 4.00%, reflecting a single-rate system rather than tiered marginal rates.",
+    "examples": "Because Kentucky uses one statewide tax rate, the estimated state income tax is calculated by applying 4.00% to taxable income as determined after applying the standard deduction of 3160, subject to the limits of a simplified model. When taxable income remains positive after deductions, the same 4.00% rate applies to the entire taxable amount. If deductions reduce taxable income to 0, the simplified estimate results in 0 Kentucky state income tax. These examples illustrate the behavior of a flat-rate system and do not address every adjustment, credit, or special situation that may apply.",
+    "limitations": "Results are simplified estimates and may differ from an actual Kentucky income tax return. This estimate does not account for every income type, adjustment, credit, filing nuance, or special rule that can affect Kentucky taxable income or final liability. It also does not reflect all circumstances that may influence how deductions apply in practice. For official guidance and current details, refer to the Kentucky Department of Revenue (https://revenue.ky.gov/Individual/Individual-Income-Tax/Pages/default.aspx)."
+  },
+  "faq": [
+    {
+      "q": "How does a flat income tax rate affect the Kentucky estimate for 2024?",
+      "a": "Kentucky’s flat-rate structure means the same percentage applies to taxable income rather than applying different rates to different portions of income. For 2024, the Kentucky state income tax rate is 4.00% on taxable income from 0 and above. In a simplified estimate, once taxable income is determined, the calculation is straightforward because there are no higher or lower marginal tiers to apply. Differences in estimated liability generally come from how taxable income is defined after deductions and adjustments."
+    },
+    {
+      "q": "What role does the standard deduction play in the Kentucky state income tax estimate?",
+      "a": "The standard deduction reduces the amount of income treated as taxable for Kentucky purposes in a simplified model. For 2024, the standard deduction listed here is 3160. This deduction is applied as part of determining taxable income before the flat 4.00% rate is applied. If taxable income is reduced to 0, the simplified estimate results in 0 Kentucky state income tax. Actual outcomes can differ when additional adjustments, credits, or special rules apply."
+    },
+    {
+      "q": "Does Kentucky have multiple tax brackets in 2024?",
+      "a": "No. Kentucky uses a flat state income tax system for 2024, meaning there is a single tax rate rather than multiple brackets with increasing marginal rates. Taxable income from 0 and above is subject to the same 4.00% rate once taxable income is determined. Differences in estimated tax amounts generally arise from how taxable income is calculated, not from bracket thresholds."
+    },
+    {
+      "q": "Why might an estimate differ from the final Kentucky tax amount on a filed return?",
+      "a": "An estimate can differ because it is simplified and may not reflect all items that affect Kentucky taxable income or final liability. Filed returns can involve adjustments, credits, and specific tax rules that change the taxable base or the amount owed after applying the 4.00% rate. In addition, the way deductions apply can vary by situation. The estimate should be treated as an approximation rather than a filing result."
+    },
+    {
+      "q": "What does “taxable income from 0 and above at 4.00%” mean in plain terms?",
+      "a": "It means Kentucky applies one statewide income tax rate to taxable income without dividing income into multiple tiers. After taxable income is determined, the same 4.00% rate applies whether taxable income is low or high, because the tax applies to taxable income from 0 and above. In a simplified estimate, the key steps are determining taxable income and then applying the flat rate. This description does not cover every possible adjustment or credit that may apply on an actual return."
+    }
+  ],
+  "meta": {
+    "title": "Kentucky Income Tax Calculator 2024 | Flat 4.00% Rate Estimate",
+    "description": "Kentucky income tax calculator for 2024 with a flat 4.00% state income tax rate and a standard deduction of 3160. Simplified estimate; actual liability may differ.",
+    "canonicalPath": "/tools/income-tax/kentucky"
+  }
+},
+
+"US-IA": {
+  "h1": "Iowa Income Tax Calculator 2024",
+  "intro": "Iowa has a progressive individual income tax system for tax year 2024 with three marginal tax brackets. This iowa income tax calculator provides a simplified estimate of Iowa state income tax for 2024 based on the published bracket thresholds for filers other than married taxpayers filing jointly. Results are simplified estimates and may not reflect all Iowa tax rules, adjustments, credits, or filing-specific factors.",
+  "sections": {
+    "howItWorks": "Iowa state income tax for 2024 is calculated using marginal rates that apply to portions of taxable income within each bracket. For filers other than married filing jointly, the brackets are from 0 to 6,210 at 4.40%, from 6,210 to 31,050 at 4.82%, and from 31,050 to and above at 5.70%. A marginal structure means income is not taxed at a single rate; instead, each slice of income is taxed at the rate for its bracket. This configuration reflects a personal exemption amount of 0, so no personal exemption reduction is applied in the estimate.",
+    "examples": "The marginal structure affects how additional income is taxed. For example, when taxable income is within the range from 0 to 6,210, the applicable marginal rate is 4.40% for that portion. When taxable income extends above 6,210 and remains up to 31,050, the portion within that bracket is taxed at 4.82%, while the portion from 0 to 6,210 remains taxed at 4.40%. When taxable income exceeds 31,050, the portion above 31,050 is taxed at 5.70%, with the earlier portions still taxed at their respective lower rates. These examples describe bracket behavior only and do not include other Iowa-specific adjustments or credits.",
+    "limitations": "This estimate is limited to Iowa state income tax bracket behavior for 2024 for filers other than married filing jointly, using the three marginal brackets listed and a personal exemption amount of 0. It does not account for filing-status-specific rules beyond the noted bracket structure, nor does it incorporate other components that can affect Iowa tax outcomes, such as deductions, credits, income modifications, or special tax treatments. Tax results can also differ based on definitions of taxable income and other return-level calculations. For official guidance and current forms and instructions, refer to the Iowa Department of Revenue (https://revenue.iowa.gov)."
+  },
+  "faq": [
+    {
+      "q": "What does “progressive” mean for Iowa state income tax in 2024?",
+      "a": "A progressive income tax applies higher marginal rates to higher portions of taxable income. In Iowa for 2024 (for filers other than married filing jointly in this configuration), taxable income is divided into portions that fall within the ranges from 0 to 6,210, from 6,210 to 31,050, and from 31,050 to and above. Each portion is taxed at its bracket’s rate, rather than taxing all income at one rate. This structure affects how tax changes as taxable income increases."
+    },
+    {
+      "q": "How do marginal tax brackets affect the tax rate applied to income?",
+      "a": "Marginal brackets apply different rates to different slices of taxable income. For Iowa in 2024 under the bracket set described here, the first portion of taxable income from 0 to 6,210 is taxed at 4.40%. If taxable income exceeds 6,210, only the amount above 6,210 and up to 31,050 is taxed at 4.82%, while the earlier portion remains taxed at 4.40%. If taxable income exceeds 31,050, only the amount above 31,050 is taxed at 5.70%."
+    },
+    {
+      "q": "Which Iowa 2024 bracket structure is reflected in this estimate?",
+      "a": "Iowa publishes separate bracket structures for married taxpayers filing jointly and for all other filers. This estimate reflects the 2024 bracket thresholds for all taxpayers other than married filing jointly only. The brackets applied are from 0 to 6,210 at 4.40%, from 6,210 to 31,050 at 4.82%, and from 31,050 to and above at 5.70%. If a return is filed as married filing jointly, the applicable bracket thresholds may differ from the ones described here."
+    },
+    {
+      "q": "Does this estimate include a personal exemption for Iowa in 2024?",
+      "a": "This configuration applies a personal exemption amount of 0. That means the estimate does not reduce taxable income by a personal exemption amount before applying the Iowa marginal brackets described. In practice, Iowa tax outcomes can depend on how taxable income is determined and on other return components that are not represented here. As a result, the estimate should be treated as a simplified calculation focused on bracket behavior rather than a complete Iowa return computation."
+    },
+    {
+      "q": "Why might an Iowa income tax estimate differ from a final Iowa return?",
+      "a": "An estimate based only on marginal brackets can differ from a final Iowa return because a full return can include additional calculations beyond the bracket rates and thresholds. Items such as deductions, credits, income adjustments, and other Iowa-specific rules can change taxable income or the final tax liability. This estimate is intentionally simplified to reflect only the three marginal brackets listed for 2024 (for filers other than married filing jointly) and a personal exemption amount of 0, so it may not match a completed return."
+    }
+  ],
+  "meta": {
+    "title": "Iowa Income Tax Calculator 2024: Estimate State Tax by Bracket",
+    "description": "Iowa Income Tax Calculator 2024 for a simplified estimate of Iowa state income tax using 2024 marginal brackets for filers other than married filing jointly. Includes bracket explanations and limitations.",
+    "canonicalPath": "/tools/income-tax/iowa"
+  }
+},
+
+
 };
