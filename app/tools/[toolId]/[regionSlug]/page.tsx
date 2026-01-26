@@ -110,18 +110,23 @@ export default async function ToolRegionPage({
   const region = getRegionBySlug(regionSlug);
   if (!tool || !region) notFound();
 
-  let config: any = null;
-  let seo: any = null;
+  let config: any;
+let seo: any;
 
-  if (tool.id === "income-tax") {
+switch (tool.id) {
+  case "income-tax":
     config = getIncomeTaxConfig(region.id);
     seo = incomeTaxSeoContent[region.id];
-  }
+    break;
 
-  if (tool.id === "sales-tax") {
+  case "sales-tax":
     config = getSalesTaxConfig(region.id);
     seo = salesTaxSeoContent[region.id];
-  }
+    break;
+
+  default:
+    notFound();
+}
 
   if (!config || !seo) notFound();
 
