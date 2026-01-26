@@ -3,6 +3,8 @@ import { CURRENT_TAX_YEAR } from "@/config/site";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Script from "next/script";
+import { RelatedToolRegions } from "@/components/navigation/RelatedToolRegions";
+import { RelatedRegionTools } from "@/components/navigation/RelatedRegionTools";
 
 import { getRegionBySlug, regions } from "@/config/regions";
 import { getIncomeTaxConfig } from "@/config/data/incomeTax";
@@ -228,6 +230,16 @@ switch (tool.id) {
             <AdsBlock slot={`${tool.id}-${region.slug}-bottom`} />
           </section>
         )}
+
+<RelatedToolRegions
+  toolId={tool.id}
+  currentRegionId={region.id}
+/>
+
+<RelatedRegionTools
+  currentToolId={tool.id}
+  regionId={region.id}
+/>
 
         <div className="mt-10">
           <AffiliateBlock id={`${tool.id}-${region.id}`} />
