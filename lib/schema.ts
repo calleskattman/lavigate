@@ -47,3 +47,34 @@ export function buildIncomeTaxSoftwareSchema(args: {
     },
   };
 }
+
+/**
+ * Build SoftwareApplication schema for a sales tax calculator page.
+ * (Intentionally identical structure to income tax)
+ */
+export function buildSalesTaxSoftwareSchema(args: {
+  content: {
+    h1: string;
+    meta: { description: string };
+  };
+  pageUrl: string;
+}) {
+  const { content, pageUrl } = args;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: content.h1,
+    description: content.meta.description,
+    applicationCategory: "FinanceApplication",
+    operatingSystem: "Web",
+    url: pageUrl,
+    isAccessibleForFree: true,
+    inLanguage: "en",
+    publisher: {
+      "@type": "Organization",
+      name: "Lavigate",
+      url: "https://lavigate.com",
+    },
+  };
+}
