@@ -106,7 +106,7 @@ export default async function ToolRegionPage({
 }: ToolRegionPageProps) {
   const { toolId, regionSlug } = await params;
 
-  const tool = getToolById(toolId as any);
+  const tool = getToolById(toolId as any) as { id: string; basePath: string };
   const region = getRegionBySlug(regionSlug);
   if (!tool || !region) notFound();
 
