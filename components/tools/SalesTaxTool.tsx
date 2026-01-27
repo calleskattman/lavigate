@@ -18,8 +18,12 @@ export default function SalesTaxTool({ config }: SalesTaxToolProps) {
   }, [amountInput]);
 
   const totalRate = useMemo(() => {
-    return config.components.reduce((sum, c) => sum + c.rate, 0);
+    return config.components.reduce(
+      (sum, c) => sum + (c.rate ?? 0),
+      0
+    );
   }, [config.components]);
+  
 
   const taxAmount = useMemo(() => {
     if (amount <= 0) return 0;
@@ -91,7 +95,12 @@ export default function SalesTaxTool({ config }: SalesTaxToolProps) {
                   className="flex items-center justify-between gap-4 text-slate-600"
                 >
                   <dt>{component.name}</dt>
-                  <dd>{formatPercent(component.rate)}</dd>
+                  <dd>
+  {component.rate !== null
+    ? formatPercent(component.rate)
+    : "Varies by location"}
+</dd>
+
                 </div>
               ))}
 
