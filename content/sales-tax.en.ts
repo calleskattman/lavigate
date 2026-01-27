@@ -187,6 +187,42 @@ export const salesTaxSeoContent: Record<string, SalesTaxSeoEntry> = {
   }
 },
 
+"US-FL": {
+  "h1": "Florida Sales Tax Calculator 2026",
+  "intro": "Florida imposes a statewide sales and use tax at a fixed state rate. In addition to the statewide component, many counties levy a discretionary sales surtax that can increase the total rate applicable to a transaction. This content describes the structure of Florida’s sales and use tax system and how statewide and local components interact.",
+  "sections": {
+    "howItWorks": "Florida’s sales and use tax system applies a flat statewide rate to taxable sales and uses. The statewide component is the Florida state sales tax at 6.00%. Under Florida law, many counties may also impose a discretionary sales surtax that applies to most transactions subject to the state tax. Depending on where a transaction is sourced and which county rules apply, the total rate can reflect the combination of the statewide rate and any applicable county surtax.",
+    "examples": "A simplified example can be shown using only the statewide component. If a taxable transaction is subject solely to the Florida state sales tax at 6.00%, the estimated tax is calculated by applying 6.00% to the taxable amount. In practice, the total tax due may be higher when a county discretionary sales surtax applies. Because county surtax rates vary and are not specified here, examples are limited to the statewide component and do not represent a complete combined-rate calculation.",
+    "limitations": "Results are simplified estimates and may not reflect the full sales and use tax that applies to a specific transaction. This content includes the Florida state sales tax at 6.00% and acknowledges that many counties impose a discretionary sales surtax, but it does not include any specific county rates. The applicable combined rate can vary by location, sourcing rules, and transaction details. For official guidance and current information, refer to the Florida Department of Revenue (https://floridarevenue.com)."
+  },
+  "faq": [
+    {
+      "q": "What does the Florida sales tax estimate represent?",
+      "a": "The estimate reflects the statewide component of Florida’s sales and use tax system. The statewide component is the Florida state sales tax at 6.00%. Florida law also allows counties to impose a discretionary sales surtax, which can increase the total rate that applies to a transaction. Because county rates are not specified here, the estimate may differ from the final tax due."
+    },
+    {
+      "q": "Is Florida sales tax a flat-rate system?",
+      "a": "At the state level, Florida applies a flat statewide sales tax rate of 6.00%. This rate does not use brackets or progressive tiers. In addition to the statewide rate, counties may impose discretionary sales surtaxes, which can change the combined rate but do not alter the flat-rate nature of the state component."
+    },
+    {
+      "q": "Why can the total sales tax vary within Florida?",
+      "a": "The total sales and use tax can vary within Florida because many counties impose a discretionary sales surtax in addition to the statewide rate. While the Florida state sales tax is 6.00% statewide, county surtax rates can differ, resulting in different combined rates depending on location and sourcing rules."
+    },
+    {
+      "q": "Does this estimate include county discretionary sales surtaxes?",
+      "a": "This estimate is simplified and is based on the statewide component, which is the Florida state sales tax at 6.00%. Although many counties impose a discretionary sales surtax, specific county rates are not included here. As a result, the estimate should be treated as an approximation rather than a complete combined-rate calculation."
+    },
+    {
+      "q": "What is the difference between sales tax and use tax in Florida?",
+      "a": "Florida’s system is referred to as a sales and use tax because it covers both taxable sales and the use of taxable items when sales tax was not properly collected at the time of purchase. For estimation purposes, the same statewide rate of 6.00% applies to both sales tax and use tax, subject to the rules administered by the Florida Department of Revenue."
+    }
+  ],
+  "meta": {
+    "title": "Florida Sales Tax Calculator 2026 | State Rate 6.00% and County Surtax Context",
+    "description": "Florida Sales Tax Calculator 2026 with a simplified estimate based on the Florida state sales tax at 6.00% and the Florida sales and use tax structure, including county discretionary sales surtaxes.",
+    "canonicalPath": "/tools/sales-tax/florida"
+  }
+},
 
 
 };

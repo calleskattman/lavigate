@@ -84,6 +84,20 @@ export const salesTaxConfigs: Record<RegionId, SalesTaxConfig> = {
   },
 },
 
+"US-FL": {
+  regionId: "US-FL",
+  year: 2026,
+  systemName: "Florida sales and use tax",
+  components: [
+    { name: "Florida state sales tax", rate: 0.06 }
+  ],
+  authority: {
+    name: "Florida Department of Revenue",
+    url: "https://floridarevenue.com/taxes/taxesfees/Pages/sales_tax.aspx",
+    lastVerified: "2026-01-27",
+  },
+},
+
   // Fler regioner läggs till här via SEO Studio / Quick Import
 };
 
