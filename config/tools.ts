@@ -51,6 +51,10 @@ export const tools: ToolDefinition[] = [
     dataKey: "salesTax",
     supportedRegionIds: [
       "US-AL",
+      "US-AR",
+      "US-AZ",
+      "US-CO",
+      "US-CT",
       // fler regioner läggs till via SEO Studio
     ],
   },
