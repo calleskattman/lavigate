@@ -224,5 +224,339 @@ export const salesTaxSeoContent: Record<string, SalesTaxSeoEntry> = {
   }
 },
 
+"US-GA": {
+"h1": "Georgia Sales Tax Calculator 2026",
+"intro": "Georgia sales and use tax consists of a statewide tax and additional local sales taxes. The state imposes a uniform state rate, while local components may apply depending on the location where a transaction is sourced. Combined rates therefore vary across counties and certain sub-county jurisdictions.",
+"sections": {
+"howItWorks": "Georgia sales and use tax is calculated by applying a flat percentage rate to the taxable sales amount. A statewide state sales and use tax rate applies uniformly. Local sales taxes may apply in addition to the state rate, and the applicable combined rate depends on the county or specific sub-county jurisdiction involved. Official rate charts published by the Georgia Department of Revenue are used to determine the combined rate for a given location.",
+"examples": "Example calculations illustrate how a flat percentage rate applies to a taxable amount. The tax is computed by multiplying the taxable sales amount by the applicable combined sales tax rate. Because local sales taxes can apply in addition to the state rate, the combined rate used in an example may differ depending on the jurisdiction where the sale is sourced.",
+"limitations": "Results are simplified estimates and may not match the exact tax due for a specific transaction. Georgia sales and use tax can include local sales taxes in addition to the statewide rate, and combined rates vary by county and certain sub-county jurisdictions. This content does not address transaction-specific sourcing rules, exemptions, or administrative details that can affect the final amount due."
+},
+"faq": [
+{
+"q": "What taxes make up Georgia sales and use tax?",
+"a": "Georgia sales and use tax includes a statewide state sales and use tax and may include additional local sales taxes. Local components can apply depending on the county or specific sub-county jurisdiction where a transaction is sourced, resulting in different combined rates across the state."
+},
+{
+"q": "Why do sales tax rates differ within Georgia?",
+"a": "Sales tax rates can differ within Georgia because local sales taxes may apply in addition to the statewide rate. Counties and certain sub-county jurisdictions can impose approved local taxes, which are added to the state rate to form a combined rate."
+},
+{
+"q": "How is Georgia sales tax calculated?",
+"a": "Georgia sales tax is calculated by multiplying the taxable sales amount by the applicable combined sales tax rate. The combined rate consists of the statewide rate plus any local sales taxes that apply in the relevant jurisdiction."
+},
+{
+"q": "Where can the correct sales tax rate for a location be found?",
+"a": "The applicable combined sales tax rate for a specific location in Georgia is identified using official rate charts published by the Georgia Department of Revenue. These charts list counties and certain sub-county jurisdictions with their corresponding total rates."
+},
+{
+"q": "Are the results exact for every transaction?",
+"a": "No. The results are simplified estimates and may differ from the exact tax due. Local sales taxes, sourcing rules, exemptions, and other administrative factors can affect the final amount owed for a particular transaction."
+}
+],
+"meta": {
+"title": "Georgia Sales Tax Calculator 2026 – State Rate Plus Local Components",
+"description": "Estimate Georgia sales and use tax based on the statewide rate and applicable local sales taxes. Combined rates vary by county and certain sub-county jurisdictions.",
+"canonicalPath": "/tools/sales-tax/georgia"
+}
+},
+
+"US-HI": {
+  "h1": "Hawaii Sales Tax Calculator 2026",
+  "intro": "Hawaii does not impose a traditional retail sales tax. Instead, it applies the General Excise Tax (GET) to business gross income, which is commonly passed on to consumers at the retail level. This calculator provides a simplified estimate based on the General Excise Tax structure in Hawaii, focusing on the statewide retail rate and the county surcharge where applicable.",
+  "sections": {
+    "howItWorks": "Hawaii’s transaction-level tax amount is commonly discussed in terms of the General Excise Tax (GET) that businesses may pass through to customers on retail transactions. For retail transactions, the general excise tax rate is 4.00%. In addition, a county surcharge on the general excise tax may apply, up to a maximum of 0.50%. When both apply, the combined effect is the retail GET rate plus the applicable county surcharge, calculated on the transaction amount as a flat-rate percentage approach rather than a tiered structure. Official guidance is maintained by the Hawaii Department of Taxation (https://tax.hawaii.gov/).",
+    "examples": "Example calculations below illustrate simplified estimates using the retail general excise tax rate of 4.00% and, where applicable, the county surcharge maximum of 0.50%. These examples are presented as rate illustrations only and do not address transaction-specific taxability or business reporting treatment.\n\n- Retail GET only: A transaction amount multiplied by 4.00%.\n- Retail GET plus county surcharge (maximum): A transaction amount multiplied by 4.00%, plus the same transaction amount multiplied by 0.50%.\n\nIn practice, the amount shown to consumers can reflect the GET passed through at the retail level, and the county surcharge component may be included when applicable.",
+    "limitations": "Results are simplified estimates and may not match the amount ultimately reported or collected for a specific transaction. Hawaii’s General Excise Tax (GET) is imposed on business gross income, and the amount passed on to consumers can vary by business practice and transaction context. The county surcharge is described here only up to the maximum of 0.50%, and applicability can differ by county. This content does not address exemptions, deductions, or special classifications, and it does not determine whether a particular transaction is subject to GET or a surcharge. For authoritative interpretation and current administrative rules, consult official guidance."
+  },
+  "faq": [
+    {
+      "q": "Is Hawaii’s “sales tax” actually a retail sales tax?",
+      "a": "Hawaii does not impose a traditional retail sales tax. Instead, Hawaii applies the General Excise Tax (GET), which is a tax on business gross income. At the retail level, businesses commonly pass the GET through to consumers, so it can appear similar to a sales tax on a receipt. Because the legal incidence is on the business rather than the consumer, the way the tax is presented on invoices can differ across sellers."
+    },
+    {
+      "q": "What rates are reflected for retail transactions in Hawaii?",
+      "a": "For retail transactions, the statewide General Excise Tax (GET) rate is 4.00%. In addition, a county surcharge on the general excise tax may apply, and the maximum county surcharge rate is 0.50%. When a surcharge applies, it is an additional flat-rate component alongside the statewide retail GET rate. The combined amount shown for a transaction can therefore reflect both the 4.00% retail GET and an added county surcharge component up to 0.50%, depending on county applicability."
+    },
+    {
+      "q": "How does the county surcharge relate to the statewide GET rate?",
+      "a": "The county surcharge is an additional component that can apply on top of the statewide General Excise Tax (GET) rate for retail transactions. The statewide retail GET rate is 4.00%, and the county surcharge on the general excise tax has a maximum of 0.50%. If applicable, the surcharge is calculated as a flat-rate percentage on the transaction amount, separate from the statewide component."
+    },
+    {
+      "q": "Why might the amount on a receipt differ from a simplified estimate?",
+      "a": "A simplified estimate focuses on the retail General Excise Tax (GET) rate of 4.00% and, where applicable, a county surcharge up to a maximum of 0.50%. However, the GET is imposed on business gross income, and businesses may present or pass through the tax differently. In addition, county surcharge applicability can vary by county, and a simplified estimate may not reflect the specific county treatment for a given transaction."
+    },
+    {
+      "q": "Does this calculation reflect a flat-rate approach or a tiered structure?",
+      "a": "The rates described here are applied as flat-rate percentages for retail transactions. The statewide General Excise Tax (GET) retail rate is 4.00%, and the county surcharge on the general excise tax may apply up to a maximum of 0.50%. A flat-rate approach means the tax amount is computed by applying the relevant percentage rate to the transaction amount, without brackets, tiers, or progressive structures."
+    }
+  ],
+  "meta": {
+    "title": "Hawaii Sales Tax Calculator 2026 | General Excise Tax (GET) Rate Estimate",
+    "description": "Hawaii Sales Tax Calculator 2026 with a simplified estimate based on the General Excise Tax (GET): 4.00% retail rate plus county surcharge up to 0.50% where applicable.",
+    "canonicalPath": "/tools/sales-tax/hawaii"
+  }
+},
+
+"US-ID": {
+  "h1": "Idaho Sales Tax Calculator 2026",
+  "intro": "Idaho administers a Sales and use tax system that applies to taxable sales, leases, and the use of tangible personal property and certain services. This Idaho Sales Tax Calculator 2026 provides a simplified estimate based on the state sales tax rate and the local option sales tax framework described for Idaho. The figures presented are informational and reflect a flat-rate approach rather than any progressive structure.",
+  "sections": {
+    "howItWorks": "Idaho’s Sales and use tax includes a state sales tax and a complementary use tax that applies when taxable items are used in Idaho under conditions where sales tax was not applied. The state sales tax component is 6.00%. Idaho also provides for a local option sales tax in resort cities, listed here as 0.00%. In a flat-rate system, the estimated tax is determined by applying the applicable rate to the taxable amount, without brackets, tiers, or progressive calculations. For official guidance and definitions of taxable transactions and related administration, the Idaho State Tax Commission (https://tax.idaho.gov/) is the authoritative source.",
+    "examples": "Example calculations below illustrate flat-rate estimates using the stated components. A taxable amount subject only to the state component is estimated by applying 6.00% to the taxable amount. If a transaction is subject to a local option sales tax in a resort city as listed here, the local option component is 0.00%, so the combined rate reflected by these facts remains aligned with the state component. These examples are simplified illustrations of rate application and do not address transaction-specific taxability determinations or documentation requirements.",
+    "limitations": "Results are simplified estimates and may not reflect the tax treatment of a specific transaction. Taxability can depend on the nature of the item or service, the circumstances of the sale or lease, and whether sales tax or use tax applies. The local option sales tax component referenced here is limited to resort cities and is shown as 0.00% in the provided facts; other local taxes are not described in these facts and are not included. This content does not describe exemptions, deductions, or any progressive structure, and it does not replace official guidance or a formal determination."
+  },
+  "faq": [
+    {
+      "q": "What does “Sales and use tax” mean in Idaho?",
+      "a": "In Idaho, “Sales and use tax” refers to a coordinated system that includes a state sales tax and a complementary use tax. The sales tax generally applies to taxable sales and leases, while the use tax addresses taxable use of items in Idaho when sales tax was not applied in the manner required. Both parts operate on a flat-rate basis for estimation purposes, applying the relevant rate to the taxable amount rather than using brackets or tiers."
+    },
+    {
+      "q": "What rate is used for the Idaho state sales tax component?",
+      "a": "The state component listed for Idaho is a state sales tax at 6.00%. In a flat-rate estimate, that rate is applied to the taxable amount to determine the estimated tax attributable to the state portion. This description is limited to the rate component provided and does not determine whether a particular sale, lease, or use is taxable. Transaction-specific taxability and reporting requirements can vary based on the facts of the transaction."
+    },
+    {
+      "q": "How is the local option sales tax treated for resort cities in Idaho?",
+      "a": "The facts provided include a local option sales tax (resort cities) at 0.00%. When a local option component is 0.00%, it does not add to the estimated tax beyond the state component for purposes of this simplified estimate. This description is limited to the resort city local option component as stated and does not address any other local taxes, since no other local components are included in the provided facts."
+    },
+    {
+      "q": "Why might use tax apply instead of sales tax in Idaho?",
+      "a": "Idaho’s system includes a complementary use tax to address taxable situations where sales tax was not applied to a transaction in the expected way, but the taxable item is used in Idaho. Conceptually, this helps align tax treatment between purchases taxed at the point of sale and taxable items brought into use in Idaho. For estimation, the same flat-rate approach is applied to the taxable amount using the relevant rate components provided, without progressive calculations."
+    },
+    {
+      "q": "Are the calculator results final for filing and payment purposes?",
+      "a": "No. The results are simplified estimates based on the rate components provided and a flat-rate calculation approach. They do not determine whether a specific item or service is taxable, whether sales tax or use tax applies, or whether documentation or special reporting rules affect the outcome. Because transaction details can change the tax treatment, an estimate may differ from the amount due under official rules and administrative guidance."
+    }
+  ],
+  "meta": {
+    "title": "Idaho Sales Tax Calculator 2026 — State Rate 6.00% and Resort City Local Option 0.00%",
+    "description": "Idaho Sales Tax Calculator 2026 with a simplified estimate based on Idaho Sales and use tax components: state sales tax 6.00% and resort city local option sales tax 0.00%. Results are simplified estimates.",
+    "canonicalPath": "/tools/sales-tax/idaho"
+  }
+},
+
+"US-IN": {
+  "h1": "Indiana Sales Tax Calculator 2026",
+  "intro": "Indiana applies a single statewide sales tax rate to retail transactions, with no local sales tax components. The Indiana Sales Tax Calculator 2026 provides a simplified estimate of sales tax based on Indiana’s state gross retail tax structure and the statewide rate.",
+  "sections": {
+    "howItWorks": "Indiana’s sales tax is imposed under the State gross retail tax and is commonly referred to as sales tax. The tax is calculated as a flat-rate percentage of the retail transaction amount at the statewide rate of 7.00%. Because Indiana’s system is statewide and does not include local sales tax components, the same rate applies regardless of location within Indiana. For official guidance and definitions, the Indiana Department of Revenue (https://www.in.gov/dor/) is the authoritative source.",
+    "examples": "A retail transaction in Indiana is subject to the statewide sales tax rate of 7.00% under the State gross retail tax. In a flat-rate system, the tax amount is determined by applying the same percentage to the transaction amount. The total due for a transaction is the transaction amount plus the calculated sales tax. Because Indiana has no local sales tax components, the calculation does not change based on county or city location within the state.",
+    "limitations": "Results are simplified estimates and may not reflect every detail that can affect a specific transaction under Indiana law. This content describes a flat-rate statewide approach at 7.00% and does not account for transaction-specific factors that may apply in practice. The estimate is intended for general informational purposes and should not be treated as a final tax determination or legal advice. For definitive treatment of a particular transaction, consult official guidance and applicable rules."
+  },
+  "faq": [
+    {
+      "q": "What sales tax rate does Indiana apply to retail transactions?",
+      "a": "Indiana imposes a single statewide sales tax rate on retail transactions under the State gross retail tax. The statewide rate is 7.00%. This is a flat-rate approach, meaning the same percentage applies to the retail transaction amount rather than changing based on thresholds or tiers. Because the system is statewide, the rate does not vary by location within Indiana under the facts described here."
+    },
+    {
+      "q": "Does Indiana have county, city, or district sales taxes in addition to the state rate?",
+      "a": "Under the facts provided, Indiana’s sales tax system is described as a single statewide rate with no local sales tax components. That means there are no separate county, city, or district sales taxes included in this description. As a result, the sales tax calculation is based on the statewide rate of 7.00% and does not change based on where the transaction occurs within Indiana."
+    },
+    {
+      "q": "How is sales tax calculated in a flat-rate system like Indiana’s?",
+      "a": "In a flat-rate sales tax system, the tax is computed by applying one fixed percentage to the retail transaction amount. For Indiana, the statewide rate is 7.00% under the State gross retail tax. The sales tax amount is the transaction amount multiplied by the rate, and the total due is the transaction amount plus that tax. This approach does not involve brackets, tiers, or progressive rate structures."
+    },
+    {
+      "q": "What does “State gross retail tax” mean in Indiana?",
+      "a": "“State gross retail tax” is the system name for Indiana’s statewide sales tax framework as described in the provided facts. It refers to the tax imposed on retail transactions in the state and is commonly called sales tax. The key operational feature in this summary is that it applies at a single statewide rate of 7.00% with no local sales tax components. The tax is calculated as a flat-rate percentage of the retail transaction amount."
+    },
+    {
+      "q": "Are the calculator results final and official for Indiana sales tax?",
+      "a": "No. Any calculator-style result based on the information summarized here is a simplified estimate. While the statewide rate is 7.00% under the State gross retail tax and the system is described as having no local sales tax components, a specific transaction can involve details not represented in a simplified estimate. For an official determination, authoritative guidance and applicable rules should be consulted rather than relying on an estimate alone."
+    }
+  ],
+  "meta": {
+    "title": "Indiana Sales Tax Calculator 2026 | 7.00% Statewide Rate Estimate",
+    "description": "Indiana Sales Tax Calculator 2026 for the State gross retail tax. Provides a simplified estimate using the statewide 7.00% sales tax rate with no local sales tax components.",
+    "canonicalPath": "/tools/sales-tax/indiana"
+  }
+},
+
+"US-KS": {
+  "h1": "Kansas Sales Tax Calculator 2026",
+  "intro": "Kansas applies a flat-rate State Retailers Sales Tax at 6.50% at the state level. The Kansas Sales Tax Calculator 2026 provides a simplified estimate of sales tax for Kansas transactions based on the state rate, presented for the Kansas tax year 2026.",
+  "sections": {
+    "howItWorks": "Kansas sales tax is calculated as a flat percentage of the taxable sales amount under the State Retailers Sales Tax system. At the state level, the rate is 6.50%, so the estimated tax amount is the sales amount multiplied by 6.50%. The total is the sales amount plus the estimated tax. Kansas also has a compensating use tax at the state level, and additional local retailers sales taxes and local use taxes imposed by counties and cities at varying rates; those local rates are not reflected in the state-only estimate described here. Official guidance is provided by the Kansas Department of Revenue (https://www.ksrevenue.gov).",
+    "examples": "Example 1: If a taxable sale amount is multiplied by 6.50%, the result is the estimated Kansas state sales tax under the State Retailers Sales Tax. The combined amount is the original sale amount plus that estimated tax.\n\nExample 2: For a transaction that may be subject to Kansas compensating use tax at the state level, the same 6.50% state rate can be used to form a simplified state-level estimate when the state rate is the only rate being considered.\n\nExample 3: When a transaction occurs in a location where counties and cities impose additional local retailers sales taxes or local use taxes at varying rates, a state-only estimate based on 6.50% reflects only the Kansas state component and does not represent the full combined rate that may apply.",
+    "limitations": "Results are simplified estimates and may not match the final tax due. This estimate reflects only the Kansas state-level State Retailers Sales Tax rate of 6.50% and does not include additional local retailers sales taxes or local use taxes imposed by counties and cities at varying rates. It also does not determine whether a particular transaction is subject to sales tax or compensating use tax, and it does not account for jurisdiction-specific rules that can affect the final amount collected or remitted. Consider official guidance for authoritative determinations."
+  },
+  "faq": [
+    {
+      "q": "What does the Kansas Sales Tax Calculator 2026 estimate?",
+      "a": "The Kansas Sales Tax Calculator 2026 provides a simplified estimate of Kansas state-level sales tax based on the State Retailers Sales Tax rate of 6.50%. It treats sales tax as a flat-rate percentage applied to a taxable sales amount, producing an estimated tax amount and an estimated total. The estimate is limited to the state component and does not incorporate additional local retailers sales taxes or local use taxes that may be imposed by counties and cities at varying rates. As a result, the estimate may differ from the final amount due."
+    },
+    {
+      "q": "Is Kansas sales tax calculated with brackets or tiers?",
+      "a": "No. Kansas sales tax, as reflected in the state-level State Retailers Sales Tax rate provided here, is flat-rate based. A flat-rate structure means the same percentage rate applies to the taxable sales amount, rather than changing across brackets or tiers. In this context, the state rate is 6.50%, and the estimated state tax is computed by applying 6.50% to the taxable sales amount. This explanation is limited to the state component and does not address additional local retailers sales taxes or local use taxes imposed by counties and cities at varying rates."
+    },
+    {
+      "q": "How do local taxes affect a Kansas sales tax estimate?",
+      "a": "Kansas can have additional local retailers sales taxes and local use taxes imposed by counties and cities at varying rates. A state-only estimate based on the 6.50% State Retailers Sales Tax rate reflects only the Kansas state component and does not represent the full combined rate that may apply in a specific location. Because local rates vary by jurisdiction, the final tax collected on a transaction can be higher than a state-only estimate. Any estimate that excludes local components should be treated as a simplified estimate rather than a final determination."
+    },
+    {
+      "q": "What is the difference between Kansas sales tax and compensating use tax?",
+      "a": "Kansas imposes a state retailers sales tax and a compensating use tax at the state level. In general terms, sales tax is associated with taxable retail sales, while use tax is associated with taxable use of items in situations where sales tax may not have been collected at the time of purchase. This page’s estimate focuses on applying the state rate of 6.50% as a simplified calculation approach for the state component. It does not determine which tax applies to a specific transaction and does not include local use taxes imposed by counties and cities at varying rates."
+    },
+    {
+      "q": "Why might an estimated amount differ from the tax actually due?",
+      "a": "An estimated amount can differ from the tax actually due because this content describes a simplified estimate based on the Kansas state-level State Retailers Sales Tax rate of 6.50% only. Kansas also has additional local retailers sales taxes and local use taxes imposed by counties and cities at varying rates, which can change the combined rate applied to a transaction. In addition, whether a transaction is subject to sales tax or compensating use tax depends on transaction-specific facts and applicable rules. For these reasons, the estimate should not be treated as a final tax calculation."
+    }
+  ],
+  "meta": {
+    "title": "Kansas Sales Tax Calculator 2026 | State Rate Estimate at 6.50%",
+    "description": "Kansas Sales Tax Calculator 2026 for a simplified state-level estimate based on the Kansas State Retailers Sales Tax rate of 6.50%. Flat-rate calculation; local county and city taxes may apply separately.",
+    "canonicalPath": "/tools/sales-tax/kansas"
+  }
+},
+
+"US-LA": {
+  "h1": "Louisiana Sales Tax Calculator 2026",
+  "intro": "Louisiana imposes a State general sales and use tax on taxable sales and uses of tangible personal property and certain services at a flat statewide rate. This calculator provides a simplified estimate based on the standard state-level rate only.",
+  "sections": {
+    "howItWorks": "Louisiana’s State general sales and use tax applies a flat statewide rate to the taxable amount of a transaction. Under this simplified approach, the estimated tax is calculated by applying the state sales tax rate of 5.00% to the taxable sales price or taxable use amount. This content reflects the standard state-level rate only and does not address any other potential tax layers or transaction-specific rules. For official guidance and publications, refer to the Louisiana Department of Revenue (https://revenue.louisiana.gov).",
+    "examples": "A simplified estimate applies the 5.00% state sales tax rate to the taxable amount. For example, if a transaction has a taxable amount of 100, the estimated state sales tax would be 5.00 and the total would be 105. This example illustrates the flat-rate structure at the state level and is limited to the standard statewide rate described here.",
+    "limitations": "Results are simplified estimates based only on the standard Louisiana state-level sales tax rate of 5.00%. This summary does not account for transaction-specific taxability determinations, sourcing rules, or other state-administered sales and use tax considerations that may affect whether an amount is taxable or how it is measured. It also does not represent a filing calculation or an official determination of tax due. Official rules and interpretations may differ from simplified estimates."
+  },
+  "faq": [
+    {
+      "q": "What rate does this Louisiana sales tax estimate reflect?",
+      "a": "This estimate reflects only the standard Louisiana state-level sales and use tax rate shown in the provided facts: state sales tax at 5.00%. It is a flat-rate calculation applied to the taxable amount, consistent with a statewide general sales and use tax structure. It does not represent a complete tax determination for a specific transaction."
+    },
+    {
+      "q": "What does “State general sales and use tax” mean in this context?",
+      "a": "“State general sales and use tax” refers to Louisiana’s statewide tax framework that applies to taxable sales and taxable uses of tangible personal property and certain services. In this context, the estimate is limited to applying the flat statewide rate of 5.00% to a taxable amount."
+    },
+    {
+      "q": "Does the estimate determine whether a transaction is taxable in Louisiana?",
+      "a": "No. The estimate assumes a taxable amount is already identified and then applies the flat statewide rate of 5.00% to that amount. Whether a specific sale or use is taxable depends on how Louisiana law and administrative guidance classify the transaction."
+    },
+    {
+      "q": "Is this an official calculation of Louisiana sales tax due?",
+      "a": "No. The result is a simplified estimate based on the standard state-level rate of 5.00% and is not an official determination of tax due. Official liability can depend on transaction-specific rules and measurements."
+    },
+    {
+      "q": "Why might an estimate differ from the amount ultimately owed?",
+      "a": "An estimate can differ because it applies only the flat statewide rate of 5.00% to a taxable amount and does not incorporate transaction-specific rules that can affect how the taxable base is defined or measured."
+    }
+  ],
+  "meta": {
+    "title": "Louisiana Sales Tax Calculator 2026 — State Rate 5.00% Estimate",
+    "description": "Louisiana Sales Tax Calculator 2026 with a simplified estimate based on the standard Louisiana state-level sales and use tax rate of 5.00%.",
+    "canonicalPath": "/tools/sales-tax/louisiana"
+  }
+},
+
+"US-MD": {
+  "h1": "Maryland Sales Tax Calculator 2025",
+  "intro": "Maryland state sales tax is administered as the Maryland sales and use tax at a uniform statewide rate. This page provides a simplified estimate using the general 6.00% rate and does not add separate county, city, or district rates for a general retail sales tax.",
+  "sections": {
+    "howItWorks": "Maryland applies a flat statewide sales and use tax rate of 6.00% to taxable amounts. Under a flat-rate structure, the tax is calculated by multiplying the taxable amount by the rate, so the same percentage applies regardless of transaction size. This simplified estimate reflects the statewide general rate and does not incorporate transaction-specific rules or exceptions. Administration and official guidance are provided by the Comptroller of Maryland (https://www.marylandtaxes.gov).",
+    "examples": "If a purchase is taxable at the general 6.00% rate, the estimated tax is 6.00% of the taxable amount. The estimated total due is the taxable amount plus the calculated tax. Because the rate is flat, changing the taxable amount changes the tax proportionally.",
+    "limitations": "Results are simplified estimates and may not reflect every rule that can apply to a specific transaction. This estimate is limited to applying the general statewide 6.00% sales and use tax rate and does not attempt to model product-specific rates, exemptions, thresholds, special categories, or other transaction-level determinations. Taxability depends on the facts of the transaction and official guidance. For authoritative treatment of Maryland sales and use tax rules, consult official Comptroller publications and determinations."
+  },
+  "faq": [
+    {
+      "q": "What rate does this Maryland sales tax estimate apply?",
+      "a": "This estimate applies the general statewide Maryland sales and use tax rate of 6.00%. It is a simplified calculation that multiplies the taxable amount by the statewide rate."
+    },
+    {
+      "q": "Is Maryland sales tax progressive or tiered based on the transaction amount?",
+      "a": "No. The general Maryland sales and use tax rate is treated here as a flat statewide rate. A flat rate means the same percentage applies to the taxable amount, regardless of the size of the transaction."
+    },
+    {
+      "q": "Does this estimate include county or city sales taxes in Maryland?",
+      "a": "No. This estimate applies only the statewide general rate for the Maryland sales and use tax and does not add separate county, city, or district rates for a general retail sales tax."
+    },
+    {
+      "q": "What is the difference between sales tax and use tax in Maryland for this estimate?",
+      "a": "This page refers to Maryland’s “sales and use tax” as a single statewide system with a general rate of 6.00%. The estimate applies the statewide rate and does not classify a transaction beyond that simplified approach."
+    },
+    {
+      "q": "Why can the calculated amount differ from an official determination?",
+      "a": "The estimate is intentionally narrow and applies only the general statewide rate. Official outcomes can depend on transaction-specific facts, taxability rules, and official interpretations that are not modeled here. For a definitive determination, consult official Comptroller guidance."
+    }
+  ],
+  "meta": {
+    "title": "Maryland Sales Tax Calculator 2025 | Statewide 6.00% Rate Estimate",
+    "description": "Maryland Sales Tax Calculator 2025 for simplified estimates based on the Maryland sales and use tax statewide rate of 6.00%. Flat-rate calculation overview and key limitations.",
+    "canonicalPath": "/tools/sales-tax/maryland"
+  }
+},
+
+"US-MA": {
+  "h1": "Massachusetts Sales Tax Calculator 2025",
+  "intro": "Massachusetts imposes a uniform statewide sales and use tax rate. The Massachusetts Sales Tax Calculator 2025 provides a simplified estimate for Massachusetts transactions based on the Massachusetts sales and use tax at 6.25%.",
+  "sections": {
+    "howItWorks": "Massachusetts sales and use tax is applied as a flat-rate percentage to the taxable sales price. Under the Massachusetts sales and use tax system, the statewide rate is 6.25%, and the calculation is a straightforward percentage-based amount derived from the taxable total. Official sources do not authorize cities or towns to impose a general local sales tax, so the estimate focuses on the statewide rate rather than varying local general sales tax rates. Administration and guidance are provided by the Massachusetts Department of Revenue (https://www.mass.gov/orgs/massachusetts-department-of-revenue).",
+    "examples": "The following examples illustrate the flat-rate structure of the Massachusetts sales and use tax at 6.25%.\n\nExample 1: If a taxable amount is 100, the estimated sales tax is 6.25, and the estimated total is 106.25.\n\nExample 2: If a taxable amount is 1, the estimated sales tax is 0.0625, and the estimated total is 1.0625.\n\nThese examples reflect a uniform statewide rate and do not incorporate transaction-specific rules that may affect whether an amount is taxable.",
+    "limitations": "Results are simplified estimates and may not match a final tax determination for a specific transaction. This estimate reflects only the Massachusetts state sales and use tax rate of 6.25% and does not evaluate whether a particular item, service, or charge is taxable under Massachusetts rules. It also does not account for transaction types that may be subject to separate local option excise taxes, since those are not a general local sales tax and can depend on the specific nature of the transaction. Rounding practices and tax base definitions can also affect the final amount reported or remitted."
+  },
+  "faq": [
+    {
+      "q": "What rate does Massachusetts apply for general sales and use tax in this estimate?",
+      "a": "This estimate applies the Massachusetts state sales and use tax at 6.25% as a flat-rate percentage of the taxable sales price. Massachusetts is described as having a uniform statewide rate administered at the state level. Because official sources do not authorize cities or towns to impose a general local sales tax, the estimate does not vary by municipality for general sales tax purposes. The result is a percentage-based calculation that reflects the statewide rate only."
+    },
+    {
+      "q": "Does Massachusetts have a general city or town sales tax that changes the rate?",
+      "a": "Official sources do not authorize cities or towns in Massachusetts to impose a general local sales tax. As a result, a general sales tax estimate for Massachusetts is based on the statewide Massachusetts sales and use tax rate of 6.25% rather than a combination of state and general local rates. This does not mean every transaction is treated the same for taxability, but it does mean the general rate itself is uniform statewide for the purposes of this simplified estimate."
+    },
+    {
+      "q": "What is the difference between sales tax and use tax in Massachusetts?",
+      "a": "Massachusetts refers to a combined sales and use tax system, commonly described as the Massachusetts sales and use tax. In general terms, sales tax is associated with taxable retail sales, while use tax is associated with taxable use, storage, or consumption when sales tax was not collected at the time of purchase. This estimate applies the same statewide rate of 6.25% as a flat-rate calculation on the taxable amount, without determining whether a specific transaction falls under sales tax or use tax treatment."
+    },
+    {
+      "q": "Why might an estimated amount differ from the tax due on a specific transaction?",
+      "a": "An estimate can differ from the tax due because this calculation is simplified and does not evaluate transaction-specific taxability rules, tax base definitions, or how particular charges are treated under Massachusetts guidance. It also does not incorporate separate local option excise taxes that may apply to certain transaction types, since those are not a general local sales tax and are not reflected in the statewide 6.25% sales and use tax estimate. In addition, rounding practices can affect the final amount reported or remitted."
+    },
+    {
+      "q": "Does the estimate include special local option excise taxes?",
+      "a": "No. The estimate is limited to the Massachusetts state sales and use tax at 6.25% and does not include local option excise taxes that may apply to specific transaction types. Official sources indicate that cities or towns are not authorized to impose a general local sales tax, but certain local option excise taxes may exist for particular categories of transactions. Because those taxes depend on the transaction type and are not part of the general statewide sales tax rate, they are not included in this simplified estimate."
+    }
+  ],
+  "meta": {
+    "title": "Massachusetts Sales Tax Calculator 2025 | 6.25% Statewide Sales And Use Tax Estimate",
+    "description": "Massachusetts Sales Tax Calculator 2025 for a simplified estimate based on the Massachusetts state sales and use tax rate of 6.25% and a uniform statewide flat-rate structure.",
+    "canonicalPath": "/tools/sales-tax/massachusetts"
+  }
+},
+
+"US-MI": {
+  "h1": "Michigan Sales Tax Calculator 2025",
+  "intro": "Michigan imposes a uniform, statewide sales and use tax system administered at the state level. The Michigan Sales Tax Calculator 2025 provides a simplified estimate based on Michigan’s flat-rate approach and the statewide rate in effect for 2025.",
+  "sections": {
+    "howItWorks": "Michigan sales and use taxes apply a single statewide rate to taxable transactions, with the general sales tax rate applied uniformly across the state. Official guidance indicates that local jurisdictions are not permitted to impose a general sales or use tax, so the calculation is based on the Michigan state sales tax at 6.00%. In simplified terms, the estimated sales tax amount is the purchase amount multiplied by 6.00%, and the estimated total is the purchase amount plus that tax amount. Administration and published guidance are provided by the Michigan Department of Treasury (https://www.michigan.gov/taxes).",
+    "examples": "Because Michigan’s general sales tax rate is 6.00% statewide, the estimated tax is a flat-rate calculation based on that single rate. For example, if a taxable purchase amount is represented as an amount A, the estimated sales tax is A × 6.00%, and the estimated total is A + (A × 6.00%). This reflects the statewide structure described for Michigan sales and use taxes, where the general rate is applied uniformly rather than varying by local jurisdiction.",
+    "limitations": "Results are simplified estimates and may not reflect every detail that can affect a real-world sales or use tax outcome. This content describes Michigan’s general statewide rate structure for Michigan sales and use taxes and does not address transaction-specific determinations of taxability, documentation requirements, or other administrative considerations. The estimate is based on the Michigan state sales tax at 6.00% and assumes a flat-rate application consistent with statewide administration and the stated limitation on local general sales or use taxes."
+  },
+  "faq": [
+    {
+      "q": "What rate does the Michigan Sales Tax Calculator 2025 apply?",
+      "a": "The Michigan Sales Tax Calculator 2025 applies the Michigan state sales tax at 6.00%. Michigan’s general sales tax rate is applied uniformly statewide as part of Michigan sales and use taxes administered at the state level. Official sources also state that local jurisdictions are not permitted to impose a general sales or use tax, so the estimate is not designed to vary by city, county, or district. The result is a simplified estimate based on a single statewide rate."
+    },
+    {
+      "q": "Does Michigan have local general sales tax rates that change the estimate?",
+      "a": "For Michigan’s general sales and use tax structure, official sources state that local jurisdictions are not permitted to impose a general sales or use tax. As a result, the estimate is based on the Michigan state sales tax at 6.00% rather than a combination of state and local general rates. This keeps the calculation flat-rate and statewide for the general rate described here. Results remain simplified estimates and may not reflect transaction-specific taxability determinations."
+    },
+    {
+      "q": "What is the difference between sales tax and use tax in Michigan’s system?",
+      "a": "Michigan sales and use taxes are administered at the state level and are commonly discussed together because they address tax on taxable purchases in different circumstances. Sales tax generally applies to taxable retail sales, while use tax generally applies when taxable items are used, stored, or consumed in Michigan in situations where sales tax was not collected at the time of purchase. This estimate focuses on the statewide rate structure and uses the Michigan state sales tax at 6.00% as a simplified basis."
+    },
+    {
+      "q": "Is the calculator result an official tax amount?",
+      "a": "No. The result is a simplified estimate based on the statewide Michigan state sales tax at 6.00% and the general description of Michigan’s flat-rate, statewide approach. Actual tax outcomes can depend on whether a specific transaction is taxable under applicable rules and how the transaction is documented and reported. The estimate is intended to reflect the general statewide rate behavior described for Michigan sales and use taxes, not to replace official determinations or filing calculations."
+    },
+    {
+      "q": "Why is the estimate described as flat-rate for Michigan?",
+      "a": "Michigan’s general sales tax rate is applied uniformly statewide, and official sources state that local jurisdictions are not permitted to impose a general sales or use tax. That structure supports a flat-rate estimate based on the Michigan state sales tax at 6.00% rather than a rate that changes by locality. The estimate therefore reflects a single statewide rate applied to the taxable amount. Results are simplified estimates and may not capture transaction-specific taxability or reporting details."
+    }
+  ],
+  "meta": {
+    "title": "Michigan Sales Tax Calculator 2025 | 6.00% Statewide Rate Estimate",
+    "description": "Michigan Sales Tax Calculator 2025 for a simplified estimate based on Michigan’s flat-rate statewide sales and use tax system and the 6.00% Michigan state sales tax.",
+    "canonicalPath": "/tools/sales-tax/michigan"
+  }
+},
+
+
 
 };

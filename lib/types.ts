@@ -68,7 +68,7 @@ export type PageProps = {
 
 export type SalesTaxComponent = {
   name: string; // e.g. "California state sales tax"
-  rate: number; // decimal, e.g. 0.0725
+  rate: number | null; // null = exists but varies by location
 };
 
 export type SalesTaxConfig = {

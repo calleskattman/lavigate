@@ -98,6 +98,135 @@ export const salesTaxConfigs: Record<RegionId, SalesTaxConfig> = {
   },
 },
 
+"US-GA": {
+regionId: "US-GA",
+year: 2026,
+systemName: "Georgia sales and use tax",
+components: [
+{ name: "State sales and use tax", rate: 0.04 },
+{ name: "Local sales taxes", rate: null }
+],
+authority: {
+name: "Georgia Department of Revenue",
+url: "https://dor.georgia.gov/taxes/sales-use-tax",
+lastVerified: "2026-01-01",
+},
+},
+
+"US-HI": {
+  regionId: "US-HI",
+  year: 2026,
+  systemName: "General Excise Tax (GET)",
+  components: [
+    { name: "General excise tax – retail transactions", rate: 0.04 },
+    { name: "County surcharge on general excise tax (maximum)", rate: 0.005 }
+  ],
+  authority: {
+    name: "Hawaii Department of Taxation",
+    url: "https://tax.hawaii.gov/",
+    lastVerified: "2026-01-27",
+  },
+},
+
+"US-ID": {
+  regionId: "US-ID",
+  year: 2026,
+  systemName: "Sales and use tax",
+  components: [
+    { name: "State sales tax", rate: 0.06 },
+    { name: "Local option sales tax (resort cities)", rate: 0 }
+  ],
+  authority: {
+    name: "Idaho State Tax Commission",
+    url: "https://tax.idaho.gov/",
+    lastVerified: "2026-01-27",
+  },
+},
+
+"US-IN": {
+  regionId: "US-IN",
+  year: 2026,
+  systemName: "State gross retail tax",
+  components: [
+    { name: "State sales tax", rate: 0.07 }
+  ],
+  authority: {
+    name: "Indiana Department of Revenue",
+    url: "https://www.in.gov/dor/",
+    lastVerified: "2026-01-27",
+  },
+},
+
+"US-KS": {
+  regionId: "US-KS",
+  year: 2026,
+  systemName: "State Retailers Sales Tax",
+  components: [
+    { name: "State sales tax", rate: 0.065 }
+  ],
+  authority: {
+    name: "Kansas Department of Revenue",
+    url: "https://www.ksrevenue.gov",
+    lastVerified: "2026-01-27",
+  },
+},
+
+"US-LA": {
+  regionId: "US-LA",
+  year: 2026,
+  systemName: "State general sales and use tax",
+  components: [
+    { name: "State sales tax", rate: 0.05 }
+  ],
+  authority: {
+    name: "Louisiana Department of Revenue",
+    url: "https://revenue.louisiana.gov",
+    lastVerified: "2026-01-27",
+  },
+},
+
+"US-MD": {
+  regionId: "US-MD",
+  year: 2025,
+  systemName: "Maryland sales and use tax",
+  components: [{ name: "Maryland state sales and use tax", rate: 0.06 }],
+  authority: {
+    name: "Comptroller of Maryland",
+    url: "https://www.marylandtaxes.gov",
+    lastVerified: "2025-03-01",
+  },
+},
+
+"US-MA": {
+  regionId: "US-MA",
+  year: 2025,
+  systemName: "Massachusetts sales and use tax",
+  components: [
+    { name: "Massachusetts state sales and use tax", rate: 0.0625 }
+  ],
+  authority: {
+    name: "Massachusetts Department of Revenue",
+    url: "https://www.mass.gov/orgs/massachusetts-department-of-revenue",
+    lastVerified: "2025-03-01",
+  },
+},
+
+"US-MI": {
+  regionId: "US-MI",
+  year: 2025,
+  systemName: "Michigan sales and use taxes",
+  components: [
+    { name: "Michigan state sales tax", rate: 0.06 }
+  ],
+  authority: {
+    name: "Michigan Department of Treasury",
+    url: "https://www.michigan.gov/taxes",
+    lastVerified: "2025-03-01",
+  },
+},
+
+
+
   // Fler regioner läggs till här via SEO Studio / Quick Import
 };
 
