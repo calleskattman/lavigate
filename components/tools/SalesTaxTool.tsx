@@ -39,8 +39,11 @@ export default function SalesTaxTool({ config }: SalesTaxToolProps) {
       maximumFractionDigits: 2,
     });
 
-  const formatPercent = (value: number) =>
-    `${(value * 100).toFixed(2)}%`;
+    const formatPercent = (value: number) =>
+      `${(value * 100).toLocaleString("en-US", {
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 3,
+      })}%`;    
 
   return (
     <div className="grid grid-cols-1 gap-6 md:grid-cols-2">

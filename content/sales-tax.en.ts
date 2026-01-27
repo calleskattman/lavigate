@@ -557,6 +557,122 @@ export const salesTaxSeoContent: Record<string, SalesTaxSeoEntry> = {
   }
 },
 
+"US-MN": {
+h1: "Minnesota Sales Tax Calculator 2025",
+intro:
+"Minnesota applies sales and use taxes under a unified statewide system that covers taxable retail sales and certain uses of tangible personal property. This content describes how the general Minnesota sales and use tax structure works and provides a simplified estimate based on the state-level tax components.",
+
+sections: {
+howItWorks:
+"Minnesota sales and use taxes are imposed under Chapter 297A of the Minnesota Statutes. At the state level, the system consists of a base state sales tax rate of 6.50% and an additional state sales tax rate of 0.375%, which together form a combined state-level rate of 6.875%. Minnesota law also authorizes certain political subdivisions to impose general local sales and use taxes under specific statutory provisions. These local taxes, where applicable, are collected alongside the state tax and can increase the total rate depending on the transaction’s location. This simplified estimate reflects only the state-level rate components. Administration and guidance are provided by the Minnesota Department of Revenue (https://www.revenue.state.mn.us/sales-and-use-tax).",
+
+examples:
+"If a transaction is subject to the Minnesota state sales tax at 6.50% and the additional state sales tax at 0.375%, the combined state-level rate applied in this estimate is 6.875%. The estimated tax amount is calculated by applying this combined rate to the taxable amount. Local sales and use taxes, where applicable, are not included in this simplified example and may result in a higher total tax depending on the specific location.",
+
+limitations:
+"Results are simplified estimates and may not match the tax due on a specific transaction. This estimate applies only the general Minnesota state-level sales and use tax rates and does not evaluate whether a transaction is taxable under Minnesota law. It does not account for local sales and use taxes authorized for certain jurisdictions, differences in tax base definitions, sourcing rules, exemptions, or other transaction-specific factors that can affect the final tax amount."
+},
+
+faq: [
+{
+q: "What state-level rates are included in the Minnesota sales tax estimate?",
+a: "The estimate includes the Minnesota state sales tax rate of 6.50% and the additional state sales tax rate of 0.375%. Together, these form a combined state-level rate of 6.875% that is applied in this simplified calculation."
+},
+{
+q: "Does Minnesota have local sales and use taxes?",
+a: "Yes. Minnesota law authorizes certain political subdivisions to impose general local sales and use taxes under specific statutory provisions. These local taxes can increase the total rate depending on location and are not included in this simplified state-level estimate."
+},
+{
+q: "What is the difference between sales tax and use tax in Minnesota?",
+a: "Sales tax generally applies when tax is collected on a taxable retail sale in Minnesota, while use tax generally applies when sales tax was not collected at the time of purchase and the item is used, stored, or consumed in Minnesota. Both are administered together as part of Minnesota’s sales and use tax system."
+},
+{
+q: "Why might the estimated amount differ from the actual tax due?",
+a: "The estimate is simplified and does not account for local sales and use taxes, transaction-specific taxability rules, exemptions, or sourcing requirements. Actual tax due can vary depending on location, the nature of the transaction, and official guidance from the Minnesota Department of Revenue."
+}
+],
+
+meta: {
+title: "Minnesota Sales Tax Calculator 2025 | State-Level Rate Estimate",
+description:
+"Minnesota sales tax calculator providing a simplified estimate based on the Minnesota state sales and use tax system and the combined state-level rate.",
+canonicalPath: "/tools/sales-tax/minnesota"
+}
+},
+
+"US-MO": {
+  "h1": "Missouri Sales Tax Calculator 2026",
+  "intro": "Missouri imposes a statewide sales and use tax at a flat state rate. This content provides a simplified estimate based on the state component of Missouri Sales/Use Tax and explains how statewide and local components interact.",
+  "sections": {
+    "howItWorks": "Missouri Sales/Use Tax applies a flat statewide rate to taxable retail sales and taxable uses. The state component is the Missouri state sales tax at 4.225%, which is applied as a percentage of the taxable amount to determine the state portion of tax. Missouri also permits local jurisdictions, including cities, counties, and certain districts, to impose additional sales taxes that vary by location. As a result, the total combined rate can differ depending on where a transaction is sourced. Official guidance is maintained by the Missouri Department of Revenue.",
+    "examples": "A simplified state-only estimate can be expressed by multiplying the taxable amount by 4.225% to calculate the Missouri state sales tax portion. This reflects only the statewide component and does not represent a combined rate when local jurisdiction taxes apply. Because local taxes may vary by location, two transactions with the same taxable amount can result in different total sales tax amounts within Missouri.",
+    "limitations": "Results are simplified estimates and may not match the final tax due on a specific transaction. The 4.225% figure reflects the Missouri state sales tax component only, while local jurisdictions may impose additional sales taxes that vary by location and affect the combined rate. This content does not determine whether a particular sale or use is taxable, does not evaluate sourcing rules, and does not account for jurisdiction-specific rate changes. For compliance and filing purposes, the applicable combined rate and taxability rules must be confirmed based on the transaction’s circumstances."
+  },
+  "faq": [
+    {
+      "q": "What does the Missouri state sales tax rate represent in the estimate?",
+      "a": "The estimate reflects the Missouri state sales tax component of Missouri Sales/Use Tax, which is a flat 4.225% applied to the taxable amount. This statewide component is only one part of the overall calculation, because local jurisdictions may impose additional sales taxes that vary by location and increase the total tax due."
+    },
+    {
+      "q": "Why can the total sales tax differ within Missouri if the state rate is flat?",
+      "a": "The statewide component is flat at 4.225%, but Missouri permits local jurisdictions to impose additional sales taxes that vary by location. This means the combined rate can change depending on where the transaction is sourced or where the taxable activity occurs under applicable rules."
+    },
+    {
+      "q": "Does this estimate apply to both sales tax and use tax in Missouri?",
+      "a": "Missouri Sales/Use Tax applies to taxable retail sales and taxable uses, and the statewide component is the same flat 4.225% rate. A simplified estimate based on that rate can describe the state portion for either a taxable sale or a taxable use, although the determination of taxability depends on the specific facts of the transaction."
+    },
+    {
+      "q": "What information is needed to determine the combined rate beyond the state component?",
+      "a": "Determining a combined rate requires identifying whether local jurisdictions impose additional sales taxes for the relevant location, because those local taxes vary by city, county, or district. The state component remains 4.225%, but the total rate depends on the applicable local taxes tied to the transaction."
+    },
+    {
+      "q": "Why might the final tax due differ from a simplified state-only estimate?",
+      "a": "A simplified estimate applies the 4.225% Missouri state sales tax component to a taxable amount, but it does not determine taxability and does not include local jurisdiction taxes that vary by location. Differences between an estimate and the final tax due can arise from local rates, sourcing rules, or transaction-specific factors."
+    }
+  ],
+  "meta": {
+    "title": "Missouri Sales Tax Calculator 2026 | State Rate 4.225% Estimate",
+    "description": "Missouri Sales Tax Calculator 2026 providing a simplified estimate based on the Missouri state sales tax rate of 4.225%. Explains the flat statewide sales and use tax and why totals can vary by location due to local jurisdiction taxes.",
+    "canonicalPath": "/tools/sales-tax/missouri"
+  }
+},
+
+"US-NV": {
+  "h1": "Nevada Sales Tax Calculator 2026",
+  "intro": "Nevada imposes a statewide sales and use tax under the Sales and Use Tax Act. The Nevada Sales Tax Calculator 2026 provides a simplified estimate based on the Nevada state sales tax rate and does not account for location-based differences that may apply within Nevada.",
+  "sections": {
+    "howItWorks": "Nevada’s sales and use tax is imposed under the Sales and Use Tax Act and applies as a flat-rate tax to taxable retail sales and taxable uses. The statewide component listed here is Nevada state sales tax at 6.85%, which is applied to the taxable amount to estimate sales tax due. Nevada also allows local jurisdictions to impose additional sales and use taxes that vary by location, which can affect the total rate applied to a transaction. For official information, refer to the Nevada Department of Taxation (https://tax.nv.gov/tax-types/sales-tax-use-tax/).",
+    "examples": "Example 1: If a taxable amount is multiplied by 6.85%, the result is the estimated Nevada state sales tax portion under the Sales and Use Tax Act.\n\nExample 2: When a transaction is subject to sales and use tax in Nevada, the statewide 6.85% component represents only the state portion; any additional local sales and use taxes that vary by location are not reflected in a state-only estimate.",
+    "limitations": "Results are simplified estimates and may not match the amount due on a specific transaction. This estimate reflects only the Nevada state sales tax rate of 6.85% and does not include any additional sales and use taxes that may be imposed by local jurisdictions and vary by location. The estimate also assumes the amount being evaluated is taxable under the Sales and Use Tax Act; whether a particular sale or use is taxable depends on the applicable rules and the facts of the transaction. Rounding practices and transaction-specific details can also affect the final tax collected or remitted."
+  },
+  "faq": [
+    {
+      "q": "What does the Nevada Sales Tax Calculator 2026 estimate?",
+      "a": "It estimates the Nevada state portion of sales and use tax by applying the statewide rate to a taxable amount. Nevada imposes a statewide sales and use tax under the Sales and Use Tax Act, and the statewide component listed here is 6.85%. The estimate is limited to that state component and does not incorporate additional sales and use taxes that may be imposed by local jurisdictions and vary by location. As a result, the estimate may differ from the total tax due on a specific transaction in Nevada."
+    },
+    {
+      "q": "Is Nevada sales tax a flat-rate tax?",
+      "a": "Yes. Under Nevada’s Sales and Use Tax Act, the statewide sales and use tax component is applied as a flat-rate tax to taxable retail sales and taxable uses. The statewide rate listed here is 6.85%, which means the state portion is calculated as a consistent percentage of the taxable amount rather than changing based on thresholds or tiers. Nevada also allows local jurisdictions to impose additional sales and use taxes that vary by location, which can change the total combined rate applied to a transaction."
+    },
+    {
+      "q": "Why can the estimated tax differ by location within Nevada?",
+      "a": "Nevada has a statewide sales and use tax component, and local jurisdictions may impose additional sales and use taxes that vary by location. A state-only estimate based on the 6.85% statewide rate reflects only the Nevada state portion and does not include any location-based additions. Because local taxes can vary depending on where the taxable sale occurs or where the taxable use takes place, the total tax due can be higher than a state-only calculation. This is a key reason estimates may not match the final amount collected."
+    },
+    {
+      "q": "Does the estimate apply to both sales tax and use tax in Nevada?",
+      "a": "Nevada’s system is described as a sales and use tax under the Sales and Use Tax Act, and the statewide component listed here is Nevada state sales tax at 6.85%. A simplified estimate applies that statewide rate to a taxable amount to approximate the state portion of tax. However, whether a particular transaction is treated as a taxable retail sale or a taxable use depends on the facts and the applicable rules. The estimate does not determine taxability and does not include any additional local sales and use taxes that vary by location."
+    },
+    {
+      "q": "What are the main limitations of a state-rate-only estimate for Nevada?",
+      "a": "A state-rate-only estimate applies the statewide 6.85% component and therefore reflects only the Nevada state portion of sales and use tax. It does not include additional sales and use taxes that may be imposed by local jurisdictions and vary by location, which can materially change the total rate applied to a transaction. It also assumes the amount being evaluated is taxable under the Sales and Use Tax Act and does not evaluate transaction-specific factors. Rounding and other transaction details can further cause differences between an estimate and the amount due."
+    }
+  ],
+  "meta": {
+    "title": "Nevada Sales Tax Calculator 2026 | State Rate Estimate (6.85%)",
+    "description": "Nevada Sales Tax Calculator 2026 for simplified state sales tax estimates under the Sales and Use Tax Act. Applies the Nevada state sales tax rate of 6.85% and notes that local rates may vary by location.",
+    "canonicalPath": "/tools/sales-tax/nevada"
+  }
+},
 
 
 };

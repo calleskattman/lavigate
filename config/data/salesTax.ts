@@ -225,7 +225,49 @@ lastVerified: "2026-01-01",
   },
 },
 
+"US-MN": {
+regionId: "US-MN",
+year: 2025,
+systemName: "Minnesota sales and use taxes",
+components: [
+{ name: "Minnesota state sales tax", rate: 0.065 },
+{ name: "Minnesota additional state sales tax", rate: 0.00375 },
+{ name: "Local sales and use taxes", rate: null }
+],
+authority: {
+name: "Minnesota Department of Revenue",
+url: "https://www.revenue.state.mn.us/sales-and-use-tax",
+lastVerified: "2025-03-01",
+},
+},
 
+"US-MO": {
+  regionId: "US-MO",
+  year: 2026,
+  systemName: "Missouri Sales/Use Tax",
+  components: [
+    { name: "Missouri state sales tax", rate: 0.04225 }
+  ],
+  authority: {
+    name: "Missouri Department of Revenue",
+    url: "https://dor.mo.gov/taxation/business/tax-types/sales-use/",
+    lastVerified: "2026-01-27",
+  },
+},
+
+"US-NV": {
+  regionId: "US-NV",
+  year: 2026,
+  systemName: "Sales and Use Tax Act",
+  components: [
+    { name: "Nevada state sales tax", rate: 0.0685 }
+  ],
+  authority: {
+    name: "Nevada Department of Taxation",
+    url: "https://tax.nv.gov/tax-types/sales-tax-use-tax/",
+    lastVerified: "2026-01-27",
+  },
+},
 
   // Fler regioner läggs till här via SEO Studio / Quick Import
 };

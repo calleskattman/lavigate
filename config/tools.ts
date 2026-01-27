@@ -65,6 +65,9 @@ export const tools: ToolDefinition[] = [
       "US-MD",
       "US-MA",
       "US-MI",
+      "US-MN",
+      "US-MO",
+      "US-NV",
       // fler regioner läggs till via SEO Studio
     ],
   },
