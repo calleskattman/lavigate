@@ -915,5 +915,369 @@ export const salesTaxSeoContent: Record<string, SalesTaxSeoEntry> = {
     }
   },
 
+  "US-SC": {
+  "h1": "South Carolina Sales Tax Calculator 2026",
+  "intro": "South Carolina applies a flat-rate sales tax system under the South Carolina Sales and Use Tax framework. This calculator provides a simplified estimate based on the statewide component and does not reflect every situation that may apply in practice.",
+  "sections": {
+    "howItWorks": "South Carolina’s general statewide sales tax is assessed at a flat rate rather than varying by price level. Under the South Carolina Sales and Use Tax system, the statewide component is the South Carolina state sales tax at 6.00%. A complementary statewide use tax applies under the same overall framework when sales tax is not collected at the time of purchase. South Carolina also authorizes additional local option sales taxes in certain jurisdictions, which can affect the total rate beyond the statewide component.",
+    "examples": "At the statewide level, a transaction subject to South Carolina state sales tax is calculated using the flat 6.00% rate. When only the statewide component applies, the tax amount is determined by applying 6.00% to the taxable sales price, and the total equals the sales price plus that tax amount. In jurisdictions with authorized local option sales taxes, the combined rate can be higher than the statewide component, and the resulting tax amount reflects the combined rate rather than the statewide rate alone.",
+    "limitations": "Results are simplified estimates and may not match the final tax due on a specific transaction. This estimate reflects the statewide South Carolina state sales tax at 6.00% and does not calculate any additional local option sales taxes that may be authorized in certain jurisdictions. It also does not determine whether a particular transaction is subject to sales tax or use tax under South Carolina rules. For official guidance and current details, refer to the South Carolina Department of Revenue."
+  },
+  "faq": [
+    {
+      "q": "What rate does this estimate reflect for South Carolina?",
+      "a": "This estimate reflects the statewide component listed for South Carolina: the South Carolina state sales tax at 6.00%. The statewide sales tax is flat-rate based, meaning the same percentage applies to the taxable sales price when only the statewide component is considered. Additional local option sales taxes authorized in certain jurisdictions are not included in this estimate."
+    },
+    {
+      "q": "How does South Carolina sales tax relate to South Carolina use tax?",
+      "a": "South Carolina’s system includes a general statewide sales tax and a complementary statewide use tax within the same overall framework. The use tax is generally relevant when sales tax is not collected at the time of purchase. This estimate focuses on the statewide rate component and does not determine whether a specific purchase is treated as sales tax or use tax under South Carolina rules."
+    },
+    {
+      "q": "Does this estimate include local option sales taxes in South Carolina?",
+      "a": "No. South Carolina authorizes additional local option sales taxes in certain jurisdictions, which can increase the total rate beyond the statewide component. This estimate is limited to the statewide South Carolina state sales tax at 6.00% and does not calculate any additional local option sales taxes."
+    },
+    {
+      "q": "Why might an estimated amount differ from the tax charged on a receipt?",
+      "a": "Differences can occur because this estimate is based only on the statewide South Carolina state sales tax rate of 6.00% and does not include additional local option sales taxes that may apply in certain jurisdictions. Differences can also arise depending on whether a transaction is treated under sales tax or the complementary use tax framework."
+    },
+    {
+      "q": "Is South Carolina sales tax calculated with brackets or tiers?",
+      "a": "No. South Carolina’s statewide sales tax component is flat-rate based, meaning a single percentage is applied to the taxable sales price rather than changing across price levels. Additional local option sales taxes, where authorized, are added to the overall rate but are not brackets or tiers."
+    }
+  ],
+  "meta": {
+    "title": "South Carolina Sales Tax Calculator 2026 | Flat 6.00% State Rate Estimate",
+    "description": "South Carolina sales tax calculator for simplified estimates based on the statewide state sales tax rate of 6.00%. Flat-rate calculation; local option taxes not included.",
+    "canonicalPath": "/tools/sales-tax/south-carolina"
+  }
+},
+
+"US-SD": {
+  "h1": "South Dakota Sales Tax Calculator 2026",
+  "intro": "South Dakota applies a flat-rate sales tax system through the South Dakota Sales and Use Tax framework. This calculator provides a simplified estimate based on the statewide sales tax component and reflects the structure of South Dakota’s general sales tax system.",
+  "sections": {
+    "howItWorks": "South Dakota’s system includes a general statewide sales tax and a complementary statewide use tax, both structured as flat-rate taxes. A flat-rate structure means the same percentage applies to the taxable amount within the scope of the statewide tax. Under the South Dakota Sales and Use Tax system, the statewide sales tax component is 4.20%. State law also authorizes additional municipal taxes, which can affect the total rate depending on location. Official guidance is maintained by the South Dakota Department of Revenue.",
+    "examples": "A simplified estimate applies the statewide sales tax rate of 4.20% to a taxable amount to determine the statewide sales tax portion. The same flat-rate concept applies to the complementary statewide use tax when it is relevant. Because municipal taxes may be authorized under state law, the total sales tax in a specific municipality can differ from the statewide component alone. Examples shown here focus only on the statewide component and do not represent a complete location-specific total.",
+    "limitations": "Results are simplified estimates and may not reflect the full tax due in every situation. This estimate reflects only the statewide sales tax component under the South Dakota Sales and Use Tax system and does not quantify any additional municipal taxes authorized under state law. It also does not address transaction-specific taxability determinations or other jurisdictional factors that can affect the final amount. For authoritative interpretation and current administrative guidance, consult the South Dakota Department of Revenue."
+  },
+  "faq": [
+    {
+      "q": "What does a flat-rate sales tax mean in South Dakota?",
+      "a": "In South Dakota, the statewide sales tax component is structured as a flat-rate tax, meaning a single percentage applies to the taxable amount for the statewide portion. Under the South Dakota Sales and Use Tax system, that statewide sales tax rate is 4.20%. A flat-rate approach does not involve brackets, tiers, or progressive rate changes within the statewide component. Separate from the statewide component, state law authorizes additional municipal taxes."
+    },
+    {
+      "q": "How is the statewide use tax related to the statewide sales tax?",
+      "a": "South Dakota’s system includes a general statewide sales tax and a complementary statewide use tax. The use tax is designed to mirror the statewide sales tax structure in situations where sales tax is not collected at the time of purchase. Both taxes apply to the same categories of products and services and use the same flat statewide rate within the overall system."
+    },
+    {
+      "q": "Does this estimate include municipal taxes in South Dakota?",
+      "a": "No. This estimate is limited to the statewide sales tax component identified in the South Dakota Sales and Use Tax system, which is 4.20%. South Dakota law authorizes additional municipal taxes, and those municipal amounts can change the total sales tax rate in a specific municipality. Those amounts are not included in this estimate."
+    },
+    {
+      "q": "Why might the total sales tax differ across locations within South Dakota?",
+      "a": "South Dakota imposes a statewide sales tax at a flat rate of 4.20%. In addition, state law authorizes municipalities to impose certain local taxes. When a municipality has an authorized local tax in effect, the combined total rate in that location can be higher than the statewide component alone."
+    },
+    {
+      "q": "Are the results on this page considered official tax calculations?",
+      "a": "No. The results shown are simplified estimates based on the statewide sales tax component under the South Dakota Sales and Use Tax system. They are not official determinations and may not match the final tax due in every circumstance, particularly where authorized municipal taxes apply or where transaction-specific rules affect taxability."
+    }
+  ],
+  "meta": {
+    "title": "South Dakota Sales Tax Calculator 2026 | Flat-Rate State Sales Tax Estimate",
+    "description": "South Dakota sales tax calculator for simplified estimates under the South Dakota Sales and Use Tax system, based on the statewide 4.20% sales tax component. Municipal taxes not included.",
+    "canonicalPath": "/tools/sales-tax/south-dakota"
+  }
+},
+
+// content/sales-tax.en.ts
+"US-TN": {
+  "h1": "Tennessee Sales Tax Calculator 2026",
+  "intro": "Tennessee administers a statewide sales and use tax system that includes a general state rate and additional state-level tax rules for certain transactions. This calculator provides a simplified estimate based on the general statewide sales tax component and does not reflect every rule that may apply in practice.",
+  "sections": {
+    "howItWorks": "Tennessee’s Sales and Use Tax system includes a general statewide sales tax and a complementary statewide use tax. For transactions subject to the general state rate, the statewide sales tax component is 7.00%. Tennessee law also provides for additional state-level tax rules that apply to certain high-value single-article sales. In addition to state taxes, Tennessee authorizes local jurisdiction sales and use taxes, which can affect the total amount due depending on location. Official guidance is maintained by the Tennessee Department of Revenue.",
+    "examples": "A simplified estimate applies the general statewide sales tax rate of 7.00% to a taxable amount when the transaction falls within the scope of the general state rate. Some transactions may also be subject to additional state-level tax rules for certain high-value single-article sales, which are not reflected in a basic statewide estimate. When local jurisdiction sales and use taxes apply, the combined total rate can be higher than the statewide component alone.",
+    "limitations": "Results are simplified estimates and may differ from the final tax due. This estimate reflects only the general Tennessee state sales tax component and does not calculate local jurisdiction sales and use taxes or additional state-level tax rules that may apply to certain transactions. It also does not determine transaction-specific taxability or whether sales tax or the complementary use tax applies in a given situation. For authoritative interpretation and current guidance, consult the Tennessee Department of Revenue."
+  },
+  "faq": [
+    {
+      "q": "What does this Tennessee sales tax estimate represent?",
+      "a": "This estimate represents the general statewide sales tax component under the Tennessee Sales and Use Tax system, which is 7.00% for transactions subject to the general state rate. It does not include local jurisdiction taxes or additional state-level tax rules that may apply to certain transactions."
+    },
+    {
+      "q": "How is Tennessee’s use tax related to the sales tax?",
+      "a": "Tennessee’s use tax is the counterpart to the sales tax and applies when sales tax was not properly collected on taxable items used, stored, or consumed in Tennessee. Both taxes are part of the same overall system and apply to the same categories of taxable property, subject to different circumstances."
+    },
+    {
+      "q": "Does this estimate include local sales and use taxes in Tennessee?",
+      "a": "No. Tennessee authorizes local jurisdiction sales and use taxes, and those local amounts can change the total tax due depending on location. This estimate is limited to the general statewide sales tax component and does not include any local jurisdiction taxes."
+    },
+    {
+      "q": "Are there additional state-level tax rules beyond the general rate?",
+      "a": "Yes. Tennessee law includes additional state-level tax rules that apply to certain high-value single-article sales. Those rules can affect the state-level tax calculation for qualifying transactions and are not reflected in an estimate based only on the general statewide rate."
+    },
+    {
+      "q": "Why might the final tax due differ from this estimate?",
+      "a": "The final tax due can differ because this estimate reflects only the general statewide sales tax component. Local jurisdiction sales and use taxes, additional state-level tax rules, transaction-specific taxability, and whether sales tax or use tax applies can all affect the final amount owed."
+    }
+  ],
+  "meta": {
+    "title": "Tennessee Sales Tax Calculator 2026 | State Rate Estimate",
+    "description": "Tennessee sales tax calculator for simplified estimates based on the general statewide sales tax rate of 7.00%. Local taxes and additional state-level rules not included.",
+    "canonicalPath": "/tools/sales-tax/tennessee"
+  }
+},
+
+"US-UT": {
+  "h1": "Utah Sales Tax Calculator 2026",
+  "intro": "Utah administers a statewide sales tax and a complementary statewide use tax under the Utah Sales and Use Tax system. This calculator provides a simplified estimate based on the general Utah state sales tax rate and does not reflect jurisdiction-specific variations that may apply within the state.",
+  "sections": {
+    "howItWorks": "Utah Sales and Use Tax includes a general statewide sales tax and a complementary statewide use tax. A simplified sales tax estimate is derived by applying the Utah state sales tax rate of 4.85% to the taxable purchase amount when the transaction falls within the scope of the general state rate. Use tax applies under the same framework when sales tax was not collected at the time of sale. Utah also authorizes multiple local and special-option taxes that vary by jurisdiction, which can affect the total combined rate beyond the statewide component.",
+    "examples": "Using the general statewide rate, a simplified estimate applies the Utah state sales tax rate of 4.85% to the taxable amount to determine the state-level sales tax portion. The same statewide rate applies in a simplified use tax estimate when use tax is relevant. Because Utah authorizes additional local and special-option taxes that vary by jurisdiction, a statewide-only estimate may differ from the total tax due on a specific transaction.",
+    "limitations": "Results are simplified estimates and may not match the total tax due. This estimate reflects only the general Utah state sales tax rate of 4.85% and does not incorporate local or special-option taxes that vary by jurisdiction. Utah also applies different state-level rates to certain categories of transactions, and those category-specific rates are not represented here. For official guidance and current details, consult the Utah State Tax Commission."
+  },
+  "faq": [
+    {
+      "q": "What does this Utah sales tax estimate include?",
+      "a": "This estimate is limited to the general statewide component of Utah Sales and Use Tax that is explicitly provided here: the Utah state sales tax rate of 4.85%. It applies that rate to a taxable amount to produce a simplified state-level estimate and does not include local or special-option taxes."
+    },
+    {
+      "q": "How is Utah use tax related to sales tax?",
+      "a": "Utah’s use tax is complementary to the sales tax and applies to taxable purchases when sales tax was not collected at the time of sale. Both taxes operate within the same Utah Sales and Use Tax system and apply to the same categories of taxable transactions under different circumstances."
+    },
+    {
+      "q": "Why can the total tax due differ from this estimate?",
+      "a": "The total tax due can differ because Utah authorizes local and special-option taxes that vary by jurisdiction and are added to the statewide rate. In addition, Utah applies different state-level rates to certain categories of transactions. These elements are not included in a simplified statewide-only estimate."
+    },
+    {
+      "q": "Does Utah sales tax use brackets or progressive rates?",
+      "a": "No. Sales tax is calculated as a percentage of the taxable amount rather than using brackets or progressive structures. This simplified estimate applies a single statewide rate, while recognizing that other category-specific or jurisdictional rates may apply in practice."
+    },
+    {
+      "q": "What are the main limitations of this estimate?",
+      "a": "The estimate reflects only the general Utah state sales tax rate of 4.85%. It does not include local or special-option taxes, nor does it account for Utah’s different state-level rates for certain categories of transactions. As a result, it should be treated as a simplified estimate rather than an official determination."
+    }
+  ],
+  "meta": {
+    "title": "Utah Sales Tax Calculator 2026 | State Rate Estimate at 4.85%",
+    "description": "Utah sales tax calculator for simplified statewide estimates under Utah Sales and Use Tax, based on the general state sales tax rate of 4.85%. Local and category-specific rates not included.",
+    "canonicalPath": "/tools/sales-tax/utah"
+  }
+},
+
+"US-VA": {
+  "h1": "Virginia Sales Tax Calculator 2026",
+  "intro": "Virginia administers a retail sales and use tax system that includes a general sales tax and a complementary consumer’s use tax. Rates can vary by locality and by the type of item sold, rented, or leased, and this calculator provides a simplified overview of the system rather than a location-specific calculation.",
+  "sections": {
+    "howItWorks": "Virginia’s Retail Sales and Use Tax applies to retail sales and, in complementary fashion, to taxable use when sales tax was not collected at the time of purchase. The system includes both state and local option components, and the applicable rate depends on where the sale is sourced and what type of item is involved. Because no single statewide rate applies uniformly in all cases, this calculator does not apply a fixed percentage to every transaction.",
+    "examples": "The amount of sales or use tax due in Virginia depends on the locality involved and the type of item sold, rented, or leased. As a result, a single numerical example cannot represent all possible outcomes under Virginia law. Examples shown here are conceptual only and illustrate how a rate, once identified, would be applied uniformly to the taxable amount.",
+    "limitations": "Results are simplified and may not match the tax due on a specific transaction. Virginia’s system applies different rates depending on locality and item type, and those details are not calculated here. This content does not determine transaction-specific taxability or whether sales tax or the complementary consumer’s use tax applies. For authoritative guidance, consult Virginia Tax."
+  },
+  "faq": [
+    {
+      "q": "Why doesn’t Virginia have a single statewide sales tax rate?",
+      "a": "Virginia’s Retail Sales and Use Tax system includes both state and local option components. Official guidance states that rates vary by locality and by the type of item sold, rented, or leased, which means there is no single universal rate that applies in all situations."
+    },
+    {
+      "q": "How are sales tax and consumer’s use tax related in Virginia?",
+      "a": "Virginia administers sales tax and consumer’s use tax as complementary parts of the same system. Sales tax generally applies when tax is collected at the time of sale, while consumer’s use tax applies when taxable items are used in Virginia and sales tax was not paid at purchase."
+    },
+    {
+      "q": "Does this calculator include local option sales taxes?",
+      "a": "No. This calculator does not apply specific local option rates. It describes the structure of Virginia’s system, which includes local option components, but does not calculate locality-specific tax amounts."
+    },
+    {
+      "q": "Why might the tax due differ between two locations in Virginia?",
+      "a": "Official sources state that Virginia sales and use tax rates vary by locality and by item type. Because different local option taxes may apply in different areas, the total rate can differ from one location to another."
+    },
+    {
+      "q": "Are the results from this calculator official?",
+      "a": "No. The results are simplified and informational only. They do not replace official determinations made under Virginia law or guidance issued by Virginia Tax."
+    }
+  ],
+  "meta": {
+    "title": "Virginia Sales Tax Calculator 2026 | Sales and Use Tax Overview",
+    "description": "Virginia Sales Tax Calculator 2026 providing a simplified overview of the Virginia Retail Sales and Use Tax system, where rates vary by locality and item type.",
+    "canonicalPath": "/tools/sales-tax/virginia"
+  }
+},
+
+"US-WA": {
+  "h1": "Washington Sales Tax Calculator 2026",
+  "intro": "Washington administers a retail sales tax and a complementary use tax with a fixed state-level rate, together with additional local sales and use taxes imposed by local jurisdictions. This calculator provides a simplified overview of how Washington’s sales and use tax system is structured.",
+  "sections": {
+    "howItWorks": "Washington imposes a retail sales tax at the state level and a complementary use tax that applies when sales tax was not paid at the time of purchase. The state portion of both taxes is set at 6.50%. Local jurisdictions may impose additional sales and use taxes, which can change the combined rate depending on location. Use tax is generally based on where an item is first used in the state rather than where the sale occurred.",
+    "examples": "A simplified estimate applies the Washington state sales tax rate of 6.50% to a taxable amount to determine the state portion of tax. When sales tax was not paid, use tax may apply instead, using the same state-level rate and incorporating any applicable local jurisdiction taxes based on where the item is first used. These examples focus only on the structure of the state component and do not reflect specific local rates.",
+    "limitations": "Results are simplified estimates and may not reflect the total tax due. While the state portion is fixed at 6.50%, additional local sales and use taxes imposed by local jurisdictions can affect the combined rate. Use tax outcomes can also depend on where an item is first used in the state and whether sales tax was previously paid. For authoritative guidance, consult the Washington State Department of Revenue."
+  },
+  "faq": [
+    {
+      "q": "What does this Washington sales tax estimate include?",
+      "a": "This estimate reflects the state-level portion of Washington’s retail sales and use tax system, which is set at 6.50%. It does not include additional local jurisdiction sales or use taxes that may apply based on location."
+    },
+    {
+      "q": "Is Washington sales tax flat-rate?",
+      "a": "At the state level, Washington’s sales tax is applied at a fixed rate. Local jurisdictions may impose additional taxes that vary by location, but this variation is due to local layering rather than brackets or progressive rate structures."
+    },
+    {
+      "q": "How is Washington use tax related to sales tax?",
+      "a": "Use tax is complementary to sales tax and applies when Washington sales tax was not paid at the time of purchase. It uses the same state-level rate and is generally based on where the item is first used in Washington."
+    },
+    {
+      "q": "Why can the total tax rate vary by location in Washington?",
+      "a": "Although the state portion of Washington sales and use tax is fixed, local jurisdictions may impose additional sales and use taxes. These local taxes can cause the combined rate to vary depending on location."
+    },
+    {
+      "q": "Are the results from this calculator official?",
+      "a": "No. The results are simplified estimates intended to describe the structure of Washington’s sales and use tax system. They do not replace official determinations made under Washington law or guidance issued by the Department of Revenue."
+    }
+  ],
+  "meta": {
+    "title": "Washington Sales Tax Calculator 2026 | State Rate Overview",
+    "description": "Washington Sales Tax Calculator 2026 providing a simplified overview of Washington’s retail sales and use tax system, including the fixed 6.50% state sales tax rate and the role of local jurisdiction taxes.",
+    "canonicalPath": "/tools/sales-tax/washington"
+  }
+},
+
+"US-WI": {
+  "h1": "Wisconsin Sales Tax Calculator 2026",
+  "intro": "Wisconsin applies a flat statewide sales tax and a complementary statewide use tax under the Wisconsin Sales and Use Tax system. This Wisconsin Sales Tax Calculator 2026 provides a simplified estimate based on the state rate and is intended for general informational purposes rather than a determination of tax due.",
+  "sections": {
+    "howItWorks": "Wisconsin’s general state sales tax is imposed at a flat rate on taxable sales, and Wisconsin also imposes a complementary state use tax at the same flat rate when applicable. Under the Wisconsin Sales and Use Tax system, the state component reflected here is Wisconsin state sales tax at 5.00%. In practice, the total sales or use tax due can depend on location because additional county and city sales and use taxes may apply. For official rate references, consult the Wisconsin Department of Revenue (https://www.revenue.wi.gov/Pages/FAQS/pcs-taxrates.aspx).",
+    "examples": "Example 1: If a taxable purchase amount is $100.00, applying Wisconsin state sales tax at 5.00% results in $5.00 of state sales tax, for a state-tax-inclusive total of $105.00.\n\nExample 2: If a taxable purchase amount is $50.00, applying the 5.00% state rate results in $2.50 of state sales tax, for a state-tax-inclusive total of $52.50.\n\nThese examples reflect only the statewide component listed above and do not address any additional county or city sales and use taxes that may apply depending on location.",
+    "limitations": "Results are simplified estimates and reflect only the Wisconsin state sales tax at 5.00% as stated in the provided facts. They do not determine whether a specific transaction is taxable, whether sales tax or use tax applies in a particular situation, or whether additional county and city sales and use taxes apply. Actual tax due can differ based on location-specific rates and transaction-specific circumstances. This content is informational and should not be treated as legal or tax advice."
+  },
+  "faq": [
+    {
+      "q": "What does a Wisconsin sales tax estimate represent?",
+      "a": "A Wisconsin sales tax estimate represents the state-level tax amount calculated by applying the flat Wisconsin state sales tax rate to a taxable purchase amount. In this context, the estimate reflects Wisconsin state sales tax at 5.00% and shows the state component of tax that would be associated with a taxable sale. Wisconsin also has a complementary statewide use tax at a flat state rate, which is designed to mirror the sales tax when applicable. Location-based additions may exist because county and city sales and use taxes may apply depending on location."
+    },
+    {
+      "q": "How is Wisconsin use tax related to sales tax?",
+      "a": "Wisconsin imposes a complementary statewide use tax alongside its statewide sales tax. Both are described as flat-rate taxes at the state level, and the use tax is intended to complement the sales tax when applicable. An estimate based on Wisconsin state sales tax at 5.00% reflects the state rate component that aligns with this flat-rate structure. However, whether a particular transaction is treated as subject to sales tax or use tax depends on the circumstances of the transaction. In addition, the overall amount due can vary by location because additional county and city sales and use taxes may apply."
+    },
+    {
+      "q": "Does the Wisconsin state rate change based on purchase amount?",
+      "a": "No. The Wisconsin state sales tax component described here is flat-rate based, meaning the state rate does not vary with the purchase amount. When an estimate is calculated using Wisconsin state sales tax at 5.00%, the same percentage is applied to the taxable amount regardless of size. This approach differs from systems that change rates based on thresholds, but Wisconsin’s statewide component is presented as a single flat rate. Keep in mind that the total tax due can still differ by location because additional county and city sales and use taxes may apply depending on where the transaction is sourced or used."
+    },
+    {
+      "q": "Why might the total tax due differ from a state-only estimate?",
+      "a": "A state-only estimate reflects only the statewide component listed in the facts, which is Wisconsin state sales tax at 5.00%. In Wisconsin, additional county and city sales and use taxes may apply depending on location, which can increase the total rate beyond the statewide component. As a result, a calculation limited to the state rate can be lower than the amount ultimately due when local taxes apply. Separately, whether sales tax or the complementary use tax applies can depend on transaction circumstances, which a simplified estimate does not evaluate."
+    },
+    {
+      "q": "What are the main limitations of a Wisconsin sales tax estimate?",
+      "a": "A Wisconsin sales tax estimate is limited because it applies a flat statewide rate and does not determine the full tax treatment of a specific transaction. The estimate here reflects Wisconsin state sales tax at 5.00% and does not incorporate any additional county and city sales and use taxes that may apply depending on location. It also does not determine whether a transaction is taxable, whether sales tax or the complementary use tax applies, or how sourcing rules affect location. For these reasons, the result should be treated as a simplified estimate rather than a final tax determination."
+    }
+  ],
+  "meta": {
+    "title": "Wisconsin Sales Tax Calculator 2026 | State Rate Estimate",
+    "description": "Wisconsin Sales Tax Calculator 2026 for a simplified estimate based on Wisconsin state sales tax at 5.00% under the Wisconsin Sales and Use Tax system. Results are estimates and may differ when additional county and city sales and use taxes apply.",
+    "canonicalPath": "/tools/sales-tax/wisconsin"
+  }
+},
+
+"US-WY": {
+  "h1": "Wyoming Sales Tax Calculator 2026",
+  "intro": "Wyoming imposes a statewide sales and use tax with a mandatory state component. This content describes the structure of Wyoming’s sales and use tax system at the state level and how sales tax and use tax apply within that framework.",
+  "sections": {
+    "howItWorks": "Wyoming’s sales and use tax is applied as a flat percentage to the taxable purchase amount at the state level. The statewide component applies uniformly, and the state sales tax and state use tax operate at the same rate. Sales tax generally applies to taxable transactions occurring within Wyoming. Use tax applies to taxable purchases made outside Wyoming when the property is used within Wyoming. Official guidance for the statewide system is maintained by the Wyoming Department of Revenue – Excise Tax Division.",
+    "examples": "An estimate based on the statewide component applies the state rate to a taxable purchase amount to calculate the state portion of the tax. For taxable purchases made outside Wyoming and brought into the state for use, the same statewide rate applies to the taxable base. When additional voter-approved local taxes apply, the combined rate on a transaction can be higher than the statewide component alone.",
+    "limitations": "Results are simplified estimates and may not match the final tax due. This estimate reflects only the statewide component and does not account for any additional voter-approved local taxes that may apply in a specific jurisdiction. It also does not determine whether a particular transaction is taxable, which depends on how Wyoming law and administrative guidance apply to the facts of the transaction. Rounding practices and transaction-specific details can affect the final amount reported and remitted."
+  },
+  "faq": [
+    {
+      "q": "What does the Wyoming sales and use tax rate represent?",
+      "a": "The rate described here refers to the mandatory statewide component of Wyoming’s sales and use tax system. It is applied as a flat percentage to the taxable purchase amount at the state level and is separate from any additional voter-approved local taxes that may apply."
+    },
+    {
+      "q": "How does use tax relate to sales tax in Wyoming?",
+      "a": "In Wyoming, the state sales tax and the state use tax operate at the same statewide rate. Sales tax generally applies to taxable transactions occurring within Wyoming, while use tax applies to taxable purchases made outside Wyoming when the property is used within the state."
+    },
+    {
+      "q": "Why can the total sales tax be higher than the statewide rate in Wyoming?",
+      "a": "Wyoming allows local jurisdictions to impose additional voter-approved taxes. When those local taxes apply, the combined rate on a transaction can be higher than the statewide component alone. An estimate based only on the statewide rate reflects the state portion of the tax."
+    },
+    {
+      "q": "Does this estimate determine whether a transaction is taxable in Wyoming?",
+      "a": "No. A simplified estimate based on the statewide rate does not determine taxability. Whether a transaction is taxable depends on how Wyoming law and administrative guidance apply to the specific item or service and the facts of the transaction."
+    }
+  ],
+  "meta": {
+    "title": "Wyoming Sales Tax Calculator 2026 | 4.00% State Rate Estimate",
+    "description": "Estimate Wyoming sales and use tax based on the mandatory statewide 4.00% rate. State-level calculation only; additional voter-approved local taxes may apply.",
+    "canonicalPath": "/tools/sales-tax/wyoming"
+  }
+},
+
+"US-PR": {
+  "h1": "Puerto Rico Sales Tax Calculator 2026",
+  "intro": "Puerto Rico administers a sales and use tax system known as Impuesto sobre Ventas y Uso (IVU), also referred to as Sales and Use Tax (SUT). This content describes the structure of Puerto Rico’s sales and use tax system at the Commonwealth and municipal levels.",
+  "sections": {
+    "howItWorks": "Puerto Rico’s sales and use tax system consists of two components administered within a unified IVU framework. The Commonwealth portion (IVU Estatal) applies at the territory level, and an additional municipal portion (IVU Municipal) may apply under municipal authority. Sales tax generally applies to taxable transactions occurring in Puerto Rico. Use tax applies to taxable items used, consumed, or stored in Puerto Rico when sales tax was not collected at the time of purchase. Official guidance is issued by the Puerto Rico Department of the Treasury (Departamento de Hacienda).",
+    "examples": "An estimate can reflect the Commonwealth component alone or the combined effect of the Commonwealth and municipal components when both apply. When both components apply to the same taxable base, the total reflects the sum of those components. These examples describe the structure of the system and do not address transaction-specific taxability or exemptions.",
+    "limitations": "Results are simplified estimates and may not match the final tax due. This estimate reflects the stated Commonwealth and municipal components of Puerto Rico’s sales and use tax system and does not determine whether a particular transaction is taxable. Application of the tax can depend on statutory rules, administrative guidance, exemptions, sourcing, and transaction-specific details. For official information, refer to the Puerto Rico Department of the Treasury."
+  },
+  "faq": [
+    {
+      "q": "What is Puerto Rico’s sales and use tax system?",
+      "a": "Puerto Rico administers a Sales and Use Tax system known as Impuesto sobre Ventas y Uso (IVU). It includes a Commonwealth-level component and a municipal-level component, which together form the overall sales and use tax structure applied to taxable transactions."
+    },
+    {
+      "q": "How do sales tax and use tax relate to each other in Puerto Rico?",
+      "a": "Sales tax and use tax are complementary parts of the IVU system. Sales tax applies to taxable transactions in Puerto Rico, while use tax applies when taxable items are used, consumed, or stored in Puerto Rico and sales tax was not collected at the time of purchase."
+    },
+    {
+      "q": "Why can the total IVU be higher than the Commonwealth portion alone?",
+      "a": "In addition to the Commonwealth portion, Puerto Rico law authorizes a municipal portion of the IVU. When the municipal component applies, the combined amount reflects both the Commonwealth and municipal components."
+    },
+    {
+      "q": "Does this calculator determine whether a transaction is taxable?",
+      "a": "No. A simplified estimate does not determine taxability. Whether a transaction is taxable depends on how Puerto Rico law and Treasury guidance apply to the specific facts of the transaction."
+    }
+  ],
+  "meta": {
+    "title": "Puerto Rico Sales Tax Calculator 2026 | IVU Rate Estimate",
+    "description": "Estimate Puerto Rico sales and use tax (IVU) based on the Commonwealth and municipal components of the IVU system. Simplified state- and municipal-level estimate.",
+    "canonicalPath": "/tools/sales-tax/puerto-rico"
+  }
+},
+
+"US-CA-ALAMEDA-COUNTY": {
+  "h1": "Alameda County Sales Tax Calculator 2026",
+  "intro": "Alameda County is subject to the California sales and use tax system, where a combined flat rate applies at the county level. This calculator provides a simplified estimate based on the Alameda County sales and use tax components that apply within the county.",
+  "sections": {
+    "howItWorks": "Alameda County sales and use tax is calculated as a combined flat rate made up of statewide and local components. The combined rate reflects California state sales and use tax together with Alameda County local and district sales and use taxes. The same combined rate applies to sales tax and use tax at the county level, meaning the rate structure does not change based on whether a transaction is treated as a sales tax or use tax situation within Alameda County.",
+    "examples": "Because Alameda County sales and use tax is a combined flat rate, the tax amount is determined by applying the combined rate to the taxable amount. The combined rate is formed by adding the California state component and the Alameda County local and district components. The resulting estimate reflects the county-level rate that applies consistently for both sales tax and use tax.",
+    "limitations": "Results are simplified estimates and may not reflect every detail that can affect a specific transaction’s tax treatment. This estimate is limited to the Alameda County sales and use tax components described here and does not account for transaction-specific sourcing rules, exemptions, or administrative considerations. For authoritative rate information, official publications from the California Department of Tax and Fee Administration should be consulted."
+  },
+  "faq": [
+    {
+      "q": "What does the Alameda County sales tax estimate represent?",
+      "a": "The estimate represents the combined Alameda County sales and use tax rate formed by the applicable California state component and the Alameda County local and district components. It is a flat-rate calculation applied to a taxable amount and is intended as a simplified illustration of how the county-level rate works."
+    },
+    {
+      "q": "Why are sales tax and use tax treated the same at the county level?",
+      "a": "At the county level, the same combined rate applies to both sales tax and use tax. The structure described here applies the identical county-level rate regardless of whether a transaction is categorized as a sales tax or use tax situation."
+    },
+    {
+      "q": "What does a combined rate mean for Alameda County sales and use tax?",
+      "a": "A combined rate means that multiple components are added together to form a single flat rate. In Alameda County, this includes the California state sales and use tax component and the Alameda County local and district sales and use tax components."
+    },
+    {
+      "q": "Does this estimate separate state and local portions?",
+      "a": "The estimate is based on the combined effect of the state and local components rather than providing a filing-level breakdown. While the components can be identified conceptually, the calculation itself reflects their combined impact on a taxable amount."
+    },
+    {
+      "q": "What are the main limitations of a county-level sales tax estimate?",
+      "a": "A county-level estimate is simplified and does not address exemptions, sourcing rules, or other transaction-specific factors that can affect the final tax due. It should not be used as a substitute for official guidance or filing instructions."
+    }
+  ],
+  "meta": {
+    "title": "Alameda County Sales Tax Calculator 2026 — Combined California State And Local Rate",
+    "description": "Estimate Alameda County sales tax based on the combined California state and Alameda County local and district sales and use tax rate.",
+    "canonicalPath": "/tools/sales-tax/alameda-county-california"
+  }
+},
+
+
 
 };

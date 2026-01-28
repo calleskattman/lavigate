@@ -366,6 +366,151 @@ lastVerified: "2025-03-01",
     lastVerified: "2025-01-01",
   },
 },
+
+"US-SC": {
+  regionId: "US-SC",
+  year: 2026,
+  systemName: "South Carolina Sales and Use Tax",
+  components: [
+    { name: "South Carolina state sales tax", rate: 0.06 }
+  ],
+  authority: {
+    name: "South Carolina Department of Revenue",
+    url: "https://dor.sc.gov/tax/sales",
+    lastVerified: "2026-01-28",
+  },
+},
+
+"US-SD": {
+  regionId: "US-SD",
+  year: 2026,
+  systemName: "South Dakota Sales and Use Tax",
+  components: [
+    { name: "South Dakota state sales tax", rate: 0.042 }
+  ],
+  authority: {
+    name: "South Dakota Department of Revenue",
+    url: "https://dor.sd.gov/businesses/taxes/sales-use-tax/",
+    lastVerified: "2026-01-28",
+  },
+},
+
+"US-TN": {
+  regionId: "US-TN",
+  year: 2026,
+  systemName: "Tennessee Sales and Use Tax",
+  components: [
+    { name: "Tennessee state sales tax", rate: 0.07 }
+  ],
+  authority: {
+    name: "Tennessee Department of Revenue",
+    url: "https://www.tn.gov/revenue/taxes/sales-and-use-tax.html",
+    lastVerified: "2026-01-28",
+  },
+},
+
+"US-UT": {
+  regionId: "US-UT",
+  year: 2026,
+  systemName: "Utah Sales and Use Tax",
+  components: [
+    { name: "Utah state sales tax", rate: 0.0485 }
+  ],
+  authority: {
+    name: "Utah State Tax Commission",
+    url: "https://incometax.utah.gov/paying/use-tax",
+    lastVerified: "2026-01-28",
+  },
+},
+
+"US-VA": {
+  regionId: "US-VA",
+  year: 2026,
+  systemName: "Virginia Retail Sales and Use Tax",
+  components: [
+    { name: "Virginia retail sales and use tax", rate: null }
+  ],
+  authority: {
+    name: "Virginia Tax",
+    url: "https://www.tax.virginia.gov/retail-sales-and-use-tax",
+    lastVerified: "2026-01-28",
+  },
+},
+
+"US-WA": {
+  regionId: "US-WA",
+  year: 2026,
+  systemName: "Washington Retail Sales Tax and Use Tax",
+  components: [
+    { name: "Washington state sales tax", rate: 0.065 }
+  ],
+  authority: {
+    name: "Washington State Department of Revenue",
+    url: "https://dor.wa.gov",
+    lastVerified: "2026-01-28",
+  },
+},
+
+"US-WI": {
+  regionId: "US-WI",
+  year: 2026,
+  systemName: "Wisconsin Sales and Use Tax",
+  components: [
+    { name: "Wisconsin state sales tax", rate: 0.05 }
+  ],
+  authority: {
+    name: "Wisconsin Department of Revenue",
+    url: "https://www.revenue.wi.gov/Pages/FAQS/pcs-taxrates.aspx",
+    lastVerified: "2026-01-28",
+  },
+},
+
+"US-WY": {
+  regionId: "US-WY",
+  year: 2026,
+  systemName: "Wyoming sales and use tax",
+  components: [
+    { name: "Wyoming state sales and use tax", rate: 0.04 }
+  ],
+  authority: {
+    name: "Wyoming Department of Revenue – Excise Tax Division",
+    url: "https://excise-tax-div.wyo.gov/general-administrative/excise-tax-faqs",
+    lastVerified: "2026-01-28",
+  },
+},
+
+"US-PR": {
+  regionId: "US-PR",
+  year: 2026,
+  systemName: "Puerto Rico sales and use tax (IVU)",
+  components: [
+    { name: "Puerto Rico commonwealth sales and use tax (IVU Estatal)", rate: 0.105 },
+    { name: "Puerto Rico municipal sales and use tax (IVU Municipal)", rate: 0.01 }
+  ],
+  authority: {
+    name: "Puerto Rico Department of the Treasury (Departamento de Hacienda)",
+    url: "https://hacienda.pr.gov/publicaciones/determinacion-administrativa-num-17-04",
+    lastVerified: "2026-01-28",
+  },
+},
+
+"US-CA-ALAMEDA-COUNTY": {
+  regionId: "US-CA-ALAMEDA-COUNTY",
+  year: 2026,
+  systemName: "Alameda County sales and use tax",
+  components: [
+    { name: "California state sales and use tax", rate: 0.0725 },
+    { name: "Alameda County local and district sales and use tax", rate: 0.03 }
+  ],
+  authority: {
+    name: "California Department of Tax and Fee Administration",
+    url: "https://cdtfa.ca.gov/taxes-and-fees/ArchivesRates01-01-2025-03-31-2025.pdf",
+    lastVerified: "2026-01-28",
+  },
+},
+
+
+
   // Fler regioner läggs till här via SEO Studio / Quick Import
 };
 
