@@ -269,6 +269,103 @@ lastVerified: "2025-03-01",
   },
 },
 
+"US-NJ": {
+  regionId: "US-NJ",
+  year: 2018,
+  systemName: "New Jersey Sales and Use Tax Act",
+  components: [
+    { name: "New Jersey state sales and use tax", rate: 0.06625 }
+  ],
+  authority: {
+    name: "New Jersey Division of Taxation",
+    url: "https://www.nj.gov/treasury/taxation/businesses/salestax/index.shtml",
+    lastVerified: "2026-01-28"
+  }
+},
+
+"US-NY": {
+  regionId: "US-NY",
+  year: 2026,
+  systemName: "New York State and local sales and use tax",
+  components: [
+    { name: "New York state sales and use tax", rate: 0.04 }
+  ],
+  authority: {
+    name: "New York State Department of Taxation and Finance",
+    url: "https://www.tax.ny.gov",
+    lastVerified: "2026-01-28",
+  },
+},
+
+"US-NC": {
+  regionId: "US-NC",
+  year: 2026,
+  systemName: "North Carolina Sales and Use Tax Act",
+  components: [
+    { name: "North Carolina state sales tax", rate: 0.0475 }
+  ],
+  authority: {
+    name: "North Carolina Department of Revenue",
+    url: "https://www.ncdor.gov/",
+    lastVerified: "2026-01-28",
+  },
+},
+
+"US-OH": {
+  regionId: "US-OH",
+  year: 2026,
+  systemName: "Ohio state sales and use tax",
+  components: [
+    { name: "Ohio state sales tax", rate: 0.0575 }
+  ],
+  authority: {
+    name: "Ohio Department of Taxation",
+    url: "https://tax.ohio.gov",
+    lastVerified: "2026-01-28",
+  },
+},
+
+"US-OR": {
+  regionId: "US-OR",
+  year: 2026,
+  systemName: "No general Oregon state sales or use tax",
+  components: [
+    { name: "Oregon state sales tax", rate: 0 }
+  ],
+  authority: {
+    name: "Oregon Department of Revenue",
+    url: "https://www.oregon.gov/dor",
+    lastVerified: "2026-01-28",
+  },
+},
+
+"US-PA": {
+  regionId: "US-PA",
+  year: 2026,
+  systemName: "Pennsylvania Sales, Use and Hotel Occupancy Tax",
+  components: [
+    { name: "Pennsylvania state sales tax", rate: 0.06 }
+  ],
+  authority: {
+    name: "Pennsylvania Department of Revenue",
+    url: "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax",
+    lastVerified: "2025-01-01",
+  },
+},
+
+"US-RI": {
+  regionId: "US-RI",
+  year: 2026,
+  systemName: "Rhode Island Sales and Use Tax",
+  components: [
+    { name: "Rhode Island state sales tax", rate: 0.07 }
+  ],
+  authority: {
+    name: "Rhode Island Division of Taxation",
+    url: "https://tax.ri.gov/tax-sections/sales-excise-taxes/sales-use-tax",
+    lastVerified: "2025-01-01",
+  },
+},
   // Fler regioner läggs till här via SEO Studio / Quick Import
 };
 

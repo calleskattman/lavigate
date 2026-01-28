@@ -68,6 +68,13 @@ export const tools: ToolDefinition[] = [
       "US-MN",
       "US-MO",
       "US-NV",
+      "US-NJ",
+      "US-NY",
+      "US-NC",
+      "US-OH",
+      "US-OR",
+      "US-PA",
+      "US-RI",
       // fler regioner läggs till via SEO Studio
     ],
   },

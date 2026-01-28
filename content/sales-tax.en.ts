@@ -522,157 +522,398 @@ export const salesTaxSeoContent: Record<string, SalesTaxSeoEntry> = {
 
 "US-MI": {
   "h1": "Michigan Sales Tax Calculator 2025",
-  "intro": "Michigan imposes a uniform, statewide sales and use tax system administered at the state level. The Michigan Sales Tax Calculator 2025 provides a simplified estimate based on Michigan’s flat-rate approach and the statewide rate in effect for 2025.",
+  "intro": "Michigan imposes a uniform, statewide sales and use tax system administered at the state level. The system applies a single statewide rate to transactions that fall within the scope of Michigan sales and use tax law and does not vary by local jurisdiction.",
   "sections": {
-    "howItWorks": "Michigan sales and use taxes apply a single statewide rate to taxable transactions, with the general sales tax rate applied uniformly across the state. Official guidance indicates that local jurisdictions are not permitted to impose a general sales or use tax, so the calculation is based on the Michigan state sales tax at 6.00%. In simplified terms, the estimated sales tax amount is the purchase amount multiplied by 6.00%, and the estimated total is the purchase amount plus that tax amount. Administration and published guidance are provided by the Michigan Department of Treasury (https://www.michigan.gov/taxes).",
-    "examples": "Because Michigan’s general sales tax rate is 6.00% statewide, the estimated tax is a flat-rate calculation based on that single rate. For example, if a taxable purchase amount is represented as an amount A, the estimated sales tax is A × 6.00%, and the estimated total is A + (A × 6.00%). This reflects the statewide structure described for Michigan sales and use taxes, where the general rate is applied uniformly rather than varying by local jurisdiction.",
-    "limitations": "Results are simplified estimates and may not reflect every detail that can affect a real-world sales or use tax outcome. This content describes Michigan’s general statewide rate structure for Michigan sales and use taxes and does not address transaction-specific determinations of taxability, documentation requirements, or other administrative considerations. The estimate is based on the Michigan state sales tax at 6.00% and assumes a flat-rate application consistent with statewide administration and the stated limitation on local general sales or use taxes."
+    "howItWorks": "Michigan sales and use taxes are administered at the state level and apply a single statewide rate to taxable transactions. Official guidance indicates that local jurisdictions are not permitted to impose a general sales or use tax, so the statewide structure is uniform across Michigan. Administration, definitions, and authoritative guidance are provided by the Michigan Department of Treasury (https://www.michigan.gov/taxes).",
+    "examples": "A simplified statewide estimate reflects the application of Michigan’s single statewide rate to transactions that fall within the general sales and use tax framework. Because the rate does not vary by location within the state, the same statewide rate applies regardless of where a taxable transaction occurs, subject to whether the transaction is covered by Michigan sales and use tax law.",
+    "limitations": "Results are simplified estimates and may not reflect the final tax due in all situations. This content describes only the general statewide structure of Michigan sales and use taxes and does not determine whether a transaction is taxable, whether an exemption applies, or how a transaction must be reported or documented. Transaction-specific facts and official guidance can affect actual tax outcomes."
   },
   "faq": [
     {
-      "q": "What rate does the Michigan Sales Tax Calculator 2025 apply?",
-      "a": "The Michigan Sales Tax Calculator 2025 applies the Michigan state sales tax at 6.00%. Michigan’s general sales tax rate is applied uniformly statewide as part of Michigan sales and use taxes administered at the state level. Official sources also state that local jurisdictions are not permitted to impose a general sales or use tax, so the estimate is not designed to vary by city, county, or district. The result is a simplified estimate based on a single statewide rate."
+      "q": "What rate does the Michigan Sales Tax Calculator apply?",
+      "a": "The estimate is based on Michigan’s general statewide sales tax rate, which is applied uniformly across the state as part of Michigan’s sales and use tax system. This description addresses the statewide rate component only and does not evaluate transaction-specific taxability."
     },
     {
-      "q": "Does Michigan have local general sales tax rates that change the estimate?",
-      "a": "For Michigan’s general sales and use tax structure, official sources state that local jurisdictions are not permitted to impose a general sales or use tax. As a result, the estimate is based on the Michigan state sales tax at 6.00% rather than a combination of state and local general rates. This keeps the calculation flat-rate and statewide for the general rate described here. Results remain simplified estimates and may not reflect transaction-specific taxability determinations."
+      "q": "Does Michigan have local general sales tax rates?",
+      "a": "No. Official guidance states that local jurisdictions in Michigan are not permitted to impose a general sales or use tax. As a result, Michigan’s general sales and use tax structure is administered using a single statewide rate."
     },
     {
-      "q": "What is the difference between sales tax and use tax in Michigan’s system?",
-      "a": "Michigan sales and use taxes are administered at the state level and are commonly discussed together because they address tax on taxable purchases in different circumstances. Sales tax generally applies to taxable retail sales, while use tax generally applies when taxable items are used, stored, or consumed in Michigan in situations where sales tax was not collected at the time of purchase. This estimate focuses on the statewide rate structure and uses the Michigan state sales tax at 6.00% as a simplified basis."
+      "q": "How are sales tax and use tax related in Michigan?",
+      "a": "Michigan administers sales tax and use tax together as part of a unified state-level system. Sales tax generally applies to taxable retail sales, while use tax addresses situations where tax liability arises on taxable items used, stored, or consumed in Michigan when sales tax was not collected."
     },
     {
-      "q": "Is the calculator result an official tax amount?",
-      "a": "No. The result is a simplified estimate based on the statewide Michigan state sales tax at 6.00% and the general description of Michigan’s flat-rate, statewide approach. Actual tax outcomes can depend on whether a specific transaction is taxable under applicable rules and how the transaction is documented and reported. The estimate is intended to reflect the general statewide rate behavior described for Michigan sales and use taxes, not to replace official determinations or filing calculations."
+      "q": "Is the calculator result an official tax determination?",
+      "a": "No. The result is a simplified estimate intended to describe the general statewide rate structure of Michigan sales and use taxes. It does not replace official determinations, filing requirements, or guidance issued by the Michigan Department of Treasury."
     },
     {
-      "q": "Why is the estimate described as flat-rate for Michigan?",
-      "a": "Michigan’s general sales tax rate is applied uniformly statewide, and official sources state that local jurisdictions are not permitted to impose a general sales or use tax. That structure supports a flat-rate estimate based on the Michigan state sales tax at 6.00% rather than a rate that changes by locality. The estimate therefore reflects a single statewide rate applied to the taxable amount. Results are simplified estimates and may not capture transaction-specific taxability or reporting details."
+      "q": "Why is Michigan described as having a flat-rate sales tax?",
+      "a": "Michigan’s general sales tax rate is applied uniformly statewide, and local jurisdictions are not permitted to impose separate general sales or use taxes. This statewide uniformity is why the system is described as flat-rate within the general sales and use tax framework."
     }
   ],
   "meta": {
     "title": "Michigan Sales Tax Calculator 2025 | 6.00% Statewide Rate Estimate",
-    "description": "Michigan Sales Tax Calculator 2025 for a simplified estimate based on Michigan’s flat-rate statewide sales and use tax system and the 6.00% Michigan state sales tax.",
+    "description": "Michigan sales tax calculator providing a simplified estimate based on the statewide sales and use tax structure administered by the state of Michigan.",
     "canonicalPath": "/tools/sales-tax/michigan"
   }
 },
 
 "US-MN": {
-h1: "Minnesota Sales Tax Calculator 2025",
-intro:
-"Minnesota applies sales and use taxes under a unified statewide system that covers taxable retail sales and certain uses of tangible personal property. This content describes how the general Minnesota sales and use tax structure works and provides a simplified estimate based on the state-level tax components.",
-
-sections: {
-howItWorks:
-"Minnesota sales and use taxes are imposed under Chapter 297A of the Minnesota Statutes. At the state level, the system consists of a base state sales tax rate of 6.50% and an additional state sales tax rate of 0.375%, which together form a combined state-level rate of 6.875%. Minnesota law also authorizes certain political subdivisions to impose general local sales and use taxes under specific statutory provisions. These local taxes, where applicable, are collected alongside the state tax and can increase the total rate depending on the transaction’s location. This simplified estimate reflects only the state-level rate components. Administration and guidance are provided by the Minnesota Department of Revenue (https://www.revenue.state.mn.us/sales-and-use-tax).",
-
-examples:
-"If a transaction is subject to the Minnesota state sales tax at 6.50% and the additional state sales tax at 0.375%, the combined state-level rate applied in this estimate is 6.875%. The estimated tax amount is calculated by applying this combined rate to the taxable amount. Local sales and use taxes, where applicable, are not included in this simplified example and may result in a higher total tax depending on the specific location.",
-
-limitations:
-"Results are simplified estimates and may not match the tax due on a specific transaction. This estimate applies only the general Minnesota state-level sales and use tax rates and does not evaluate whether a transaction is taxable under Minnesota law. It does not account for local sales and use taxes authorized for certain jurisdictions, differences in tax base definitions, sourcing rules, exemptions, or other transaction-specific factors that can affect the final tax amount."
-},
-
-faq: [
-{
-q: "What state-level rates are included in the Minnesota sales tax estimate?",
-a: "The estimate includes the Minnesota state sales tax rate of 6.50% and the additional state sales tax rate of 0.375%. Together, these form a combined state-level rate of 6.875% that is applied in this simplified calculation."
-},
-{
-q: "Does Minnesota have local sales and use taxes?",
-a: "Yes. Minnesota law authorizes certain political subdivisions to impose general local sales and use taxes under specific statutory provisions. These local taxes can increase the total rate depending on location and are not included in this simplified state-level estimate."
-},
-{
-q: "What is the difference between sales tax and use tax in Minnesota?",
-a: "Sales tax generally applies when tax is collected on a taxable retail sale in Minnesota, while use tax generally applies when sales tax was not collected at the time of purchase and the item is used, stored, or consumed in Minnesota. Both are administered together as part of Minnesota’s sales and use tax system."
-},
-{
-q: "Why might the estimated amount differ from the actual tax due?",
-a: "The estimate is simplified and does not account for local sales and use taxes, transaction-specific taxability rules, exemptions, or sourcing requirements. Actual tax due can vary depending on location, the nature of the transaction, and official guidance from the Minnesota Department of Revenue."
-}
-],
-
-meta: {
-title: "Minnesota Sales Tax Calculator 2025 | State-Level Rate Estimate",
-description:
-"Minnesota sales tax calculator providing a simplified estimate based on the Minnesota state sales and use tax system and the combined state-level rate.",
-canonicalPath: "/tools/sales-tax/minnesota"
-}
+  "h1": "Minnesota Sales Tax Calculator 2025",
+  "intro": "Minnesota applies sales and use taxes under a unified statewide system administered at the state level. The system covers taxable retail sales and certain uses of tangible personal property and is structured around defined state-level tax components.",
+  "sections": {
+    "howItWorks": "Minnesota sales and use taxes are imposed under Chapter 297A of the Minnesota Statutes and are administered by the state. The statewide structure includes multiple state-level components that together form the state portion of the sales and use tax system. Minnesota law also authorizes certain political subdivisions to impose general local sales and use taxes under specific statutory provisions. Those local taxes operate alongside the state-level system and can affect the total tax due depending on location. Official administration and guidance are provided by the Minnesota Department of Revenue (https://www.revenue.state.mn.us/sales-and-use-tax).",
+    "examples": "A simplified state-level estimate reflects the application of Minnesota’s state-level sales and use tax components to transactions that fall within the general statewide framework. Because local sales and use taxes may apply in authorized jurisdictions, a state-level estimate represents only the state portion and does not reflect location-specific additions.",
+    "limitations": "Results are simplified estimates and may not match the tax due on a specific transaction. This content describes only the general Minnesota state-level sales and use tax structure and does not determine whether a transaction is taxable, whether an exemption applies, or whether local sales and use taxes are triggered. Differences in tax base definitions, sourcing rules, exemptions, and transaction-specific factors can affect the final tax outcome."
+  },
+  "faq": [
+    {
+      "q": "What state-level components are included in a Minnesota sales tax estimate?",
+      "a": "A state-level estimate reflects the Minnesota sales and use tax components administered by the state. These components together form the state portion of Minnesota’s sales and use tax system and are applied uniformly at the state level."
+    },
+    {
+      "q": "Does Minnesota have local sales and use taxes?",
+      "a": "Yes. Minnesota law authorizes certain political subdivisions to impose general local sales and use taxes under specific statutory provisions. Those local taxes may increase the total tax due and are separate from the state-level components described here."
+    },
+    {
+      "q": "How are sales tax and use tax related in Minnesota?",
+      "a": "Minnesota administers sales tax and use tax together as part of a unified system. Sales tax generally applies to taxable retail sales, while use tax addresses situations where tax liability arises on taxable items used, stored, or consumed in Minnesota when sales tax was not collected."
+    },
+    {
+      "q": "Why can an estimate differ from the actual tax due?",
+      "a": "An estimate reflects only the general state-level structure and does not account for local sales and use taxes, transaction-specific taxability rules, exemptions, or sourcing requirements. Actual tax due can vary based on location, the nature of the transaction, and official guidance."
+    }
+  ],
+  "meta": {
+    "title": "Minnesota Sales Tax Calculator 2025 | State-Level Rate Estimate",
+    "description": "Minnesota sales tax calculator providing a simplified estimate based on the Minnesota state-level sales and use tax structure administered by the state.",
+    "canonicalPath": "/tools/sales-tax/minnesota"
+  }
 },
 
 "US-MO": {
   "h1": "Missouri Sales Tax Calculator 2026",
-  "intro": "Missouri imposes a statewide sales and use tax at a flat state rate. This content provides a simplified estimate based on the state component of Missouri Sales/Use Tax and explains how statewide and local components interact.",
+  "intro": "Missouri applies a statewide sales and use tax system administered at the state level. The system includes a state-level tax component and allows for additional taxes imposed by local jurisdictions, which together shape how sales and use tax operates across Missouri.",
   "sections": {
-    "howItWorks": "Missouri Sales/Use Tax applies a flat statewide rate to taxable retail sales and taxable uses. The state component is the Missouri state sales tax at 4.225%, which is applied as a percentage of the taxable amount to determine the state portion of tax. Missouri also permits local jurisdictions, including cities, counties, and certain districts, to impose additional sales taxes that vary by location. As a result, the total combined rate can differ depending on where a transaction is sourced. Official guidance is maintained by the Missouri Department of Revenue.",
-    "examples": "A simplified state-only estimate can be expressed by multiplying the taxable amount by 4.225% to calculate the Missouri state sales tax portion. This reflects only the statewide component and does not represent a combined rate when local jurisdiction taxes apply. Because local taxes may vary by location, two transactions with the same taxable amount can result in different total sales tax amounts within Missouri.",
-    "limitations": "Results are simplified estimates and may not match the final tax due on a specific transaction. The 4.225% figure reflects the Missouri state sales tax component only, while local jurisdictions may impose additional sales taxes that vary by location and affect the combined rate. This content does not determine whether a particular sale or use is taxable, does not evaluate sourcing rules, and does not account for jurisdiction-specific rate changes. For compliance and filing purposes, the applicable combined rate and taxability rules must be confirmed based on the transaction’s circumstances."
+    "howItWorks": "Missouri Sales and Use Tax is administered by the state and includes a defined statewide tax component that applies to transactions falling within the scope of Missouri sales and use tax law. In addition to the state-level structure, Missouri law authorizes certain local jurisdictions, such as cities, counties, and designated districts, to impose their own sales taxes. These local taxes operate alongside the state system and can affect the total tax due depending on location. Official administration and guidance are provided by the Missouri Department of Revenue.",
+    "examples": "A simplified state-level estimate reflects only the Missouri state portion of sales and use tax. Because local jurisdictions may impose additional taxes, a state-only estimate represents only part of the overall tax structure and does not reflect location-specific additions that may apply in practice.",
+    "limitations": "Results are simplified estimates and may not match the final tax due on a specific transaction. This content describes only the general structure of Missouri’s state-level sales and use tax and does not determine whether a transaction is taxable, which local jurisdictions may impose additional taxes, or how sourcing rules apply. Local rates, exemptions, and transaction-specific factors can materially affect the final amount due."
   },
   "faq": [
     {
-      "q": "What does the Missouri state sales tax rate represent in the estimate?",
-      "a": "The estimate reflects the Missouri state sales tax component of Missouri Sales/Use Tax, which is a flat 4.225% applied to the taxable amount. This statewide component is only one part of the overall calculation, because local jurisdictions may impose additional sales taxes that vary by location and increase the total tax due."
+      "q": "What does the Missouri state sales tax component represent?",
+      "a": "It represents the statewide portion of Missouri Sales and Use Tax administered by the state. This component applies uniformly at the state level and forms one part of the overall sales and use tax system."
     },
     {
-      "q": "Why can the total sales tax differ within Missouri if the state rate is flat?",
-      "a": "The statewide component is flat at 4.225%, but Missouri permits local jurisdictions to impose additional sales taxes that vary by location. This means the combined rate can change depending on where the transaction is sourced or where the taxable activity occurs under applicable rules."
+      "q": "Why can total sales tax amounts vary within Missouri?",
+      "a": "While Missouri administers a statewide sales and use tax component, state law allows local jurisdictions to impose additional sales taxes. These local taxes vary by location and can change the total tax due on a transaction."
     },
     {
-      "q": "Does this estimate apply to both sales tax and use tax in Missouri?",
-      "a": "Missouri Sales/Use Tax applies to taxable retail sales and taxable uses, and the statewide component is the same flat 4.225% rate. A simplified estimate based on that rate can describe the state portion for either a taxable sale or a taxable use, although the determination of taxability depends on the specific facts of the transaction."
+      "q": "Does Missouri apply sales tax and use tax under the same system?",
+      "a": "Yes. Missouri administers sales tax and use tax together as part of a unified system. Sales tax generally applies to taxable retail sales, while use tax addresses taxable uses when sales tax was not collected."
     },
     {
-      "q": "What information is needed to determine the combined rate beyond the state component?",
-      "a": "Determining a combined rate requires identifying whether local jurisdictions impose additional sales taxes for the relevant location, because those local taxes vary by city, county, or district. The state component remains 4.225%, but the total rate depends on the applicable local taxes tied to the transaction."
+      "q": "Does a state-only estimate reflect the full tax due in Missouri?",
+      "a": "No. A state-only estimate reflects only the statewide portion of Missouri sales and use tax. Additional local taxes, exemptions, sourcing rules, and transaction-specific factors can affect the final amount due."
     },
     {
-      "q": "Why might the final tax due differ from a simplified state-only estimate?",
-      "a": "A simplified estimate applies the 4.225% Missouri state sales tax component to a taxable amount, but it does not determine taxability and does not include local jurisdiction taxes that vary by location. Differences between an estimate and the final tax due can arise from local rates, sourcing rules, or transaction-specific factors."
+      "q": "Where can official guidance on Missouri sales and use tax be found?",
+      "a": "Official definitions, administration, and guidance are issued by the Missouri Department of Revenue."
     }
   ],
   "meta": {
-    "title": "Missouri Sales Tax Calculator 2026 | State Rate 4.225% Estimate",
-    "description": "Missouri Sales Tax Calculator 2026 providing a simplified estimate based on the Missouri state sales tax rate of 4.225%. Explains the flat statewide sales and use tax and why totals can vary by location due to local jurisdiction taxes.",
+    "title": "Missouri Sales Tax Calculator 2026 | State Rate Estimate",
+    "description": "Missouri sales tax calculator providing a simplified estimate based on the state-level sales and use tax structure administered by Missouri, with notes on local jurisdiction taxes.",
     "canonicalPath": "/tools/sales-tax/missouri"
   }
 },
 
 "US-NV": {
   "h1": "Nevada Sales Tax Calculator 2026",
-  "intro": "Nevada imposes a statewide sales and use tax under the Sales and Use Tax Act. The Nevada Sales Tax Calculator 2026 provides a simplified estimate based on the Nevada state sales tax rate and does not account for location-based differences that may apply within Nevada.",
+  "intro": "Nevada administers sales and use tax at the state level under the Sales and Use Tax Act. The system includes a statewide tax component and allows for additional taxes imposed by local jurisdictions, which together determine how sales and use tax applies within Nevada.",
   "sections": {
-    "howItWorks": "Nevada’s sales and use tax is imposed under the Sales and Use Tax Act and applies as a flat-rate tax to taxable retail sales and taxable uses. The statewide component listed here is Nevada state sales tax at 6.85%, which is applied to the taxable amount to estimate sales tax due. Nevada also allows local jurisdictions to impose additional sales and use taxes that vary by location, which can affect the total rate applied to a transaction. For official information, refer to the Nevada Department of Taxation (https://tax.nv.gov/tax-types/sales-tax-use-tax/).",
-    "examples": "Example 1: If a taxable amount is multiplied by 6.85%, the result is the estimated Nevada state sales tax portion under the Sales and Use Tax Act.\n\nExample 2: When a transaction is subject to sales and use tax in Nevada, the statewide 6.85% component represents only the state portion; any additional local sales and use taxes that vary by location are not reflected in a state-only estimate.",
-    "limitations": "Results are simplified estimates and may not match the amount due on a specific transaction. This estimate reflects only the Nevada state sales tax rate of 6.85% and does not include any additional sales and use taxes that may be imposed by local jurisdictions and vary by location. The estimate also assumes the amount being evaluated is taxable under the Sales and Use Tax Act; whether a particular sale or use is taxable depends on the applicable rules and the facts of the transaction. Rounding practices and transaction-specific details can also affect the final tax collected or remitted."
+    "howItWorks": "Nevada’s sales and use tax system is established under the Sales and Use Tax Act and applies to transactions that fall within its scope. The state administers a defined statewide tax component, while Nevada law also authorizes local jurisdictions to impose additional sales and use taxes. These local taxes operate alongside the state system and can affect the total tax due depending on location. Official administration, definitions, and guidance are provided by the Nevada Department of Taxation (https://tax.nv.gov/tax-types/sales-tax-use-tax/).",
+    "examples": "A simplified state-level estimate reflects only the Nevada state portion of sales and use tax. Because local jurisdictions may impose additional taxes, a state-only estimate represents only part of the overall tax structure and does not reflect location-specific additions that may apply in practice.",
+    "limitations": "Results are simplified estimates and may not match the final tax due on a specific transaction. This content describes only the general structure of Nevada’s state-level sales and use tax and does not determine whether a transaction is taxable, whether local jurisdiction taxes apply, or how sourcing and reporting rules affect the outcome. Local rates, exemptions, and transaction-specific factors can materially change the final amount due."
   },
   "faq": [
     {
-      "q": "What does the Nevada Sales Tax Calculator 2026 estimate?",
-      "a": "It estimates the Nevada state portion of sales and use tax by applying the statewide rate to a taxable amount. Nevada imposes a statewide sales and use tax under the Sales and Use Tax Act, and the statewide component listed here is 6.85%. The estimate is limited to that state component and does not incorporate additional sales and use taxes that may be imposed by local jurisdictions and vary by location. As a result, the estimate may differ from the total tax due on a specific transaction in Nevada."
+      "q": "What does the Nevada Sales Tax Calculator estimate?",
+      "a": "It provides a simplified estimate based on the statewide component of Nevada’s sales and use tax system. The estimate reflects only the state-level portion and does not include any additional sales and use taxes that may be imposed by local jurisdictions."
     },
     {
-      "q": "Is Nevada sales tax a flat-rate tax?",
-      "a": "Yes. Under Nevada’s Sales and Use Tax Act, the statewide sales and use tax component is applied as a flat-rate tax to taxable retail sales and taxable uses. The statewide rate listed here is 6.85%, which means the state portion is calculated as a consistent percentage of the taxable amount rather than changing based on thresholds or tiers. Nevada also allows local jurisdictions to impose additional sales and use taxes that vary by location, which can change the total combined rate applied to a transaction."
+      "q": "Is Nevada sales tax administered as a flat statewide system?",
+      "a": "Nevada administers a statewide sales and use tax component under the Sales and Use Tax Act. While that component applies uniformly at the state level, Nevada law also allows local jurisdictions to impose additional taxes that can affect the total tax due."
     },
     {
-      "q": "Why can the estimated tax differ by location within Nevada?",
-      "a": "Nevada has a statewide sales and use tax component, and local jurisdictions may impose additional sales and use taxes that vary by location. A state-only estimate based on the 6.85% statewide rate reflects only the Nevada state portion and does not include any location-based additions. Because local taxes can vary depending on where the taxable sale occurs or where the taxable use takes place, the total tax due can be higher than a state-only calculation. This is a key reason estimates may not match the final amount collected."
+      "q": "Why can tax amounts differ by location within Nevada?",
+      "a": "Although Nevada administers a statewide sales and use tax component, local jurisdictions may impose additional sales and use taxes. These local taxes vary by location and can change the total tax due for otherwise similar transactions."
     },
     {
-      "q": "Does the estimate apply to both sales tax and use tax in Nevada?",
-      "a": "Nevada’s system is described as a sales and use tax under the Sales and Use Tax Act, and the statewide component listed here is Nevada state sales tax at 6.85%. A simplified estimate applies that statewide rate to a taxable amount to approximate the state portion of tax. However, whether a particular transaction is treated as a taxable retail sale or a taxable use depends on the facts and the applicable rules. The estimate does not determine taxability and does not include any additional local sales and use taxes that vary by location."
+      "q": "Does the estimate apply to both sales tax and use tax?",
+      "a": "Nevada administers sales tax and use tax together as part of a unified system. A simplified estimate describes the general state-level structure but does not determine whether a particular transaction is treated as a taxable sale or a taxable use."
     },
     {
-      "q": "What are the main limitations of a state-rate-only estimate for Nevada?",
-      "a": "A state-rate-only estimate applies the statewide 6.85% component and therefore reflects only the Nevada state portion of sales and use tax. It does not include additional sales and use taxes that may be imposed by local jurisdictions and vary by location, which can materially change the total rate applied to a transaction. It also assumes the amount being evaluated is taxable under the Sales and Use Tax Act and does not evaluate transaction-specific factors. Rounding and other transaction details can further cause differences between an estimate and the amount due."
+      "q": "What are the limitations of a state-level estimate for Nevada?",
+      "a": "A state-level estimate reflects only the statewide portion of Nevada’s sales and use tax system. It does not include local jurisdiction taxes, does not determine taxability, and does not account for transaction-specific rules, exemptions, or reporting requirements."
     }
   ],
   "meta": {
-    "title": "Nevada Sales Tax Calculator 2026 | State Rate Estimate (6.85%)",
-    "description": "Nevada Sales Tax Calculator 2026 for simplified state sales tax estimates under the Sales and Use Tax Act. Applies the Nevada state sales tax rate of 6.85% and notes that local rates may vary by location.",
+    "title": "Nevada Sales Tax Calculator 2026 | State Rate Estimate",
+    "description": "Nevada sales tax calculator providing a simplified estimate based on the state-level sales and use tax structure administered under the Sales and Use Tax Act.",
     "canonicalPath": "/tools/sales-tax/nevada"
   }
 },
+
+"US-NJ": {
+  "h1": "New Jersey Sales Tax Calculator",
+  "intro": "New Jersey applies a state-level sales and use tax under the New Jersey Sales and Use Tax Act. This calculator provides a simplified estimate based on the statewide sales and use tax rate.",
+  "sections": {
+    "howItWorks": "New Jersey sales and use tax is applied at a flat statewide rate to taxable transactions as defined under the New Jersey Sales and Use Tax Act. The statewide New Jersey state sales and use tax rate is 6.625%.",
+    "examples": "This calculator applies the statewide New Jersey state sales and use tax rate to a taxable amount to produce an estimated tax result. It reflects rate behavior only and does not determine taxability.",
+    "limitations": "This estimate reflects only the statewide New Jersey state sales and use tax. It does not account for transaction-specific determinations, reduced rates, exemptions, or special provisions that may apply under the New Jersey Sales and Use Tax Act."
+  },
+  "faq": [
+    {
+      "q": "What does this New Jersey Sales Tax Calculator estimate?",
+      "a": "It estimates the sales and use tax amount by applying the statewide New Jersey state sales and use tax rate to a taxable amount, based on the New Jersey Sales and Use Tax Act."
+    },
+    {
+      "q": "Is New Jersey sales tax a flat rate?",
+      "a": "Yes. New Jersey sales and use tax is applied as a flat statewide rate to taxable transactions under the New Jersey Sales and Use Tax Act."
+    },
+    {
+      "q": "What types of transactions are subject to New Jersey sales and use tax?",
+      "a": "The New Jersey Sales and Use Tax Act applies to retail sales of tangible personal property, specified digital products, and certain services, as defined in official guidance."
+    },
+    {
+      "q": "What is the difference between sales tax and use tax in New Jersey?",
+      "a": "Sales tax applies when tax is collected at the point of sale, while use tax applies when taxable items or services are used in New Jersey and sales tax was not collected. Both are governed by the New Jersey Sales and Use Tax Act."
+    },
+    {
+      "q": "Why can an estimate differ from the final tax due?",
+      "a": "The final tax due can differ because taxability and the taxable base depend on transaction-specific factors under the New Jersey Sales and Use Tax Act."
+    }
+  ],
+  "meta": {
+    "title": "New Jersey Sales Tax Calculator | State Rate Estimate",
+    "description": "Estimate New Jersey sales and use tax based on the statewide rate under the New Jersey Sales and Use Tax Act.",
+    "canonicalPath": "/tools/sales-tax/new-jersey"
+  }
+},
+
+"US-NY": {
+  "h1": "New York Sales Tax Calculator 2026",
+  "intro": "New York administers sales and use tax through a system that includes a statewide state-level component and additional taxes imposed by local jurisdictions. This content describes the general structure of New York’s sales and use tax system and provides a simplified, informational estimate based on the statewide component only.",
+  "sections": {
+    "howItWorks": "New York’s sales and use tax system consists of a state-level tax administered by New York State and additional sales and use taxes that may be imposed by counties, cities, and other local jurisdictions as authorized under New York law. The statewide component is imposed uniformly at the state level, while local components can vary depending on location and sourcing rules. Official administration, definitions, and guidance are provided by the New York State Department of Taxation and Finance (https://www.tax.ny.gov).",
+    "examples": "A simplified estimate based on the statewide component reflects only the New York state portion of sales and use tax. Because local jurisdictions may impose additional sales and use taxes, the total tax due on a transaction can differ depending on location and applicable local rules.",
+    "limitations": "Results are simplified estimates and may not match the final tax due on a specific transaction. This content describes only the statewide state-level component of New York’s sales and use tax system and does not determine whether a transaction is taxable, whether local sales and use taxes apply, or how sourcing, exemptions, or reporting requirements affect the outcome. Local rates and transaction-specific factors can materially change the final amount due."
+  },
+  "faq": [
+    {
+      "q": "What does the New York Sales Tax Calculator estimate?",
+      "a": "It provides a simplified estimate based on the statewide state-level component of New York’s sales and use tax system. The estimate reflects only the state portion and does not include any additional sales and use taxes that may be imposed by local jurisdictions."
+    },
+    {
+      "q": "Does New York have local sales and use taxes?",
+      "a": "Yes. New York law authorizes counties, cities, and other local jurisdictions to impose additional sales and use taxes. These local taxes operate alongside the state-level component and can affect the total tax due depending on location."
+    },
+    {
+      "q": "Why can sales tax amounts differ within New York?",
+      "a": "Although New York administers a statewide state-level sales and use tax component, local jurisdictions may impose additional sales and use taxes. These local taxes vary by location and can result in different total tax amounts for similar transactions in different parts of the state."
+    },
+    {
+      "q": "Does the estimate apply to both sales tax and use tax?",
+      "a": "New York administers sales tax and use tax as part of a unified system. A simplified estimate describes the general statewide structure but does not determine whether a specific transaction is treated as a taxable sale or a taxable use."
+    },
+    {
+      "q": "What are the limitations of a statewide-only estimate for New York?",
+      "a": "A statewide-only estimate reflects only the state-level portion of New York’s sales and use tax system. It does not include local jurisdiction taxes, does not determine taxability, and does not account for exemptions, sourcing rules, or transaction-specific reporting requirements."
+    }
+  ],
+  "meta": {
+    "title": "New York Sales Tax Calculator 2026 | State-Level Sales and Use Tax Estimate",
+    "description": "New York Sales Tax Calculator 2026 providing a simplified estimate based on the state-level component of New York’s sales and use tax system. Notes limitations related to local jurisdiction taxes.",
+    "canonicalPath": "/tools/sales-tax/new-york"
+  }
+},
+
+"US-NC": {
+  "h1": "North Carolina Sales Tax Calculator",
+  "intro": "North Carolina administers sales and use tax through a system that applies a general state rate together with applicable local and transit rates as part of the standard sales and use tax structure. This content describes the general framework of North Carolina’s sales and use tax system and provides a simplified, informational estimate limited to the state-level rate component only.",
+  "sections": {
+    "howItWorks": "North Carolina’s sales and use tax system is administered under the North Carolina Sales and Use Tax Act. For taxable transactions, the general sales and use tax consists of the state rate combined with applicable local and transit rates, which together form the total rate applied based on the transaction’s location. The state-level rate is imposed uniformly statewide, while local and transit rates vary by county and are an integral part of the general system. Official administration, definitions, and guidance are provided by the North Carolina Department of Revenue (https://www.ncdor.gov).",
+    "examples": "A simplified estimate based on the state-level component reflects only the uniform statewide portion of North Carolina’s general sales and use tax. Because applicable local and transit rates are a standard part of the general system and vary by location, the total tax due on a transaction will typically differ from a state-only estimate.",
+    "limitations": "Results are simplified estimates and may not reflect the final tax due on a specific transaction. This content describes only the state-level rate component of North Carolina’s general sales and use tax system and does not determine taxability, exemptions, sourcing, or the applicable local and transit rates that normally apply under North Carolina law. Transaction-specific facts and official guidance can materially affect the final amount due."
+  },
+  "faq": [
+    {
+      "q": "What does this estimate include?",
+      "a": "It provides a simplified estimate limited to the state-level rate component of North Carolina’s general sales and use tax system. The estimate does not include the applicable local and transit rates that are normally part of the total sales and use tax applied to transactions."
+    },
+    {
+      "q": "Does North Carolina normally apply local and transit sales tax rates?",
+      "a": "Yes. Under North Carolina law, the general sales and use tax typically consists of the state rate together with applicable local and transit rates. These local and transit rates vary by county and are part of the standard sales and use tax structure."
+    },
+    {
+      "q": "Why can the total tax due differ from a state-only estimate?",
+      "a": "A state-only estimate excludes applicable local and transit rates, which are normally applied as part of North Carolina’s general sales and use tax system. Because those rates vary by location and other transaction-specific factors may apply, the total tax due can differ from a simplified estimate."
+    },
+    {
+      "q": "Does this estimate determine whether a transaction is taxable?",
+      "a": "No. This estimate does not determine taxability, exemptions, sourcing, or reporting requirements. It is provided for general informational purposes and reflects only the statewide rate component."
+    }
+  ],
+  "meta": {
+    "title": "North Carolina Sales Tax Calculator | State-Level Rate Estimate",
+    "description": "North Carolina Sales Tax Calculator providing a simplified estimate limited to the state-level rate component of North Carolina’s general sales and use tax system, with notes on applicable local and transit rates.",
+    "canonicalPath": "/tools/sales-tax/north-carolina"
+  }
+},
+
+"US-OH": {
+  "h1": "Ohio Sales Tax Calculator 2026",
+  "intro": "Ohio administers sales and use tax through a system that applies a general state rate together with applicable county and transit authority rates as part of the standard sales and use tax structure. This content describes the general framework of Ohio’s sales and use tax system and provides a simplified, informational estimate limited to the state-level rate component only.",
+  "sections": {
+    "howItWorks": "Ohio imposes sales tax on retail sales of tangible personal property and specified services, and a complementary use tax on the storage, use, or consumption of taxable property and services when sales tax has not been properly paid. Under Ohio law, the general sales and use tax consists of the state rate combined with applicable permissive county and transit authority rates, which together form the total rate applied based on location. The state-level rate is imposed uniformly statewide, while county and transit rates vary by jurisdiction and are an integral part of the general system. Official administration and guidance are provided by the Ohio Department of Taxation (https://tax.ohio.gov).",
+    "examples": "A simplified estimate based on the state-level component reflects only the uniform statewide portion of Ohio’s general sales and use tax. Because applicable county and transit authority rates are a standard part of the system and vary by location, the total tax due on a transaction will typically differ from a state-only estimate.",
+    "limitations": "Results are simplified estimates and may not reflect the final tax due on a specific transaction. This content describes only the state-level rate component of Ohio’s general sales and use tax system and does not determine taxability, exemptions, sourcing, or the applicable county or transit authority rates that normally apply under Ohio law. Transaction-specific facts and official guidance can materially affect the final amount due."
+  },
+  "faq": [
+    {
+      "q": "What does the Ohio Sales Tax Calculator 2026 estimate?",
+      "a": "It provides a simplified estimate limited to the state-level rate component of Ohio’s general sales and use tax system. The estimate does not include applicable county or transit authority rates that are normally part of the total sales and use tax applied to transactions."
+    },
+    {
+      "q": "Does Ohio normally apply county and transit sales tax rates?",
+      "a": "Yes. Under Ohio law, the general sales and use tax typically consists of the state rate together with applicable permissive county and transit authority rates. These local rates vary by jurisdiction and are part of the standard sales and use tax structure."
+    },
+    {
+      "q": "How does Ohio’s use tax relate to sales tax?",
+      "a": "Ohio’s use tax is complementary to the sales tax and applies when sales tax was not properly paid on a taxable transaction involving tangible personal property or specified services. Both taxes operate within the same general system, and the total tax due depends on the applicable state, county, and transit authority rates."
+    },
+    {
+      "q": "Why can the total tax due differ from a state-only estimate?",
+      "a": "A state-only estimate excludes applicable county and transit authority rates, which are normally applied as part of Ohio’s general sales and use tax system. Because those rates vary by location and other transaction-specific factors may apply, the total tax due can differ from a simplified estimate."
+    },
+    {
+      "q": "Does this estimate determine whether a transaction is taxable?",
+      "a": "No. This estimate does not determine taxability, exemptions, sourcing, or reporting requirements. It is provided for general informational purposes and reflects only the statewide rate component."
+    }
+  ],
+  "meta": {
+    "title": "Ohio Sales Tax Calculator 2026 | State-Level Rate Estimate",
+    "description": "Ohio Sales Tax Calculator 2026 providing a simplified estimate limited to the state-level rate component of Ohio’s general sales and use tax system, with notes on applicable county and transit authority rates.",
+    "canonicalPath": "/tools/sales-tax/ohio"
+  }
+},
+
+"US-OR": {
+  "h1": "Oregon Sales Tax Calculator 2026",
+  "intro": "Oregon does not impose a general state or local sales tax or a general consumer use tax. As a result, the statewide sales tax component used in a generalized sales tax framework is zero. This page explains how a sales-tax-style estimate applies in Oregon and why the result differs from states that operate a broad retail sales tax system.",
+  "sections": {
+    "howItWorks": "Because Oregon does not impose a general sales tax or general consumer use tax, a generalized sales tax calculation produces no added sales tax amount. Oregon law instead relies on narrowly defined transaction-based excise and use taxes that apply only to specific transactions and are established separately in statute. These transaction-specific taxes are not part of a general retail sales tax system and are not represented by a single statewide sales tax rate. Official guidance is maintained by the Oregon Department of Revenue.",
+    "examples": "In a generalized sales tax scenario, applying a zero statewide sales tax rate to a retail purchase results in a sales tax amount of zero. This outcome reflects Oregon’s absence of a general sales tax framework rather than a reduced or temporary rate. Transaction-based excise and use taxes that may apply in specific circumstances are separate from a general sales tax calculation and are not included in this type of estimate.",
+    "limitations": "Results are simplified estimates based solely on the absence of a general Oregon sales tax. They do not determine whether a particular transaction may be subject to a separate Oregon excise or use tax that applies only in defined circumstances. Transaction-specific rules, statutory definitions, and administrative guidance can affect whether another tax applies."
+  },
+  "faq": [
+    {
+      "q": "Does Oregon impose a general sales tax on retail purchases?",
+      "a": "No. Oregon does not impose a general state or local sales tax or a general consumer use tax. Under a generalized sales tax framework, the statewide sales tax component is zero because there is no broad retail sales tax system in Oregon."
+    },
+    {
+      "q": "Why can a sales tax estimate show zero while some transactions may still be taxed?",
+      "a": "A zero result reflects the absence of a general Oregon sales tax. Oregon law provides for narrowly defined transaction-based excise and use taxes that apply only to specific transactions. Those taxes are separate from a general retail sales tax and are not represented by a single statewide sales tax rate."
+    },
+    {
+      "q": "Is Oregon’s sales tax structured as a flat rate or a tiered system?",
+      "a": "Oregon does not have a general sales tax structure. Because there is no statewide sales tax, a generalized sales tax calculation applies a zero rate rather than a flat or tiered structure."
+    },
+    {
+      "q": "Do local governments in Oregon impose general sales taxes?",
+      "a": "No. Oregon law does not authorize general local sales taxes. Local governments may impose certain transaction-specific taxes only where expressly authorized by statute, and those taxes are not general retail sales taxes."
+    },
+    {
+      "q": "How should a simplified Oregon sales tax estimate be interpreted?",
+      "a": "A simplified estimate showing zero sales tax should be interpreted as confirmation that Oregon does not impose a broad retail sales tax. It is not a determination of whether a specific transaction may be subject to a separate, transaction-based excise or use tax that operates outside a general sales tax framework."
+    }
+  ],
+  "meta": {
+    "title": "Oregon Sales Tax Calculator 2026 | 0.00% State Rate",
+    "description": "Oregon Sales Tax Calculator showing a 0.00% statewide sales tax rate. Oregon does not impose a general state or local sales tax; results reflect the absence of a broad sales tax system.",
+    "canonicalPath": "/tools/sales-tax/oregon"
+  }
+},
+
+"US-PA": {
+  "h1": "Pennsylvania Sales Tax Calculator 2026",
+  "intro": "Pennsylvania administers sales and use tax through a system that applies a general state rate together with applicable local add-on taxes as part of the standard sales and use tax structure. This content describes the general framework of Pennsylvania’s sales and use tax system and provides a simplified, informational estimate limited to the state-level rate component only.",
+  "sections": {
+    "howItWorks": "Pennsylvania imposes sales tax on taxable transactions at a general state rate and a complementary use tax at the same rate when applicable. Under Pennsylvania law, the general sales and use tax system consists of the statewide rate together with local add-on taxes authorized for specific jurisdictions, which together form the total rate applied based on location. The state-level rate is imposed uniformly statewide, while applicable local add-on taxes vary by jurisdiction and are an integral part of the general system. Official administration and guidance are provided by the Pennsylvania Department of Revenue (https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax).",
+    "examples": "A simplified estimate based on the state-level component reflects only the uniform statewide portion of Pennsylvania’s general sales and use tax. Because applicable local add-on taxes form part of the standard system and apply in certain jurisdictions, the total tax due on a transaction can differ from a state-only estimate.",
+    "limitations": "Results are simplified estimates and may not match the amount ultimately due. This content describes only the state-level rate component of Pennsylvania’s general sales and use tax system and does not determine taxability, exemptions, sourcing, or the applicability of local add-on taxes that normally apply under Pennsylvania law. Transaction-specific facts and official guidance can materially affect the final amount due."
+  },
+  "faq": [
+    {
+      "q": "What does the Pennsylvania sales tax estimate represent?",
+      "a": "It represents a simplified estimate limited to the state-level rate component of Pennsylvania’s general sales and use tax system. The estimate does not include applicable local add-on taxes that are normally part of the total tax applied in certain jurisdictions."
+    },
+    {
+      "q": "Does Pennsylvania normally apply local add-on sales taxes?",
+      "a": "Yes. Pennsylvania law authorizes local add-on sales and use taxes in specific jurisdictions, and those local rates are part of the standard sales and use tax structure where they apply."
+    },
+    {
+      "q": "How is the statewide sales tax rate applied in Pennsylvania?",
+      "a": "The statewide sales tax rate is applied uniformly across Pennsylvania as part of the general sales and use tax system. A simplified estimate based on that rate reflects only the state-level component and does not include applicable local add-on taxes."
+    },
+    {
+      "q": "What is the relationship between Pennsylvania sales tax and use tax?",
+      "a": "Pennsylvania imposes a sales tax and a complementary use tax within the same general system. The use tax applies when sales tax was not properly paid on a taxable transaction, and the total tax due depends on the applicable state and local rates."
+    },
+    {
+      "q": "Why can the total tax due differ from a state-only estimate?",
+      "a": "A state-only estimate excludes applicable local add-on taxes that are part of Pennsylvania’s general sales and use tax system in certain jurisdictions. Because those local rates apply based on location and other transaction-specific factors may be relevant, the final tax due can differ from a simplified estimate."
+    }
+  ],
+  "meta": {
+    "title": "Pennsylvania Sales Tax Calculator 2026 | State-Level Rate Estimate",
+    "description": "Pennsylvania Sales Tax Calculator 2026 providing a simplified estimate limited to the state-level rate component of Pennsylvania’s general sales and use tax system, with notes on applicable local add-on taxes.",
+    "canonicalPath": "/tools/sales-tax/pennsylvania"
+  }
+},
+
+"US-RI": {
+    "h1": "Rhode Island Sales Tax Calculator 2026",
+    "intro": "Rhode Island imposes a general statewide sales tax together with a corresponding use tax that applies under specific circumstances. The statewide system is based on a single flat rate that applies to transactions covered by the Rhode Island Sales and Use Tax framework. This page describes the structure of the statewide system and provides general context for estimating tax based on the statewide rate.",
+    "sections": {
+      "howItWorks": "Rhode Island Sales and Use Tax is administered at the state level and applies a uniform statewide rate to transactions that fall within the scope of the general sales tax. A corresponding use tax exists to address situations where sales tax is not collected at the point of sale but tax liability still arises under Rhode Island law. The statewide rate applies consistently within the general system, while certain transaction categories may be subject to separate taxes that operate outside the general statewide sales tax structure. Official definitions, scope, and administrative guidance are issued by the Rhode Island Division of Taxation.",
+      "examples": "A statewide sales or use tax estimate reflects the application of a single flat percentage to the taxable amount when the general statewide rate applies. Because the rate does not vary by location or transaction size within the general system, estimates are based on the same percentage regardless of amount, subject to whether the transaction falls within the general statewide tax framework.",
+      "limitations": "Results are simplified estimates and may not reflect the final tax due in all situations. Rhode Island applies certain additional taxes to defined transaction categories that are not part of the general statewide sales tax structure described here. This content does not determine whether a transaction is taxable, whether an exemption applies, or whether category-specific taxes are triggered. For authoritative guidance and compliance requirements, official information from the Rhode Island Division of Taxation should be consulted."
+    },
+    "faq": [
+      {
+        "q": "What is the general statewide sales tax rate in Rhode Island?",
+        "a": "Rhode Island applies a flat statewide sales tax rate within its general Sales and Use Tax system. The corresponding use tax is imposed at the same statewide rate when applicable. This description addresses the statewide rate component only and does not cover category-specific taxes."
+      },
+      {
+        "q": "How does Rhode Island use tax relate to sales tax?",
+        "a": "Rhode Island imposes a use tax that corresponds to the sales tax and applies at the same statewide rate. The use tax exists to address situations where sales tax is not collected by a seller but tax liability still arises under Rhode Island law."
+      },
+      {
+        "q": "Does Rhode Island have different sales tax rates by city or county?",
+        "a": "Rhode Island’s general sales tax is administered at the state level using a single statewide rate. This content focuses on the statewide system and does not describe location-based rate variations."
+      },
+      {
+        "q": "Why can an estimated amount differ from the tax ultimately due?",
+        "a": "An estimate reflects only the general statewide sales and use tax structure. Differences can arise if a transaction falls outside the general system, is exempt, or is subject to a specific additional tax that is not part of the statewide rate described here."
+      }
+    ],
+    "meta": {
+      "title": "Rhode Island Sales Tax Calculator 2026 | Statewide Rate Estimate",
+      "description": "Estimate Rhode Island sales tax using the statewide sales and use tax structure. This calculator provides general context, limitations, and FAQs based on the statewide system.",
+      "canonicalPath": "/tools/sales-tax/rhode-island"
+    }
+  },
 
 
 };
