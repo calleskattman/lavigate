@@ -1278,6 +1278,479 @@ export const salesTaxSeoContent: Record<string, SalesTaxSeoEntry> = {
   }
 },
 
+"US-FL-BROWARD-COUNTY": {
+  "h1": "Broward County Sales Tax Calculator 2026",
+  "intro": "Broward County applies sales and use tax under Florida’s Sales and Use Tax system, with an additional county discretionary sales surtax. This Broward County Sales Tax Calculator 2026 provides a simplified estimate based on the combined state and county rates applicable in Broward County.",
+  "sections": {
+    "howItWorks": "Broward County sales and use tax is calculated using a combined flat rate made up of two components. The Florida state sales and use tax rate is 6.00%, and Broward County imposes a discretionary sales surtax of 1.00%. When a transaction is subject to Florida sales or use tax and is sourced to Broward County, both components apply together as a single combined rate.",
+    "examples": "A simplified estimate is calculated by applying the combined Broward County rate to the taxable amount. The estimate reflects Florida state sales and use tax at 6.00% plus the Broward County discretionary sales surtax at 1.00%. Because the rate structure is flat, the tax amount increases proportionally with the taxable amount and does not change based on brackets or tiers.",
+    "limitations": "This calculator provides a simplified estimate based solely on the stated Florida state and Broward County rates. It does not determine whether a transaction is taxable, how sourcing rules apply, or whether any exemptions or special rules affect the final amount due. Actual tax liability may differ based on transaction-specific facts and official Florida Department of Revenue guidance."
+  },
+  "faq": [
+    {
+      "q": "What rates are included in the Broward County sales tax estimate?",
+      "a": "The estimate includes Florida state sales and use tax at 6.00% and the Broward County discretionary sales surtax at 1.00%. Together, these components form the combined rate used for transactions subject to sales or use tax in Broward County."
+    },
+    {
+      "q": "Does the same rate apply to sales tax and use tax in Broward County?",
+      "a": "Yes. In Broward County, the same combined rate applies to both sales tax and use tax when a transaction is subject to Florida sales or use tax and the county surtax applies."
+    },
+    {
+      "q": "Is the Broward County sales tax rate progressive?",
+      "a": "No. The Broward County sales and use tax described here is based on flat percentage rates. The tax amount changes only with the taxable amount, not with brackets, tiers, or progressive structures."
+    },
+    {
+      "q": "Why might the estimated amount differ from the final tax due?",
+      "a": "The estimate is simplified and does not account for transaction-specific determinations, exemptions, sourcing rules, or administrative adjustments. These factors can affect the final tax amount reported and remitted."
+    },
+    {
+      "q": "Who administers Broward County sales and use tax?",
+      "a": "Broward County sales and use tax is administered and collected by the Florida Department of Revenue as part of Florida’s Sales and Use Tax system, including the county discretionary sales surtax."
+    }
+  ],
+  "meta": {
+    "title": "Broward County Sales Tax Calculator 2026 | Florida 6% + County Surtax",
+    "description": "Broward County Sales Tax Calculator 2026 providing a simplified estimate based on Florida sales and use tax at 6.00% plus the Broward County discretionary sales surtax of 1.00%.",
+    "canonicalPath": "/tools/sales-tax/broward-county-florida"
+  }
+},
+
+"US-NV-CLARK-COUNTY": {
+  "h1": "Clark County Sales Tax Calculator 2026",
+  "intro": "Clark County is part of Nevada’s sales and use tax system, where taxable transactions are subject to a combined county-level rate. The Clark County Sales Tax Calculator 2026 provides a simplified estimate based on the sales and use tax rate applicable in Clark County for 2026.",
+  "sections": {
+    "howItWorks": "Sales and use tax in Clark County is applied as a combined flat rate to taxable transactions. The total rate is formed by adding the Nevada state sales and use tax rate of 6.85% to Clark County’s local and district sales and use tax components totaling 1.525%. For estimation purposes, these components are treated as a single combined rate that applies uniformly to the taxable amount for transactions sourced to Clark County.",
+    "examples": "If a transaction is subject to sales or use tax in Clark County, the estimated tax amount is calculated by applying the combined county rate to the taxable amount. The combined rate reflects the 6.85% Nevada state component plus the 1.525% Clark County local and district components. Because the rate structure is flat, the tax amount increases proportionally with the taxable amount and does not change based on brackets or tiers.",
+    "limitations": "This calculator provides a simplified estimate and may not match the exact tax collected on a specific transaction. The estimate reflects the combined Clark County sales and use tax rate and does not account for transaction-specific sourcing rules, exemptions, or administrative adjustments. Official determinations and filing requirements are governed by the Nevada Department of Taxation."
+  },
+  "faq": [
+    {
+      "q": "What sales tax rate applies in Clark County, Nevada?",
+      "a": "Clark County applies a combined sales and use tax rate made up of a 6.85% Nevada state component and 1.525% in Clark County local and district components. Together, these form a combined rate of 8.375% for taxable transactions in Clark County."
+    },
+    {
+      "q": "Does the same rate apply to sales tax and use tax in Clark County?",
+      "a": "Yes. In Nevada, the use tax is designed to complement the sales tax and applies at the same combined rate as the sales tax for the applicable location. In Clark County, both sales tax and use tax are applied using the same combined county rate."
+    },
+    {
+      "q": "Is the Clark County sales tax progressive or tiered?",
+      "a": "No. The Clark County sales and use tax is applied as a flat percentage to the taxable amount. The rate does not increase or decrease based on the size of the purchase."
+    },
+    {
+      "q": "Why might my actual tax differ from this estimate?",
+      "a": "Differences can occur due to transaction-specific factors such as sourcing rules, exemptions, rounding practices, or special reporting requirements. This calculator is intended to provide a general estimate based on the combined Clark County rate, not a final tax determination."
+    },
+    {
+      "q": "Who administers sales and use tax for Clark County?",
+      "a": "Sales and use tax for Clark County is administered and collected by the Nevada Department of Taxation, which publishes official rate information and filing guidance."
+    }
+  ],
+  "meta": {
+    "title": "Clark County Sales Tax Calculator 2026 | Nevada 8.375% Rate Estimate",
+    "description": "Clark County Sales Tax Calculator 2026 providing a simplified estimate based on Nevada sales and use tax. Applies the combined 6.85% state rate plus 1.525% Clark County local and district components (8.375% total).",
+    "canonicalPath": "/tools/sales-tax/clark-county-nevada"
+  }
+},
+
+"US-NY-ERIE-COUNTY": {
+  "h1": "Erie County Sales Tax Calculator 2026",
+  "intro": "Erie County sales tax is applied through a combined sales and use tax structure that includes a New York State component and an Erie County local component. This page provides a simplified estimate based on the combined rate structure applicable within Erie County.",
+  "sections": {
+    "howItWorks": "Erie County is subject to New York State sales and use tax together with an Erie County local sales and use tax component. The total sales and use tax rate within the county reflects the statewide rate plus the county local rate. The New York State sales and use tax component is 4.00%, and the Erie County local sales and use tax component is 4.75%. For estimation purposes, both components are treated as flat percentages applied to the same taxable amount. Official rate information is published by the New York State Department of Taxation and Finance.",
+    "examples": "Example calculations illustrate how a flat percentage structure behaves when the taxable amount changes.\n\nExample 1: Applying 4.00% to a taxable amount represents the New York State sales and use tax component.\n\nExample 2: Applying 4.75% to the same taxable amount represents the Erie County local sales and use tax component.\n\nExample 3: The estimated Erie County sales and use tax is the sum of the state and county component amounts applied to the same taxable base.",
+    "limitations": "Results are simplified estimates and may not match an actual liability in every situation. This estimate reflects only the stated components of Erie County sales and use tax: New York State sales and use tax at 4.00% and Erie County local sales and use tax at 4.75%. It does not account for differences that can arise from how a taxable base is determined in specific transactions, rounding practices, timing of rate changes, or other administrative rules. For authoritative determinations, official publications from the responsible authority should be consulted."
+  },
+  "faq": [
+    {
+      "q": "What rates are included in the Erie County sales and use tax estimate?",
+      "a": "The estimate is based on the stated components of Erie County sales and use tax: New York State sales and use tax at 4.00% and the Erie County local sales and use tax at 4.75%. These components are treated as flat percentages applied to the same taxable amount, and the estimated total reflects the sum of the two component amounts."
+    },
+    {
+      "q": "How is the total Erie County sales and use tax rate determined from the components?",
+      "a": "The total rate reflects a statewide component plus a county local component. The statewide portion is New York State sales and use tax at 4.00%, and the local portion is the Erie County local sales and use tax at 4.75%. A simplified estimate applies both flat percentages to the taxable amount and adds the results together."
+    },
+    {
+      "q": "Does this estimate assume a progressive or tiered tax structure?",
+      "a": "No. The Erie County sales and use tax estimate is based on a flat percentage approach. Each component is applied as a single percentage to the taxable amount, without brackets or tiers."
+    },
+    {
+      "q": "Why might an estimated amount differ from the amount charged or remitted?",
+      "a": "This estimate is simplified and may differ from an amount charged or remitted due to transaction-specific administrative details. Differences can arise from how the taxable base is determined, rounding practices, or how reporting rules apply in specific circumstances."
+    }
+  ],
+  "meta": {
+    "title": "Erie County Sales Tax Calculator 2026 | New York State and County Rate Estimate",
+    "description": "Erie County sales tax estimate based on New York State sales and use tax at 4.00% plus Erie County local sales and use tax at 4.75%.",
+    "canonicalPath": "/tools/sales-tax/erie-county-new-york"
+  }
+},
+
+"US-OH-FRANKLIN-COUNTY": {
+  "h1": "Franklin County Sales Tax Calculator 2026",
+  "intro": "Franklin County applies the Franklin County sales and use tax under Ohio sales and use tax law, combining a statewide component with locally imposed components. This Franklin County Sales Tax Calculator 2026 provides a simplified estimate based on the Ohio state sales and use tax at 5.75% and the Franklin County and transit authority sales and use tax at 2.25% for transactions subject to sales and use tax in Franklin County.",
+  "sections": {
+    "howItWorks": "Franklin County is subject to Ohio sales and use tax rules that apply a flat-rate percentage to the taxable sales price. The Franklin County sales and use tax reflects multiple components administered within the same legal framework: the Ohio state sales and use tax at 5.75% and the Franklin County and transit authority sales and use tax at 2.25%. In practice, the total rate applied within Franklin County reflects the statewide rate plus locally imposed components, with the combined result applied uniformly to the taxable amount for a given transaction.",
+    "examples": "A simplified estimate for Franklin County can be expressed as a flat-rate calculation that applies the Ohio state sales and use tax at 5.75% together with the Franklin County and transit authority sales and use tax at 2.25% to the taxable sales price. The estimated tax amount is the taxable amount multiplied by the combined rate, and the estimated total is the taxable amount plus that estimated tax. This approach reflects the structure described for the Franklin County sales and use tax, where the total rate within the county is the statewide rate plus locally imposed components administered under Ohio sales and use tax law.",
+    "limitations": "Results are simplified estimates and may not match the amount ultimately due. This estimate is limited to the components listed here: Ohio state sales and use tax at 5.75% and Franklin County and transit authority sales and use tax at 2.25%. It does not account for differences that can arise from how a transaction is sourced under Ohio sales and use tax law, how taxability is determined for specific goods or services, or how rounding is applied in a particular billing or reporting context. For official rate information and updates administered under Ohio law, refer to the Ohio Department of Taxation (https://tax.ohio.gov/home/news-and-events/all-news/2025-04-01-sales-and-use-tax-rate-change)."
+  },
+  "faq": [
+    {
+      "q": "What sales tax components apply in Franklin County?",
+      "a": "Franklin County is subject to Ohio sales and use tax together with locally imposed components that include a county and regional transit authority element. The Franklin County sales and use tax described here consists of the Ohio state sales and use tax at 5.75% plus the Franklin County and transit authority sales and use tax at 2.25%. These components are administered under Ohio sales and use tax law and, when combined, form the total rate applied within Franklin County for transactions that are subject to sales and use tax."
+    },
+    {
+      "q": "Is the Franklin County sales tax calculated using a flat rate?",
+      "a": "Yes. The Franklin County sales and use tax is described as a flat-rate system for taxable transactions, meaning the applicable rate is applied uniformly to the taxable sales price. The total rate within Franklin County reflects the statewide component and locally imposed components administered under Ohio sales and use tax law. In this summary, the relevant components are the Ohio state sales and use tax at 5.75% and the Franklin County and transit authority sales and use tax at 2.25%, applied as a combined flat rate to the taxable amount."
+    },
+    {
+      "q": "What does “sales and use tax” mean in the Franklin County context?",
+      "a": "In Franklin County, the term “sales and use tax” refers to Ohio’s tax framework that applies to taxable transactions and is administered at both the state level and through locally imposed components. The system described here is the Franklin County sales and use tax, which reflects the Ohio state sales and use tax at 5.75% together with the Franklin County and transit authority sales and use tax at 2.25%. The combined rate is applied as a flat percentage to the taxable sales price when the transaction is subject to Ohio sales and use tax law."
+    },
+    {
+      "q": "Why might an estimated amount differ from the final tax due in Franklin County?",
+      "a": "An estimate can differ from the final amount due because the simplified calculation focuses only on the listed rate components and applies them as a flat-rate percentage to a taxable amount. Actual tax outcomes can vary based on how a transaction is sourced under Ohio sales and use tax law, how taxability is determined for specific goods or services, and how rounding is handled in invoicing or reporting. This content is limited to the Ohio state sales and use tax at 5.75% and the Franklin County and transit authority sales and use tax at 2.25% and does not incorporate other administrative details."
+    },
+    {
+      "q": "Does this estimate include county and transit authority components for Franklin County?",
+      "a": "Yes. The estimate described for Franklin County includes both the statewide component and the locally imposed components that are part of the Franklin County sales and use tax. Specifically, it includes the Ohio state sales and use tax at 5.75% and the Franklin County and transit authority sales and use tax at 2.25%. These components are administered under Ohio sales and use tax law and together reflect the total rate applied within Franklin County for transactions that are subject to sales and use tax."
+    }
+  ],
+  "meta": {
+    "title": "Franklin County Sales Tax Calculator 2026 | Ohio State And Local Rate Components",
+    "description": "Franklin County Sales Tax Calculator 2026 with a simplified estimate based on Ohio state sales and use tax at 5.75% plus Franklin County and transit authority sales and use tax at 2.25%.",
+    "canonicalPath": "/tools/sales-tax/franklin-county-ohio"
+  }
+},
+
+"US-PA-FRANKLIN-COUNTY": {
+  "h1": "Franklin County Sales Tax Calculator 2026",
+  "intro": "Franklin County does not impose a local sales or use tax. The Franklin County Sales Tax Calculator reflects the county sales and use tax as the Pennsylvania state sales and use tax administered at the state level.",
+  "sections": {
+    "howItWorks": "The Franklin County sales and use tax follows a flat-rate structure. Because Franklin County does not add a local sales or use tax, the applicable rate for taxable transactions in the county is the Pennsylvania state sales and use tax. A simplified estimate applies the single state rate to the taxable transaction amount, without any county-level add-on. Administration and statewide rules are handled by the Pennsylvania Department of Revenue (https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax.html).",
+    "examples": "Because Franklin County does not impose a local sales or use tax, estimates are based solely on the Pennsylvania state sales and use tax. A taxable transaction amount is multiplied by the state rate to produce an estimated sales and use tax amount. There is no separate county component included in the calculation for Franklin County.",
+    "limitations": "Results are simplified estimates and may not match the amount due on a specific transaction. This summary reflects that Franklin County does not impose a local sales or use tax and includes only the Pennsylvania state sales and use tax. Actual tax outcomes can depend on how a transaction is classified under state rules, how the taxable amount is determined, and how sourcing and rounding are applied. This content does not address transaction-specific determinations that may affect the final tax due."
+  },
+  "faq": [
+    {
+      "q": "Does Franklin County have its own local sales or use tax rate?",
+      "a": "No. Franklin County does not impose a local sales or use tax. Taxable transactions in the county are subject only to the Pennsylvania state sales and use tax administered at the state level."
+    },
+    {
+      "q": "What rate does this Franklin County sales and use tax estimate reflect?",
+      "a": "The estimate reflects the Pennsylvania state sales and use tax only. There is no additional Franklin County local sales or use tax included because none applies."
+    },
+    {
+      "q": "Is the Franklin County sales and use tax flat-rate or progressive?",
+      "a": "It is flat-rate in this summary. The estimate applies a single state-level percentage to the taxable amount and does not involve brackets or tiers."
+    },
+    {
+      "q": "Why might an estimated amount differ from the tax due for a Franklin County transaction?",
+      "a": "An estimate can differ because it is a simplified calculation based on the state rate and assumes the transaction is taxable under Pennsylvania rules. Differences can arise from how taxability, sourcing, and rounding are handled in specific situations."
+    },
+    {
+      "q": "Does this include any city, county, or district sales tax in Franklin County?",
+      "a": "No. This summary reflects that Franklin County does not impose a local sales or use tax. The estimate includes only the Pennsylvania state sales and use tax."
+    }
+  ],
+  "meta": {
+    "title": "Franklin County Sales Tax Calculator 2026 | Pennsylvania State Rate",
+    "description": "Franklin County Sales Tax Calculator with a simplified estimate based on the Pennsylvania state sales and use tax. Franklin County does not impose a local sales or use tax.",
+    "canonicalPath": "/tools/sales-tax/franklin-county-pennsylvania"
+  }
+},
+
+"US-NY-FRANKLIN-COUNTY": {
+  "h1": "Franklin County Sales Tax Calculator 2026",
+  "intro": "Franklin County applies a combined sales and use tax that includes New York State sales and use tax together with a county-level local sales and use tax. The Franklin County Sales Tax Calculator provides a simplified estimate based on the combined rate structure administered within New York State.",
+  "sections": {
+    "howItWorks": "Franklin County sales and use tax is applied as a flat-rate tax composed of two components: New York State sales and use tax and a Franklin County local sales and use tax. The total rate applied in Franklin County reflects the statewide rate plus the county local rate. For estimation purposes, the combined rate is applied uniformly to the taxable amount under New York State’s administered sales and use tax system.",
+    "examples": "A simplified estimate for Franklin County is calculated by applying the combined sales and use tax rate to the taxable amount. The total rate reflects the sum of the New York State sales and use tax component and the Franklin County local sales and use tax component. The resulting figure represents the estimated sales and use tax for a taxable transaction in Franklin County under the combined system.",
+    "limitations": "Results are simplified estimates and may not reflect all factors that affect actual sales and use tax outcomes. This content summarizes the Franklin County sales and use tax as a flat-rate combination of New York State sales and use tax and a Franklin County local sales and use tax. Actual tax liability can depend on transaction-specific rules, sourcing, exemptions, and administrative practices. For authoritative guidance, consult the New York State Department of Taxation and Finance."
+  },
+  "faq": [
+    {
+      "q": "What components make up the Franklin County sales and use tax?",
+      "a": "Franklin County sales and use tax consists of New York State sales and use tax together with a county-level local sales and use tax. The total rate applied in Franklin County reflects the statewide component plus the county local component, administered as part of New York State’s combined system."
+    },
+    {
+      "q": "Is the Franklin County sales tax treated as a flat rate?",
+      "a": "Yes. The estimate treats Franklin County sales and use tax as flat-rate. The combined rate is applied uniformly to the taxable amount and does not involve brackets or tiers."
+    },
+    {
+      "q": "Why does the Franklin County rate include both state and county components?",
+      "a": "New York administers sales and use tax as a combined system in which the statewide rate applies together with any local rate imposed by a county or other jurisdiction. In Franklin County, the total rate reflects the New York State component plus the county local component."
+    },
+    {
+      "q": "Does this estimate include any city or district sales taxes in Franklin County?",
+      "a": "This estimate reflects the New York State sales and use tax and the Franklin County local sales and use tax only. It does not include any additional city or special district components beyond those stated."
+    },
+    {
+      "q": "Why might an estimate differ from the tax charged on a transaction?",
+      "a": "An estimate may differ because it is a simplified calculation. Actual tax amounts can vary based on how a transaction is sourced, how taxability is determined, and how rounding and reporting rules are applied under New York State sales and use tax administration."
+    }
+  ],
+  "meta": {
+    "title": "Franklin County Sales Tax Calculator 2026 | Combined NY State and County Rate",
+    "description": "Estimate sales and use tax in Franklin County based on the combined New York State and county sales and use tax rates.",
+    "canonicalPath": "/tools/sales-tax/franklin-county-new-york"
+  }
+},
+
+"US-TX-FRANKLIN-COUNTY": {
+  "h1": "Franklin County Sales Tax Calculator 2026",
+  "intro": "Franklin County sales and use tax is administered under Texas sales and use tax law as part of a combined state and local sales and use tax system. The Franklin County Sales Tax Calculator provides a simplified estimate based on the Texas state sales and use tax and the Franklin County sales and use tax for transactions in Franklin County.",
+  "sections": {
+    "howItWorks": "Franklin County imposes a county-level sales and use tax that applies in addition to the Texas state sales and use tax. Under the Franklin County sales and use tax system, the combined rate is formed by adding the Texas state sales and use tax and the Franklin County sales and use tax. This is a flat-rate structure in which the same percentage applies to the taxable amount, and the estimated tax is calculated by applying the combined rate to that amount. Administration and published guidance for Texas sales and use tax are provided by the Texas Comptroller of Public Accounts.",
+    "examples": "Because the Franklin County sales and use tax is flat-rate based, the estimated tax is calculated by applying the combined rate to the taxable amount. The combined rate reflects the Texas state sales and use tax plus the Franklin County sales and use tax. The resulting estimate represents the combined state and county sales and use tax for a transaction in Franklin County, expressed as a single percentage applied to the taxable amount.",
+    "limitations": "Results are simplified estimates and may not match the amount ultimately collected or remitted. This estimate reflects only the components listed here: Texas state sales and use tax and Franklin County sales and use tax. It does not account for differences that can arise from transaction-specific taxability determinations, sourcing rules, rounding practices, or documentation requirements under Texas sales and use tax law. For authoritative treatment of specific situations, official guidance should be consulted."
+  },
+  "faq": [
+    {
+      "q": "What taxes are included in the Franklin County sales and use tax estimate?",
+      "a": "The estimate includes only the components explicitly listed for the Franklin County sales and use tax system: the Texas state sales and use tax and the Franklin County sales and use tax. These components are combined as part of the state and local sales and use tax system administered under Texas law. No other tax components are included in this estimate."
+    },
+    {
+      "q": "Is the Franklin County sales and use tax calculated with a flat rate?",
+      "a": "Yes. The Franklin County sales and use tax estimate is based on a flat-rate structure. The combined rate is formed by adding the Texas state sales and use tax and the Franklin County sales and use tax, and that combined percentage is applied uniformly to the taxable amount."
+    },
+    {
+      "q": "Why might an estimated amount differ from the tax collected on a transaction?",
+      "a": "An estimate can differ from the amount collected because real-world sales and use tax outcomes can depend on transaction-specific determinations under Texas sales and use tax law, including taxability, sourcing, and rounding practices. The estimate here is a simplified calculation based only on the stated state and county components."
+    },
+    {
+      "q": "Does this estimate include taxes beyond the Texas state and Franklin County rates listed?",
+      "a": "No. The estimate is limited to the Texas state sales and use tax and the Franklin County sales and use tax. It does not incorporate any other taxes or additional local components not explicitly stated."
+    },
+    {
+      "q": "What is the difference between sales tax and use tax in this context?",
+      "a": "In this context, “sales and use tax” refers to the Texas state sales and use tax together with the Franklin County sales and use tax as components of the combined system. The estimate treats the applicable tax as a flat percentage applied to the taxable amount using the combined rate."
+    }
+  ],
+  "meta": {
+    "title": "Franklin County Sales Tax Calculator 2026 | Texas State 6.25% + County 0.50%",
+    "description": "Estimate sales and use tax in Franklin County, Texas based on the combined Texas state sales and use tax and Franklin County sales and use tax.",
+    "canonicalPath": "/tools/sales-tax/franklin-county-texas"
+  }
+},
+
+"US-FL-POLK-COUNTY": {
+  "h1": "Polk County Sales Tax Calculator 2026",
+  "intro": "Florida applies a statewide sales and use tax and allows counties to levy a discretionary sales surtax on many transactions that are subject to Florida sales tax. This Polk County sales tax calculator provides a simplified estimate for taxable transactions in Polk County based on the state rate and the Polk County discretionary surtax rate shown here.",
+  "sections": {
+    "howItWorks": "Polk County’s estimated sales tax total is calculated by combining Florida’s statewide sales tax rate with Polk County’s discretionary sales surtax rate. For transactions that are taxable under Florida sales tax rules, the county surtax is collected in addition to the state rate. This estimate uses two components: Florida state sales tax (6.00%) and the Polk County discretionary sales surtax (0.50%). Rate information and surtax guidance are maintained by the Florida Department of Revenue.",
+    "examples": "This estimate applies the combined rate to the taxable amount for a transaction that is subject to Florida sales tax in Polk County. The combined rate shown here is the sum of Florida state sales tax (6.00%) and the Polk County discretionary sales surtax (0.50%). Because the calculation is percentage-based, the estimated tax amount changes proportionally with the taxable amount.",
+    "limitations": "Results are simplified estimates and may not match the final tax due on a specific transaction. This estimate reflects only the components listed here for Polk County: Florida state sales tax (6.00%) and the Polk County discretionary sales surtax (0.50%) for transactions that are subject to Florida sales tax. Transaction-specific rules, taxability determinations, and other factors can affect the final amount due. For authoritative guidance, consult the Florida Department of Revenue."
+  },
+  "faq": [
+    {
+      "q": "What taxes are included in the Polk County sales tax estimate?",
+      "a": "The estimate includes Florida state sales tax (6.00%) and the Polk County discretionary sales surtax (0.50%) for transactions that are subject to Florida sales tax in Polk County. The estimate is limited to these stated components and does not incorporate other taxes or transaction-specific rules."
+    },
+    {
+      "q": "Is the Polk County discretionary sales surtax collected in addition to the Florida state rate?",
+      "a": "Yes. Polk County’s discretionary sales surtax is a county-level tax that is collected in addition to Florida’s statewide sales tax when a transaction is taxable under Florida sales tax rules. This estimate combines the two stated components: 6.00% state tax and 0.50% county surtax."
+    },
+    {
+      "q": "Does this calculator use a single combined rate for Polk County?",
+      "a": "Yes. This estimate uses a combined rate that adds Florida state sales tax (6.00%) and the Polk County discretionary sales surtax (0.50%). The calculator applies the combined percentage to the taxable amount for transactions that are subject to Florida sales tax in Polk County."
+    },
+    {
+      "q": "Why might the estimated sales tax differ from the amount charged on a receipt?",
+      "a": "The result is a simplified estimate and may differ from the final amount charged because real-world outcomes depend on transaction-specific details and how taxability is determined and applied in practice. This estimate reflects only the stated rates listed here and does not provide a legal determination of tax due for a particular purchase."
+    }
+  ],
+  "meta": {
+    "title": "Polk County Sales Tax Calculator 2026 | Florida State Rate + County Surtax",
+    "description": "Polk County sales tax calculator with a simplified estimate based on Florida state sales tax (6.00%) plus the Polk County discretionary sales surtax (0.50%) for transactions subject to Florida sales tax.",
+    "canonicalPath": "/tools/sales-tax/polk-county-florida"
+  }
+},
+
+"US-NY-SUFFOLK-COUNTY": {
+  "h1": "Suffolk County Sales Tax Calculator 2026",
+  "intro": "Suffolk County sales tax follows a flat-rate structure based on a combined state and local system published by New York State. This calculator provides a simplified estimate for taxable transactions in Suffolk County using the official components that apply to the county.",
+  "sections": {
+    "howItWorks": "Suffolk County’s sales and use tax is calculated by combining multiple flat-rate components that apply to taxable transactions. These components include New York State sales and use tax at 4.00%, the Suffolk County local sales and use tax at 4.375%, and the Metropolitan Commuter Transportation District (MCTD) surcharge at 0.375%. New York State publishes combined state and local sales tax rates by jurisdiction and assigns a reporting code for Suffolk County based on this structure.",
+    "examples": "Because the system is flat-rate based, the combined sales tax rate for Suffolk County is the sum of the listed components: 4.00% (New York State) + 4.375% (Suffolk County) + 0.375% (MCTD), resulting in a total combined rate of 8.75%. For any taxable amount, the estimated sales tax is calculated by applying this combined percentage to the taxable portion of the transaction.",
+    "limitations": "Results are simplified estimates and may not match the tax charged on a specific transaction. This estimate reflects only the stated components for Suffolk County: New York State sales and use tax at 4.00%, the Suffolk County local sales and use tax at 4.375%, and the MCTD surcharge at 0.375%. Transaction sourcing rules, reporting requirements, and other administrative factors may affect how tax is applied in practice. For authoritative guidance, consult the New York State Department of Taxation and Finance."
+  },
+  "faq": [
+    {
+      "q": "What taxes are included in the Suffolk County sales tax estimate?",
+      "a": "The estimate includes three flat-rate components that apply to taxable transactions in Suffolk County: New York State sales and use tax at 4.00%, the Suffolk County local sales and use tax at 4.375%, and the Metropolitan Commuter Transportation District (MCTD) surcharge at 0.375%. Together, these components form the combined rate used in the calculation."
+    },
+    {
+      "q": "Why is the Metropolitan Commuter Transportation District (MCTD) surcharge included?",
+      "a": "Suffolk County is located within the Metropolitan Commuter Transportation District. New York State identifies Suffolk County as a jurisdiction where the MCTD surcharge applies in addition to the state and county sales and use tax components. The estimate reflects this structure by listing the MCTD surcharge as a separate component."
+    },
+    {
+      "q": "Is the Suffolk County sales tax rate progressive or tiered?",
+      "a": "No. The Suffolk County sales and use tax system described here is flat-rate based. The same combined percentage rate applies to the taxable amount regardless of transaction size, and the calculation does not involve brackets, tiers, or thresholds."
+    },
+    {
+      "q": "What does “sales and use tax” mean in this Suffolk County context?",
+      "a": "In this context, “sales and use tax” refers to the combined state and local tax system administered by New York State and published by jurisdiction. The estimate includes the New York State sales and use tax, the Suffolk County local sales and use tax, and the applicable MCTD surcharge as separate components of a single flat-rate calculation."
+    },
+    {
+      "q": "Why might the estimated tax differ from the amount shown on a receipt?",
+      "a": "The calculator provides a simplified estimate based on published component rates for Suffolk County. Actual tax charged may differ due to transaction-specific factors such as sourcing rules, exemptions, or reporting requirements that determine how a transaction is treated for sales tax purposes."
+    }
+  ],
+  "meta": {
+    "title": "Suffolk County Sales Tax Calculator 2026 | Combined NY State, County, and MCTD Rate",
+    "description": "Suffolk County sales tax calculator with a simplified estimate based on New York State sales and use tax at 4.00%, Suffolk County local sales and use tax at 4.375%, and the Metropolitan Commuter Transportation District surcharge at 0.375%.",
+    "canonicalPath": "/tools/sales-tax/suffolk-county-new-york"
+  }
+},
+
+"US-TX-AUSTIN-CITY": {
+  "h1": "Austin Sales Tax Calculator 2026",
+  "intro": "Austin applies a City Sales and Use Tax as part of the Texas local sales and use tax system. The Austin Sales Tax Calculator 2026 provides a simplified estimate based on the combined Texas state sales and use tax at 6.25% and the Austin city sales and use tax at 1.00% for transactions associated with Austin in 2026.",
+  "sections": {
+    "howItWorks": "Austin’s sales and use tax is flat-rate based and reflects a combined rate made up of two components: the Texas state sales and use tax at 6.25% and the Austin city sales and use tax at 1.00%. In practice, the combined rate is applied to the taxable sales price to estimate sales tax due. The same combined structure is used for use tax when tax is owed on taxable items or services in situations where sales tax was not collected at the time of purchase. Rate administration and published guidance are provided by the Texas Comptroller of Public Accounts (https://comptroller.texas.gov/taxes/sales/).",
+    "examples": "Example calculations below illustrate how a flat combined rate is applied. The combined rate is the Texas state sales and use tax at 6.25% plus the Austin city sales and use tax at 1.00%. \n\nIf a taxable amount is multiplied by 6.25%, that produces the state portion of the estimate. If the same taxable amount is multiplied by 1.00%, that produces the Austin city portion of the estimate. Adding those two results produces the combined estimated sales tax for Austin under this simplified approach. The same combined-rate method applies when estimating use tax under the City Sales and Use Tax framework.",
+    "limitations": "Results are simplified estimates and may not match an amount calculated on an invoice or required on a filing. This estimate reflects only the Texas state sales and use tax at 6.25% and the Austin city sales and use tax at 1.00% as flat-rate components, and it does not account for transaction-specific taxability determinations, sourcing rules, rounding practices, or other administrative factors that can affect the final tax due. For authoritative determinations, published rate information and official guidance should be consulted."
+  },
+  "faq": [
+    {
+      "q": "What sales tax rates are included for Austin in this estimate?",
+      "a": "This estimate includes two flat-rate components that apply within the described Austin context: the Texas state sales and use tax at 6.25% and the Austin city sales and use tax at 1.00%. The combined estimate is based on applying both components to the same taxable sales price and then summing the results. No other tax components are included here, and the estimate is limited to the rates explicitly listed. The approach is intended to reflect a straightforward combined-rate calculation."
+    },
+    {
+      "q": "How is the combined Austin sales tax estimate calculated under a flat-rate system?",
+      "a": "Under a flat-rate system, the estimate is calculated by applying each listed rate component to the taxable amount and then adding the component results together. For Austin, that means calculating a state portion at 6.25% and a city portion at 1.00% on the same taxable base. The combined estimate is the sum of those two amounts. This method does not involve brackets, tiers, or progressive structures; it is a single-rate application per component across the taxable amount."
+    },
+    {
+      "q": "What is the difference between sales tax and use tax in this Austin context?",
+      "a": "Sales tax and use tax are both part of the City Sales and Use Tax framework described here, and both are estimated using the same combined flat-rate structure. Sales tax generally refers to tax collected on taxable transactions at the time of sale. Use tax generally refers to tax owed on taxable items or services when sales tax was not collected at the time of purchase and the item is used in the taxing jurisdiction. This estimate applies the Texas 6.25% component and the Austin 1.00% component in either case."
+    },
+    {
+      "q": "Why might an invoice total differ from this simplified estimate?",
+      "a": "An invoice total can differ from a simplified estimate for several factual reasons unrelated to progressive structures. Differences can arise from how taxability is determined for specific items or services, how a transaction is sourced to a location for tax purposes, and how rounding is applied at the line-item level versus the invoice level. Administrative practices and documentation can also affect what is collected or shown. This estimate is limited to applying the Texas 6.25% and Austin 1.00% flat-rate components and does not incorporate those transaction-level factors."
+    },
+    {
+      "q": "Does this estimate include any taxes other than the Texas state and Austin city components?",
+      "a": "No. The estimate is limited to the components explicitly listed: the Texas state sales and use tax at 6.25% and the Austin city sales and use tax at 1.00%. It does not include any other taxes, and it does not describe or incorporate additional local components beyond the Austin city rate stated here. Because the calculation is intentionally simplified, it also does not address how particular transactions may be treated under detailed rules that can affect the final amount due."
+    }
+  ],
+  "meta": {
+    "title": "Austin Sales Tax Calculator 2026: Texas 6.25% + Austin 1.00% Rate Estimate",
+    "description": "Austin Sales Tax Calculator 2026 for a simplified estimate based on Texas state sales and use tax at 6.25% plus Austin city sales and use tax at 1.00%. Flat-rate combined calculation with key limitations noted.",
+    "canonicalPath": "/tools/sales-tax/austin-city-texas"
+  }
+},
+
+"US-MA-BOSTON-CITY": {
+  "h1": "Boston Sales Tax Calculator 2026",
+  "intro": "Boston follows Massachusetts sales and use tax rules and does not impose a separate general city sales or use tax. The Boston Sales Tax Calculator 2026 provides a simplified estimate based on the Massachusetts statewide sales and use tax rate of 6.25% as it applies in Boston for 2026.",
+  "sections": {
+    "howItWorks": "In Boston, the applicable system is Massachusetts sales and use tax administered at the state level. Because Boston does not add a separate general city sales or use tax, the general rate applied in Boston is the Massachusetts statewide sales and use tax rate of 6.25%. This is a flat-rate structure: the estimated tax amount is calculated by applying a single rate to the taxable amount, without brackets or tiered rates. Official guidance and administration are handled by the Massachusetts Department of Revenue (https://www.mass.gov/orgs/massachusetts-department-of-revenue).",
+    "examples": "The following examples illustrate flat-rate behavior under the Massachusetts statewide sales and use tax rate that applies in Boston.\n\nExample 1: If a taxable amount is determined, the estimated sales and use tax is 6.25% of that taxable amount.\n\nExample 2: If the taxable amount changes, the estimated tax changes proportionally at the same 6.25% rate, because the rate is flat and Boston does not impose a separate general city sales or use tax.\n\nThese examples describe rate application only and do not address product-specific taxability or transaction-specific rules.",
+    "limitations": "Results are simplified estimates and may not reflect all transaction-specific details that can affect Massachusetts sales and use tax outcomes in Boston. The estimate assumes the general statewide rate of 6.25% applies and does not account for differences in taxability that may depend on the nature of the item or service, the structure of the transaction, or other rule-based determinations. Administration is at the state level, and Boston does not impose a separate general city sales or use tax, so the estimate does not include any additional local general sales tax layer."
+  },
+  "faq": [
+    {
+      "q": "Does Boston have its own general city sales tax rate?",
+      "a": "No. Boston does not impose a separate general city sales or use tax. The general sales and use tax applicable in Boston is the Massachusetts statewide sales and use tax. That statewide tax is administered at the state level and applies at a flat rate of 6.25% when the general rate applies. As a result, a general estimate for Boston is based on the statewide rate rather than a city-specific add-on rate."
+    },
+    {
+      "q": "What rate does a general sales and use tax estimate for Boston rely on?",
+      "a": "A general estimate for Boston relies on the Massachusetts statewide sales and use tax rate of 6.25%. This reflects the structure described for Boston: there is no separate general city sales or use tax layered on top of the statewide rate. The rate is flat, meaning the same percentage applies to the taxable amount when the general rate applies, without brackets or progressive tiers."
+    },
+    {
+      "q": "What does “flat rate” mean for Boston sales and use tax estimates?",
+      "a": "A flat rate means a single percentage is applied to the taxable amount to determine the estimated tax. For Boston, the general estimate is based on the Massachusetts statewide sales and use tax rate of 6.25%, and Boston does not add a separate general city sales or use tax. With a flat-rate structure, the estimated tax changes proportionally with the taxable amount, because the same rate is applied consistently when the general rate applies."
+    },
+    {
+      "q": "Why can an estimate differ from the final sales and use tax amount in Boston?",
+      "a": "An estimate can differ from the final amount because it is a simplified calculation that applies the general statewide rate of 6.25% and does not incorporate transaction-specific determinations. Massachusetts sales and use tax outcomes can depend on how a transaction is characterized and whether the general rate applies to the specific item or service. In Boston, there is no separate general city sales or use tax, but state-level rules and determinations can still affect the final tax treatment."
+    },
+    {
+      "q": "Is the sales and use tax in Boston administered by the city or the state?",
+      "a": "It is administered at the state level. Boston does not impose a separate general city sales or use tax, so the general sales and use tax applicable in Boston is the Massachusetts statewide sales and use tax. Administration at the state level means the governing rules, reporting framework, and official interpretations are handled through Massachusetts rather than through a Boston-specific general sales tax authority. The estimate therefore reflects the statewide flat rate of 6.25% when the general rate applies."
+    }
+  ],
+  "meta": {
+    "title": "Boston Sales Tax Calculator 2026 | Massachusetts Sales And Use Tax Rate",
+    "description": "Boston Sales Tax Calculator 2026 for simplified estimates based on the Massachusetts statewide sales and use tax rate of 6.25%. Boston does not impose a separate general city sales or use tax.",
+    "canonicalPath": "/tools/sales-tax/boston-city-massachusetts"
+  }
+},
+
+"US-TX-DALLAS-CITY": {
+  "h1": "Dallas Sales Tax Calculator 2026",
+  "intro": "Dallas is subject to the Texas sales and use tax system, which combines state-level and locally imposed sales and use taxes. This calculator provides a simplified estimate based on the general sales and use tax components that apply within the City of Dallas.",
+  "sections": {
+    "howItWorks": "Sales and use tax in Dallas is calculated by applying multiple flat-rate tax components to the same taxable amount. These components are imposed under the Texas sales and use tax system and are administered by the Texas Comptroller of Public Accounts. Each listed component applies concurrently to the taxable base rather than through brackets or tiered thresholds.",
+    "examples": "A sales or use tax estimate for Dallas is produced by combining the applicable flat-rate components that apply within the city. Each component is calculated against the same taxable amount and summed to produce an overall estimate. The calculation does not involve progressive rates or varying thresholds.",
+    "limitations": "This calculator provides a simplified estimate based solely on the general sales and use tax components listed for Dallas. It does not evaluate product-specific taxability rules, sourcing determinations, exemptions, or administrative adjustments that may apply under Texas law. Actual tax liability is determined by applicable statutes, regulations, and official guidance."
+  },
+  "faq": [
+    {
+      "q": "What taxes are included in the Dallas sales tax estimate?",
+      "a": "The estimate includes the general sales and use tax components that apply within the City of Dallas under the Texas sales and use tax system. These components are imposed concurrently on the same taxable amount."
+    },
+    {
+      "q": "Is the Dallas sales tax rate progressive?",
+      "a": "No. The Dallas sales and use tax components described here are flat-rate taxes. Each component applies at a fixed percentage to the taxable amount."
+    },
+    {
+      "q": "Does this calculator cover both sales tax and use tax?",
+      "a": "Yes. The estimate is based on sales and use tax components administered under the Texas sales and use tax system. The calculation reflects the general structure of those taxes when applied to a taxable amount."
+    },
+    {
+      "q": "Why might the estimated amount differ from the final tax due?",
+      "a": "The estimate is limited to the listed general tax components and does not account for transaction-specific factors, exemptions, or administrative determinations. Final tax outcomes depend on how Texas sales and use tax rules apply to a specific transaction."
+    }
+  ],
+  "meta": {
+    "title": "Dallas Sales Tax Calculator 2026",
+    "description": "Estimate sales and use tax in Dallas based on the general Texas state and local tax components that apply within the City of Dallas.",
+    "canonicalPath": "/tools/sales-tax/dallas-texas"
+  }
+},
+
+"US-TX-HOUSTON-CITY": {
+  h1: "Houston Sales Tax Calculator 2026",
+  intro:
+    "The City of Houston is subject to Texas sales and use tax with a combined rate described in official City budget materials. That combined figure includes state, city, and transit authority portions that apply per dollar of sales in Houston.",
+  sections: {
+    howItWorks:
+      "Official City of Houston budget materials state that, in the City of Houston, a $0.0825 sales and use tax is applied for every dollar of sales, with $0.0625 attributed to the State of Texas, $0.01 attributed to the Metropolitan Transit Authority (METRO), and $0.01 remitted to the City by the State Comptroller (after a stated service charge). This page models those explicitly stated portions as components of a combined sales and use tax rate for Houston.",
+    examples:
+      "A simplified estimate uses the combined rate stated in official City budget materials: $0.0825 of sales and use tax per $1.00 of sales. The same materials attribute $0.0625 per $1.00 to the State of Texas, $0.01 per $1.00 to METRO, and $0.01 per $1.00 to the City. An estimate applies the combined $0.0825 rate to the taxable amount and can also show the component breakdown using those stated portions.",
+    limitations:
+      "This is a simplified estimate based on explicitly stated figures in official City budget materials and general administration information from the Texas Comptroller of Public Accounts. It does not determine whether a specific transaction is taxable, does not apply sourcing rules, and does not account for any other taxes or fees that may apply to particular products, services, or circumstances. For official guidance on Texas sales and use tax administration, refer to the Texas Comptroller of Public Accounts (https://comptroller.texas.gov/taxes/sales/).",
+  },
+  faq: [
+    {
+      q: "What sales tax rate is used for Houston on this page?",
+      a: "This page uses the combined figure stated in official City of Houston budget materials: a $0.0825 sales and use tax applied for every dollar of sales in the City of Houston.",
+    },
+    {
+      q: "What components are included in the Houston combined rate described by the City?",
+      a: "Official City budget materials attribute the $0.0825 combined figure per dollar of sales to three stated portions: $0.0625 for the State of Texas, $0.01 for the Metropolitan Transit Authority (METRO), and a $0.01 share remitted to the City by the State Comptroller (after a stated service charge).",
+    },
+    {
+      q: "Does Houston have a city sales tax portion within the combined rate?",
+      a: "Yes. Official City budget materials describe a $0.01 share remitted to the City by the State Comptroller as part of the $0.0825 sales and use tax applied per dollar of sales in Houston.",
+    },
+    {
+      q: "Does the Houston combined figure cover use tax as well as sales tax?",
+      a: "The official City budget materials describe the $0.0825 amount as a sales and use tax applied per dollar of sales in the City of Houston.",
+    },
+    {
+      q: "Which authority administers Texas sales and use tax?",
+      a: "The Texas Comptroller of Public Accounts provides official administration and guidance for Texas sales and use tax.",
+    },
+  ],
+  meta: {
+    title: "Houston Sales Tax Calculator 2026 | Texas State, City, And METRO Components",
+    description:
+      "Estimate Houston sales tax using the combined rate described in official City budget materials, with a component breakdown for the Texas state portion, the City portion, and the METRO portion.",
+    canonicalPath: "/tools/sales-tax/houston-texas",
+  },
+},
 
 
 };

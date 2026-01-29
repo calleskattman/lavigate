@@ -81,8 +81,20 @@ export const regions: Region[] = [
   { id: "US-WI", countryCode: "US", slug: "wisconsin", name: "Wisconsin", displayName: "Wisconsin" },
   { id: "US-WY", countryCode: "US", slug: "wyoming", name: "Wyoming", displayName: "Wyoming" },
   { id: "US-PR", countryCode: "US", slug: "puerto-rico", name: "Puerto Rico", displayName: "Puerto Rico" },
-  { id: "US-CA-ALAMEDA-COUNTY", countryCode: "US", slug: "alameda-county-california", name: "Alameda County", displayName: "Alameda County" },
-  
+  { id: "US-CA-ALAMEDA-COUNTY", countryCode: "US", slug: "alameda-county-california", name: "Alameda County", displayName: "Alameda County, California" },
+  { id: "US-FL-BROWARD-COUNTY", countryCode: "US", slug: "broward-county-florida", name: "Broward County", displayName: "Broward County, Florida" },
+  { id: "US-NV-CLARK-COUNTY", countryCode: "US", slug: "clark-county-nevada", name: "Clark County", displayName: "Clark County, Nevada" },
+  { id: "US-NY-ERIE-COUNTY", countryCode: "US", slug: "erie-county-new-york", name: "Erie County", displayName: "Erie County, New York" },
+  { id: "US-OH-FRANKLIN-COUNTY", countryCode: "US", slug: "franklin-county-ohio", name: "Franklin County", displayName: "Franklin County, Ohio" },
+  { id: "US-PA-FRANKLIN-COUNTY", countryCode: "US", slug: "franklin-county-pennsylvania", name: "Franklin County", displayName: "Franklin County, Pennsylvania" },
+  { id: "US-NY-FRANKLIN-COUNTY", countryCode: "US", slug: "franklin-county-new-york", name: "Franklin County", displayName: "Franklin County, New York" },
+  { id: "US-TX-FRANKLIN-COUNTY", countryCode: "US", slug: "franklin-county-texas", name: "Franklin County", displayName: "Franklin County, Texas" },
+  { id: "US-FL-POLK-COUNTY", countryCode: "US", slug: "polk-county-florida", name: "Polk County", displayName: "Polk County, Florida" },
+  { id: "US-NY-SUFFOLK-COUNTY", countryCode: "US", slug: "suffolk-county-new-york", name: "Suffolk County", displayName: "Suffolk County, New York" },
+  { id: "US-TX-AUSTIN-CITY", countryCode: "US", slug: "austin-city-texas", name: "Austin", displayName: "Austin" },
+  { id: "US-MA-BOSTON-CITY", countryCode: "US", slug: "boston-city-massachusetts", name: "Boston", displayName: "Boston" },
+  { id: "US-TX-DALLAS-CITY", countryCode: "US", slug: "dallas-texas", name: "Dallas", displayName: "Dallas" },
+  { id: "US-TX-HOUSTON-CITY", countryCode: "US", slug: "houston-texas", name: "Houston", displayName: "Houston" },
   // fler regioner läggs till här senare
 ];
 

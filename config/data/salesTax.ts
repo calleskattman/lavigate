@@ -509,6 +509,201 @@ lastVerified: "2025-03-01",
   },
 },
 
+"US-FL-BROWARD-COUNTY": {
+  regionId: "US-FL-BROWARD-COUNTY",
+  year: 2026,
+  systemName: "Broward County sales and use tax",
+  components: [
+    { name: "Florida state sales and use tax", rate: 0.06 },
+    { name: "Broward County discretionary sales surtax", rate: 0.01 }
+  ],
+  authority: {
+    name: "Florida Department of Revenue",
+    url: "https://floridarevenue.com/Forms_library/current/dr15dss.pdf",
+    lastVerified: "2026-01-28",
+  },
+},
+
+"US-NV-CLARK-COUNTY": {
+  regionId: "US-NV-CLARK-COUNTY",
+  year: 2026,
+  systemName: "Clark County sales and use tax",
+  components: [
+    { name: "Nevada state sales and use tax", rate: 0.0685 },
+    { name: "Clark County local and district sales and use tax", rate: 0.01525 }
+  ],
+  authority: {
+    name: "Nevada Department of Taxation",
+    url: "https://tax.nv.gov/tax-types/sales-tax-use-tax/",
+    lastVerified: "2026-01-28",
+  },
+},
+
+"US-NY-ERIE-COUNTY": {
+  regionId: "US-NY-ERIE-COUNTY",
+  year: 2026,
+  systemName: "Erie County sales and use tax",
+  components: [
+    { name: "New York State sales and use tax", rate: 0.04 },
+    { name: "Erie County local sales and use tax", rate: 0.0475 },
+  ],
+  authority: {
+    name: "New York State Department of Taxation and Finance",
+    url: "https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf",
+    lastVerified: "2026-01-29",
+  },
+},
+
+"US-OH-FRANKLIN-COUNTY": {
+  regionId: "US-OH-FRANKLIN-COUNTY",
+  year: 2026,
+  systemName: "Franklin County sales and use tax",
+  components: [
+    { name: "Ohio state sales and use tax", rate: 0.0575 },
+    { name: "Franklin County and transit authority sales and use tax", rate: 0.0225 }
+  ],
+  authority: {
+    name: "Ohio Department of Taxation",
+    url: "https://tax.ohio.gov/home/news-and-events/all-news/2025-04-01-sales-and-use-tax-rate-change",
+    lastVerified: "2026-01-29",
+  },
+},
+
+"US-PA-FRANKLIN-COUNTY": {
+  regionId: "US-PA-FRANKLIN-COUNTY",
+  year: 2026,
+  systemName: "Franklin County sales and use tax",
+  components: [
+    { name: "Pennsylvania state sales and use tax", rate: 0.06 }
+  ],
+  authority: {
+    name: "Pennsylvania Department of Revenue",
+    url: "https://www.pa.gov/agencies/revenue/resources/tax-types-and-information/sales-use-and-hotel-occupancy-tax.html",
+    lastVerified: "2026-01-29",
+  },
+},
+
+"US-NY-FRANKLIN-COUNTY": {
+  regionId: "US-NY-FRANKLIN-COUNTY",
+  year: 2026,
+  systemName: "Franklin County sales and use tax",
+  components: [
+    { name: "New York State sales and use tax", rate: 0.04 },
+    { name: "Franklin County local sales and use tax", rate: 0.04 }
+  ],
+  authority: {
+    name: "New York State Department of Taxation and Finance",
+    url: "https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf",
+    lastVerified: "2026-01-29",
+  },
+},
+
+"US-TX-FRANKLIN-COUNTY": {
+  regionId: "US-TX-FRANKLIN-COUNTY",
+  year: 2026,
+  systemName: "Franklin County sales and use tax",
+  components: [
+    { name: "Texas state sales and use tax", rate: 0.0625 },
+    { name: "Franklin County sales and use tax", rate: 0.005 }
+  ],
+  authority: {
+    name: "Texas Comptroller of Public Accounts",
+    url: "https://comptroller.texas.gov/taxes/sales/county.php",
+    lastVerified: "2026-01-29",
+  },
+},
+
+"US-FL-POLK-COUNTY": {
+  regionId: "US-FL-POLK-COUNTY",
+  year: 2026,
+  systemName: "Polk County discretionary sales surtax",
+  components: [
+    { name: "Florida state sales tax", rate: 0.06 },
+    { name: "Polk County discretionary sales surtax", rate: 0.005 }
+  ],
+  authority: {
+    name: "Florida Department of Revenue",
+    url: "https://floridarevenue.com/taxes/taxesfees/Pages/discretionary.aspx",
+    lastVerified: "2026-01-02",
+  },
+},
+
+"US-NY-SUFFOLK-COUNTY": {
+  regionId: "US-NY-SUFFOLK-COUNTY",
+  year: 2026,
+  systemName: "Suffolk County local sales and use tax",
+  components: [
+    { name: "New York State sales and use tax", rate: 0.04 },
+    { name: "Suffolk County local sales and use tax", rate: 0.04375 },
+    { name: "Metropolitan Commuter Transportation District (MCTD) surcharge", rate: 0.00375 }
+  ],
+  authority: {
+    name: "New York State Department of Taxation and Finance",
+    url: "https://www.tax.ny.gov/pdf/publications/sales/pub718.pdf",
+    lastVerified: "2026-01-29",
+  },
+},
+
+"US-TX-AUSTIN-CITY": {
+  regionId: "US-TX-AUSTIN-CITY",
+  year: 2026,
+  systemName: "City Sales and Use Tax",
+  components: [
+    { name: "Texas state sales and use tax", rate: 0.0625 },
+    { name: "Austin city sales and use tax", rate: 0.01 }
+  ],
+  authority: {
+    name: "Texas Comptroller of Public Accounts",
+    url: "https://comptroller.texas.gov/taxes/sales/",
+    lastVerified: "2026-01-29",
+  },
+},
+
+"US-MA-BOSTON-CITY": {
+  regionId: "US-MA-BOSTON-CITY",
+  year: 2026,
+  systemName: "Sales and use tax",
+  components: [
+    { name: "Massachusetts state sales and use tax", rate: 0.0625 }
+  ],
+  authority: {
+    name: "Massachusetts Department of Revenue",
+    url: "https://www.mass.gov/orgs/massachusetts-department-of-revenue",
+    lastVerified: "2026-01-29",
+  },
+},
+
+"US-TX-DALLAS-CITY": {
+  regionId: "US-TX-DALLAS-CITY",
+  year: 2026,
+  systemName: "Dallas city sales and use tax",
+  components: [
+    { name: "Texas state sales and use tax", rate: 0.0625 },
+    { name: "Dallas city sales and use tax", rate: 0.01 },
+    { name: "Dallas Area Rapid Transit sales and use tax", rate: 0.01 }
+  ],
+  authority: {
+    name: "Texas Comptroller of Public Accounts",
+    url: "https://comptroller.texas.gov/taxes/sales/",
+    lastVerified: "2026-01-29",
+  },
+},
+
+"US-TX-HOUSTON-CITY": {
+  regionId: "US-TX-HOUSTON-CITY",
+  year: 2026,
+  systemName: "Houston city sales and use tax",
+  components: [
+    { name: "Texas state sales and use tax", rate: 0.0625 },
+    { name: "Houston city sales tax", rate: 0.01 },
+    { name: "Metropolitan Transit Authority of Harris County sales and use tax", rate: 0.01 }
+  ],
+  authority: {
+    name: "Texas Comptroller of Public Accounts",
+    url: "https://comptroller.texas.gov/taxes/sales/",
+    lastVerified: "2026-01-29",
+  },
+},
 
 
   // Fler regioner läggs till här via SEO Studio / Quick Import
