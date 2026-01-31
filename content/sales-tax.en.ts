@@ -1888,6 +1888,211 @@ export const salesTaxSeoContent: Record<string, SalesTaxSeoEntry> = {
   }
 },
 
+"US-UT-SALT-LAKE-CITY": {
+  "h1": "Salt Lake City Sales Tax Calculator 2026",
+  "intro": "Salt Lake City is subject to the Utah sales and use tax system. Official state publications list a combined sales and use tax rate for Salt Lake City that applies within the scope of the Utah sales and use tax framework.",
+  "sections": {
+    "howItWorks": "A sales tax estimate for Salt Lake City is calculated by applying the published combined Utah state and local sales and use tax rate for Salt Lake City to a taxable sales amount. The calculation uses the combined rate as listed in official publications and does not separate individual components. Authoritative rate information is issued by the Utah State Tax Commission.",
+    "examples": "The estimate is produced by multiplying the taxable sales amount by the published combined Utah state and local sales and use tax rate for Salt Lake City. The resulting value represents an estimated tax amount based solely on the combined rate and the taxable amount provided.",
+    "limitations": "Results are simplified estimates based only on the published combined Utah state and local sales and use tax rate for Salt Lake City. The estimate does not account for transaction-specific taxability rules, sourcing rules, exemptions, rounding practices, or administrative determinations that may affect the final tax due. Official publications should be consulted for authoritative guidance."
+  },
+  "faq": [
+    {
+      "q": "What rate does the Salt Lake City Sales Tax Calculator 2026 use?",
+      "a": "The calculator uses the combined Utah state and local sales and use tax rate listed for Salt Lake City in official publications. The estimate applies that published combined rate to the taxable sales amount."
+    },
+    {
+      "q": "Does the estimate separate state and local tax components?",
+      "a": "No. The estimate is based on the combined Utah state and local sales and use tax rate listed for Salt Lake City and does not break the rate into separate components."
+    },
+    {
+      "q": "Why might the estimated tax differ from the amount shown on a receipt?",
+      "a": "The estimate is based only on applying the published combined rate to a taxable amount. Actual tax charged on a transaction can differ due to taxability determinations, sourcing rules, exemptions, or rounding practices that are not reflected in a simplified estimate."
+    },
+    {
+      "q": "Does the calculator determine whether a transaction is subject to sales tax or use tax?",
+      "a": "No. The calculator applies the combined sales and use tax rate listed for Salt Lake City to a taxable amount provided by the user. It does not determine whether a specific transaction is treated as sales tax or use tax."
+    }
+  ],
+  "meta": {
+    "title": "Salt Lake City Sales Tax Calculator 2026",
+    "description": "Estimate sales tax for Salt Lake City using the published combined Utah state and local sales and use tax rate.",
+    "canonicalPath": "/tools/sales-tax/salt-lake-city-utah"
+  }
+},
+
+"US-DC": {
+  "h1": "Washington, District of Columbia Sales Tax Calculator 2026",
+  "intro": "Washington, District of Columbia is subject to a district-level gross sales and use tax system administered within the District. Official sources publish a single sales and use tax rate applicable within the District of Columbia.",
+  "sections": {
+    "howItWorks": "A sales tax estimate for Washington, District of Columbia is calculated by applying the published District of Columbia gross sales and use tax rate to a taxable sales amount. The calculation uses the rate as listed in official publications and does not separate individual tax components.",
+    "examples": "The estimated tax amount is obtained by multiplying the taxable sales amount by the published District of Columbia gross sales and use tax rate. The result represents an estimate based solely on the rate and the taxable amount provided.",
+    "limitations": "Results are simplified estimates based only on the published District of Columbia gross sales and use tax rate. The estimate does not determine whether a transaction is taxable and does not account for transaction-specific taxability rules, exemptions, sourcing rules, or administrative determinations that may affect the final tax due. Official publications should be consulted for authoritative guidance."
+  },
+  "faq": [
+    {
+      "q": "What tax does the Washington, District of Columbia Sales Tax Calculator apply?",
+      "a": "The calculator applies the District of Columbia gross sales and use tax rate published for Washington, District of Columbia. The estimate is produced by applying the published rate to a taxable sales amount."
+    },
+    {
+      "q": "Does the estimate separate sales tax and use tax?",
+      "a": "No. The estimate is based on the published District of Columbia gross sales and use tax rate and does not separate sales tax and use tax into distinct calculations."
+    },
+    {
+      "q": "Does the calculator determine whether a transaction is taxable?",
+      "a": "No. The calculator applies the published rate to a taxable amount provided by the user. It does not determine whether a specific transaction is subject to gross sales tax or use tax under District of Columbia law."
+    },
+    {
+      "q": "Why might the estimated tax differ from the amount charged on a receipt?",
+      "a": "The estimate is based only on applying the published rate to a taxable amount. Actual tax charged can differ due to taxability determinations, exemptions, sourcing rules, or administrative practices that are not reflected in a simplified estimate."
+    }
+  ],
+  "meta": {
+    "title": "Washington, District of Columbia Sales Tax Calculator 2026",
+    "description": "Estimate sales tax for Washington, District of Columbia using the published District of Columbia gross sales and use tax rate.",
+    "canonicalPath": "/tools/sales-tax/washington-dc"
+  }
+},
+
+"US-VT": {
+  "h1": "Vermont Sales Tax Calculator 2026",
+  "intro": "Vermont applies a statewide sales tax under the Vermont Sales and Use Tax system. This calculator provides a simplified estimate based on the general statewide sales tax rate as established in Vermont statute. The estimate reflects only the state-level component and does not account for item-specific taxability or other charges that may apply under Vermont law.",
+  "sections": {
+    "howItWorks": "Under the Vermont Sales and Use Tax system, the general sales tax is calculated as a flat percentage of the taxable sales price. The statewide rate is applied uniformly to taxable transactions that fall within the scope of the general sales tax. This estimate represents a direct percentage calculation using the statewide rate only and does not model exemptions, special categories, or transaction-specific rules.",
+    "examples": "A sales tax estimate is calculated by applying the statewide sales tax rate to the taxable sales price. The resulting amount increases in direct proportion to the taxable amount. Because the statewide rate is flat, the estimate does not vary based on thresholds, brackets, income levels, or other progressive structures. The estimate reflects only the general statewide rate described here.",
+    "limitations": "Results are simplified estimates and may not match the tax due on a specific transaction. The estimate is limited to Vermont’s general statewide sales tax and does not evaluate whether a particular item or charge is taxable under Vermont law. It also does not account for any additional taxes or charges that may apply outside the general statewide sales tax. For official guidance and current rules, consult the Vermont Department of Taxes as published."
+  },
+  "faq": [
+    {
+      "q": "What rate does the Vermont Sales Tax Calculator apply?",
+      "a": "The estimate is based on Vermont’s general statewide sales tax rate as established in statute. The calculation applies a single flat percentage to the taxable sales price and reflects only the statewide component."
+    },
+    {
+      "q": "Is the Vermont sales tax calculated using brackets or tiers?",
+      "a": "No. Vermont’s general statewide sales tax uses a flat-rate structure. The estimate applies the same percentage to the entire taxable sales price without brackets or tiers."
+    },
+    {
+      "q": "Does this estimate include compensating use tax?",
+      "a": "Vermont’s Sales and Use Tax system includes both sales tax and a compensating use tax. This estimate reflects the statewide rate used for the general system but does not determine whether sales tax or use tax applies to a specific transaction."
+    },
+    {
+      "q": "Why might the estimated amount differ from the tax due?",
+      "a": "The estimate applies only the general statewide sales tax rate to a taxable amount. Actual tax due can differ when Vermont law treats certain items, charges, or transactions differently for tax purposes."
+    },
+    {
+      "q": "Does this estimate include any local sales taxes?",
+      "a": "No. The estimate reflects only the Vermont state sales tax component. Any additional taxes authorized outside the general statewide sales tax are not included."
+    }
+  ],
+  "meta": {
+    "title": "Vermont Sales Tax Calculator 2026 | 6.00% State Rate Estimate",
+    "description": "Vermont Sales Tax Calculator with a simplified estimate based on the Vermont state sales tax rate. Flat-rate calculation reflecting the statewide component only.",
+    "canonicalPath": "/tools/sales-tax/vermont"
+  }
+},
+
+"US-ME": {
+  "h1": "Maine Sales Tax Calculator 2026",
+  "intro": "Maine imposes a general state sales tax and a general use tax under its Sales, Use & Service Provider Tax system. This calculator provides a simplified estimate based on the statewide sales tax component only.",
+  "sections": {
+    "howItWorks": "Maine imposes a statewide sales tax on taxable retail sales and a general use tax on the use or consumption in Maine of property or services that would be subject to sales tax. This estimate applies the statewide sales tax component to a taxable amount and does not assess item-specific taxability or other statutory rules.",
+    "examples": "An estimate is calculated by applying the statewide sales tax component to a taxable amount. The estimated tax increases in direct proportion to the taxable amount. This example illustrates a simplified percentage-based estimate using the statewide component only.",
+    "limitations": "Results are simplified estimates and may not match the tax due on a specific transaction. The estimate does not determine whether a particular item or service is taxable under Maine law and does not account for charges or rules outside the statewide sales tax component. Official guidance from Maine Revenue Services is controlling."
+  },
+  "faq": [
+    {
+      "q": "What does this estimate apply in Maine?",
+      "a": "The estimate applies the statewide sales tax component used by Maine for taxable retail sales. It reflects the statewide component only."
+    },
+    {
+      "q": "Does Maine also impose a use tax?",
+      "a": "Yes. Maine imposes a general use tax within the same system. This estimate reflects the statewide component and does not determine whether sales tax or use tax applies to a specific transaction."
+    },
+    {
+      "q": "Are local sales taxes included?",
+      "a": "No. This estimate reflects only the statewide sales tax component."
+    }
+  ],
+  "meta": {
+    "title": "Maine Sales Tax Calculator 2026 | State Rate Estimate",
+    "description": "Maine Sales Tax Calculator providing simplified estimates based on the statewide sales tax component under the Maine Sales, Use & Service Provider Tax system.",
+    "canonicalPath": "/tools/sales-tax/maine"
+  }
+},
+
+"US-NC-WAKE-COUNTY": {
+  "h1": "Wake County Sales Tax Calculator 2026",
+  "intro": "Wake County applies a combined sales and use tax made up of a North Carolina state rate plus Wake County local and transit rates. The Wake County Sales Tax Calculator 2026 provides a simplified estimate for transactions subject to the North Carolina State and Wake County Local Sales and Use Tax in Wake County for 2026.",
+  "sections": {
+    "howItWorks": "Wake County sales and use tax is calculated as a flat-rate percentage of the taxable sales price. Under the North Carolina State and Wake County Local Sales and Use Tax, the combined rate reflects three components: North Carolina state sales and use tax at 4.75%, Wake County local sales and use tax at 2.00%, and Wake County transit sales and use tax at 0.50%. When a transaction is subject to this system, the total tax is the sum of these component amounts applied to the same taxable base, producing a single combined tax amount for the transaction.",
+    "examples": "Because the tax is flat-rate based, the total tax amount changes in direct proportion to the taxable sales price. The combined rate in Wake County is composed of 4.75% (North Carolina state), 2.00% (Wake County local), and 0.50% (Wake County transit). In practice, the total tax can be expressed as the sum of three separate calculations on the same taxable amount, one for each component, and then combined into a single total. This structure is the same whether the transaction is treated as sales tax or use tax under the North Carolina State and Wake County Local Sales and Use Tax.",
+    "limitations": "Results are simplified estimates and may not match the amount ultimately due on a receipt, invoice, or tax return. This estimate reflects only the stated components of the North Carolina State and Wake County Local Sales and Use Tax: 4.75% state, 2.00% Wake County local, and 0.50% Wake County transit. It does not account for product- or transaction-specific taxability rules, sourcing requirements, rounding practices, or documentation standards that can affect how tax is determined and reported. For official guidance, refer to the North Carolina Department of Revenue (https://www.ncdor.gov/) exactly as published."
+  },
+  "faq": [
+    {
+      "q": "What rates make up the combined sales and use tax in Wake County?",
+      "a": "Wake County’s combined sales and use tax is made up of three flat-rate components that apply to the same taxable base when the transaction is subject to the North Carolina State and Wake County Local Sales and Use Tax. The components are North Carolina state sales and use tax at 4.75%, Wake County local sales and use tax at 2.00%, and Wake County transit sales and use tax at 0.50%. The total tax for a taxable transaction is the sum of these three component amounts, producing one combined tax amount."
+    },
+    {
+      "q": "Is the Wake County sales and use tax progressive or tiered?",
+      "a": "No. The Wake County sales and use tax described here is flat-rate based. When a transaction is taxable under the North Carolina State and Wake County Local Sales and Use Tax, each component rate applies as a percentage of the same taxable sales price. The North Carolina state component is 4.75%, the Wake County local component is 2.00%, and the Wake County transit component is 0.50%. There are no brackets or tiers in this structure; the tax changes proportionally with the taxable amount."
+    },
+    {
+      "q": "What is the difference between sales tax and use tax in this Wake County system?",
+      "a": "In this context, “sales tax” and “use tax” refer to two ways the same combined rate structure can apply under the North Carolina State and Wake County Local Sales and Use Tax. The combined rate is still composed of the same three flat-rate components: 4.75% North Carolina state, 2.00% Wake County local, and 0.50% Wake County transit. The distinction is about how the tax is applied and reported for a transaction, not about different rates or a different calculation method."
+    },
+    {
+      "q": "Why can an estimate differ from the final tax amount for a Wake County transaction?",
+      "a": "An estimate can differ from the final amount because real-world tax determination can involve details beyond applying the flat combined rate. While the combined Wake County structure here is limited to 4.75% state, 2.00% local, and 0.50% transit applied to the taxable base, the final amount can be affected by how the taxable base is determined for a specific transaction, how sourcing is handled, and how rounding is applied in billing or reporting. For that reason, results should be treated as simplified estimates."
+    },
+    {
+      "q": "Does the Wake County transit rate change how the tax is calculated?",
+      "a": "The Wake County transit rate does not change the calculation method; it adds an additional flat-rate component to the combined tax. For taxable transactions under the North Carolina State and Wake County Local Sales and Use Tax, the taxable base is the same for each component, and the total tax is the sum of the component amounts. In Wake County, those components are 4.75% for the North Carolina state rate, 2.00% for the Wake County local rate, and 0.50% for the Wake County transit rate."
+    }
+  ],
+  "meta": {
+    "title": "Wake County Sales Tax Calculator 2026 | North Carolina State And Wake County Rates",
+    "description": "Wake County Sales Tax Calculator 2026 for the North Carolina State and Wake County Local Sales and Use Tax. Combined flat-rate estimate based on 4.75% state, 2.00% local, and 0.50% transit components.",
+    "canonicalPath": "/tools/sales-tax/wake-county-north-carolina"
+  }
+},
+
+"US-NC-MECKLENBURG-COUNTY": {
+  "h1": "Mecklenburg County Sales Tax Calculator 2026",
+  "intro": "Mecklenburg County sales and use tax is calculated using official combined county-level rates published by the North Carolina Department of Revenue. The county total is defined as the North Carolina state sales and use tax together with the applicable county and transit components that apply in Mecklenburg County. This calculator provides a simplified estimate based on those published components.",
+  "sections": {
+    "howItWorks": "North Carolina publishes official sales and use tax rate tables that list a single combined total rate per county. For Mecklenburg County, the published total rate is defined as the North Carolina state sales and use tax together with the Mecklenburg County local and transit sales and use tax components. Official city and town tables published by the North Carolina Department of Revenue list uniform county and transit components for all localities within Mecklenburg County, with no differing county-level percentages stated. The calculation therefore applies the published county-level combined rate to the taxable amount.",
+    "examples": "A Mecklenburg County sales and use tax estimate is produced by applying the published county-level combined rate to the taxable amount. The combined rate consists of the North Carolina state sales and use tax and the Mecklenburg County local and transit sales and use tax components as published by the North Carolina Department of Revenue. The estimate reflects a proportional relationship between the taxable amount and the calculated tax, based solely on the published combined county-level rate.",
+    "limitations": "Results are simplified estimates and do not represent a formal tax determination. The calculation is based only on published county-level sales and use tax components for Mecklenburg County as provided by the North Carolina Department of Revenue. It does not account for transaction-specific factors, administrative procedures, or documentation requirements that may affect how sales and use tax is applied in individual cases."
+  },
+  "faq": [
+    {
+      "q": "What structure is used for Mecklenburg County sales and use tax in this estimate?",
+      "a": "The estimate uses the published county-level combined rate for Mecklenburg County. North Carolina defines the county total as the state sales and use tax together with the applicable county and transit sales and use tax components listed for the county."
+    },
+    {
+      "q": "How are state and county components represented in the calculation?",
+      "a": "The calculation reflects the combined county-level rate published for Mecklenburg County, which consists of the North Carolina state sales and use tax and the Mecklenburg County local and transit sales and use tax components."
+    },
+    {
+      "q": "Does the calculation differ by city or town within Mecklenburg County?",
+      "a": "The calculation applies the same county-level combined rate throughout Mecklenburg County. Official tables published by the North Carolina Department of Revenue list uniform county and transit components for Mecklenburg County localities, with no differing county-level rates stated."
+    },
+    {
+      "q": "What does sales and use tax mean in this context?",
+      "a": "Sales and use tax refers to the tax system administered by North Carolina that includes both the state sales and use tax and the county-level local and transit sales and use tax components published for Mecklenburg County."
+    },
+    {
+      "q": "Why are the results described as estimates?",
+      "a": "The results are estimates because the calculation is based solely on published county-level rates and does not incorporate transaction-level factors or administrative considerations that may affect actual tax outcomes."
+    }
+  ],
+  "meta": {
+    "title": "Mecklenburg County Sales Tax Calculator 2026 | Combined State And County Rate",
+    "description": "Estimate Mecklenburg County sales and use tax using North Carolina’s published combined county-level rate, based on official state, county, and transit tax components.",
+    "canonicalPath": "/tools/sales-tax/mecklenburg-county-north-carolina"
+  }
+},
 
 
 

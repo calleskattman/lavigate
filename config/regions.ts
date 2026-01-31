@@ -99,7 +99,12 @@ export const regions: Region[] = [
   { id: "US-NY-NEW-YORK-CITY", countryCode: "US", slug: "new-york-city-new-york", name: "New York City", displayName: "New York City" },
   { id: "US-CA-SAN-FRANCISCO-CITY", countryCode: "US", slug: "san-francisco-california", name: "San Francisco", displayName: "San Francisco" },
   { id: "US-CA-SAN-JOSE-CITY", countryCode: "US", slug: "san-jose-california", name: "San Jose", displayName: "San Jose" },
-  
+  { id: "US-UT-SALT-LAKE-CITY", countryCode: "US", slug: "salt-lake-city-utah", name: "Salt Lake City", displayName: "Salt Lake City" },
+  { id: "US-DC", countryCode: "US", slug: "washington-dc", name: "Washington, District of Columbia", displayName: "Washington, District of Columbia" },
+  { id: "US-VT", countryCode: "US", slug: "vermont", name: "Vermont", displayName: "Vermont" },
+  { id: "US-NC-WAKE-COUNTY", countryCode: "US", slug: "wake-county-north-carolina", name: "Wake County", displayName: "Wake County" },
+  { id: "US-NC-MECKLENBURG-COUNTY", countryCode: "US", slug: "mecklenburg-county-north-carolina", name: "Mecklenburg County", displayName: "Mecklenburg County" },
+
   // fler regioner läggs till här senare
 ];
 

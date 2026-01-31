@@ -767,6 +767,93 @@ lastVerified: "2025-03-01",
   },
 },
 
+"US-UT-SALT-LAKE-CITY": {
+  regionId: "US-UT-SALT-LAKE-CITY",
+  year: 2026,
+  systemName: "Utah sales and use tax",
+  components: [
+    { name: "Utah state and local sales and use tax (Salt Lake City)", rate: 0.0845 }
+  ],
+  authority: {
+    name: "Utah State Tax Commission",
+    url: "https://tax.utah.gov/",
+    lastVerified: "2026-01-31",
+  },
+},
+
+"US-DC": {
+  regionId: "US-DC",
+  year: 2026,
+  systemName: "District of Columbia gross sales and use tax",
+  components: [
+    { name: "District of Columbia gross sales and use tax", rate: 0.07 }
+  ],
+  authority: {
+    name: "DC Office of Tax and Revenue",
+    url: "https://otr.cfo.dc.gov/",
+    lastVerified: "2026-01-01",
+  },
+},
+
+"US-VT": {
+  regionId: "US-VT",
+  year: 2026,
+  systemName: "Vermont Sales and Use Tax",
+  components: [
+    { name: "Vermont state sales tax", rate: 0.06 }
+  ],
+  authority: {
+    name: "Vermont Department of Taxes",
+    url: "https://tax.vermont.gov/",
+    lastVerified: "2026-01-31",
+  },
+},
+
+"US-ME": {
+  regionId: "US-ME",
+  year: 2026,
+  systemName: "Maine Sales, Use & Service Provider Tax",
+  components: [
+    { name: "Maine state sales tax", rate: 0.055 }
+  ],
+  authority: {
+    name: "Maine Revenue Services",
+    url: "https://www.maine.gov/revenue/taxes/sales-use-service-provider-tax",
+    lastVerified: "2026-01-31",
+  },
+},
+
+"US-NC-WAKE-COUNTY": {
+  regionId: "US-NC-WAKE-COUNTY",
+  year: 2026,
+  systemName: "North Carolina State and Wake County Local Sales and Use Tax",
+  components: [
+    { name: "North Carolina state sales and use tax", rate: 0.0475 },
+    { name: "Wake County local sales and use tax", rate: 0.02 },
+    { name: "Wake County transit sales and use tax", rate: 0.005 }
+  ],
+  authority: {
+    name: "North Carolina Department of Revenue",
+    url: "https://www.ncdor.gov/",
+    lastVerified: "2026-01-31",
+  },
+},
+
+"US-NC-MECKLENBURG-COUNTY": {
+  regionId: "US-NC-MECKLENBURG-COUNTY",
+  year: 2026,
+  systemName: "Mecklenburg County sales and use tax",
+  components: [
+    { name: "North Carolina state sales and use tax", rate: 0.0475 },
+    { name: "Mecklenburg County local and transit sales and use tax (combined)", rate: 0.025 }
+  ],
+  authority: {
+    name: "North Carolina Department of Revenue",
+    url: "https://www.ncdor.gov/tax-rates-7124-current/open",
+    lastVerified: "2026-01-31",
+  },
+},
+
 
 
   // Fler regioner läggs till här via SEO Studio / Quick Import

@@ -102,7 +102,13 @@ export const tools: ToolDefinition[] = [
       "US-NY-NEW-YORK-CITY",
       "US-CA-SAN-FRANCISCO-CITY",
       "US-CA-SAN-JOSE-CITY",
-      
+      "US-UT-SALT-LAKE-CITY",
+      "US-DC",
+      "US-VT",
+      "US-ME",
+      "US-NC-WAKE-COUNTY",
+      "US-NC-MECKLENBURG-COUNTY",
+
       // fler regioner läggs till via SEO Studio
     ],
   },
