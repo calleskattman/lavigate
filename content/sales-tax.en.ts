@@ -1644,7 +1644,7 @@ export const salesTaxSeoContent: Record<string, SalesTaxSeoEntry> = {
   "h1": "Boston Sales Tax Calculator 2026",
   "intro": "Boston follows Massachusetts sales and use tax rules and does not impose a separate general city sales or use tax. The Boston Sales Tax Calculator 2026 provides a simplified estimate based on the Massachusetts statewide sales and use tax rate of 6.25% as it applies in Boston for 2026.",
   "sections": {
-    "howItWorks": "In Boston, the applicable system is Massachusetts sales and use tax administered at the state level. Because Boston does not add a separate general city sales or use tax, the general rate applied in Boston is the Massachusetts statewide sales and use tax rate of 6.25%. This is a flat-rate structure: the estimated tax amount is calculated by applying a single rate to the taxable amount, without brackets or tiered rates. Official guidance and administration are handled by the Massachusetts Department of Revenue (https://www.mass.gov/orgs/massachusetts-department-of-revenue).",
+    "howItWorks": "In Boston, retail transactions are subject to the Massachusetts sales and use tax framework rather than a city-specific general sales tax. Because Massachusetts law does not permit municipalities to impose a separate general sales or use tax, purchases made in Boston follow the same statewide tax structure applied throughout the state. The applicable tax is calculated using a single flat percentage applied to the taxable amount, producing an estimate directly proportional to the transaction value. Administration, compliance guidance, and official interpretations are issued at the state level by the Massachusetts Department of Revenue (https://www.mass.gov/orgs/massachusetts-department-of-revenue).",
     "examples": "The following examples illustrate flat-rate behavior under the Massachusetts statewide sales and use tax rate that applies in Boston.\n\nExample 1: If a taxable amount is determined, the estimated sales and use tax is 6.25% of that taxable amount.\n\nExample 2: If the taxable amount changes, the estimated tax changes proportionally at the same 6.25% rate, because the rate is flat and Boston does not impose a separate general city sales or use tax.\n\nThese examples describe rate application only and do not address product-specific taxability or transaction-specific rules.",
     "limitations": "Results are simplified estimates and may not reflect all transaction-specific details that can affect Massachusetts sales and use tax outcomes in Boston. The estimate assumes the general statewide rate of 6.25% applies and does not account for differences in taxability that may depend on the nature of the item or service, the structure of the transaction, or other rule-based determinations. Administration is at the state level, and Boston does not impose a separate general city sales or use tax, so the estimate does not include any additional local general sales tax layer."
   },
@@ -1751,6 +1751,144 @@ export const salesTaxSeoContent: Record<string, SalesTaxSeoEntry> = {
     canonicalPath: "/tools/sales-tax/houston-texas",
   },
 },
+
+"US-MN-MINNEAPOLIS-CITY": {
+  "h1": "Minneapolis Sales Tax Calculator 2026",
+  "intro": "Minneapolis is subject to Minnesota’s sales and use tax system, which combines state, county, city, and metro-area general sales and use tax components. This calculator provides a simplified estimate based on the officially published general rates that apply within the City of Minneapolis.",
+  "sections": {
+    "howItWorks": "Sales and use tax in Minneapolis is calculated by applying multiple general tax components that are published by the Minnesota Department of Revenue. These components apply together to taxable transactions under Minnesota’s sales and use tax framework. The components described here are limited to general sales and use taxes and are taken directly from the published rate tables.",
+    "examples": "A general sales or use tax estimate for Minneapolis reflects the combined application of the Minnesota state sales and use tax, Hennepin County sales and use tax, City of Minneapolis local sales and use tax, Metro Area sales and use tax, and County transit sales and use tax. The estimated tax amount is calculated by applying the combined general rate to the taxable amount.",
+    "limitations": "This calculator provides a simplified estimate based on general sales and use tax components only. Special local taxes, including but not limited to admissions, entertainment, food and beverage, lodging, liquor, and restaurant taxes, are not included. Official liability and applicability depend on transaction-specific facts and guidance issued by the Minnesota Department of Revenue."
+  },
+  "faq": [
+    {
+      "q": "Which taxes are included in this Minneapolis sales tax estimate?",
+      "a": "This estimate includes only general sales and use taxes that apply in Minneapolis according to published Minnesota Department of Revenue rate tables. It excludes special local taxes such as admissions, entertainment, food and beverage, lodging, liquor, and restaurant taxes."
+    },
+    {
+      "q": "Does this estimate include both sales tax and use tax?",
+      "a": "Yes. The estimate reflects the general sales and use tax components that apply to taxable transactions. Sales tax and use tax use the same general rates but apply in different transactional situations."
+    },
+    {
+      "q": "Are special local taxes included in this calculation?",
+      "a": "No. This estimate is limited to general sales and use taxes only. Special local taxes are outside the scope of this calculator."
+    },
+    {
+      "q": "Can the calculated result differ from the final tax owed?",
+      "a": "Yes. The result is a simplified estimate based on general rates. Final tax liability may differ depending on the nature of the transaction, applicable exemptions, sourcing rules, and other factors addressed in official Minnesota Department of Revenue guidance."
+    }
+  ],
+  "meta": {
+    "title": "Minneapolis Sales Tax Calculator 2026",
+    "description": "Estimate Minneapolis sales and use tax based on officially published Minnesota general sales and use tax rates, including state, county, city, and metro-area components.",
+    "canonicalPath": "/tools/sales-tax/minneapolis"
+  }
+},
+
+"US-NY-NEW-YORK-CITY": {
+  "h1": "New York City Sales Tax Calculator 2026",
+  "intro": "New York City applies the New York City sales and use tax as a combined sales and use tax system. The New York City Sales Tax Calculator 2026 provides a simplified estimate for New York City in 2026 based on the combined components that apply to general sales and use tax.",
+  "sections": {
+    "howItWorks": "New York City sales and use tax is calculated as a flat-rate tax based on a combined rate made up of multiple components. The combined components are New York State sales and use tax at 4.00%, New York City sales tax at 4.50%, and the Metropolitan Commuter Transportation District surcharge at 0.38%. In this system, the total sales and use tax estimate reflects the sum of these component rates applied to the taxable amount. For official guidance and rate information, refer to the New York State Department of Taxation and Finance (https://www.tax.ny.gov).",
+    "examples": "Because the New York City sales and use tax is flat-rate based, the estimated tax is determined by applying the combined rate to the taxable amount. The combined rate is the sum of New York State sales and use tax at 4.00%, New York City sales tax at 4.50%, and the Metropolitan Commuter Transportation District surcharge at 0.38%. The resulting estimate represents the total of these components as a single combined sales and use tax amount for New York City.",
+    "limitations": "Results are simplified estimates and may not reflect every rule that can affect sales and use tax in practice. This estimate is limited to the stated components—New York State sales and use tax at 4.00%, New York City sales tax at 4.50%, and the Metropolitan Commuter Transportation District surcharge at 0.38%—and assumes a flat-rate application to the taxable amount. Differences in taxability, sourcing, or other jurisdictional requirements can change the final tax due. For compliance and filing decisions, confirm applicable rules with official guidance."
+  },
+  "faq": [
+    {
+      "q": "What rates are included in the New York City sales and use tax estimate?",
+      "a": "The estimate is based on the combined components that make up the New York City sales and use tax. Those components are New York State sales and use tax at 4.00%, New York City sales tax at 4.50%, and the Metropolitan Commuter Transportation District surcharge at 0.38%. The estimate treats these as additive components of a single flat-rate calculation applied to the taxable amount, producing one combined sales and use tax estimate for New York City."
+    },
+    {
+      "q": "Is the New York City sales and use tax calculated with brackets or tiers?",
+      "a": "No. The New York City sales and use tax described here is flat-rate based. The estimate is produced by applying a combined rate to the taxable amount, where the combined rate is the sum of New York State sales and use tax at 4.00%, New York City sales tax at 4.50%, and the Metropolitan Commuter Transportation District surcharge at 0.38%. This approach does not involve progressive structures, brackets, or tiered rates; it is a single combined rate calculation."
+    },
+    {
+      "q": "Why does the estimate include a Metropolitan Commuter Transportation District surcharge?",
+      "a": "The Metropolitan Commuter Transportation District surcharge is listed as one of the components of the New York City sales and use tax system described for this estimate. Alongside New York State sales and use tax at 4.00% and New York City sales tax at 4.50%, the surcharge at 0.38% is included in the combined rate used to compute the simplified estimate. The estimate therefore reflects the total of all stated components as a single combined sales and use tax amount."
+    },
+    {
+      "q": "What does “simplified estimate” mean for sales and use tax results?",
+      "a": "A simplified estimate means the result is a straightforward flat-rate calculation based only on the stated component rates for New York City sales and use tax. It combines New York State sales and use tax at 4.00%, New York City sales tax at 4.50%, and the Metropolitan Commuter Transportation District surcharge at 0.38%, then applies that combined rate to the taxable amount. In practice, additional rules can affect the final tax due, so the estimate may differ from an official determination."
+    },
+    {
+      "q": "Does the estimate separate New York State, New York City, and district amounts?",
+      "a": "The estimate is based on a combined rate that includes multiple components, but the result is presented as a single simplified sales and use tax estimate. The combined components are New York State sales and use tax at 4.00%, New York City sales tax at 4.50%, and the Metropolitan Commuter Transportation District surcharge at 0.38%. While these components are identified, the estimate is intended to reflect the total combined effect as one flat-rate calculation rather than a compliance breakdown."
+    }
+  ],
+  "meta": {
+    "title": "New York City Sales Tax Calculator 2026 | Combined NYC Sales And Use Tax Rate",
+    "description": "New York City Sales Tax Calculator 2026 for a simplified estimate based on New York State sales and use tax at 4.00%, New York City sales tax at 4.50%, and the Metropolitan Commuter Transportation District surcharge at 0.38%.",
+    "canonicalPath": "/tools/sales-tax/new-york-city-new-york"
+  }
+},
+
+"US-CA-SAN-FRANCISCO-CITY": {
+  "h1": "San Francisco Sales Tax Calculator 2026",
+  "intro": "San Francisco is subject to the California sales and use tax system. Official state publications list a single combined sales and use tax rate for San Francisco, which is used as the basis for this estimate.",
+  "sections": {
+    "howItWorks": "Official publications from the California Department of Tax and Fee Administration list a single combined sales and use tax rate for San Francisco. This estimate applies that published rate to the taxable amount to produce an estimated sales tax amount.",
+    "examples": "If a taxable amount is entered, the estimate is calculated by applying the published combined sales and use tax rate listed for San Francisco to that amount. The resulting value represents an estimated sales tax based solely on the listed rate.",
+    "limitations": "This result is a simplified estimate based only on the published combined sales and use tax rate listed for San Francisco. It does not account for transaction-specific taxability rules, rounding rules, or other administrative factors that may affect the actual tax due. Official publications from the California Department of Tax and Fee Administration should be consulted for authoritative information."
+  },
+  "faq": [
+    {
+      "q": "Which sales tax rate is used for San Francisco?",
+      "a": "This estimate uses the combined California state and local sales and use tax rate listed for San Francisco in official publications."
+    },
+    {
+      "q": "Does this estimate include separate city or district rates?",
+      "a": "The estimate is based on the single combined sales and use tax rate listed for San Francisco and does not itemize individual components."
+    },
+    {
+      "q": "Is this an exact calculation of tax due?",
+      "a": "No. The result is an estimate based on the published rate and may differ from the tax due on a specific transaction."
+    },
+    {
+      "q": "Where does the published rate information come from?",
+      "a": "The rate information is published by the California Department of Tax and Fee Administration."
+    }
+  ],
+  "meta": {
+    "title": "San Francisco Sales Tax Calculator 2026",
+    "description": "Estimate sales tax in San Francisco using the published California sales and use tax rate listed for the city.",
+    "canonicalPath": "/tools/sales-tax/san-francisco-california"
+  }
+},
+
+"US-CA-SAN-JOSE-CITY": {
+  "h1": "San Jose Sales Tax Calculator 2026",
+  "intro": "San Jose is listed in official California publications with a combined sales and use tax rate. This page presents an estimate based on the published rate listed for San Jose within the California sales and use tax system.",
+  "sections": {
+    "howItWorks": "The California Department of Tax and Fee Administration publishes a combined sales and use tax rate for San Jose in official rate tables. The estimate shown on this page is based on the rate listed for San Jose in those publications.",
+    "examples": "Estimated amounts shown by this calculator are derived from the published combined sales and use tax rate listed for San Jose. The estimate reflects the application of that listed rate to a taxable amount entered into the calculator.",
+    "limitations": "This estimate is based only on the combined sales and use tax rate listed for San Jose in official publications. It does not account for transaction-specific determinations, rounding rules, sourcing rules, or other administrative factors that may affect the amount of tax due. Official guidance from the California Department of Tax and Fee Administration should be consulted for authoritative information."
+  },
+  "faq": [
+    {
+      "q": "Which sales tax rate is used for San Jose?",
+      "a": "The estimate uses the combined sales and use tax rate listed for San Jose in official California rate publications."
+    },
+    {
+      "q": "Where is the San Jose sales tax rate published?",
+      "a": "The rate for San Jose is published by the California Department of Tax and Fee Administration in official sales and use tax rate tables."
+    },
+    {
+      "q": "Does this estimate itemize separate tax components?",
+      "a": "No. The estimate uses the combined sales and use tax rate listed for San Jose without itemizing individual components."
+    },
+    {
+      "q": "Is this calculator an official determination of tax due?",
+      "a": "No. The calculator provides an estimate based on published rate information and is not an official determination of tax due."
+    }
+  ],
+  "meta": {
+    "title": "San Jose Sales Tax Calculator 2026",
+    "description": "Estimate sales tax in San Jose using the combined California sales and use tax rate listed for the city in official publications.",
+    "canonicalPath": "/tools/sales-tax/san-jose-california"
+  }
+},
+
+
 
 
 };

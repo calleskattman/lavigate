@@ -98,6 +98,11 @@ export const tools: ToolDefinition[] = [
       "US-MA-BOSTON-CITY",
       "US-TX-DALLAS-CITY",
       "US-TX-HOUSTON-CITY",
+      "US-MN-MINNEAPOLIS-CITY",
+      "US-NY-NEW-YORK-CITY",
+      "US-CA-SAN-FRANCISCO-CITY",
+      "US-CA-SAN-JOSE-CITY",
+      
       // fler regioner läggs till via SEO Studio
     ],
   },

@@ -95,6 +95,11 @@ export const regions: Region[] = [
   { id: "US-MA-BOSTON-CITY", countryCode: "US", slug: "boston-city-massachusetts", name: "Boston", displayName: "Boston" },
   { id: "US-TX-DALLAS-CITY", countryCode: "US", slug: "dallas-texas", name: "Dallas", displayName: "Dallas" },
   { id: "US-TX-HOUSTON-CITY", countryCode: "US", slug: "houston-texas", name: "Houston", displayName: "Houston" },
+  { id: "US-MN-MINNEAPOLIS-CITY", countryCode: "US", slug: "minneapolis", name: "Minneapolis", displayName: "Minneapolis" },
+  { id: "US-NY-NEW-YORK-CITY", countryCode: "US", slug: "new-york-city-new-york", name: "New York City", displayName: "New York City" },
+  { id: "US-CA-SAN-FRANCISCO-CITY", countryCode: "US", slug: "san-francisco-california", name: "San Francisco", displayName: "San Francisco" },
+  { id: "US-CA-SAN-JOSE-CITY", countryCode: "US", slug: "san-jose-california", name: "San Jose", displayName: "San Jose" },
+  
   // fler regioner läggs till här senare
 ];
 

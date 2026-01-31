@@ -705,6 +705,69 @@ lastVerified: "2025-03-01",
   },
 },
 
+"US-MN-MINNEAPOLIS-CITY": {
+  regionId: "US-MN-MINNEAPOLIS-CITY",
+  year: 2026,
+  systemName: "Minneapolis sales and use tax",
+  components: [
+    { name: "Minnesota state sales and use tax", rate: 0.06875 },
+    { name: "Hennepin County sales and use tax", rate: 0.0015 },
+    { name: "City of Minneapolis local sales and use tax", rate: 0.005 },
+    { name: "Metro Area sales and use tax", rate: 0.01 },
+    { name: "County transit sales and use tax", rate: 0.005 }
+  ],
+  authority: {
+    name: "Minnesota Department of Revenue",
+    url: "https://www.revenue.state.mn.us",
+    lastVerified: "2026-01-01",
+  },
+},
+
+"US-NY-NEW-YORK-CITY": {
+  regionId: "US-NY-NEW-YORK-CITY",
+  year: 2026,
+  systemName: "New York City sales and use tax",
+  components: [
+    { name: "New York State sales and use tax", rate: 0.04 },
+    { name: "New York City sales tax", rate: 0.045 },
+    { name: "Metropolitan Commuter Transportation District surcharge", rate: 0.00375 }
+  ],
+  authority: {
+    name: "New York State Department of Taxation and Finance",
+    url: "https://www.tax.ny.gov",
+    lastVerified: "2026-01-31",
+  },
+},
+
+"US-CA-SAN-FRANCISCO-CITY": {
+  regionId: "US-CA-SAN-FRANCISCO-CITY",
+  year: 2026,
+  systemName: "California sales and use tax",
+  components: [
+    { name: "California state and local sales and use tax (San Francisco)", rate: 0.08625 }
+  ],
+  authority: {
+    name: "California Department of Tax and Fee Administration",
+    url: "https://www.cdtfa.ca.gov/",
+    lastVerified: "2026-01-02",
+  },
+},
+
+"US-CA-SAN-JOSE-CITY": {
+  regionId: "US-CA-SAN-JOSE-CITY",
+  year: 2026,
+  systemName: "California sales and use tax",
+  components: [
+    { name: "California state and local sales and use tax (San Jose)", rate: 0.09375 }
+  ],
+  authority: {
+    name: "California Department of Tax and Fee Administration",
+    url: "https://www.cdtfa.ca.gov/",
+    lastVerified: "2026-01-02",
+  },
+},
+
+
 
   // Fler regioner läggs till här via SEO Studio / Quick Import
 };
