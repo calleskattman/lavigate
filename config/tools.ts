@@ -1,15 +1,24 @@
 // config/tools.ts
 import type { RegionId } from "./regions";
 
-export type ToolId = "income-tax" | "sales-tax";
+export type ToolId =
+  | "income-tax"
+  | "sales-tax"
+  | "paycheck";
 
 export type ToolDefinition = {
   id: ToolId;
   name: string;
   label: string;
   basePath: string;
-  component: "IncomeTaxTool" | "SalesTaxTool";
-  dataKey: "incomeTax" | "salesTax";
+  component:
+    | "IncomeTaxTool"
+    | "SalesTaxTool"
+    | "PaycheckTool";
+  dataKey:
+    | "incomeTax"
+    | "salesTax"
+    | "paycheck";
   supportedRegionIds: RegionId[];
 };
 
@@ -108,10 +117,40 @@ export const tools: ToolDefinition[] = [
       "US-ME",
       "US-NC-WAKE-COUNTY",
       "US-NC-MECKLENBURG-COUNTY",
-
-      // fler regioner läggs till via SEO Studio
+      "US-AZ-PHOENIX-CITY",
+      "US-CO-DENVER-CITY",
     ],
   },
+  {
+    id: "paycheck",
+    name: "Paycheck calculator",
+    label: "Paycheck",
+    basePath: "/tools/paycheck",
+    component: "PaycheckTool",
+    dataKey: "paycheck",
+    supportedRegionIds: [
+      "US-TX",
+      "US-FL",
+      "US-IL",
+      "US-GA",
+      "US-CO",
+      "US-TN",
+      "US-VA",
+      "US-NV",
+      "US-UT",
+      "US-WA",
+      "US-MI",
+      "US-IN",
+      "US-KY",
+      "US-LA",
+      "US-MN",
+      "US-NY",
+      "US-AL",
+      "US-MO",
+      "US-AZ",
+      "US-WI",
+    ],
+  },  
 ];
 
 export function getToolById(id: ToolId): ToolDefinition | undefined {

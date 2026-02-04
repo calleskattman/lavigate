@@ -104,7 +104,9 @@ export const regions: Region[] = [
   { id: "US-VT", countryCode: "US", slug: "vermont", name: "Vermont", displayName: "Vermont" },
   { id: "US-NC-WAKE-COUNTY", countryCode: "US", slug: "wake-county-north-carolina", name: "Wake County", displayName: "Wake County" },
   { id: "US-NC-MECKLENBURG-COUNTY", countryCode: "US", slug: "mecklenburg-county-north-carolina", name: "Mecklenburg County", displayName: "Mecklenburg County" },
-
+  { id: "US-AZ-PHOENIX-CITY", countryCode: "US", slug: "phoenix-arizona", name: "Phoenix", displayName: "Phoenix" },
+  { id: "US-CO-DENVER-CITY", countryCode: "US", slug: "denver-colorado", name: "Denver", displayName: "Denver" },
+  { id: "US-IL", countryCode: "US", slug: "illinois", name: "Illinois", displayName: "Illinois" },
   // fler regioner läggs till här senare
 ];
 

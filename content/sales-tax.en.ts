@@ -2094,6 +2094,78 @@ export const salesTaxSeoContent: Record<string, SalesTaxSeoEntry> = {
   }
 },
 
+// content/sales-tax.en.ts
+"US-AZ-PHOENIX-CITY": {
+  "h1": "Phoenix Sales Tax Calculator 2026",
+  "intro": "Phoenix publishes official combined Transaction Privilege Tax (TPT) rates for retail that reflect the State of Arizona, Maricopa County, and the City of Phoenix. This Phoenix Sales Tax Calculator 2026 provides a simplified estimate using the published combined retail rate for Phoenix.",
+  "sections": {
+    "howItWorks": "This calculator uses an official combined retail TPT rate published for Phoenix (State of Arizona + Maricopa County + City of Phoenix). The estimate is calculated by applying the published combined rate to the taxable amount. Phoenix’s published materials also include threshold-based retail structures (for example, single-item treatment) that can produce different outcomes depending on the specific transaction details, so this tool remains a simplified estimator.",
+    "examples": "If a published combined retail rate applies to a given taxable amount, a simplified estimate is computed by multiplying the taxable amount by that combined rate. This example is for estimation only and does not determine tax due for a specific transaction.",
+    "limitations": "Results are simplified estimates and may not reflect all legal requirements that can apply to a specific transaction. This page relies on Phoenix’s published combined retail rate presentation and does not break out individual state, county, or city component rates unless they are explicitly published in the same official source used for this page. Certain retail scenarios can involve threshold-based treatment (such as single-item structures) and other rules that are not captured in a single-rate estimate. For official administration and collection of TPT across state, county, and municipal jurisdictions, consult the Arizona Department of Revenue."
+  },
+  "faq": [
+    {
+      "q": "What rate does this Phoenix sales tax calculator use?",
+      "a": "It uses the official combined retail rate published for Phoenix (State of Arizona + Maricopa County + City of Phoenix) for the applicable retail chart context."
+    },
+    {
+      "q": "Does this page provide separate state, county, and city rates?",
+      "a": "Not in this version. This page uses the combined retail rate as published in the official Phoenix combined rate chart and does not split the rate into separate components unless those component rates are explicitly published in the same official source used for this page."
+    },
+    {
+      "q": "Can Phoenix retail tax vary depending on the transaction?",
+      "a": "Yes. Official Phoenix materials include threshold-based retail structures (for example, single-item treatment) that can affect outcomes. This calculator is a simplified estimate based on the published combined retail rate chart context."
+    },
+    {
+      "q": "Who administers and collects Phoenix TPT?",
+      "a": "Arizona administers and collects Transaction Privilege Tax for state, county, and municipal jurisdictions through the Arizona Department of Revenue."
+    },
+    {
+      "q": "Why might the estimate differ from the tax actually due?",
+      "a": "Actual tax depends on transaction-specific rules, taxable base determinations, and any threshold-based treatment reflected in official materials. This tool provides a simplified estimate using the published combined retail rate presentation."
+    }
+  ],
+  "meta": {
+    "title": "Phoenix Sales Tax Calculator 2026 | Retail TPT Rate Estimate",
+    "description": "Phoenix Sales Tax Calculator 2026 for retail. Simplified estimate using Phoenix’s published combined retail Transaction Privilege Tax (TPT) rate (State of Arizona + Maricopa County + City of Phoenix).",
+    "canonicalPath": "/tools/sales-tax/phoenix-arizona"
+  }
+},
+
+// content/sales-tax.en.ts
+"US-CO-DENVER-CITY": {
+  "h1": "Denver Sales Tax Calculator 2026",
+  "intro": "Denver imposes a general city sales tax and a corresponding retailer’s and consumer use tax under the Denver Revised Municipal Code (DRMC) Chapter 53. This page describes the structure of the Denver general sales and use tax system and provides a simplified estimate based on the stated general rate.",
+  "sections": {
+    "howItWorks": "Denver’s general sales and retailer’s use tax is imposed as a single flat percentage on the taxable amount of qualifying transactions within the city. The system includes both a sales tax applied at the point of sale and a corresponding use tax that applies when sales tax was not collected. Administration and official guidance for this tax system are provided by the City and County of Denver, Department of Finance, Treasury Division.",
+    "examples": "A simplified estimate applies the stated flat general rate to the taxable amount of a transaction. The calculation shown by this tool reflects only the general Denver city sales or use tax described under the Denver Revised Municipal Code (DRMC) Chapter 53 and does not incorporate other taxes or charges that may apply outside this scope.",
+    "limitations": "The results shown are simplified estimates based solely on the general Denver city sales and retailer’s and consumer use tax. They do not account for transaction-specific rules, sourcing determinations, exemptions, filing positions, or other taxes that may apply. This content summarizes the general structure of the Denver Sales and Retailer’s Use Tax and is not a substitute for official guidance or legal interpretation."
+  },
+  "faq": [
+    {
+      "q": "What does this Denver sales tax estimate include?",
+      "a": "This estimate includes only the general Denver city sales tax and the corresponding retailer’s and consumer use tax imposed under the Denver Revised Municipal Code (DRMC) Chapter 53. No other tax components are included."
+    },
+    {
+      "q": "Does this calculator include Colorado state or special district taxes?",
+      "a": "No. This estimate is limited to the Denver city general sales and use tax system. State-level taxes and special district taxes are not included."
+    },
+    {
+      "q": "Is Denver’s sales tax calculated using brackets or tiers?",
+      "a": "No. The information provided describes a flat-rate structure for Denver’s general city sales and retailer’s and consumer use tax. The same percentage applies to the taxable amount without brackets or progressive tiers."
+    },
+    {
+      "q": "Why might an actual tax amount differ from this estimate?",
+      "a": "Actual tax outcomes can differ due to transaction-specific rules, determinations of taxability, sourcing rules, exemptions, or the application of taxes that are outside the scope of this estimate. This tool reflects only the general Denver city sales and use tax structure."
+    }
+  ],
+  "meta": {
+    "title": "Denver Sales Tax Calculator 2026",
+    "description": "Denver sales tax calculator for simplified estimates under the Denver Revised Municipal Code (DRMC) Chapter 53. Applies the general Denver city sales and retailer’s and consumer use tax.",
+    "canonicalPath": "/tools/sales-tax/denver-colorado"
+  }
+},
+
 
 
 };

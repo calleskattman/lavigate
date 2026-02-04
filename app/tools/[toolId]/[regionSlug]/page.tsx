@@ -13,12 +13,16 @@ import { incomeTaxSeoContent } from "@/content/income-tax.en";
 import { ToolLayout } from "@/components/layout/ToolLayout";
 import IncomeTaxTool from "@/components/tools/IncomeTaxTool";
 import SalesTaxTool from "@/components/tools/SalesTaxTool";
+import PaycheckTool from "@/components/tools/PaycheckTool";
 import { AdsBlock } from "@/components/ads/AdsBlock";
 import { AffiliateBlock } from "@/components/ads/AffiliateBlock";
 
 import { getToolById, tools } from "@/config/tools";
 import { getSalesTaxConfig } from "@/config/data/salesTax";
 import { salesTaxSeoContent } from "@/content/sales-tax.en";
+
+import { getPaycheckConfig } from "@/config/data/paycheck";
+import { paycheckSeoContent } from "@/content/paycheck.en";
 
 import {
   buildFaqSchema,
@@ -63,11 +67,13 @@ export async function generateMetadata(
   if (!tool || !region) return {};
 
   const seo =
-    tool.id === "income-tax"
-      ? incomeTaxSeoContent[region.id]
-      : tool.id === "sales-tax"
-      ? salesTaxSeoContent[region.id]
-      : undefined;
+  tool.id === "income-tax"
+    ? incomeTaxSeoContent[region.id]
+    : tool.id === "sales-tax"
+    ? salesTaxSeoContent[region.id]
+    : tool.id === "paycheck"
+    ? paycheckSeoContent[region.id]
+    : undefined;
 
   if (!seo) return {};
 
@@ -126,6 +132,11 @@ switch (tool.id) {
     seo = salesTaxSeoContent[region.id];
     break;
 
+  case "paycheck":
+    config = getPaycheckConfig(region.id);
+    seo = paycheckSeoContent[region.id];
+    break;
+
   default:
     notFound();
 }
@@ -139,10 +150,12 @@ switch (tool.id) {
       ? buildFaqSchema(seo.faq)
       : null;
 
-  const softwareSchema =
-    tool.id === "income-tax"
-      ? buildIncomeTaxSoftwareSchema({ content: seo, pageUrl })
-      : buildSalesTaxSoftwareSchema({ content: seo, pageUrl });
+      const softwareSchema =
+      tool.id === "income-tax"
+        ? buildIncomeTaxSoftwareSchema({ content: seo, pageUrl })
+        : tool.id === "sales-tax"
+        ? buildSalesTaxSoftwareSchema({ content: seo, pageUrl })
+        : buildIncomeTaxSoftwareSchema({ content: seo, pageUrl });    
 
   const h1 = seo.h1.replace(/\b(20\d{2})\b/, String(CURRENT_TAX_YEAR));
 
@@ -176,6 +189,7 @@ switch (tool.id) {
 
         {tool.id === "income-tax" && <IncomeTaxTool config={config} />}
         {tool.id === "sales-tax" && <SalesTaxTool config={config} />}
+        {tool.id === "paycheck" && <PaycheckTool config={config} />}
 
         {shouldShowAd(1) && (
           <div className="mt-8">

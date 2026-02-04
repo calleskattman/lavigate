@@ -854,6 +854,35 @@ lastVerified: "2025-03-01",
   },
 },
 
+// config/data/salesTax.ts
+"US-AZ-PHOENIX-CITY": {
+  regionId: "US-AZ-PHOENIX-CITY",
+  year: 2026,
+  systemName: "Phoenix Transaction Privilege Tax and Use Tax (Retail combined rate)",
+  components: [
+    { name: "Phoenix combined retail transaction privilege tax rate (state + county + city)", rate: 0.086 }
+  ],
+  authority: {
+    name: "Arizona Department of Revenue",
+    url: "https://azdor.gov",
+    lastVerified: "2026-02-01",
+  },
+},
+
+"US-CO-DENVER-CITY": {
+  regionId: "US-CO-DENVER-CITY",
+  year: 2026,
+  systemName: "Denver Sales and Retailer’s Use Tax under the Denver Revised Municipal Code (DRMC) Chapter 53",
+  components: [
+    { name: "Denver general sales and retailer’s use tax", rate: 0.0515 }
+  ],
+  authority: {
+    name: "City and County of Denver, Department of Finance, Treasury Division",
+    url: "https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Finance/Our-Divisions/Treasury/Business-Tax-Information",
+    lastVerified: "2026-02-01",
+  },
+},
+
 
 
   // Fler regioner läggs till här via SEO Studio / Quick Import
