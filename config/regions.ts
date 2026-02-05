@@ -107,6 +107,11 @@ export const regions: Region[] = [
   { id: "US-AZ-PHOENIX-CITY", countryCode: "US", slug: "phoenix-arizona", name: "Phoenix", displayName: "Phoenix" },
   { id: "US-CO-DENVER-CITY", countryCode: "US", slug: "denver-colorado", name: "Denver", displayName: "Denver" },
   { id: "US-IL", countryCode: "US", slug: "illinois", name: "Illinois", displayName: "Illinois" },
+  { id: "US-AK", countryCode: "US", slug: "alaska", name: "Alaska", displayName: "Alaska" },
+  { id: "US-NM", countryCode: "US", slug: "new-mexico", name: "New Mexico", displayName: "New Mexico" },
+  { id: "US-ND", countryCode: "US", slug: "north-dakota", name: "North Dakota", displayName: "North Dakota" },
+  { id: "US-WV", countryCode: "US", slug: "west-virginia", name: "West Virginia", displayName: "West Virginia" },
+  { id: "US-CO-COLORADO-SPRINGS-CITY", countryCode: "US", slug: "colorado-springs-city-colorado", name: "Colorado Springs", displayName: "Colorado Springs, Colorado" },  
   // fler regioner läggs till här senare
 ];
 

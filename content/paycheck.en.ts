@@ -719,6 +719,401 @@ export const paycheckSeoContent: Record<RegionId, PaycheckSEOContent> = {
   }
 },
 
+"US-OH": {
+  "h1": "Ohio paycheck calculator 2026",
+  "intro": "This Ohio paycheck calculator estimates paycheck withholding only and is not a calculation of final tax liability. Federal income tax withholding follows IRS rules based on Form W-4 (2020+) and IRS Publication 15-T, and FICA covers Social Security and Medicare. Ohio state payroll withholding is governed by official tables and percentage methods that are not reproduced here, so state withholding shown by this tool is an estimate.",
+  "sections": {
+    "howItWorks": "The estimate starts with gross pay for the selected pay period. Federal income tax withholding is calculated using IRS Publication 15-T methods tied to Form W-4 (2020+), and FICA includes Social Security and Medicare payroll taxes. Ohio employers determine state withholding using official period-specific withholding tables and percentage methods published by the Ohio Department of Taxation. Because those tables and methods are not implemented here, this tool focuses on federal withholding and FICA while presenting Ohio state withholding as an estimate.",
+    "examples": "For a given gross paycheck, the calculator applies federal withholding rules and FICA to estimate reductions from gross pay. Ohio state withholding in practice depends on official tables by pay frequency and prescribed percentage methods, which can materially change results across payroll periods. As a result, estimated take-home pay may differ from an employer-issued pay stub.",
+    "limitations": "This calculator provides an estimate of paycheck withholding and does not reproduce Ohio’s official withholding tables or percentage methods. Results may differ from actual payroll withholding. The estimate does not represent final tax liability and excludes any county, city, or municipal income taxes that may apply."
+  },
+  "faq": [
+    { "q": "Does this calculator compute final Ohio income tax?", "a": "No. It estimates paycheck withholding only and does not calculate final tax liability." },
+    { "q": "Why is Ohio state withholding estimated?", "a": "Ohio uses official, period-specific withholding tables and percentage methods that are not implemented here." },
+    { "q": "Which federal rules are used?", "a": "Federal withholding follows IRS Publication 15-T and Form W-4 (2020+), and FICA includes Social Security and Medicare." },
+    { "q": "Are local Ohio taxes included?", "a": "No. County, city, or other local income taxes are not included." }
+  ],
+  "meta": {
+    "title": "Ohio paycheck calculator 2026 — estimate take-home pay",
+    "description": "Estimate Ohio paycheck withholding and take-home pay. Federal withholding and FICA are included; Ohio state withholding is shown as an estimate.",
+    "canonicalPath": "/tools/paycheck/ohio"
+  }
+},
+
+"US-MD": {
+  "h1": "Maryland paycheck calculator 2026",
+  "intro": "This Maryland paycheck calculator estimates paycheck withholding only and does not calculate final tax liability. Federal income tax withholding follows IRS rules based on Form W-4 (2020+) and IRS Publication 15-T, and FICA covers Social Security and Medicare. Maryland state payroll withholding uses official tables and percentage formulas that are not reproduced here, so state withholding shown by this tool is an estimate.",
+  "sections": {
+    "howItWorks": "The calculation begins with gross pay for the selected pay period. Federal income tax withholding is estimated using IRS Publication 15-T methods tied to Form W-4 (2020+), and FICA includes Social Security and Medicare payroll taxes. Maryland state payroll withholding is administered using official withholding tables and percentage methods that are not implemented in this tool, so the state portion is presented as an estimate.",
+    "examples": "For a given paycheck, the calculator estimates reductions from gross pay based on federal withholding and FICA. Maryland state withholding is estimated rather than calculated using official tables, which means the resulting take-home pay may differ from an employer-issued pay stub.",
+    "limitations": "This tool provides an estimate of paycheck withholding only and does not reproduce Maryland’s official withholding tables, exemption values, or percentage formulas. Results may differ materially from actual payroll withholding. The estimate is not final tax liability. County or municipal income tax withholding may apply in some cases, but such local withholding is not included."
+  },
+  "faq": [
+    { "q": "Does this calculator compute final Maryland income tax?", "a": "No. It estimates paycheck withholding only and does not calculate final tax liability." },
+    { "q": "Why is Maryland state withholding estimated?", "a": "Maryland uses official tables and percentage formulas that are not implemented in this calculator." },
+    { "q": "Which federal rules are applied?", "a": "Federal withholding follows IRS Publication 15-T and Form W-4 (2020+), and FICA includes Social Security and Medicare." },
+    { "q": "Are county or municipal taxes included?", "a": "No. County or municipal income tax withholding is not included in the calculation." }
+  ],
+  "meta": {
+    "title": "Maryland paycheck calculator 2026 — estimate take-home pay",
+    "description": "Estimate Maryland paycheck withholding and take-home pay. Federal withholding and FICA are included; Maryland state withholding is shown as an estimate.",
+    "canonicalPath": "/tools/paycheck/maryland"
+  }
+},
+
+"US-NJ": {
+  "h1": "New Jersey paycheck calculator 2026",
+  "intro": "This New Jersey paycheck calculator estimates paycheck withholding only and does not calculate final tax liability. Federal income tax withholding follows IRS rules based on Form W-4 (2020+) and IRS Publication 15-T, and FICA covers Social Security and Medicare. New Jersey state payroll withholding is administered using official tables and methods that are not reproduced here, so state withholding shown by this tool is an estimate.",
+  "sections": {
+    "howItWorks": "The estimate begins with gross pay for the selected pay period. Federal income tax withholding is estimated using IRS Publication 15-T methods tied to Form W-4 (2020+), and FICA includes Social Security and Medicare payroll taxes. New Jersey employers determine state withholding using official withholding tables and methods that depend on filing status, allowances, and pay frequency, so this tool presents the state portion as an estimate.",
+    "examples": "For a given paycheck, the calculator estimates reductions from gross pay based on federal withholding and FICA. New Jersey state withholding for regular wages relies on official tables and methods, so estimated take-home pay may differ from an employer-issued pay stub.",
+    "limitations": "This tool provides an estimate of paycheck withholding only and does not reproduce New Jersey’s official withholding tables, allowance values, or percentage-method calculations. Results may differ materially from actual payroll withholding. The estimate is not final tax liability."
+  },
+  "faq": [
+    { "q": "Does this calculator compute final New Jersey income tax?", "a": "No. It estimates paycheck withholding only and does not calculate final tax liability." },
+    { "q": "Why is New Jersey state withholding estimated?", "a": "New Jersey uses official withholding tables and methods that are not implemented in this calculator." },
+    { "q": "Which federal rules are applied?", "a": "Federal withholding follows IRS Publication 15-T and Form W-4 (2020+), and FICA includes Social Security and Medicare." },
+    { "q": "Does the estimate match my pay stub exactly?", "a": "No. Because official New Jersey tables and methods are not reproduced, results may differ from an employer-issued pay stub." }
+  ],
+  "meta": {
+    "title": "New Jersey paycheck calculator 2026 — estimate take-home pay",
+    "description": "Estimate New Jersey paycheck withholding and take-home pay. Federal withholding and FICA are included; New Jersey state withholding is shown as an estimate.",
+    "canonicalPath": "/tools/paycheck/new-jersey"
+  }
+},
+
+"US-IA": {
+  "h1": "Iowa paycheck calculator 2026",
+  "intro": "This Iowa paycheck calculator estimates paycheck withholding only and does not calculate final tax liability. Federal income tax withholding follows IRS rules based on Form W-4 (2020+) and IRS Publication 15-T, and FICA covers Social Security and Medicare. Iowa state payroll withholding is determined using official tables or multi-step formulas that are not reproduced here, so state withholding shown by this tool is an estimate.",
+  "sections": {
+    "howItWorks": "The estimate starts with gross pay for the selected pay period. Federal income tax withholding is estimated using IRS Publication 15-T methods tied to Form W-4 (2020+), and FICA includes Social Security and Medicare payroll taxes. Iowa employers determine state withholding using prescribed tables or a computer formula rather than a single flat percentage, so the state portion is presented as an estimate.",
+    "examples": "For a given paycheck, the calculator estimates reductions from gross pay based on federal withholding and FICA. Iowa state withholding for regular wages relies on official tables or formulas that vary by payroll period and employee details, which means estimated take-home pay may differ from an employer-issued pay stub.",
+    "limitations": "This tool provides an estimate of paycheck withholding only and does not reproduce Iowa’s official withholding tables, allowance values, or multi-step formulas. Results may differ materially from actual payroll withholding. The estimate is not final tax liability."
+  },
+  "faq": [
+    { "q": "Does this calculator compute final Iowa income tax?", "a": "No. It estimates paycheck withholding only and does not calculate final tax liability." },
+    { "q": "Why is Iowa state withholding estimated?", "a": "Iowa requires employers to use official withholding tables or a multi-step formula, which are not implemented here." },
+    { "q": "Which federal rules are applied?", "a": "Federal withholding follows IRS Publication 15-T and Form W-4 (2020+), and FICA includes Social Security and Medicare." },
+    { "q": "Does the estimate match my pay stub exactly?", "a": "No. Because Iowa’s official tables and formulas are not reproduced, results may differ from an employer-issued pay stub." }
+  ],
+  "meta": {
+    "title": "Iowa paycheck calculator 2026 — estimate take-home pay",
+    "description": "Estimate Iowa paycheck withholding and take-home pay. Federal withholding and FICA are included; Iowa state withholding is shown as an estimate.",
+    "canonicalPath": "/tools/paycheck/iowa"
+  }
+},
+
+"US-AK": {
+  "h1": "Alaska paycheck calculator 2026",
+  "intro": "This Alaska paycheck calculator estimates paycheck withholding, not final tax liability. Alaska does not impose a state personal income tax, so the estimate includes only federal income tax withholding and FICA (Social Security and Medicare).",
+  "sections": {
+    "howItWorks": "The estimate starts from gross pay for the selected pay frequency. Federal income tax withholding follows IRS Publication 15-T and Form W-4 (2020+). FICA payroll taxes include Social Security and Medicare. Because Alaska has no state income tax, there is no state payroll withholding applied.",
+    "examples": "For a biweekly paycheck, federal income tax is withheld according to IRS rules and FICA is withheld at the applicable Social Security and Medicare rates. No Alaska state income tax is withheld from wages.",
+    "limitations": "Results are estimates of paycheck withholding and are not final tax liability or an exact match to an employer payroll system. This calculator does not include any local or municipal wage taxes."
+  },
+  "faq": [
+    { "q": "Does Alaska withhold state income tax from paychecks?", "a": "No. Alaska does not have a state personal income tax, so employers do not withhold state income tax from wages." },
+    { "q": "What taxes are withheld from paychecks in Alaska?", "a": "Federal income tax withholding and FICA payroll taxes for Social Security and Medicare." },
+    { "q": "Is this the same as my pay stub?", "a": "No. The results are estimates of paycheck withholding and are not final tax liability or an exact pay stub match." },
+    { "q": "Are local or municipal taxes included?", "a": "No. Local or municipal wage taxes are not included." }
+  ],
+  "meta": {
+    "title": "Alaska paycheck calculator 2026 — estimate take-home pay",
+    "description": "Estimate federal income tax and FICA paycheck withholding for Alaska workers. Alaska has no state income tax.",
+    "canonicalPath": "/tools/paycheck/alaska"
+  }
+},
+
+"US-NM": {
+  "h1": "New Mexico paycheck calculator 2026",
+  "intro": "This New Mexico paycheck calculator estimates paycheck withholding, not final tax liability. Federal withholding follows IRS Publication 15-T and Form W-4 (2020+), and FICA covers Social Security and Medicare. New Mexico state withholding is shown in estimate-mode because official guidance relies on allowance- and pay-frequency-based tables that are not reproduced here.",
+  "sections": {
+    "howItWorks": "A paycheck withholding estimate starts from gross pay for the selected pay frequency. Federal income tax withholding is calculated using IRS Publication 15-T with Form W-4 (2020+) inputs, and FICA payroll taxes include Social Security and Medicare. New Mexico requires employers to withhold state income tax using official percentage-method tables that depend on pay frequency and the allowances claimed on the federal Form W-4.",
+    "examples": "For a biweekly paycheck, federal withholding and FICA are estimated for that pay period based on your inputs. In practice, New Mexico state withholding is determined using the official biweekly tables after applying allowance adjustments, so the amount withheld can differ from a simple percentage of gross wages.",
+    "limitations": "New Mexico state withholding for regular wages is not modeled numerically in this calculator. Official guidance requires allowance adjustments and pay-frequency-specific tables, so a single flat rate cannot be applied. As a result, this tool does not output a numeric New Mexico state withholding amount. Actual withholding may differ materially from these estimates. Local, county, or municipal wage or income taxes are not included."
+  },
+  "faq": [
+    { "q": "Does New Mexico withhold state income tax from paychecks?", "a": "Yes. New Mexico requires employers to withhold state income tax from wages using official allowance- and table-based methods." },
+    { "q": "Why is New Mexico state withholding not calculated numerically?", "a": "For regular wages, New Mexico withholding depends on allowances and pay-frequency tables, and no single flat rate is authorized for all wages." },
+    { "q": "Does this match my pay stub exactly?", "a": "No. Results are estimates of paycheck withholding and are not final tax liability or an exact match to an employer payroll system." },
+    { "q": "Are local taxes included?", "a": "No. This calculator does not include any local, county, or municipal wage or income taxes." }
+  ],
+  "meta": {
+    "title": "New Mexico paycheck calculator 2026 — estimate take-home pay",
+    "description": "Estimate New Mexico paycheck withholding for federal income tax and FICA. State withholding is shown in estimate-mode because official allowance- and pay-frequency tables are not reproduced.",
+    "canonicalPath": "/tools/paycheck/new-mexico"
+  }
+},
+
+"US-WY": {
+  "h1": "Wyoming paycheck calculator 2026",
+  "intro": "This Wyoming paycheck calculator estimates paycheck withholding, not final tax liability. Wyoming does not impose a state personal income tax, so the estimate includes only federal income tax withholding and FICA (Social Security and Medicare).",
+  "sections": {
+    "howItWorks": "The estimate starts from gross pay for the selected pay frequency. Federal income tax withholding follows IRS Publication 15-T and Form W-4 (2020+). FICA payroll taxes include Social Security and Medicare. Because Wyoming has no state personal income tax, there is no state income tax withholding applied to wages.",
+    "examples": "For a biweekly paycheck, federal income tax is withheld according to IRS rules and FICA is withheld at the applicable Social Security and Medicare rates. No Wyoming state income tax is withheld from wages.",
+    "limitations": "Results are estimates of paycheck withholding and are not final tax liability or an exact match to an employer payroll system. This calculator does not include any local or municipal wage or income taxes."
+  },
+  "faq": [
+    { "q": "Does Wyoming withhold state income tax from paychecks?", "a": "No. Wyoming does not have a state personal income tax, so employers do not withhold state income tax from wages." },
+    { "q": "What taxes are withheld from paychecks in Wyoming?", "a": "Federal income tax withholding and FICA payroll taxes for Social Security and Medicare." },
+    { "q": "Is this the same as my pay stub?", "a": "No. The results are estimates of paycheck withholding and are not final tax liability or an exact match to an employer payroll system." },
+    { "q": "Are local or municipal taxes included?", "a": "No. This calculator does not include local or municipal wage or income taxes." }
+  ],
+  "meta": {
+    "title": "Wyoming paycheck calculator 2026 — estimate take-home pay",
+    "description": "Estimate federal income tax and FICA paycheck withholding for Wyoming workers. Wyoming has no state income tax.",
+    "canonicalPath": "/tools/paycheck/wyoming"
+  }
+},
+
+"US-MS": {
+  "h1": "Mississippi paycheck calculator 2026",
+  "intro": "This Mississippi paycheck calculator estimates paycheck withholding, not final tax liability. Federal withholding follows IRS Publication 15-T and Form W-4 (2020+), and FICA covers Social Security and Medicare. Mississippi state withholding is shown in estimate-mode because official guidance relies on pay-frequency tables and exemption-based adjustments that are not reproduced here.",
+  "sections": {
+    "howItWorks": "A paycheck withholding estimate starts from gross pay for the selected pay frequency. Federal income tax withholding is calculated using IRS Publication 15-T with Form W-4 (2020+) inputs, and FICA payroll taxes include Social Security and Medicare. Mississippi requires employers to withhold state income tax from wages using official withholding tables that vary by payroll period and depend on the employee’s Mississippi exemption certificate and statutory adjustments.",
+    "examples": "With weekly or biweekly pay, federal withholding and FICA are estimated for that pay period based on your inputs. Mississippi withholding, in practice, is determined using the official table for the payroll period and the employee’s exemption information, so it does not reduce to a single flat percentage of gross wages.",
+    "limitations": "Mississippi state withholding for regular wages is not modeled numerically in this calculator. Official guidance uses pay-frequency withholding tables and exemption-based adjustments, and no general single flat rate is authorized for regular wages. As a result, this tool does not reproduce the official Mississippi withholding tables or output a numeric Mississippi state withholding amount. Actual withholding may differ materially from these estimates. This calculator does not include any local, county, or municipal wage or income taxes."
+  },
+  "faq": [
+    { "q": "Does Mississippi withhold state income tax from paychecks?", "a": "Yes. Mississippi requires employers to withhold state income tax from wages using official withholding tables and statutory adjustments." },
+    { "q": "Why is Mississippi state withholding not calculated as a percentage?", "a": "Mississippi withholding depends on pay-frequency tables and exemption-based adjustments, and no general single flat rate is authorized for regular wages." },
+    { "q": "Does this match my pay stub exactly?", "a": "No. Results are estimates of paycheck withholding and are not final tax liability or an exact match to an employer payroll system." },
+    { "q": "Are local taxes included?", "a": "No. This calculator does not include any local, county, or municipal wage or income taxes." }
+  ],
+  "meta": {
+    "title": "Mississippi paycheck calculator 2026 — estimate take-home pay",
+    "description": "Estimate Mississippi paycheck withholding for federal income tax and FICA. State withholding is shown in estimate-mode because official pay-frequency tables and exemption-based adjustments are not reproduced.",
+    "canonicalPath": "/tools/paycheck/mississippi"
+  }
+},
+
+"US-SD": {
+  "h1": "South Dakota paycheck calculator 2026",
+  "intro": "This South Dakota paycheck calculator estimates paycheck withholding, not final tax liability. South Dakota does not impose a state personal income tax, so the estimate includes only federal income tax withholding and FICA (Social Security and Medicare).",
+  "sections": {
+    "howItWorks": "The estimate starts from gross pay for the selected pay frequency. Federal income tax withholding is calculated using IRS Publication 15-T with Form W-4 (2020+) inputs. FICA payroll taxes include Social Security and Medicare. Because South Dakota has no state personal income tax, there is no state income tax withholding applied to wages.",
+    "examples": "For a biweekly paycheck, federal income tax is withheld according to IRS rules and FICA is withheld at the applicable Social Security and Medicare rates. No South Dakota state income tax is withheld from wages.",
+    "limitations": "Results are estimates of paycheck withholding and are not final tax liability or an exact match to an employer payroll system. This calculator does not include any local or municipal wage or income taxes."
+  },
+  "faq": [
+    { "q": "Does South Dakota withhold state income tax from paychecks?", "a": "No. South Dakota does not have a state personal income tax, so employers do not withhold state income tax from wages." },
+    { "q": "What taxes are withheld from paychecks in South Dakota?", "a": "Federal income tax withholding and FICA payroll taxes for Social Security and Medicare." },
+    { "q": "Is this the same as my pay stub?", "a": "No. Results are estimates of paycheck withholding and are not final tax liability or an exact match to an employer payroll system." },
+    { "q": "Are local or municipal taxes included?", "a": "No. South Dakota does not impose local or municipal income taxes that must be withheld from wages." }
+  ],
+  "meta": {
+    "title": "South Dakota paycheck calculator 2026 — estimate take-home pay",
+    "description": "Estimate federal income tax and FICA paycheck withholding for South Dakota workers. South Dakota has no state income tax.",
+    "canonicalPath": "/tools/paycheck/south-dakota"
+  }
+},
+
+"US-CT": {
+  "h1": "Connecticut paycheck calculator 2026",
+  "intro": "This Connecticut paycheck calculator estimates paycheck withholding, not final tax liability. Connecticut wage withholding is determined using official withholding tables and calculation rules that depend on pay frequency and employee inputs (such as the Connecticut withholding code). Because those tables and multi-step rules are not reproduced here, Connecticut state withholding is shown in estimate-mode.",
+  "sections": {
+    "howItWorks": "A paycheck estimate begins with gross pay for the selected pay frequency. Federal income tax withholding follows IRS Publication 15-T and Form W-4 (2020+) inputs, and FICA covers Social Security and Medicare payroll taxes. Connecticut state wage withholding is normally computed using state withholding tables and calculation rules that annualize wages and apply table-driven steps based on the employee’s Connecticut withholding inputs, then convert the result back to a per-paycheck amount. This calculator does not reproduce those official tables and multi-step rules.",
+    "examples": "A biweekly paycheck estimate typically includes federal income tax withholding and FICA withheld from gross pay. Connecticut state withholding can vary materially for the same annual salary because official withholding depends on the employee’s Connecticut withholding inputs and pay frequency tables.",
+    "limitations": "Results are estimates of paycheck withholding and are not final tax liability or an exact match to an employer payroll system. Connecticut state withholding is shown in estimate-mode because official guidance relies on pay-frequency tables, withholding codes, and multi-step calculation rules that are not reproduced here. This calculator does not include any county, city, or municipal income taxes."
+  },
+  "faq": [
+    { "q": "Does Connecticut require state income tax withholding from wages?", "a": "Yes. Connecticut has wage withholding for state income tax, and employers use official tables and calculation rules to determine withholding per pay period." },
+    { "q": "Why is Connecticut state withholding shown as an estimate here?", "a": "Official Connecticut wage withholding depends on pay-frequency tables and employee-specific withholding inputs. This calculator does not reproduce those official tables and multi-step rules, so results are shown in estimate-mode." },
+    { "q": "Is this the same as my pay stub?", "a": "No. Results are estimates of paycheck withholding and are not an exact match to a pay stub or employer payroll system." },
+    { "q": "Are local or municipal income taxes included?", "a": "No. This calculator does not include any county, city, or municipal income taxes." }
+  ],
+  "meta": {
+    "title": "Connecticut paycheck calculator 2026 — estimate take-home pay",
+    "description": "Estimate paycheck withholding for Connecticut wages, including federal income tax and FICA. Connecticut state withholding is shown in estimate-mode because official tables and rules are not reproduced.",
+    "canonicalPath": "/tools/paycheck/connecticut"
+  }
+},
+
+"US-VT": {
+  "h1": "Vermont paycheck calculator 2026",
+  "intro": "This Vermont paycheck calculator estimates paycheck withholding, not final tax liability. It includes federal income tax withholding based on IRS Publication 15-T and Form W-4 (2020+), plus FICA (Social Security and Medicare). Vermont state income tax withholding exists, but official Vermont guidance requires employer withholding using Commissioner-prescribed tables, schedules, or formulae that are not reproduced here, so Vermont state withholding is not calculated in this tool.",
+  "sections": {
+    "howItWorks": "A paycheck estimate starts with gross pay for the selected pay period. Federal income tax withholding follows IRS Publication 15-T rules using Form W-4 (2020+) inputs, and FICA includes Social Security and Medicare payroll taxes. Vermont law requires state income tax withholding from payments that are also subject to federal income tax withholding, with amounts determined using withholding tables, schedules, or formulae prescribed by the Vermont Commissioner of Taxes.",
+    "examples": "If gross pay increases, federal withholding and FICA generally increase because they are computed from the pay period amount and applicable rates. Vermont withholding in real payroll systems is typically determined using the state’s prescribed tables or formula schedules tied to employee withholding inputs, so actual Vermont withholding can differ materially from an estimate that does not reproduce those tables.",
+    "limitations": "Results are paycheck withholding estimates only and are not a substitute for an employer payroll system. Vermont state income tax withholding is not computed here because official Vermont withholding relies on Commissioner-prescribed tables, schedules, or formulae rather than a single flat rate for regular wages. This tool does not calculate any county, city, or municipal income taxes."
+  },
+  "faq": [
+    {
+      "q": "Does Vermont have state income tax withholding on wages?",
+      "a": "Yes. Vermont law requires withholding of Vermont income tax from payments that are also subject to federal income tax withholding, with amounts prescribed by the Vermont Commissioner of Taxes."
+    },
+    {
+      "q": "Why is Vermont state withholding not included in the calculation?",
+      "a": "Official Vermont withholding is based on Commissioner-prescribed tables, schedules, or formulae. This tool does not reproduce those tables or formula schedules, so it does not calculate a Vermont state withholding amount."
+    },
+    {
+      "q": "Is this the same as my final Vermont income tax for the year?",
+      "a": "No. This calculator estimates paycheck withholding and does not calculate final tax liability on an annual return."
+    },
+    {
+      "q": "Does the calculator include local Vermont income taxes?",
+      "a": "No. The calculation does not include any county, city, or municipal income taxes."
+    }
+  ],
+  "meta": {
+    "title": "Vermont paycheck calculator 2026 — estimate take-home pay",
+    "description": "Estimate take-home pay per paycheck in Vermont using federal withholding (IRS Publication 15-T, Form W-4 2020+) and FICA. Vermont state withholding is not computed because official methods use prescribed tables and formula schedules not reproduced here.",
+    "canonicalPath": "/tools/paycheck/vermont"
+  }
+},
+
+"US-ND": {
+  "h1": "North Dakota paycheck calculator 2026",
+  "intro": "This North Dakota paycheck calculator estimates paycheck withholding, not final tax liability. North Dakota requires state income tax withholding, but official guidance relies on Form W-4–based tables and percentage methods that vary by pay frequency, so state withholding is shown in estimate-mode.",
+  "sections": {
+    "howItWorks": "The estimate begins with gross pay for the selected pay period. Federal income tax withholding follows IRS Publication 15-T using Form W-4 (2020+) inputs, and FICA includes Social Security and Medicare payroll taxes. North Dakota state withholding is normally computed using official withholding tables or percentage methods that depend on the employee’s Form W-4 and the payroll period, which are not reproduced here.",
+    "examples": "For a biweekly paycheck, federal income tax and FICA are withheld based on federal rules. Actual North Dakota state withholding can differ for the same annual salary depending on the employee’s Form W-4 inputs and the applicable state tables for the pay period.",
+    "limitations": "Results are estimates of paycheck withholding and are not final tax liability or an exact match to an employer payroll system. North Dakota state withholding is shown in estimate-mode because official methods require pay-frequency tables and W-4–based calculations. This calculator does not include any local, county, or municipal income taxes."
+  },
+  "faq": [
+    {
+      "q": "Does North Dakota require state income tax withholding from wages?",
+      "a": "Yes. Employers must withhold North Dakota income tax from wages that are subject to federal income tax withholding, using official state methods."
+    },
+    {
+      "q": "Why is North Dakota state withholding shown as an estimate?",
+      "a": "Official North Dakota withholding depends on Form W-4 inputs and pay-frequency-specific tables or percentage methods. Those tables and multi-step rules are not reproduced here."
+    },
+    {
+      "q": "Is this the same as my pay stub?",
+      "a": "No. Results are estimates of paycheck withholding and are not an exact match to a pay stub or employer payroll system."
+    },
+    {
+      "q": "Are local income taxes included?",
+      "a": "No. North Dakota does not require withholding of local or municipal income taxes."
+    }
+  ],
+  "meta": {
+    "title": "North Dakota paycheck calculator 2026 — estimate take-home pay",
+    "description": "Estimate paycheck withholding for North Dakota wages, including federal income tax and FICA. North Dakota state withholding is shown in estimate-mode because official tables and methods are not reproduced.",
+    "canonicalPath": "/tools/paycheck/north-dakota"
+  }
+},
+
+"US-WV": {
+  "h1": "West Virginia paycheck calculator 2026",
+  "intro": "This West Virginia paycheck calculator estimates paycheck withholding, not final tax liability. West Virginia requires state income tax withholding, but official guidance relies on exemption- and pay-frequency-based tables and percentage methods, so state withholding is shown in estimate-mode.",
+  "sections": {
+    "howItWorks": "The estimate begins with gross pay for the selected pay period. Federal income tax withholding follows IRS Publication 15-T using Form W-4 (2020+) inputs, and FICA includes Social Security and Medicare payroll taxes. West Virginia state withholding is normally computed using official employer withholding tables or percentage methods that depend on the employee’s exemption certificate and the payroll period, which are not reproduced here.",
+    "examples": "For a biweekly paycheck, federal income tax and FICA are withheld based on federal rules. Actual West Virginia state withholding can differ for the same annual salary depending on the employee’s exemptions and the applicable state table or percentage method for the pay period.",
+    "limitations": "Results are estimates of paycheck withholding and are not final tax liability or an exact match to an employer payroll system. West Virginia state withholding is shown in estimate-mode because official methods require exemption-based tables or graduated percentage formulas. This calculator does not include any local, county, or municipal income taxes."
+  },
+  "faq": [
+    {
+      "q": "Does West Virginia require state income tax withholding from wages?",
+      "a": "Yes. Employers must withhold West Virginia personal income tax from wages that are subject to federal income tax withholding, using official state methods."
+    },
+    {
+      "q": "Why is West Virginia state withholding shown as an estimate?",
+      "a": "Official West Virginia withholding depends on exemption certificates and pay-frequency-specific tables or percentage methods. Those tables and multi-step rules are not reproduced here."
+    },
+    {
+      "q": "Is this the same as my pay stub?",
+      "a": "No. Results are estimates of paycheck withholding and are not an exact match to a pay stub or employer payroll system."
+    },
+    {
+      "q": "Are local income taxes included?",
+      "a": "No. West Virginia does not require withholding of local or municipal income taxes."
+    }
+  ],
+  "meta": {
+    "title": "West Virginia paycheck calculator 2026 — estimate take-home pay",
+    "description": "Estimate paycheck withholding for West Virginia wages, including federal income tax and FICA. West Virginia state withholding is shown in estimate-mode because official tables and methods are not reproduced.",
+    "canonicalPath": "/tools/paycheck/west-virginia"
+  }
+},
+
+"US-DC": {
+  "h1": "Washington, D.C. paycheck calculator 2026",
+  "intro": "This Washington, D.C. paycheck calculator estimates paycheck withholding, not final tax liability. The District of Columbia requires income tax withholding on wages, but official guidance relies on wage-bracket or percentage-method tables that vary by pay frequency and allowances, so DC withholding is shown in estimate-mode.",
+  "sections": {
+    "howItWorks": "The estimate starts from gross pay for the selected pay frequency. Federal income tax withholding follows IRS Publication 15-T using Form W-4 (2020+) inputs, and FICA includes Social Security and Medicare payroll taxes. DC income tax withholding is normally computed using DC’s wage-bracket tables or the percentage-of-wages method prescribed by the Office of Tax and Revenue (FR-230), which are not reproduced here.",
+    "examples": "For a biweekly paycheck, federal income tax and FICA are withheld under federal rules. Actual DC withholding for the same salary can differ depending on the employee’s DC withholding allowances and the applicable DC table or percentage method for the pay period.",
+    "limitations": "Results are estimates of paycheck withholding and are not final tax liability or an exact match to an employer payroll system. DC withholding is shown in estimate-mode because official methods require pay-frequency tables and allowance-based calculations. This calculator does not include any additional local or municipal income taxes beyond DC income tax."
+  },
+  "faq": [
+    {
+      "q": "Does Washington, D.C. require income tax withholding from wages?",
+      "a": "Yes. Employers must withhold DC income tax from wages for DC resident employees using official DC methods."
+    },
+    {
+      "q": "Why is DC state withholding shown as an estimate?",
+      "a": "Official DC withholding depends on wage-bracket or percentage-method tables tied to pay frequency and allowances, which are not reproduced here."
+    },
+    {
+      "q": "Is this the same as my pay stub?",
+      "a": "No. Results are estimates of paycheck withholding and are not an exact match to an employer’s payroll system."
+    },
+    {
+      "q": "Are additional local taxes included?",
+      "a": "No. This calculator does not include any additional local or municipal income taxes beyond DC income tax."
+    }
+  ],
+  "meta": {
+    "title": "Washington, D.C. paycheck calculator 2026 — estimate take-home pay",
+    "description": "Estimate paycheck withholding for Washington, D.C. wages, including federal income tax and FICA. DC withholding is shown in estimate-mode because official tables and methods are not reproduced.",
+    "canonicalPath": "/tools/paycheck/washington-dc"
+  }
+},
+
+"US-RI": {
+  "h1": "Rhode Island paycheck calculator 2026",
+  "intro": "This Rhode Island paycheck calculator estimates paycheck withholding, not final tax liability. Rhode Island requires state income tax withholding on wages, but official guidance relies on wage-bracket tables or a percentage method that vary by pay frequency and allowances, so state withholding is shown in estimate-mode.",
+  "sections": {
+    "howItWorks": "The estimate starts from gross pay for the selected pay period. Federal income tax withholding follows IRS Publication 15-T using Form W-4 (2020+) inputs, and FICA includes Social Security and Medicare payroll taxes. Rhode Island state withholding is normally computed using the Division of Taxation’s official withholding tables or percentage method tied to the employee’s RI-W4 and the payroll period, which are not reproduced here.",
+    "examples": "For weekly or biweekly pay, federal income tax and FICA are withheld under federal rules. Actual Rhode Island state withholding for the same salary can differ depending on allowances and the applicable state table or percentage method for the pay period.",
+    "limitations": "Results are estimates of paycheck withholding and are not final tax liability or an exact match to an employer payroll system. Rhode Island state withholding is shown in estimate-mode because official methods require detailed tables and calculation rules by pay frequency. This calculator does not include any local, county, or municipal income taxes."
+  },
+  "faq": [
+    {
+      "q": "Does Rhode Island require income tax withholding from wages?",
+      "a": "Yes. Employers must withhold Rhode Island personal income tax from wages using official state methods."
+    },
+    {
+      "q": "Why is Rhode Island state withholding shown as an estimate?",
+      "a": "Official Rhode Island withholding depends on wage-bracket tables or a percentage method that vary by pay frequency and allowances. Those tables and steps are not reproduced here."
+    },
+    {
+      "q": "Is this the same as my pay stub?",
+      "a": "No. Results are estimates of paycheck withholding and are not an exact match to an employer payroll system."
+    },
+    {
+      "q": "Are local income taxes included?",
+      "a": "No. Rhode Island does not require withholding of local or municipal income taxes."
+    }
+  ],
+  "meta": {
+    "title": "Rhode Island paycheck calculator 2026 — estimate take-home pay",
+    "description": "Estimate Rhode Island paycheck withholding for federal income tax, FICA, and state income tax. State withholding is shown in estimate-mode because official tables and methods are not reproduced.",
+    "canonicalPath": "/tools/paycheck/rhode-island"
+  }
+},
+
+"US-CO-COLORADO-SPRINGS-CITY": {
+  "h1": "Colorado Springs paycheck calculator 2026",
+  "intro": "This Colorado Springs paycheck calculator estimates paycheck withholding, not final tax liability. It includes federal income tax withholding based on IRS Publication 15-T and Form W-4 (2020+), FICA payroll taxes, and Colorado state income tax withholding described at a high level. Colorado uses a worksheet-based withholding method rather than published wage tables, so state withholding is not numerically modeled here.",
+  "sections": {
+    "howItWorks": "Paycheck withholding begins with gross pay for the selected pay period. Federal income tax withholding follows IRS Publication 15-T using Form W-4 (2020+). FICA includes Social Security and Medicare payroll taxes. Colorado state income tax withholding is calculated by employers using the Colorado Withholding Worksheet for Employers (DR 1098), which relies on a formula rather than wage tables and is therefore explained conceptually instead of calculated with a fixed rate.",
+    "examples": "For an employee working in Colorado Springs, federal income tax and FICA are withheld from each paycheck under federal rules. Colorado state income tax withholding depends on the worksheet calculation required by the state and may differ from the estimate shown here.",
+    "limitations": "This calculator provides an estimate of paycheck withholding only. It does not reproduce the Colorado DR 1098 worksheet or its formula-based steps, so state withholding amounts may differ from an employer’s payroll system. Results do not represent final tax liability. Colorado Springs does not impose a municipal income tax on wages, and no city-level wage tax is included. School district and other local taxes are not included."
+  },
+  "faq": [
+    { "q": "Does this calculator show final taxes owed?", "a": "No. It estimates paycheck withholding only and does not calculate final tax liability." },
+    { "q": "How is Colorado state income tax handled?", "a": "Colorado requires employers to use a worksheet-based method for withholding. That method is described but not numerically reproduced in this calculator." },
+    { "q": "Is there a Colorado Springs city income tax on wages?", "a": "No. Colorado Springs does not impose a municipal income tax on wages, so no city tax is included." },
+    { "q": "Are school district or other local taxes included?", "a": "No. Any school district or other local taxes that may apply based on residence are not included." }
+  ],
+  "meta": {
+    "title": "Colorado Springs paycheck calculator 2026 — estimate take-home pay",
+    "description": "Estimate paycheck withholding in Colorado Springs, including federal withholding, FICA, and high-level Colorado state withholding based on official worksheet rules.",
+    "canonicalPath": "/tools/paycheck/colorado-springs-city-colorado"
+  }
+},
 
 
 };
