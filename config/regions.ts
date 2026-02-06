@@ -112,6 +112,7 @@ export const regions: Region[] = [
   { id: "US-ND", countryCode: "US", slug: "north-dakota", name: "North Dakota", displayName: "North Dakota" },
   { id: "US-WV", countryCode: "US", slug: "west-virginia", name: "West Virginia", displayName: "West Virginia" },
   { id: "US-CO-COLORADO-SPRINGS-CITY", countryCode: "US", slug: "colorado-springs-city-colorado", name: "Colorado Springs", displayName: "Colorado Springs, Colorado" },  
+  
   // fler regioner läggs till här senare
 ];
 

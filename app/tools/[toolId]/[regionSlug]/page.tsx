@@ -24,6 +24,11 @@ import { salesTaxSeoContent } from "@/content/sales-tax.en";
 import { getPaycheckConfig } from "@/config/data/paycheck";
 import { paycheckSeoContent } from "@/content/paycheck.en";
 
+import { propertyTaxSeoContent } from "@/content/property-tax.en";
+import PropertyTaxTool from "@/components/tools/PropertyTaxTool";
+import { getPropertyTaxConfig } from "@/config/data/propertyTax";
+
+
 import {
   buildFaqSchema,
   buildIncomeTaxSoftwareSchema,
@@ -73,6 +78,8 @@ export async function generateMetadata(
     ? salesTaxSeoContent[region.id]
     : tool.id === "paycheck"
     ? paycheckSeoContent[region.id]
+    : tool.id === "property-tax"
+    ? propertyTaxSeoContent[region.id]
     : undefined;
 
   if (!seo) return {};
@@ -121,6 +128,7 @@ export default async function ToolRegionPage({
   let config: any;
 let seo: any;
 
+
 switch (tool.id) {
   case "income-tax":
     config = getIncomeTaxConfig(region.id);
@@ -137,27 +145,49 @@ switch (tool.id) {
     seo = paycheckSeoContent[region.id];
     break;
 
+    case "property-tax": {
+      config = getPropertyTaxConfig(region.id);
+      if (!config) notFound();
+    
+      seo = propertyTaxSeoContent[region.id];
+      break;
+    }
+    
+    
+    
   default:
     notFound();
 }
 
-  if (!config || !seo) notFound();
+if (!config) notFound();
+
+
+
 
   const pageUrl = `https://lavigate.com${tool.basePath}/${region.slug}`;
 
   const faqSchema =
-    Array.isArray(seo.faq) && seo.faq.length > 0
-      ? buildFaqSchema(seo.faq)
-      : null;
+  Array.isArray(seo.faq) && seo.faq.length > 0
+    ? buildFaqSchema(seo.faq)
+    : null;
 
-      const softwareSchema =
-      tool.id === "income-tax"
-        ? buildIncomeTaxSoftwareSchema({ content: seo, pageUrl })
-        : tool.id === "sales-tax"
-        ? buildSalesTaxSoftwareSchema({ content: seo, pageUrl })
-        : buildIncomeTaxSoftwareSchema({ content: seo, pageUrl });    
 
-  const h1 = seo.h1.replace(/\b(20\d{2})\b/, String(CURRENT_TAX_YEAR));
+
+
+    const softwareSchema =
+  tool.id === "income-tax"
+    ? buildIncomeTaxSoftwareSchema({ content: seo, pageUrl })
+    : tool.id === "sales-tax"
+    ? buildSalesTaxSoftwareSchema({ content: seo, pageUrl })
+    : tool.id === "property-tax"
+    ? buildIncomeTaxSoftwareSchema({ content: seo, pageUrl })
+    : null;
+
+   
+
+    const h1 = seo.h1.replace(/\b(20\d{2})\b/, String(CURRENT_TAX_YEAR));
+
+      
 
   return (
     <>
@@ -188,8 +218,10 @@ switch (tool.id) {
         </p>
 
         {tool.id === "income-tax" && <IncomeTaxTool config={config} />}
-        {tool.id === "sales-tax" && <SalesTaxTool config={config} />}
-        {tool.id === "paycheck" && <PaycheckTool config={config} />}
+{tool.id === "sales-tax" && <SalesTaxTool config={config} />}
+{tool.id === "paycheck" && <PaycheckTool config={config} />}
+{tool.id === "property-tax" && <PropertyTaxTool config={config} />}
+
 
         {shouldShowAd(1) && (
           <div className="mt-8">
@@ -223,21 +255,22 @@ switch (tool.id) {
         </section>
 
         {Array.isArray(seo.faq) && seo.faq.length > 0 && (
-          <section className="mt-10 space-y-4">
-            <h2 className="text-xl font-semibold text-slate-900">
-              FAQs about {h1}
-            </h2>
+  <section className="mt-10 space-y-4">
+    <h2 className="text-xl font-semibold text-slate-900">
+      FAQs about {h1}
+    </h2>
 
-            {seo.faq.map(
-              (item: { q: string; a: string }, index: number) => (
-                <div key={index}>
-                  <h3 className="font-medium text-slate-900">{item.q}</h3>
-                  <p className="text-sm text-slate-700">{item.a}</p>
-                </div>
-              )
-            )}
-          </section>
-        )}
+    {seo.faq.map(
+      (item: { q: string; a: string }, index: number) => (
+        <div key={index}>
+          <h3 className="font-medium text-slate-900">{item.q}</h3>
+          <p className="text-sm text-slate-700">{item.a}</p>
+        </div>
+      )
+    )}
+  </section>
+)}
+
 
         {shouldShowAd(3) && (
           <section className="mt-8">

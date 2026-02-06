@@ -4,7 +4,8 @@ import type { RegionId } from "./regions";
 export type ToolId =
   | "income-tax"
   | "sales-tax"
-  | "paycheck";
+  | "paycheck"
+  | "property-tax";
 
 export type ToolDefinition = {
   id: ToolId;
@@ -14,11 +15,13 @@ export type ToolDefinition = {
   component:
     | "IncomeTaxTool"
     | "SalesTaxTool"
-    | "PaycheckTool";
+    | "PaycheckTool"
+    | "PropertyTaxTool";
   dataKey:
     | "incomeTax"
     | "salesTax"
-    | "paycheck";
+    | "paycheck"
+    | "propertyTax";
   supportedRegionIds: RegionId[];
 };
 
@@ -167,6 +170,28 @@ export const tools: ToolDefinition[] = [
       "US-CO-COLORADO-SPRINGS-CITY",
     ],
   },  
+  {
+    id: "property-tax",
+    name: "Property tax calculator",
+    label: "Property tax",
+    basePath: "/tools/property-tax",
+    component: "PropertyTaxTool",
+    dataKey: "propertyTax",
+    supportedRegionIds: [
+      "US-CA-ALAMEDA-COUNTY",
+      "US-AR",
+      "US-KS",
+      "US-KY",
+      "US-MI",
+      "US-SD",
+      "US-VT",
+      "US-VA",
+      "US-WV",
+      "US-WI",
+      "US-WY",
+    ],
+  }  
+  
 ];
 
 export function getToolById(id: ToolId): ToolDefinition | undefined {
