@@ -65,6 +65,14 @@ export default function PropertyTaxTool({ config }: Props) {
     };
   }, [propertyValue, config]);
 
+  const inputLabel =
+  config.valuation.method === "assessed"
+    ? "Assessed value"
+    : config.valuation.method === "marketWithRatio"
+    ? "Market value"
+    : "Property value";
+
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {/* Form */}
@@ -74,7 +82,7 @@ export default function PropertyTaxTool({ config }: Props) {
             htmlFor="propertyValue"
             className="block text-sm font-medium text-slate-700"
           >
-            Property value
+            {inputLabel}
           </label>
           <input
             id="propertyValue"
@@ -101,7 +109,7 @@ export default function PropertyTaxTool({ config }: Props) {
 
         {!result ? (
           <p className="mt-4 text-slate-600">
-            Enter a property value to see the estimated annual property tax.
+            Enter the {inputLabel.toLowerCase()} to see the estimated annual property tax.
           </p>
         ) : (
           <div className="mt-6 space-y-4">

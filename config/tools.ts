@@ -189,6 +189,7 @@ export const tools: ToolDefinition[] = [
       "US-WV",
       "US-WI",
       "US-WY",
+      "US-SC-AIKEN-COUNTY",
     ],
   }  
   

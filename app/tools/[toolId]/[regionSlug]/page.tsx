@@ -231,7 +231,7 @@ if (!config) notFound();
 
         <section className="mt-10 space-y-6">
           <h2 className="text-xl font-semibold text-slate-900">
-            {h1} – how it works
+            How it works
           </h2>
           <p className="text-slate-700">{seo.sections.howItWorks}</p>
         </section>
@@ -257,7 +257,7 @@ if (!config) notFound();
         {Array.isArray(seo.faq) && seo.faq.length > 0 && (
   <section className="mt-10 space-y-4">
     <h2 className="text-xl font-semibold text-slate-900">
-      FAQs about {h1}
+      FAQs
     </h2>
 
     {seo.faq.map(

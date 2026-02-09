@@ -112,6 +112,7 @@ export const regions: Region[] = [
   { id: "US-ND", countryCode: "US", slug: "north-dakota", name: "North Dakota", displayName: "North Dakota" },
   { id: "US-WV", countryCode: "US", slug: "west-virginia", name: "West Virginia", displayName: "West Virginia" },
   { id: "US-CO-COLORADO-SPRINGS-CITY", countryCode: "US", slug: "colorado-springs-city-colorado", name: "Colorado Springs", displayName: "Colorado Springs, Colorado" },  
+  { id: "US-SC-AIKEN-COUNTY", countryCode: "US", slug: "aiken-county-south-carolina", name: "Aiken County", displayName: "Aiken County, South Carolina" },
   
   // fler regioner läggs till här senare
 ];

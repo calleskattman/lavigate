@@ -260,6 +260,27 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   }
 },
 
+"US-SC-AIKEN-COUNTY": {
+  "h1": "Aiken County property tax calculator 2026",
+  "intro": "This Aiken County property tax calculator estimates annual property tax using the county’s assessed value framework and a combined local millage rate. Results are estimates and do not represent an official tax bill.",
+  "sections": {
+    "howItWorks": "Property tax in Aiken County is based on assessed value rather than full market value. The county assessor determines market or use value and applies an assessment ratio defined under South Carolina law to arrive at assessed value. Local taxing authorities then apply millage rates to the assessed value to estimate annual property tax. This calculator assumes assessed value is already known and applies a combined local rate for estimation.",
+    "examples": "If a property has an assessed value determined by the county, that assessed value is multiplied by the combined local millage rate to estimate annual property tax. Different property types use different assessment ratios under state law, which is why this estimate begins with assessed value rather than market value.",
+    "limitations": "Assessment ratios in South Carolina vary by property classification, such as owner-occupied legal residences and other residential or commercial property. Millage rates vary by school district, municipality, and special districts within Aiken County. Exemptions and special assessments can alter assessed value or eligibility and are not modeled here. This calculator provides an estimate only, and actual tax bills may differ."
+  },
+  "faq": [
+    { "q": "How is property tax calculated in Aiken County?", "a": "Aiken County property tax is estimated by multiplying assessed value by the combined local millage rate." },
+    { "q": "What is assessed value in South Carolina?", "a": "Assessed value is the portion of a property’s market or use value that is subject to taxation after applying a state-defined assessment ratio." },
+    { "q": "Why does this calculator use assessed value instead of market value?", "a": "Assessment ratios vary by property type under South Carolina law, so using assessed value avoids assuming a ratio that may not apply to every property." },
+    { "q": "Does this calculator show an exact tax bill?", "a": "No. It provides an estimated property tax and actual bills may differ." }
+  ],
+  "meta": {
+    "title": "Aiken County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Aiken County, South Carolina property taxes using assessed value and combined local millage rates. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/aiken-county-south-carolina"
+  }
+},
+
 
 
 

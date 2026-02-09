@@ -321,6 +321,29 @@ export const propertyTaxConfigs: Record<RegionId, PropertyTaxConfig> = {
   }
 },
 
+"US-SC-AIKEN-COUNTY": {
+  regionId: "US-SC-AIKEN-COUNTY",
+  year: 2026,
+
+  systemName: "Aiken County, South Carolina property tax system",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (user-provided estimate)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Aiken County Assessor’s Office",
+    url: "https://www.aikencountysc.gov/DspOfc?qOfcID=ASR",
+    lastVerified: "2026-02-06"
+  }
+},
+
 
 
   };
