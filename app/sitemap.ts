@@ -5,28 +5,31 @@ import { regions } from "@/config/regions";
 
 const BASE_URL = "https://lavigate.com";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
+// Använd ett stabilt datum (t.ex. deploy-datum eller projektstart)
+const LAST_MODIFIED = new Date("2026-01-01");
 
+export default function sitemap(): MetadataRoute.Sitemap {
   // 1) Statiska sidor
   const staticPaths = [
-    "",
-    "/tools",
-    "/about",
-    "/contact",
-    "/privacy-policy",
-    "/cookies",
-    "/terms",
+    { path: "", priority: 1.0 },
+    { path: "/tools", priority: 0.8 },
+    { path: "/about", priority: 0.6 },
+    { path: "/contact", priority: 0.6 },
+    { path: "/privacy-policy", priority: 0.3 },
+    { path: "/cookies", priority: 0.3 },
+    { path: "/terms", priority: 0.3 },
   ];
 
-  const staticRoutes: MetadataRoute.Sitemap = staticPaths.map((path) => ({
-    url: `${BASE_URL}${path}`,
-    lastModified: now,
-    changeFrequency: "monthly",
-    priority: path === "" ? 1 : 0.8,
-  }));
+  const staticRoutes: MetadataRoute.Sitemap = staticPaths.map(
+    ({ path, priority }) => ({
+      url: `${BASE_URL}${path}`,
+      lastModified: LAST_MODIFIED,
+      changeFrequency: "monthly",
+      priority,
+    })
+  );
 
-  // 2) Dynamiska verktygssidor
+  // 2) Dynamiska verktyg + regioner
   const dynamicRoutes: MetadataRoute.Sitemap = [];
 
   for (const tool of tools) {
@@ -37,9 +40,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const region of toolRegions) {
       dynamicRoutes.push({
         url: `${BASE_URL}${tool.basePath}/${region.slug}`,
-        lastModified: now,
+        lastModified: LAST_MODIFIED,
         changeFrequency: "monthly",
-        priority: 0.9,
+        priority: 0.7,
       });
     }
   }
