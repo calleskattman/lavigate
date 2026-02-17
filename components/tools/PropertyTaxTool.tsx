@@ -9,6 +9,14 @@ type Props = {
 
 export default function PropertyTaxTool({ config }: Props) {
   const [propertyValue, setPropertyValue] = useState<number | "">("");
+  const [customRate, setCustomRate] = useState<number | "">("");
+
+  const totalConfiguredRate = config.rates.components.reduce(
+    (sum, component) => sum + component.rate,
+    0
+  );
+  
+  const requiresCustomRate = totalConfiguredRate === 0;  
 
   const result = useMemo(() => {
     if (propertyValue === "" || propertyValue <= 0) {
@@ -44,14 +52,25 @@ export default function PropertyTaxTool({ config }: Props) {
       taxableValue = 0;
     }
 
-    // 3. Total rate
-    const totalRate = config.rates.components.reduce(
-      (sum, component) => sum + component.rate,
-      0
-    );
+    // 3. Final tax (controlled dual model)
 
-    // 4. Final tax
-    const totalTax = taxableValue * totalRate;
+let totalTax: number;
+
+if (!requiresCustomRate) {
+  // ORIGINAL percentage model (for states like Kentucky)
+  totalTax = taxableValue * totalConfiguredRate;
+} else {
+  // Custom millage model (for counties with 0 configured rate)
+
+  if (customRate === "" || Number(customRate) <= 0) {
+    return null;
+  }
+
+  const millageRate = Number(customRate);
+
+  totalTax = (taxableValue / 1000) * millageRate;
+}
+
 
     // 5. Effective tax rate (based on input value)
     const effectiveRate =
@@ -63,7 +82,7 @@ export default function PropertyTaxTool({ config }: Props) {
       totalTax,
       effectiveRate,
     };
-  }, [propertyValue, config]);
+  }, [propertyValue, customRate, config]);
 
   const inputLabel =
   config.valuation.method === "assessed"
@@ -99,7 +118,39 @@ export default function PropertyTaxTool({ config }: Props) {
             placeholder="e.g. 500000"
           />
         </div>
+
+        {requiresCustomRate && (
+  <div>
+    <label
+      htmlFor="customRate"
+      className="block text-sm font-medium text-slate-700"
+    >
+      Combined local property tax rate (mills per $1,000)
+    </label>
+    <input
+      id="customRate"
+      type="number"
+      min="0"
+      step="any"
+      value={customRate}
+      onChange={(e) =>
+        setCustomRate(
+          e.target.value === "" ? "" : Number(e.target.value)
+        )
+      }
+      className="mt-1 block w-full rounded-md border border-slate-300 px-3 py-2 shadow-sm focus:border-blue-600 focus:outline-none focus:ring-1 focus:ring-blue-600"
+      placeholder="e.g. 18.5"
+    />
+    <p className="mt-2 text-xs text-slate-500">
+      Many U.S. counties use multiple local taxing authorities (county, city, school district, special districts). Enter your combined local millage rate as shown on your annual property tax notice.
+    </p>
+  </div>
+)}
+
+
       </div>
+
+      
 
       {/* Results */}
       <div className="rounded-lg border border-slate-200 bg-slate-50 p-6">

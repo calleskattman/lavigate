@@ -2704,6 +2704,1575 @@ export const propertyTaxConfigs: Record<RegionId, PropertyTaxConfig> = {
   },
 },
 
+"US-NY-ONONDAGA-COUNTY": {
+  regionId: "US-NY-ONONDAGA-COUNTY",
+  year: 2026,
+
+  systemName: "Onondaga County property tax (locally assessed value with multiple local tax components)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "County property tax rate (per $1,000 of assessed value; user-provided)", rate: 0 },
+      { name: "City or town property tax rate (per $1,000 of assessed value; user-provided)", rate: 0 },
+      { name: "School district property tax rate (per $1,000 of assessed value; user-provided)", rate: 0 },
+      { name: "Village or special district rate (if applicable; user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Onondaga County Real Property Tax Services",
+    url: "https://onondaga.gov/rpts/",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-FL-OSCEOLA-COUNTY": {
+  regionId: "US-FL-OSCEOLA-COUNTY",
+  year: 2026,
+
+  systemName: "Osceola County property tax (assessed value with multi-authority millage rates)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "County millage rate (per $1,000 of taxable value; user-provided)", rate: 0 },
+      { name: "Municipal millage rate (if applicable; user-provided)", rate: 0 },
+      { name: "School board millage rate (user-provided)", rate: 0 },
+      { name: "Independent or special district millage rate (if applicable; user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Osceola County Property Appraiser",
+    url: "https://www.property-appraiser.org/",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-TX-PARKER-COUNTY": {
+  regionId: "US-TX-PARKER-COUNTY",
+  year: 2026,
+
+  systemName: "Parker County ad valorem property tax (market value appraisal; combined local rates vary by taxing unit)",
+
+  valuation: {
+    method: "marketWithRatio",
+    assessmentRatio: 1
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (county + city + school + special districts; user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Parker County Appraisal District",
+    url: "https://www.parkercad.org",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-IL-PEORIA-COUNTY": {
+  regionId: "US-IL-PEORIA-COUNTY",
+  year: 2026,
+
+  systemName: "Peoria County ad valorem property tax (assessed at 33.33% of market value; combined local rates vary by taxing district)",
+
+  valuation: {
+    method: "marketWithRatio",
+    assessmentRatio: 0.3333
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (county + city/village + school + special districts; user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Peoria County Supervisor of Assessments",
+    url: "https://www.peoriacounty.gov/386/Understanding-Your-Tax-Bill",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-MD-PRINCE-GEORGES-COUNTY": {
+  regionId: "US-MD-PRINCE-GEORGES-COUNTY",
+  year: 2026,
+
+  systemName: "Prince George's County ad valorem property tax (assessed at 100% of market value; combined local rates vary by jurisdiction)",
+
+  valuation: {
+    method: "marketWithRatio",
+    assessmentRatio: 1
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (county + municipal + state + special districts; user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Maryland Department of Assessments and Taxation",
+    url: "https://dat.maryland.gov/realproperty/pages/homeowners-guide.aspx",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-VA-PRINCE-WILLIAM-COUNTY": {
+  regionId: "US-VA-PRINCE-WILLIAM-COUNTY",
+  year: 2026,
+
+  systemName: "Prince William County real estate tax (assessed at 100% of fair market value; combined local rates may include special levies)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local real estate tax rate (county + special/service districts; user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Prince William County Real Estate Assessments Office",
+    url: "https://www.pwcva.gov/department/finance/real-estate-assessments",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-WA-PIERCE-COUNTY": {
+  regionId: "US-WA-PIERCE-COUNTY",
+  year: 2026,
+
+  systemName: "Pierce County ad valorem property tax (assessed at 100% of true and fair market value; combined district rates vary)",
+
+  valuation: {
+    method: "marketWithRatio",
+    assessmentRatio: 1
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (state + county + city + school + special districts; user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Pierce County Assessor-Treasurer",
+    url: "https://www.piercecountywa.gov/746/Property-Assessment",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-AZ-PIMA-COUNTY": {
+  regionId: "US-AZ-PIMA-COUNTY",
+  year: 2026,
+
+  systemName: "Pima County property tax (Arizona net assessed value system)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (varies by taxing jurisdiction; user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Arizona Department of Revenue",
+    url: "https://azdor.gov/sites/default/files/2023-03/PROPERTY_AZPropertyTaxation.pdf",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-FL-PINELLAS-COUNTY": {
+  regionId: "US-FL-PINELLAS-COUNTY",
+  year: 2026,
+
+  systemName: "Pinellas County ad valorem property tax (taxable value × combined millage rate)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (county, school board, municipality/district – user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Pinellas County Property Appraiser",
+    url: "https://www.pcpao.gov/learn-about/value-definitions",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-FL-POLK-COUNTY": {
+  regionId: "US-FL-POLK-COUNTY",
+  year: 2026,
+
+  systemName: "Polk County ad valorem property tax (taxable value × combined millage rate)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (county, school board, municipality/district – user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Polk County Property Appraiser",
+    url: "https://www.polkpa.org/",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-SC-RICHLAND-COUNTY": {
+  regionId: "US-SC-RICHLAND-COUNTY",
+  year: 2026,
+
+  systemName: "Richland County property tax estimator (market value × 6% assessment ratio × combined millage rate for 6% class property)",
+
+  valuation: {
+    method: "marketWithRatio",
+    assessmentRatio: 0.06
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (taxing district millage – user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Richland County Assessor",
+    url: "https://www.richlandcountysc.gov/Government/Departments/Taxes/Assessor/Classification-of-Property",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-CA-RIVERSIDE-COUNTY": {
+  regionId: "US-CA-RIVERSIDE-COUNTY",
+  year: 2026,
+
+  systemName: "Riverside County property tax estimator (assessed value × combined local rate under Proposition 13)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "Proposition 13 base rate (1% of assessed value)", rate: 0.01 },
+      { name: "Additional voter-approved local rates (bonds, school, special districts – user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "California State Board of Equalization / Riverside County Auditor-Controller",
+    url: "https://boe.ca.gov/proptaxes/pdf/pub29.pdf",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-NC-ROBESON-COUNTY": {
+  regionId: "US-NC-ROBESON-COUNTY",
+  year: 2026,
+
+  systemName: "Robeson County property tax system",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "Robeson County base property tax rate (per $1 of assessed value)", rate: 0.0075 }
+    ]
+  },
+
+  authority: {
+    name: "Robeson County Tax Office",
+    url: "https://www.robesoncountync.gov",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-CA-SACRAMENTO-COUNTY": {
+  regionId: "US-CA-SACRAMENTO-COUNTY",
+  year: 2026,
+
+  systemName: "Sacramento County ad valorem property tax system",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "California constitutional general levy (1% of assessed value)", rate: 0.01 }
+    ]
+  },
+
+  authority: {
+    name: "Sacramento County Auditor-Controller",
+    url: "https://finance.saccounty.net/AuditorController",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-CA-SAN-DIEGO-COUNTY": {
+  regionId: "US-CA-SAN-DIEGO-COUNTY",
+  year: 2026,
+
+  systemName: "San Diego County ad valorem property tax system",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "California constitutional general levy (1% of assessed value)", rate: 0.01 }
+    ]
+  },
+
+  authority: {
+    name: "County of San Diego Auditor & Controller",
+    url: "http://sdcounty.ca.gov/content/sdc/auditor/ptsfaq.html",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-CA-SAN-JOAQUIN-COUNTY": {
+  regionId: "US-CA-SAN-JOAQUIN-COUNTY",
+  year: 2026,
+
+  systemName: "San Joaquin County ad valorem property tax system",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "California constitutional general levy (1% of assessed value)", rate: 0.01 }
+    ]
+  },
+
+  authority: {
+    name: "San Joaquin County Assessor",
+    url: "https://sjgov.org/department/assessor/property-information/homeowners/assessed-value---homeowner",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-CA-SAN-MATEO-COUNTY": {
+  regionId: "US-CA-SAN-MATEO-COUNTY",
+  year: 2026,
+
+  systemName: "San Mateo County ad valorem property tax system",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "California constitutional general levy (1% of assessed value)", rate: 0.01 }
+    ]
+  },
+
+  authority: {
+    name: "San Mateo County Assessor-County Clerk-Recorder",
+    url: "https://smcacre.gov/assessor",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-IL-SANGAMON-COUNTY": {
+  regionId: "US-IL-SANGAMON-COUNTY",
+  year: 2026,
+
+  systemName: "Sangamon County property tax system (33.33% assessment ratio)",
+
+  valuation: {
+    method: "marketWithRatio",
+    assessmentRatio: 0.3333
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (varies by tax code; user-provided decimal)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Sangamon County Treasurer",
+    url: "https://sangamonil.gov/departments/s-z/treasurer/how-to-estimate-your-property-taxes",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-CA-SANTA-BARBARA-COUNTY": {
+  regionId: "US-CA-SANTA-BARBARA-COUNTY",
+  year: 2026,
+
+  systemName: "Santa Barbara County ad valorem property tax system",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "California constitutional general levy (1% of assessed value)", rate: 0.01 }
+    ]
+  },
+
+  authority: {
+    name: "Santa Barbara County Treasurer-Tax Collector",
+    url: "https://taxes.co.santa-barbara.ca.us/propertytax",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-CA-SANTA-CLARA-COUNTY": {
+  regionId: "US-CA-SANTA-CLARA-COUNTY",
+  year: 2026,
+
+  systemName: "Santa Clara County ad valorem property tax system",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "California constitutional general levy (1% of assessed value)", rate: 0.01 }
+    ]
+  },
+
+  authority: {
+    name: "Santa Clara County Assessor",
+    url: "https://www.sccassessor.org/faq/understanding-proposition-13",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-CA-SANTA-CRUZ-COUNTY": {
+  regionId: "US-CA-SANTA-CRUZ-COUNTY",
+  year: 2026,
+
+  systemName: "Santa Cruz County ad valorem property tax system",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "California constitutional general levy (1% of assessed value)", rate: 0.01 }
+    ]
+  },
+
+  authority: {
+    name: "Santa Cruz County Auditor-Controller",
+    url: "https://www.santacruzcountyca.gov/Departments/Auditor-ControllerHome/AssessedValuePropertyTaxes.aspx",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-IA-SCOTT-COUNTY": {
+  regionId: "US-IA-SCOTT-COUNTY",
+  year: 2026,
+
+  systemName: "Scott County, Iowa property tax estimator (taxable value after Iowa rollbacks; levy rates vary by taxing district)",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local levy rate (varies by taxing district; user-provided)", rate: 0 },
+    ],
+  },
+
+  authority: {
+    name: "Scott County Assessor (Iowa)",
+    url: "https://www.scottcountyiowa.gov/assessor/tax-levies-assessed-values",
+    lastVerified: "2026-02-11",
+  },
+},
+
+"US-KS-SEDGWICK-COUNTY": {
+  regionId: "US-KS-SEDGWICK-COUNTY",
+  year: 2026,
+
+  systemName: "Sedgwick County, Kansas residential property tax estimator (market value × 11.5% assessment rate; mill levy varies by taxing jurisdiction)",
+
+  valuation: {
+    method: "marketWithRatio",
+    assessmentRatio: 0.115
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local mill levy (county, city, school, and special districts; user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Sedgwick County Treasurer (Kansas)",
+    url: "https://www.sedgwickcounty.org/treasurer/propertytax101/",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-TN-SHELBY-COUNTY": {
+  regionId: "US-TN-SHELBY-COUNTY",
+  year: 2026,
+
+  systemName: "Shelby County, Tennessee residential property tax estimator (market value × 25% assessment ratio; county and city rates vary by location)",
+
+  valuation: {
+    method: "marketWithRatio",
+    assessmentRatio: 0.25
+  },
+
+  rates: {
+    components: [
+      { name: "Shelby County tax rate (uniform county portion; user-provided)", rate: 0 },
+      { name: "Municipal tax rate (if applicable; user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Shelby County Trustee (Tennessee)",
+    url: "https://www.shelbycountytrustee.com/208/Calculate-Taxes",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-TX-SMITH-COUNTY": {
+  regionId: "US-TX-SMITH-COUNTY",
+  year: 2026,
+
+  systemName: "Smith County Texas property tax system",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (county + city + school + special districts, user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Smith County Appraisal District",
+    url: "https://www.smithcad.org",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-CA-SOLANO-COUNTY": {
+  regionId: "US-CA-SOLANO-COUNTY",
+  year: 2026,
+
+  systemName: "Solano County California property tax system",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "California base ad valorem property tax rate", rate: 0.01 },
+      { name: "Additional voter-approved bonds and special assessments (varies by tax rate area; user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Solano County Assessor/Recorder",
+    url: "https://www.solanocounty.gov/government/assessorrecorder/assessor-division/property-tax-system",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-CA-SONOMA-COUNTY": {
+  regionId: "US-CA-SONOMA-COUNTY",
+  year: 2026,
+
+  systemName: "Sonoma County California property tax system",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "California base ad valorem property tax rate", rate: 0.01 },
+      { name: "Additional voter-approved bonds and special assessments (varies by tax rate area; user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Sonoma County Assessor",
+    url: "https://sonomacounty.ca.gov/administrative-support-and-fiscal-services/clerk-recorder-assessor-registrar-of-voters/assessor",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-SC-SPARTANBURG-COUNTY": {
+  regionId: "US-SC-SPARTANBURG-COUNTY",
+  year: 2026,
+
+  systemName: "Spartanburg County owner-occupied residential property tax estimator (market value × 4% assessment ratio × combined local millage)",
+
+  valuation: {
+    method: "marketWithRatio",
+    assessmentRatio: 0.04
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local millage rate (county + school district + municipal + special districts; user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Spartanburg County Auditor",
+    url: "https://www.spartanburgcounty.org/171/Auditor",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-IL-ST-CLAIR-COUNTY": {
+  regionId: "US-IL-ST-CLAIR-COUNTY",
+  year: 2026,
+
+  systemName: "St. Clair County property tax estimator (market value × one-third assessment level × combined local rate)",
+
+  valuation: {
+    method: "marketWithRatio",
+    assessmentRatio: 0.3333333333
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (varies by taxing district; user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Illinois Department of Revenue",
+    url: "https://tax.illinois.gov/localgovernments/property.html",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-MO-ST-LOUIS-COUNTY": {
+  regionId: "US-MO-ST-LOUIS-COUNTY",
+  year: 2026,
+
+  systemName: "St. Louis County residential property tax estimator (market value × 19% assessment ratio × combined local levy)",
+
+  valuation: {
+    method: "marketWithRatio",
+    assessmentRatio: 0.19
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax levy (county + municipality + school district + special districts; user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Missouri State Tax Commission",
+    url: "https://stc.mo.gov/definitions/",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-NY-SUFFOLK-COUNTY": {
+  regionId: "US-NY-SUFFOLK-COUNTY",
+  year: 2026,
+
+  systemName: "Suffolk County property tax (assessed value-based system with locally determined rates)",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      { name: "County property tax (varies by taxing jurisdiction)", rate: 0 },
+      { name: "Town property tax (varies by town)", rate: 0 },
+      { name: "School district property tax (varies by district)", rate: 0 },
+    ],
+  },
+
+  authority: {
+    name: "New York State Department of Taxation and Finance",
+    url: "https://www.tax.ny.gov",
+    lastVerified: "2026-02-11",
+  },
+},
+
+"US-UT-SUMMIT-COUNTY": {
+  regionId: "US-UT-SUMMIT-COUNTY",
+  year: 2026,
+
+  systemName: "Summit County, Utah property tax estimator (rates vary by taxing entity; user-provided combined rate)",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (user-provided)", rate: 0 },
+    ],
+  },
+
+  authority: {
+    name: "Summit County, Utah",
+    url: "https://www.summitcountyutah.gov/1313/Property-Tax-101",
+    lastVerified: "2026-02-11",
+  },
+},
+
+"US-TX-TARRANT-COUNTY": {
+  regionId: "US-TX-TARRANT-COUNTY",
+  year: 2026,
+
+  systemName: "Tarrant County, Texas property tax estimator (rates vary by taxing unit; user-provided combined rate)",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (user-provided)", rate: 0 },
+    ],
+  },
+
+  authority: {
+    name: "Tarrant County Tax Assessor-Collector",
+    url: "https://www.tarrantcountytx.gov/en/tax/property-tax.html",
+    lastVerified: "2026-02-11",
+  },
+},
+
+"US-TX-TRAVIS-COUNTY": {
+  regionId: "US-TX-TRAVIS-COUNTY",
+  year: 2026,
+
+  systemName: "Travis County, Texas property tax estimator (rates vary by taxing unit; user-provided combined rate)",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (user-provided)", rate: 0 },
+    ],
+  },
+
+  authority: {
+    name: "Travis County Tax Office",
+    url: "https://www.traviscountytx.gov/tax-rates",
+    lastVerified: "2026-02-11",
+  },
+},
+
+"US-NC-WAKE-COUNTY": {
+  regionId: "US-NC-WAKE-COUNTY",
+  year: 2026,
+
+  systemName: "Wake County, North Carolina property tax estimator (assessed at market value; rates vary by municipality/district; user-provided combined rate)",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (user-provided)", rate: 0 },
+    ],
+  },
+
+  authority: {
+    name: "Wake County Tax Administration",
+    url: "https://www.wake.gov/departments-government/tax-administration/real-estate/revaluation",
+    lastVerified: "2026-02-11",
+  },
+},
+
+"US-WI-WALWORTH-COUNTY": {
+  regionId: "US-WI-WALWORTH-COUNTY",
+  year: 2026,
+
+  systemName: "Walworth County, Wisconsin property tax estimator (district-based mill rates; user-provided combined rate)",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local mill rate (user-provided)", rate: 0 },
+    ],
+  },
+
+  authority: {
+    name: "Walworth County Treasurer",
+    url: "https://www.co.walworth.wi.us/Archive.aspx?ADID=420",
+    lastVerified: "2026-02-11",
+  },
+},
+
+"US-OR-WASHINGTON-COUNTY": {
+  regionId: "US-OR-WASHINGTON-COUNTY",
+  year: 2026,
+
+  systemName: "Washington County, Oregon property tax estimator (RMV assessed at 100%; MAV limit; district-based rates; user-provided combined rate)",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (user-provided)", rate: 0 },
+    ],
+  },
+
+  authority: {
+    name: "Washington County Department of Assessment & Taxation",
+    url: "https://www.washingtoncountyor.gov/at/property-taxes",
+    lastVerified: "2026-02-11",
+  },
+},
+
+"US-NV-WASHOE-COUNTY": {
+  regionId: "US-NV-WASHOE-COUNTY",
+  year: 2026,
+
+  systemName: "Washoe County, Nevada property tax estimator (assessed value-based; district-based combined rates; user-provided rate)",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (user-provided)", rate: 0 },
+    ],
+  },
+
+  authority: {
+    name: "Washoe County Treasurer",
+    url: "https://www.washoecounty.gov/treas/Tax_Rates.php",
+    lastVerified: "2026-02-11",
+  },
+},
+
+"US-WI-WAUKESHA-COUNTY": {
+  regionId: "US-WI-WAUKESHA-COUNTY",
+  year: 2026,
+
+  systemName: "Waukesha County, Wisconsin property tax estimator (assessed value-based; district-based combined rates; user-provided rate)",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (user-provided)", rate: 0 },
+    ],
+  },
+
+  authority: {
+    name: "Waukesha County Treasurer",
+    url: "https://www.waukeshacounty.gov/treasurer/",
+    lastVerified: "2026-02-11",
+  },
+},
+
+"US-IL-WILL-COUNTY": {
+  regionId: "US-IL-WILL-COUNTY",
+  year: 2026,
+
+  systemName: "Will County, Illinois property tax estimator (EAV-based; tax-code-area rates; user-provided combined rate)",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (user-provided)", rate: 0 },
+    ],
+  },
+
+  authority: {
+    name: "Will County Treasurer",
+    url: "https://willcounty.gov/County-Offices/Finance-and-Revenue/Treasurer-Office/Tax-Bill/How-Your-Tax-Bill-is-Calculated",
+    lastVerified: "2026-02-11",
+  },
+},
+
+"US-TX-WILLIAMSON-COUNTY": {
+  regionId: "US-TX-WILLIAMSON-COUNTY",
+  year: 2026,
+
+  systemName: "Williamson County, Texas property tax estimator (assessed value-based; district-based combined rates; user-provided rate)",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (user-provided)", rate: 0 },
+    ],
+  },
+
+  authority: {
+    name: "Williamson County Tax Assessor-Collector",
+    url: "https://www.wilcotx.gov/734/Property-Tax",
+    lastVerified: "2026-02-11",
+  },
+},
+
+"US-IL-WINNEBAGO-COUNTY": {
+  regionId: "US-IL-WINNEBAGO-COUNTY",
+  year: 2026,
+
+  systemName: "Winnebago County, Illinois property tax estimator (EAV-based; tax-code-area rates; user-provided combined rate)",
+
+  valuation: {
+    method: "assessed", // user enters Equalized Assessed Value (EAV)
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (user-provided)", rate: 0 },
+    ],
+  },
+
+  authority: {
+    name: "Winnebago County Treasurer",
+    url: "https://wincoil.gov/departments/treasurer",
+    lastVerified: "2026-02-11",
+  },
+},
+
+"US-TX-AUSTIN-CITY": {
+  regionId: "US-TX-AUSTIN-CITY",
+  year: 2026,
+
+  systemName: "City of Austin property tax (Texas ad valorem system)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "City of Austin adopted property tax rate (per $1 of taxable value)", rate: 0.00574017 }
+    ]
+  },
+
+  authority: {
+    name: "City of Austin",
+    url: "https://www.austintexas.gov/page/tax-rates",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-MD-BALTIMORE-CITY": {
+    regionId: "US-MD-BALTIMORE-CITY",
+    year: 2026,
+
+    systemName: "Baltimore City real property tax (Maryland ad valorem system)",
+
+    valuation: {
+      method: "assessed"
+    },
+
+    rates: {
+      components: [
+        { name: "Baltimore City real property tax rate (per $1 of assessed value)", rate: 0.02248 }
+      ]
+    },
+
+    authority: {
+      name: "Baltimore City Department of Finance",
+      url: "https://www.baltimorecity.gov/finance/real-property-taxes",
+      lastVerified: "2026-02-11"
+    }
+  },
+
+  "US-MA-BOSTON-CITY": {
+  regionId: "US-MA-BOSTON-CITY",
+  year: 2024,
+
+  systemName: "Boston property tax (Massachusetts classified rate system)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "Boston residential property tax rate (per $1 of assessed value)", rate: 0.0109 }
+    ]
+  },
+
+  authority: {
+    name: "City of Boston Assessing Department",
+    url: "https://www.boston.gov/departments/assessing/how-we-tax-your-property",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-VA-CHESAPEAKE-CITY": {
+  regionId: "US-VA-CHESAPEAKE-CITY",
+  year: 2026,
+
+  systemName: "Chesapeake real estate tax (Virginia ad valorem system)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "Chesapeake real estate tax rate (per $1 of assessed value)", rate: 0.0100 }
+    ]
+  },
+
+  authority: {
+    name: "City of Chesapeake City Council",
+    url: "https://www.cityofchesapeake.net/FAQ.aspx?QID=484",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-VA-CHESTERFIELD-COUNTY": {
+  regionId: "US-VA-CHESTERFIELD-COUNTY",
+  year: 2026,
+
+  systemName: "Chesterfield County real estate property tax",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "Chesterfield County real estate tax rate", rate: 0.0089 }
+    ]
+  },
+
+  authority: {
+    name: "Chesterfield County, Virginia",
+    url: "https://www.chesterfield.gov/823/Real-Estate-Assessments",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-IL-CHICAGO-CITY": {
+  regionId: "US-IL-CHICAGO-CITY",
+  year: 2026,
+
+  systemName: "Chicago property tax (Cook County Equalized Assessed Value system)",
+
+  valuation: {
+    method: "marketWithRatio",
+    assessmentRatio: 0.1
+  },
+
+  rates: {
+    components: [
+      { name: "Combined Cook County composite rate (user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Cook County Clerk",
+    url: "https://www.cookcountyclerkil.gov/property-taxes/tax-extension-and-rates",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-HI-HONOLULU-CITY": {
+  regionId: "US-HI-HONOLULU-CITY",
+  year: 2026,
+
+  systemName: "Honolulu real property tax (net taxable value with class-based rates)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      {
+        name: "Combined Honolulu real property tax rate (varies by property class and tier; user-provided)",
+        rate: 0.0000001
+      }
+    ]
+  },
+
+  authority: {
+    name: "City and County of Honolulu, Real Property Assessment Division",
+    url: "https://realproperty.honolulu.gov/media/j4xaoww0/state-report-fy26-final-tax-rates.pdf",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-TX-HOUSTON-CITY": {
+  regionId: "US-TX-HOUSTON-CITY",
+  year: 2026,
+
+  systemName: "Houston property tax (Texas market value system with local taxing units)",
+
+  valuation: {
+    method: "marketWithRatio",
+    assessmentRatio: 1
+  },
+
+  rates: {
+    components: [
+      {
+        name: "Combined local property tax rate (city, county, school district, and other taxing units – user-provided)",
+        rate: 0
+      }
+    ]
+  },
+
+  authority: {
+    name: "Texas Comptroller of Public Accounts",
+    url: "https://comptroller.texas.gov/taxes/property-tax/valuing-property.php",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-AL-HUNTSVILLE-CITY": {
+  regionId: "US-AL-HUNTSVILLE-CITY",
+  year: 2026,
+
+  systemName: "Huntsville property tax (Alabama assessed value system)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      {
+        name: "Combined local property tax rate (state, county, school, and city millage – user-provided)",
+        rate: 0
+      }
+    ]
+  },
+
+  authority: {
+    name: "Alabama Department of Revenue",
+    url: "https://www.revenue.alabama.gov/property-tax/property-tax-assessment/",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-NJ-JERSEY-CITY-CITY": {
+  regionId: "US-NJ-JERSEY-CITY-CITY",
+  year: 2026,
+
+  systemName: "Jersey City property tax (New Jersey assessed value system)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      {
+        name: "Combined local property tax rate (municipal, county, and school – user-provided)",
+        rate: 0
+      }
+    ]
+  },
+
+  authority: {
+    name: "New Jersey Division of Taxation",
+    url: "https://www.nj.gov/treasury/taxation/lpt/genlpt.shtml",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-NV-LAS-VEGAS-CITY": {
+  regionId: "US-NV-LAS-VEGAS-CITY",
+  year: 2026,
+
+  systemName: "Las Vegas property tax (Nevada assessed value system)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      {
+        name: "Combined local property tax rate (tax district rate – user-provided)",
+        rate: 0
+      }
+    ]
+  },
+
+  authority: {
+    name: "Clark County Assessor",
+    url: "https://www.clarkcountynv.gov/government/assessor/real-property",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-CA-LOS-ANGELES-CITY": {
+  regionId: "US-CA-LOS-ANGELES-CITY",
+  year: 2026,
+
+  systemName: "Los Angeles city property tax (California Proposition 13 system)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "General ad valorem property tax levy (1% of net taxable value)", rate: 0.01 }
+    ]
+  },
+
+  authority: {
+    name: "Los Angeles County Auditor-Controller",
+    url: "https://auditor.lacounty.gov/faqs/",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-WI-MILWAUKEE-CITY": {
+  regionId: "US-WI-MILWAUKEE-CITY",
+  year: 2026,
+
+  systemName: "Milwaukee city property tax (Wisconsin assessed value system)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "Combined local property tax rate (county, city, school district, technical college district – user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Wisconsin Department of Revenue",
+    url: "https://www.revenue.wi.gov/DORReports/PropTaxOverview2025.pdf",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-TN-NASHVILLE-CITY": {
+  regionId: "US-TN-NASHVILLE-CITY",
+  year: 2026,
+
+  systemName: "Nashville property tax (Davidson County assessed value system)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "General Services District (GSD) property tax rate (per $100 of assessed value – user-provided)", rate: 0 },
+      { name: "Urban Services District (USD) property tax rate (per $100 of assessed value – user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Davidson County Property Assessor",
+    url: "https://www.padctn.org/resources/tax-rates-and-calculator/",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-LA-NEW-ORLEANS-CITY": {
+  regionId: "US-LA-NEW-ORLEANS-CITY",
+  year: 2026,
+
+  systemName: "New Orleans property tax (Louisiana assessed value and millage system)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      {
+        name: "Combined local property tax rate (total millage across applicable taxing authorities — user-provided)",
+        rate: 0
+      }
+    ]
+  },
+
+  authority: {
+    name: "City of New Orleans, Treasury",
+    url: "https://nola.gov/next/treasury/topics/how-taxes-are-calculated/",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-NY-NEW-YORK-CITY": {
+  regionId: "US-NY-NEW-YORK-CITY",
+  year: 2026,
+
+  systemName: "New York City property tax (class-based assessed value system)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      {
+        name: "NYC property tax rate (class-specific — user-provided)",
+        rate: 0
+      }
+    ]
+  },
+
+  authority: {
+    name: "New York City Department of Finance",
+    url: "https://www.nyc.gov/site/finance/property/definitions-of-property-assessment-terms.page",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-CA-OAKLAND-CITY": {
+  regionId: "US-CA-OAKLAND-CITY",
+  year: 2026,
+
+  systemName: "Oakland property tax (California assessed value system with TRA-based rates)",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      {
+        name: "Combined local property tax rate (varies by Tax Rate Area; user-provided)",
+        rate: 0,
+      },
+    ],
+  },
+
+  authority: {
+    name: "Alameda County Auditor-Controller, Property Tax Division",
+    url: "https://auditor.alamedacountyca.gov/property-tax/",
+    lastVerified: "2026-02-11",
+  },
+},
+
+
+"US-FL-ORLANDO-CITY": {
+  regionId: "US-FL-ORLANDO-CITY",
+  year: 2026,
+
+  systemName: "Orlando property tax (Florida assessed value system)",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      {
+        name: "Combined local property tax rate (county, city, school, special districts – user-provided)",
+        rate: 0,
+      },
+    ],
+  },
+
+  authority: {
+    name: "Florida Department of Revenue – Property Tax Oversight",
+    url: "https://floridarevenue.com/property/Pages/Millage.aspx",
+    lastVerified: "2026-02-11",
+  },
+},
+
+"US-PA-PHILADELPHIA-CITY": {
+  regionId: "US-PA-PHILADELPHIA-CITY",
+  year: 2026,
+
+  systemName: "Philadelphia real estate tax (assessed value system)",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      {
+        name: "Combined City and School District real estate tax rate (user-provided)",
+        rate: 0,
+      },
+    ],
+  },
+
+  authority: {
+    name: "City of Philadelphia – Real Estate Tax",
+    url: "https://www.phila.gov/services/payments-assistance-taxes/taxes/property-and-real-estate-taxes/real-estate-tax/",
+    lastVerified: "2026-02-11",
+  },
+},
+
+"US-OR-PORTLAND-CITY": {
+  regionId: "US-OR-PORTLAND-CITY",
+  year: 2026,
+
+  systemName: "Portland property tax (Oregon assessed value and tax code area system)",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      {
+        name: "Combined property tax rate for your tax code area (user-provided)",
+        rate: 0,
+      },
+    ],
+  },
+
+  authority: {
+    name: "Multnomah County Assessment and Taxation",
+    url: "https://multco.us/info/how-your-property-taxes-are-calculated",
+    lastVerified: "2026-02-11",
+  },
+},
+
+"US-NC-RALEIGH-CITY": {
+  regionId: "US-NC-RALEIGH-CITY",
+  year: 2026,
+
+  systemName: "Raleigh property tax (North Carolina assessed value system with jurisdiction-based rates)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      {
+        name: "Combined local property tax rate (Wake County, City of Raleigh, and applicable districts — user-provided)",
+        rate: 0
+      }
+    ]
+  },
+
+  authority: {
+    name: "Wake County Tax Administration",
+    url: "https://www.wake.gov/departments-government/tax-administration/tax-bill-help/tax-rates-fees",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-VA-RICHMOND-CITY": {
+  regionId: "US-VA-RICHMOND-CITY",
+  year: 2026,
+
+  systemName: "Richmond real estate tax (100% fair market value assessment)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      {
+        name: "City of Richmond real estate tax rate",
+        rate: 0.012
+      }
+    ]
+  },
+
+  authority: {
+    name: "City of Richmond Department of Finance",
+    url: "https://www.rva.gov/finance/real-estate",
+    lastVerified: "2026-02-11"
+  }
+},
+
+"US-CA-SAN-FRANCISCO-CITY": {
+  regionId: "US-CA-SAN-FRANCISCO-CITY",
+  year: 2026,
+
+  systemName: "San Francisco secured property tax",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      {
+        name: "San Francisco secured property tax rate",
+        rate: 0.0118268325
+      }
+    ]
+  },
+
+  authority: {
+    name: "City and County of San Francisco Treasurer & Tax Collector",
+    url: "http://sftreasurer.org/property/secured-property-taxes",
+    lastVerified: "2026-02-11"
+  }
+},
+
+
+
+
+
+
 
 
 

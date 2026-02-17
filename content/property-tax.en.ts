@@ -22,7 +22,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "intro": "This tool provides an estimated property tax for Alameda County based on California assessment rules and commonly applied local rates. Results reflect an estimate rather than an official tax bill.",
   "sections": {
     "howItWorks": "Property tax in Alameda County is based on an assessed value established under California’s Proposition 13 framework. The assessed value is generally set when a property changes ownership or is newly constructed and is then adjusted annually within statutory limits. The estimated tax is calculated by applying the applicable countywide ad valorem property tax rate to that assessed value.",
-    "examples": "For a typical residential property, the estimated property tax is calculated by applying the countywide ad valorem base rate to the property’s assessed value. The calculator focuses on this core component to provide a general estimate of annual property tax.",
+"examples": "Assume a property in Alameda County has an assessed value of 725,000 under California’s constitutional assessment system. The general ad valorem portion is calculated at 1 percent of that assessed value, which would produce 7,250 before any locally approved bonded indebtedness is added. The final tax amount depends on the specific tax rate area assigned to the parcel.",
     "limitations": "Actual property tax amounts vary by tax rate area within Alameda County. Voter-approved bonds, school district levies, and special assessments may apply in addition to the countywide base rate. This calculator does not reproduce parcel-specific bills, and the actual tax due may differ."
   },
   "faq": [
@@ -291,7 +291,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     examples:
       "An estimate is calculated by multiplying the taxable assessed value by the combined local property tax rate. The county portion uses the official county millage, while municipal and school district portions depend on the property’s specific location within the county.",
     limitations:
-      "This tool produces an estimate only. Municipal and school district millage rates vary across Allegheny County, and exemptions or exclusions may apply depending on eligibility. Actual property tax bills may differ from the estimate shown.",
+      "This calculation provides a general property tax estimate derived from the inputs supplied. Municipal and school district millage rates vary across Allegheny County, and exemptions or exclusions may apply depending on eligibility. Actual property tax bills may differ from the estimate shown.",
   },
   faq: [
     {
@@ -329,7 +329,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     examples:
       "An estimate is calculated by multiplying the net assessed value by the applicable combined local property tax rate for the parcel’s tax district. Rates differ across Allen County depending on township, municipality, school corporation, and other overlapping districts.",
     limitations:
-      "This tool produces an estimate only. Property tax rates vary by tax district, and credits, deductions, caps, and referendum taxes can materially affect the final bill. Actual property tax amounts may differ from the estimate shown. Parcel-specific assessments, exemptions, and taxing districts applied by the local assessor in Allen County, Indiana may affect the final property tax amount and are not fully reflected in this estimate.",
+      "This tool generates an estimated property tax amount using the value and rate assumptions entered. Property tax rates vary by tax district, and credits, deductions, caps, and referendum taxes can materially affect the final bill. Actual property tax amounts may differ from the estimate shown. Parcel-specific assessments, exemptions, and taxing districts applied by the local assessor in Allen County, Indiana may affect the final property tax amount and are not fully reflected in this estimate.",
   },
   faq: [
     {
@@ -365,9 +365,9 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     howItWorks:
       "Property in Anderson County is appraised by the county assessor and placed on the assessment roll as an assessed value. Local taxing authorities apply their adopted millage rates to this assessed value. The individual county, municipal, school, and special district amounts are added together to determine total property tax.",
     examples:
-      "An estimated property tax is calculated by multiplying the assessed value by the combined local property tax rate for the parcel’s tax district. The combined rate depends on where the property is located and which local taxing authorities apply.",
+      "In Anderson County, property tax is influenced by the specific combination of local levies that apply to a parcel. Rather than assuming a single countywide rate, properties may fall under overlapping school district, municipal, and special-purpose millage structures. For instance, two homes with the same assessed value may generate different estimated tax amounts if they are located in different school zones or service districts. The result shown by this calculator reflects the combined rate you enter, which should correspond to the parcel’s actual district-level millage structure.",
     limitations:
-      "This tool produces an estimate only. Local millage rates vary by tax district and can change from year to year. Exemptions, credits, and other adjustments may apply and can materially affect the final bill. Actual property tax amounts may differ from the estimate shown.",
+      "This property tax result is a non-binding estimate generated from user-provided values. Local millage rates vary by tax district and can change from year to year. Exemptions, credits, and other adjustments may apply and can materially affect the final bill. Actual property tax amounts may differ from the estimate shown.",
   },
   faq: [
     {
@@ -405,7 +405,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     examples:
       "An estimated property tax is calculated by multiplying the assessed value by the combined property tax rate. Properties located within a municipality have an additional local rate applied on top of the county and state rates.",
     limitations:
-      "This tool produces an estimate only. Municipal rates, special district charges, credits, and exemptions can materially affect the final bill. Phase-in rules and assessment changes may also alter taxable values. Actual property tax bills may differ from the estimate shown. Parcel-specific assessments, exemptions, and taxing districts applied by the local assessor in Anne Arundel County, Maryland may affect the final property tax amount and are not fully reflected in this estimate.",
+      "This estimator reflects a simplified calculation based on the taxable value and rate entered. Municipal rates, special district charges, credits, and exemptions can materially affect the final bill. Phase-in rules and assessment changes may also alter taxable values. Actual property tax bills may differ from the estimate shown. Parcel-specific assessments, exemptions, and taxing districts applied by the local assessor in Anne Arundel County, Maryland may affect the final property tax amount and are not fully reflected in this estimate.",
   },
   faq: [
     {
@@ -443,7 +443,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     examples:
       "An estimated property tax is calculated by applying the combined tax capacity rates for the county, city or town, school district, and any special taxing districts to the parcel’s taxable market value. Some property types are also subject to a separate state general property tax.",
     limitations:
-      "This tool produces an estimate only. Tax capacity rates vary by taxing district and change each year. Property classification, credits, fiscal disparities adjustments, and state general property tax rules can materially affect the final bill. Actual property tax amounts may differ from the estimate shown. Parcel-specific assessments, exemptions, and taxing districts applied by the local assessor in Anoka County, Minnesota may affect the final property tax amount and are not fully reflected in this estimate.",
+      "This calculation provides a general property tax estimate derived from the inputs supplied. Tax capacity rates vary by taxing district and change each year. Property classification, credits, fiscal disparities adjustments, and state general property tax rules can materially affect the final bill. Actual property tax amounts may differ from the estimate shown. Parcel-specific assessments, exemptions, and taxing districts applied by the local assessor in Anoka County, Minnesota may affect the final property tax amount and are not fully reflected in this estimate.",
   },
   faq: [
     {
@@ -481,7 +481,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     examples:
       "An estimated property tax is calculated by multiplying the assessed value by the combined millage rate for the parcel’s taxing location. The combined rate depends on whether the property is inside a municipality and which school or special districts apply.",
     limitations:
-      "This tool produces an estimate only. Millage rates vary by location and year, and exemptions or credits may apply. Actual property tax bills may differ from the estimate shown.",
+      "This property tax result is a non-binding estimate generated from user-provided values. Millage rates vary by location and year, and exemptions or credits may apply. Actual property tax bills may differ from the estimate shown.",
   },
   faq: [
     {
@@ -561,9 +561,8 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
       "Property in Bell County is appraised at market value as of January 1. The taxable value is the appraised value after any applicable exemptions are applied. Local taxing units such as the county, cities, school districts, and special districts each adopt their own tax rates, which together form a combined local property tax rate.",
     examples:
       "If a property has a taxable value after exemptions, the estimated tax is calculated by multiplying that value by the combined local property tax rate. The exact rate varies depending on which taxing units apply to the specific property.",
-    limitations:
-      "This tool provides an estimate only. Bell County properties may be subject to different combinations of local taxing units, voter-approved rates, and exemptions. Actual tax bills may differ from the estimate shown.",
-  },
+      limitations: "This Bell County property tax estimate assumes the taxable value entered reflects the value determined by the Bell County Appraisal District for the applicable tax year. It does not calculate homestead caps, over-65 or disabled exemptions, special appraisal categories such as agricultural use, or school district maintenance and operations limitations. Official tax bills are issued by the Bell County Tax Assessor-Collector and may reflect certified levy changes, appeals, or jurisdiction-specific adjustments not modeled here.",
+    },
   faq: [
     {
       q: "How is property tax calculated in Bell County?",
@@ -596,11 +595,11 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     "This calculator provides an estimated property tax for Berkeley County based on assessed value and a combined local millage rate. Property taxes are set by local taxing districts, so totals can differ across locations within the county.",
   sections: {
     howItWorks:
-      "For this estimate, you enter the property’s assessed value. Local taxing entities such as the county, school districts, municipalities, and special districts adopt millage rates. The combined local millage rate is applied to the assessed value to estimate property tax.",
+      "The calculation starts with the assessed value entered by the user. A single effective tax rate representing all applicable local levies is then applied to that value to produce the estimated annual tax.",
     examples:
       "If you know the assessed value for a property, an estimated tax can be computed by multiplying that value by the combined local millage rate. The combined rate depends on which taxing districts apply to the property.",
     limitations:
-      "This tool provides an estimate only. Millage rates vary by taxing district and can change. Exemptions and other adjustments are not modeled here. Actual tax bills may differ from the estimate shown.",
+      "This estimator provides a simplified calculation based on the taxable value and rate entered. Official tax bills are issued by local taxing units and may reflect exemption eligibility, capped values, or jurisdiction-specific adjustments not incorporated here.",
   },
   faq: [
     {
@@ -638,7 +637,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     examples:
       "If a property has an assessed market value, taxable value is calculated as one-third of that amount. The estimated tax is then determined by multiplying taxable value by the combined property tax rate for the property’s tax district.",
     limitations:
-      "This tool provides an estimate only. Tax rates vary by tax district and may change from year to year. Exemptions, valuation freezes, and other adjustments are not fully modeled here. Actual tax bills may differ from the estimate shown.",
+      "This tool estimates property tax using assessed value and applicable levy assumptions. Official tax bills may differ due to reassessment updates, district boundaries, exemption qualifications, or rate changes adopted by local authorities.",
   },
   faq: [
     {
@@ -677,7 +676,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     examples:
       "If a property has an assessed value, the estimated tax is calculated by multiplying that value by the combined mill levy for the property’s tax area.",
     limitations:
-      "This tool provides an estimate only. Mill levies vary by tax area and can change over time. Exemptions and special programs are not applied here. Actual tax bills may differ from the estimate shown.",
+      "This is an estimate only. Actual property tax amounts depend on the parcel’s official assessed value, applicable exemptions, and the combined levies adopted by each taxing authority serving the property.",
   },
   faq: [
     {
@@ -714,9 +713,9 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     howItWorks:
       "To estimate property tax in Brazoria County, you enter the property’s taxable value. Local taxing entities such as the county, cities, school districts, and special districts each adopt their own tax rates. The combined local property tax rate is applied to the taxable value to estimate property tax.",
     examples:
-      "If a property has a taxable value, the estimated tax is calculated by multiplying that value by the combined local property tax rate applicable to the property’s taxing districts.",
+      "If a property's taxable value is determined after applying exemptions, the estimated property tax is calculated by multiplying that taxable amount by the combined local rate entered. Variations in district rates will change the final estimate.",
     limitations:
-      "This tool provides an estimate only. Tax rates vary by taxing district and can change over time. Exemptions, caps, and eligibility rules are not calculated here and may affect the final tax bill.",
+      "This calculator is provided for general informational purposes. Final property tax bills are determined by the local assessor and tax collector and may reflect district-specific levies, valuation adjustments, exemption eligibility, or rate changes not modeled in this estimate.",
   },
   faq: [
     {
@@ -751,7 +750,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Property tax in Broward County is calculated using the assessed value of a property after constitutional assessment limits are applied. The taxable value is multiplied by a combined local property tax rate that reflects county, municipal, school, and special district millage. Because these rates vary by jurisdiction, this calculator operates in estimate mode.",
     "examples": "If a property has an assessed value of $300,000 and a combined local property tax rate of 0.02 is applied, the estimated annual property tax would be $6,000. Actual results depend on the exact millage rates that apply to the parcel.",
-    "limitations": "This tool provides an estimate only. Millage rates vary by municipality, school district, and special districts within Broward County. Exemptions and assessment limits can also affect taxable value differently across tax components. The actual tax bill may differ from this estimate."
+    "limitations": "The figures shown here represent a non-official estimate derived from user-entered data. Millage rates vary by municipality, school district, and special districts within Broward County. Exemptions and assessment limits can also affect taxable value differently across tax components. The actual tax bill may differ from this estimate."
   },
   "faq": [
     { "q": "Is this an exact Broward County tax bill?", "a": "No. This calculator provides an estimated property tax using a combined local rate. Actual tax bills vary by parcel and taxing district." },
@@ -861,7 +860,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   faq: [
     {
       q: "Is this the exact property tax I will owe?",
-      a: "No. This tool provides an estimate only. Official property tax bills are calculated by local authorities using certified values and millage rates."
+      a: "No. This estimator provides a simplified calculation based on the value and rate entered. Official property tax bills are calculated by local authorities using certified values and millage rates."
     },
     {
       q: "Why do property tax amounts differ within Charleston County?",
@@ -899,7 +898,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   faq: [
     {
       q: "Is this the exact property tax I will pay?",
-      a: "No. This tool provides an estimate only. Official property tax amounts are calculated by the county using certified values and rates."
+      a: "No. This calculation offers an approximate projection of property tax based on the inputs provided. Official property tax amounts are calculated by the county using certified values and rates."
     },
     {
       q: "Why do property taxes differ within Clackamas County?",
@@ -925,7 +924,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
 "US-FL-CLAY-COUNTY": {
   h1: "Clay County, Florida property tax calculator 2026",
   intro:
-    "This Clay County, Florida property tax calculator estimates annual property tax based on Florida’s county-level assessment system and local taxing districts. The estimate is based on taxable value derived from assessed value and a combined local property tax rate reflecting all applicable taxing authorities.",
+    "Property taxes in Clay County, Florida are calculated based on the county’s assessment system and applicable local tax rates. estimates annual property tax based on Florida’s county-level assessment system and local taxing districts. The estimate is based on taxable value derived from assessed value and a combined local property tax rate reflecting all applicable taxing authorities.",
   sections: {
     howItWorks:
       "In Clay County, Florida, property tax estimates are based on the property’s taxable value as determined under Florida assessment rules and applied local millage rates. Taxable value is based on assessed value after applicable assessment limits and exemptions. Millage rates are set by the county, school board, municipalities, and special districts, and vary depending on the property’s tax district.",
@@ -963,19 +962,19 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
 "US-MN-CLAY-COUNTY": {
   h1: "Clay County, Minnesota property tax calculator 2026",
   intro:
-    "This Clay County, Minnesota property tax calculator provides an estimate based on Minnesota’s property tax assessment practices and local levy structures. The estimate is based on taxable market value and a combined local property tax rate reflecting all applicable taxing authorities.",
+    "Clay County, Minnesota property taxes are estimated using assessed value and locally adopted tax rates. provides an estimate based on Minnesota’s property tax assessment practices and local levy structures. The estimate is based on taxable market value and a combined local property tax rate reflecting all applicable taxing authorities.",
   sections: {
     howItWorks:
       "For Clay County, Minnesota, the estimate begins with taxable market value and applies local levy rates set by county, city, and school district authorities. Local tax rates reflect levies set by the county, city or township, school district, and any applicable special districts. Because these rates depend on the property’s location, results represent an estimate rather than an official tax amount.",
     examples:
-      "Two properties with the same taxable market value may have different estimated taxes if they are located in different cities, townships, or school districts within Clay County, resulting in different combined local tax rates.",
+      "In Clay County, two parcels with the same assessed value may generate different estimates if they fall under different taxing jurisdictions. Variations in municipal, school, or special district levies can change the combined effective rate applied.",
     limitations:
       "This calculator does not determine market value, exclusions, deferments, or parcel-specific adjustments. Actual property tax amounts depend on certified values and the exact combination of taxing authorities that apply to a property. Certified assessed values, eligibility-based exemptions, and jurisdiction-specific levies applied within Clay County, Minnesota can influence the final property tax bill and may not be fully captured by this estimate."
   },
   faq: [
     {
       q: "Is this the exact property tax I will owe?",
-      a: "No. This tool provides an estimate only. Official property tax amounts are calculated by the county using certified values and rates."
+      a: "No. This estimator provides a simplified calculation based on the value and rate entered. Official property tax amounts are calculated by the county using certified values and rates."
     },
     {
       q: "Why do property taxes vary within Clay County?",
@@ -1001,19 +1000,19 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
 "US-MO-CLAY-COUNTY": {
   h1: "Clay County, Missouri property tax calculator 2026",
   intro:
-    "This Clay County, Missouri property tax calculator estimates annual property tax using Missouri’s county assessment framework and applicable local tax rates. The estimate is based on assessed value and a combined local property tax rate reflecting all applicable taxing authorities.",
+    "In Clay County, Missouri, property tax is determined from assessed value and combined local levy rates. estimates annual property tax using Missouri’s county assessment framework and applicable local tax rates. The estimate is based on assessed value and a combined local property tax rate reflecting all applicable taxing authorities.",
   sections: {
     howItWorks:
       "Property tax estimates in Clay County, Missouri start from assessed value and reflect combined local tax rates adopted by taxing jurisdictions. Local tax rates are set by the county, cities, school districts, and other special districts. Because the combined rate depends on the property’s specific tax area, results represent an estimate rather than an official tax amount.",
     examples:
-      "Two properties with the same assessed value may have different estimated taxes if they are located in different cities, school districts, or special districts within Clay County, each with its own combined local tax rate.",
+      "Even when properties share the same taxable value, their estimated property tax in Clay County may differ depending on which cities or districts impose additional levies. The total rate applied reflects those local variations.",
     limitations:
       "This calculator does not determine market value, assessed value, exemptions, or parcel-specific adjustments. Actual property tax amounts depend on certified values and the exact combination of taxing authorities that apply to a property. Certified assessed values, eligibility-based exemptions, and jurisdiction-specific levies applied within Clay County, Missouri can influence the final property tax bill and may not be fully captured by this estimate.",
   },
   faq: [
     {
       q: "Is this the exact property tax I will owe?",
-      a: "No. This tool provides an estimate only. Official property tax amounts are calculated by local authorities using certified values and tax rates.",
+      a: "No. The results generated by this calculator are intended as a general estimate only. Official property tax amounts are calculated by local authorities using certified values and tax rates.",
     },
     {
       q: "Why do property taxes vary within Clay County?",
@@ -1039,7 +1038,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
 "US-NC-CLAY-COUNTY": {
   h1: "Clay County, North Carolina property tax calculator 2026",
   intro:
-    "This Clay County, North Carolina property tax calculator estimates property tax based on North Carolina’s county assessment methods and local taxing authorities. The estimate is based on assessed market value and a combined local property tax rate reflecting applicable county and municipal taxes.",
+    "Property tax in Clay County, North Carolina is calculated from taxable value and applicable county-level rates. estimates property tax based on North Carolina’s county assessment methods and local taxing authorities. The estimate is based on assessed market value and a combined local property tax rate reflecting applicable county and municipal taxes.",
   sections: {
     howItWorks:
       "In Clay County, North Carolina, property tax is estimated by applying local tax rates to the assessed taxable value of the property. Assessed value is intended to reflect market value under North Carolina law. Local tax rates are adopted by the county and, where applicable, by municipalities. Because combined rates depend on a property’s location, results represent an estimate rather than an official tax amount.",
@@ -1051,7 +1050,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   faq: [
     {
       q: "Is this the exact property tax I will owe?",
-      a: "No. This tool provides an estimate only. Official property tax bills are issued by the Clay County Tax Collector using certified values and adopted rates.",
+      a: "No. This estimator provides a simplified calculation based on the value and rate entered. Official property tax bills are issued by the Clay County Tax Collector using certified values and adopted rates.",
     },
     {
       q: "Why can property taxes differ within Clay County?",
@@ -1084,7 +1083,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     examples:
       "If a property has a market value and the applicable assessment ratio is applied, the resulting assessed value is then multiplied by the combined local millage rate. Because millage can include county, school, city, and special district components, the estimated result depends on the rate entered.",
     limitations:
-      "This tool provides an estimate only. Actual property tax bills may differ due to jurisdiction-specific millage rates, voter-approved levies, special districts, and eligibility-based exemptions such as homestead provisions. Parcel-specific assessments, exemptions, and taxing districts applied by the local assessor in Cobb County, Georgia may affect the final property tax amount and are not fully reflected in this estimate.",
+      "The figures shown here represent a non-official estimate derived from user-entered data. Actual property tax bills may differ due to jurisdiction-specific millage rates, voter-approved levies, special districts, and eligibility-based exemptions such as homestead provisions. Parcel-specific assessments, exemptions, and taxing districts applied by the local assessor in Cobb County, Georgia may affect the final property tax amount and are not fully reflected in this estimate.",
   },
   faq: [
     {
@@ -1122,7 +1121,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     examples:
       "After determining a property’s assessed value, exemptions may reduce the taxable amount. The remaining taxable value is multiplied by the combined local millage rate, which can include county, school, city, and special district components.",
     limitations:
-      "This tool provides an estimate only. Actual property tax bills may differ due to assessment limits, eligibility-based exemptions such as homestead provisions, voter-approved levies, and jurisdiction-specific millage rates. Statewide property tax rules and exemption programs are administered under guidance from the Florida Department of Revenue, described at https://floridarevenue.com/property."
+      "The results generated by this calculator are intended as a general estimate only. Actual property tax bills may differ due to assessment limits, eligibility-based exemptions such as homestead provisions, voter-approved levies, and jurisdiction-specific millage rates. Statewide property tax rules and exemption programs are administered under guidance from the Florida Department of Revenue, described at https://floridarevenue.com/property."
   },
   faq: [
     {
@@ -1160,7 +1159,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     examples:
       "After a property’s market value is appraised, exemptions may reduce the taxable amount. The remaining taxable value is multiplied by the combined local tax rate, which may include county, school, city, and special district components depending on location.",
     limitations:
-      "This tool provides an estimate only. Actual property tax bills may differ due to jurisdiction-specific tax rates, voter-approved levies, eligibility-based exemptions such as residence homestead provisions, and statutory caps on value increases. Local tax rate adoption follows Texas truth-in-taxation rules described by the Texas Comptroller at https://comptroller.texas.gov/taxes/property-tax/truth-in-taxation/."
+      "This calculation offers an approximate projection of property tax based on the inputs provided. Actual property tax bills may differ due to jurisdiction-specific tax rates, voter-approved levies, eligibility-based exemptions such as residence homestead provisions, and statutory caps on value increases. Local tax rate adoption follows Texas truth-in-taxation rules described by the Texas Comptroller at https://comptroller.texas.gov/taxes/property-tax/truth-in-taxation/."
   },
   faq: [
     {
@@ -1196,9 +1195,9 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     howItWorks:
       "Property in Comal County is appraised at market value by the Comal Appraisal District under statewide Texas appraisal rules. Taxable value is determined by applying any eligible exemptions and statutory limitations. Local governing bodies such as counties, cities, school districts, and special districts then adopt tax rates, which are applied to the taxable value to estimate annual property tax. Statewide valuation standards are described by the Texas Comptroller of Public Accounts at https://comptroller.texas.gov/taxes/property-tax/valuing-property.php.",
     examples:
-      "After a property’s market value is appraised, exemptions may reduce the taxable amount. The remaining taxable value is multiplied by the combined local tax rate, which may include county, school, city, and special district components depending on location.",
+      "Once the appraised market value is determined, applicable exemptions may lower the taxable base. The adjusted taxable amount is then multiplied by the total combined local tax rate to estimate the annual property tax.",
     limitations:
-      "This tool provides an estimate only. Actual property tax bills may differ due to jurisdiction-specific tax rates, voter-approved levies, eligibility-based exemptions such as residence homestead provisions, and statutory caps on value increases. Texas tax rate adoption follows truth-in-taxation rules published by the Texas Comptroller at https://comptroller.texas.gov/taxes/property-tax/truth-in-taxation/."
+      "This estimator provides a simplified calculation based on the value and rate entered. Actual property tax bills may differ due to jurisdiction-specific tax rates, voter-approved levies, eligibility-based exemptions such as residence homestead provisions, and statutory caps on value increases. Texas tax rate adoption follows truth-in-taxation rules published by the Texas Comptroller at https://comptroller.texas.gov/taxes/property-tax/truth-in-taxation/."
   },
   faq: [
     {
@@ -1233,10 +1232,9 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   sections: {
     howItWorks:
       "Contra Costa County property taxes are generally computed using an assessed value determined under California rules, then applying the base ad valorem rate and any additional voter-approved rates for the applicable tax rate area. California’s Proposition 13 framework is summarized by the California State Board of Equalization at https://boe.ca.gov/proptaxes/pdf/pub29.pdf.",
-    examples:
-      "If you know your assessed value, apply the base rate and add any voter-approved rate add-ons that apply to your tax rate area. The result is an estimate of the annual ad valorem property tax.",
+"examples": "In Contra Costa County, a property’s assessed value is typically established at its acquisition value and adjusted annually within statutory limits. If that assessed value is 640,000, the base constitutional levy of 1 percent would equal 6,400 prior to any additional voter-approved debt. The estimator reflects this framework rather than parcel-level supplemental adjustments.",
     limitations:
-      "This tool provides an estimate only. Actual property tax bills may differ because voter-approved add-on rates vary by tax rate area and because many parcels have additional charges that are not calculated as a percentage of assessed value. Exemptions may reduce assessed value for some portions of the ad valorem tax but may not apply uniformly to all voter-approved charges."
+      "The results generated by this calculator are intended as a general estimate only. Actual property tax bills may differ because voter-approved add-on rates vary by tax rate area and because many parcels have additional charges that are not calculated as a percentage of assessed value. Exemptions may reduce assessed value for some portions of the ad valorem tax but may not apply uniformly to all voter-approved charges."
   },
   faq: [
     {
@@ -1387,10 +1385,9 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks":
       "Property in Dallas County is taxed based on its taxable assessed value, which generally equals the appraised market value after any applicable exemptions. Multiple local taxing units levy property taxes, including the county, cities, school districts, and special districts. Each entity adopts its own maintenance and operations and interest and sinking rates, which together form a combined local property tax rate applied to the taxable value.",
-    "examples":
-      "To estimate annual property tax, start with the property’s taxable assessed value and apply a combined local property tax rate that reflects all applicable jurisdictions for the parcel. Because rates differ by city and school district, two properties with the same value can have materially different tax outcomes depending on location.",
+    "examples": "If a home has a taxable value of 425,000 and the combined local property tax rate is 0.0215, the estimated annual property tax would be 9,137.50. Increasing the rate to 0.023 would raise the estimate accordingly, reflecting the higher overall levy applied to the same taxable value.",    
     "limitations":
-      "This tool provides an estimate only. Actual property tax bills depend on the specific city, school district, and special districts applicable to a parcel, as well as voter-approved bond rates and any qualifying exemptions or tax ceilings. Official tax bills are issued by the county tax office and may differ from this estimate. Parcel-specific assessments, exemptions, and taxing districts applied by the local assessor in Dallas County, Texas may affect the final property tax amount and are not fully reflected in this estimate.",
+      "The figures shown here represent a non-official estimate derived from user-entered data. Actual property tax bills depend on the specific city, school district, and special districts applicable to a parcel, as well as voter-approved bond rates and any qualifying exemptions or tax ceilings. Official tax bills are issued by the county tax office and may differ from this estimate. Parcel-specific assessments, exemptions, and taxing districts applied by the local assessor in Dallas County, Texas may affect the final property tax amount and are not fully reflected in this estimate.",
   },
   "faq": [
     {
@@ -1433,7 +1430,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     "examples":
       "To estimate property tax, take the assessed value of a parcel and apply a combined local tax rate expressed as a mill rate, meaning dollars of tax per 1,000 dollars of assessed value. Combined rates vary by municipality and school district, so properties with similar values may face different tax outcomes depending on location.",
     "limitations":
-      "This tool provides an estimate only. Actual property tax bills depend on the specific combination of municipal, school district, technical college, county, and state rates that apply to a parcel, as well as statutory exemptions and credits. Official bills are issued by local tax authorities and may differ from this estimate. Parcel-specific assessments, exemptions, and taxing districts applied by the local assessor in Dane County, Wisconsin may affect the final property tax amount and are not fully reflected in this estimate.",
+      "This calculation offers an approximate projection of property tax based on the inputs provided. Actual property tax bills depend on the specific combination of municipal, school district, technical college, county, and state rates that apply to a parcel, as well as statutory exemptions and credits. Official bills are issued by local tax authorities and may differ from this estimate. Parcel-specific assessments, exemptions, and taxing districts applied by the local assessor in Dane County, Wisconsin may affect the final property tax amount and are not fully reflected in this estimate.",
   },
   "faq": [
     {
@@ -1611,7 +1608,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     {
       "q": "Is this the official Douglas County property tax bill?",
       "a":
-        "No. This tool provides an estimate only. The official bill is calculated and issued by the county."
+        "No. The results generated by this calculator are intended as a general estimate only. The official bill is calculated and issued by the county."
     },
     {
       "q": "What value is used to calculate property tax?",
@@ -1654,7 +1651,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     {
       "q": "Is this the official Douglas County property tax bill?",
       "a":
-        "No. This tool provides an estimate only. The official bill is calculated and issued by the county."
+        "No. This estimator provides a simplified calculation based on the value and rate entered. The official bill is calculated and issued by the county."
     },
     {
       "q": "What value is used to calculate property tax?",
@@ -1699,7 +1696,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     {
       q: "Is this the official Douglas County property tax bill?",
       a:
-        "No. This tool provides an estimate only. The official property tax bill is calculated and issued by Douglas County.",
+        "No. The results generated by this calculator are intended as a general estimate only. The official property tax bill is calculated and issued by Douglas County.",
     },
     {
       q: "What value is used to calculate property tax in Oregon?",
@@ -1837,9 +1834,9 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
       howItWorks:
         "Property taxes in Ellis County are based on a taxable value determined by the county appraisal district and tax rates adopted by local taxing authorities such as the county, cities, school districts, and special districts. This estimator multiplies the taxable value by a combined local property tax rate to produce an estimated annual amount.",
       examples:
-        "If a property has a taxable value after exemptions and a combined local property tax rate applied, the estimated tax is calculated by multiplying the taxable value by that rate. Because rates differ by taxing unit and location, results vary between properties within the county.",
+        "When exemptions reduce the appraised value to a taxable figure, the calculator multiplies that taxable value by the total combined property tax rate to produce an estimate. Differences in local taxing units may affect the result.",
       limitations:
-        "This tool provides an estimate only. Actual property tax bills may differ due to location-specific tax rates, exemptions, special assessments, voter-approved measures, or changes in taxable value.",
+        "The figures shown here represent a non-official estimate derived from user-entered data. Actual property tax bills may differ due to location-specific tax rates, exemptions, special assessments, voter-approved measures, or changes in taxable value.",
     },
 
     faq: [
@@ -1875,7 +1872,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     "sections": {
       "howItWorks": "In New York, assessed value is a percentage of market value that must be uniform within each municipality. Property tax rates are set by local taxing jurisdictions such as the county, city or town, school district, villages, and special districts. This estimator uses the taxable assessed value you enter and multiplies it by a combined local property tax rate to produce an estimated annual amount.",
       "examples": "If a property has a taxable assessed value and a combined local property tax rate applied, the estimated tax is calculated by multiplying the taxable assessed value by that combined rate. Because the mix of taxing jurisdictions varies across Erie County, results can differ between properties in different municipalities or school districts.",
-      "limitations": "This tool provides an estimate only. Actual property tax bills may differ due to jurisdiction-specific rates, school district differences, special districts, exemptions, and changes in assessed value or assessment practices."
+      "limitations": "This calculation offers an approximate projection of property tax based on the inputs provided. Actual property tax bills may differ due to jurisdiction-specific rates, school district differences, special districts, exemptions, and changes in assessed value or assessment practices."
     },
     "faq": [
       { "q": "Does Erie County have a single county-wide property tax rate?", "a": "No. Erie County is one part of the total, but overall rates vary by municipality, school district, and other districts." },
@@ -1901,7 +1898,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
       examples:
         "If a property has a taxable value and a combined local property tax rate applied, the estimated tax is calculated by multiplying the taxable value by that rate. Because different cities and districts apply different millage combinations, results vary within Escambia County.",
       limitations:
-        "This tool provides an estimate only. Actual property tax bills may differ due to location-specific millage rates, non-ad valorem assessments, exemptions, special districts, and changes in assessed value.",
+        "The figures shown here represent a non-official estimate derived from user-entered data. Actual property tax bills may differ due to location-specific millage rates, non-ad valorem assessments, exemptions, special districts, and changes in assessed value.",
     },
 
     faq: [
@@ -1942,7 +1939,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
       examples:
         "If a property has an assessed taxable value and a combined local ad valorem tax rate applied, the estimated tax is calculated by multiplying the assessed value by that rate.",
       limitations:
-        "This tool provides an estimate only. Actual property tax bills may differ due to exemptions, property classification, official assessments, and jurisdiction-specific tax rates.",
+        "This estimator provides a simplified calculation based on the value and rate entered. Actual property tax bills may differ due to exemptions, property classification, official assessments, and jurisdiction-specific tax rates.",
     },
 
     faq: [
@@ -1983,7 +1980,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
       examples:
         "If a property has an assessed value and a combined local real estate tax rate that includes the base rate and any applicable district rates, the estimated tax is calculated by multiplying the assessed value by that combined rate.",
       limitations:
-        "This tool provides an estimate only. Actual property tax bills may differ because not all special-district rates apply to every parcel, and exemptions or parcel-specific factors can affect the total.",
+        "The results generated by this calculator are intended as a general estimate only. Actual property tax bills may differ because not all special-district rates apply to every parcel, and exemptions or parcel-specific factors can affect the total.",
     },
 
     faq: [
@@ -2024,7 +2021,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
       examples:
         "If a property has a fair market value, the assessed value is calculated as 40% of that amount. The estimated tax is then calculated by applying the combined local ad valorem tax rate to the assessed value.",
       limitations:
-        "This tool provides an estimate only. Actual property tax bills may differ due to exemptions, assessment appeals, district-specific rates, or official rates adopted by taxing authorities.",
+        "This calculation offers an approximate projection of property tax based on the inputs provided. Actual property tax bills may differ due to exemptions, assessment appeals, district-specific rates, or official rates adopted by taxing authorities.",
     },
 
     faq: [
@@ -2060,7 +2057,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Property taxes in Frederick County are estimated using the assessed value determined by the state and a combined local property tax rate. The combined rate represents the total of applicable county, municipal, and special district taxes based on the property’s location.",
     "examples": "If two properties have the same assessed value but are located in different municipalities or districts, their estimated property tax may differ because the combined local property tax rate is not the same everywhere within the county.",
-    "limitations": "This tool provides an estimate only. Actual property tax bills can differ depending on municipal boundaries, special taxing districts, voter-approved levies, assessment changes, or other location-specific factors."
+    "limitations": "The figures shown here represent a non-official estimate derived from user-entered data. Actual property tax bills can differ depending on municipal boundaries, special taxing districts, voter-approved levies, assessment changes, or other location-specific factors."
   },
   "faq": [
     { "q": "What value is used to estimate property tax in Frederick County?", "a": "The estimate is based on the property’s assessed value as determined by the state assessment authority." },
@@ -2080,8 +2077,8 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "intro": "This calculator provides an estimated property tax for real estate in Fresno County, California. The estimate is based on the property’s assessed value under California’s acquisition-value system and a combined local property tax rate that reflects applicable county, city, school, and special district taxes.",
   "sections": {
     "howItWorks": "Property taxes in Fresno County are estimated using the assessed value established under California law and a combined local property tax rate. The combined rate represents the total of applicable county, city, school district, and special district taxes that apply to a property based on its location.",
-    "examples": "Two properties with similar assessed values can have different estimated property taxes if they are located in different cities or taxing areas. This is because the combined local property tax rate depends on which local districts and voter-approved measures apply to the property.",
-    "limitations": "This tool provides an estimate only. Actual property tax bills can differ based on tax rate areas, voter-approved bonds, special assessments, reassessments, or other location-specific factors."
+"examples": "For a Fresno County parcel assessed at 900,000, the statewide 1 percent general levy would produce 9,000 as the base amount. However, the total property tax rate may exceed 1 percent when locally approved bonded indebtedness is included. The calculator illustrates the constitutional base calculation before tax rate area variations are applied.",
+    "limitations": "This calculation offers an approximate projection of property tax based on the inputs provided. Actual property tax bills can differ based on tax rate areas, voter-approved bonds, special assessments, reassessments, or other location-specific factors."
   },
   "faq": [
     { "q": "What value is used to estimate property tax in Fresno County?", "a": "The estimate is based on the property’s assessed value as determined under California’s property tax system." },
@@ -2101,8 +2098,8 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "intro": "This calculator provides an estimated property tax for real estate in Galveston County, Texas. The estimate is based on the property’s assessed value and a combined local property tax rate reflecting applicable county, city, school district, and special district taxes.",
   "sections": {
     "howItWorks": "Property taxes in Galveston County are estimated using the assessed value determined by the county appraisal district under Texas law. A combined local property tax rate is then applied, representing the total of all taxing units that apply to the property’s location.",
-    "examples": "Two properties with similar assessed values may receive different estimated property tax results if they are located in different cities, school districts, or special districts. This is because the combined local property tax rate depends on the specific taxing units that apply to each property.",
-    "limitations": "This tool provides an estimate only. Actual property tax bills can differ due to exemptions, homestead value limits, voter-approved rate changes, boundary differences between taxing units, or reassessments by the appraisal district."
+    "examples": "Properties located in different taxing districts within the county may produce different estimated tax amounts even if their assessed values are identical. This is due to variation in overlapping local levies.",
+    "limitations": "This estimator provides a simplified calculation based on the value and rate entered. Actual property tax bills can differ due to exemptions, homestead value limits, voter-approved rate changes, boundary differences between taxing units, or reassessments by the appraisal district."
   },
   "faq": [
     { "q": "What value is used to estimate property tax in Galveston County?", "a": "The estimate is based on the property’s assessed value as determined by the county appraisal district." },
@@ -2122,9 +2119,8 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "intro": "This calculator provides an estimated property tax for real estate in Gaston County, North Carolina. The estimate is based on the property’s assessed value and a combined local property tax rate that reflects applicable county, municipal, and special district taxes.",
   "sections": {
     "howItWorks": "Property taxes in Gaston County are estimated using the assessed value determined by the county during its most recent reappraisal cycle. A combined local property tax rate is then applied, representing the total of all local taxing authorities that apply to the property’s location.",
-    "examples": "Two properties with similar assessed values can have different estimated property tax results if they are located in different towns or service areas. This is because the combined local property tax rate depends on which municipal and special district taxes apply.",
-    "limitations": "This tool provides an estimate only. Actual property tax bills can differ due to reappraisal updates, eligibility for special valuation programs, boundary differences between taxing districts, or changes approved by local authorities."
-  },
+    "examples": "Even when two parcels share the same assessed value, differences in municipal or school district boundaries can result in different estimated property tax amounts.",
+"limitations": "This Gaston County property tax estimate assumes the assessed value entered reflects the value determined under the county’s most recent reappraisal schedule. It does not calculate present-use value classifications, circuit breaker deferrals, disabled veteran exclusions, or parcel-level district adjustments. Official tax bills are issued by the Gaston County Tax Office and may reflect updates, appeals, or levy changes not captured by this estimate.",  },
   "faq": [
     { "q": "What value is used to estimate property tax in Gaston County?", "a": "The estimate is based on the property’s assessed value as determined by the county appraisal process." },
     { "q": "Why can property tax estimates vary within the county?", "a": "Different municipalities and special districts apply different local property tax rates, which affects the combined rate used in the estimate." },
@@ -2144,7 +2140,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Property taxes in Grayson County are estimated using the assessed value determined by the county appraisal district under Texas law. A combined local property tax rate is then applied, representing the total of all taxing units that apply to the property’s location.",
     "examples": "Two properties with similar assessed values can have different estimated property taxes if they are located in different cities, school districts, or special districts. This occurs because the combined local property tax rate depends on which taxing units apply to each property.",
-    "limitations": "This tool provides an estimate only. Actual property tax bills can differ due to exemptions, value limitation programs, boundary differences between taxing units, voter-approved rate changes, or reassessments by the appraisal district."
+    "limitations": "The figures shown here represent a non-official estimate derived from user-entered data. Actual property tax bills can differ due to exemptions, value limitation programs, boundary differences between taxing units, voter-approved rate changes, or reassessments by the appraisal district."
   },
   "faq": [
     { "q": "What value is used to estimate property tax in Grayson County?", "a": "The estimate is based on the property’s assessed value as determined by the county appraisal district." },
@@ -2165,7 +2161,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Property taxes in Greene County are estimated by first determining the assessed value derived from the property’s appraised market value under Ohio law. A combined local property tax rate is then applied, representing the total of county, township, municipal, school district, and special district taxes that apply to the property’s location.",
     "examples": "Two properties with similar appraised values may receive different estimated property tax results if they are located in different tax districts. This is because the combined local property tax rate depends on which local jurisdictions and special districts apply to each property.",
-    "limitations": "This tool provides an estimate only. Actual property tax bills can differ due to effective rate reductions, voter-approved levies, boundary differences between taxing districts, exemptions, or reassessments performed by the county auditor."
+    "limitations": "This calculation offers an approximate projection of property tax based on the inputs provided. Actual property tax bills can differ due to effective rate reductions, voter-approved levies, boundary differences between taxing districts, exemptions, or reassessments performed by the county auditor."
   },
   "faq": [
     { "q": "What value is used to estimate property tax in Greene County?", "a": "The estimate is based on the property’s appraised value converted to an assessed value under Ohio’s property tax system." },
@@ -2185,8 +2181,8 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "intro": "This calculator provides an estimated property tax for real estate in Greenville County, South Carolina. The estimate is based on the property’s assessed value and a combined local property tax rate that reflects applicable county, municipal, school, and special district taxes.",
   "sections": {
     "howItWorks": "Property taxes in Greenville County are estimated using the assessed value determined under South Carolina law. A combined local property tax rate is then applied, representing the total of all taxing authorities that apply to the property’s location within the county.",
-    "examples": "Two properties with similar assessed values may have different estimated property taxes if they are located in different tax districts. This is because the combined local property tax rate depends on which municipal, school, and special district taxes apply to each property.",
-    "limitations": "This tool provides an estimate only. Actual property tax bills can differ due to exemptions, classification rules, boundary differences between tax districts, reassessments, or changes approved by local authorities."
+    "examples": "Identical assessed values do not guarantee identical tax outcomes. The combined rate applied depends on the specific jurisdictions that levy tax on the property.",
+    "limitations": "The result shown is an informational estimate only. Final property tax amounts are determined by local assessing and taxing authorities and may vary based on parcel-specific factors and updated levy rates."
   },
   "faq": [
     { "q": "What value is used to estimate property tax in Greenville County?", "a": "The estimate is based on the property’s assessed value as determined by the county under state law." },
@@ -2207,7 +2203,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Property taxes in Guilford County are estimated using the assessed value determined by the county during its most recent reappraisal cycle. A combined local property tax rate is then applied, representing the total of all local taxing authorities that apply to the property’s location.",
     "examples": "Two properties with similar assessed values can have different estimated property tax results if they are located in different cities or service areas. This is because the combined local property tax rate depends on which municipal and special district taxes apply.",
-    "limitations": "This tool provides an estimate only. Actual property tax bills can differ due to reappraisal updates, eligibility for special valuation programs, boundary differences between taxing districts, or changes approved by local authorities."
+    "limitations": "The results generated by this calculator are intended as a general estimate only. Actual property tax bills can differ due to reappraisal updates, eligibility for special valuation programs, boundary differences between taxing districts, or changes approved by local authorities."
   },
   "faq": [
     { "q": "What value is used to estimate property tax in Guilford County?", "a": "The estimate is based on the property’s assessed value as determined by the county appraisal process." },
@@ -2228,7 +2224,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Property in Gwinnett County is valued at fair market value and assessed at a fixed percentage to determine assessed value. The taxable value is calculated from the assessed value, after which a combined local property tax rate is applied. That combined rate reflects levies set by the county, the school system, and, where applicable, a city government.",
     "examples": "If a property has a given market value, the assessed value is calculated using the county assessment ratio. An estimated combined local rate is then applied to produce an annual property tax estimate. Actual rates differ depending on whether the property is in unincorporated Gwinnett County or within a specific municipality.",
-    "limitations": "This tool produces an estimate only. Millage rates vary by city, district, and voter-approved levies, and exemptions depend on eligibility and application status. The actual tax bill may differ from this estimate."
+    "limitations": "This estimator reflects a simplified calculation based on the taxable value and rate entered. Millage rates vary by city, district, and voter-approved levies, and exemptions depend on eligibility and application status. The actual tax bill may differ from this estimate."
   },
   "faq": [
     { "q": "How is property tax calculated in Gwinnett County?", "a": "Property tax is calculated by applying a combined local millage rate to the taxable assessed value of the property." },
@@ -2249,7 +2245,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Property in Hamilton County is appraised at its true market value and then assessed at a fixed percentage under Ohio law to determine taxable value. Local taxing authorities apply their voted millage rates to this assessed value, resulting in a combined local property tax rate for each taxing district.",
     "examples": "An estimated tax is calculated by applying an overall local rate to the assessed value derived from the property’s market value. Properties in different school districts or municipalities may have different combined rates even within the same county.",
-    "limitations": "This tool provides an estimate only. Property tax rates vary by school district, municipality, and voter-approved levies, and eligibility-based exemptions can change the taxable value. The actual tax bill may differ from this estimate."
+    "limitations": "This estimator provides a simplified calculation based on the value and rate entered. Property tax rates vary by school district, municipality, and voter-approved levies, and eligibility-based exemptions can change the taxable value. The actual tax bill may differ from this estimate."
   },
   "faq": [
     { "q": "How is property tax calculated in Hamilton County, Ohio?", "a": "Property tax is calculated by applying local millage rates to the assessed value, which is a fixed percentage of market value under Ohio law." },
@@ -2270,7 +2266,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Harris County property taxes start with the taxable value established by the Harris Central Appraisal District. Exemptions can reduce taxable value, depending on eligibility and the taxing units involved. Each taxing unit that applies to a property adopts its own tax rate, and the combined local property tax rate reflects the sum of those applicable unit rates applied to taxable value.",
     "examples": "An estimate is produced by applying a combined local rate to a taxable value figure. If a property is located within different taxing units, the combined rate can differ even within the same county, so the estimate depends on the rate you enter for the specific location.",
-    "limitations": "This tool provides an estimate only. Tax rates vary by taxing unit and property location, and exemptions and capped values depend on eligibility and property-specific circumstances. The actual tax bill may differ from this estimate."
+    "limitations": "This calculation offers an approximate projection of property tax based on the inputs provided. Tax rates vary by taxing unit and property location, and exemptions and capped values depend on eligibility and property-specific circumstances. The actual tax bill may differ from this estimate."
   },
   "faq": [
     { "q": "How is property tax calculated in Harris County, Texas?", "a": "Property tax is calculated by applying the applicable taxing unit rates to the property’s taxable value, after any exemptions that apply." },
@@ -2291,7 +2287,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Property in Hays County is appraised at market value by the Hays Central Appraisal District as of January 1. Exemptions such as residence homestead exemptions can reduce the taxable value. Each taxing unit that applies to the property — including the county, school districts, cities, and special districts — adopts its own tax rate, and the combined local property tax rate is applied to the taxable value.",
     "examples": "An estimated tax is calculated by applying a combined local rate to the property’s taxable value. Because different cities and school districts within Hays County adopt different rates, the combined rate can vary depending on the property’s location.",
-    "limitations": "This tool provides an estimate only. Tax rates vary by taxing unit and property location, and exemptions and capped values depend on eligibility and property-specific circumstances. The actual tax bill may differ from this estimate."
+    "limitations": "This calculator produces a non-binding estimate based solely on the values you enter. Official tax bills are issued by the appropriate local authorities and may differ due to exemptions, appraisal adjustments, or district-specific rates."
   },
   "faq": [
     { "q": "How is property tax calculated in Hays County, Texas?", "a": "Property tax is calculated by applying the applicable taxing unit rates to the property’s taxable value after exemptions." },
@@ -2319,7 +2315,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
       "An estimated property tax is calculated by multiplying the taxable value of a property by a combined local property tax rate. Properties in different cities or school districts within Hennepin County may have different combined rates, even if their taxable values are similar.",
 
     limitations:
-      "This tool provides an estimate only. Taxable value adjustments, local levy rates, and eligibility for exclusions vary by property and location. The actual tax bill may differ from this estimate."
+      "This calculation offers an approximate projection of property tax based on the inputs provided. Taxable value adjustments, local levy rates, and eligibility for exclusions vary by property and location. The actual tax bill may differ from this estimate."
   },
 
   faq: [
@@ -2453,8 +2449,8 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "intro": "This calculator provides an estimated property tax for real estate in Horry County, South Carolina. It estimates tax using taxable (assessed) value and a combined local property tax rate.",
   "sections": {
     "howItWorks": "Property tax in Horry County is calculated by applying a combined local property tax rate to taxable (assessed) value. The combined rate reflects the sum of millage set by the county, school district, and applicable special districts. Using a rate that matches the property’s location will produce a closer estimate.",
-    "examples": "If two properties have the same taxable value but are located in areas with different combined local rates, their estimated taxes will differ. Changing only the combined local property tax rate while keeping taxable value the same will change the estimate proportionally.",
-    "limitations": "This tool is an estimator. It does not determine official assessed value, identify applicable exemptions, or account for classification-based rules or caps that may affect a specific parcel. Combined local rates can vary by location and change over time. Actual tax bills may differ."
+"examples": "In Horry County, assume a residential parcel is subject to a county levy, a school district levy, and a small special district charge. If the school district increases its levy while the county rate remains unchanged, the total combined rate applied to that parcel increases even though the property’s taxable value does not. This illustrates how district-level levy changes, rather than value alone, can materially affect the estimated annual tax.",    
+"limitations": "This tool is an estimator. It does not determine official assessed value, identify applicable exemptions, or account for classification-based rules or caps that may affect a specific parcel. Combined local rates can vary by location and change over time. Actual tax bills may differ."
   },
   "faq": [
     {
@@ -2519,7 +2515,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "intro": "This calculator provides an estimated property tax for real estate in Hunt County, Texas. It estimates tax using taxable (assessed) value and a combined local property tax rate.",
   "sections": {
     "howItWorks": "Property tax in Hunt County is based on taxable value as determined under Texas law and administered by the county appraisal district. Local taxing units set tax rates and apply them to taxable value to calculate property tax. Because a property can fall under different combinations of county, school district, city, and special district jurisdictions, the combined local property tax rate depends on location.",
-    "examples": "Two properties with the same taxable value can have different estimated taxes if they are located in different school districts or municipalities with different rates. Changing only the combined local property tax rate while keeping taxable value the same will change the estimate proportionally.",
+"examples": "In Hunt County, assume a residential parcel is subject to a county levy, a school district levy, and a small special district charge. If the school district increases its levy while the county rate remains unchanged, the total combined rate applied to that parcel increases even though the property’s taxable value does not. This illustrates how district-level levy changes, rather than value alone, can materially affect the estimated annual tax.",
     "limitations": "This tool is an estimator. It does not determine market value, apply appraisal caps, or apply exemptions and local-option benefits that may affect taxable value for a specific parcel. It also does not determine which taxing units apply to a property. Entering an accurate combined local property tax rate for the property’s location will produce a closer estimate. Actual tax bills may differ."
   },
   "faq": [
@@ -2552,8 +2548,8 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "intro": "This calculator provides an estimated property tax for real estate in Jackson County, Missouri. It estimates tax using taxable (assessed) value and a combined local property tax rate.",
   "sections": {
     "howItWorks": "Property tax in Jackson County is calculated by applying local levy rates to taxable (assessed) value. The assessed value is determined through the assessment process, and local taxing authorities apply their levy rates to calculate the tax. The combined rate reflects the total of applicable levies from the county, school district, city, and any special districts that apply to the property’s location.",
-    "examples": "Two properties with the same taxable value can have different estimated taxes if they are located in different school districts, cities, or special districts with different levy rates. Changing only the combined local property tax rate while keeping taxable value the same will change the estimate proportionally.",
-    "limitations": "This tool is an estimator. It does not determine official assessed value, identify applicable exemptions, or account for classification rules, rollbacks, or constitutional limits that may affect a specific parcel. Levy rates vary by location and are set annually by local taxing authorities. Actual tax bills may differ."
+"examples": "In Jackson County, assume a residential parcel is subject to a county levy, a school district levy, and a small special district charge. If the school district increases its levy while the county rate remains unchanged, the total combined rate applied to that parcel increases even though the property’s taxable value does not. This illustrates how district-level levy changes, rather than value alone, can materially affect the estimated annual tax.",    
+"limitations": "This tool is an estimator. It does not determine official assessed value, identify applicable exemptions, or account for classification rules, rollbacks, or constitutional limits that may affect a specific parcel. Levy rates vary by location and are set annually by local taxing authorities. Actual tax bills may differ."
   },
   "faq": [
     {
@@ -2585,8 +2581,8 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "intro": "This calculator provides an estimated property tax for real estate in Jefferson County, Missouri. It estimates tax using taxable (assessed) value and a combined local property tax rate.",
   "sections": {
     "howItWorks": "Property tax in Jefferson County is calculated by applying local levy rates to taxable (assessed) value. Local taxing authorities set levy rates and apply them to taxable value to determine property tax. The combined rate reflects the total of applicable levies from the county, school district, municipalities, and any special districts that apply to the property’s location.",
-    "examples": "Two properties with the same taxable value can have different estimated taxes if they are located in different school districts, cities, or special districts with different levy rates. Changing only the combined local property tax rate while keeping taxable value the same will change the estimate proportionally.",
-    "limitations": "This tool is an estimator. It does not determine official assessed value, identify applicable exemptions or credits, or account for classification rules, rollbacks, or levy limits that may affect a specific parcel. Levy rates vary by location and are set annually by local taxing authorities. Actual tax bills may differ."
+"examples": "In Jefferson County, assume a residential parcel is subject to a county levy, a school district levy, and a small special district charge. If the school district increases its levy while the county rate remains unchanged, the total combined rate applied to that parcel increases even though the property’s taxable value does not. This illustrates how district-level levy changes, rather than value alone, can materially affect the estimated annual tax.",    
+"limitations": "This tool is an estimator. It does not determine official assessed value, identify applicable exemptions or credits, or account for classification rules, rollbacks, or levy limits that may affect a specific parcel. Levy rates vary by location and are set annually by local taxing authorities. Actual tax bills may differ."
   },
   "faq": [
     {
@@ -2619,7 +2615,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Property tax in Jefferson Parish is calculated by first determining market value and applying Louisiana’s assessment ratio to arrive at assessed value. Taxable value may then be reduced by applicable exemptions. A combined local property tax rate, reflecting parish, municipal, school, and other district millages, is applied to the taxable value. The applicable combined rate depends on the property’s ward and municipality.",
     "examples": "Two properties with the same market value can produce different estimated taxes if they are located in different wards or municipalities within Jefferson Parish. Differences in combined millage rates or eligibility for exemptions can change the taxable value and the resulting estimate.",
-    "limitations": "This tool provides an estimate only. Jefferson Parish uses ward-specific millage rates, and some areas include flat fees or special assessments that are not part of ad valorem millage. Exemptions such as the homestead exemption are owner- and parcel-specific. Actual tax bills may differ from this estimate."
+    "limitations": "The results generated by this calculator are intended as a general estimate only. Jefferson Parish uses ward-specific millage rates, and some areas include flat fees or special assessments that are not part of ad valorem millage. Exemptions such as the homestead exemption are owner- and parcel-specific. Actual tax bills may differ from this estimate."
   },
   "faq": [
     { "q": "How is property tax calculated in Jefferson Parish?", "a": "The estimate is based on taxable value and a combined local property tax rate that varies by ward and municipality." },
@@ -2640,7 +2636,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Property tax in Johnson County is calculated by determining a property’s market value and applying Kansas assessment ratios to arrive at taxable assessed value. Local taxing authorities set mill levies, which together form a combined local property tax rate. The taxable assessed value is multiplied by this combined rate to estimate annual property tax.",
     "examples": "Properties with the same market value can have different estimated taxes if they are located in different cities or school districts within Johnson County. Different combinations of mill levies apply depending on the property’s taxing jurisdictions.",
-    "limitations": "This tool provides an estimate only. Johnson County does not have a single uniform mill levy for all properties, and combined local rates vary by taxing district. Special assessments, credits, and parcel-specific adjustments are not deterministically modeled. Actual tax bills may differ from the estimate."
+    "limitations": "This estimator provides a simplified calculation based on the value and rate entered. Johnson County does not have a single uniform mill levy for all properties, and combined local rates vary by taxing district. Special assessments, credits, and parcel-specific adjustments are not deterministically modeled. Actual tax bills may differ from the estimate."
   },
   "faq": [
     { "q": "How is property tax calculated in Johnson County, Kansas?", "a": "The estimate is based on taxable assessed value multiplied by a combined local property tax rate derived from applicable mill levies." },
@@ -2661,7 +2657,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Property tax in Johnston County is calculated using the assessed (taxable) value of a property. Local tax rates are quoted per $100 of assessed value and consist of the county rate plus any applicable municipal or special district rates. The assessed value is divided by 100 and multiplied by the combined local rate to estimate annual property tax.",
     "examples": "Two properties with the same assessed value can produce different estimated taxes if they are located in different towns or special districts within Johnston County. Different combinations of local rates apply depending on location.",
-    "limitations": "This tool provides an estimate only. Johnston County does not apply a single uniform combined tax rate to all properties, and applicable municipal or special district rates depend on the parcel’s location. Special assessments or parcel-specific adjustments are not deterministically modeled. Actual tax bills may differ from this estimate."
+    "limitations": "The figures shown here represent a non-official estimate derived from user-entered data. Johnston County does not apply a single uniform combined tax rate to all properties, and applicable municipal or special district rates depend on the parcel’s location. Special assessments or parcel-specific adjustments are not deterministically modeled. Actual tax bills may differ from this estimate."
   },
   "faq": [
     { "q": "How is property tax calculated in Johnston County, North Carolina?", "a": "The estimate is calculated by dividing assessed value by 100 and multiplying it by the combined local property tax rate." },
@@ -2682,7 +2678,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Property tax in Kane County is calculated using the property’s taxable assessed value. The county clerk determines an aggregate or combined local property tax rate by summing the rates of all taxing districts that apply to a specific tax code area, such as the county, municipality, school district, and other local districts. The taxable assessed value is multiplied by this combined rate to estimate annual property tax.",
     "examples": "Two properties with the same taxable assessed value can have different estimated taxes if they are located in different tax code areas within Kane County. Different combinations of local taxing districts result in different combined rates.",
-    "limitations": "This tool provides an estimate only. Kane County does not apply a single uniform tax rate to all properties, and combined local rates depend on the parcel’s tax code area. Exemptions, equalization adjustments, and parcel-specific factors are not deterministically modeled. Actual tax bills may differ from this estimate."
+    "limitations": "This calculation offers an approximate projection of property tax based on the inputs provided. Kane County does not apply a single uniform tax rate to all properties, and combined local rates depend on the parcel’s tax code area. Exemptions, equalization adjustments, and parcel-specific factors are not deterministically modeled. Actual tax bills may differ from this estimate."
   },
   "faq": [
     { "q": "How is property tax calculated in Kane County, Illinois?", "a": "The estimate is based on taxable assessed value multiplied by a combined local property tax rate determined for the property’s tax code area." },
@@ -2703,7 +2699,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Property tax in Kaufman County is calculated using the property’s taxable assessed value. Local taxing units such as the county, school districts, cities, and other special districts each adopt tax rates. The combined local property tax rate is the sum of the rates from the taxing units that apply to a specific parcel, and this combined rate is applied to the taxable value to estimate annual property tax.",
     "examples": "Two properties with the same taxable assessed value can have different estimated taxes if they are located in different cities or school districts within Kaufman County. Different combinations of local taxing units result in different combined rates.",
-    "limitations": "This tool provides an estimate only. Kaufman County does not have a single uniform tax rate for all properties, and the applicable taxing units depend on the parcel’s location. Special assessments, exemptions, and parcel-specific adjustments are not deterministically modeled. Actual tax bills may differ from this estimate."
+    "limitations": "The figures shown here represent a non-official estimate derived from user-entered data. Kaufman County does not have a single uniform tax rate for all properties, and the applicable taxing units depend on the parcel’s location. Special assessments, exemptions, and parcel-specific adjustments are not deterministically modeled. Actual tax bills may differ from this estimate."
   },
   "faq": [
     { "q": "How is property tax calculated in Kaufman County, Texas?", "a": "The estimate is based on taxable assessed value multiplied by a combined local property tax rate made up of all applicable taxing units." },
@@ -2724,7 +2720,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Property tax in Kendall County is calculated using a property’s taxable assessed value after assessment and equalization. The county clerk determines an aggregate or combined local property tax rate by summing the rates of all taxing districts that apply to a specific tax code area, such as the county, municipality, school district, and other local districts. The taxable assessed value is multiplied by this combined rate to estimate annual property tax.",
     "examples": "Two properties with the same taxable assessed value can have different estimated taxes if they are located in different tax code areas within Kendall County. Different combinations of local taxing districts result in different combined rates.",
-    "limitations": "This tool provides an estimate only. Kendall County does not apply a single uniform tax rate to all properties, and combined local rates depend on the parcel’s tax code area. Exemptions, equalization adjustments, and parcel-specific factors are not deterministically modeled. Actual tax bills may differ from this estimate."
+    "limitations": "The results generated by this calculator are intended as a general estimate only. Kendall County does not apply a single uniform tax rate to all properties, and combined local rates depend on the parcel’s tax code area. Exemptions, equalization adjustments, and parcel-specific factors are not deterministically modeled. Actual tax bills may differ from this estimate."
   },
   "faq": [
     { "q": "How is property tax calculated in Kendall County, Illinois?", "a": "The estimate is based on taxable assessed value multiplied by a combined local property tax rate determined for the property’s tax code area." },
@@ -2744,8 +2740,8 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "intro": "This calculator provides an estimated property tax for real estate located in Kern County, California. The estimate is based on assessed value and a combined local property tax rate that is determined by the aggregate of all applicable taxing jurisdictions within each tax rate area.",
   "sections": {
     "howItWorks": "Property tax in Kern County is calculated by first determining the assessed value of a property under California’s property tax system, which generally limits basic tax to 1% of assessed value under Proposition 13. Additional voter-approved levies or special assessments can increase the combined local rate. Each tax rate area has its own combined rate based on county, city, school, and special district rates. The assessed value is multiplied by this combined local rate to estimate annual property tax.",
-    "examples": "Two properties with the same assessed value can have different estimated taxes if they are located in different tax rate areas within Kern County. Differences in local levies for schools, districts, or bonds can change the combined local rate and thus the estimated tax.",
-    "limitations": "This tool provides an estimate only. Kern County does not apply a single uniform rate to all properties; combined local property tax rates vary by tax rate area and can include additional voter-approved debt levies, special assessments, and parcel-specific factors. These additional components are not deterministically modeled. Actual tax bills may differ from the estimate."
+"examples": "If a property in Kern County carries an assessed value of 580,000, the 1 percent general levy under California law would result in 5,800 as the base estimate. Properties assigned to different tax rate areas may include additional bonded charges depending on local approvals. This example highlights how the base levy is derived before those localized components are layered in.",
+    "limitations": "This calculation offers an approximate projection of property tax based on the inputs provided. Kern County does not apply a single uniform rate to all properties; combined local property tax rates vary by tax rate area and can include additional voter-approved debt levies, special assessments, and parcel-specific factors. These additional components are not deterministically modeled. Actual tax bills may differ from the estimate."
   },
   "faq": [
     { "q": "How is property tax calculated in Kern County, California?", "a": "The estimate is based on assessed value multiplied by a combined local property tax rate determined for the property’s tax rate area." },
@@ -2766,7 +2762,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Property tax in King County is calculated using the assessed value determined by the King County Assessor. Multiple taxing districts—such as the county, cities, school districts, and other special districts—adopt levies that are combined into a single levy rate for each levy code area. The assessed value is multiplied by this combined levy rate (expressed per $1,000 of assessed value) to estimate annual property tax.",
     "examples": "Two properties with the same assessed value can have different estimated taxes if they are located in different levy code areas within King County. Different combinations of taxing districts and voter-approved levies result in different combined rates.",
-    "limitations": "This tool provides an estimate only. King County does not have a single uniform property tax rate. Combined levy rates vary by levy code area and by year, and voter-approved excess levies or special assessments may apply. Exemptions, credits, and parcel-specific adjustments are not deterministically modeled. Actual tax bills may differ from this estimate."
+    "limitations": "This estimator provides a simplified calculation based on the value and rate entered. King County does not have a single uniform property tax rate. Combined levy rates vary by levy code area and by year, and voter-approved excess levies or special assessments may apply. Exemptions, credits, and parcel-specific adjustments are not deterministically modeled. Actual tax bills may differ from this estimate."
   },
   "faq": [
     { "q": "How is property tax calculated in King County, Washington?", "a": "The estimate is based on assessed value multiplied by a combined local levy rate that applies to the property’s levy code area." },
@@ -2787,7 +2783,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Property tax in Lake County is calculated using the property’s assessed value as determined by the county assessor. Local taxing units—such as the county, cities or towns, school corporations, and other special districts—adopt budgets that produce tax rates. The sum of the rates that apply to a specific tax district forms the combined local property tax rate. The assessed value is multiplied by this combined rate to estimate annual property tax.",
     "examples": "Two properties with the same assessed value can have different estimated taxes if they are located in different tax districts within Lake County. Different combinations of local taxing units result in different combined rates.",
-    "limitations": "This tool provides an estimate only. Lake County does not have a single uniform property tax rate. Combined local rates vary by tax district and by year, and statutory tax caps, credits, exemptions, or parcel-specific adjustments are not deterministically modeled. Actual tax bills may differ from this estimate."
+    "limitations": "The figures shown here represent a non-official estimate derived from user-entered data. Lake County does not have a single uniform property tax rate. Combined local rates vary by tax district and by year, and statutory tax caps, credits, exemptions, or parcel-specific adjustments are not deterministically modeled. Actual tax bills may differ from this estimate."
   },
   "faq": [
     { "q": "How is property tax calculated in Lake County, Indiana?", "a": "The estimate is based on assessed value multiplied by a combined local property tax rate for the applicable tax district." },
@@ -2808,7 +2804,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "sections": {
     "howItWorks": "Property tax in Lexington County is calculated by determining a property’s market value and applying the assessment ratio required under South Carolina law to arrive at assessed value. Local taxing authorities publish millage rates by tax district, which are aggregated into a combined local rate. The assessed value is multiplied by this combined rate to estimate annual property tax before credits or relief.",
     "examples": "Two properties with the same market value can have different estimated taxes if they are assigned to different tax districts within Lexington County. Differences in assessment ratios by property class or in district millage rates affect the combined rate applied.",
-    "limitations": "This tool provides an estimate only. Lexington County does not apply a single uniform millage rate, and the correct combined rate depends on the parcel’s tax district and the applicable tax year. Assessment ratios vary by property class, and exemptions, credits, relief programs, or special agreements are not deterministically modeled. Actual tax bills may differ from this estimate."
+    "limitations": "This calculation offers an approximate projection of property tax based on the inputs provided. Lexington County does not apply a single uniform millage rate, and the correct combined rate depends on the parcel’s tax district and the applicable tax year. Assessment ratios vary by property class, and exemptions, credits, relief programs, or special agreements are not deterministically modeled. Actual tax bills may differ from this estimate."
   },
   "faq": [
     { "q": "How is property tax calculated in Lexington County, South Carolina?", "a": "The estimate is based on assessed value derived from market value using statutory assessment ratios, multiplied by the combined local millage rate for the property’s tax district." },
@@ -2870,7 +2866,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "intro": "This Marin County property tax calculator provides an estimate of annual property taxes based on assessed value and a combined property tax rate. Property taxes in Marin County follow California’s statewide framework and vary by parcel and tax rate area.",
   "sections": {
     "howItWorks": "Property taxes in Marin County are calculated using the assessed value established under California’s acquisition-value system. A statewide base rate applies, with additional voter-approved debt rates determined by the specific tax rate area that applies to the parcel. The calculator estimates tax by applying a single combined rate to the assessed value.",
-    "examples": "If a parcel’s assessed value is entered and a combined property tax rate is applied, the estimated tax is calculated by multiplying the assessed value by that rate. The applicable combined rate depends on the tax rate area assigned to the property.",
+"examples": "When a property in Marin County changes ownership, a new base year value is established for assessment purposes. If that base value is 810,000, the constitutional 1 percent levy would generate 8,100 before any locally approved bonded indebtedness is included. Annual increases are generally limited by statute until another reassessment event occurs.",
     "limitations": "This calculator provides an estimate only. Property tax outcomes in Marin County vary by tax rate area, voter-approved debt, and parcel-specific charges. Direct assessments and exemptions are not fully reflected, and the actual tax bill may differ from the estimate."
   },
   "faq": [
@@ -3022,7 +3018,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     examples:
       "If a property has an assessed value and is subject to county, town, school district, and special district levies, the estimate is calculated by multiplying the assessed value by the combined local property tax rate applicable to that parcel.",
     limitations:
-      "This tool provides an estimate only. In Nassau County, effective tax rates vary by parcel because different towns, school districts, villages, and special districts apply their own levies. Exemptions, assessment reviews, and district-specific charges are not automatically included.",
+      "The results generated by this calculator are intended as a general estimate only. In Nassau County, effective tax rates vary by parcel because different towns, school districts, villages, and special districts apply their own levies. Exemptions, assessment reviews, and district-specific charges are not automatically included.",
   },
   faq: [
     {
@@ -3061,7 +3057,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     examples:
       "If a property has an assessed value and is subject to county units, a school district, and one or more special districts, the estimate is calculated by multiplying the assessed value by the combined local property tax rate applicable to that parcel.",
     limitations:
-      "This tool provides an estimate only. In Nueces County, effective tax rates and exemptions vary by taxing unit and by parcel. City boundaries, school districts, and special districts can change the combined rate, and exemptions may be granted differently by each unit.",
+      "This estimator provides a simplified calculation based on the value and rate entered. In Nueces County, effective tax rates and exemptions vary by taxing unit and by parcel. City boundaries, school districts, and special districts can change the combined rate, and exemptions may be granted differently by each unit.",
   },
   faq: [
     {
@@ -3089,6 +3085,1505 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     canonicalPath: "/tools/property-tax/nueces-county-texas",
   },
 },
+
+"US-NY-ONONDAGA-COUNTY": {
+  "h1": "Onondaga County property tax calculator 2026",
+  "intro": "This Onondaga County property tax calculator provides an estimated property tax based on a parcel’s assessed value and combined local property tax rates. Property taxes in Onondaga County are determined by local assessing units and multiple taxing jurisdictions, so actual tax bills may differ depending on location and applicable exemptions.",
+  "sections": {
+    "howItWorks": "In Onondaga County, each town and the City of Syracuse determines the assessed value of property and places it on the local assessment roll. The county itself does not perform assessments. Property tax is generally calculated by multiplying the taxable assessed value by the applicable tax rates per $1,000 of assessed value.\n\nA typical parcel may be subject to several separate tax components, including county tax, town or city tax, school district tax, and in some cases village or special district taxes. These rates are set by the relevant local governments and school districts. The calculator combines user-provided rates and applies them to the assessed value to estimate total annual property tax.",
+    "examples": "For example, if a property has an assessed value of 200,000 and the combined local property tax rate equals 30 per $1,000 of assessed value, the estimated annual property tax would be 6,000. If additional village or special district rates apply, those amounts would increase the total estimate.\n\nBecause different towns, cities, school districts, and special districts within Onondaga County have different rates, the combined local property tax rate must be based on the specific parcel location.",
+    "limitations": "This calculator provides an estimated property tax only. Actual tax bills depend on the parcel’s official taxable assessed value as shown on the assessment roll, applicable exemptions under New York law, and the specific rates adopted by the county, municipality, school district, and any special districts.\n\nEqualization rates are used by the county for apportionment purposes, but individual tax bills are based on the taxable assessed value and the rates applicable to the parcel’s jurisdiction. Special assessments or district charges may apply and are not automatically included unless added to the combined local property tax rate. Always verify final amounts with official county or local tax authorities."
+  },
+  "faq": [
+    { "q": "Is property tax in Onondaga County based on assessed value or market value?", "a": "Property taxes are based on the assessed value determined by the local assessing unit. Equalization rates measure the relationship between assessed value and full market value for apportionment purposes, but individual tax calculations use the taxable assessed value." },
+    { "q": "What tax rates apply to a property in Onondaga County?", "a": "A property may be subject to county, town or city, school district, and possibly village or special district tax rates. The total annual property tax is based on the combined local property tax rate applicable to the parcel." },
+    { "q": "Do exemptions affect property tax in Onondaga County?", "a": "Yes. Applicable exemptions reduce the taxable assessed value before tax rates are applied. The type and amount of exemption depend on eligibility under New York Real Property Tax Law and local adoption." },
+    { "q": "Why can two similar properties have different tax bills?", "a": "Differences in location, school district, village status, special districts, assessed value, and exemptions can all affect the combined local property tax rate and the resulting tax bill." }
+  ],
+  "meta": {
+    "title": "Onondaga County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Onondaga County property tax using assessed value and combined local property tax rates, including county, town or city, and school district components.",
+    "canonicalPath": "/tools/property-tax/onondaga-county-new-york"
+  }
+},
+
+"US-FL-OSCEOLA-COUNTY": {
+  "h1": "Osceola County property tax calculator 2026",
+  "intro": "This Osceola County property tax calculator provides an estimated property tax based on a parcel’s taxable assessed value and the combined local property tax rate. Property taxes in Osceola County are calculated using millage rates adopted by multiple taxing authorities, so actual tax bills may differ depending on location and eligibility for exemptions.",
+  "sections": {
+    "howItWorks": "In Osceola County, property taxes are computed on the taxable value of the property. Taxable value is derived from the assessed value after applicable exemptions are applied under Florida law. The final tax is calculated by multiplying the taxable value by the millage rates adopted by each taxing authority.\n\nMultiple taxing authorities may apply to a single parcel, including the county government, a municipality if the property is within city limits, the school board, and independent or special districts. Each authority sets its own millage rate, and the combined local property tax rate determines the estimated annual tax.",
+    "examples": "For example, if a property has a taxable value of 250,000 and the combined local millage rate equals 20 mills, the estimated property tax would be 5,000. If the parcel is located within a municipality or special district with additional millage, the combined local property tax rate would increase and so would the estimated annual amount.\n\nBecause millage rates vary by taxing authority and parcel location, the correct combined local property tax rate must reflect the specific jurisdictions that apply to the property.",
+    "limitations": "This calculator provides an estimated property tax only. Actual tax bills depend on the officially determined taxable value shown on the assessment roll and the millage rates adopted by each applicable taxing authority.\n\nMillage rates vary by municipality, school district, and special district, and certain exemptions are based on eligibility requirements. A single uniform countywide property tax rate does not apply to all parcels. Always verify final amounts using official notices and county or state resources."
+  },
+  "faq": [
+    { "q": "Is property tax in Osceola County based on market value?", "a": "Property taxes are based on the taxable assessed value, which is derived from the assessed value after applicable exemptions. Market or just value is used in the assessment process but taxes are computed on taxable value." },
+    { "q": "What is a millage rate?", "a": "A millage rate represents the amount of tax per 1,000 of taxable value. The property tax is calculated by dividing taxable value by 1,000 and multiplying by the applicable millage rates." },
+    { "q": "Do all properties in Osceola County pay the same rate?", "a": "No. The combined local property tax rate depends on the specific taxing authorities that apply to the parcel, including county, municipal, school board, and special districts." },
+    { "q": "Are exemptions included in the calculation?", "a": "Exemptions reduce the assessed value before taxes are calculated. Eligibility-based exemptions, such as homestead or senior exemptions, affect the taxable value used in the estimate." }
+  ],
+  "meta": {
+    "title": "Osceola County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Osceola County property tax using taxable assessed value and combined local millage rates from county, municipal, school, and special district authorities.",
+    "canonicalPath": "/tools/property-tax/osceola-county-florida"
+  }
+},
+
+"US-TX-PARKER-COUNTY": {
+  "h1": "Parker County property tax calculator 2026",
+  "intro": "This Parker County property tax calculator provides an estimated property tax based on market value and a combined local property tax rate. In Texas, property is generally appraised at market value, and the total tax depends on the overlapping taxing units that apply to a specific parcel.",
+  "sections": {
+    "howItWorks": "Property in Parker County is appraised at market value as of January 1 under the Texas Property Tax Code. The appraised value may be reduced by applicable exemptions or statutory limitations before tax is calculated. The estimated property tax is determined by multiplying the taxable value by the combined local property tax rate, which reflects the sum of rates adopted by the county, any applicable city, independent school district, and special districts.",
+    "examples": "If a property has a market value of 300,000 and the combined local property tax rate is 0.02 (2%), the estimated property tax would be 6,000. If exemptions reduce the taxable value, the calculation would apply the same combined rate to the reduced amount. The exact rate depends on the specific taxing units that overlap the property’s location within Parker County.",
+    "limitations": "This calculator provides an estimated property tax and does not represent an official tax bill. Actual tax bills may differ due to local-option exemptions, residence homestead status, appraisal caps, special district levies, or changes in adopted rates. Because tax rates vary by city, school district, and other local jurisdictions, users must enter the correct combined local property tax rate for their parcel."
+  },
+  "faq": [
+    { "q": "Is property in Parker County assessed at market value?", "a": "Yes. Texas law requires property to be appraised at market value as of January 1, subject to applicable limitations and exemptions." },
+    { "q": "Is there a fixed assessment ratio in Parker County?", "a": "No separate fractional assessment ratio is applied. Taxable value is generally based on market value, with statutory reductions or exemptions applied where applicable." },
+    { "q": "Why does the property tax rate vary within Parker County?", "a": "Different parcels are subject to different combinations of taxing units, such as the county, cities, school districts, and special districts. Each unit adopts its own rate, and the total is the combined local property tax rate." },
+    { "q": "Does this calculator show my exact tax bill?", "a": "No. The result is an estimated property tax based on the values and rate entered. Actual tax bills may differ depending on final adopted rates, exemptions, and parcel-specific factors." }
+  ],
+  "meta": {
+    "title": "Parker County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate your Parker County, Texas property tax based on market value and a combined local property tax rate. This tool provides an estimated property tax, not an official bill.",
+    "canonicalPath": "/tools/property-tax/parker-county-texas"
+  }
+},
+
+"US-IL-PEORIA-COUNTY": {
+  "h1": "Peoria County property tax calculator 2026",
+  "intro": "This Peoria County property tax calculator provides an estimated property tax based on fair market value and a combined local property tax rate. In Illinois counties other than Cook County, real property is generally assessed at 33.33% of market value before local tax rates are applied.",
+  "sections": {
+    "howItWorks": "In Peoria County, most real property is assessed at one-third of its fair market value. The assessed value is used to calculate the taxable base, subject to any applicable exemptions and state equalization. The estimated property tax is determined by multiplying the assessed value by the combined local property tax rate, which reflects the sum of rates adopted by overlapping taxing districts such as the county, municipalities, school districts, and other special districts.",
+    "examples": "If a property has a market value of 300,000, the assessed value would generally be 99,990 using the 33.33% assessment level. If the combined local property tax rate is 0.025 (2.5%), the estimated property tax would be 2,499.75. The actual combined rate depends on the specific taxing districts that apply to the parcel.",
+    "limitations": "This calculator provides an estimated property tax and does not represent an official tax bill. Actual tax bills may differ due to district-specific rates, state equalization factors, homestead or senior exemptions, and other parcel-level adjustments. Because tax rates vary by location and exemptions are eligibility-based, users must enter the correct combined local property tax rate for their property."
+  },
+  "faq": [
+    { "q": "How is property assessed in Peoria County?", "a": "Most real property is assessed at 33.33% of its fair market value, consistent with Illinois law for counties other than Cook County." },
+    { "q": "Is the property tax rate the same across Peoria County?", "a": "No. The total rate depends on the combination of taxing districts that overlap the property, including the county, municipality, school districts, and other special districts." },
+    { "q": "Are homestead exemptions included in this calculation?", "a": "This calculator does not automatically apply exemptions. Homestead and related exemptions are eligibility-based and must be considered when determining taxable value." },
+    { "q": "Does this calculator show my exact property tax bill?", "a": "No. The result is an estimated property tax based on the values and rate entered. The actual tax bill may differ depending on final certified rates and parcel-specific factors." }
+  ],
+  "meta": {
+    "title": "Peoria County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate your Peoria County, Illinois property tax based on fair market value and a combined local property tax rate. This tool provides an estimated property tax, not an official bill.",
+    "canonicalPath": "/tools/property-tax/peoria-county-illinois"
+  }
+},
+
+"US-MD-PRINCE-GEORGES-COUNTY": {
+  "h1": "Prince George's County property tax calculator 2026",
+  "intro": "This Prince George's County property tax calculator provides an estimated property tax based on market value and a combined local property tax rate. In Maryland, real property is generally assessed at 100% of full cash value before local and state rates are applied.",
+  "sections": {
+    "howItWorks": "In Prince George's County, real property is assessed at full market value by the Maryland Department of Assessments and Taxation. The assessed value forms the taxable base, subject to any applicable credits or statutory limitations. The estimated property tax is calculated by multiplying the assessed value by the combined local property tax rate, which may include county, municipal, state, and certain special district components depending on the property's location.",
+    "examples": "If a property has a market value of 400,000 and the combined local property tax rate is 0.012 (1.2%), the estimated property tax would be 4,800. If the property is located within an incorporated municipality, the total rate may include both county and municipal components, resulting in a different combined rate.",
+    "limitations": "This calculator provides an estimated property tax and does not represent an official tax bill. Actual tax bills may differ due to municipal rates, state property tax components, special district charges, homestead assessment caps, and eligibility-based property tax credits. Users must enter the correct combined local property tax rate applicable to their parcel."
+  },
+  "faq": [
+    { "q": "How is property assessed in Prince George's County?", "a": "Real property is generally assessed at 100% of its full market value by the Maryland Department of Assessments and Taxation." },
+    { "q": "Does the tax rate vary within Prince George's County?", "a": "Yes. While the county rate is uniform countywide, additional municipal and special district rates may apply depending on the property's location." },
+    { "q": "Are homestead credits included in this calculation?", "a": "This calculator does not automatically apply homestead credits or other eligibility-based tax credits. These adjustments depend on individual qualifications and statutory limits." },
+    { "q": "Is this the same as my official tax bill?", "a": "No. The result is an estimated property tax based on the values and rate entered. The actual tax bill may differ due to final certified rates and property-specific adjustments." }
+  ],
+  "meta": {
+    "title": "Prince George's County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate your Prince George's County, Maryland property tax based on market value and a combined local property tax rate. This tool provides an estimated property tax, not an official bill.",
+    "canonicalPath": "/tools/property-tax/prince-georges-county-maryland"
+  }
+},
+
+"US-VA-PRINCE-WILLIAM-COUNTY": {
+  "h1": "Prince William County property tax calculator 2026",
+  "intro": "This Prince William County property tax calculator provides an estimated property tax based on assessed value and a combined local real estate tax rate. In Virginia, real property is assessed at 100% of fair market value, and local taxes are applied to that assessed amount.",
+  "sections": {
+    "howItWorks": "In Prince William County, real property is assessed at full fair market value in accordance with Virginia law. The assessed value serves as the taxable base. The estimated property tax is calculated by multiplying the assessed value by the combined local real estate tax rate. This combined rate may include the base county real estate tax rate and any applicable special or service district levies.",
+    "examples": "If a property has an assessed value of 500,000 and the combined local real estate tax rate is 0.01 (1%), the estimated property tax would be 5,000. If the property is located within a service district that imposes an additional levy, the total combined rate would be higher, resulting in a larger estimated amount.",
+    "limitations": "This calculator provides an estimated property tax and does not represent an official tax bill. Actual tax bills may differ due to eligibility-based tax relief programs, exemptions for specific groups such as elderly or disabled residents, disabled veterans, or surviving spouses, and the application of special or service district rates. Users must enter the correct combined local real estate tax rate for their property."
+  },
+  "faq": [
+    { "q": "How is property assessed in Prince William County?", "a": "Real property is assessed at 100% of its fair market value, and local real estate taxes are applied to that assessed value." },
+    { "q": "Is there a fixed assessment ratio in Prince William County?", "a": "Yes. Virginia law requires real property to be assessed at full market value, which corresponds to a 100% assessment ratio." },
+    { "q": "Do all properties pay the same tax rate?", "a": "The base county rate applies countywide, but additional special or service district levies may apply depending on the property’s location." },
+    { "q": "Does this calculator include tax relief or exemptions?", "a": "No. The result is an estimated property tax based on the assessed value and rate entered. Eligibility-based relief programs and exemptions are not automatically applied." }
+  ],
+  "meta": {
+    "title": "Prince William County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate your Prince William County, Virginia property tax based on assessed value and a combined local real estate tax rate. This tool provides an estimated property tax, not an official bill.",
+    "canonicalPath": "/tools/property-tax/prince-william-county-virginia"
+  }
+},
+
+"US-WA-PIERCE-COUNTY": {
+  "h1": "Pierce County property tax calculator 2026",
+  "intro": "This Pierce County property tax calculator provides an estimated property tax based on market value and a combined local property tax rate. In Washington, property is assessed at 100% of its true and fair market value before applicable district tax rates are applied.",
+  "sections": {
+    "howItWorks": "In Pierce County, taxable value is based on the assessed value, which reflects 100% of the property’s true and fair market value. Property taxes are calculated using an ad valorem system. The estimated property tax is determined by multiplying the assessed value by the combined local property tax rate. This combined rate may include state, county, city or town, school district, fire protection district, and other special district components depending on the parcel’s location.",
+    "examples": "If a property has an assessed market value of 450,000 and the combined local property tax rate is 0.011 (1.1%), the estimated property tax would be 4,950. The exact rate depends on the specific taxing districts that overlap the property’s location within Pierce County.",
+    "limitations": "This calculator provides an estimated property tax and does not represent an official tax bill. Actual tax bills may differ due to district-specific rates, voter-approved levies, eligibility-based exemptions or deferrals, and valuation adjustments. Because taxing districts vary by parcel, users must enter the correct combined local property tax rate for their property."
+  },
+  "faq": [
+    { "q": "How is property assessed in Pierce County?", "a": "Property is assessed at 100% of its true and fair market value, as required by Washington law." },
+    { "q": "Does the property tax rate vary within Pierce County?", "a": "Yes. The total rate depends on the combination of state and local taxing districts that apply to a specific parcel." },
+    { "q": "Are exemptions included in this calculation?", "a": "No. Exemptions and deferrals are eligibility-based and are not automatically applied in this estimate." },
+    { "q": "Is this the same as my official tax bill?", "a": "No. The result is an estimated property tax based on the values and rate entered. The official tax bill may differ due to parcel-specific factors and final adopted rates." }
+  ],
+  "meta": {
+    "title": "Pierce County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate your Pierce County, Washington property tax based on market value and a combined local property tax rate. This tool provides an estimated property tax, not an official bill.",
+    "canonicalPath": "/tools/property-tax/pierce-county-washington"
+  }
+},
+
+"US-AZ-PIMA-COUNTY": {
+  "h1": "Pima County property tax calculator 2026",
+  "intro": "This calculator provides an estimated property tax for Pima County, Arizona based on net assessed value and a combined local property tax rate. Because tax rates vary by taxing jurisdiction within the county, results are estimates and the actual tax bill may differ.",
+  "sections": {
+    "howItWorks": "In Arizona, property tax is calculated using net assessed value. County assessors determine full cash value and limited property value under state law, then apply statutory assessment ratios and any applicable exemptions to arrive at net assessed value. This calculator assumes you enter the net assessed value shown on your property records. The estimated tax is calculated by multiplying that assessed value by the combined local property tax rate applicable to the parcel.",
+    "examples": "If a property has a net assessed value of 30,000 and the combined local property tax rate is 8 percent, the estimated property tax would be 2,400. The final amount depends on the specific combination of county, municipal, school district, and special district rates that apply to the parcel.",
+    "limitations": "This calculator provides an estimated property tax based on a user-provided combined local property tax rate and an input net assessed value. Pima County property tax rates vary by taxing jurisdiction and rate type, including primary and secondary levies. The actual tax bill may differ due to jurisdiction-specific rates, valuation determinations, statutory assessment rules, and applicable exemptions."
+  },
+  "faq": [
+    { "q": "What value should I enter in this calculator?", "a": "You should enter the net assessed value used for property tax purposes, as shown on your property records or tax statement." },
+    { "q": "Does this calculator determine my assessment ratio?", "a": "No. Assessment ratios and valuation rules are applied by the county assessor. This calculator assumes you already know the net assessed value and estimates tax based on that figure." },
+    { "q": "Is there a single property tax rate for all of Pima County?", "a": "No. Property tax rates in Pima County vary by taxing jurisdiction, including county, city, school district, and special district components." },
+    { "q": "Why is my actual tax bill different from the estimate?", "a": "Actual tax bills reflect the specific combination of primary and secondary rates applicable to the parcel, as well as any qualifying exemptions and valuation determinations. This calculator provides an estimate only." }
+  ],
+  "meta": {
+    "title": "Pima County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate your Pima County property tax using net assessed value and a combined local property tax rate. Results are estimates and actual bills may differ.",
+    "canonicalPath": "/tools/property-tax/pima-county-arizona"
+  }
+},
+
+"US-FL-PINELLAS-COUNTY": {
+  "h1": "Pinellas County property tax calculator 2026",
+  "intro": "This Pinellas County property tax calculator provides an estimated property tax based on taxable value and a combined local property tax rate. In Florida, property taxes are calculated by multiplying a property’s taxable value by the total combined rate set by the applicable taxing authorities.",
+  "sections": {
+    "howItWorks": "In Pinellas County, the Property Appraiser determines a property’s just (market) value and then applies any statutory assessment limitations to arrive at assessed value. Taxable value is calculated by subtracting any applicable exemptions from the assessed value. Ad valorem property taxes are determined by multiplying the taxable value by the combined local property tax rate expressed as a decimal. The combined rate reflects the sum of all applicable taxing authorities, which may include the county, school board, municipality, and special districts.",
+    "examples": "If a property has a taxable value of 250,000 and the combined local property tax rate is 0.015 (1.5%), the estimated property tax would be 3,750. The calculation follows the structure taxable value × decimal rate. The actual combined rate depends on the property’s location and the specific taxing authorities that apply.",
+    "limitations": "This calculator provides an estimate only. In Pinellas County, combined local property tax rates vary depending on the municipality or district in which a property is located, and exemptions such as homestead or other statutory benefits may reduce taxable value. Assessment limitations and individual eligibility factors can significantly affect the final tax amount. The actual tax bill may differ from this estimate."
+  },
+  "faq": [
+    { "q": "How is property tax calculated in Pinellas County?", "a": "Property tax is calculated as taxable value multiplied by the combined local property tax rate expressed as a decimal." },
+    { "q": "What is taxable value?", "a": "Taxable value is the assessed value of a property minus any applicable exemptions. It is the amount used to calculate ad valorem property taxes." },
+    { "q": "What rate should I enter in the calculator?", "a": "Enter the combined local property tax rate as a decimal. For example, 1.5% should be entered as 0.015." },
+    { "q": "Does this calculator match my actual tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs. The actual tax bill may differ depending on parcel-specific rates, exemptions, and assessment adjustments." }
+  ],
+  "meta": {
+    "title": "Pinellas County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate your Pinellas County, Florida property tax based on taxable value and combined local property tax rates. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/pinellas-county-florida"
+  }
+},
+
+"US-FL-POLK-COUNTY": {
+  "h1": "Polk County property tax calculator 2026",
+  "intro": "This Polk County property tax calculator provides an estimated property tax based on taxable value and a combined local property tax rate. In Florida, ad valorem property taxes are calculated by multiplying taxable value by the total rate set by applicable taxing authorities.",
+  "sections": {
+    "howItWorks": "In Polk County, the Property Appraiser determines a property’s assessed value for tax purposes. Taxable value is calculated by subtracting any applicable exemptions from the assessed value. Property taxes are then determined by multiplying the taxable value by the combined local property tax rate expressed as a decimal. The combined rate reflects the total of all applicable taxing authorities, which may include the county, school board, municipalities, and other ad valorem districts depending on the property’s location.",
+    "examples": "If a property has a taxable value of 200,000 and the combined local property tax rate is 0.018 (1.8%), the estimated property tax would be 3,600. The calculation follows the structure taxable value × decimal rate. The exact combined rate depends on the property’s tax code and applicable districts.",
+    "limitations": "This calculator provides an estimate only. In Polk County, millage rates vary by municipality and special district, and exemptions such as homestead and other statutory benefits are eligibility-based. Assessment limitations and parcel-specific tax codes can significantly affect the final tax amount. The actual tax bill may differ from this estimate."
+  },
+  "faq": [
+    { "q": "How is property tax calculated in Polk County?", "a": "Property tax is calculated as taxable value multiplied by the combined local property tax rate expressed as a decimal." },
+    { "q": "What is taxable value?", "a": "Taxable value is the assessed value of a property minus any applicable exemptions. It is the base used to calculate ad valorem property taxes." },
+    { "q": "Is there a single countywide property tax rate?", "a": "No. The total rate depends on the combination of county, school board, municipal, and special district millages that apply to the property." },
+    { "q": "Does this calculator match my actual tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs. The actual tax bill may differ depending on parcel-specific rates, exemptions, and assessment adjustments." }
+  ],
+  "meta": {
+    "title": "Polk County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate your Polk County, Florida property tax based on taxable value and combined local property tax rates. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/polk-county-florida"
+  }
+},
+
+"US-SC-RICHLAND-COUNTY": {
+  "h1": "Richland County property tax calculator 2026",
+  "intro": "This Richland County property tax calculator provides an estimated property tax for property assessed at a 6% ratio. In Richland County, property is appraised at fair market value and taxed according to its classification and the applicable millage rates.",
+  "sections": {
+    "howItWorks": "In Richland County, the Assessor determines the fair market value of property through periodic reassessment and transfers of interest. South Carolina law applies different assessment ratios based on property classification. This calculator models property assessed at the 6% ratio, which generally applies to non-owner-occupied residential, commercial, rental, and other property not qualifying for special 4% treatment. Assessed value is calculated as market value × 0.06. The assessed value is then multiplied by the combined local property tax rate assigned to the parcel’s taxing district. The structure used here is market value × 0.06 × decimal tax rate.",
+    "examples": "If a property assessed at the 6% ratio has a market value of 300,000, the assessed value would be 18,000. If the combined local property tax rate entered is 0.250, the estimated property tax would be 4,500. The combined rate depends on the assigned taxing district and must be entered as a decimal.",
+    "limitations": "This calculator provides an estimate only and models property assessed at the 6% ratio. In Richland County, certain properties, such as qualifying owner-occupied legal residences and some agricultural property, may be assessed at a 4% ratio instead of 6%. Millage rates vary by taxing district and may include county, school, municipal, and special district components. Eligibility-based exemptions and classification status can significantly affect the final tax amount. The actual tax bill may differ from this estimate."
+  },
+  "faq": [
+    { "q": "How is property tax calculated in Richland County?", "a": "Property tax is calculated as assessed value multiplied by the combined local property tax rate for the parcel’s taxing district. Assessed value is determined by applying the applicable assessment ratio to market value." },
+    { "q": "What assessment ratio does this calculator use?", "a": "This calculator uses the 6% assessment ratio, which generally applies to non-owner-occupied and other property not qualifying for special 4% treatment." },
+    { "q": "Are there other assessment ratios in Richland County?", "a": "Yes. South Carolina law provides different assessment ratios based on property classification, including a 4% ratio for qualifying owner-occupied legal residence and certain agricultural property." },
+    { "q": "Does this calculator match my actual tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs and assumes a 6% assessment ratio. The actual tax bill may differ depending on classification, exemptions, and district-specific millage rates." }
+  ],
+  "meta": {
+    "title": "Richland County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Richland County, South Carolina property tax for property assessed at the 6% ratio using market value and combined local millage rates. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/richland-county-south-carolina"
+  }
+},
+
+"US-CA-RIVERSIDE-COUNTY": {
+  "h1": "Riverside County property tax calculator 2026",
+  "intro": "This Riverside County property tax calculator provides an estimated property tax based on assessed value under California’s Proposition 13 framework. In California, property tax is generally limited to 1% of assessed value, plus additional voter-approved local rates.",
+  "sections": {
+    "howItWorks": "In Riverside County, property is assessed under California’s acquisition-value system established by Proposition 13. Assessed value is generally based on the purchase price or value at new construction and may increase by no more than 2% per year unless there is a change in ownership or new construction. Property tax is calculated by multiplying the assessed value by the 1% statewide base rate, plus any additional voter-approved local rates applicable to the property’s Tax Rate Area. The calculation structure is assessed value × total decimal rate.",
+"examples": "In Riverside County, the assessed value used for property tax is typically tied to the property’s acquisition value and may increase within statutory limits each year. If the current assessed value is 690,000, applying the 1 percent general levy would produce 6,900 prior to additional voter-approved obligations. The total effective rate depends on the assigned tax rate area.",
+    "limitations": "This calculator provides an estimate only. In Riverside County, total property tax rates vary by Tax Rate Area due to differing voter-approved bonds and special district charges. The homeowner’s exemption reduces assessed value by 7,000 for qualifying principal residences but requires a filed claim. Supplemental assessments may apply after ownership changes. The actual tax bill may differ from this estimate."
+  },
+  "faq": [
+    { "q": "How is property tax calculated in Riverside County?", "a": "Property tax is calculated by multiplying assessed value by the 1% base rate under Proposition 13, plus any additional voter-approved local rates." },
+    { "q": "What is assessed value under Proposition 13?", "a": "Assessed value is generally based on the property’s purchase price or value at new construction and may increase by no more than 2% per year unless ownership changes." },
+    { "q": "Is there a single countywide property tax rate?", "a": "No. While the 1% base rate applies statewide, additional voter-approved rates vary by Tax Rate Area." },
+    { "q": "Does this calculator match my actual tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs. Actual bills may differ due to exemptions, supplemental assessments, and parcel-specific rate variations." }
+  ],
+  "meta": {
+    "title": "Riverside County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Riverside County, California property tax using assessed value under Proposition 13 and applicable local rates. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/riverside-county-california"
+  }
+},
+
+"US-NC-ROBESON-COUNTY": {
+  "h1": "Robeson County property tax calculator 2026",
+  "intro": "This Robeson County property tax calculator provides an estimated property tax based on assessed value and the county base rate. Property in Robeson County is assessed at 100% of appraised value under North Carolina law. Results reflect the county rate only and do not include municipal or special district taxes that may apply.",
+  "sections": {
+    "howItWorks": "Real property in Robeson County is appraised using market-based methods and assessed at 100% of its appraised value. The county adopts a base property tax rate that is applied to the assessed value. This estimator multiplies the entered assessed value by the county base rate to produce an estimated county property tax amount. Municipal taxes, fire district taxes, and other special assessments are not included in this calculation.",
+    "examples": "If a property has an assessed value of 200,000, the county base rate is applied directly to that value. Using the current county rate, the estimated county portion of property tax is calculated by multiplying the assessed value by the published county rate. Actual totals may be higher if the property is located within a municipality or special district.",
+    "limitations": "This calculator provides an estimate of county property tax only. Robeson County includes municipalities, fire districts, and other special districts that may levy additional property taxes depending on the parcel’s location. Eligibility-based exemptions, such as senior or disabled homestead benefits or present-use valuation programs, are not automatically applied. The actual tax bill may differ based on jurisdictional overlays, exemptions, and official assessments."
+  },
+  "faq": [
+    { "q": "How is property assessed in Robeson County?", "a": "Property is appraised using market-based methods and assessed at 100% of its appraised value under North Carolina rules." },
+    { "q": "Does this calculator include city or fire district taxes?", "a": "No. This estimate reflects only the Robeson County base property tax rate. Municipal, fire district, and other special district taxes may apply depending on location." },
+    { "q": "Are exemptions included in the calculation?", "a": "No. Eligibility-based exemptions, such as senior, disabled, or present-use valuation programs, are not automatically applied in this estimate." },
+    { "q": "Is this the exact amount on my tax bill?", "a": "No. This is an estimated property tax based on assessed value and the county rate. The actual tax bill may differ." }
+  ],
+  "meta": {
+    "title": "Robeson County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Robeson County property tax based on assessed value and the published county base rate. Municipal and special district taxes are not included.",
+    "canonicalPath": "/tools/property-tax/robeson-county-north-carolina"
+  }
+},
+
+"US-CA-SACRAMENTO-COUNTY": {
+  "h1": "Sacramento County property tax calculator 2026",
+  "intro": "This Sacramento County property tax calculator provides an estimated property tax based on assessed value and the 1% general levy applied under California law. Property taxes in Sacramento County are based on assessed value and may include additional voter-approved debt and special assessments depending on the tax rate area. Results shown here reflect the general levy only unless otherwise noted.",
+  "sections": {
+    "howItWorks": "In Sacramento County, property tax is based on assessed value as of the annual lien date. The county levies an ad valorem property tax at a rate of 1% of the full cash value, which functions as the taxable assessed value. This estimator multiplies the assessed value by the 1% general levy. Additional amounts for voter-approved bonds and special assessments may apply based on the property’s tax rate area and are not included in this simplified estimate.",
+"examples": "Sacramento County properties are generally taxed based on an assessed value established at purchase and adjusted annually under California law. If the assessed value is 755,000, the base ad valorem portion calculated at 1 percent equals 7,550 before bonded charges are layered in. This illustrates the constitutional framework rather than a parcel-specific tax bill.",
+    "limitations": "This calculator provides an estimated property tax based on the 1% general levy only. Sacramento County tax bills may also include voter-approved bonded indebtedness and special assessments that vary by tax rate area. Exemptions beyond the standard Homeowners’ Exemption, such as disabled veterans’ exemptions, depend on eligibility and are not automatically applied. The actual tax bill may differ from this estimate."
+  },
+  "faq": [
+    { "q": "How is property tax calculated in Sacramento County?", "a": "Property tax is generally calculated as 1% of the assessed value, plus any voter-approved bonded debt and special assessments that apply in the property’s tax rate area." },
+    { "q": "What is the Homeowners’ Exemption?", "a": "The Homeowners’ Exemption reduces the assessed value of a qualifying owner-occupied principal residence by 7,000 before the tax rate is applied." },
+    { "q": "Does this calculator include bonded debt and special assessments?", "a": "No. This estimate focuses on the 1% general levy. Additional bonded debt and special assessments may apply depending on the tax rate area." },
+    { "q": "Is this the exact amount I will owe?", "a": "No. This is an estimated property tax calculation. The actual tax bill may differ based on official assessments, tax rate area, exemptions, and voter-approved charges." }
+  ],
+  "meta": {
+    "title": "Sacramento County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Sacramento County property tax based on assessed value and the 1% general levy. Does not include voter-approved debt or special assessments.",
+    "canonicalPath": "/tools/property-tax/sacramento-county-california"
+  }
+},
+
+"US-CA-SAN-DIEGO-COUNTY": {
+  "h1": "San Diego County property tax calculator 2026",
+  "intro": "This San Diego County property tax calculator provides an estimated property tax based on assessed value and the 1% general levy applied under California law. Property taxes are calculated using the enrolled assessed value and may include additional voter-approved bonded debt and special district charges depending on the tax rate area. The result shown here reflects the general levy only.",
+  "sections": {
+    "howItWorks": "In San Diego County, property tax is based on the assessed value determined by the County Assessor. Under California’s constitutional framework, the general property tax rate is 1% of assessed value. This estimator multiplies the entered assessed value by 0.01 to calculate the estimated general levy portion. Additional voter-approved debt rates and special district charges may apply based on the property’s tax rate area.",
+"examples": "For a San Diego County parcel assessed at 920,000, the statewide 1 percent general levy would produce 9,200 as the starting point of the tax calculation. Additional voter-approved debt may apply depending on the property’s tax rate area. The estimator reflects the assessed value structure established under California’s constitutional limits.",
+    "limitations": "This calculator estimates property tax using only the 1% general levy. San Diego County property tax bills may include voter-approved bonded debt and special district charges that vary by tax rate area. Eligibility-based exemptions, such as homeowners or disabled veterans exemptions, are not automatically applied. The actual tax bill may differ from this estimate."
+  },
+  "faq": [
+    { "q": "How is property tax calculated in San Diego County?", "a": "Property tax is generally calculated as 1% of the assessed value, plus any voter-approved bonded debt and special district charges that apply in the property’s tax rate area." },
+    { "q": "Does this calculator include special district taxes?", "a": "No. This estimate reflects the 1% general levy only. Additional bonded debt and special district charges may apply depending on location." },
+    { "q": "Are exemptions included in this estimate?", "a": "No. Eligibility-based exemptions such as homeowners or disabled veterans exemptions are not automatically applied in this calculation." },
+    { "q": "Is this the exact amount on my property tax bill?", "a": "No. This is an estimated property tax based on assessed value and the general levy. The actual tax bill may differ." }
+  ],
+  "meta": {
+    "title": "San Diego County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate San Diego County property tax using assessed value and the 1% general levy. Does not include bonded debt or special district charges.",
+    "canonicalPath": "/tools/property-tax/san-diego-county-california"
+  }
+},
+
+"US-CA-SAN-JOAQUIN-COUNTY": {
+  "h1": "San Joaquin County property tax calculator 2026",
+  "intro": "This San Joaquin County property tax calculator provides an estimated property tax based on assessed value and the 1% general levy applied under California law. Property in San Joaquin County is taxed at the state-mandated 1% of assessed value, with additional voter-approved charges that may vary by tax rate area. The estimate shown here reflects the general levy only.",
+  "sections": {
+    "howItWorks": "In San Joaquin County, property tax is based on the assessed value enrolled by the County Assessor. Under California’s constitutional framework, secured property is generally taxed at 1% of assessed value. This estimator multiplies the entered assessed value by 0.01 to calculate the estimated general levy portion. Additional voter-approved bonded debt and special district charges may apply depending on the property’s tax rate area.",
+"examples": "In San Joaquin County, property tax begins with the assessed value recorded by the County Assessor under the Proposition 13 system. If that assessed value is 605,000, the 1 percent general levy would equal 6,050 before considering local bonded indebtedness. Differences between tax rate areas may cause the final effective rate to vary.",
+    "limitations": "This calculator estimates property tax using only the 1% general levy. San Joaquin County property tax bills may also include voter-approved debt and special district charges that vary by tax rate area. Exemptions, such as the Homeowners’ Exemption and other eligibility-based programs, are not automatically applied in this estimate. The actual tax bill may differ from this calculation."
+  },
+  "faq": [
+    { "q": "How is property tax calculated in San Joaquin County?", "a": "Property tax is generally calculated as 1% of the assessed value, plus any voter-approved bonded debt and special district charges that apply in the property’s tax rate area." },
+    { "q": "Does this calculator include special district taxes?", "a": "No. This estimate reflects only the 1% general levy. Additional bonded debt and special district charges may apply depending on location." },
+    { "q": "Are exemptions included in this estimate?", "a": "No. Eligibility-based exemptions such as the Homeowners’ Exemption are not automatically applied in this calculation." },
+    { "q": "Is this the exact amount on my property tax bill?", "a": "No. This is an estimated property tax based on assessed value and the general levy. The actual tax bill may differ." }
+  ],
+  "meta": {
+    "title": "San Joaquin County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate San Joaquin County property tax using assessed value and the 1% general levy. Does not include bonded debt or special district charges.",
+    "canonicalPath": "/tools/property-tax/san-joaquin-county-california"
+  }
+},
+
+"US-CA-SAN-MATEO-COUNTY": {
+  "h1": "San Mateo County property tax calculator 2026",
+  "intro": "This San Mateo County property tax calculator provides an estimated property tax based on assessed value and the general 1% levy under California law. Property tax is typically calculated as 1% of the assessed value, plus voter-approved bonded debt and special assessments that vary by tax rate area. The result shown here reflects the 1% general levy only.",
+  "sections": {
+    "howItWorks": "In San Mateo County, property tax is based on the assessed value determined by the County Assessor. Under the statewide framework, property is typically taxed at 1% of assessed value. This estimator multiplies the entered assessed value by 0.01 to calculate the estimated general levy portion. Additional voter-approved bonds and special assessments may apply depending on the property’s tax rate area.",
+"examples": "A parcel in San Mateo County is placed into a defined tax rate area that determines which local bonded indebtedness and district levies apply in addition to the statewide 1 percent base rate. Two homes with identical assessed values may therefore generate different effective rates if they fall within different tax rate areas.",
+    "limitations": "This calculator estimates property tax using only the 1% general levy. San Mateo County property tax bills may include voter-approved bonded debt and special district charges that vary by tax rate area and are not included here. Eligibility-based exemptions, such as the homeowners’ exemption, are not automatically applied. The actual tax bill may differ from this estimate."
+  },
+  "faq": [
+    { "q": "How is property tax calculated in San Mateo County?", "a": "Property tax is generally calculated as 1% of the assessed value, plus any voter-approved bonded debt and special assessments that apply in the property’s tax rate area." },
+    { "q": "Does this calculator include special assessments?", "a": "No. This estimate reflects only the 1% general levy. Additional bonded debt and special assessments may apply depending on location." },
+    { "q": "Are exemptions included in this estimate?", "a": "No. Eligibility-based exemptions such as the homeowners’ exemption are not automatically applied in this calculation." },
+    { "q": "Is this the exact amount on my property tax bill?", "a": "No. This is an estimated property tax based on assessed value and the general levy. The actual tax bill may differ." }
+  ],
+  "meta": {
+    "title": "San Mateo County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate San Mateo County property tax using assessed value and the 1% general levy. Does not include bonded debt or special assessments.",
+    "canonicalPath": "/tools/property-tax/san-mateo-county-california"
+  }
+},
+
+"US-IL-SANGAMON-COUNTY": {
+  "h1": "Sangamon County property tax calculator 2026",
+  "intro": "This Sangamon County property tax calculator estimates property tax using fair market value, the statutory 33.33% assessment ratio, and a combined local tax rate. Illinois property taxes are applied to equalized assessed value (EAV). In this model, EAV is represented by applying the statutory one-third assessment ratio directly to market value.",
+  "sections": {
+    "howItWorks": "In Sangamon County, property tax begins with fair market value. Under Illinois law, most property is assessed at one-third (33.33%) of market value. In this calculator, the equalized assessed value (EAV) is represented by multiplying fair market value by 0.3333. The result is then multiplied by the applicable combined local property tax rate (entered as a decimal) to estimate property tax.",
+    "examples": "If a property has a fair market value of 300,000, the assessed value used in this model is 300,000 × 0.3333 = approximately 99,990. If the combined local rate is entered as 0.085 (8.5%), the estimated property tax would be 99,990 × 0.085.",
+    "limitations": "Tax rates in Sangamon County vary by tax code and taxing district, including county, township, school, municipal, and special districts. This calculator requires a user-provided combined decimal rate and does not determine the correct tax code automatically. Exemptions such as homestead or senior exemptions are eligibility-based and are not applied in this simplified model. Actual tax bills may differ."
+  },
+  "faq": [
+    { "q": "What assessment ratio is used in Sangamon County?", "a": "Most property is assessed at one-third (33.33%) of fair market value under Illinois law." },
+    { "q": "How does this calculator represent EAV?", "a": "In this model, equalized assessed value is represented by applying the statutory 33.33% assessment ratio directly to fair market value." },
+    { "q": "Why do I need to enter a tax rate?", "a": "Property tax rates vary by tax code and taxing district. There is no single combined countywide rate that applies to all parcels." },
+    { "q": "Is this the exact tax bill amount?", "a": "No. This is an estimate based on statutory assessment rules and a user-provided rate. The official tax bill may differ." }
+  ],
+  "meta": {
+    "title": "Sangamon County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Sangamon County property tax using fair market value, the 33.33% assessment ratio, and a combined local tax rate.",
+    "canonicalPath": "/tools/property-tax/sangamon-county-illinois"
+  }
+},
+
+"US-CA-SANTA-BARBARA-COUNTY": {
+  "h1": "Santa Barbara County property tax calculator 2026",
+  "intro": "This Santa Barbara County property tax calculator estimates property tax using assessed value and the general 1% levy under California law. Property taxes are generally calculated as 1% of assessed value, with additional voter-approved bonded debt and special assessments that vary by tax rate area. The estimate shown here reflects the 1% general levy only.",
+  "sections": {
+    "howItWorks": "In Santa Barbara County, property tax is based on the assessed value enrolled by the County Assessor. Under California’s constitutional framework, the general property tax rate is 1% of assessed value. This estimator multiplies the entered assessed value by 0.01 to calculate the estimated general levy portion. Additional voter-approved bonded debt and special assessments may apply depending on the property’s tax rate area.",
+"examples": "In Santa Barbara County, the final property tax rate depends on the parcel’s assigned tax rate area, which reflects overlapping taxing jurisdictions and voter-approved debt. Even where the assessed value is the same, the effective total rate may vary based on the combination of local obligations attached to that location.",
+    "limitations": "This calculator estimates property tax using only the 1% general levy. Santa Barbara County tax bills may include voter-approved bonds and special district charges that vary by tax rate area. The homeowners’ exemption reduces assessed value by 7,000 for qualifying principal residences but is not automatically applied in this model. Other exemptions and relief programs are eligibility-based. The actual tax bill may differ from this estimate."
+  },
+  "faq": [
+    { "q": "How is property tax calculated in Santa Barbara County?", "a": "Property tax is generally calculated as 1% of assessed value, plus any voter-approved bonded debt and special assessments that apply in the property’s tax rate area." },
+    { "q": "Does this calculator include special district taxes?", "a": "No. This estimate reflects only the 1% general levy. Additional bonded debt and special district charges may apply depending on location." },
+    { "q": "Is the homeowners’ exemption included?", "a": "No. The homeowners’ exemption reduces assessed value by 7,000 for qualifying principal residences but is not automatically applied in this simplified estimate." },
+    { "q": "Is this the exact amount on my property tax bill?", "a": "No. This is an estimate based on assessed value and the general levy. The official tax bill may differ." }
+  ],
+  "meta": {
+    "title": "Santa Barbara County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Santa Barbara County property tax using assessed value and the 1% general levy. Does not include bonded debt or special district charges.",
+    "canonicalPath": "/tools/property-tax/santa-barbara-county-california"
+  }
+},
+
+"US-CA-SANTA-CLARA-COUNTY": {
+  "h1": "Santa Clara County property tax calculator 2026",
+  "intro": "This Santa Clara County property tax calculator estimates property tax based on assessed value and the general 1% levy under California law. Property taxes are calculated using the enrolled assessed value under Proposition 13, plus additional voter-approved bonded debt and special assessments that vary by tax rate area. The estimate shown here reflects the 1% general levy only.",
+  "sections": {
+    "howItWorks": "In Santa Clara County, property tax is based on the assessed value enrolled by the County Assessor. Under Proposition 13, a property’s base year value is generally its market value at acquisition, adjusted annually by up to 2% unless there is a change in ownership or new construction. The general ad valorem tax rate is 1% of assessed value. This estimator multiplies the entered assessed value by 0.01 to calculate the estimated general levy portion. Additional bonded debt and special assessments may apply depending on the property’s tax rate area.",
+"examples": "Santa Clara County properties are categorized into specific tax rate areas that combine the constitutional 1 percent levy with any locally authorized bonded debt. If two parcels share the same assessed value but lie in different rate areas, the calculated annual tax may differ due to distinct district components.",
+    "limitations": "Santa Clara County is divided into hundreds of tax rate areas, each with different combinations of bonded debt and special assessments. This calculator estimates only the 1% general levy and does not determine the correct tax rate area or additional charges. Exemptions such as the homeowners’ exemption or disabled veteran exemption are eligibility-based and are not automatically applied. The actual tax bill may differ from this estimate."
+  },
+  "faq": [
+    { "q": "How is property tax calculated in Santa Clara County?", "a": "Property tax is generally calculated as 1% of the assessed value under Proposition 13, plus any voter-approved bonded debt and special assessments that apply in the property’s tax rate area." },
+    { "q": "Does this calculator include bonded debt or special assessments?", "a": "No. This estimate reflects only the 1% general levy. Additional voter-approved bonds and special assessments may apply depending on location." },
+    { "q": "Are exemptions included in this estimate?", "a": "No. Eligibility-based exemptions such as the homeowners’ exemption are not automatically applied in this calculation." },
+    { "q": "Is this the exact property tax bill?", "a": "No. This is an estimate based on assessed value and the 1% general levy. The official tax bill may differ." }
+  ],
+  "meta": {
+    "title": "Santa Clara County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Santa Clara County property tax using assessed value and the 1% general levy. Does not include bonded debt or special assessments.",
+    "canonicalPath": "/tools/property-tax/santa-clara-county-california"
+  }
+},
+
+"US-CA-SANTA-CRUZ-COUNTY": {
+  "h1": "Santa Cruz County property tax calculator 2026",
+  "intro": "This Santa Cruz County property tax calculator provides an estimated property tax based on assessed value and the 1% general levy. Santa Cruz County property tax bills also include additional voter-approved rates and special charges that vary by tax rate area, so the actual tax bill may differ from this estimate.",
+  "sections": {
+    "howItWorks": "Santa Cruz County property taxes are applied to the assessed value enrolled for the property. The county’s tax rate area system determines which additional voter-approved rates and special charges apply. The county tax rate book shows a general tax rate of 1.000000 in tax rate area tables, with additional lines for items such as city bonds, school district bonds, and community college district bonds. This calculator estimates the general levy portion by multiplying the assessed value by 0.01.",
+"examples": "For Santa Cruz County parcels, the total effective property tax rate is derived from the tax rate area assigned to the property. This structure integrates the statewide general levy with voter-approved district charges, meaning properties with similar assessed values can yield different total amounts depending on their geographic tax area.",
+    "limitations": "Santa Cruz County publishes detailed tax rates by tax rate area, and combined rates vary across the county depending on city, school district, and other district bonds and charges. This calculator does not determine the property’s tax rate area or include those additional components. Exemptions are eligibility-based and are not automatically applied. The actual tax bill may differ from this estimate."
+  },
+  "faq": [
+    { "q": "How is property tax calculated in Santa Cruz County?", "a": "Property tax is calculated by applying tax rates to the property’s assessed value. The base general levy is 1% of assessed value, and additional voter-approved rates and charges may apply depending on the tax rate area." },
+    { "q": "Does this calculator include city or school bond rates?", "a": "No. This estimate includes only the 1% general levy. Bond rates and other charges vary by tax rate area and are not included." },
+    { "q": "Why can two properties in the same county have different tax rates?", "a": "Santa Cruz County uses tax rate areas that reflect different combinations of taxing agencies, voter-approved bonds, and charges. The applicable combined rate depends on the property’s tax rate area." },
+    { "q": "Is this the exact amount on my property tax bill?", "a": "No. This is an estimate based on assessed value and the 1% general levy. The actual tax bill may differ due to additional rates, charges, and exemptions." }
+  ],
+  "meta": {
+    "title": "Santa Cruz County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Santa Cruz County property tax using assessed value and the 1% general levy. Actual bills may differ due to tax rate area bonds and charges.",
+    "canonicalPath": "/tools/property-tax/santa-cruz-county-california"
+  }
+},
+
+"US-IA-SCOTT-COUNTY": {
+  "h1": "Scott County property tax calculator 2026",
+  "intro": "This Scott County property tax calculator provides an estimated annual property tax based on taxable value and a combined local property tax rate. In Iowa, taxable value is derived from assessed value using state-ordered rollback percentages, then reduced by any applicable exemptions or credits before levy rates are applied.",
+  "sections": {
+    "howItWorks": "Scott County property tax is based on taxable value, not the full assessed value shown on an assessment notice. The county’s process applies state-ordered rollback percentages to assessed value to arrive at a taxable amount, then applies levy rates set by the relevant taxing districts (county, cities, schools, and other districts). Because taxing districts and levies differ across locations, the effective combined rate can vary materially from one property to another.",
+    "examples": "If two properties have the same taxable value but sit in different taxing districts, their estimated tax can differ because the combined levy rates are not necessarily the same. The same assessed value can also translate into different taxable values when rollback treatment differs by property class and when exemptions or credits apply.",
+    "limitations": "This is an estimate, not an official tax bill. Scott County levies are determined by multiple taxing districts, and the combined rate can vary by location and local measures. Rollback percentages, exemptions, and credits depend on statewide rules and eligibility, so actual results may differ from this simplified estimate."
+  },
+  "faq": [
+    { "q": "Is this an official Scott County tax bill amount?", "a": "No. This calculator provides an estimated annual property tax based on taxable value and a combined local property tax rate." },
+    { "q": "Why can the property tax rate differ within Scott County?", "a": "Scott County includes multiple taxing districts, each with its own levy. The combined local rate can vary based on the districts that apply to a specific property." },
+    { "q": "What value should be used for the calculation?", "a": "The estimate is based on taxable value. In Iowa, taxable value is derived from assessed value using state-ordered rollback percentages and then reduced by applicable exemptions or credits." },
+    { "q": "Do exemptions or credits change the estimate?", "a": "They can. Exemptions and credits reduce the taxable amount or the net tax, and eligibility rules may vary, so this estimate may not reflect every situation." }
+  ],
+  "meta": {
+    "title": "Scott County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Scott County, Iowa property tax using taxable value and a combined local levy rate. Results are estimates and may differ from an actual tax bill.",
+    "canonicalPath": "/tools/property-tax/scott-county-iowa"
+  }
+},
+
+"US-KS-SEDGWICK-COUNTY": {
+  "h1": "Sedgwick County property tax calculator 2026",
+  "intro": "This Sedgwick County property tax calculator provides an estimated annual property tax for residential property based on market value and the Kansas residential assessment rate of 11.5%. The calculation applies the statutory residential assessment rate to market value before applying a combined local mill levy.",
+  "sections": {
+    "howItWorks": "Residential property in Sedgwick County is appraised at market value as of January 1. Kansas law applies a residential assessment rate of 11.5% to that market value to determine assessed value. Property tax is then estimated by applying the combined local mill levy to the assessed value. The total mill levy reflects rates set by the county, the city where the property is located, the relevant school district, and other local taxing subdivisions, which means the combined rate can vary by location within the county.",
+    "examples": "If a residential property has a market value of 300,000, the assessed value is calculated by multiplying that amount by 11.5%. The combined local mill levy is then applied to that assessed value to estimate annual property tax. Two residential properties with the same market value may have different estimated taxes if they are located in different cities or school districts within Sedgwick County.",
+    "limitations": "This is an estimated residential property tax calculation, not an official tax bill. It models only residential property using the 11.5% assessment rate and does not apply commercial, industrial, or other property class assessment rates. The combined mill levy varies by city, school district, and special district, and exemptions or special valuation programs may apply depending on eligibility. Actual tax amounts may differ."
+  },
+  "faq": [
+    { "q": "Does this calculator apply to all property types?", "a": "No. This calculator models residential property only and applies the 11.5% residential assessment rate set under Kansas law." },
+    { "q": "Is this the exact amount shown on my tax bill?", "a": "No. This tool provides an estimated annual residential property tax based on market value and a combined local mill levy." },
+    { "q": "Why can residential tax amounts differ within Sedgwick County?", "a": "Different properties are located in different cities, school districts, and special districts. Each of these taxing entities sets its own mill levy, which affects the combined rate applied to assessed value." },
+    { "q": "Are exemptions included in this estimate?", "a": "No specific exemption programs are automatically applied. Eligibility for exemptions or special valuation depends on property use and ownership, and results may differ from an official tax statement." }
+  ],
+  "meta": {
+    "title": "Sedgwick County property tax calculator 2026 — estimate residential property taxes",
+    "description": "Estimate Sedgwick County, Kansas residential property tax using market value, the 11.5% assessment rate, and a combined local mill levy. Results are estimates only.",
+    "canonicalPath": "/tools/property-tax/sedgwick-county-kansas"
+  }
+},
+
+"US-TN-SHELBY-COUNTY": {
+  "h1": "Shelby County property tax calculator 2026",
+  "intro": "This Shelby County property tax calculator provides an estimated annual property tax for residential property based on market value and Tennessee’s 25% residential assessment ratio. In Tennessee, property is taxed on assessed value, which is derived from appraised (market) value using a statutory assessment ratio.",
+  "sections": {
+    "howItWorks": "Residential property in Shelby County is appraised at market value. Tennessee law applies a 25% assessment ratio to residential property to determine assessed value. Property tax is then calculated by multiplying assessed value by the applicable tax rate. In Shelby County, the total rate may include a county portion and, if the property is located within a municipality, a separate city tax rate.",
+    "examples": "If a residential property has a market value of 250,000, the assessed value is calculated by multiplying that amount by 25%. The combined tax rate is then applied to the assessed value to estimate annual property tax. A property located inside a municipality may have both a county and a city tax rate, while a property outside city limits may only have the county rate.",
+    "limitations": "This is an estimated residential property tax calculation, not an official tax bill. It models only residential property using the 25% assessment ratio and does not apply commercial, industrial, or other property class ratios. Total tax rates vary by municipality and taxing district, and eligibility-based tax relief programs are not included. Actual tax amounts may differ."
+  },
+  "faq": [
+    { "q": "Is this the exact amount shown on my Shelby County tax bill?", "a": "No. This tool provides an estimated annual residential property tax based on market value and applicable local rates." },
+    { "q": "Why can tax amounts differ within Shelby County?", "a": "Properties inside municipalities may be subject to both county and city tax rates, while properties outside city limits may only pay the county rate." },
+    { "q": "Does this calculator apply to all property types?", "a": "No. This calculator models residential property only and applies the 25% residential assessment ratio under Tennessee law." },
+    { "q": "Are tax relief programs included in the estimate?", "a": "No. Eligibility-based tax relief programs for elderly, disabled, or veteran taxpayers are not automatically applied in this estimate." }
+  ],
+  "meta": {
+    "title": "Shelby County property tax calculator 2026 — estimate residential property taxes",
+    "description": "Estimate Shelby County, Tennessee residential property tax using market value, the 25% assessment ratio, and applicable county and city tax rates. Results are estimates only.",
+    "canonicalPath": "/tools/property-tax/shelby-county-tennessee"
+  }
+},
+
+"US-TX-SMITH-COUNTY": {
+  "h1": "Smith County property tax calculator 2026",
+  "intro": "This Smith County property tax calculator provides an estimated property tax based on appraised market value and a combined local property tax rate. Property taxes in Smith County are determined by multiple taxing units, so actual amounts depend on location and applicable exemptions.",
+  "sections": {
+    "howItWorks": "In Smith County, property is appraised at market value by the county appraisal district. Taxable value is generally the appraised value minus any exemptions adopted by the relevant taxing units, such as homestead or disabled veteran exemptions. Each taxing unit, including the county, cities, school districts, and special districts, adopts its own tax rate. The estimated property tax is calculated by applying a combined local property tax rate to the taxable value.",
+    "examples": "For example, if a home has an appraised market value of 300,000 and qualifies for a homestead exemption that reduces taxable value, the tax is calculated on the reduced amount. If the combined local property tax rate across all applicable taxing units is 1.80%, the estimated annual property tax would be 300,000 minus exemptions, multiplied by 0.018.",
+    "limitations": "This calculator provides an estimated property tax only. In Smith County, tax rates vary by city, school district, and special district. Optional exemptions and tax ceilings may apply depending on eligibility and the specific taxing unit. Actual tax bills may differ due to voter-approved measures, special assessments, or changes in adopted rates."
+  },
+  "faq": [
+    { "q": "Is property in Smith County taxed on market value?", "a": "Property is appraised at market value by the Smith County Appraisal District. Taxable value is generally the appraised value minus any applicable exemptions." },
+    { "q": "Do tax rates vary within Smith County?", "a": "Yes. Property tax rates vary depending on the city, school district, and special districts that apply to a specific property." },
+    { "q": "Are homestead exemptions available in Smith County?", "a": "Residential homestead exemptions and other exemptions may reduce taxable value, depending on eligibility and the rules adopted by each taxing unit." },
+    { "q": "Does this calculator show my exact tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs and a combined local property tax rate. Your official tax bill may differ." }
+  ],
+  "meta": {
+    "title": "Smith County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate your Smith County, Texas property tax using market value and a combined local property tax rate. Results are estimates and may differ from your official tax bill.",
+    "canonicalPath": "/tools/property-tax/smith-county-texas"
+  }
+},
+
+"US-CA-SOLANO-COUNTY": {
+  "h1": "Solano County property tax calculator 2026",
+  "intro": "This Solano County property tax calculator provides an estimated property tax based on assessed value and a combined local property tax rate. Solano County property taxes include the statewide base levy plus additional voter-approved bonds and special assessments that vary by location.",
+  "sections": {
+    "howItWorks": "In Solano County, property taxes are based on assessed value. A statewide base ad valorem rate applies, and additional amounts may be added for voter-approved bonds and special assessments depending on the property’s tax rate area. This estimator applies a combined local property tax rate to the taxable value to produce an estimated annual property tax.",
+"examples": "In Solano County, the annual property tax estimate is based on the assessed value recorded on the secured roll for the current fiscal year. If that roll value is 670,000, the general 1 percent levy would produce 6,700 before any bonded charges are applied. Supplemental assessments may be issued separately if a reassessment event occurs during the year.",
+    "limitations": "This calculator provides an estimated property tax only. In Solano County, the total rate depends on the property’s tax rate area and may include multiple voter-approved bond measures and special assessments. Exemptions and assessment rules can change the taxable value. Your actual tax bill may differ."
+  },
+  "faq": [
+    { "q": "Is property tax in Solano County based on assessed value?", "a": "Yes. Property tax is calculated using the property’s assessed value, with additional amounts potentially added for voter-approved bonds and special assessments." },
+    { "q": "Does the property tax rate vary within Solano County?", "a": "Yes. The total rate can vary by tax rate area based on the specific bonds and special assessments that apply to a location." },
+    { "q": "Are bonds and special assessments included in the total rate?", "a": "They can be. Voter-approved bonds and special assessments may be added to the base levy, depending on the property’s tax rate area." },
+    { "q": "Is this an exact tax bill amount?", "a": "No. This tool provides an estimated property tax based on user inputs and a combined local property tax rate. Your official tax bill may differ." }
+  ],
+  "meta": {
+    "title": "Solano County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate your Solano County, California property tax using assessed value and a combined local property tax rate. Results are estimates and may differ from your official tax bill.",
+    "canonicalPath": "/tools/property-tax/solano-county-california"
+  }
+},
+
+"US-CA-SONOMA-COUNTY": {
+  "h1": "Sonoma County property tax calculator 2026",
+  "intro": "This Sonoma County property tax calculator provides an estimated annual property tax based on assessed value and a combined local property tax rate. Sonoma County property taxes include the statewide base levy plus additional voter-approved indebtedness and special assessments that vary by tax-rate area.",
+  "sections": {
+    "howItWorks": "In Sonoma County, property tax is based on assessed value under California law. Real property is generally reassessed to market value when ownership changes or new construction is completed, establishing a new base-year value. Annual increases to the factored base-year value are generally limited to no more than 2% per year. The taxable value is typically the lower of current market value or the factored base-year value. The statewide base rate is 1% of taxable value, and additional voter-approved rates may apply depending on the property’s tax-rate area.",
+"examples": "When a property in Sonoma County is reassessed following a transfer or new construction, a supplemental tax bill may be generated in addition to the regular annual levy. For example, if the updated assessed value becomes 720,000 mid-year, the additional tax is calculated separately from the secured roll billing cycle. The estimator reflects the primary annual roll value rather than interim adjustments.",
+    "limitations": "This calculator provides an estimated property tax only. In Sonoma County, total rates vary by tax-rate area because voter-approved bonds and special assessments differ across geographic areas. Disabled veteran exemption amounts are adjusted for inflation and vary by eligibility and year. Your actual tax bill may differ based on your specific tax-rate area, exemptions, and assessment history."
+  },
+  "faq": [
+    { "q": "Is Sonoma County property tax based on assessed value?", "a": "Yes. Property tax is based on assessed value, which is generally the lower of current market value or the factored base-year value under California law." },
+    { "q": "What is the base property tax rate in Sonoma County?", "a": "The statewide base ad valorem property tax rate is 1% of taxable value, with additional voter-approved rates that may apply depending on location." },
+    { "q": "Is there a homeowners’ exemption in Sonoma County?", "a": "Yes. California provides a homeowners’ exemption that reduces taxable value by 7,000 for a qualifying owner-occupied principal residence." },
+    { "q": "Can this calculator show my exact tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs and a combined local property tax rate. Actual tax bills vary by tax-rate area and individual circumstances." }
+  ],
+  "meta": {
+    "title": "Sonoma County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate your Sonoma County, California property tax using assessed value and a combined local property tax rate. Results are estimates and may differ from your official tax bill.",
+    "canonicalPath": "/tools/property-tax/sonoma-county-california"
+  }
+},
+
+"US-SC-SPARTANBURG-COUNTY": {
+  "h1": "Spartanburg County property tax calculator 2026",
+  "intro": "This Spartanburg County property tax calculator provides an estimated property tax for owner-occupied residential property based on market value, a fixed 4% assessment ratio under South Carolina law, and a combined local millage rate. The result is an estimate and actual tax bills may differ depending on the applicable taxing district and exemptions.",
+  "sections": {
+    "howItWorks": "In South Carolina, owner-occupied residential property is assessed at 4% of its fair market value. This estimator multiplies the market value by the 4% statutory assessment ratio to determine assessed value. The assessed value is then multiplied by the combined local millage rate, which includes county, school district, municipal, and special district millage applicable to the property’s location.",
+    "examples": "The calculation follows a fixed structure: market value multiplied by 0.04 to determine assessed value, and then multiplied by the combined local millage rate entered by the user. Because millage rates vary by taxing district within Spartanburg County, the combined rate must reflect the correct district for the property.",
+    "limitations": "This calculator estimates property tax for owner-occupied residential property only. It does not apply to commercial, industrial, agricultural, or rental classifications that use different statutory assessment ratios. Millage rates vary by school district, municipality, and special purpose district. Exemptions such as the homestead exemption for qualifying taxpayers are not automatically applied. The actual tax bill may differ from this estimate."
+  },
+  "faq": [
+    { "q": "How is property tax calculated for owner-occupied homes in Spartanburg County?", "a": "Property tax is calculated as market value multiplied by the 4% statutory assessment ratio and then multiplied by the combined local millage rate applicable to the property’s taxing district." },
+    { "q": "Does this calculator use the official assessment ratio?", "a": "Yes. For owner-occupied residential property, South Carolina law sets the assessment ratio at 4%, which is applied in this estimator." },
+    { "q": "Is there one countywide property tax rate?", "a": "No. The total millage rate depends on the combination of county, school district, municipal, and special district millage that applies to the specific property location." },
+    { "q": "Does this tool show my official tax bill?", "a": "No. This tool provides an estimated property tax based on market value and a combined local millage rate. The official tax bill is issued by the county and may include exemptions or adjustments not reflected here." }
+  ],
+  "meta": {
+    "title": "Spartanburg County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Spartanburg County property taxes for owner-occupied homes using market value, the 4% assessment ratio, and a combined local millage rate. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/spartanburg-county-south-carolina"
+  }
+},
+
+"US-IL-ST-CLAIR-COUNTY": {
+  "h1": "St. Clair County property tax calculator 2026",
+  "intro": "This St. Clair County property tax calculator provides an estimated property tax based on market value, the Illinois statutory assessment level of one-third of fair cash value, and a combined local property tax rate. The result is an estimate and actual tax bills may differ depending on the applicable taxing districts and exemptions.",
+  "sections": {
+    "howItWorks": "In Illinois, most real property is required by statute to be assessed at one-third of its fair cash value. This estimator multiplies the market value by one-third to determine assessed value. The assessed value is then multiplied by the combined local property tax rate, which reflects the total rate of overlapping taxing districts such as the county, municipalities, school districts, and special districts.",
+    "examples": "The calculation follows a structured formula: market value multiplied by one-third to determine assessed value, and then multiplied by the combined local property tax rate entered by the user. Because tax rates vary depending on the specific taxing districts that apply to a property, the combined rate must reflect the correct location.",
+    "limitations": "This calculator provides an estimated property tax only. Combined local tax rates vary by taxing district within St. Clair County. Exemptions such as general homestead, senior, disability, or veteran-related exemptions are not automatically applied. The official tax bill issued by the county treasurer may include adjustments not reflected in this estimate."
+  },
+  "faq": [
+    { "q": "How is property tax calculated in St. Clair County?", "a": "Property tax is calculated as market value multiplied by the statutory one-third assessment level and then multiplied by the combined local property tax rate applicable to the property’s taxing districts." },
+    { "q": "What assessment level does Illinois law require?", "a": "Illinois law generally requires most real property to be assessed at one-third of its fair cash value, which is applied in this estimator." },
+    { "q": "Is there one countywide property tax rate?", "a": "No. The total rate depends on the combination of county, municipal, school district, and other local taxing districts that apply to the property." },
+    { "q": "Does this tool show my official tax bill?", "a": "No. This tool provides an estimated property tax based on market value and a combined local rate. The official tax bill may include exemptions or other adjustments not reflected here." }
+  ],
+  "meta": {
+    "title": "St. Clair County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate St. Clair County property taxes using market value, the statutory one-third Illinois assessment level, and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/st-clair-county-illinois"
+  }
+},
+
+"US-MO-ST-LOUIS-COUNTY": {
+  "h1": "St. Louis County property tax calculator 2026",
+  "intro": "This St. Louis County property tax calculator provides an estimated property tax for residential property based on market value, the 19% statutory assessment ratio under Missouri law, and a combined local property tax levy. The result is an estimate and actual tax bills may differ depending on the applicable taxing districts and exemptions.",
+  "sections": {
+    "howItWorks": "In Missouri, the assessor determines the true value in money, commonly referred to as market value. Residential real property is assessed at 19% of its true value in money under state law. This estimator multiplies the market value by 0.19 to determine assessed value. The assessed value is then multiplied by the combined local property tax levy, which reflects the total of overlapping taxing jurisdictions such as the county, municipality, school district, and other special districts.",
+    "examples": "The calculation follows a fixed structure for residential property: market value multiplied by 0.19 to determine assessed value, and then multiplied by the combined local levy entered by the user. Because property tax levies vary by school district and other local jurisdictions within St. Louis County, the combined rate must reflect the correct location of the property.",
+    "limitations": "This calculator estimates property tax for residential real property only. Agricultural, commercial, industrial, and personal property are subject to different statutory assessment percentages under Missouri law. Combined local levies vary depending on the overlapping taxing districts for each parcel. Exemptions are applied on a property-specific basis and are not automatically included in this estimate. The official tax bill may differ from this result."
+  },
+  "faq": [
+    { "q": "How is residential property tax calculated in St. Louis County?", "a": "Residential property tax is calculated as market value multiplied by the 19% statutory assessment ratio and then multiplied by the combined local property tax levy applicable to the property’s taxing districts." },
+    { "q": "Does Missouri use the same assessment percentage for all property?", "a": "No. Missouri law sets different assessment percentages depending on property classification. Residential property is assessed at 19% of true value in money." },
+    { "q": "Is there one countywide property tax rate?", "a": "No. The total property tax levy depends on the combination of county, municipal, school district, and special district levies that apply to a specific property location." },
+    { "q": "Does this calculator show my official tax bill?", "a": "No. This tool provides an estimated property tax based on market value and a combined local levy. The official tax bill issued by the county collector may include adjustments or exemptions not reflected here." }
+  ],
+  "meta": {
+    "title": "St. Louis County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate St. Louis County residential property taxes using market value, the 19% Missouri assessment ratio, and a combined local property tax levy. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/st-louis-county-missouri"
+  }
+},
+
+"US-NY-SUFFOLK-COUNTY": {
+  "h1": "Suffolk County property tax calculator 2026",
+  "intro": "This Suffolk County property tax calculator provides an estimated property tax based on assessed value and a combined local property tax rate. In New York, property tax is calculated using assessed value minus applicable exemptions, multiplied by the total rate set by the relevant taxing jurisdictions. Because rates and assessment levels vary by town and school district, results represent an estimate only.",
+  "sections": {
+    "howItWorks": "Property tax in Suffolk County is based on assessed value rather than directly on market value. The taxable assessed value is determined after subtracting any applicable exemptions from the assessed value. The final property tax amount is calculated by applying the combined local property tax rate to that taxable assessed value. In practice, tax bills may include separate levies for county, town, and school district purposes, depending on the property’s location.",
+    "examples": "For example, if a property has an assessed value of 400,000 and no exemptions apply, and the combined local property tax rate is 2%, the estimated property tax would be 8,000. If exemptions reduce the taxable assessed value, the estimate would decrease accordingly. The actual rate depends on the specific town and school district within Suffolk County.",
+    "limitations": "This calculator provides an estimated property tax for general planning purposes. Assessment levels may differ by municipality, and tax rates vary by town and school district. Exemptions such as STAR or senior citizen programs are eligibility-based and are not automatically applied unless modeled explicitly. The actual tax bill may differ due to local levies, special districts, or changes adopted by the relevant taxing authorities."
+  },
+  "faq": [
+    { "q": "Is property tax in Suffolk County based on market value?", "a": "Property tax is based on assessed value. The assessed value may represent a percentage of market value depending on the municipality’s level of assessment." },
+    { "q": "Do property tax rates vary within Suffolk County?", "a": "Yes. Property tax rates vary by town and school district, and there is no single uniform countywide rate that applies to all parcels." },
+    { "q": "Are exemptions automatically included in the estimate?", "a": "Exemptions are eligibility-based and must be applied according to the specific program rules. This calculator can estimate the impact of exemptions only if they are modeled explicitly." },
+    { "q": "Does this calculator show my exact property tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs. The actual tax bill may differ depending on local rates, assessment levels, and applicable exemptions." }
+  ],
+  "meta": {
+    "title": "Suffolk County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate your Suffolk County, New York property tax using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/suffolk-county-new-york"
+  }
+},
+
+"US-UT-SUMMIT-COUNTY": {
+  "h1": "Summit County property tax calculator 2026",
+  "intro": "This Summit County property tax calculator provides an estimated annual property tax based on your taxable value and a combined local property tax rate. In practice, the total rate can reflect multiple taxing entities, and relief or deferral programs may affect what a specific owner owes.",
+  "sections": {
+    "howItWorks": "In Summit County, taxable value is first determined under Utah’s property tax framework, including the primary residence exemption where applicable. Rather than relying on a single uniform county rate, property taxes reflect overlapping levies adopted by the county, school districts, municipalities, and special service districts, and this calculator estimates tax by applying the total combined rate you enter to the taxable value provided.",
+    "examples": "If you enter a taxable value and a combined local rate, the calculator returns an estimated annual property tax by multiplying the two. If you change the combined rate to reflect a different set of taxing entities, the estimate will change accordingly.",
+    "limitations": "Results are estimates only. Tax rates may vary by taxing entity and property location within the county, and the combined rate is not automatically determined by this tool. Any property tax relief or deferral programs are typically eligibility-based and are not applied automatically here. Actual tax bills may differ."
+  },
+  "faq": [
+    { "q": "Is this an official Summit County property tax bill?", "a": "No. This is an estimator that provides an estimated annual property tax based on the values you enter." },
+    { "q": "What rate should I enter for Summit County?", "a": "Enter a combined local property tax rate that matches the taxing entities that apply to the property. If you only have individual components, add them together and enter the total." },
+    { "q": "Does the calculator include exemptions or relief programs?", "a": "No. Property tax relief or deferral programs are commonly eligibility-based, so this estimator does not apply them automatically." },
+    { "q": "Why might my estimate differ from what I actually pay?", "a": "Rates can vary by taxing entity and property location, and taxable value and any eligibility-based programs can affect the final amount on an actual bill." }
+  ],
+  "meta": {
+    "title": "Summit County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Summit County property taxes using your taxable value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/summit-county-utah"
+  }
+},
+
+"US-TX-TARRANT-COUNTY": {
+  "h1": "Tarrant County property tax calculator 2026",
+  "intro": "This Tarrant County property tax calculator provides an estimated annual property tax based on your taxable value and a combined local property tax rate. In Tarrant County, property taxes are based on taxable value, which generally reflects appraised value minus applicable exemptions.",
+  "sections": {
+    "howItWorks": "In Tarrant County, property tax is not determined by a single uniform rate. Multiple taxing units — including the county, school district, city, and special districts — each adopt their own rate, and those rates combine into the effective rate for a specific parcel. This calculator assumes you already know the total combined rate that applies to the property; enter the taxable value and that combined rate to generate an estimate that reflects how local property tax obligations are structured.",
+"examples": "If you enter a taxable value of 300,000 and adjust the combined local rate from 0.02 to 0.025, the estimated annual property tax will increase in direct proportion to the higher rate. This demonstrates how differences in city, school district, or special district levies—reflected in the combined rate you enter—can significantly change the resulting estimate.",
+    "limitations": "Results are estimates only. Property tax rates in Tarrant County are set by multiple taxing units, including the county and other local entities, and vary by property location. Exemptions are governed by state law and local adoption and are not automatically applied by this tool. Actual tax bills may differ."
+  },
+  "faq": [
+    { "q": "Is this the official Tarrant County property tax rate?", "a": "No. This calculator provides an estimated annual property tax based on the values you enter and does not display an official combined rate." },
+    { "q": "What rate should I use in the calculator?", "a": "Use a combined local property tax rate that reflects all applicable taxing units for the property. If you have separate rates, add them together before entering a single combined rate." },
+    { "q": "Does the calculator include exemptions?", "a": "No. Exemptions often depend on property type, owner status, and local adoption by taxing units, so they are not automatically applied in this estimator." },
+    { "q": "Why might my estimate differ from my tax bill?", "a": "Rates vary by taxing unit and property location, and exemptions or other adjustments may apply. The calculator provides an estimate only, and actual tax bills may differ." }
+  ],
+  "meta": {
+    "title": "Tarrant County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Tarrant County property taxes using taxable value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/tarrant-county-texas"
+  }
+},
+
+"US-TX-TRAVIS-COUNTY": {
+  "h1": "Travis County property tax calculator 2026",
+  "intro": "This Travis County property tax calculator provides an estimated annual property tax based on taxable value and a combined local property tax rate. In Travis County, taxable value reflects assessed or net appraised value after applicable exemptions and limits.",
+  "sections": {
+    "howItWorks": "The calculator uses the taxable value you enter and applies a single consolidated rate representing all applicable local taxing units. Because the rate reflects multiple overlapping jurisdictions, the final estimate changes proportionally if any component of that combined rate changes.",
+    "examples": "If you input a taxable value and apply a combined local rate, the estimated annual property tax equals the taxable value multiplied by that rate. Changing the combined rate to reflect different taxing units will change the estimate.",
+    "limitations": "Results are estimates only. Property tax rates in Travis County are set by multiple overlapping taxing units, including the county, cities, school districts, and special districts. Exemptions such as homestead and other eligibility-based programs are not automatically applied by this tool. Actual tax bills may differ."
+  },
+  "faq": [
+    { "q": "Is this the official Travis County property tax rate?", "a": "No. This calculator provides an estimated annual property tax based on the values you enter and does not display an official combined rate." },
+    { "q": "What rate should I enter?", "a": "Use a combined local property tax rate that reflects all taxing units that apply to the property. If you have separate rates, add them together before entering a single combined rate." },
+    { "q": "Does the calculator include homestead exemptions?", "a": "No. Homestead and other exemptions depend on eligibility and local adoption by taxing units and are not automatically applied in this estimator." },
+    { "q": "Why might my estimate differ from my tax bill?", "a": "Tax rates vary by taxing unit and property location, and exemptions or other adjustments may apply. This tool provides an estimate only, and actual tax bills may differ." }
+  ],
+  "meta": {
+    "title": "Travis County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Travis County property taxes using taxable value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/travis-county-texas"
+  }
+},
+
+"US-NC-WAKE-COUNTY": {
+  "h1": "Wake County property tax calculator 2026",
+  "intro": "This Wake County property tax calculator provides an estimated annual property tax based on assessed value and a combined local property tax rate. In Wake County, assessed value is intended to reflect fair market value, while the total rate depends on the applicable county and municipal or district rates for the property.",
+  "sections": {
+    "howItWorks": "This tool calculates an estimate by multiplying the assessed value input by a unified local tax rate. That rate represents the total levy from the county and any applicable municipal or district authorities affecting the parcel.",
+"examples": "For a parcel with a taxable value of 275,000 and a combined local rate of 0.0175, the estimated annual property tax would be 4,812.50. If a municipality within the county applies an additional levy, the total estimate increases based on the higher combined rate.",
+"limitations": "This Wake County property tax estimate assumes the assessed value you enter reflects the value determined during the county’s most recent reappraisal cycle. It does not calculate parcel-specific exclusions, deferments, present-use value classifications, or special district overlays. Official tax bills are issued by the Wake County Tax Administration and may reflect adjustments, appeals, or updated levies adopted after this estimate is generated.",  },
+  "faq": [
+    { "q": "Is this an official Wake County property tax bill?", "a": "No. This calculator provides an estimated annual property tax based on the values you enter." },
+    { "q": "What rate should I enter for Wake County?", "a": "Enter a combined local property tax rate that matches the applicable county and municipal or district rates for the property. If you have separate components, add them together and enter the total." },
+    { "q": "Does the calculator apply exemptions or relief programs?", "a": "No. Exemptions and relief programs are usually eligibility-based, so this estimator does not apply them automatically." },
+    { "q": "Why can two properties in Wake County have different rates?", "a": "The total rate can vary based on which municipality or special districts apply to the property. This estimator uses the combined rate you provide." }
+  ],
+  "meta": {
+    "title": "Wake County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Wake County property taxes using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/wake-county-north-carolina"
+  }
+},
+
+"US-WI-WALWORTH-COUNTY": {
+  "h1": "Walworth County property tax calculator 2026",
+  "intro": "This Walworth County property tax calculator provides an estimated annual property tax based on assessed value and a combined local mill rate. In Walworth County, property taxes are calculated using assessed value and district-specific mill rates that reflect overlapping taxing jurisdictions.",
+  "sections": {
+    "howItWorks": "To estimate the annual property tax, the tool applies a consolidated local tax rate to the assessed value you provide. That consolidated rate reflects the combined impact of overlapping taxing jurisdictions.",
+    "examples": "If you enter an assessed value and apply a combined mill rate, the estimated annual property tax equals the assessed value multiplied by that rate. If the combined rate changes due to different municipal or district components, the estimate will change accordingly.",
+    "limitations": "Results are estimates only. Mill rate components in Walworth County vary by taxation district, school district, technical college, and special districts. Credits and relief programs may apply based on eligibility and are not automatically applied in this tool. Actual tax bills may differ."
+  },
+  "faq": [
+    { "q": "Is this an official Walworth County tax bill?", "a": "No. This calculator provides an estimated annual property tax based on the values you enter." },
+    { "q": "What mill rate should I use?", "a": "Use a combined local mill rate that reflects all applicable taxing jurisdictions for the property. If you have separate components, add them together before entering a single combined rate." },
+    { "q": "Does the calculator apply credits or exemptions?", "a": "No. Credits and exemptions often depend on eligibility and district rules and are not automatically applied in this estimator." },
+    { "q": "Why do rates differ within Walworth County?", "a": "Mill rate components vary by taxation district and overlapping jurisdictions, which can result in different combined rates for different properties." }
+  ],
+  "meta": {
+    "title": "Walworth County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Walworth County property taxes using assessed value and a combined local mill rate. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/walworth-county-wisconsin"
+  }
+},
+
+"US-OR-WASHINGTON-COUNTY": {
+  "h1": "Washington County property tax calculator 2026",
+  "intro": "This Washington County property tax calculator provides an estimated annual property tax based on assessed value and a combined local property tax rate. In Washington County, real market value is assessed at 100 percent, and taxable value reflects the lower of real market value or maximum assessed value.",
+  "sections": {
+    "howItWorks": "The estimator multiplies the property’s assessed value by a combined local property tax rate. Enter the assessed value used for the property and a single combined rate reflecting the applicable taxing districts. The result is an estimated annual property tax amount and does not represent an official bill.",
+"examples": "Assume a property has an assessed value of 650,000 and a consolidated tax rate expressed as 0.019. The estimated annual property tax would be calculated at 12,350. A change in any district levy affecting the combined rate would proportionally alter the final estimate.",
+    "limitations": "Results are estimates only. Property tax rates in Washington County depend on overlapping taxing districts and vary by property location. Eligibility-based programs such as senior deferral or veterans exemptions are not automatically applied. Actual tax bills may differ."
+  },
+  "faq": [
+    { "q": "Is this an official Washington County tax bill?", "a": "No. This calculator provides an estimated annual property tax based on the values you enter." },
+    { "q": "What rate should I enter?", "a": "Enter a combined local property tax rate that reflects the applicable taxing districts for the property. If you have separate components, add them together before entering a single combined rate." },
+    { "q": "Does the calculator include exemptions or deferrals?", "a": "No. Exemptions and deferral programs are eligibility-based and are not automatically applied in this estimator." },
+    { "q": "Why do rates vary within Washington County?", "a": "Tax rates vary because multiple taxing districts overlap depending on property location. This tool uses the combined rate you provide." }
+  ],
+  "meta": {
+    "title": "Washington County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Washington County property taxes using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/washington-county-oregon"
+  }
+},
+
+"US-NV-WASHOE-COUNTY": {
+  "h1": "Washoe County property tax calculator 2026",
+  "intro": "This Washoe County property tax calculator provides an estimated annual property tax based on the assessed value you enter and a combined local property tax rate. Total rates vary by tax district within the county.",
+  "sections": {
+    "howItWorks": "The estimate is produced by taking the assessed value you provide and applying the total effective tax rate for the property’s taxing location. This combined rate reflects overlapping levies that together determine the projected annual tax.",
+    "examples": "If you enter an assessed value and apply a combined district rate, the estimated annual property tax equals the assessed value multiplied by that rate. Different tax districts within Washoe County have different total combined rates.",
+    "limitations": "Results are estimates only. Property tax rates in Washoe County vary by tax district, and this tool does not determine the correct district rate for a specific parcel. Partial abatements, tax caps, and exemptions are eligibility-based and are not automatically applied. Actual tax bills may differ."
+  },
+  "faq": [
+    { "q": "Is this an official Washoe County tax bill?", "a": "No. This calculator provides an estimated annual property tax based on the values you enter." },
+    { "q": "What value should I enter?", "a": "Enter the assessed value for the property as shown on official county records or your tax statement." },
+    { "q": "Does the calculator apply Nevada tax caps or abatements?", "a": "No. Partial abatements and exemptions depend on eligibility and property classification and are not automatically applied in this estimator." },
+    { "q": "Why do rates differ within Washoe County?", "a": "Total property tax rates vary by tax district and overlapping local entities. This estimator uses the combined rate you provide." }
+  ],
+  "meta": {
+    "title": "Washoe County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Washoe County property taxes using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/washoe-county-nevada"
+  }
+},
+
+"US-WI-WAUKESHA-COUNTY": {
+  "h1": "Waukesha County property tax calculator 2026",
+  "intro": "This Waukesha County property tax calculator provides an estimated annual property tax based on assessed value and a combined local property tax rate. In Waukesha County, property taxes are calculated using assessed value and district-specific tax rates.",
+  "sections": {
+    "howItWorks": "To generate the estimate, the tool multiplies the entered assessed value by a single aggregated property tax rate. That aggregated rate represents the sum of all local levies applicable to the property.",
+    "examples": "If you enter an assessed value and apply a combined local rate, the calculator returns an estimated annual property tax equal to the assessed value multiplied by that rate. Different municipalities and school districts within Waukesha County may have different combined rates.",
+    "limitations": "Results are estimates only. Property tax rates vary by municipality, school district, and special-purpose districts. Credits such as lottery or school levy credits and other assistance programs are eligibility-based and are not automatically applied in this tool. Actual tax bills may differ."
+  },
+  "faq": [
+    { "q": "Is this an official Waukesha County tax bill?", "a": "No. This calculator provides an estimated annual property tax based on the values you enter." },
+    { "q": "What rate should I use?", "a": "Use a combined local property tax rate that reflects the applicable municipality, school district, and other jurisdictions for the property. If you have separate components, add them together before entering a single combined rate." },
+    { "q": "Does the calculator apply lottery or school levy credits?", "a": "No. Credits and exemptions are typically eligibility-based and vary by district, and they are not automatically applied in this estimator." },
+    { "q": "Why do total rates differ within Waukesha County?", "a": "Total property tax rates vary depending on the municipality, school district, and any special-purpose districts that apply to the property." }
+  ],
+  "meta": {
+    "title": "Waukesha County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Waukesha County property taxes using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/waukesha-county-wisconsin"
+  }
+},
+
+"US-IL-WILL-COUNTY": {
+  "h1": "Will County property tax calculator 2026",
+  "intro": "This Will County property tax calculator provides an estimated annual property tax based on equalized assessed value (EAV) and a combined local property tax rate. In Will County, property taxes are calculated using EAV and the composite rate assigned to the property’s tax code area.",
+  "sections": {
+    "howItWorks": "This estimator multiplies the equalized assessed value (EAV) you enter by a combined local property tax rate. Enter the EAV for the property and a single combined rate reflecting the applicable tax code area. The result is an estimated annual property tax amount and not an official bill.",
+    "examples": "If you enter an equalized assessed value and apply a combined tax rate for a specific tax code area, the calculator returns an estimated annual property tax equal to the EAV multiplied by that rate. Different tax code areas within Will County may have different combined rates.",
+    "limitations": "Results are estimates only. Property tax rates in Will County vary by tax code area based on overlapping taxing districts such as county, municipality, school district, and special districts. Exemptions are eligibility-based and are not automatically applied in this tool. Actual tax bills may differ."
+  },
+  "faq": [
+    { "q": "Is this an official Will County tax bill?", "a": "No. This calculator provides an estimated annual property tax based on the values you enter." },
+    { "q": "What value should I enter?", "a": "Enter the equalized assessed value (EAV) for the property as shown on official assessment or tax documents." },
+    { "q": "Does the calculator apply homestead or veterans exemptions?", "a": "No. Homestead and statutory exemptions depend on eligibility and are not automatically applied in this estimator." },
+    { "q": "Why do rates differ within Will County?", "a": "Each property is assigned to a tax code area that reflects a specific combination of overlapping taxing districts. Different combinations result in different total rates." }
+  ],
+  "meta": {
+    "title": "Will County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Will County property taxes using equalized assessed value (EAV) and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/will-county-illinois"
+  }
+},
+
+"US-TX-WILLIAMSON-COUNTY": {
+  "h1": "Williamson County property tax calculator 2026",
+  "intro": "This Williamson County property tax calculator provides an estimated annual property tax based on taxable value and a combined local property tax rate. In Texas, property is assessed at 100% of appraised (market) value, and total tax depends on the specific combination of taxing units that apply to a property.",
+  "sections": {
+    "howItWorks": "This estimator multiplies the taxable value you enter by a combined local property tax rate. Taxable value is generally based on the appraised market value determined by the Williamson Central Appraisal District, reduced by any applicable exemptions. Enter the taxable value and a single combined rate reflecting the applicable taxing units.",
+    "examples": "If a property has a taxable value and you apply a combined tax rate for the relevant county, city, school district, and special districts, the calculator returns an estimated annual property tax equal to taxable value multiplied by that rate.",
+    "limitations": "Results are estimates only. Property tax rates in Williamson County vary by taxing unit and location. Each parcel is assigned to specific overlapping jurisdictions such as county, city, school district, and special districts. Exemptions are eligibility-based and are not automatically applied in this tool."
+  },
+  "faq": [
+    { "q": "Is this an official Williamson County tax bill?", "a": "No. This calculator provides an estimate based on the values you enter." },
+    { "q": "What value should I enter?", "a": "Enter the taxable value for the property as shown on official appraisal or tax documents." },
+    { "q": "Does the calculator apply homestead or senior exemptions?", "a": "No. Exemptions depend on eligibility and are not automatically applied in this estimator." },
+    { "q": "Why do rates differ within Williamson County?", "a": "Each property is subject to a specific combination of taxing units, including county, city, school district, and special districts, which results in different total rates." }
+  ],
+  "meta": {
+    "title": "Williamson County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Williamson County property taxes using taxable value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/williamson-county-texas"
+  }
+},
+
+"US-IL-WINNEBAGO-COUNTY": {
+  h1: "Winnebago County property tax calculator 2026",
+
+  intro: "This Winnebago County property tax calculator estimates annual property tax based on equalized assessed value (EAV) and a combined local property tax rate. In Illinois, property taxes are extended on EAV, which reflects the assessed value after application of the state equalization factor.",
+
+  sections: {
+    howItWorks: "Enter the equalized assessed value (EAV) shown on your official assessment or tax bill. The calculator multiplies the EAV by a combined local property tax rate representing the applicable tax code area. The result is an estimated annual property tax.",
+
+    examples: "If a property has an equalized assessed value and a combined rate determined by its overlapping taxing districts, the estimated tax equals EAV multiplied by that rate. Different tax code areas within Winnebago County may have different combined rates.",
+
+    limitations: "Results are estimates only. Property tax rates vary by tax code area based on overlapping taxing districts such as county, municipality, school district, township, library, park, and special districts. Exemptions are eligibility-based and are not automatically applied in this estimator."
+  },
+
+  faq: [
+    {
+      q: "Is this an official Winnebago County tax bill?",
+      a: "No. This calculator provides an estimate based on the values you enter."
+    },
+    {
+      q: "What value should I enter?",
+      a: "Enter the equalized assessed value (EAV) for the property as shown on official assessment or tax documents."
+    },
+    {
+      q: "Why do rates differ within Winnebago County?",
+      a: "Each property is assigned to a tax code area reflecting a specific combination of overlapping taxing districts. Different combinations result in different total rates."
+    }
+  ],
+
+  meta: {
+    title: "Winnebago County property tax calculator 2026 — estimate property taxes",
+    description: "Estimate Winnebago County property taxes using equalized assessed value (EAV) and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
+    canonicalPath: "/tools/property-tax/winnebago-county-illinois"
+  }
+},
+
+"US-TX-AUSTIN-CITY": {
+  "h1": "Austin property tax rate calculator 2026",
+  "intro": "This Austin property tax calculator provides an estimated property tax based on taxable value and the adopted City of Austin property tax rate. Property taxes in Texas are locally assessed and locally administered, and results are estimates only.",
+  "sections": {
+    "howItWorks": "In Texas, property is appraised at market value as of January 1. The assessment ratio is 100%, so assessed value effectively equals market value unless reduced by exemptions. The City of Austin adopts a property tax rate expressed per $100 of taxable value. To estimate the city portion of property tax, taxable value is multiplied by the adopted city rate. This tool applies the official City of Austin adopted rate to a user-provided taxable value to estimate the city share of property taxes.",
+    "examples": "If a property has a taxable value of 400,000 and the adopted city rate is 0.574017 per $100 of taxable value, the estimated city property tax would be calculated by multiplying the taxable value by 0.00574017. In this example, the estimated city portion would be approximately 2,296.07. This reflects only the City of Austin portion and not other local taxing units.",
+    "limitations": "This calculator estimates only the City of Austin portion of property tax. Actual property tax bills typically include additional levies from counties, school districts, and other local taxing units. Exemptions, appraisal changes, and district-specific factors may affect taxable value. This tool does not replicate an official tax bill and does not perform parcel-level lookup."
+  },
+  "faq": [
+    { "q": "Is property in Austin assessed at market value?", "a": "Yes. Texas property is generally appraised at market value as of January 1, and the assessment ratio is 100%, so assessed value equals market value unless reduced by exemptions." },
+    { "q": "What does the Austin property tax rate apply to?", "a": "The adopted City of Austin property tax rate applies to the taxable value of property located within the city limits." },
+    { "q": "Does this calculator include Travis County or school district taxes?", "a": "No. This tool estimates only the City of Austin portion. County, school district, and other local taxes are not included." },
+    { "q": "Is this an official tax bill?", "a": "No. This is an estimated property tax calculation based on the adopted city rate and user-provided taxable value. Actual tax bills may differ." }
+  ],
+  "meta": {
+    "title": "Austin property tax rate calculator 2026 — estimate property taxes",
+    "description": "Estimate the City of Austin property tax using the adopted city tax rate and your taxable value. Results reflect the city portion only and are estimates.",
+    "canonicalPath": "/tools/property-tax/austin-city-texas"
+  }
+},
+
+"US-MD-BALTIMORE-CITY": {
+    h1: "Baltimore City property tax calculator 2026",
+    intro: "This Baltimore City property tax calculator provides an estimated property tax based on assessed value and the published city real property tax rate. Property taxes in Maryland are calculated using assessed value and applicable jurisdictional rates. Results shown here are estimates and not an official tax bill.",
+    sections: {
+      howItWorks: "In Maryland, real property is assessed at fair market value by the State Department of Assessments and Taxation. Property tax is calculated by multiplying the assessed value by the applicable tax rate. Baltimore City publishes a uniform real property tax rate expressed per $100 of assessed value. This calculator applies the official city rate to a user-provided assessed value to estimate the city portion of property tax.",
+      examples: "If a property has an assessed value of 250,000 and the city real property tax rate is 2.248 per $100 of assessed value, the estimated city property tax would be calculated by multiplying the assessed value by 0.02248. In this example, the estimated city portion would be 5,620. This estimate reflects only the Baltimore City rate.",
+      limitations: "This calculator estimates only the Baltimore City real property tax portion. Property tax bills may also include a State of Maryland rate and other charges. Exemptions, credits, and eligibility-based programs may reduce taxable value or tax liability. This tool does not perform parcel-level lookup and does not replicate an official tax bill."
+    },
+    faq: [
+      { q: "Is property in Baltimore City assessed at market value?", a: "Yes. Real property assessments in Maryland are based on fair market value as determined by the State Department of Assessments and Taxation." },
+      { q: "Does Baltimore City have a uniform property tax rate?", a: "Yes. Baltimore City publishes a single real property tax rate per $100 of assessed value that applies citywide to taxable real property." },
+      { q: "Does this calculator include the Maryland state property tax?", a: "No. This tool estimates only the Baltimore City portion. State-level property tax and any other applicable charges are not included." },
+      { q: "Is this an official tax bill?", a: "No. This is an estimated property tax calculation based on the published city rate and a user-provided assessed value. Actual tax bills may differ." }
+    ],
+    meta: {
+      title: "Baltimore City property tax calculator 2026 — estimate property taxes",
+      description: "Estimate Baltimore City real property taxes using the official city rate and assessed value. Results reflect the city portion only and are estimates.",
+      canonicalPath: "/tools/property-tax/baltimore-city-maryland"
+    }
+  },
+
+  "US-MA-BOSTON-CITY": {
+  h1: "Boston property tax calculator 2024",
+
+  intro: "This Boston property tax calculator provides an estimated property tax based on assessed value and the applicable Boston residential tax rate. Property taxes in Boston are based on assessed market value and classified tax rates. Results shown here are estimates and not an official tax bill.",
+
+  sections: {
+    howItWorks: "In Boston, property is assessed at full and fair cash value as of January 1 each fiscal year. Property tax is calculated on this assessed value. The City sets separate tax rates for residential, commercial, industrial, and personal property classes. This calculator estimates residential property tax by multiplying the assessed value by the published Boston residential rate.",
+
+    examples: "For example, using the residential rate of 0.0109 per $1 of assessed value (equal to $10.90 per $1,000), a home assessed at 600,000 would produce an estimated residential property tax of 6,540 before exemptions.",
+
+    limitations: "Boston provides a residential exemption for eligible owner-occupied primary residences, which reduces taxable value for qualifying parcels. Additional exemptions may apply based on eligibility. Because exemptions depend on owner status and other criteria, this tool does not automatically apply them. This calculator estimates property tax using assessed value and the residential rate only and does not replicate an official tax bill."
+  },
+
+  faq: [
+    {
+      q: "Is Boston property tax based on market value?",
+      a: "Boston property is assessed at full and fair cash value, which reflects estimated market value as determined by the City’s Assessing Department."
+    },
+    {
+      q: "Does Boston use different tax rates for different property types?",
+      a: "Yes. Boston sets separate tax rates for residential, commercial, industrial, and personal property classifications."
+    },
+    {
+      q: "Does this calculator include the residential exemption?",
+      a: "No. The residential exemption depends on eligibility and owner occupancy status and is not automatically applied in this estimator."
+    },
+    {
+      q: "Is this an official property tax bill?",
+      a: "No. This is an estimated property tax calculation based on assessed value and the published residential rate. Actual tax bills may differ."
+    }
+  ],
+
+  meta: {
+    title: "Boston property tax calculator 2024 — estimate property taxes",
+    description: "Estimate Boston residential property taxes using assessed value and the official residential tax rate. Results are estimates and do not reflect official tax bills.",
+    canonicalPath: "/tools/property-tax/boston-city-massachusetts"
+  }
+},
+
+"US-VA-CHESAPEAKE-CITY": {
+  h1: "Chesapeake property tax calculator 2026",
+
+  intro: "This Chesapeake property tax calculator provides an estimated real estate tax based on assessed value and the City of Chesapeake real estate tax rate. Real estate in Chesapeake is assessed at 100% of fair market value. Results shown here are estimates and not an official tax bill.",
+
+  sections: {
+    howItWorks: "In Chesapeake, real estate is assessed at 100% of fair market value. The real estate tax is calculated by multiplying the assessed value by the city’s published tax rate per dollar of assessed value. This calculator estimates real estate tax using that rate applied directly to assessed value.",
+
+    examples: "For example, if a property has an assessed value of 400,000 and the real estate tax rate is 0.0100 per dollar of assessed value, the estimated real estate tax would be 4,000 before any additional levies or relief programs.",
+
+    limitations: "Properties located in mosquito-controlled areas are subject to an additional levy per $100 of assessed value. Eligibility-based tax relief programs for seniors and disabled residents may also reduce the final tax bill. This calculator does not apply exemptions, mosquito-control levies, or parcel-specific adjustments and does not replicate an official tax statement."
+  },
+
+  faq: [
+    {
+      q: "Is property in Chesapeake assessed at market value?",
+      a: "Yes. Real estate in Chesapeake is assessed at 100% of fair market value as required by state law."
+    },
+    {
+      q: "Does Chesapeake use a uniform real estate tax rate?",
+      a: "Yes. The city publishes a single base real estate tax rate applied to assessed value, with an additional levy in mosquito-controlled areas."
+    },
+    {
+      q: "Does this calculator include personal property taxes?",
+      a: "No. This tool estimates only the real estate tax portion and does not include personal property taxes such as vehicle taxes."
+    },
+    {
+      q: "Is this an official tax bill?",
+      a: "No. This is an estimated calculation based on assessed value and the published city tax rate."
+    }
+  ],
+
+  meta: {
+    title: "Chesapeake property tax calculator 2026 — estimate real estate tax",
+    description: "Estimate Chesapeake real estate taxes using assessed value and the official city tax rate. Results are estimates and do not reflect official tax bills.",
+    canonicalPath: "/tools/property-tax/chesapeake-city-virginia"
+  }
+},
+
+"US-VA-CHESTERFIELD-COUNTY": {
+  "h1": "Chesterfield County property tax calculator 2026",
+  "intro": "This Chesterfield County property tax calculator provides an estimated property tax based on your property's assessed value and the county real estate tax rate. It applies the published county rate to the assessed value used as the tax base. Results represent an estimate and not an official tax bill.",
+  "sections": {
+    "howItWorks": "Chesterfield County real estate tax is calculated by multiplying the property's assessed value by the county real estate tax rate. The assessed value is determined by the county and serves as the taxable base. This calculator applies the county rate to the assessed value you enter to estimate annual property tax before any relief or exemption programs.",
+    "examples": "If a property has an assessed value of 300,000 and the county real estate tax rate is applied to that value, the estimated annual property tax is calculated by multiplying the assessed value by the combined local property tax rate. For example, 300,000 × 0.0089 would produce an estimated tax amount. Actual amounts may differ depending on final assessments and eligibility for relief.",
+    "limitations": "This calculator estimates property tax using the county real estate tax rate and the assessed value provided. It does not account for individual tax relief or exemption programs, which depend on income, age, disability status, veteran status, or other eligibility criteria. It does not include penalties, interest, or other charges. The actual tax bill issued by Chesterfield County may differ from this estimate."
+  },
+  "faq": [
+    { "q": "Is Chesterfield County property tax based on assessed value?", "a": "Yes. Real estate tax is calculated using the property's assessed value as determined by the county." },
+    { "q": "Does this calculator include tax relief programs?", "a": "No. Individual relief and exemption programs depend on eligibility criteria and are not included in this estimate." },
+    { "q": "Is the rate the same across the entire county?", "a": "The county real estate tax rate is set by the Board of Supervisors and applies countywide to assessed value." },
+    { "q": "Does this calculator show my official tax bill?", "a": "No. This tool provides an estimated property tax amount. Your official tax bill is issued by the county." }
+  ],
+  "meta": {
+    "title": "Chesterfield County property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate your Chesterfield County property tax using the county real estate tax rate and your assessed value. This calculator provides an annual property tax estimate.",
+    "canonicalPath": "/tools/property-tax/chesterfield-county-virginia"
+  }
+},
+
+"US-IL-CHICAGO-CITY": {
+  "h1": "Chicago property tax calculator 2026",
+  "intro": "This Chicago property tax calculator provides an estimated property tax based on market value, the residential assessment level, and your local composite property tax rate. In Chicago, property tax is applied to the Equalized Assessed Value and the final rate varies by tax code area. Results represent estimates and not official tax bills.",
+  "sections": {
+    "howItWorks": "Chicago property tax begins with fair market value. For residential property in Cook County, assessed value is generally 10 percent of market value. That assessed value is then equalized to produce the Equalized Assessed Value (EAV). The final tax is calculated by multiplying the EAV by the composite rate assigned to the property's specific tax code area. Because rates differ by tax code, you must enter the applicable combined local property tax rate for your property.",
+    "examples": "If a residential property has a market value of 500,000, the assessed value at 10 percent would be 50,000 before equalization adjustments. After equalization, the EAV is multiplied by the composite rate that applies to the property's tax code area. To estimate property tax, enter your property's market value and the correct composite rate for your location.",
+    "limitations": "Chicago does not have a single uniform citywide property tax rate. Composite rates are determined separately for each tax code area based on the combination of taxing districts that apply to a property. Exemptions, equalization adjustments, and appeals may reduce taxable value. This calculator does not determine your specific tax code or exemption eligibility. The actual tax bill may differ from this estimate."
+  },
+  "faq": [
+    { "q": "Is Chicago property tax based on market value?", "a": "The system begins with market value, but taxes are applied to the Equalized Assessed Value derived from that market value." },
+    { "q": "What assessment level applies to residential property?", "a": "Residential property in Cook County is generally assessed at 10 percent of market value before equalization." },
+    { "q": "Is there a single Chicago property tax rate?", "a": "No. The composite rate varies by tax code area and depends on the combination of taxing districts that apply to the property." },
+    { "q": "Do I need to enter my own tax rate?", "a": "Yes. Because rates vary by tax code area, you must enter the combined local property tax rate that applies to your property." }
+  ],
+  "meta": {
+    "title": "Chicago property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Chicago property tax using market value, assessment level, and your local composite property tax rate. Results are annual estimates only.",
+    "canonicalPath": "/tools/property-tax/chicago-city-illinois"
+  }
+},
+
+"US-HI-HONOLULU-CITY": {
+  "h1": "Honolulu property tax calculator 2026",
+  "intro": "This Honolulu property tax calculator provides an estimated property tax based on your taxable value and a combined local property tax rate. In Honolulu, the billed amount can vary depending on property class, tier rules, and exemptions, so this page is designed as an estimator rather than an exact tax bill.",
+  "sections": {
+    "howItWorks": "Honolulu real property tax is generally computed from net taxable value, which starts from the property’s assessed value and is reduced by any applicable exemptions. The City and County of Honolulu publishes tax rates by property class, and some classes use tiered rates. Because class selection, tiers, and eligibility-based exemptions can change the effective rate and taxable base, this calculator uses a combined local property tax rate input to produce an estimate.",
+    "examples": "If you know your net taxable value and your applicable class rate (or a combined rate you want to apply), the estimate is the taxable value multiplied by that rate. Honolulu rates are commonly published per $1,000 of net taxable value, while calculators often apply a per-dollar rate, so ensure your input rate uses a consistent basis.",
+    "limitations": "This is an estimated property tax, not an official tax bill. Honolulu tax rates vary by property class and, in some cases, by tier structure, and exemptions depend on eligibility and filing status. Special rules, classification changes, rounding, and other billing details may cause the actual tax bill to differ from this estimate."
+  },
+  "faq": [
+    { "q": "Is this an official Honolulu tax bill amount?", "a": "No. This page provides an estimated property tax using your taxable value and a combined local property tax rate. Actual billing can differ based on class, tiers, exemptions, and other factors." },
+    { "q": "What value should I use for Honolulu property tax estimates?", "a": "Use your taxable value (often shown as net taxable value) from official assessment materials. Taxable value can differ from market value when exemptions apply." },
+    { "q": "Why does Honolulu have different property tax rates?", "a": "Honolulu tax rates are set by property class, and some classes use tiered rates. The applicable rate depends on how the property is classified for tax purposes." },
+    { "q": "Are exemptions included in the estimate?", "a": "Not automatically. Exemptions in Honolulu depend on eligibility and filing details, so the estimate is most reliable when you enter a taxable value that already reflects applicable exemptions." }
+  ],
+  "meta": {
+    "title": "Honolulu property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Honolulu property tax using taxable value and a combined local property tax rate. Rates vary by property class and tiers, so results are estimates and may differ from the actual tax bill.",
+    "canonicalPath": "/tools/property-tax/honolulu-city-hawaii"
+  }
+},
+
+"US-TX-HOUSTON-CITY": {
+  "h1": "Houston property tax calculator 2026",
+  "intro": "This Houston property tax calculator provides an estimated property tax based on market value and a combined local property tax rate. In Texas, property tax is calculated from the appraised market value determined by the county appraisal district and multiplied by the rates adopted by local taxing units.",
+  "sections": {
+    "howItWorks": "Property in Houston is appraised at market value by the county appraisal district. In general, property is valued at 100% of market value. Local taxing units, including the city, county, school district, and other districts, each adopt their own tax rate. The estimated property tax is calculated by applying a combined local property tax rate to the taxable value. Exemptions may reduce taxable value if the owner qualifies and applies.",
+    "examples": "For example, if a property has a market value of 300,000 and the combined local property tax rate is entered as a single percentage, the estimated property tax is calculated by multiplying the taxable value by that combined rate. The actual combined rate depends on the specific taxing jurisdictions that apply to the property.",
+    "limitations": "This calculator provides an estimated property tax only. Houston property tax rates vary by taxing jurisdiction and property location. Exemptions depend on eligibility and timely application. The actual tax bill may differ based on district-specific rates and official calculations by the relevant authorities."
+  },
+  "faq": [
+    { "q": "How is property taxed in Houston?", "a": "Property in Houston is generally appraised at market value, and local taxing units apply their adopted rates to the taxable value." },
+    { "q": "What is the assessment ratio in Houston?", "a": "Property is generally appraised at 100% of market value in Harris County." },
+    { "q": "Do all properties have the same tax rate in Houston?", "a": "No. Tax rates vary depending on the city, county, school district, and other taxing units that apply to the specific property." },
+    { "q": "Is this calculator the same as my official tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs. The official tax bill is issued by the relevant taxing authorities and may differ." }
+  ],
+  "meta": {
+    "title": "Houston property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate your Houston property tax based on market value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/houston-city-texas"
+  }
+},
+
+"US-AL-HUNTSVILLE-CITY": {
+  "h1": "Huntsville property tax calculator 2026",
+  "intro": "This Huntsville property tax calculator provides an estimated property tax based on assessed value and a combined local millage rate. In Alabama, property tax bills are calculated by applying adopted millage rates to the assessed value determined under state law.",
+  "sections": {
+    "howItWorks": "In Huntsville, property tax is based on assessed value. Local taxing authorities adopt millage rates that apply to that assessed value. The estimated property tax is calculated by multiplying the assessed value entered in the calculator by the combined local millage rate. Because Huntsville spans more than one county, the total millage depends on the specific county and school district where the property is located.",
+    "examples": "For example, if a property has an assessed value of 50,000 and a combined local millage rate is entered as a single percentage equivalent, the estimated property tax is calculated by multiplying the assessed value by that combined rate. The actual combined millage depends on the applicable taxing jurisdictions.",
+    "limitations": "This calculator provides an estimated property tax only. Millage rates vary by county, school district, and other local taxing authorities. Assessment rules and exemptions are defined by state law and may affect the official taxable amount. The actual tax bill may differ based on parcel-specific classifications, exemptions, and officially adopted millage rates."
+  },
+  "faq": [
+    { "q": "How is property taxed in Huntsville, Alabama?", "a": "Property tax is calculated by applying combined local millage rates to the assessed value determined under Alabama law." },
+    { "q": "What value should I enter in this calculator?", "a": "You should enter the assessed value of the property as shown on official assessment records, along with the combined local millage rate that applies to the property." },
+    { "q": "Do all properties in Huntsville have the same tax rate?", "a": "No. Millage rates vary depending on the county, school district, and other taxing authorities that apply to the property." },
+    { "q": "Is this calculator the same as my official tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs. The official tax bill is determined by the relevant taxing authorities and may differ." }
+  ],
+  "meta": {
+    "title": "Huntsville property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate your Huntsville property tax based on assessed value and combined local millage rates. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/huntsville-city-alabama"
+  }
+},
+
+"US-NJ-JERSEY-CITY-CITY": {
+  "h1": "Jersey City property tax calculator 2026",
+  "intro": "This Jersey City property tax calculator provides an estimated property tax based on assessed value and a combined local property tax rate. In New Jersey, property is assessed at 100% of true value, and local tax rates are applied to that assessed value.",
+  "sections": {
+    "howItWorks": "In Jersey City, property tax is based on assessed value. Under New Jersey law, property is assessed at 100% of true value. The local general tax rate is determined from municipal, county, and school budget requirements and applied to the assessed value. The estimated property tax is calculated by multiplying the assessed value by the combined local property tax rate entered in the calculator.",
+    "examples": "For example, if a property has an assessed value of 400,000 and a combined local property tax rate is entered as a single percentage equivalent, the estimated property tax is calculated by multiplying the assessed value by that combined rate. The specific combined rate depends on officially adopted municipal, county, and school levies.",
+    "limitations": "This calculator provides an estimated property tax only. Property tax rates in Jersey City are composed of municipal, county, and school components. Exemptions and deductions depend on statutory eligibility. The actual tax bill may differ based on parcel-specific factors and officially certified rates."
+  },
+  "faq": [
+    { "q": "How is property taxed in Jersey City?", "a": "Property tax is calculated by applying the combined local tax rate to the assessed value of the property." },
+    { "q": "Is property assessed at market value in Jersey City?", "a": "Yes. In New Jersey, property is assessed at 100% of true value." },
+    { "q": "What makes up the Jersey City property tax rate?", "a": "The general tax rate reflects municipal, county, and school budget components combined into a single rate applied to assessed value." },
+    { "q": "Is this calculator the same as my official tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs. The official tax bill is determined by the relevant taxing authorities and may differ." }
+  ],
+  "meta": {
+    "title": "Jersey City property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate your Jersey City property tax based on assessed value and the combined local tax rate. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/jersey-city-city-new-jersey"
+  }
+},
+
+"US-NV-LAS-VEGAS-CITY": {
+  "h1": "Las Vegas property tax calculator 2026",
+  "intro": "This Las Vegas property tax calculator provides an estimated property tax based on assessed value and a combined local tax district rate. In Nevada, property tax is calculated by applying the applicable district rate to the assessed value of the property.",
+  "sections": {
+    "howItWorks": "In Las Vegas, property tax is based on assessed value as determined under Nevada law. The county assigns properties to specific tax districts, and each district has its own combined rate composed of local government components. The estimated property tax is calculated by multiplying the assessed value entered in the calculator by the combined tax district rate.",
+    "examples": "For example, if a property has an assessed value of 200,000 and a combined tax district rate is entered as a single percentage equivalent, the estimated property tax is calculated by multiplying the assessed value by that combined rate. The actual combined rate depends on the property’s assigned tax district.",
+    "limitations": "This calculator provides an estimated property tax only. Tax district rates vary within Clark County and are determined by the Nevada Department of Taxation. Exemptions depend on statutory eligibility and must be applied for. The actual tax bill may differ based on parcel-specific assessed value, district classification, and officially adopted rates."
+  },
+  "faq": [
+    { "q": "How is property taxed in Las Vegas?", "a": "Property tax is calculated by applying the applicable tax district rate to the assessed value of the property." },
+    { "q": "What value should I enter in this calculator?", "a": "You should enter the assessed value of the property as determined by the county assessor, along with the combined tax district rate that applies to the property." },
+    { "q": "Do all properties in Las Vegas have the same tax rate?", "a": "No. Tax rates vary by tax district within Clark County." },
+    { "q": "Is this calculator the same as my official tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs. The official tax bill is determined by the relevant taxing authorities and may differ." }
+  ],
+  "meta": {
+    "title": "Las Vegas property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate your Las Vegas property tax based on assessed value and the combined local tax district rate. Results are estimates and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/las-vegas-city-nevada"
+  }
+},
+
+"US-CA-LOS-ANGELES-CITY": {
+  "h1": "Los Angeles property tax calculator 2026",
+  "intro": "This Los Angeles property tax calculator provides an estimated property tax based on assessed value and the general 1% ad valorem levy. In California, property taxes are generally calculated using assessed value under Proposition 13. Results shown here are estimates and actual tax bills may differ.",
+  "sections": {
+    "howItWorks": "Property tax in the City of Los Angeles is based on the assessed value determined by the county assessor. Under California’s system, the general ad valorem levy is 1% of the property’s net taxable value. In addition to the 1% levy, tax bills may include voter-approved debt rates and direct assessments imposed by various taxing agencies within the county.",
+"examples": "Los Angeles properties are taxed based on the assessed value enrolled on the secured roll, but corrections or omitted assessments can result in escape assessments issued after the fact. If a property’s enrolled value is 950,000, the base 1 percent levy would equal 9,500 before considering bonded debt. Any escape assessment would be calculated separately from the standard annual estimate.",
+    "limitations": "This calculator estimates property tax using the general 1% ad valorem levy. Actual tax bills in Los Angeles may include additional voter-approved debt rates and parcel-specific direct assessments that vary by tax rate area. Exemptions such as the homeowners’ exemption or disabled veterans’ exemption depend on eligibility and are not automatically applied in this estimate. The actual tax amount may differ."
+  },
+  "faq": [
+    { "q": "How is property tax calculated in Los Angeles?", "a": "Property tax is generally calculated as 1% of the property’s net taxable assessed value under California law, with additional voter-approved debt and direct assessments potentially added depending on the property’s tax rate area." },
+    { "q": "Is the Los Angeles property tax rate exactly 1%?", "a": "The general ad valorem levy is 1% of assessed value. However, actual tax bills may include additional voter-approved debt rates and direct assessments that increase the total amount owed." },
+    { "q": "What value is used to calculate property tax in Los Angeles?", "a": "Property taxes are based on the assessed value enrolled by the county assessor, typically determined under California’s Proposition 13 rules." },
+    { "q": "Are exemptions included in this calculator?", "a": "This estimate does not automatically apply exemptions. Certain exemptions, such as the homeowners’ exemption or disabled veterans’ exemption, depend on eligibility and may reduce taxable value on an actual tax bill." }
+  ],
+  "meta": {
+    "title": "Los Angeles property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Los Angeles property tax using assessed value and the general 1% levy. Understand how voter-approved debt and direct assessments may affect your total tax.",
+    "canonicalPath": "/tools/property-tax/los-angeles-city-california"
+  }
+},
+
+"US-WI-MILWAUKEE-CITY": {
+  "h1": "Milwaukee property tax calculator 2026",
+  "intro": "This Milwaukee property tax calculator provides an estimated property tax based on assessed value and a combined local property tax rate. In Wisconsin, property taxes are calculated using the assessed value determined by the local assessor. Results shown here are estimates and actual tax bills may differ.",
+  "sections": {
+    "howItWorks": "Property tax in Milwaukee is based on the assessed value assigned by the municipal assessor as of January 1. Tax bills in Wisconsin include levies from multiple taxing units, such as the county, city, school district, and technical college district. The total property tax is generally calculated by multiplying the assessed value by the combined local property tax rate applicable to the property.",
+    "examples": "If a property in Milwaukee has an assessed value of $300,000 and the combined local property tax rate is 2.5%, the estimated property tax would be calculated by multiplying $300,000 by 0.025. This results in an estimated annual property tax of $7,500 before considering any applicable credits or exemptions.",
+    "limitations": "This calculator requires a combined local property tax rate because actual rates in Milwaukee depend on the specific tax district and applicable levies from multiple taxing units. Statewide exemptions and special classifications depend on ownership and property use and are not automatically applied here. Actual tax bills may include credits or adjustments that are not reflected in this estimate."
+  },
+  "faq": [
+    { "q": "How is property tax calculated in Milwaukee?", "a": "Property tax is generally calculated by multiplying the assessed value of the property by the combined local property tax rate that includes levies from the city, county, school district, and technical college district." },
+    { "q": "Is there a single Milwaukee property tax rate?", "a": "No. Property tax rates depend on the specific taxation district and include multiple levies from different taxing units, so a single fixed citywide rate does not apply to all properties." },
+    { "q": "What value is used to calculate property tax in Milwaukee?", "a": "Property tax is based on the assessed value assigned by the local municipal assessor as of January 1 of the tax year." },
+    { "q": "Are exemptions included in this estimate?", "a": "This estimate does not automatically apply exemptions. Eligibility for property tax exemptions depends on ownership and property use under Wisconsin law and may vary by parcel." }
+  ],
+  "meta": {
+    "title": "Milwaukee property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Milwaukee property tax using assessed value and a combined local property tax rate. Understand how multiple local levies affect your annual tax.",
+    "canonicalPath": "/tools/property-tax/milwaukee-city-wisconsin"
+  }
+},
+
+"US-TN-NASHVILLE-CITY": {
+  "h1": "Nashville property tax calculator 2026",
+  "intro": "This Nashville property tax calculator provides an estimated property tax based on assessed value and the applicable district property tax rate. In Nashville and Davidson County, property tax is calculated by applying the district rate to the property’s assessed value. Results shown here are estimates and actual tax bills may differ.",
+  "sections": {
+    "howItWorks": "Property tax in Nashville is calculated by multiplying the property’s assessed value by the applicable district property tax rate. Davidson County includes different tax rate districts, such as the General Services District (GSD) and the Urban Services District (USD). The district rate is typically expressed per $100 of assessed value and is applied to the assessed value to determine the annual property tax.",
+    "examples": "If a property in Nashville has an assessed value of $150,000 and the applicable district tax rate is expressed per $100 of assessed value, the annual property tax is calculated by applying that rate to the assessed value accordingly. The exact amount depends on the district rate that applies to the property.",
+    "limitations": "This calculator requires the applicable district property tax rate because Nashville includes multiple tax rate districts, such as GSD and USD, and some properties may also be subject to additional special assessments or satellite city rates. Eligibility-based relief programs and credits are not automatically applied. Actual tax bills may differ from this estimate."
+  },
+  "faq": [
+    { "q": "How is property tax calculated in Nashville?", "a": "Property tax is calculated by applying the applicable district property tax rate to the property’s assessed value." },
+    { "q": "Is there a single Nashville property tax rate?", "a": "No. Nashville includes multiple tax rate districts, such as the General Services District and the Urban Services District, and rates may differ depending on location." },
+    { "q": "What value is used to calculate property tax in Nashville?", "a": "Property tax is based on the assessed value of the property as determined by the local assessor." },
+    { "q": "Does this calculator include property tax relief programs?", "a": "This estimate does not automatically apply relief or freeze programs. Such programs depend on eligibility and may reduce the actual tax owed for qualifying property owners." }
+  ],
+  "meta": {
+    "title": "Nashville property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Nashville property tax using assessed value and the applicable district tax rate. Understand how GSD and USD rates affect your annual tax.",
+    "canonicalPath": "/tools/property-tax/nashville-city-tennessee"
+  }
+},
+
+"US-LA-NEW-ORLEANS-CITY": {
+  "h1": "New Orleans property tax calculator 2026",
+  "intro": "This New Orleans property tax calculator estimates annual property tax using assessed value and a combined local property tax rate you provide. In Louisiana, property tax bills are based on assessed value and millage rates set by taxing authorities. Results shown here are estimates and your actual tax bill may differ.",
+  "sections": {
+    "howItWorks": "Enter the property’s assessed value (the value shown on the assessment roll or your notice). Provide a combined local property tax rate that reflects the total millage for the property’s applicable taxing authorities, converted to a decimal rate. The estimate is calculated as taxable assessed value multiplied by the combined local rate you enter.",
+    "examples": "If a property has an assessed value of 50,000 and the combined local property tax rate is 0.012, the estimated annual property tax is 600. If the combined rate is 0.018, the estimated annual property tax is 900. Use the assessed value from official records and a combined rate that matches the property’s tax districts.",
+    "limitations": "This tool does not look up parcel-specific millage rates or tax districts. In New Orleans, millage rates can differ by jurisdiction and district, so the correct combined rate depends on the property’s location and applicable taxing bodies. Exemptions such as the homestead exemption are eligibility-based and are not applied automatically here. The estimate may not match an actual tax bill, which can include parcel-specific variations and adjustments."
+  },
+  "faq": [
+    { "q": "Is this an exact New Orleans property tax bill amount?", "a": "No. This is an estimated property tax based on assessed value and a combined local property tax rate you provide. Actual tax bills may differ." },
+    { "q": "Should I enter market value or assessed value?", "a": "Enter assessed value. Louisiana property taxes are based on assessed value and millage rates, not full market value." },
+    { "q": "Why do I need to provide a combined local property tax rate?", "a": "Millage rates can vary by taxing authority and district. This calculator uses a combined local property tax rate you provide to produce an estimate." },
+    { "q": "Does this calculator apply exemptions like the homestead exemption?", "a": "No. Exemptions can depend on eligibility and property-specific details. This tool does not determine eligibility or apply exemptions automatically." }
+  ],
+  "meta": {
+    "title": "New Orleans property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate New Orleans property tax using assessed value and a combined local property tax rate you provide. Results are estimates; actual tax bills may differ by district and exemptions.",
+    "canonicalPath": "/tools/property-tax/new-orleans-city-louisiana"
+  }
+},
+
+"US-NY-NEW-YORK-CITY": {
+  "h1": "New York City property tax calculator 2026",
+  "intro": "This New York City property tax calculator estimates annual property tax using taxable assessed value and a property tax rate you provide for the relevant tax class. In NYC, property tax is calculated as taxable value multiplied by the applicable class tax rate. Results shown here are estimates and your actual tax bill may differ.",
+  "sections": {
+    "howItWorks": "Enter the property’s taxable assessed value, which is generally the assessed value minus any exemptions. Provide the applicable NYC property tax rate for the property’s tax class. The estimated annual property tax is calculated by multiplying taxable value by the class-specific tax rate you enter.",
+    "examples": "If a property has a taxable value of 80,000 and the applicable class tax rate is 0.010, the estimated annual property tax is 800. If the rate is 0.0125, the estimated annual property tax is 1,000. Use the correct tax rate for the property’s class to produce a more accurate estimate.",
+    "limitations": "New York City uses a class-based property tax system with assessment rules, caps, exemptions, and abatements that can vary by parcel. This tool does not determine property class, apply assessment caps, or calculate eligibility-based exemptions and abatements. Because of these parcel-specific factors, the actual tax bill may differ from the estimate shown here."
+  },
+  "faq": [
+    { "q": "Is this the official NYC property tax bill amount?", "a": "No. This calculator provides an estimated property tax based on taxable value and a class-specific tax rate you enter. Actual tax bills may differ." },
+    { "q": "Should I enter market value or assessed value?", "a": "Enter taxable assessed value. In NYC, property tax is based on assessed value, adjusted for exemptions, not raw market value." },
+    { "q": "Why do I need to enter a tax rate?", "a": "NYC property tax rates differ by tax class. This tool requires you to enter the applicable class tax rate to estimate annual property tax." },
+    { "q": "Does this calculator apply NYC exemptions or abatements?", "a": "No. Exemptions and abatements are eligibility-based and parcel-specific. They are not applied automatically in this estimate." }
+  ],
+  "meta": {
+    "title": "New York City property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate New York City property tax using taxable assessed value and a class-specific property tax rate. Results are estimates; actual tax bills may differ by class and exemptions.",
+    "canonicalPath": "/tools/property-tax/new-york-city-new-york"
+  }
+},
+
+"US-CA-OAKLAND-CITY": {
+  "h1": "Oakland property tax calculator 2026",
+  "intro": "This Oakland property tax calculator provides an estimated annual property tax based on assessed value and a combined local property tax rate. In Alameda County, property tax is calculated using assessed value and locally determined rates that can vary by Tax Rate Area.",
+  "sections": {
+    "howItWorks": "Enter the property’s assessed value and an estimated combined local property tax rate. The calculation multiplies assessed value by the rate you provide. In California, assessed value is generally based on acquisition value with limits on annual increases under state law. Alameda County applies rates that may differ by Tax Rate Area within Oakland.",
+"examples": "In Oakland, the annual property tax estimate is derived from the assessed value currently listed on the secured tax roll. If that enrolled value is 605,000, the general levy under California law would generate 6,050 prior to additional voter-approved obligations. Changes in ownership or construction can trigger separate supplemental calculations outside the regular roll amount.",
+    "limitations": "This calculator provides an estimated property tax, not an official tax bill. Actual tax amounts can vary by Tax Rate Area and may include additional fixed charges or special assessments that are not included unless reflected in your entered rate. Always verify details with the relevant county authority."
+  },
+  "faq": [
+    {
+      "q": "Is Oakland property tax based on assessed value?",
+      "a": "Yes. In Alameda County, property tax is generally calculated using the property’s assessed value multiplied by the applicable local tax rate."
+    },
+    {
+      "q": "Do property tax rates vary within Oakland?",
+      "a": "Yes. Alameda County calculates rates across multiple Tax Rate Areas, and the combined local property tax rate can differ depending on location and applicable districts."
+    },
+    {
+      "q": "Does this include special assessments?",
+      "a": "No. Many properties have additional fixed charges or special assessments that are added to the ad valorem tax. These are not automatically included in this estimate."
+    },
+    {
+      "q": "Is this an official tax bill?",
+      "a": "No. This tool provides an estimated property tax amount based on the inputs you provide. The actual tax bill may differ."
+    }
+  ],
+  "meta": {
+    "title": "Oakland property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Oakland property tax using assessed value and a combined local property tax rate. Rates vary by Tax Rate Area and actual tax bills may include additional assessments.",
+    "canonicalPath": "/tools/property-tax/oakland-city-california"
+  }
+},
+
+"US-FL-ORLANDO-CITY": {
+  "h1": "Orlando property tax calculator 2026",
+  "intro": "This Orlando property tax calculator provides an estimated annual property tax using assessed value and a combined local property tax rate in decimal form. The estimate multiplies assessed value by the rate you provide.",
+  "sections": {
+    "howItWorks": "Enter the property’s assessed value and apply any modeled exemptions to estimate taxable value. The calculator multiplies the resulting value by the combined local property tax rate expressed as a decimal. In Orange County, properties within Orlando may be subject to rates from multiple taxing authorities, including the county, city, school board, and special districts.",
+    "examples": "If a property has an assessed value of 300,000 and you enter a combined local property tax rate of 0.0185, the estimated annual tax would be 5,550. Adjust the decimal rate to reflect the total rate shown on your TRIM notice or prior tax bill.",
+    "limitations": "This is an estimated property tax calculation, not an official tax bill. Combined local rates can vary depending on taxing authority overlaps within Orlando. Additional exemptions, caps, or special assessments may apply and are not automatically included unless reflected in your inputs."
+  },
+  "faq": [
+    {
+      "q": "How is property tax estimated in this calculator?",
+      "a": "The estimate multiplies assessed value by a combined local property tax rate entered in decimal form."
+    },
+    {
+      "q": "Does Orlando have one single property tax rate?",
+      "a": "No. Properties may be subject to multiple taxing authorities, and the combined rate can vary depending on location within Orange County."
+    },
+    {
+      "q": "Is this the same as my official tax bill?",
+      "a": "No. This tool provides an estimated property tax amount. The actual tax bill may differ."
+    },
+    {
+      "q": "Are exemptions included automatically?",
+      "a": "Only exemptions modeled in the calculator are applied. Other exemptions or special assessments may affect the final bill."
+    }
+  ],
+  "meta": {
+    "title": "Orlando property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Orlando property tax using assessed value and a combined local property tax rate in decimal form. Rates vary by taxing authority and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/orlando-city-florida"
+  }
+},
+
+"US-PA-PHILADELPHIA-CITY": {
+  "h1": "Philadelphia property tax calculator 2026",
+  "intro": "This Philadelphia property tax calculator estimates annual real estate tax using assessed value and a combined City and School District tax rate in decimal form.",
+  "sections": {
+    "howItWorks": "Enter the property’s assessed value and the combined City and School District real estate tax rate in decimal form. The estimate multiplies assessed value by the rate you provide.",
+    "examples": "If a property has an assessed value of 400,000 and you enter a combined tax rate of 0.013998, the estimated annual real estate tax would be 5,599.",
+    "limitations": "This calculator provides an estimate, not an official tax bill. The City of Philadelphia and the School District of Philadelphia both impose real estate taxes. Exemptions such as the Homestead Exemption and other programs may reduce taxable value but are not automatically included unless modeled."
+  },
+  "faq": [
+    {
+      "q": "Is Philadelphia property tax based on assessed value?",
+      "a": "Yes. Real estate tax is calculated using the property’s assessed value as determined by the Office of Property Assessment."
+    },
+    {
+      "q": "Does Philadelphia have multiple property tax rates?",
+      "a": "Yes. Both the City of Philadelphia and the School District of Philadelphia impose real estate tax rates, which combine into the total rate."
+    },
+    {
+      "q": "Is the rate uniform across the city?",
+      "a": "Yes. The City and School District rates apply uniformly to real estate within Philadelphia."
+    },
+    {
+      "q": "Does this include the Homestead Exemption?",
+      "a": "No. This calculator estimates tax based on the values you enter. Eligible homestead properties may receive an assessed value reduction under city rules."
+    }
+  ],
+  "meta": {
+    "title": "Philadelphia property tax calculator 2026 — estimate real estate tax",
+    "description": "Estimate Philadelphia real estate tax using assessed value and the combined City and School District tax rate in decimal form.",
+    "canonicalPath": "/tools/property-tax/philadelphia-city-pennsylvania"
+  }
+},
+
+"US-OR-PORTLAND-CITY": {
+  "h1": "Portland property tax calculator 2026",
+  "intro": "This Portland property tax calculator provides an estimated annual property tax using assessed value and a combined property tax rate in decimal form. In Oregon, property tax is generally calculated using assessed value and the tax rate for the applicable tax code area.",
+  "sections": {
+    "howItWorks": "Enter the property’s assessed value and the combined tax rate for your tax code area in decimal form. The estimate multiplies assessed value by the rate you provide. In Multnomah County, tax rates are calculated for each tax code area and may include education taxes, general government taxes, bonds, and local option levies.",
+    "examples": "If a property has an assessed value of 500,000 and you enter a combined property tax rate of 0.015, the estimated annual tax would be 7,500 before any special assessments.",
+    "limitations": "This is an estimated property tax calculation, not an official tax statement. Tax rates vary by tax code area within Portland, and special assessments may apply. Exemptions and eligibility-based programs are not automatically included unless reflected in your inputs."
+  },
+  "faq": [
+    {
+      "q": "Is Portland property tax based on assessed value?",
+      "a": "Yes. Oregon property tax is calculated using assessed value, which is generally the lower of maximum assessed value or real market value."
+    },
+    {
+      "q": "Do property tax rates vary within Portland?",
+      "a": "Yes. Rates are determined by tax code area and can differ depending on the districts that apply to the property."
+    },
+    {
+      "q": "Is there one single citywide property tax rate?",
+      "a": "No. Property tax rates are calculated for each tax code area rather than one uniform citywide rate."
+    },
+    {
+      "q": "Does this include exemptions or special assessments?",
+      "a": "No. This calculator estimates tax based on assessed value and the rate you enter. Special assessments and eligibility-based exemptions may affect the final bill."
+    }
+  ],
+  "meta": {
+    "title": "Portland property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Portland property tax using assessed value and your tax code area rate. Rates vary by district and actual tax bills may differ.",
+    "canonicalPath": "/tools/property-tax/portland-city-oregon"
+  }
+},
+
+"US-NC-RALEIGH-CITY": {
+  "h1": "Raleigh property tax calculator 2026",
+  "intro": "This Raleigh property tax calculator estimates annual property tax using assessed value and a combined local property tax rate you provide. Rates can differ by jurisdiction and district overlaps, so results are estimates.",
+  "sections": {
+    "howItWorks": "Enter the property’s assessed value and your combined local property tax rate. In North Carolina, local rates are commonly published as dollars per $100 of value. If you have a per-$100 rate, convert it to a decimal rate by dividing by 100 before entering it here. The estimate multiplies assessed value by the decimal rate you provide.",
+    "examples": "Example conversion: if the combined rate is 0.8685 per $100 of value, the equivalent decimal rate is 0.008685. With an assessed value of 350,000, the estimate would be 350,000 × 0.008685 = 3,039.75.",
+    "limitations": "This calculator provides an estimated property tax, not an official tax bill. Wake County and local jurisdictions adopt rates annually, and totals can vary by municipal boundaries and district overlaps. Exemptions, exclusions, and eligibility-based programs are not automatically applied."
+  },
+  "faq": [
+    {
+      "q": "How is property tax calculated in Raleigh?",
+      "a": "Property tax is based on assessed value and the combined rates set by Wake County and other applicable taxing jurisdictions."
+    },
+    {
+      "q": "Why are North Carolina tax rates shown per $100 of value?",
+      "a": "North Carolina commonly presents local property tax rates as an amount per $100 of assessed value."
+    },
+    {
+      "q": "How do I convert a rate per $100 into a decimal rate?",
+      "a": "Divide the per-$100 rate by 100 to get the equivalent decimal rate used in this estimator."
+    },
+    {
+      "q": "Does the rate vary within Raleigh?",
+      "a": "Yes. The total rate can vary due to municipal boundaries and district overlaps, so the actual tax bill may differ from an estimate."
+    }
+  ],
+  "meta": {
+    "title": "Raleigh property tax calculator 2026 — estimate property taxes",
+    "description": "Estimate Raleigh property tax using assessed value and a combined local property tax rate you provide. Convert per-$100 rates to a decimal rate for calculation.",
+    "canonicalPath": "/tools/property-tax/raleigh-city-north-carolina"
+  }
+},
+
+"US-VA-RICHMOND-CITY": {
+  "h1": "Richmond property tax calculator 2026",
+  "intro": "This Richmond property tax calculator estimates annual real estate tax using assessed value and the official City of Richmond tax rate.",
+  "sections": {
+    "howItWorks": "Richmond levies real estate tax at $1.20 per $100 of assessed value. This calculator uses the mathematically equivalent decimal rate of 0.012. The estimate multiplies assessed value by 0.012.",
+    "examples": "If a property has an assessed value of 400,000, the estimated annual tax would be 400,000 × 0.012 = 4,800.",
+    "limitations": "This calculator provides an estimate, not an official tax bill. The City assesses property at 100% of fair market value. Exemptions, relief programs, or classification-based exclusions may apply and are not automatically included."
+  },
+  "faq": [
+    {
+      "q": "Is Richmond property assessed at market value?",
+      "a": "Yes. Virginia law requires real property to be assessed at 100% of fair market value."
+    },
+    {
+      "q": "What is the Richmond real estate tax rate?",
+      "a": "The City of Richmond real estate tax rate is $1.20 per $100 of assessed value."
+    },
+    {
+      "q": "Are there separate school or district rates?",
+      "a": "No. The published real estate tax rate applies citywide for general purposes."
+    },
+    {
+      "q": "Can exemptions reduce taxable value?",
+      "a": "Certain exemption and relief programs are available for qualifying properties, including disabled veterans and qualifying residents."
+    }
+  ],
+  "meta": {
+    "title": "Richmond property tax calculator 2026 — estimate real estate tax",
+    "description": "Estimate Richmond real estate tax using assessed value and the official $1.20 per $100 city tax rate.",
+    "canonicalPath": "/tools/property-tax/richmond-city-virginia"
+  }
+},
+
+"US-CA-SAN-FRANCISCO-CITY": {
+  "h1": "San Francisco property tax rate calculator 2026",
+  "intro": "This San Francisco property tax calculator provides an estimated property tax based on your property’s assessed value and the published secured property tax rate. Property tax in San Francisco is calculated using the assessed value established by the Assessor-Recorder.",
+  "sections": {
+    "howItWorks": "San Francisco secured property tax is calculated by applying the published secured property tax rate to the property’s assessed value. The assessed value is determined by the Assessor-Recorder under California assessment rules. This calculator multiplies the assessed value by the secured property tax rate to estimate annual property tax.",
+"examples": "San Francisco property tax is calculated from the assessed value entered on the secured roll for the applicable fiscal year. For instance, if the roll value is 880,000, the 1 percent constitutional levy would produce 8,800 before bonded debt components are included. Supplemental assessments may apply if valuation changes occur after the initial roll is established.",
+    "limitations": "This tool provides an estimated property tax and does not replicate an official tax bill. Actual tax amounts depend on the assessed value assigned to the parcel and may include parcel-specific direct assessments or other legally authorized charges. Exemptions, such as the homeowners’ exemption or disabled veterans’ exemption, are not automatically applied in this estimate. Always confirm details with the appropriate local tax authority."
+  },
+  "faq": [
+    {
+      "q": "What is the San Francisco property tax rate?",
+      "a": "San Francisco publishes a secured property tax rate that is applied to a property’s assessed value to determine annual secured property tax."
+    },
+    {
+      "q": "Is San Francisco property tax based on assessed value?",
+      "a": "Yes. Secured property tax is calculated using the assessed value established annually by the Assessor-Recorder."
+    },
+    {
+      "q": "Does this calculator include exemptions?",
+      "a": "No. This calculator does not automatically apply property-specific exemptions. Certain exemptions may reduce taxable value if eligibility requirements are met."
+    },
+    {
+      "q": "Is this the exact amount I will pay?",
+      "a": "No. This tool provides an estimated property tax based on assessed value and the published secured property tax rate. Actual tax bills may differ due to parcel-specific factors."
+    }
+  ],
+  "meta": {
+    "title": "San Francisco property tax rate calculator 2026 — estimate property taxes",
+    "description": "Estimate your San Francisco property tax using the published secured property tax rate and your assessed value. Results are estimates and may differ from your official tax bill.",
+    "canonicalPath": "/tools/property-tax/san-francisco-city-california"
+  }
+},
+
 
 
 
