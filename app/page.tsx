@@ -135,17 +135,17 @@ export default function HomePage() {
 
             <ul className="mt-3 space-y-2 text-sm">
               <li>
-                <Link href="/tools/property-tax/los-angeles-county" className="text-blue-700 hover:underline">
+                <Link href="/tools/property-tax/los-angeles-city-california" className="text-blue-700 hover:underline">
                   Los Angeles County property tax calculator
                 </Link>
               </li>
               <li>
-                <Link href="/tools/property-tax/cook-county" className="text-blue-700 hover:underline">
+                <Link href="/tools/property-tax/cook-county-illinois" className="text-blue-700 hover:underline">
                   Cook County property tax calculator
                 </Link>
               </li>
               <li>
-                <Link href="/tools/property-tax/san-francisco" className="text-blue-700 hover:underline">
+                <Link href="/tools/property-tax/san-francisco-california" className="text-blue-700 hover:underline">
                   San Francisco property tax calculator
                 </Link>
               </li>
