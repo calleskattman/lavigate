@@ -1,21 +1,33 @@
 // app/page.tsx
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "State and Local Tax Calculators | Lavigate",
+  description:
+    "Explore income tax, sales tax, paycheck and property tax calculators by state and city. Clear, region-specific tools built from official tax rules.",
+  alternates: {
+    canonical: "https://lavigate.com/",
+  },
+};
 
 export default function HomePage() {
   return (
-    <div className="space-y-12">
-      {/* Hero / intro */}
-      <section className="rounded-2xl border border-slate-200 bg-white px-6 py-10 shadow-sm sm:px-10">
+    <div className="space-y-16">
+
+      {/* Hero */}
+      <section className="rounded-2xl border border-slate-200 bg-white px-6 py-12 shadow-sm sm:px-10">
         <p className="text-xs font-semibold tracking-[0.18em] text-slate-500">
           LAVIGATE
         </p>
         <h1 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl">
-          Navigate your finances with clear, region-specific calculators.
+          State and local tax calculators by region
         </h1>
         <p className="mt-4 max-w-2xl text-sm text-slate-700 sm:text-base">
-          Lavigate helps you understand income tax, paychecks, loans and
-          interest with transparent calculators tailored to each region.
-          No sign-up, no fluff – just numbers you can trust.
+          Lavigate provides clear, region-specific income tax, sales tax,
+          paycheck and property tax calculators. Each tool is based on
+          officially published brackets and rules, with transparent explanations
+          and limitations.
         </p>
 
         <div className="mt-6 flex flex-wrap gap-3">
@@ -23,65 +35,159 @@ export default function HomePage() {
             href="/tools"
             className="inline-flex items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-blue-700"
           >
-            Browse calculators
+            Browse all calculators
           </Link>
           <Link
             href="/about"
             className="inline-flex items-center justify-center rounded-md border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-800 hover:bg-slate-50"
           >
-            Learn more about Lavigate →
+            About Lavigate →
           </Link>
         </div>
       </section>
 
-      {/* Intro till första versionen */}
-      <section className="space-y-2">
-        <h2 className="text-base font-semibold text-slate-900">
-          Starting with tax and paycheck calculators
+      {/* Category hub links */}
+      <section className="space-y-8">
+        <h2 className="text-xl font-semibold text-slate-900">
+          Explore calculators by category
         </h2>
-        <p className="max-w-3xl text-sm text-slate-700">
-          The first version of Lavigate focuses on income tax and paycheck
-          calculators for selected regions. Each calculator is built from
-          official brackets and rules, with clear explanations and limitations
-          on every page.
+
+        <div className="grid gap-10 md:grid-cols-3">
+
+          {/* Income Tax */}
+          <div>
+            <h3 className="text-sm font-semibold text-slate-900">
+              Income tax calculators
+            </h3>
+
+            <ul className="mt-3 space-y-2 text-sm">
+              <li>
+                <Link href="/tools/income-tax/california" className="text-blue-700 hover:underline">
+                  California income tax calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/income-tax/texas" className="text-blue-700 hover:underline">
+                  Texas income tax calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/income-tax/new-york" className="text-blue-700 hover:underline">
+                  New York income tax calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/income-tax/ohio" className="text-blue-700 hover:underline">
+                  Ohio income tax calculator
+                </Link>
+              </li>
+            </ul>
+
+            <div className="mt-3">
+              <Link
+                href="/tools/income-tax"
+                className="text-sm font-medium text-blue-700 hover:underline"
+              >
+                View all income tax calculators →
+              </Link>
+            </div>
+          </div>
+
+          {/* Sales Tax */}
+          <div>
+            <h3 className="text-sm font-semibold text-slate-900">
+              Sales tax calculators
+            </h3>
+
+            <ul className="mt-3 space-y-2 text-sm">
+              <li>
+                <Link href="/tools/sales-tax/california" className="text-blue-700 hover:underline">
+                  California sales tax calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/sales-tax/texas" className="text-blue-700 hover:underline">
+                  Texas sales tax calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/sales-tax/florida" className="text-blue-700 hover:underline">
+                  Florida sales tax calculator
+                </Link>
+              </li>
+            </ul>
+
+            <div className="mt-3">
+              <Link
+                href="/tools/sales-tax"
+                className="text-sm font-medium text-blue-700 hover:underline"
+              >
+                View all sales tax calculators →
+              </Link>
+            </div>
+          </div>
+
+          {/* Property Tax */}
+          <div>
+            <h3 className="text-sm font-semibold text-slate-900">
+              Property tax calculators
+            </h3>
+
+            <ul className="mt-3 space-y-2 text-sm">
+              <li>
+                <Link href="/tools/property-tax/los-angeles-county" className="text-blue-700 hover:underline">
+                  Los Angeles County property tax calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/property-tax/cook-county" className="text-blue-700 hover:underline">
+                  Cook County property tax calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/property-tax/san-francisco" className="text-blue-700 hover:underline">
+                  San Francisco property tax calculator
+                </Link>
+              </li>
+            </ul>
+
+            <div className="mt-3">
+              <Link
+                href="/tools/property-tax"
+                className="text-sm font-medium text-blue-700 hover:underline"
+              >
+                View all property tax calculators →
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SEO content section */}
+      <section className="max-w-3xl space-y-4">
+        <h2 className="text-lg font-semibold text-slate-900">
+          How regional tax calculators work
+        </h2>
+
+        <p className="text-sm text-slate-700">
+          Tax rules vary significantly between U.S. states and local jurisdictions.
+          Income tax brackets, sales tax rates, property tax assessment rules
+          and payroll withholding systems differ by region and year.
+        </p>
+
+        <p className="text-sm text-slate-700">
+          Lavigate’s calculators are built from officially published brackets,
+          rates and assessment frameworks. Each page explains how the estimate
+          is calculated and highlights important limitations so you understand
+          what is included — and what is not.
+        </p>
+
+        <p className="text-sm text-slate-700">
+          Explore calculators by category above or browse the complete list
+          of available tools.
         </p>
       </section>
 
-      {/* Feature-kort */}
-      <section className="grid gap-6 md:grid-cols-2">
-        <article className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-          <h3 className="text-sm font-semibold text-slate-900">
-            Income tax calculators
-          </h3>
-          <p className="mt-2 text-sm text-slate-700">
-            Understand how much tax you pay by region and year, including
-            federal and state components where applicable.
-          </p>
-          <div className="mt-4">
-            <Link
-              href="/tools/income-tax/texas"
-              className="text-sm font-medium text-blue-700 hover:text-blue-800"
-            >
-              View an example – Texas →
-            </Link>
-          </div>
-        </article>
-
-        <article className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm">
-          <h3 className="text-sm font-semibold text-slate-900">
-            Built for transparency
-          </h3>
-          <p className="mt-2 text-sm text-slate-700">
-            Each tool explains how the calculation works, links to official
-            sources, and highlights important limitations so you always know
-            what the numbers mean.
-          </p>
-          <div className="mt-4 text-xs text-slate-500">
-            More calculators – paychecks, loans and interest – will be added
-            step by step as the project grows.
-          </div>
-        </article>
-      </section>
     </div>
   );
 }
