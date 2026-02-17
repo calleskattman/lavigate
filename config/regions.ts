@@ -260,8 +260,15 @@ export const regions: Region[] = [
   { id: "US-OR-PORTLAND-CITY", countryCode: "US", slug: "portland-city-oregon", name: "Portland", displayName: "Portland, Oregon" },
   { id: "US-NC-RALEIGH-CITY", countryCode: "US", slug: "raleigh-city-north-carolina", name: "Raleigh", displayName: "Raleigh, North Carolina" },
   { id: "US-VA-RICHMOND-CITY", countryCode: "US", slug: "richmond-city-virginia", name: "Richmond", displayName: "Richmond, Virginia" },
+  { id: "US-WA-SEATTLE-CITY", countryCode: "US", slug: "seattle-city-washington", name: "Seattle", displayName: "Seattle, Washington" },
+  { id: "US-MO-ST-LOUIS-CITY", countryCode: "US", slug: "st-louis-city-missouri", name: "St. Louis", displayName: "St. Louis, Missouri" },
+  { id: "US-VA-VIRGINIA-BEACH-CITY", countryCode: "US", slug: "virginia-beach-city-virginia", name: "Virginia Beach", displayName: "Virginia Beach, Virginia" },
+  { id: "US-CA-LOS-ANGELES-COUNTY", countryCode: "US", slug: "los-angeles-county-california", name: "Los Angeles County", displayName: "Los Angeles County, California" },
+  { id: "US-CA-VENTURA-COUNTY", countryCode: "US", slug: "ventura-county-california", name: "Ventura County", displayName: "Ventura County, California" },
+  { id: "US-WA-SNOHOMISH-COUNTY", countryCode: "US", slug: "snohomish-county-washington", name: "Snohomish County", displayName: "Snohomish County, Washington" },
+  { id: "US-HI-KAUAI-COUNTY", countryCode: "US", slug: "kauai-county-hawaii", name: "Kauai County", displayName: "Kauai County, Hawaii" },
+  { id: "US-PR", countryCode: "US", slug: "puerto-rico", name: "Puerto Rico", displayName: "Puerto Rico" },
   
-
 
 
   // fler regioner läggs till här senare

@@ -346,6 +346,14 @@ export const tools: ToolDefinition[] = [
       "US-NC-RALEIGH-CITY",
       "US-VA-RICHMOND-CITY",
       "US-CA-SAN-FRANCISCO-CITY",
+      "US-WA-SEATTLE-CITY",
+      "US-MO-ST-LOUIS-CITY",
+      "US-VA-VIRGINIA-BEACH-CITY",
+      "US-CA-LOS-ANGELES-COUNTY",
+      "US-CA-VENTURA-COUNTY",
+      "US-WA-SNOHOMISH-COUNTY",
+      "US-HI-KAUAI-COUNTY",
+      "US-PR",
     ],
   }  
   

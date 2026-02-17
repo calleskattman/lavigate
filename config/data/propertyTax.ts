@@ -4268,6 +4268,203 @@ export const propertyTaxConfigs: Record<RegionId, PropertyTaxConfig> = {
   }
 },
 
+"US-WA-SEATTLE-CITY": {
+  regionId: "US-WA-SEATTLE-CITY",
+  year: 2026,
+
+  systemName: "Seattle property tax (King County assessed value system)",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      {
+        name: "Washington regular property tax levy (combined local levies – varies by taxing district)",
+        rate: 0,
+      },
+    ],
+  },
+
+  authority: {
+    name: "King County Assessor",
+    url: "https://kingcounty.gov/en/dept/assessor",
+    lastVerified: "2026-02-17",
+  },
+},
+
+"US-MO-ST-LOUIS-CITY": {
+  regionId: "US-MO-ST-LOUIS-CITY",
+  year: 2026,
+
+  systemName: "St. Louis property tax (Missouri classified assessment system – residential)",
+
+  valuation: {
+    method: "marketWithRatio",
+    assessmentRatio: 0.19,
+  },
+
+  rates: {
+    components: [
+      {
+        name: "City of St. Louis combined property tax rate (per $100 of assessed value – varies by special district)",
+        rate: 0,
+      },
+    ],
+  },
+
+  authority: {
+    name: "City of St. Louis Assessor",
+    url: "https://www.stlouis-mo.gov/government/departments/assessor",
+    lastVerified: "2026-02-17",
+  },
+},
+
+"US-VA-VIRGINIA-BEACH-CITY": {
+  regionId: "US-VA-VIRGINIA-BEACH-CITY",
+  year: 2026,
+
+  systemName: "Virginia Beach real estate tax",
+
+  valuation: {
+    method: "assessed",
+  },
+
+  rates: {
+    components: [
+      {
+        name: "Virginia Beach base real estate tax rate ($0.97 per $100 of assessed value)",
+        rate: 0.0097,
+      },
+    ],
+  },
+
+  authority: {
+    name: "City of Virginia Beach Assessor",
+    url: "https://assessor.virginiabeach.gov",
+    lastVerified: "2026-02-17",
+  },
+},
+
+"US-CA-LOS-ANGELES-COUNTY": {
+  regionId: "US-CA-LOS-ANGELES-COUNTY",
+  year: 2026,
+
+  systemName: "Los Angeles County secured property tax (California assessed value system)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "General levy (1%)", rate: 0.01 }
+    ]
+  },
+
+  authority: {
+    name: "Los Angeles County Treasurer and Tax Collector",
+    url: "https://www.propertytax.lacounty.gov/Home/Overview/0",
+    lastVerified: "2026-02-17"
+  }
+},
+
+"US-CA-VENTURA-COUNTY": {
+  regionId: "US-CA-VENTURA-COUNTY",
+  year: 2026,
+
+  systemName: "Ventura County secured property tax (California Proposition 13 system)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "General tax levy (1%)", rate: 0.01 }
+    ]
+  },
+
+  authority: {
+    name: "Ventura County Treasurer-Tax Collector",
+    url: "https://venturacounty.gov/ttc/property-tax-description/",
+    lastVerified: "2026-02-17"
+  }
+},
+
+"US-WA-SNOHOMISH-COUNTY": {
+  regionId: "US-WA-SNOHOMISH-COUNTY",
+  year: 2026,
+
+  systemName: "Snohomish County property tax (Washington true and fair value assessment system)",
+
+  valuation: {
+    method: "marketWithRatio",
+    assessmentRatio: 1
+  },
+
+  rates: {
+    components: [
+      { name: "Combined levy rate (varies by tax code area — user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Snohomish County Assessor",
+    url: "https://www.snohomishcountywa.gov/faq.aspx?TID=32",
+    lastVerified: "2026-02-17"
+  }
+},
+
+"US-HI-KAUAI-COUNTY": {
+  regionId: "US-HI-KAUAI-COUNTY",
+  year: 2026,
+
+  systemName: "Kauai County real property tax (classified assessed value system)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "County real property tax rate (varies by property class — user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "County of Kauai Department of Finance – Real Property Tax",
+    url: "https://www.kauai.gov/Government/Departments-Agencies/Finance/Real-Property-Tax",
+    lastVerified: "2026-02-17"
+  }
+},
+
+"US-PR": {
+  regionId: "US-PR",
+  year: 2026,
+
+  systemName: "Puerto Rico property tax (municipality-set rates on assessed value)",
+
+  valuation: {
+    method: "assessed"
+  },
+
+  rates: {
+    components: [
+      { name: "Combined municipal property tax rate (varies by municipality — user-provided)", rate: 0 }
+    ]
+  },
+
+  authority: {
+    name: "Puerto Rico Office of Management and Budget (OGP) — Autonomous Municipalities Act (Law 83-1991)",
+    url: "https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/Municipios/83-1991/83-1991.pdf",
+    lastVerified: "2026-02-17"
+  }
+},
+
+
+
 
 
 
