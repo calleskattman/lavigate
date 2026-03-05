@@ -3,6 +3,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { tools } from "@/config/tools";
 import { regions } from "@/config/regions";
+import { mortgageData } from "@/config/data/mortgage";
+
 
 export const metadata: Metadata = {
   title: "Finance calculators by category | Lavigate",
@@ -14,14 +16,35 @@ export const metadata: Metadata = {
 };
 
 export default function ToolsIndexPage() {
-  const toolWithRegions = tools
-    .map((tool) => ({
+  
+
+  const toolEntries = tools
+  .map((tool) => {
+    if (tool.id === "mortgage") {
+      return {
+        tool,
+        pages: Object.values(mortgageData).map((config) => ({
+          slug: config.pageSlug,
+          label: config.systemName,
+        })),
+      };
+    }
+
+    return {
       tool,
-      regions: regions.filter((region) =>
-        tool.supportedRegionIds.includes(region.id)
-      ),
-    }))
-    .filter((entry) => entry.regions.length > 0);
+      pages: regions
+        .filter((region) =>
+          tool.supportedRegionIds.includes(region.id)
+        )
+        .map((region) => ({
+          slug: region.slug,
+          label: region.displayName ?? region.name,
+        })),
+    };
+  })
+  .filter((entry) => entry.pages.length > 0);
+
+
 
   return (
     <main className="mx-auto max-w-5xl px-4 py-12 space-y-16">
@@ -46,7 +69,7 @@ export default function ToolsIndexPage() {
 
       {/* Tool sections */}
       <div className="space-y-12">
-        {toolWithRegions.map(({ tool, regions }) => {
+        {toolEntries.map(({ tool, pages }) => {
           const prioritizedRegions = regions.slice(0, 8);
 
           return (
@@ -65,18 +88,19 @@ export default function ToolsIndexPage() {
               </div>
 
               <div className="rounded-2xl border border-slate-200 bg-white p-4 md:p-6">
-                <ul className="flex flex-wrap gap-2 text-sm">
-                  {prioritizedRegions.map((region) => (
-                    <li key={region.id}>
-                      <Link
-                        href={`/tools/${tool.id}/${region.slug}`}
-                        className="inline-flex items-center rounded-full border border-slate-200 px-3 py-1 text-xs text-slate-700 hover:border-blue-500 hover:text-blue-600"
-                      >
-                        {region.displayName ?? region.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+              <ul className="flex flex-wrap gap-2 text-sm">
+  {pages.slice(0, 8).map((page) => (
+    <li key={`${tool.id}-${page.slug}`}>
+      <Link
+        href={`/tools/${tool.id}/${page.slug}`}
+        className="inline-flex items-center rounded-full border border-slate-200 px-3 py-1 text-xs text-slate-700 hover:border-blue-500 hover:text-blue-600"
+      >
+        {page.label}
+      </Link>
+    </li>
+  ))}
+</ul>
+
               </div>
             </section>
           );

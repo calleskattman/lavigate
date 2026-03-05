@@ -268,6 +268,13 @@ export const regions: Region[] = [
   { id: "US-WA-SNOHOMISH-COUNTY", countryCode: "US", slug: "snohomish-county-washington", name: "Snohomish County", displayName: "Snohomish County, Washington" },
   { id: "US-HI-KAUAI-COUNTY", countryCode: "US", slug: "kauai-county-hawaii", name: "Kauai County", displayName: "Kauai County, Hawaii" },
   { id: "US-PR", countryCode: "US", slug: "puerto-rico", name: "Puerto Rico", displayName: "Puerto Rico" },
+  {
+    id: "US",
+    countryCode: "US",
+    slug: "us",
+    name: "United States",
+    displayName: "United States",
+  },
   
 
 

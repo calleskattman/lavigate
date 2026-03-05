@@ -5,7 +5,8 @@ export type ToolId =
   | "income-tax"
   | "sales-tax"
   | "paycheck"
-  | "property-tax";
+  | "property-tax"
+  | "mortgage";
 
 export type ToolDefinition = {
   id: ToolId;
@@ -13,15 +14,17 @@ export type ToolDefinition = {
   label: string;
   basePath: string;
   component:
-    | "IncomeTaxTool"
-    | "SalesTaxTool"
-    | "PaycheckTool"
-    | "PropertyTaxTool";
+  | "IncomeTaxTool"
+  | "SalesTaxTool"
+  | "PaycheckTool"
+  | "PropertyTaxTool"
+  | "MortgageTool";
   dataKey:
-    | "incomeTax"
-    | "salesTax"
-    | "paycheck"
-    | "propertyTax";
+  | "incomeTax"
+  | "salesTax"
+  | "paycheck"
+  | "propertyTax"
+  | "mortgage";
   supportedRegionIds: RegionId[];
 };
 
@@ -355,7 +358,19 @@ export const tools: ToolDefinition[] = [
       "US-HI-KAUAI-COUNTY",
       "US-PR",
     ],
-  }  
+  },
+  {
+    id: "mortgage",
+    name: "Mortgage calculator",
+    label: "Mortgage",
+    basePath: "/tools/mortgage",
+    component: "MortgageTool",
+    dataKey: "mortgage",
+    supportedRegionIds: ["US"],
+  },
+  
+
+  
   
 ];
 

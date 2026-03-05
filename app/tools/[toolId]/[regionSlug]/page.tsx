@@ -3,6 +3,7 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Script from "next/script";
+import type { MortgageConfig } from "@/config/data/mortgage";
 
 import { CURRENT_TAX_YEAR } from "@/config/site";
 import { getRegionBySlug, regions } from "@/config/regions";
@@ -12,17 +13,20 @@ import { getIncomeTaxConfig } from "@/config/data/incomeTax";
 import { getSalesTaxConfig } from "@/config/data/salesTax";
 import { getPaycheckConfig } from "@/config/data/paycheck";
 import { getPropertyTaxConfig } from "@/config/data/propertyTax";
+import { mortgageData } from "@/config/data/mortgage";
 
 import { incomeTaxSeoContent } from "@/content/income-tax.en";
 import { salesTaxSeoContent } from "@/content/sales-tax.en";
 import { paycheckSeoContent } from "@/content/paycheck.en";
 import { propertyTaxSeoContent } from "@/content/property-tax.en";
+import { mortgageSeoContent } from "@/content/mortgage.en";
 
 import { ToolLayout } from "@/components/layout/ToolLayout";
 import IncomeTaxTool from "@/components/tools/IncomeTaxTool";
 import SalesTaxTool from "@/components/tools/SalesTaxTool";
 import PaycheckTool from "@/components/tools/PaycheckTool";
 import PropertyTaxTool from "@/components/tools/PropertyTaxTool";
+import MortgageTool from "@/components/tools/MortgageTool";
 
 import { RelatedToolRegions } from "@/components/navigation/RelatedToolRegions";
 import { RelatedRegionTools } from "@/components/navigation/RelatedRegionTools";
@@ -52,9 +56,25 @@ export async function generateMetadata(
   const { toolId, regionSlug } = await params;
 
   const tool = getToolById(toolId as any);
-  const region = getRegionBySlug(regionSlug);
+if (!tool) return {};
 
-  if (!tool || !region) return {};
+// mortgage = slug-baserad SEO
+if (tool.id === "mortgage") {
+  const seo = mortgageSeoContent[regionSlug];
+  if (!seo?.meta) return {};
+
+  return {
+    title: seo.meta.title,
+    description: seo.meta.description,
+    alternates: {
+      canonical: `https://lavigate.com/tools/mortgage/${regionSlug}`,
+    },
+  };
+}
+
+// övriga verktyg = region-baserade
+const region = getRegionBySlug(regionSlug);
+if (!region) return {};
 
   let seo: any;
 
@@ -98,16 +118,24 @@ export async function generateMetadata(
 // ---------------------------------
 
 export function generateStaticParams() {
-  return tools.flatMap((tool) =>
-    tool.supportedRegionIds
+  return tools.flatMap((tool) => {
+    if (tool.id === "mortgage") {
+      return Object.keys(mortgageData).map((slug) => ({
+        toolId: "mortgage",
+        regionSlug: slug,
+      }));
+    }
+
+    return tool.supportedRegionIds
       .map((regionId) => regions.find((r) => r.id === regionId))
       .filter(Boolean)
       .map((region) => ({
         toolId: tool.id,
         regionSlug: region!.slug,
-      }))
-  );
+      }));
+  });
 }
+
 
 
 
@@ -122,34 +150,45 @@ export default async function ToolRegionPage({
   const { toolId, regionSlug } = await params;
 
   const tool = getToolById(toolId as any);
-  const region = getRegionBySlug(regionSlug);
+if (!tool) notFound();
 
-  if (!tool || !region) {
-    notFound();
-  }
+const isMortgage = tool.id === "mortgage";
+const region = isMortgage
+  ? undefined
+  : getRegionBySlug(regionSlug);
+
+if (!isMortgage && !region) {
+  notFound();
+}
+
 
   let config: any;
   let seo: any;
 
   switch (tool.id) {
+    case "mortgage":
+      config = mortgageData[regionSlug];
+      seo = mortgageSeoContent[regionSlug];
+      break;    
+
     case "income-tax":
-      config = getIncomeTaxConfig(region.id);
-      seo = incomeTaxSeoContent[region.id];
+      config = getIncomeTaxConfig(region!.id);
+      seo = incomeTaxSeoContent[region!.id];
       break;
 
     case "sales-tax":
-      config = getSalesTaxConfig(region.id);
-      seo = salesTaxSeoContent[region.id];
+      config = getSalesTaxConfig(region!.id);
+      seo = salesTaxSeoContent[region!.id];
       break;
 
     case "paycheck":
-      config = getPaycheckConfig(region.id);
-      seo = paycheckSeoContent[region.id];
+      config = getPaycheckConfig(region!.id);
+      seo = paycheckSeoContent[region!.id];
       break;
 
     case "property-tax":
-      config = getPropertyTaxConfig(region.id);
-      seo = propertyTaxSeoContent[region.id];
+      config = getPropertyTaxConfig(region!.id);
+      seo = propertyTaxSeoContent[region!.id];
       break;
 
     default:
@@ -160,7 +199,10 @@ export default async function ToolRegionPage({
     notFound();
   }
 
-  const pageUrl = `https://lavigate.com/tools/${tool.id}/${region.slug}`;
+  const pageUrl = isMortgage
+  ? `https://lavigate.com/tools/mortgage/${regionSlug}`
+  : `https://lavigate.com/tools/${tool.id}/${region!.slug}`;
+
 
   const faqSchema =
     Array.isArray(seo.faq) && seo.faq.length > 0
@@ -201,16 +243,20 @@ export default async function ToolRegionPage({
         title={h1}
         description={seo.intro}
         category={tool.id}
-        region={region.displayName}
+        region={isMortgage ? "United States" : region!.displayName}
       >
-        <p className="text-sm text-slate-600 mb-6">
-          Estimates are shown for the {CURRENT_TAX_YEAR} tax year.
+        <p className="text-sm text-slate-600">
+        Estimates only. Loan terms and approval depend on lender underwriting.
         </p>
 
         {tool.id === "income-tax" && <IncomeTaxTool config={config} />}
         {tool.id === "sales-tax" && <SalesTaxTool config={config} />}
         {tool.id === "paycheck" && <PaycheckTool config={config} />}
         {tool.id === "property-tax" && <PropertyTaxTool config={config} />}
+        {tool.id === "mortgage" && (
+  <MortgageTool config={config as MortgageConfig} />
+)}
+
 
         {seo.sections?.howItWorks && (
           <section className="mt-10 space-y-6">
@@ -266,15 +312,19 @@ export default async function ToolRegionPage({
           </section>
         )}
 
-        <RelatedToolRegions
-          toolId={tool.id}
-          currentRegionId={region.id}
-        />
+{!isMortgage && region && (
+  <>
+    <RelatedToolRegions
+      toolId={tool.id}
+      currentRegionId={region.id}
+    />
+    <RelatedRegionTools
+      currentToolId={tool.id}
+      regionId={region.id}
+    />
+  </>
+)}
 
-        <RelatedRegionTools
-          currentToolId={tool.id}
-          regionId={region.id}
-        />
       </ToolLayout>
     </>
   );
