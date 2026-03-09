@@ -307,7 +307,6 @@ export const tools: ToolDefinition[] = [
       "US-IA-SCOTT-COUNTY",
       "US-KS-SEDGWICK-COUNTY",
       "US-TN-SHELBY-COUNTY",
-      "US-MN-SHERBURNE-COUNTY",
       "US-TX-SMITH-COUNTY",
       "US-CA-SOLANO-COUNTY",
       "US-CA-SONOMA-COUNTY",

@@ -4,12 +4,10 @@ import { tools } from "@/config/tools";
 import { regions } from "@/config/regions";
 
 const BASE_URL = "https://lavigate.com";
-
-// Använd ett stabilt datum (t.ex. deploy-datum eller projektstart)
 const LAST_MODIFIED = new Date("2026-01-01");
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // 1) Statiska sidor
+
   const staticPaths = [
     { path: "", priority: 1.0 },
     { path: "/tools", priority: 0.8 },
@@ -24,28 +22,40 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ({ path, priority }) => ({
       url: `${BASE_URL}${path}`,
       lastModified: LAST_MODIFIED,
-      changeFrequency: "monthly",
+      changeFrequency: "monthly" as const,
       priority,
     })
   );
 
-  // 2) Dynamiska verktyg + regioner
   const dynamicRoutes: MetadataRoute.Sitemap = [];
 
   for (const tool of tools) {
+
     const toolRegions = regions.filter((region) =>
       tool.supportedRegionIds.includes(region.id)
     );
 
     for (const region of toolRegions) {
+
+      const url = `${BASE_URL}${tool.basePath}/${region.slug}`;
+
       dynamicRoutes.push({
-        url: `${BASE_URL}${tool.basePath}/${region.slug}`,
+        url,
         lastModified: LAST_MODIFIED,
-        changeFrequency: "monthly",
+        changeFrequency: "monthly" as const,
         priority: 0.7,
       });
+
     }
   }
 
-  return [...staticRoutes, ...dynamicRoutes];
+  // Deduplicera URL:er
+  const deduped = Array.from(
+    new Map(
+      [...staticRoutes, ...dynamicRoutes].map((entry) => [entry.url, entry])
+    ).values()
+  );
+
+  return deduped;
+
 }

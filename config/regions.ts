@@ -267,7 +267,6 @@ export const regions: Region[] = [
   { id: "US-CA-VENTURA-COUNTY", countryCode: "US", slug: "ventura-county-california", name: "Ventura County", displayName: "Ventura County, California" },
   { id: "US-WA-SNOHOMISH-COUNTY", countryCode: "US", slug: "snohomish-county-washington", name: "Snohomish County", displayName: "Snohomish County, Washington" },
   { id: "US-HI-KAUAI-COUNTY", countryCode: "US", slug: "kauai-county-hawaii", name: "Kauai County", displayName: "Kauai County, Hawaii" },
-  { id: "US-PR", countryCode: "US", slug: "puerto-rico", name: "Puerto Rico", displayName: "Puerto Rico" },
   {
     id: "US",
     countryCode: "US",
