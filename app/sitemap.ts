@@ -4,13 +4,15 @@ import { tools } from "@/config/tools";
 import { regions } from "@/config/regions";
 
 const BASE_URL = "https://lavigate.com";
-const LAST_MODIFIED = new Date("2026-01-01");
+const LAST_MODIFIED = new Date("2026-03-12");
 
 export default function sitemap(): MetadataRoute.Sitemap {
 
   const staticPaths = [
     { path: "", priority: 1.0 },
     { path: "/tools", priority: 0.8 },
+    { path: "/studies", priority: 0.7 },
+    { path: "/studies/highest-property-tax-states", priority: 0.8 },
     { path: "/about", priority: 0.6 },
     { path: "/contact", priority: 0.6 },
     { path: "/privacy-policy", priority: 0.3 },

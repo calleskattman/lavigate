@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import type { PropertyTaxConfig } from "@/config/data/propertyTax";
 
 type Props = {
@@ -157,6 +158,15 @@ if (!requiresCustomRate) {
         <h3 className="text-lg font-semibold text-slate-900">
           Estimated property tax
         </h3>
+
+        <p className="mt-2 text-sm text-slate-600">
+  <Link
+    href="/studies/highest-property-tax-states"
+    className="underline decoration-slate-300 underline-offset-4 hover:text-slate-900"
+  >
+    See our research on states with the highest property taxes
+  </Link>
+</p>
 
         {!result ? (
           <p className="mt-4 text-slate-600">
