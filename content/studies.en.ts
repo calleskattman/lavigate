@@ -362,7 +362,7 @@ export const studiesContent = {
 
     keyTakeawaysTitle: "Key Takeaways",
     keyTakeaways: [
-      "New Jersey homeowners pay about $8,550 per year in property taxes on average, while Alabama homeowners pay about $790 — a difference of roughly $7,760 per year.",
+      "New Jersey homeowners pay about $8,550 per year in property taxes on average, while Alabama homeowners pay about $790 - a difference of roughly $7,760 per year.",
       "The gap between the highest and lowest states is about 10.8x, showing how dramatically property tax burden can vary across the U.S.",
       "A low tax rate does not guarantee a low tax bill. States with high home values can produce some of the largest annual property tax costs even with moderate rates.",
       "Several states that appear 'mid-range' in tax rate rankings move much higher when measured in dollars, because homeowners ultimately pay based on property value.",
@@ -448,7 +448,7 @@ export const studiesContent = {
 
     allStatesTitle: "Full State-by-State Property Tax Cost Ranking",
     allStatesIntro:
-  "This ranking shows the estimated annual property tax cost across all 50 states based on effective tax rates and median home values. It highlights where homeowners face the highest real annual tax bills in dollars — not just where rates are highest. The spread between states is significant, with thousands of dollars in difference between the highest and lowest locations.",
+  "This ranking shows the estimated annual property tax cost across all 50 states based on effective tax rates and median home values. It highlights where homeowners face the highest real annual tax bills in dollars - not just where rates are highest. The spread between states is significant, with thousands of dollars in difference between the highest and lowest locations.",
       allStates: [
         { rank: 1, state: "New Jersey", rate: "$8,550" },
         { rank: 2, state: "New Hampshire", rate: "$7,396" },
@@ -504,7 +504,7 @@ export const studiesContent = {
 
     whyItMattersTitle: "Why Real Cost Matters More Than Tax Rate Alone",
     whyItMatters:
-  "Property tax is often compared using percentages, but that can be misleading. Homeowners do not pay percentages — they pay actual dollar amounts every year. A relatively low tax rate applied to a high-value home can still result in a larger annual bill than a higher rate applied to a lower-value home. This is why some states that appear moderate in tax rankings become much more expensive when measured in real annual cost. By focusing on estimated yearly tax bills, this study provides a clearer picture of the financial burden homeowners actually experience.",
+  "Property tax is often compared using percentages, but that can be misleading. Homeowners do not pay percentages - they pay actual dollar amounts every year. A relatively low tax rate applied to a high-value home can still result in a larger annual bill than a higher rate applied to a lower-value home. This is why some states that appear moderate in tax rankings become much more expensive when measured in real annual cost. By focusing on estimated yearly tax bills, this study provides a clearer picture of the financial burden homeowners actually experience.",
 
     explanationTitle: "How to Read This Study",
     explanation:
@@ -547,7 +547,7 @@ export const studiesContent = {
     citationText:
   "If you reference these findings, please cite Lavigate and link to the original source so readers can explore the full dataset.",
   citationExample:
-  'According to Lavigate’s "The Real Annual Cost of Property Tax in Every State (2026)" study, homeowners in New Jersey pay about $8,550 per year in property taxes on average, compared with about $790 per year in Alabama — a difference of more than tenfold.',
+  'According to Lavigate’s "The Real Annual Cost of Property Tax in Every State (2026)" study, homeowners in New Jersey pay about $8,550 per year in property taxes on average, compared with about $790 per year in Alabama - a difference of more than tenfold.',
 
     faqTitle: "Frequently Asked Questions",
     faq: [
