@@ -92,7 +92,10 @@ export default function ToolsIndexPage() {
 
               <div className="rounded-2xl border border-slate-200 bg-white p-4 md:p-6">
               <ul className="flex flex-wrap gap-2 text-sm">
-  {pages.slice(0, 8).map((page) => (
+  {[...pages]
+  .sort(() => 0.5 - Math.random())
+  .slice(0, 8)
+  .map((page) => (
     <li key={`${tool.id}-${page.slug}`}>
       <Link
         href={`/tools/${tool.id}/${page.slug}`}
