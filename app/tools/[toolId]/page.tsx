@@ -8,6 +8,22 @@ import { tools, getToolById, type ToolId } from "@/config/tools";
 import { regions } from "@/config/regions";
 import { mortgageData } from "@/config/data/mortgage";
 
+function getDeterministicWindow<T>(
+  items: T[],
+  limit: number,
+  seed: string
+): T[] {
+  if (items.length <= limit) return items;
+
+  const startIndex =
+    seed.split("").reduce((sum, char) => sum + char.charCodeAt(0), 0) %
+    items.length;
+
+  return Array.from({ length: limit }, (_, index) => {
+    return items[(startIndex + index) % items.length];
+  });
+}
+
 type Props = {
   params: Promise<{
     toolId: string;
@@ -140,6 +156,25 @@ export default async function ToolCategoryPage({ params }: Props) {
           Results across Lavigate are estimates and should be used as guidance,
           not as official tax, payroll or lending determinations.
         </p>
+      </section>
+      {/* Additional internal links */}
+      <section className="border-t border-slate-200 pt-8">
+        <h2 className="mb-4 text-lg font-semibold text-slate-900">
+          More {tool.name.toLowerCase()} calculators
+        </h2>
+
+        <ul className="flex flex-wrap gap-2 text-sm">
+          {getDeterministicWindow([...pages], 12, tool.id).map((page) => (
+              <li key={`extra-${tool.id}-${page.slug}`}>
+                <Link
+                  href={`/tools/${tool.id}/${page.slug}`}
+                  className="inline-flex items-center rounded-full border border-slate-200 px-3 py-1 text-xs text-slate-700 hover:border-blue-500 hover:text-blue-600"
+                >
+                  {page.label}
+                </Link>
+              </li>
+            ))}
+        </ul>
       </section>
     </main>
   );

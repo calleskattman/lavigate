@@ -5,6 +5,22 @@ import { tools } from "@/config/tools";
 import { regions } from "@/config/regions";
 import { mortgageData } from "@/config/data/mortgage";
 
+function getDeterministicWindow<T>(
+  items: T[],
+  limit: number,
+  seed: string
+): T[] {
+  if (items.length <= limit) return items;
+
+  const startIndex =
+    seed.split("").reduce((sum, char) => sum + char.charCodeAt(0), 0) %
+    items.length;
+
+  return Array.from({ length: limit }, (_, index) => {
+    return items[(startIndex + index) % items.length];
+  });
+}
+
 
 export const metadata: Metadata = {
   title: "Finance calculators by category | Lavigate",
@@ -92,10 +108,7 @@ export default function ToolsIndexPage() {
 
               <div className="rounded-2xl border border-slate-200 bg-white p-4 md:p-6">
               <ul className="flex flex-wrap gap-2 text-sm">
-  {[...pages]
-  .sort(() => 0.5 - Math.random())
-  .slice(0, 8)
-  .map((page) => (
+  {getDeterministicWindow([...pages], 8, tool.id).map((page) => (
     <li key={`${tool.id}-${page.slug}`}>
       <Link
         href={`/tools/${tool.id}/${page.slug}`}
