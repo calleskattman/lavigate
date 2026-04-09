@@ -52,12 +52,14 @@ export default function HomePage() {
           Explore calculators by category
         </h2>
 
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
 
           {/* Income Tax */}
           <div>
             <h3 className="text-sm font-semibold text-slate-900">
-              Income tax calculators
+              <Link href="/tools/income-tax" className="hover:underline">
+                Income tax calculators
+              </Link>
             </h3>
 
             <ul className="mt-3 space-y-2 text-sm">
@@ -96,7 +98,9 @@ export default function HomePage() {
           {/* Sales Tax */}
           <div>
             <h3 className="text-sm font-semibold text-slate-900">
-              Sales tax calculators
+              <Link href="/tools/sales-tax" className="hover:underline">
+                Sales tax calculators
+              </Link>
             </h3>
 
             <ul className="mt-3 space-y-2 text-sm">
@@ -130,7 +134,9 @@ export default function HomePage() {
           {/* Property Tax */}
           <div>
             <h3 className="text-sm font-semibold text-slate-900">
-              Property tax calculators
+              <Link href="/tools/property-tax" className="hover:underline">
+                Property tax calculators
+              </Link>
             </h3>
 
             <ul className="mt-3 space-y-2 text-sm">
@@ -157,6 +163,78 @@ export default function HomePage() {
                 className="text-sm font-medium text-blue-700 hover:underline"
               >
                 View all property tax calculators →
+              </Link>
+            </div>
+          </div>
+
+          {/* Paycheck */}
+          <div>
+            <h3 className="text-sm font-semibold text-slate-900">
+              <Link href="/tools/paycheck" className="hover:underline">
+                Paycheck calculators
+              </Link>
+            </h3>
+
+            <ul className="mt-3 space-y-2 text-sm">
+              <li>
+                <Link href="/tools/paycheck/texas" className="text-blue-700 hover:underline">
+                  Texas paycheck calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/paycheck/virginia" className="text-blue-700 hover:underline">
+                  Virginia paycheck calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/paycheck/michigan" className="text-blue-700 hover:underline">
+                  Michigan paycheck calculator
+                </Link>
+              </li>
+            </ul>
+
+            <div className="mt-3">
+              <Link
+                href="/tools/paycheck"
+                className="text-sm font-medium text-blue-700 hover:underline"
+              >
+                View all paycheck calculators →
+              </Link>
+            </div>
+          </div>
+
+          {/* Mortgage */}
+          <div>
+            <h3 className="text-sm font-semibold text-slate-900">
+              <Link href="/tools/mortgage" className="hover:underline">
+                Mortgage calculators
+              </Link>
+            </h3>
+
+            <ul className="mt-3 space-y-2 text-sm">
+              <li>
+                <Link href="/tools/mortgage/va-mortgage-calculator" className="text-blue-700 hover:underline">
+                  VA mortgage calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/mortgage/fha-mortgage-calculator" className="text-blue-700 hover:underline">
+                  FHA mortgage calculator
+                </Link>
+              </li>
+              <li>
+                <Link href="/tools/mortgage/100k-mortgage-payment" className="text-blue-700 hover:underline">
+                  $100K mortgage payment calculator
+                </Link>
+              </li>
+            </ul>
+
+            <div className="mt-3">
+              <Link
+                href="/tools/mortgage"
+                className="text-sm font-medium text-blue-700 hover:underline"
+              >
+                View all mortgage calculators →
               </Link>
             </div>
           </div>

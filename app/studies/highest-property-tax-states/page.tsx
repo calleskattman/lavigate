@@ -19,6 +19,40 @@ export default function HighestPropertyTaxStates() {
         {data.intro}
       </p>
 
+      {Array.isArray(sections.calculatorLinks) && sections.calculatorLinks.length > 0 && (
+        <section className="mb-14 rounded-2xl border border-slate-200 bg-slate-50 p-6">
+          <h2 className="mb-3 text-2xl font-semibold text-slate-900">
+            Explore property tax calculators by state
+          </h2>
+
+          <p className="mb-5 max-w-3xl text-slate-700">
+            Browse state-level property tax calculators to compare local tax
+            systems and estimate annual property tax by location.
+          </p>
+
+          <div className="flex flex-wrap gap-3">
+            {sections.calculatorLinks.slice(0, 8).map((item) => (
+              <Link
+                key={`top-${item.href}`}
+                href={item.href}
+                className="rounded-full border border-slate-300 px-4 py-2 text-sm text-slate-700 transition hover:bg-white hover:text-slate-900"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </div>
+
+          <div className="mt-4">
+            <Link
+              href="/tools/property-tax"
+              className="text-sm text-slate-600 underline decoration-slate-300 underline-offset-4 hover:text-slate-900"
+            >
+              View all property tax calculators by state →
+            </Link>
+          </div>
+        </section>
+      )}
+
       {Array.isArray(sections.heroStats) && (
         <section className="mb-14">
           <div className="grid gap-4 md:grid-cols-3">

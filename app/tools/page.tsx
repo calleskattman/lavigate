@@ -75,9 +75,12 @@ export default function ToolsIndexPage() {
           return (
             <section key={tool.id} className="space-y-4">
               <div className="flex items-center justify-between">
-                <h2 className="text-lg font-semibold text-slate-900">
+                <Link
+                  href={`/tools/${tool.id}`}
+                  className="text-lg font-semibold text-slate-900 hover:underline"
+                >
                   {tool.name}
-                </h2>
+                </Link>
 
                 <Link
                   href={`/tools/${tool.id}`}

@@ -245,9 +245,20 @@ if (!isMortgage && !region) {
         category={tool.id}
         region={isMortgage ? "United States" : region!.displayName}
       >
-        <p className="text-sm text-slate-600">
-        Estimates only. Loan terms and approval depend on lender underwriting.
-        </p>
+        <div className="space-y-3">
+          <p className="text-sm text-slate-600">
+            Estimates only. Loan terms and approval depend on lender underwriting.
+          </p>
+
+          <p className="text-sm text-slate-600">
+            <a
+              href={`/tools/${tool.id}`}
+              className="text-blue-600 hover:underline"
+            >
+              Browse all {tool.name.toLowerCase()} pages
+            </a>
+          </p>
+        </div>
 
         {tool.id === "income-tax" && <IncomeTaxTool config={config} />}
         {tool.id === "sales-tax" && <SalesTaxTool config={config} />}
