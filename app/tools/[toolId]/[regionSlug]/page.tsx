@@ -38,6 +38,77 @@ import {
   buildSalesTaxSoftwareSchema,
 } from "@/lib/schema";
 
+type GlobalCalculatorLink = {
+  key: string;
+  href: string;
+  label: string;
+  toolId: string;
+  regionId: string;
+};
+
+function hashString(input: string): number {
+  let hash = 0;
+  for (let i = 0; i < input.length; i++) {
+    hash = (hash << 5) - hash + input.charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash);
+}
+
+function getDeterministicWindow<T>(
+  items: T[],
+  limit: number,
+  seed: string
+): T[] {
+  if (items.length <= limit) return items;
+
+  const total = items.length;
+  const startIndex = hashString(seed) % total;
+  const selected: T[] = [];
+  const usedIndexes = new Set<number>();
+
+  const addIndex = (index: number) => {
+    const normalizedIndex = ((index % total) + total) % total;
+    if (usedIndexes.has(normalizedIndex)) return;
+
+    selected.push(items[normalizedIndex]);
+    usedIndexes.add(normalizedIndex);
+  };
+
+  const preferredOffsets = Array.from(
+    new Set([
+      0,
+      1,
+      2,
+      3,
+      Math.floor(total / 4),
+      Math.floor(total / 3),
+      Math.floor(total / 2),
+      Math.floor((2 * total) / 3),
+      Math.floor((3 * total) / 4),
+    ].filter((offset) => offset >= 0))
+  );
+
+  for (const offset of preferredOffsets) {
+    addIndex(startIndex + offset);
+    if (selected.length >= limit) break;
+
+    if (offset !== 0) {
+      addIndex(startIndex - offset);
+      if (selected.length >= limit) break;
+    }
+  }
+
+  for (let step = 0; step < total && selected.length < limit; step++) {
+    addIndex(startIndex + step);
+    if (selected.length >= limit) break;
+
+    addIndex(startIndex - step);
+  }
+
+  return selected;
+}
+
 type PageProps = {
   params: Promise<{
     toolId: string;
@@ -222,7 +293,50 @@ if (!isMortgage && !region) {
     String(CURRENT_TAX_YEAR)
   );
 
+  const globalCalculatorLinks: GlobalCalculatorLink[] =
+  !isMortgage && region
+    ? getDeterministicWindow(
+        tools
+          .filter((candidateTool) => candidateTool.id !== "mortgage")
+          .flatMap((candidateTool) =>
+            candidateTool.supportedRegionIds.flatMap((candidateRegionId) => {
+              const candidateRegion = regions.find(
+                (r) => r.id === candidateRegionId
+              );
 
+              if (!candidateRegion) {
+                return [];
+              }
+
+              if (
+                candidateTool.id === tool.id &&
+                candidateRegion.id === region.id
+              ) {
+                return [];
+              }
+
+              if (
+                candidateRegion.id === region.id &&
+                candidateTool.id !== tool.id
+              ) {
+                return [];
+              }
+
+              return [
+                {
+                  key: `${candidateTool.id}-${candidateRegion.id}`,
+                  href: `/tools/${candidateTool.id}/${candidateRegion.slug}`,
+                  label: `${candidateRegion.displayName} ${candidateTool.name}`,
+                  toolId: candidateTool.id,
+                  regionId: candidateRegion.id,
+                },
+              ];
+            })
+          ),
+        18,
+        `${tool.id}:${region.id}:global`
+      )
+    : [];
 
   return (
     <>
@@ -281,6 +395,32 @@ if (!isMortgage && !region) {
     />
   </>
 )}
+
+{globalCalculatorLinks.length > 0 && (
+          <section className="mt-10 border-t border-slate-200 pt-6">
+            <h2 className="mb-3 text-sm font-semibold text-slate-900">
+              Explore more calculators
+            </h2>
+
+            <p className="mb-4 text-sm text-slate-600">
+              Browse more tax and finance calculators across other regions on
+              Lavigate.
+            </p>
+
+            <ul className="flex flex-wrap gap-2">
+              {globalCalculatorLinks.map((item) => (
+                <li key={item.key}>
+                  <Link
+                    href={item.href}
+                    className="inline-flex items-center rounded-full border border-slate-200 px-3 py-1 text-xs text-slate-700 hover:border-blue-500 hover:text-blue-600"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         {seo.sections?.howItWorks && (
           <section className="mt-10 space-y-6">
