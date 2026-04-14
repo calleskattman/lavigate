@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Script from "next/script";
 import type { MortgageConfig } from "@/config/data/mortgage";
+import Link from "next/link";
 
 import { CURRENT_TAX_YEAR } from "@/config/site";
 import { getRegionBySlug, regions } from "@/config/regions";
@@ -251,12 +252,12 @@ if (!isMortgage && !region) {
           </p>
 
           <p className="text-sm text-slate-600">
-            <a
-              href={`/tools/${tool.id}`}
-              className="text-blue-600 hover:underline"
-            >
-              Browse all {tool.name.toLowerCase()} pages
-            </a>
+          <Link
+  href={`/tools/${tool.id}`}
+  className="text-blue-600 hover:underline"
+>
+  Browse all {tool.name.toLowerCase()} pages
+</Link>
           </p>
         </div>
 
@@ -268,6 +269,18 @@ if (!isMortgage && !region) {
   <MortgageTool config={config as MortgageConfig} />
 )}
 
+{!isMortgage && region && (
+  <>
+    <RelatedRegionTools
+      currentToolId={tool.id}
+      regionId={region.id}
+    />
+    <RelatedToolRegions
+      toolId={tool.id}
+      currentRegionId={region.id}
+    />
+  </>
+)}
 
         {seo.sections?.howItWorks && (
           <section className="mt-10 space-y-6">
@@ -323,18 +336,7 @@ if (!isMortgage && !region) {
           </section>
         )}
 
-{!isMortgage && region && (
-  <>
-    <RelatedToolRegions
-      toolId={tool.id}
-      currentRegionId={region.id}
-    />
-    <RelatedRegionTools
-      currentToolId={tool.id}
-      regionId={region.id}
-    />
-  </>
-)}
+
 
       </ToolLayout>
     </>
