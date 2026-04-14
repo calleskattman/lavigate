@@ -9,7 +9,7 @@ type Props = {
   currentRegionId: string;
 };
 
-const MAX_LINKS = 4;
+const MAX_LINKS = 10;
 
 export function RelatedToolRegions({ toolId, currentRegionId }: Props) {
   const tool = tools.find((t) => t.id === toolId);
@@ -30,6 +30,7 @@ export function RelatedToolRegions({ toolId, currentRegionId }: Props) {
 
   const selected: typeof availableRegions = [];
   const selectedIds = new Set<string>();
+  const total = availableRegions.length;
 
   const addRegion = (region: (typeof availableRegions)[number] | undefined) => {
     if (!region) return;
@@ -40,25 +41,41 @@ export function RelatedToolRegions({ toolId, currentRegionId }: Props) {
     selectedIds.add(region.id);
   };
 
-  const total = availableRegions.length;
-
-  const preferredOffsets = [
-    1,
-    Math.floor(total / 3),
-    Math.floor(total / 2),
-    Math.floor((2 * total) / 3),
-  ].filter((offset) => offset > 0);
+  const preferredOffsets = Array.from(
+    new Set([
+      1,
+      2,
+      3,
+      Math.floor(total / 4),
+      Math.floor(total / 3),
+      Math.floor(total / 2),
+      Math.floor((2 * total) / 3),
+      Math.floor((3 * total) / 4),
+    ].filter((offset) => offset > 0))
+  );
 
   for (const offset of preferredOffsets) {
-    const candidate = availableRegions[(currentIndex + offset) % total];
-    addRegion(candidate);
+    const forwardCandidate = availableRegions[(currentIndex + offset) % total];
+    addRegion(forwardCandidate);
+
+    if (selected.length >= MAX_LINKS) break;
+
+    const backwardCandidate =
+      availableRegions[(currentIndex - offset + total) % total];
+    addRegion(backwardCandidate);
 
     if (selected.length >= MAX_LINKS) break;
   }
 
   for (let step = 1; step < total && selected.length < MAX_LINKS; step++) {
-    const candidate = availableRegions[(currentIndex + step) % total];
-    addRegion(candidate);
+    const forwardCandidate = availableRegions[(currentIndex + step) % total];
+    addRegion(forwardCandidate);
+
+    if (selected.length >= MAX_LINKS) break;
+
+    const backwardCandidate =
+      availableRegions[(currentIndex - step + total) % total];
+    addRegion(backwardCandidate);
   }
 
   if (selected.length === 0) return null;

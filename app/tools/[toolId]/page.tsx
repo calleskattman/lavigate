@@ -15,13 +15,55 @@ function getDeterministicWindow<T>(
 ): T[] {
   if (items.length <= limit) return items;
 
-  const startIndex =
-    seed.split("").reduce((sum, char) => sum + char.charCodeAt(0), 0) %
-    items.length;
+  const total = items.length;
+  const seedValue = seed
+    .split("")
+    .reduce((sum, char) => sum + char.charCodeAt(0), 0);
 
-  return Array.from({ length: limit }, (_, index) => {
-    return items[(startIndex + index) % items.length];
-  });
+  const startIndex = seedValue % total;
+  const selected: T[] = [];
+  const usedIndexes = new Set<number>();
+
+  const addIndex = (index: number) => {
+    const normalizedIndex = ((index % total) + total) % total;
+    if (usedIndexes.has(normalizedIndex)) return;
+
+    selected.push(items[normalizedIndex]);
+    usedIndexes.add(normalizedIndex);
+  };
+
+  const preferredOffsets = Array.from(
+    new Set([
+      0,
+      1,
+      2,
+      3,
+      Math.floor(total / 4),
+      Math.floor(total / 3),
+      Math.floor(total / 2),
+      Math.floor((2 * total) / 3),
+      Math.floor((3 * total) / 4),
+    ].filter((offset) => offset >= 0))
+  );
+
+  for (const offset of preferredOffsets) {
+    addIndex(startIndex + offset);
+    if (selected.length >= limit) break;
+
+    if (offset !== 0) {
+      addIndex(startIndex - offset);
+      if (selected.length >= limit) break;
+    }
+  }
+
+  for (let step = 0; step < total && selected.length < limit; step++) {
+    addIndex(startIndex + step);
+    if (selected.length >= limit) break;
+
+    addIndex(startIndex - step);
+  }
+
+  return selected;
 }
 
 type Props = {
@@ -159,12 +201,18 @@ export default async function ToolCategoryPage({ params }: Props) {
       </section>
       {/* Additional internal links */}
       <section className="border-t border-slate-200 pt-8">
-        <h2 className="mb-4 text-lg font-semibold text-slate-900">
-          More {tool.name.toLowerCase()} calculators
+        <h2 className="mb-3 text-lg font-semibold text-slate-900">
+          Explore more {tool.name.toLowerCase()} pages
         </h2>
 
+        <p className="mb-4 max-w-3xl text-sm text-slate-600">
+          Browse additional {tool.name.toLowerCase()} pages across regions and
+          scenarios to compare available calculators in this category.
+        </p>
+
         <ul className="flex flex-wrap gap-2 text-sm">
-          {getDeterministicWindow([...pages], 12, tool.id).map((page) => (
+          {getDeterministicWindow([...pages], 24, `${tool.id}:category`).map(
+            (page) => (
               <li key={`extra-${tool.id}-${page.slug}`}>
                 <Link
                   href={`/tools/${tool.id}/${page.slug}`}
@@ -173,7 +221,8 @@ export default async function ToolCategoryPage({ params }: Props) {
                   {page.label}
                 </Link>
               </li>
-            ))}
+            )
+          )}
         </ul>
       </section>
     </main>
