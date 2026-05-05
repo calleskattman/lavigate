@@ -1912,7 +1912,7 @@ export const propertyTaxConfigs: Record<RegionId, PropertyTaxConfig> = {
   regionId: "US-MN-HENNEPIN-COUNTY",
   year: 2026,
 
-  systemName: "Hennepin County, Minnesota property tax (assessed/taxable value with locally set levy rates)",
+  systemName: "Hennepin County, Minnesota property tax (taxable value with locally set tax rates)",
 
   valuation: {
     method: "assessed"
@@ -1921,14 +1921,14 @@ export const propertyTaxConfigs: Record<RegionId, PropertyTaxConfig> = {
   rates: {
     components: [
       {
-        name: "Combined local property tax rate (county, city, school district, and special districts; user-provided)",
+        name: "User-entered combined local property tax rate",
         rate: 0
       }
     ]
   },
 
   authority: {
-    name: "Hennepin County Assessor / Minnesota Department of Revenue",
+    name: "Hennepin County property tax information",
     url: "https://www.hennepin.us/residents/property/property-taxes",
     lastVerified: "2026-02-10"
   }
@@ -4151,8 +4151,8 @@ export const propertyTaxConfigs: Record<RegionId, PropertyTaxConfig> = {
   rates: {
     components: [
       {
-        name: "Combined City and School District real estate tax rate (user-provided)",
-        rate: 0,
+        name: "Official Philadelphia secured property tax rate",
+        rate: 0.013998,
       },
     ],
   },

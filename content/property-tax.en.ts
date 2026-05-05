@@ -3,9 +3,15 @@ import type { RegionId } from "@/config/regions";
 export type PropertyTaxSEO = {
   h1: string;
   intro: string;
+  trust?: {
+    lastReviewed?: string;
+    keyFacts?: { label: string; value: string }[];
+    sourceLinks?: { label: string; url: string }[];
+  };
   sections: {
     howItWorks: string;
     examples: string;
+    factors?: string;
     limitations: string;
   };
   faq: { q: string; a: string }[];
@@ -32,7 +38,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this the same as my official tax bill?", "a": "No. This is an estimated property tax calculation, and the official bill issued by the county may differ." }
   ],
   "meta": {
-    "title": "Alameda County property tax calculator 2026 — estimate property taxes",
+    "title": "Alameda County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Alameda County property taxes using California assessment rules and the countywide base property tax rate. Results are estimates and may differ from the official tax bill.",
     "canonicalPath": "/tools/property-tax/alameda-county-california"
   }
@@ -53,7 +59,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this the same as my official property tax bill?", "a": "No. This is an estimated calculation based on limited components, and official bills issued locally will differ." }
   ],
   "meta": {
-    "title": "Arkansas property tax calculator 2026 — estimate property taxes",
+    "title": "Arkansas property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Arkansas property taxes using the statewide assessment ratio and the uniform school tax rate. Local taxes vary by location and are not included.",
     "canonicalPath": "/tools/property-tax/arkansas"
   }
@@ -74,7 +80,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this an official Kansas property tax bill?", "a": "No. This calculator provides an estimated amount for informational purposes only." }
   ],
   "meta": {
-    "title": "Kansas property tax calculator 2026 — estimate property taxes",
+    "title": "Kansas property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Kansas property taxes using assessed value rules and the statewide school levy. This tool provides a partial estimate and does not include local mill levies.",
     "canonicalPath": "/tools/property-tax/kansas"
   }
@@ -95,7 +101,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this an official property tax bill?", "a": "No. This calculator provides an estimated amount for informational purposes only." }
   ],
   "meta": {
-    "title": "Kentucky property tax calculator 2026 — estimate property taxes",
+    "title": "Kentucky property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Kentucky property taxes using assessed value and the statewide real property tax rate. This tool provides a partial estimate and excludes local rates.",
     "canonicalPath": "/tools/property-tax/kentucky"
   }
@@ -116,7 +122,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this an official Michigan property tax bill?", "a": "No. This page provides a limited illustration of the statewide levy only." }
   ],
   "meta": {
-    "title": "Michigan property tax rate 2026 — state education tax",
+    "title": "Michigan property tax rate 2026 - state education tax",
     "description": "Understand how the Michigan property tax rate works at the state level and how the State Education Tax is applied to assessed value. Local taxes are excluded.",
     "canonicalPath": "/tools/property-tax/michigan"
   }
@@ -137,7 +143,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are results exact?", "a": "No. Results are estimates and actual tax bills may differ due to local levies and district decisions." }
   ],
   "meta": {
-    "title": "South Dakota property tax calculator 2026 — estimate property taxes",
+    "title": "South Dakota property tax calculator 2026 - estimate property taxes",
     "description": "Estimate South Dakota property tax using taxable value and a modeled school district levy. This is a partial estimate and does not include all local taxes.",
     "canonicalPath": "/tools/property-tax/south-dakota"
   }
@@ -158,7 +164,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this an official Vermont property tax bill?", "a": "No. This calculator provides an estimate only. Actual property tax bills are determined by official local and state processes." }
   ],
   "meta": {
-    "title": "Vermont property tax calculator 2026 — estimate property taxes",
+    "title": "Vermont property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Vermont property tax using the statewide nonhomestead education property tax base rate only. This is an estimate and does not include municipal or homestead-specific components.",
     "canonicalPath": "/tools/property-tax/vermont"
   }
@@ -179,7 +185,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are Virginia exemptions or relief programs included in this estimate?", "a": "Not by default. Many property tax relief programs are adopted by local ordinance and depend on eligibility rules, so they are not included in a statewide estimate." }
   ],
   "meta": {
-    "title": "Virginia property tax calculator 2026 — estimate property taxes",
+    "title": "Virginia property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Virginia property tax using assessed value and a local real estate tax rate. Virginia real estate taxes are set locally, so results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/virginia"
   }
@@ -212,7 +218,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   "meta": {
-    "title": "West Virginia property tax calculator 2026 — estimate property taxes",
+    "title": "West Virginia property tax calculator 2026 - estimate property taxes",
     "description": "Estimate West Virginia property taxes using assessed value rules and combined local property tax rates. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/west-virginia"
   }
@@ -233,7 +239,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { q: "Are credits or exemptions included in this estimate?", a: "Many credits and exemptions are eligibility-based or require filings. This estimator focuses on taxable value and a combined local rate, so actual bills may differ." }
   ],
   meta: {
-    title: "Wisconsin property tax calculator 2026 — estimate property taxes",
+    title: "Wisconsin property tax calculator 2026 - estimate property taxes",
     description: "Estimate Wisconsin property tax using taxable assessed value and a combined local property tax rate. Results are estimates and may differ by district and eligibility.",
     canonicalPath: "/tools/property-tax/wisconsin"
   }
@@ -254,7 +260,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator show an exact tax bill?", "a": "No. It provides an estimated property tax and actual tax bills may differ." }
   ],
   "meta": {
-    "title": "Wyoming property tax calculator 2026 — estimate property taxes",
+    "title": "Wyoming property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Wyoming property taxes using statewide assessment rules and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/wyoming"
   }
@@ -275,7 +281,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator show an exact tax bill?", "a": "No. It provides an estimated property tax and actual bills may differ." }
   ],
   "meta": {
-    "title": "Aiken County property tax calculator 2026 — estimate property taxes",
+    "title": "Aiken County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Aiken County, South Carolina property taxes using assessed value and combined local millage rates. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/aiken-county-south-carolina"
   }
@@ -312,7 +318,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     },
   ],
   meta: {
-    title: "Allegheny County property tax calculator 2026 — estimate property taxes",
+    title: "Allegheny County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Allegheny County property tax using the county assessed value and combined local property tax rates for county, municipal, and school district taxes.",
     canonicalPath: "/tools/property-tax/allegheny-county-pennsylvania",
@@ -350,7 +356,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     },
   ],
   meta: {
-    title: "Allen County property tax calculator 2026 — estimate property taxes",
+    title: "Allen County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Allen County, Indiana property tax using assessed value and combined local property tax rates that vary by tax district.",
     canonicalPath: "/tools/property-tax/allen-county-indiana",
@@ -388,7 +394,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     },
   ],
   meta: {
-    title: "Anderson County property tax calculator 2026 — estimate property taxes",
+    title: "Anderson County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Anderson County, South Carolina property tax using assessed value and combined local property tax rates.",
     canonicalPath: "/tools/property-tax/anderson-county-south-carolina",
@@ -426,7 +432,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     },
   ],
   meta: {
-    title: "Anne Arundel County property tax calculator 2026 — estimate property taxes",
+    title: "Anne Arundel County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Anne Arundel County, Maryland property tax using assessed value and combined county, state, and municipal property tax rates.",
     canonicalPath: "/tools/property-tax/anne-arundel-county-maryland",
@@ -464,7 +470,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     },
   ],
   meta: {
-    title: "Anoka County property tax calculator 2026 — estimate property taxes",
+    title: "Anoka County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Anoka County, Minnesota property tax using taxable market value and combined local tax capacity rates.",
     canonicalPath: "/tools/property-tax/anoka-county-minnesota",
@@ -502,7 +508,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     },
   ],
   meta: {
-    title: "Baldwin County property tax calculator 2026 — estimate property taxes",
+    title: "Baldwin County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Baldwin County, Alabama property tax using assessed value and combined state, county, school, municipal, and special district millage rates.",
     canonicalPath: "/tools/property-tax/baldwin-county-alabama",
@@ -582,7 +588,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     },
   ],
   meta: {
-    title: "Bell County property tax calculator 2026 — estimate property taxes",
+    title: "Bell County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Bell County, Texas property tax based on taxable value and combined local property tax rates. Results are estimates and actual tax bills may vary.",
     canonicalPath: "/tools/property-tax/bell-county-texas",
@@ -620,7 +626,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     },
   ],
   meta: {
-    title: "Berkeley County property tax calculator 2026 — estimate property taxes",
+    title: "Berkeley County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Berkeley County, South Carolina property tax using assessed value and a combined local millage rate. Results are estimates and actual tax bills may vary.",
     canonicalPath: "/tools/property-tax/berkeley-county-south-carolina",
@@ -659,7 +665,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   ],
   meta: {
     title:
-      "Bernalillo County property tax calculator 2026 — estimate property taxes",
+      "Bernalillo County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Bernalillo County, New Mexico property tax using taxable value and district-specific rates. Results are estimates and actual tax bills may vary.",
     canonicalPath: "/tools/property-tax/bernalillo-county-new-mexico",
@@ -698,7 +704,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   ],
   meta: {
     title:
-      "Boulder County property tax calculator 2026 — estimate property taxes",
+      "Boulder County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Boulder County, Colorado property tax using assessed value and a combined mill levy. Results are estimates and actual tax bills may vary.",
     canonicalPath: "/tools/property-tax/boulder-county-colorado",
@@ -737,7 +743,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   ],
   meta: {
     title:
-      "Brazoria County property tax calculator 2026 — estimate property taxes",
+      "Brazoria County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Brazoria County, Texas property tax using taxable value and combined local tax rates. Results are estimates and actual tax bills may vary.",
     canonicalPath: "/tools/property-tax/brazoria-county-texas",
@@ -759,7 +765,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "What value should I enter as assessed value?", "a": "Use the assessed value shown by the Broward County Property Appraiser on your property record or TRIM notice." }
   ],
   "meta": {
-    "title": "Broward County property tax calculator 2026 — estimate property taxes",
+    "title": "Broward County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Broward County property tax using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/broward-county-florida"
   }
@@ -780,7 +786,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Why do property tax rates vary within Buncombe County?", "a": "Different locations fall into different combinations of county, municipal, school, fire, and other special districts, each with its own published rate." }
   ],
   "meta": {
-    "title": "Buncombe County property tax calculator 2026 — estimate property taxes",
+    "title": "Buncombe County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Buncombe County property tax using assessed value from your property record and a combined local rate. District-based rates vary and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/buncombe-county-north-carolina"
   }
@@ -801,7 +807,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Why do property tax rates vary within Burleigh County?", "a": "Different parcels fall into different combinations of county, city, school, and special districts, each with its own published mill levy." }
   ],
   "meta": {
-    "title": "Burleigh County property tax calculator 2026 — estimate property taxes",
+    "title": "Burleigh County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Burleigh County property tax using assessed value from your county record and a combined local mill levy. Rates vary by district and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/burleigh-county-north-dakota"
   }
@@ -838,7 +844,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   meta: {
-    title: "Carver County property tax calculator 2026 — estimate property taxes",
+    title: "Carver County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate annual property taxes in Carver County, Minnesota using assessed taxable value and a combined local property tax rate. Results are estimates and may differ from official bills.",
     canonicalPath: "/tools/property-tax/carver-county-minnesota"
@@ -876,7 +882,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   meta: {
-    title: "Charleston County property tax calculator 2026 — estimate property taxes",
+    title: "Charleston County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate annual property taxes in Charleston County, South Carolina using assessed value and a combined local property tax rate. Results are estimates and may differ from official bills.",
     canonicalPath: "/tools/property-tax/charleston-county-south-carolina"
@@ -914,7 +920,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   meta: {
-    title: "Clackamas County property tax calculator 2026 — estimate property taxes",
+    title: "Clackamas County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate annual property taxes in Clackamas County, Oregon using assessed value and a combined local property tax rate. Results are estimates and may differ from official bills.",
     canonicalPath: "/tools/property-tax/clackamas-county-oregon"
@@ -952,7 +958,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   meta: {
-    title: "Clay County, Florida property tax calculator 2026 — estimate property taxes",
+    title: "Clay County, Florida property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate annual property taxes in Clay County, Florida using assessed taxable value and combined local millage rates. Results are estimates and may differ from official bills.",
     canonicalPath: "/tools/property-tax/clay-county-florida"
@@ -990,7 +996,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   meta: {
-    title: "Clay County, Minnesota property tax calculator 2026 — estimate property taxes",
+    title: "Clay County, Minnesota property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate annual property taxes in Clay County, Minnesota using taxable market value and combined local tax rates. Results are estimates and may differ from official bills.",
     canonicalPath: "/tools/property-tax/clay-county-minnesota"
@@ -1028,7 +1034,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     },
   ],
   meta: {
-    title: "Clay County, Missouri property tax calculator 2026 — estimate property taxes",
+    title: "Clay County, Missouri property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate annual property taxes in Clay County, Missouri using assessed value and combined local tax rates. Results are estimates and may differ from official bills.",
     canonicalPath: "/tools/property-tax/clay-county-missouri",
@@ -1066,7 +1072,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     },
   ],
   meta: {
-    title: "Clay County, North Carolina property tax calculator 2026 — estimate property taxes",
+    title: "Clay County, North Carolina property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate annual property taxes in Clay County, North Carolina using assessed market value and combined local tax rates. Results are estimates and may differ from official bills.",
     canonicalPath: "/tools/property-tax/clay-county-north-carolina",
@@ -1104,7 +1110,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     },
   ],
   meta: {
-    title: "Cobb County property tax calculator 2026 — estimate property taxes",
+    title: "Cobb County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Cobb County, Georgia property taxes using assessed value and a combined local millage rate. Results are estimates and actual bills may differ.",
     canonicalPath: "/tools/property-tax/cobb-county-georgia",
@@ -1142,7 +1148,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   meta: {
-    title: "Collier County property tax calculator 2026 — estimate property taxes",
+    title: "Collier County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Collier County, Florida property taxes using assessed value and a combined local millage rate. Results are estimates and actual bills may differ.",
     canonicalPath: "/tools/property-tax/collier-county-florida"
@@ -1180,7 +1186,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   meta: {
-    title: "Collin County property tax calculator 2026 — estimate property taxes",
+    title: "Collin County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Collin County, Texas property taxes using taxable value and a combined local tax rate. Results are estimates and actual bills may differ.",
     canonicalPath: "/tools/property-tax/collin-county-texas"
@@ -1218,7 +1224,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   meta: {
-    title: "Comal County property tax calculator 2026 — estimate property taxes",
+    title: "Comal County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Comal County, Texas property taxes using taxable value and a combined local tax rate. Results are estimates and actual bills may differ.",
     canonicalPath: "/tools/property-tax/comal-county-texas"
@@ -1255,7 +1261,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   meta: {
-    title: "Contra Costa County property tax calculator 2026 — estimate property taxes",
+    title: "Contra Costa County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Contra Costa County, California property taxes using assessed value and a combined local rate. Includes the base rate plus user-provided voter-approved add-ons; actual bills may differ.",
     canonicalPath: "/tools/property-tax/contra-costa-county-california"
@@ -1293,7 +1299,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
       },
     ],
     meta: {
-      title: "Cook County property tax calculator 2026 — estimate property taxes",
+      title: "Cook County property tax calculator 2026 - estimate property taxes",
       description:
         "Estimate Cook County, Illinois property taxes using assessed value and a combined local property tax rate. Results are illustrative and may differ from actual bills.",
       canonicalPath: "/tools/property-tax/cook-county-illinois",
@@ -1332,7 +1338,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     ],
     meta: {
       title:
-        "Cuyahoga County property tax estimator 2026 — estimate property taxes",
+        "Cuyahoga County property tax estimator 2026 - estimate property taxes",
       description:
         "Estimate Cuyahoga County, Ohio property taxes using market value, the statewide assessment ratio, and a combined local tax rate. Results are illustrative.",
       canonicalPath: "/tools/property-tax/cuyahoga-county-ohio",
@@ -1371,7 +1377,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     ],
     meta: {
       title:
-        "Dakota County property tax estimator 2026 — estimate property taxes",
+        "Dakota County property tax estimator 2026 - estimate property taxes",
       description:
         "Estimate Dakota County, Minnesota property taxes using taxable market value, statutory classification rates, and combined local tax rates. Results are illustrative.",
       canonicalPath: "/tools/property-tax/dakota-county-minnesota",
@@ -1413,7 +1419,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   ],
   "meta": {
     "title":
-      "Dallas County property tax calculator 2026 — estimate property taxes",
+      "Dallas County property tax calculator 2026 - estimate property taxes",
     "description":
       "Estimate Dallas County property taxes based on assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/dallas-county-texas"
@@ -1456,7 +1462,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   ],
   "meta": {
     "title":
-      "Dane County property tax calculator 2026 — estimate property taxes",
+      "Dane County property tax calculator 2026 - estimate property taxes",
     "description":
       "Estimate Dane County property taxes using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/dane-county-wisconsin"
@@ -1499,7 +1505,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   ],
   "meta": {
     "title":
-      "Davis County property tax calculator 2026 — estimate property taxes",
+      "Davis County property tax calculator 2026 - estimate property taxes",
     "description":
       "Estimate Davis County property tax using market value, residential exemptions, and combined local property tax rates that vary by tax district.",
     "canonicalPath": "/tools/property-tax/davis-county-utah"
@@ -1542,7 +1548,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   ],
   "meta": {
     "title":
-      "Denton County property tax calculator 2026 — estimate property taxes",
+      "Denton County property tax calculator 2026 - estimate property taxes",
     "description":
       "Estimate Denton County property tax using taxable value and combined local property tax rates that vary by taxing jurisdiction.",
     "canonicalPath": "/tools/property-tax/denton-county-texas"
@@ -1585,7 +1591,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   ],
   "meta": {
     "title":
-      "Dorchester County property tax calculator 2026 — estimate property taxes",
+      "Dorchester County property tax calculator 2026 - estimate property taxes",
     "description":
       "Estimate Dorchester County property tax using assessed value and combined local millage rates that vary by location.",
     "canonicalPath": "/tools/property-tax/dorchester-county-south-carolina"
@@ -1628,7 +1634,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   ],
   "meta": {
     "title":
-      "Douglas County property tax calculator 2026 — estimate property taxes",
+      "Douglas County property tax calculator 2026 - estimate property taxes",
     "description":
       "Estimate Douglas County, Colorado property tax using assessed value and combined local mill levies that vary by location.",
     "canonicalPath": "/tools/property-tax/douglas-county-colorado"
@@ -1671,7 +1677,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   ],
   "meta": {
     "title":
-      "Douglas County property tax calculator 2026 — estimate property taxes",
+      "Douglas County property tax calculator 2026 - estimate property taxes",
     "description":
       "Estimate Douglas County, Nebraska property tax using assessed value and combined local levies that vary by tax district.",
     "canonicalPath": "/tools/property-tax/douglas-county-nebraska"
@@ -1717,7 +1723,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
 
   meta: {
     title:
-      "Douglas County property tax calculator 2026 — estimate property taxes",
+      "Douglas County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Douglas County, Oregon property tax using assessed value under Measure 50 and combined local rates subject to Measure 5 limits.",
     canonicalPath: "/tools/property-tax/douglas-county-oregon",
@@ -1739,7 +1745,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Why might my actual tax bill differ from this estimate?", "a": "Actual bills depend on the specific taxing districts, levies, and exemptions tied to a parcel, which can vary significantly within the county." }
   ],
   "meta": {
-    "title": "DuPage County property tax calculator 2026 — estimate property taxes",
+    "title": "DuPage County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate DuPage County, Illinois property taxes using assessed value and a combined local property tax rate. Results are estimates and may differ from actual tax bills.",
     "canonicalPath": "/tools/property-tax/dupage-county-illinois"
   }
@@ -1760,7 +1766,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Why might my tax bill differ from this estimate?", "a": "Actual bills depend on specific municipal, fire, or special district rates and on eligibility for exemptions or deferrals." }
   ],
   "meta": {
-    "title": "Durham County property tax calculator 2026 — estimate property taxes",
+    "title": "Durham County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Durham County, North Carolina property taxes using assessed value and combined local property tax rates. Results are estimates and may differ from actual bills.",
     "canonicalPath": "/tools/property-tax/durham-county-north-carolina"
   }
@@ -1781,7 +1787,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { q: "Why might my actual property tax bill differ from this estimate?", a: "Actual bills depend on the property’s district boundaries, the mill levies set for those districts, and valuation rules that may change outcomes compared with a simplified estimate." }
   ],
   meta: {
-    title: "El Paso County, Colorado property tax calculator 2026 — estimate property taxes",
+    title: "El Paso County, Colorado property tax calculator 2026 - estimate property taxes",
     description: "Estimate El Paso County, Colorado property taxes using taxable value and a combined local property tax rate (mill levy). Results are estimates and may differ from actual bills.",
     canonicalPath: "/tools/property-tax/el-paso-county-colorado"
   }
@@ -1818,7 +1824,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
       },
     ],
     meta: {
-      title: "El Paso County, Texas property tax calculator 2026 — estimate property taxes",
+      title: "El Paso County, Texas property tax calculator 2026 - estimate property taxes",
       description:
         "Estimate El Paso County, Texas property taxes using taxable value and a combined local property tax rate. Results are estimates and may differ from actual bills.",
       canonicalPath: "/tools/property-tax/el-paso-county-texas",
@@ -1859,7 +1865,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     ],
 
     meta: {
-      title: "Ellis County property tax calculator 2026 — estimate property taxes",
+      title: "Ellis County property tax calculator 2026 - estimate property taxes",
       description:
         "Estimate your Ellis County, Texas property tax using taxable value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
       canonicalPath: "/tools/property-tax/ellis-county-texas",
@@ -1881,7 +1887,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
       { "q": "Is this the same as my official tax bill?", "a": "No. This is an estimate, and the actual tax bill may differ based on official rates and property-specific factors." }
     ],
     "meta": {
-      "title": "Erie County property tax calculator 2026 — estimate property taxes",
+      "title": "Erie County property tax calculator 2026 - estimate property taxes",
       "description": "Estimate your Erie County, New York property tax using taxable assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
       "canonicalPath": "/tools/property-tax/erie-county-new-york"
     }
@@ -1921,7 +1927,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     ],
 
     meta: {
-      title: "Escambia County property tax calculator 2026 — estimate property taxes",
+      title: "Escambia County property tax calculator 2026 - estimate property taxes",
       description:
         "Estimate your Escambia County, Florida property tax using taxable value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
       canonicalPath: "/tools/property-tax/escambia-county-florida",
@@ -1962,7 +1968,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     ],
 
     meta: {
-      title: "Etowah County property tax calculator 2026 — estimate property taxes",
+      title: "Etowah County property tax calculator 2026 - estimate property taxes",
       description:
         "Estimate your Etowah County, Alabama property tax using assessed value and a combined local ad valorem tax rate. Results are estimates and actual tax bills may differ.",
       canonicalPath: "/tools/property-tax/etowah-county-alabama",
@@ -2003,7 +2009,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     ],
 
     meta: {
-      title: "Fairfax County property tax calculator 2026 — estimate property taxes",
+      title: "Fairfax County property tax calculator 2026 - estimate property taxes",
       description:
         "Estimate your Fairfax County, Virginia property tax using assessed value and a combined local real estate tax rate. Results are estimates and actual tax bills may differ.",
       canonicalPath: "/tools/property-tax/fairfax-county-virginia",
@@ -2044,7 +2050,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     ],
 
     meta: {
-      title: "Forsyth County property tax calculator 2026 — estimate property taxes",
+      title: "Forsyth County property tax calculator 2026 - estimate property taxes",
       description:
         "Estimate your Forsyth County, Georgia property tax using fair market value, Georgia’s 40% assessment ratio, and a combined local ad valorem tax rate.",
       canonicalPath: "/tools/property-tax/forsyth-county-georgia",
@@ -2066,7 +2072,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this calculator an official tax bill?", "a": "No. This calculator provides an estimated property tax amount and does not replace an official bill issued by local authorities." }
   ],
   "meta": {
-    "title": "Frederick County property tax calculator 2026 — estimate property taxes",
+    "title": "Frederick County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in Frederick County, Maryland using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/frederick-county-maryland"
   }
@@ -2087,7 +2093,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this calculator an official property tax bill?", "a": "No. This calculator provides an estimated property tax amount and does not replace an official bill issued by the county." }
   ],
   "meta": {
-    "title": "Fresno County property tax calculator 2026 — estimate property taxes",
+    "title": "Fresno County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in Fresno County, California using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/fresno-county-california"
   }
@@ -2108,7 +2114,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this calculator an official tax bill?", "a": "No. This calculator provides an estimated property tax amount and does not replace an official bill issued by local taxing authorities." }
   ],
   "meta": {
-    "title": "Galveston County property tax calculator 2026 — estimate property taxes",
+    "title": "Galveston County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in Galveston County, Texas using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/galveston-county-texas"
   }
@@ -2128,7 +2134,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this calculator an official property tax bill?", "a": "No. This calculator provides an estimated property tax amount and does not replace an official bill issued by local taxing authorities." }
   ],
   "meta": {
-    "title": "Gaston County property tax calculator 2026 — estimate property taxes",
+    "title": "Gaston County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in Gaston County, North Carolina using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/gaston-county-north-carolina"
   }
@@ -2149,7 +2155,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this calculator an official property tax bill?", "a": "No. This calculator provides an estimated property tax amount and does not replace an official bill issued by local taxing authorities." }
   ],
   "meta": {
-    "title": "Grayson County property tax calculator 2026 — estimate property taxes",
+    "title": "Grayson County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in Grayson County, Texas using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/grayson-county-texas"
   }
@@ -2170,7 +2176,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this calculator an official property tax bill?", "a": "No. This calculator provides an estimated property tax amount and does not replace an official bill issued by the county treasurer." }
   ],
   "meta": {
-    "title": "Greene County property tax calculator 2026 — estimate property taxes",
+    "title": "Greene County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in Greene County, Ohio using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/greene-county-ohio"
   }
@@ -2191,7 +2197,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this calculator an official property tax bill?", "a": "No. This calculator provides an estimated property tax amount and does not replace an official bill issued by local taxing authorities." }
   ],
   "meta": {
-    "title": "Greenville County property tax calculator 2026 — estimate property taxes",
+    "title": "Greenville County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in Greenville County, South Carolina using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/greenville-county-south-carolina"
   }
@@ -2212,7 +2218,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this calculator an official property tax bill?", "a": "No. This calculator provides an estimated property tax amount and does not replace an official bill issued by local taxing authorities." }
   ],
   "meta": {
-    "title": "Guilford County property tax calculator 2026 — estimate property taxes",
+    "title": "Guilford County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in Guilford County, North Carolina using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/guilford-county-north-carolina"
   }
@@ -2233,7 +2239,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are exemptions included in this calculator?", "a": "Exemptions are not automatically applied because eligibility and amounts vary by owner and taxing authority." }
   ],
   "meta": {
-    "title": "Gwinnett County property tax calculator 2026 — estimate property taxes",
+    "title": "Gwinnett County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Gwinnett County, Georgia property tax using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/gwinnett-county-georgia"
   }
@@ -2254,7 +2260,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are exemptions included in this calculator?", "a": "Exemptions are not automatically included because eligibility and amounts depend on owner status and statutory conditions." }
   ],
   "meta": {
-    "title": "Hamilton County property tax calculator 2026 — estimate property taxes",
+    "title": "Hamilton County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Hamilton County, Ohio property tax using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/hamilton-county-ohio"
   }
@@ -2275,7 +2281,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are exemptions included in this calculator?", "a": "Exemptions are not automatically included because eligibility and amounts can vary by taxpayer and by taxing unit." }
   ],
   "meta": {
-    "title": "Harris County property tax calculator 2026 — estimate property taxes",
+    "title": "Harris County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Harris County, Texas property tax using taxable value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/harris-county-texas"
   }
@@ -2285,7 +2291,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "h1": "Hays County property tax calculator 2026",
   "intro": "This calculator provides an estimated property tax for Hays County, Texas using taxable value and a combined local property tax rate. In Hays County, property taxes are based on appraised market value determined by the appraisal district and reduced by any applicable exemptions.",
   "sections": {
-    "howItWorks": "Property in Hays County is appraised at market value by the Hays Central Appraisal District as of January 1. Exemptions such as residence homestead exemptions can reduce the taxable value. Each taxing unit that applies to the property — including the county, school districts, cities, and special districts — adopts its own tax rate, and the combined local property tax rate is applied to the taxable value.",
+    "howItWorks": "Property in Hays County is appraised at market value by the Hays Central Appraisal District as of January 1. Exemptions such as residence homestead exemptions can reduce the taxable value. Each taxing unit that applies to the property - including the county, school districts, cities, and special districts - adopts its own tax rate, and the combined local property tax rate is applied to the taxable value.",
     "examples": "An estimated tax is calculated by applying a combined local rate to the property’s taxable value. Because different cities and school districts within Hays County adopt different rates, the combined rate can vary depending on the property’s location.",
     "limitations": "The accuracy of this estimate depends on the correctness of the taxable value and rate entered."
   },
@@ -2296,7 +2302,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are exemptions included in this calculator?", "a": "Exemptions are not automatically included because eligibility and amounts vary by taxpayer and by taxing unit." }
   ],
   "meta": {
-    "title": "Hays County property tax calculator 2026 — estimate property taxes",
+    "title": "Hays County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Hays County, Texas property tax using taxable value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/hays-county-texas"
   }
@@ -2304,45 +2310,93 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
 
 "US-MN-HENNEPIN-COUNTY": {
   h1: "Hennepin County property tax calculator 2026",
+
   intro:
-    "This calculator provides an estimated property tax for Hennepin County, Minnesota based on taxable (assessed) value and a combined local property tax rate. Actual property taxes depend on the property’s location and the local taxing authorities that apply.",
+    "Estimate your annual property tax in Hennepin County, Minnesota using your property's taxable value and a combined local property tax rate, often expressed in mills. This calculator reflects how property taxes are determined across county, city, school district, and special taxing authorities. It provides an estimate only and does not include exemptions, credits, refunds, special assessments, or parcel-specific charges that may apply to your property.",
+
+  trust: {
+    lastReviewed: "May 2026",
+    keyFacts: [
+      {
+        label: "Location",
+        value: "Hennepin County, Minnesota, United States",
+      },
+      {
+        label: "Calculation basis",
+        value: "Taxable value and combined local property tax rate",
+      },
+      {
+        label: "Rate format",
+        value: "Mill rate or equivalent percentage rate",
+      },
+      {
+        label: "Value authority",
+        value: "Hennepin County property tax and assessment records",
+      },
+      {
+        label: "Taxing authorities",
+        value: "County, city, school district, and special districts",
+      },
+      {
+        label: "Data basis",
+        value: "Official county property records and Minnesota property tax guidance",
+      },
+    ],
+    sourceLinks: [
+      {
+        label: "Hennepin County property information search",
+    url: "https://gis.hennepin.us/property"
+  },
+  {
+    label: "Minnesota Department of Revenue - property tax overview",
+    url: "https://www.revenue.state.mn.us/property-tax-information"
+      },
+    ],
+  },
 
   sections: {
     howItWorks:
-      "Property tax in Hennepin County starts with a taxable (assessed) value determined by the county assessor. Certain exclusions or adjustments may reduce the property’s taxable value. Local taxing authorities — such as the county, city, school district, and special districts — each adopt their own levy rates. These rates are combined into a single local rate that is applied to the taxable value to estimate annual property tax.",
+      "Property tax in Hennepin County begins with a taxable value used for property tax calculation. This value may differ from market value because classification rules, exclusions, and state adjustments can affect the taxable amount.\n\nMultiple local taxing authorities, including the county, city, school district, and special districts, each set their own tax levy. These levies are combined into a single effective property tax rate, often expressed in mills, meaning tax per $1,000 of taxable value.\n\nThis combined rate is applied to the taxable value to estimate annual property tax. Because tax rates vary by location, properties in different cities or school districts within Hennepin County may have different total tax rates even if their values are similar.",
 
     examples:
-      "An estimated property tax is calculated by multiplying the taxable value of a property by a combined local property tax rate. Properties in different cities or school districts within Hennepin County may have different combined rates, even if their taxable values are similar.",
+      "Example 1: A taxable value of $300,000 with a combined local rate of 18.5 mills, equal to 1.85%, results in an estimated annual property tax of approximately $5,550.\n\nExample 2: A taxable value of $500,000 with the same combined rate results in an estimated annual property tax of approximately $9,250.\n\nExample 3: A taxable value of $750,000 with a combined rate of 18.5 mills results in an estimated annual property tax of approximately $13,875.\n\nThese examples use a sample combined rate. Actual property tax rates vary by location within Hennepin County and may differ from this estimate.",
+
+    factors:
+      "- Taxable value used for property tax calculation\n- Combined local property tax rate\n- County, city, school district, and special district levies\n- Property classification and eligibility for exclusions or credits\n- Parcel-specific assessments, refunds, credits, or local charges\n\nProperties with similar market values may have different tax bills because taxable value, location, classification, and local tax rates can differ.",
 
     limitations:
-      "This calculation offers an approximate projection of property tax based on the inputs provided. Taxable value adjustments, local levy rates, and eligibility for exclusions vary by property and location. The actual tax bill may differ from this estimate."
+      "This calculator provides an estimate only and does not replace an official Hennepin County property tax bill.\n\nActual property taxes may differ due to exemptions, homestead credits, refunds, classification rules, special assessments, or location-specific tax rates.\n\nOfficial property tax information should be confirmed through Hennepin County property records or your official property tax statement.",
   },
 
   faq: [
     {
       q: "How is property tax calculated in Hennepin County?",
-      a: "Property tax is estimated by applying a combined local property tax rate to the property’s taxable (assessed) value."
+      a: "Property tax is calculated by applying a combined local property tax rate to the property's taxable value. The total rate can include county, city, school district, and other local taxing authorities.",
     },
     {
-      q: "What is taxable or assessed value?",
-      a: "Taxable value is the value of a property used for tax calculation after any applicable exclusions or adjustments."
+      q: "What is taxable value?",
+      a: "Taxable value is the value used to calculate property tax after adjustments such as classification, exclusions, or state rules. It may differ from the property's market value.",
     },
     {
-      q: "Do property tax rates vary within Hennepin County?",
-      a: "Yes. Rates vary depending on the county, city, school district, and special taxing districts that apply to a property."
+      q: "Why do property tax rates vary within Hennepin County?",
+      a: "Rates vary because different cities, school districts, and local authorities set their own levies. Those levies are combined into a total rate for each property.",
     },
     {
-      q: "Are credits or refunds included in this calculator?",
-      a: "No. Credits and refunds are applied separately after tax is calculated and are not included in this estimate."
-    }
+      q: "What is a mill rate?",
+      a: "A mill rate represents the amount of tax per $1,000 of taxable value. For example, 18.5 mills equals $18.50 in tax per $1,000 of taxable value.",
+    },
+    {
+      q: "Does this calculator include exemptions, credits, or refunds?",
+      a: "No. This calculator does not include homestead credits, exemptions, refunds, or other tax relief programs that may reduce your final property tax bill.",
+    },
   ],
 
   meta: {
-    title: "Hennepin County property tax calculator 2026 — estimate property taxes",
+    title: "Hennepin County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate your Hennepin County, Minnesota property tax using taxable value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
-    canonicalPath: "/tools/property-tax/hennepin-county-minnesota"
-  }
+    canonicalPath: "/tools/property-tax/hennepin-county-minnesota",
+  },
 },
 
 "US-GA-HENRY-COUNTY": {
@@ -2372,7 +2426,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   "meta": {
-    "title": "Henry County property tax calculator 2026 — estimate property taxes",
+    "title": "Henry County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Henry County, Georgia property tax using market value, a statewide assessment ratio, and a combined local property tax rate that may vary by tax district.",
     "canonicalPath": "/tools/property-tax/henry-county-georgia"
   }
@@ -2405,7 +2459,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   "meta": {
-    "title": "Henry County, Indiana property tax calculator 2026 — estimate property taxes",
+    "title": "Henry County, Indiana property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Henry County, Indiana property tax using assessed value and a combined local property tax rate that varies by taxing district.",
     "canonicalPath": "/tools/property-tax/henry-county-indiana"
   }
@@ -2438,7 +2492,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   "meta": {
-    "title": "Hillsborough County, Florida property tax calculator 2026 — estimate property taxes",
+    "title": "Hillsborough County, Florida property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Hillsborough County, Florida property tax using assessed or taxable value and a combined local property tax rate that varies by jurisdiction.",
     "canonicalPath": "/tools/property-tax/hillsborough-county-florida"
   }
@@ -2471,7 +2525,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   "meta": {
-    "title": "Horry County, South Carolina property tax calculator 2026 — estimate property taxes",
+    "title": "Horry County, South Carolina property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Horry County, South Carolina property tax using taxable value and a combined local property tax rate.",
     "canonicalPath": "/tools/property-tax/horry-county-south-carolina"
   }
@@ -2504,7 +2558,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   "meta": {
-    "title": "Howard County, Maryland property tax calculator 2026 — estimate property taxes",
+    "title": "Howard County, Maryland property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Howard County, Maryland property tax using assessed value and a combined property tax rate that may include county, state, fire, and special district charges.",
     "canonicalPath": "/tools/property-tax/howard-county-maryland"
   }
@@ -2537,7 +2591,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   "meta": {
-    "title": "Hunt County, Texas property tax calculator 2026 — estimate property taxes",
+    "title": "Hunt County, Texas property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Hunt County, Texas property tax using taxable value and a combined local property tax rate that varies by taxing units.",
     "canonicalPath": "/tools/property-tax/hunt-county-texas"
   }
@@ -2570,7 +2624,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   "meta": {
-    "title": "Jackson County, Missouri property tax calculator 2026 — estimate property taxes",
+    "title": "Jackson County, Missouri property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Jackson County, Missouri property tax using taxable value and a combined local property tax rate that varies by taxing authorities.",
     "canonicalPath": "/tools/property-tax/jackson-county-missouri"
   }
@@ -2603,7 +2657,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   "meta": {
-    "title": "Jefferson County, Missouri property tax calculator 2026 — estimate property taxes",
+    "title": "Jefferson County, Missouri property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Jefferson County, Missouri property tax using taxable value and a combined local property tax rate that varies by taxing authorities.",
     "canonicalPath": "/tools/property-tax/jefferson-county-missouri"
   }
@@ -2624,7 +2678,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are flat fees included in this estimate?", "a": "No. Flat fees or special assessments that apply in some areas are not included in the calculation." }
   ],
   "meta": {
-    "title": "Jefferson Parish property tax calculator 2026 — estimate property taxes",
+    "title": "Jefferson Parish property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in Jefferson Parish, Louisiana using market value, assessment rules, and combined local property tax rates that vary by ward.",
     "canonicalPath": "/tools/property-tax/jefferson-parish-louisiana"
   }
@@ -2645,7 +2699,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this estimate include special assessments or credits?", "a": "No. Special assessments and credits are not included and can cause actual tax bills to differ." }
   ],
   "meta": {
-    "title": "Johnson County property tax calculator 2026 — estimate property taxes",
+    "title": "Johnson County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in Johnson County, Kansas using market value, statutory assessment ratios, and combined local mill levies that vary by taxing district.",
     "canonicalPath": "/tools/property-tax/johnson-county-kansas"
   }
@@ -2666,7 +2720,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are special assessments included in this estimate?", "a": "No. Special assessments or parcel-specific charges are not included and may affect the actual tax bill." }
   ],
   "meta": {
-    "title": "Johnston County property tax calculator 2026 — estimate property taxes",
+    "title": "Johnston County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in Johnston County, North Carolina using assessed value and combined local property tax rates expressed per $100 of value.",
     "canonicalPath": "/tools/property-tax/johnston-county-north-carolina"
   }
@@ -2687,7 +2741,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this estimate include exemptions or credits?", "a": "No. Exemptions and credits are not modeled and can change the final tax bill." }
   ],
   "meta": {
-    "title": "Kane County property tax calculator 2026 — estimate property taxes",
+    "title": "Kane County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in Kane County, Illinois using taxable assessed value and combined local property tax rates that vary by tax code area.",
     "canonicalPath": "/tools/property-tax/kane-county-illinois"
   }
@@ -2708,7 +2762,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are special assessments or exemptions included?", "a": "No. Special assessments and exemptions are not included and can affect the final tax bill." }
   ],
   "meta": {
-    "title": "Kaufman County property tax calculator 2026 — estimate property taxes",
+    "title": "Kaufman County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in Kaufman County, Texas using taxable assessed value and combined local property tax rates that vary by taxing unit.",
     "canonicalPath": "/tools/property-tax/kaufman-county-texas"
   }
@@ -2729,7 +2783,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this estimate include exemptions or credits?", "a": "No. Exemptions and credits are not modeled and can change the final tax bill." }
   ],
   "meta": {
-    "title": "Kendall County property tax calculator 2026 — estimate property taxes",
+    "title": "Kendall County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in Kendall County, Illinois using taxable assessed value and combined local property tax rates that vary by tax code area.",
     "canonicalPath": "/tools/property-tax/kendall-county-illinois"
   }
@@ -2750,7 +2804,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are special assessments included?", "a": "No. Special assessments and parcel-specific levies are not included and can affect the actual tax bill." }
   ],
   "meta": {
-    "title": "Kern County property tax calculator 2026 — estimate property taxes",
+    "title": "Kern County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in Kern County, California using assessed value and combined local property tax rates that vary by tax rate area under California law.",
     "canonicalPath": "/tools/property-tax/kern-county-california"
   }
@@ -2760,7 +2814,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "h1": "King County property tax calculator 2026",
   "intro": "This calculator provides an estimated property tax for real estate located in King County, Washington. The estimate is based on assessed value and a combined local property tax levy rate that varies by levy code area.",
   "sections": {
-    "howItWorks": "Property tax in King County is calculated using the assessed value determined by the King County Assessor. Multiple taxing districts—such as the county, cities, school districts, and other special districts—adopt levies that are combined into a single levy rate for each levy code area. The assessed value is multiplied by this combined levy rate (expressed per $1,000 of assessed value) to estimate annual property tax.",
+    "howItWorks": "Property tax in King County is calculated using the assessed value determined by the King County Assessor. Multiple taxing districts-such as the county, cities, school districts, and other special districts-adopt levies that are combined into a single levy rate for each levy code area. The assessed value is multiplied by this combined levy rate (expressed per $1,000 of assessed value) to estimate annual property tax.",
     "examples": "Two properties with the same assessed value can have different estimated taxes if they are located in different levy code areas within King County. Different combinations of taxing districts and voter-approved levies result in different combined rates.",
     "limitations": "This estimator provides a simplified calculation based on the value and rate entered. King County does not have a single uniform property tax rate. Combined levy rates vary by levy code area and by year, and voter-approved excess levies or special assessments may apply. Exemptions, credits, and parcel-specific adjustments are not deterministically modeled. Actual tax bills may differ from this estimate."
   },
@@ -2771,7 +2825,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are exemptions or credits included in this estimate?", "a": "No. Exemptions, credits, and parcel-specific adjustments are not included and can change the final tax bill." }
   ],
   "meta": {
-    "title": "King County property tax calculator 2026 — estimate property taxes",
+    "title": "King County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in King County, Washington using assessed value and combined local levy rates that vary by levy code area.",
     "canonicalPath": "/tools/property-tax/king-county-washington"
   }
@@ -2781,7 +2835,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "h1": "Lake County property tax calculator 2026",
   "intro": "This calculator provides an estimated property tax for real estate located in Lake County, Indiana. The estimate is based on assessed value and a combined local property tax rate that varies by tax district.",
   "sections": {
-    "howItWorks": "Property tax in Lake County is calculated using the property’s assessed value as determined by the county assessor. Local taxing units—such as the county, cities or towns, school corporations, and other special districts—adopt budgets that produce tax rates. The sum of the rates that apply to a specific tax district forms the combined local property tax rate. The assessed value is multiplied by this combined rate to estimate annual property tax.",
+    "howItWorks": "Property tax in Lake County is calculated using the property’s assessed value as determined by the county assessor. Local taxing units-such as the county, cities or towns, school corporations, and other special districts-adopt budgets that produce tax rates. The sum of the rates that apply to a specific tax district forms the combined local property tax rate. The assessed value is multiplied by this combined rate to estimate annual property tax.",
     "examples": "Two properties with the same assessed value can have different estimated taxes if they are located in different tax districts within Lake County. Different combinations of local taxing units result in different combined rates.",
     "limitations": "The figures shown here represent a non-official estimate derived from user-entered data. Lake County does not have a single uniform property tax rate. Combined local rates vary by tax district and by year, and statutory tax caps, credits, exemptions, or parcel-specific adjustments are not deterministically modeled. Actual tax bills may differ from this estimate."
   },
@@ -2792,7 +2846,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are tax caps or credits included in this estimate?", "a": "No. Indiana tax caps, credits, and other parcel-specific adjustments are not included and can affect the final tax bill." }
   ],
   "meta": {
-    "title": "Lake County property tax calculator 2026 — estimate property taxes",
+    "title": "Lake County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in Lake County, Indiana using assessed value and combined local property tax rates that vary by tax district.",
     "canonicalPath": "/tools/property-tax/lake-county-indiana"
   }
@@ -2813,7 +2867,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are exemptions or credits included in this estimate?", "a": "No. Exemptions, credits, and relief programs are not included and can affect the final tax bill." }
   ],
   "meta": {
-    "title": "Lexington County property tax calculator 2026 — estimate property taxes",
+    "title": "Lexington County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate property taxes in Lexington County, South Carolina using market value, statutory assessment ratios, and combined local millage rates that vary by tax district.",
     "canonicalPath": "/tools/property-tax/lexington-county-south-carolina"
   }
@@ -2834,7 +2888,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Can my actual property tax be higher or lower?", "a": "Yes. The actual tax bill depends on official assessments, local levies, and applicable exemptions." }
   ],
   "meta": {
-    "title": "Madison County property tax calculator 2026 — estimate property taxes",
+    "title": "Madison County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Madison County, Illinois property taxes using assessed value and a combined local property tax rate. Results are estimates and may differ from the actual tax bill.",
     "canonicalPath": "/tools/property-tax/madison-county-illinois"
   }
@@ -2855,7 +2909,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Can my actual property tax be different from the estimate?", "a": "Yes. Actual property taxes depend on official assessments, applicable exemptions, and the specific taxing districts for the parcel." }
   ],
   "meta": {
-    "title": "Maricopa County property tax calculator 2026 — estimate property taxes",
+    "title": "Maricopa County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Maricopa County, Arizona property taxes using assessed value and a combined local property tax rate. Results are estimates and may differ from the actual tax bill.",
     "canonicalPath": "/tools/property-tax/maricopa-county-arizona"
   }
@@ -2876,7 +2930,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Can my actual property tax be higher or lower than the estimate?", "a": "Yes. Actual taxes depend on the official assessed value, applicable tax rate area, and parcel-specific charges." }
   ],
   "meta": {
-    "title": "Marin County property tax calculator 2026 — estimate property taxes",
+    "title": "Marin County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Marin County, California property taxes using assessed value and a combined property tax rate. Results are estimates and may differ from the actual tax bill.",
     "canonicalPath": "/tools/property-tax/marin-county-california"
   }
@@ -2897,7 +2951,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Can my actual property tax be different from the estimate?", "a": "Yes. Actual taxes depend on the official assessed value, applicable deductions or credits, and the specific taxing district for the parcel." }
   ],
   "meta": {
-    "title": "Marion County Indiana property tax calculator 2026 — estimate property taxes",
+    "title": "Marion County Indiana property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Marion County, Indiana property taxes using assessed value and a combined local property tax rate by taxing district. Results are estimates and may differ from the actual tax bill.",
     "canonicalPath": "/tools/property-tax/marion-county-indiana"
   }
@@ -2918,7 +2972,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Can my actual Maui County property tax be different from the estimate?", "a": "Yes. Actual taxes depend on official assessments, property classification, applicable exemptions, and the adopted county rate." }
   ],
   "meta": {
-    "title": "Maui County property tax calculator 2026 — estimate property taxes",
+    "title": "Maui County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Maui County, Hawaii property taxes using assessed value and class-based county tax rates. Results are estimates and may differ from the actual tax bill.",
     "canonicalPath": "/tools/property-tax/maui-county-hawaii"
   }
@@ -2939,7 +2993,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Can my actual property tax be different from the estimate?", "a": "Yes. Actual taxes depend on official assessments, equalization, exemptions, and the specific taxing districts that apply to the parcel." }
   ],
   "meta": {
-    "title": "McHenry County Illinois property tax calculator 2026 — estimate property taxes",
+    "title": "McHenry County Illinois property tax calculator 2026 - estimate property taxes",
     "description": "Estimate McHenry County, Illinois property taxes using assessed value and a combined local property tax rate by taxing district. Results are estimates and may differ from the actual tax bill.",
     "canonicalPath": "/tools/property-tax/mchenry-county-illinois"
   }
@@ -2960,7 +3014,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Can my actual Monmouth County property tax differ from the estimate?", "a": "Yes. Actual taxes depend on official assessments, applicable municipal and district rates, and parcel-specific factors." }
   ],
   "meta": {
-    "title": "Monmouth County New Jersey property tax calculator 2026 — estimate property taxes",
+    "title": "Monmouth County New Jersey property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Monmouth County, New Jersey property taxes using assessed value and combined local tax rates by municipality and district. Results are estimates and may differ from the actual tax bill.",
     "canonicalPath": "/tools/property-tax/monmouth-county-new-jersey"
   }
@@ -2981,7 +3035,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Can my actual Marion County property tax differ from the estimate?", "a": "Yes. Actual taxes depend on official assessed value, applicable district rates, and constitutional limits that may reduce taxes through compression." }
   ],
   "meta": {
-    "title": "Marion County Oregon property tax calculator 2026 — estimate property taxes",
+    "title": "Marion County Oregon property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Marion County, Oregon property taxes using assessed value and combined local tax rates by taxing district. Results are estimates and may differ from the actual tax bill.",
     "canonicalPath": "/tools/property-tax/marion-county-oregon"
   }
@@ -3002,7 +3056,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Can my actual Multnomah County property tax differ from the estimate?", "a": "Yes. Actual taxes depend on official assessed value, applicable levy code area rates, and constitutional limits that may reduce taxes through compression." }
   ],
   "meta": {
-    "title": "Multnomah County Oregon property tax calculator 2026 — estimate property taxes",
+    "title": "Multnomah County Oregon property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Multnomah County, Oregon property taxes using assessed value and combined local tax rates by levy code area. Results are estimates and may differ from the actual tax bill.",
     "canonicalPath": "/tools/property-tax/multnomah-county-oregon"
   }
@@ -3040,7 +3094,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   ],
   meta: {
     title:
-      "Nassau County property tax calculator 2026 — estimate property taxes",
+      "Nassau County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Nassau County property taxes using assessed value and combined local property tax rates. Results are estimates only and may differ from actual tax bills.",
     canonicalPath: "/tools/property-tax/nassau-county-new-york",
@@ -3079,7 +3133,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   ],
   meta: {
     title:
-      "Nueces County property tax calculator 2026 — estimate property taxes",
+      "Nueces County property tax calculator 2026 - estimate property taxes",
     description:
       "Estimate Nueces County property taxes using assessed value and combined local property tax rates. Results are estimates only and may differ from actual tax bills.",
     canonicalPath: "/tools/property-tax/nueces-county-texas",
@@ -3101,7 +3155,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Why can two similar properties have different tax bills?", "a": "Differences in location, school district, village status, special districts, assessed value, and exemptions can all affect the combined local property tax rate and the resulting tax bill." }
   ],
   "meta": {
-    "title": "Onondaga County property tax calculator 2026 — estimate property taxes",
+    "title": "Onondaga County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Onondaga County property tax using assessed value and combined local property tax rates, including county, town or city, and school district components.",
     "canonicalPath": "/tools/property-tax/onondaga-county-new-york"
   }
@@ -3122,7 +3176,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are exemptions included in the calculation?", "a": "Exemptions reduce the assessed value before taxes are calculated. Eligibility-based exemptions, such as homestead or senior exemptions, affect the taxable value used in the estimate." }
   ],
   "meta": {
-    "title": "Osceola County property tax calculator 2026 — estimate property taxes",
+    "title": "Osceola County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Osceola County property tax using taxable assessed value and combined local millage rates from county, municipal, school, and special district authorities.",
     "canonicalPath": "/tools/property-tax/osceola-county-florida"
   }
@@ -3143,7 +3197,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator show my exact tax bill?", "a": "No. The result is an estimated property tax based on the values and rate entered. Actual tax bills may differ depending on final adopted rates, exemptions, and parcel-specific factors." }
   ],
   "meta": {
-    "title": "Parker County property tax calculator 2026 — estimate property taxes",
+    "title": "Parker County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Parker County, Texas property tax based on market value and a combined local property tax rate. This tool provides an estimated property tax, not an official bill.",
     "canonicalPath": "/tools/property-tax/parker-county-texas"
   }
@@ -3164,7 +3218,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator show my exact property tax bill?", "a": "No. The result is an estimated property tax based on the values and rate entered. The actual tax bill may differ depending on final certified rates and parcel-specific factors." }
   ],
   "meta": {
-    "title": "Peoria County property tax calculator 2026 — estimate property taxes",
+    "title": "Peoria County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Peoria County, Illinois property tax based on fair market value and a combined local property tax rate. This tool provides an estimated property tax, not an official bill.",
     "canonicalPath": "/tools/property-tax/peoria-county-illinois"
   }
@@ -3185,7 +3239,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this the same as my official tax bill?", "a": "No. The result is an estimated property tax based on the values and rate entered. The actual tax bill may differ due to final certified rates and property-specific adjustments." }
   ],
   "meta": {
-    "title": "Prince George's County property tax calculator 2026 — estimate property taxes",
+    "title": "Prince George's County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Prince George's County, Maryland property tax based on market value and a combined local property tax rate. This tool provides an estimated property tax, not an official bill.",
     "canonicalPath": "/tools/property-tax/prince-georges-county-maryland"
   }
@@ -3206,7 +3260,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator include tax relief or exemptions?", "a": "No. The result is an estimated property tax based on the assessed value and rate entered. Eligibility-based relief programs and exemptions are not automatically applied." }
   ],
   "meta": {
-    "title": "Prince William County property tax calculator 2026 — estimate property taxes",
+    "title": "Prince William County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Prince William County, Virginia property tax based on assessed value and a combined local real estate tax rate. This tool provides an estimated property tax, not an official bill.",
     "canonicalPath": "/tools/property-tax/prince-william-county-virginia"
   }
@@ -3227,7 +3281,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this the same as my official tax bill?", "a": "No. The result is an estimated property tax based on the values and rate entered. The official tax bill may differ due to parcel-specific factors and final adopted rates." }
   ],
   "meta": {
-    "title": "Pierce County property tax calculator 2026 — estimate property taxes",
+    "title": "Pierce County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Pierce County, Washington property tax based on market value and a combined local property tax rate. This tool provides an estimated property tax, not an official bill.",
     "canonicalPath": "/tools/property-tax/pierce-county-washington"
   }
@@ -3248,7 +3302,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Why is my actual tax bill different from the estimate?", "a": "Actual tax bills reflect the specific combination of primary and secondary rates applicable to the parcel, as well as any qualifying exemptions and valuation determinations. This calculator provides an estimate only." }
   ],
   "meta": {
-    "title": "Pima County property tax calculator 2026 — estimate property taxes",
+    "title": "Pima County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Pima County property tax using net assessed value and a combined local property tax rate. Results are estimates and actual bills may differ.",
     "canonicalPath": "/tools/property-tax/pima-county-arizona"
   }
@@ -3269,7 +3323,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator match my actual tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs. The actual tax bill may differ depending on parcel-specific rates, exemptions, and assessment adjustments." }
   ],
   "meta": {
-    "title": "Pinellas County property tax calculator 2026 — estimate property taxes",
+    "title": "Pinellas County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Pinellas County, Florida property tax based on taxable value and combined local property tax rates. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/pinellas-county-florida"
   }
@@ -3290,7 +3344,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator match my actual tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs. The actual tax bill may differ depending on parcel-specific rates, exemptions, and assessment adjustments." }
   ],
   "meta": {
-    "title": "Polk County property tax calculator 2026 — estimate property taxes",
+    "title": "Polk County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Polk County, Florida property tax based on taxable value and combined local property tax rates. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/polk-county-florida"
   }
@@ -3311,7 +3365,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator match my actual tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs and assumes a 6% assessment ratio. The actual tax bill may differ depending on classification, exemptions, and district-specific millage rates." }
   ],
   "meta": {
-    "title": "Richland County property tax calculator 2026 — estimate property taxes",
+    "title": "Richland County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Richland County, South Carolina property tax for property assessed at the 6% ratio using market value and combined local millage rates. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/richland-county-south-carolina"
   }
@@ -3332,7 +3386,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator match my actual tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs. Actual bills may differ due to exemptions, supplemental assessments, and parcel-specific rate variations." }
   ],
   "meta": {
-    "title": "Riverside County property tax calculator 2026 — estimate property taxes",
+    "title": "Riverside County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Riverside County, California property tax using assessed value under Proposition 13 and applicable local rates. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/riverside-county-california"
   }
@@ -3353,29 +3407,99 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this the exact amount on my tax bill?", "a": "No. This is an estimated property tax based on assessed value and the county rate. The actual tax bill may differ." }
   ],
   "meta": {
-    "title": "Robeson County property tax calculator 2026 — estimate property taxes",
+    "title": "Robeson County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Robeson County property tax based on assessed value and the published county base rate. Municipal and special district taxes are not included.",
     "canonicalPath": "/tools/property-tax/robeson-county-north-carolina"
   }
 },
 
 "US-CA-SACRAMENTO-COUNTY": {
-  "h1": "Sacramento County property tax calculator 2026",
-  "intro": "This Sacramento County property tax calculator provides an estimated property tax based on assessed value and the 1% general levy applied under California law. Property taxes in Sacramento County are based on assessed value and may include additional voter-approved debt and special assessments depending on the tax rate area. Results shown here reflect the general levy only unless otherwise noted.",
-  "sections": {
-    "howItWorks": "In Sacramento County, property tax is based on assessed value as of the annual lien date. The county levies an ad valorem property tax at a rate of 1% of the full cash value, which functions as the taxable assessed value. This estimator multiplies the assessed value by the 1% general levy. Additional amounts for voter-approved bonds and special assessments may apply based on the property’s tax rate area and are not included in this simplified estimate.",
-"examples": "Sacramento County properties are generally taxed based on an assessed value established at purchase and adjusted annually under California law. If the assessed value is 755,000, the base ad valorem portion calculated at 1 percent equals 7,550 before bonded charges are layered in. This illustrates the constitutional framework rather than a parcel-specific tax bill.",
-    "limitations": "This calculator provides an estimated property tax based on the 1% general levy only. Sacramento County tax bills may also include voter-approved bonded indebtedness and special assessments that vary by tax rate area. Exemptions beyond the standard Homeowners’ Exemption, such as disabled veterans’ exemptions, depend on eligibility and are not automatically applied. The actual tax bill may differ from this estimate."
+  "h1": "Sacramento County Property Tax Calculator 2026 (Official Rate & Estimate)",
+  "intro": "Estimate your Sacramento County property tax using the official secured property tax framework under California law. This calculator applies the rate to assessed value, not current market value. It reflects secured property taxes only and does not include mortgage escrow, exemptions, penalties, supplemental assessments, or parcel-specific charges that may appear on an official bill.",
+  "trust": {
+    "lastReviewed": "May 2026",
+    "keyFacts": [
+      {
+        "label": "Location",
+        "value": "Sacramento County, California, United States"
+      },
+      {
+        "label": "Official secured property tax rate",
+        "value": "1.00% base rate under Proposition 13; additional local charges may apply"
+      },
+      {
+        "label": "Base property tax rate",
+        "value": "1.00% of assessed value under California Proposition 13"
+      },
+      {
+        "label": "Assessed value authority",
+        "value": "Sacramento County Assessor"
+      },
+      {
+        "label": "Tax billing authority",
+        "value": "Sacramento County Tax Collector"
+      },
+      {
+        "label": "Data basis",
+        "value": "California secured property tax law and Sacramento County assessment guidance"
+      }
+    ],
+    "sourceLinks": [
+      {
+        "label": "Sacramento County secured property tax payment system",
+        "url": "https://eproptax.saccounty.gov/"
+      },
+      {
+        "label": "Sacramento County Assessor",
+        "url": "https://assessor.saccounty.gov/"
+      },
+      {
+        "label": "Sacramento County Tax Collection & Licensing Division",
+        "url": "https://finance.saccounty.gov/Tax/Pages/default.aspx"
+      }
+    ]
   },
+
+  "sections": {
+    "howItWorks": "Sacramento County property tax is calculated by applying the official secured property tax framework to the assessed value of the property.\n\nThe Sacramento County Tax Collector administers and issues secured property tax bills. The Sacramento County Assessor determines assessed values for real property.\n\nUnder California Proposition 13, the base property tax rate is 1% of assessed value. The total secured property tax rate can be higher because voter-approved bond debt and local assessments may be included.\n\nAssessed value is not necessarily the same as market value. In most cases, assessed value increases are limited to no more than 2% per year unless a reassessment event occurs, such as a sale, change in ownership, or new construction.\n\nThis calculator multiplies the assessed value by the base 1% secured property tax rate to estimate annual Sacramento County property tax.",
+    
+    "examples": "Example 1: Using the base secured property tax rate of 1.00%, an assessed value of $500,000 results in an estimated annual property tax of approximately $5,000.\n\nExample 2: An assessed value of $800,000 results in an estimated annual property tax of approximately $8,000.\n\nExample 3: An assessed value of $1,200,000 results in an estimated annual property tax of approximately $12,000.\n\nThese examples use the base secured property tax rate but do not include voter-approved bond charges, supplemental assessments, penalties, or parcel-specific charges that may appear separately on an official Sacramento County property tax bill.",
+    
+    "factors": "- Assessed value determined by the Sacramento County Assessor\n- Official secured property tax rate\n- Voter-approved bond debt and local assessments\n- Supplemental assessments after a sale, ownership change, or new construction\n- Parcel-specific charges, exemptions, corrections, or penalties\n\nProperties with similar market values can have different property tax bills because assessed value history, ownership changes, exemptions, and parcel-specific charges can differ.",
+    
+    "limitations": "This calculator provides an estimate only and does not replace an official Sacramento County property tax bill.\n\nActual amounts may differ because of exemptions, supplemental assessments, escape assessments, parcel-specific charges, penalties, corrections to assessed value, or other property-specific factors.\n\nOfficial property tax bills are issued by the Sacramento County Tax Collector. Assessed values are determined by the Sacramento County Assessor. Always confirm your final amount using your official tax bill or the appropriate Sacramento County tax authority."
+  },
+
   "faq": [
-    { "q": "How is property tax calculated in Sacramento County?", "a": "Property tax is generally calculated as 1% of the assessed value, plus any voter-approved bonded debt and special assessments that apply in the property’s tax rate area." },
-    { "q": "What is the Homeowners’ Exemption?", "a": "The Homeowners’ Exemption reduces the assessed value of a qualifying owner-occupied principal residence by 7,000 before the tax rate is applied." },
-    { "q": "Does this calculator include bonded debt and special assessments?", "a": "No. This estimate focuses on the 1% general levy. Additional bonded debt and special assessments may apply depending on the tax rate area." },
-    { "q": "Is this the exact amount I will owe?", "a": "No. This is an estimated property tax calculation. The actual tax bill may differ based on official assessments, tax rate area, exemptions, and voter-approved charges." }
+    {
+      "q": "What is the Sacramento County property tax rate for 2026?",
+      "a": "The base secured property tax rate used by this calculator is 1.00% under California Proposition 13. The total tax rate can be higher depending on voter-approved bonds and local assessments."
+    },
+    {
+      "q": "How do I estimate my Sacramento County property tax?",
+      "a": "Multiply your assessed value by 1.00%. For example, $500,000 multiplied by 1.00% gives an estimated annual property tax of $5,000, excluding additional local charges."
+    },
+    {
+      "q": "Is assessed value the same as market value?",
+      "a": "No. Assessed value is determined by the Sacramento County Assessor and may differ from current market value."
+    },
+    {
+      "q": "Why can the property tax rate be higher than 1%?",
+      "a": "California Proposition 13 sets a base rate of 1%, but voter-approved bond debt and local assessments may increase the total secured property tax rate."
+    },
+    {
+      "q": "Can assessed value increase every year?",
+      "a": "Yes. In most cases, annual increases are limited to no more than 2% unless a reassessment event occurs."
+    },
+    {
+      "q": "Does this calculator include all property tax costs?",
+      "a": "No. This calculator does not include exemptions, supplemental assessments, penalties, escape assessments, or parcel-specific charges."
+    }
   ],
+
   "meta": {
-    "title": "Sacramento County property tax calculator 2026 — estimate property taxes",
-    "description": "Estimate Sacramento County property tax based on assessed value and the 1% general levy. Does not include voter-approved debt or special assessments.",
+    "title": "Sacramento County Property Tax Calculator 2026 (Base Rate 1.00%)",
+    "description": "Estimate Sacramento County property tax using the 1.00% base secured property tax rate and your assessed value.",
     "canonicalPath": "/tools/property-tax/sacramento-county-california"
   }
 },
@@ -3395,7 +3519,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this the exact amount on my property tax bill?", "a": "No. This is an estimated property tax based on assessed value and the general levy. The actual tax bill may differ." }
   ],
   "meta": {
-    "title": "San Diego County property tax calculator 2026 — estimate property taxes",
+    "title": "San Diego County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate San Diego County property tax using assessed value and the 1% general levy. Does not include bonded debt or special district charges.",
     "canonicalPath": "/tools/property-tax/san-diego-county-california"
   }
@@ -3416,7 +3540,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this the exact amount on my property tax bill?", "a": "No. This is an estimated property tax based on assessed value and the general levy. The actual tax bill may differ." }
   ],
   "meta": {
-    "title": "San Joaquin County property tax calculator 2026 — estimate property taxes",
+    "title": "San Joaquin County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate San Joaquin County property tax using assessed value and the 1% general levy. Does not include bonded debt or special district charges.",
     "canonicalPath": "/tools/property-tax/san-joaquin-county-california"
   }
@@ -3437,7 +3561,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this the exact amount on my property tax bill?", "a": "No. This is an estimated property tax based on assessed value and the general levy. The actual tax bill may differ." }
   ],
   "meta": {
-    "title": "San Mateo County property tax calculator 2026 — estimate property taxes",
+    "title": "San Mateo County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate San Mateo County property tax using assessed value and the 1% general levy. Does not include bonded debt or special assessments.",
     "canonicalPath": "/tools/property-tax/san-mateo-county-california"
   }
@@ -3458,7 +3582,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this the exact tax bill amount?", "a": "No. This is an estimate based on statutory assessment rules and a user-provided rate. The official tax bill may differ." }
   ],
   "meta": {
-    "title": "Sangamon County property tax calculator 2026 — estimate property taxes",
+    "title": "Sangamon County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Sangamon County property tax using fair market value, the 33.33% assessment ratio, and a combined local tax rate.",
     "canonicalPath": "/tools/property-tax/sangamon-county-illinois"
   }
@@ -3479,7 +3603,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this the exact amount on my property tax bill?", "a": "No. This is an estimate based on assessed value and the general levy. The official tax bill may differ." }
   ],
   "meta": {
-    "title": "Santa Barbara County property tax calculator 2026 — estimate property taxes",
+    "title": "Santa Barbara County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Santa Barbara County property tax using assessed value and the 1% general levy. Does not include bonded debt or special district charges.",
     "canonicalPath": "/tools/property-tax/santa-barbara-county-california"
   }
@@ -3500,7 +3624,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this the exact property tax bill?", "a": "No. This is an estimate based on assessed value and the 1% general levy. The official tax bill may differ." }
   ],
   "meta": {
-    "title": "Santa Clara County property tax calculator 2026 — estimate property taxes",
+    "title": "Santa Clara County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Santa Clara County property tax using assessed value and the 1% general levy. Does not include bonded debt or special assessments.",
     "canonicalPath": "/tools/property-tax/santa-clara-county-california"
   }
@@ -3521,7 +3645,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this the exact amount on my property tax bill?", "a": "No. This is an estimate based on assessed value and the 1% general levy. The actual tax bill may differ due to additional rates, charges, and exemptions." }
   ],
   "meta": {
-    "title": "Santa Cruz County property tax calculator 2026 — estimate property taxes",
+    "title": "Santa Cruz County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Santa Cruz County property tax using assessed value and the 1% general levy. Actual bills may differ due to tax rate area bonds and charges.",
     "canonicalPath": "/tools/property-tax/santa-cruz-county-california"
   }
@@ -3542,7 +3666,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Do exemptions or credits change the estimate?", "a": "They can. Exemptions and credits reduce the taxable amount or the net tax, and eligibility rules may vary, so this estimate may not reflect every situation." }
   ],
   "meta": {
-    "title": "Scott County property tax calculator 2026 — estimate property taxes",
+    "title": "Scott County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Scott County, Iowa property tax using taxable value and a combined local levy rate. Results are estimates and may differ from an actual tax bill.",
     "canonicalPath": "/tools/property-tax/scott-county-iowa"
   }
@@ -3563,7 +3687,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are exemptions included in this estimate?", "a": "No specific exemption programs are automatically applied. Eligibility for exemptions or special valuation depends on property use and ownership, and results may differ from an official tax statement." }
   ],
   "meta": {
-    "title": "Sedgwick County property tax calculator 2026 — estimate residential property taxes",
+    "title": "Sedgwick County property tax calculator 2026 - estimate residential property taxes",
     "description": "Estimate Sedgwick County, Kansas residential property tax using market value, the 11.5% assessment rate, and a combined local mill levy. Results are estimates only.",
     "canonicalPath": "/tools/property-tax/sedgwick-county-kansas"
   }
@@ -3584,7 +3708,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are tax relief programs included in the estimate?", "a": "No. Eligibility-based tax relief programs for elderly, disabled, or veteran taxpayers are not automatically applied in this estimate." }
   ],
   "meta": {
-    "title": "Shelby County property tax calculator 2026 — estimate residential property taxes",
+    "title": "Shelby County property tax calculator 2026 - estimate residential property taxes",
     "description": "Estimate Shelby County, Tennessee residential property tax using market value, the 25% assessment ratio, and applicable county and city tax rates. Results are estimates only.",
     "canonicalPath": "/tools/property-tax/shelby-county-tennessee"
   }
@@ -3605,7 +3729,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator show my exact tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs and a combined local property tax rate. Your official tax bill may differ." }
   ],
   "meta": {
-    "title": "Smith County property tax calculator 2026 — estimate property taxes",
+    "title": "Smith County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Smith County, Texas property tax using market value and a combined local property tax rate. Results are estimates and may differ from your official tax bill.",
     "canonicalPath": "/tools/property-tax/smith-county-texas"
   }
@@ -3626,7 +3750,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this an exact tax bill amount?", "a": "No. This tool provides an estimated property tax based on user inputs and a combined local property tax rate. Your official tax bill may differ." }
   ],
   "meta": {
-    "title": "Solano County property tax calculator 2026 — estimate property taxes",
+    "title": "Solano County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Solano County, California property tax using assessed value and a combined local property tax rate. Results are estimates and may differ from your official tax bill.",
     "canonicalPath": "/tools/property-tax/solano-county-california"
   }
@@ -3647,7 +3771,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Can this calculator show my exact tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs and a combined local property tax rate. Actual tax bills vary by tax-rate area and individual circumstances." }
   ],
   "meta": {
-    "title": "Sonoma County property tax calculator 2026 — estimate property taxes",
+    "title": "Sonoma County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Sonoma County, California property tax using assessed value and a combined local property tax rate. Results are estimates and may differ from your official tax bill.",
     "canonicalPath": "/tools/property-tax/sonoma-county-california"
   }
@@ -3668,7 +3792,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this tool show my official tax bill?", "a": "No. This tool provides an estimated property tax based on market value and a combined local millage rate. The official tax bill is issued by the county and may include exemptions or adjustments not reflected here." }
   ],
   "meta": {
-    "title": "Spartanburg County property tax calculator 2026 — estimate property taxes",
+    "title": "Spartanburg County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Spartanburg County property taxes for owner-occupied homes using market value, the 4% assessment ratio, and a combined local millage rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/spartanburg-county-south-carolina"
   }
@@ -3689,7 +3813,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this tool show my official tax bill?", "a": "No. This tool provides an estimated property tax based on market value and a combined local rate. The official tax bill may include exemptions or other adjustments not reflected here." }
   ],
   "meta": {
-    "title": "St. Clair County property tax calculator 2026 — estimate property taxes",
+    "title": "St. Clair County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate St. Clair County property taxes using market value, the statutory one-third Illinois assessment level, and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/st-clair-county-illinois"
   }
@@ -3710,7 +3834,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator show my official tax bill?", "a": "No. This tool provides an estimated property tax based on market value and a combined local levy. The official tax bill issued by the county collector may include adjustments or exemptions not reflected here." }
   ],
   "meta": {
-    "title": "St. Louis County property tax calculator 2026 — estimate property taxes",
+    "title": "St. Louis County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate St. Louis County residential property taxes using market value, the 19% Missouri assessment ratio, and a combined local property tax levy. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/st-louis-county-missouri"
   }
@@ -3731,7 +3855,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator show my exact property tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs. The actual tax bill may differ depending on local rates, assessment levels, and applicable exemptions." }
   ],
   "meta": {
-    "title": "Suffolk County property tax calculator 2026 — estimate property taxes",
+    "title": "Suffolk County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Suffolk County, New York property tax using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/suffolk-county-new-york"
   }
@@ -3752,7 +3876,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Why might my estimate differ from what I actually pay?", "a": "Rates can vary by taxing entity and property location, and taxable value and any eligibility-based programs can affect the final amount on an actual bill." }
   ],
   "meta": {
-    "title": "Summit County property tax calculator 2026 — estimate property taxes",
+    "title": "Summit County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Summit County property taxes using your taxable value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/summit-county-utah"
   }
@@ -3762,8 +3886,8 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   "h1": "Tarrant County property tax calculator 2026",
   "intro": "This Tarrant County property tax calculator provides an estimated annual property tax based on your taxable value and a combined local property tax rate. In Tarrant County, property taxes are based on taxable value, which generally reflects appraised value minus applicable exemptions.",
   "sections": {
-    "howItWorks": "In Tarrant County, property tax is not determined by a single uniform rate. Multiple taxing units — including the county, school district, city, and special districts — each adopt their own rate, and those rates combine into the effective rate for a specific parcel. This calculator assumes you already know the total combined rate that applies to the property; enter the taxable value and that combined rate to generate an estimate that reflects how local property tax obligations are structured.",
-"examples": "If you enter a taxable value of 300,000 and adjust the combined local rate from 0.02 to 0.025, the estimated annual property tax will increase in direct proportion to the higher rate. This demonstrates how differences in city, school district, or special district levies—reflected in the combined rate you enter—can significantly change the resulting estimate.",
+    "howItWorks": "In Tarrant County, property tax is not determined by a single uniform rate. Multiple taxing units - including the county, school district, city, and special districts - each adopt their own rate, and those rates combine into the effective rate for a specific parcel. This calculator assumes you already know the total combined rate that applies to the property; enter the taxable value and that combined rate to generate an estimate that reflects how local property tax obligations are structured.",
+"examples": "If you enter a taxable value of 300,000 and adjust the combined local rate from 0.02 to 0.025, the estimated annual property tax will increase in direct proportion to the higher rate. This demonstrates how differences in city, school district, or special district levies-reflected in the combined rate you enter-can significantly change the resulting estimate.",
     "limitations": "Results are estimates only. Property tax rates in Tarrant County are set by multiple taxing units, including the county and other local entities, and vary by property location. Exemptions are governed by state law and local adoption and are not automatically applied by this tool. Actual tax bills may differ."
   },
   "faq": [
@@ -3773,7 +3897,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Why might my estimate differ from my tax bill?", "a": "Rates vary by taxing unit and property location, and exemptions or other adjustments may apply. The calculator provides an estimate only, and actual tax bills may differ." }
   ],
   "meta": {
-    "title": "Tarrant County property tax calculator 2026 — estimate property taxes",
+    "title": "Tarrant County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Tarrant County property taxes using taxable value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/tarrant-county-texas"
   }
@@ -3794,7 +3918,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Why might my estimate differ from my tax bill?", "a": "Tax rates vary by taxing unit and property location, and exemptions or other adjustments may apply. This tool provides an estimate only, and actual tax bills may differ." }
   ],
   "meta": {
-    "title": "Travis County property tax calculator 2026 — estimate property taxes",
+    "title": "Travis County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Travis County property taxes using taxable value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/travis-county-texas"
   }
@@ -3814,7 +3938,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Why can two properties in Wake County have different rates?", "a": "The total rate can vary based on which municipality or special districts apply to the property. This estimator uses the combined rate you provide." }
   ],
   "meta": {
-    "title": "Wake County property tax calculator 2026 — estimate property taxes",
+    "title": "Wake County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Wake County property taxes using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/wake-county-north-carolina"
   }
@@ -3835,7 +3959,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Why do rates differ within Walworth County?", "a": "Mill rate components vary by taxation district and overlapping jurisdictions, which can result in different combined rates for different properties." }
   ],
   "meta": {
-    "title": "Walworth County property tax calculator 2026 — estimate property taxes",
+    "title": "Walworth County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Walworth County property taxes using assessed value and a combined local mill rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/walworth-county-wisconsin"
   }
@@ -3856,7 +3980,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Why do rates vary within Washington County?", "a": "Tax rates vary because multiple taxing districts overlap depending on property location. This tool uses the combined rate you provide." }
   ],
   "meta": {
-    "title": "Washington County property tax calculator 2026 — estimate property taxes",
+    "title": "Washington County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Washington County property taxes using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/washington-county-oregon"
   }
@@ -3877,7 +4001,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Why do rates differ within Washoe County?", "a": "Total property tax rates vary by tax district and overlapping local entities. This estimator uses the combined rate you provide." }
   ],
   "meta": {
-    "title": "Washoe County property tax calculator 2026 — estimate property taxes",
+    "title": "Washoe County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Washoe County property taxes using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/washoe-county-nevada"
   }
@@ -3898,7 +4022,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Why do total rates differ within Waukesha County?", "a": "Total property tax rates vary depending on the municipality, school district, and any special-purpose districts that apply to the property." }
   ],
   "meta": {
-    "title": "Waukesha County property tax calculator 2026 — estimate property taxes",
+    "title": "Waukesha County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Waukesha County property taxes using assessed value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/waukesha-county-wisconsin"
   }
@@ -3919,7 +4043,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Why do rates differ within Will County?", "a": "Each property is assigned to a tax code area that reflects a specific combination of overlapping taxing districts. Different combinations result in different total rates." }
   ],
   "meta": {
-    "title": "Will County property tax calculator 2026 — estimate property taxes",
+    "title": "Will County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Will County property taxes using equalized assessed value (EAV) and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/will-county-illinois"
   }
@@ -3940,7 +4064,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Why do rates differ within Williamson County?", "a": "Each property is subject to a specific combination of taxing units, including county, city, school district, and special districts, which results in different total rates." }
   ],
   "meta": {
-    "title": "Williamson County property tax calculator 2026 — estimate property taxes",
+    "title": "Williamson County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Williamson County property taxes using taxable value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/williamson-county-texas"
   }
@@ -3975,7 +4099,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   ],
 
   meta: {
-    title: "Winnebago County property tax calculator 2026 — estimate property taxes",
+    title: "Winnebago County property tax calculator 2026 - estimate property taxes",
     description: "Estimate Winnebago County property taxes using equalized assessed value (EAV) and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     canonicalPath: "/tools/property-tax/winnebago-county-illinois"
   }
@@ -3996,7 +4120,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this an official tax bill?", "a": "No. This is an estimated property tax calculation based on the adopted city rate and user-provided taxable value. Actual tax bills may differ." }
   ],
   "meta": {
-    "title": "Austin property tax rate calculator 2026 — estimate property taxes",
+    "title": "Austin property tax rate calculator 2026 - estimate property taxes",
     "description": "Estimate the City of Austin property tax using the adopted city tax rate and your taxable value. Results reflect the city portion only and are estimates.",
     "canonicalPath": "/tools/property-tax/austin-city-texas"
   }
@@ -4017,7 +4141,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
       { q: "Is this an official tax bill?", a: "No. This is an estimated property tax calculation based on the published city rate and a user-provided assessed value. Actual tax bills may differ." }
     ],
     meta: {
-      title: "Baltimore City property tax calculator 2026 — estimate property taxes",
+      title: "Baltimore City property tax calculator 2026 - estimate property taxes",
       description: "Estimate Baltimore City real property taxes using the official city rate and assessed value. Results reflect the city portion only and are estimates.",
       canonicalPath: "/tools/property-tax/baltimore-city-maryland"
     }
@@ -4056,7 +4180,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   ],
 
   meta: {
-    title: "Boston property tax calculator 2024 — estimate property taxes",
+    title: "Boston property tax calculator 2024 - estimate property taxes",
     description: "Estimate Boston residential property taxes using assessed value and the official residential tax rate. Results are estimates and do not reflect official tax bills.",
     canonicalPath: "/tools/property-tax/boston-city-massachusetts"
   }
@@ -4095,7 +4219,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
   ],
 
   meta: {
-    title: "Chesapeake property tax calculator 2026 — estimate real estate tax",
+    title: "Chesapeake property tax calculator 2026 - estimate real estate tax",
     description: "Estimate Chesapeake real estate taxes using assessed value and the official city tax rate. Results are estimates and do not reflect official tax bills.",
     canonicalPath: "/tools/property-tax/chesapeake-city-virginia"
   }
@@ -4116,7 +4240,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator show my official tax bill?", "a": "No. This tool provides an estimated property tax amount. Your official tax bill is issued by the county." }
   ],
   "meta": {
-    "title": "Chesterfield County property tax calculator 2026 — estimate property taxes",
+    "title": "Chesterfield County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Chesterfield County property tax using the county real estate tax rate and your assessed value. This calculator provides an annual property tax estimate.",
     "canonicalPath": "/tools/property-tax/chesterfield-county-virginia"
   }
@@ -4137,7 +4261,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Do I need to enter my own tax rate?", "a": "Yes. Because rates vary by tax code area, you must enter the combined local property tax rate that applies to your property." }
   ],
   "meta": {
-    "title": "Chicago property tax calculator 2026 — estimate property taxes",
+    "title": "Chicago property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Chicago property tax using market value, assessment level, and your local composite property tax rate. Results are annual estimates only.",
     "canonicalPath": "/tools/property-tax/chicago-city-illinois"
   }
@@ -4158,7 +4282,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are exemptions included in the estimate?", "a": "Not automatically. Exemptions in Honolulu depend on eligibility and filing details, so the estimate is most reliable when you enter a taxable value that already reflects applicable exemptions." }
   ],
   "meta": {
-    "title": "Honolulu property tax calculator 2026 — estimate property taxes",
+    "title": "Honolulu property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Honolulu property tax using taxable value and a combined local property tax rate. Rates vary by property class and tiers, so results are estimates and may differ from the actual tax bill.",
     "canonicalPath": "/tools/property-tax/honolulu-city-hawaii"
   }
@@ -4179,7 +4303,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this calculator the same as my official tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs. The official tax bill is issued by the relevant taxing authorities and may differ." }
   ],
   "meta": {
-    "title": "Houston property tax calculator 2026 — estimate property taxes",
+    "title": "Houston property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Houston property tax based on market value and a combined local property tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/houston-city-texas"
   }
@@ -4200,7 +4324,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this calculator the same as my official tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs. The official tax bill is determined by the relevant taxing authorities and may differ." }
   ],
   "meta": {
-    "title": "Huntsville property tax calculator 2026 — estimate property taxes",
+    "title": "Huntsville property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Huntsville property tax based on assessed value and combined local millage rates. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/huntsville-city-alabama"
   }
@@ -4221,7 +4345,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this calculator the same as my official tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs. The official tax bill is determined by the relevant taxing authorities and may differ." }
   ],
   "meta": {
-    "title": "Jersey City property tax calculator 2026 — estimate property taxes",
+    "title": "Jersey City property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Jersey City property tax based on assessed value and the combined local tax rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/jersey-city-city-new-jersey"
   }
@@ -4242,7 +4366,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Is this calculator the same as my official tax bill?", "a": "No. This tool provides an estimated property tax based on user inputs. The official tax bill is determined by the relevant taxing authorities and may differ." }
   ],
   "meta": {
-    "title": "Las Vegas property tax calculator 2026 — estimate property taxes",
+    "title": "Las Vegas property tax calculator 2026 - estimate property taxes",
     "description": "Estimate your Las Vegas property tax based on assessed value and the combined local tax district rate. Results are estimates and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/las-vegas-city-nevada"
   }
@@ -4263,7 +4387,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are exemptions included in this calculator?", "a": "This estimate does not automatically apply exemptions. Certain exemptions, such as the homeowners’ exemption or disabled veterans’ exemption, depend on eligibility and may reduce taxable value on an actual tax bill." }
   ],
   "meta": {
-    "title": "Los Angeles property tax calculator 2026 — estimate property taxes",
+    "title": "Los Angeles property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Los Angeles property tax using assessed value and the general 1% levy. Understand how voter-approved debt and direct assessments may affect your total tax.",
     "canonicalPath": "/tools/property-tax/los-angeles-city-california"
   }
@@ -4284,7 +4408,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Are exemptions included in this estimate?", "a": "This estimate does not automatically apply exemptions. Eligibility for property tax exemptions depends on ownership and property use under Wisconsin law and may vary by parcel." }
   ],
   "meta": {
-    "title": "Milwaukee property tax calculator 2026 — estimate property taxes",
+    "title": "Milwaukee property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Milwaukee property tax using assessed value and a combined local property tax rate. Understand how multiple local levies affect your annual tax.",
     "canonicalPath": "/tools/property-tax/milwaukee-city-wisconsin"
   }
@@ -4305,7 +4429,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator include property tax relief programs?", "a": "This estimate does not automatically apply relief or freeze programs. Such programs depend on eligibility and may reduce the actual tax owed for qualifying property owners." }
   ],
   "meta": {
-    "title": "Nashville property tax calculator 2026 — estimate property taxes",
+    "title": "Nashville property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Nashville property tax using assessed value and the applicable district tax rate. Understand how GSD and USD rates affect your annual tax.",
     "canonicalPath": "/tools/property-tax/nashville-city-tennessee"
   }
@@ -4326,7 +4450,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator apply exemptions like the homestead exemption?", "a": "No. Exemptions can depend on eligibility and property-specific details. This tool does not determine eligibility or apply exemptions automatically." }
   ],
   "meta": {
-    "title": "New Orleans property tax calculator 2026 — estimate property taxes",
+    "title": "New Orleans property tax calculator 2026 - estimate property taxes",
     "description": "Estimate New Orleans property tax using assessed value and a combined local property tax rate you provide. Results are estimates; actual tax bills may differ by district and exemptions.",
     "canonicalPath": "/tools/property-tax/new-orleans-city-louisiana"
   }
@@ -4347,7 +4471,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator apply NYC exemptions or abatements?", "a": "No. Exemptions and abatements are eligibility-based and parcel-specific. They are not applied automatically in this estimate." }
   ],
   "meta": {
-    "title": "New York City property tax calculator 2026 — estimate property taxes",
+    "title": "New York City property tax calculator 2026 - estimate property taxes",
     "description": "Estimate New York City property tax using taxable assessed value and a class-specific property tax rate. Results are estimates; actual tax bills may differ by class and exemptions.",
     "canonicalPath": "/tools/property-tax/new-york-city-new-york"
   }
@@ -4380,7 +4504,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   "meta": {
-    "title": "Oakland property tax calculator 2026 — estimate property taxes",
+    "title": "Oakland property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Oakland property tax using assessed value and a combined local property tax rate. Rates vary by Tax Rate Area and actual tax bills may include additional assessments.",
     "canonicalPath": "/tools/property-tax/oakland-city-california"
   }
@@ -4413,41 +4537,93 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   "meta": {
-    "title": "Orlando property tax calculator 2026 — estimate property taxes",
+    "title": "Orlando property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Orlando property tax using assessed value and a combined local property tax rate in decimal form. Rates vary by taxing authority and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/orlando-city-florida"
   }
 },
 
 "US-PA-PHILADELPHIA-CITY": {
-  "h1": "Philadelphia property tax calculator 2026",
-  "intro": "This Philadelphia property tax calculator estimates annual real estate tax using assessed value and a combined City and School District tax rate in decimal form.",
+  "h1": "Philadelphia Property Tax Calculator 2026 (Official Rate & Estimate)",
+  "intro": "Estimate your Philadelphia property tax using the official secured property tax rate applied by the City of Philadelphia and the School District of Philadelphia. This calculator applies the rate to assessed value, not current market value. It reflects secured property taxes only and does not include mortgage escrow, exemptions, penalties, supplemental assessments, or parcel-specific charges that may appear on an official bill.",
+  "trust": {
+    "lastReviewed": "May 2026",
+    "keyFacts": [
+      {
+        "label": "Location",
+        "value": "Philadelphia, Pennsylvania, United States"
+      },
+      {
+        "label": "Official secured property tax rate",
+        "value": "1.3998%"
+      },
+      {
+        "label": "Base property tax rate",
+        "value": "Not applicable; Pennsylvania property taxes are set locally"
+      },
+      {
+        "label": "Assessed value authority",
+        "value": "Philadelphia Office of Property Assessment"
+      },
+      {
+        "label": "Tax billing authority",
+        "value": "City of Philadelphia Department of Revenue"
+      },
+      {
+        "label": "Data basis",
+        "value": "Official Philadelphia property tax rate and assessment guidance"
+      }
+    ],
+    "sourceLinks": [
+      {
+        "label": "Philadelphia real estate tax - official overview",
+        "url": "https://www.phila.gov/services/payments-assistance-taxes/property-taxes/real-estate-tax/"
+      },
+      {
+        "label": "Philadelphia Office of Property Assessment",
+        "url": "https://www.phila.gov/departments/office-of-property-assessment/"
+      },
+      {
+        "label": "Pennsylvania Department of Revenue - property tax overview",
+        "url": "https://www.revenue.pa.gov/TaxTypes/PropertyTax/Pages/default.aspx"
+      }
+    ]
+  },
   "sections": {
-    "howItWorks": "Enter the property’s assessed value and the combined City and School District real estate tax rate in decimal form. The estimate multiplies assessed value by the rate you provide.",
-    "examples": "If a property has an assessed value of 400,000 and you enter a combined tax rate of 0.013998, the estimated annual real estate tax would be 5,599.",
-    "limitations": "This calculator provides an estimate, not an official tax bill. The City of Philadelphia and the School District of Philadelphia both impose real estate taxes. Exemptions such as the Homestead Exemption and other programs may reduce taxable value but are not automatically included unless modeled."
+    "howItWorks": "Philadelphia property tax is calculated by applying the official secured property tax rate to the assessed value of the property.\n\nThe City of Philadelphia Department of Revenue administers and bills real estate taxes. The Philadelphia Office of Property Assessment determines assessed values for real property.\n\nPennsylvania does not use a fixed statewide base property tax rate. In Philadelphia, the total property tax rate is set locally and combines the City of Philadelphia rate with the School District of Philadelphia rate.\n\nAssessed value is not necessarily the same as market value. It is determined by the Office of Property Assessment and may change after reassessments, property sales, or improvements.\n\nThis calculator multiplies the assessed value by the official secured property tax rate to estimate annual Philadelphia property tax.",
+    "examples": "Example 1: Using the official secured property tax rate of 1.3998%, an assessed value of $500,000 results in an estimated annual property tax of approximately $6,999.\n\nExample 2: An assessed value of $800,000 results in an estimated annual property tax of approximately $11,198.\n\nExample 3: An assessed value of $1,200,000 results in an estimated annual property tax of approximately $16,798.\n\nThese examples use the official secured property tax rate but do not include exemptions, penalties, supplemental assessments, or parcel-specific charges that may appear separately on an official Philadelphia property tax bill.",
+    "factors": "- Assessed value determined by the Office of Property Assessment\n- Official secured property tax rate\n- Local government and school district funding requirements\n- Reassessments after property sales or improvements\n- Parcel-specific charges, exemptions, corrections, or penalties\n\nProperties with similar market values can have different property tax bills because assessed values, reassessment timing, exemptions, and parcel-specific charges may differ.",
+    "limitations": "This calculator provides an estimate only and does not replace an official Philadelphia property tax bill.\n\nActual amounts may differ because of exemptions such as the Homestead Exemption, reassessments, supplemental assessments, parcel-specific charges, penalties, corrections to assessed value, or other property-specific factors.\n\nOfficial property tax bills are issued by the City of Philadelphia Department of Revenue. Assessed values are determined by the Philadelphia Office of Property Assessment. Always confirm your final amount using your official tax bill or the appropriate Philadelphia tax authority."
   },
   "faq": [
     {
-      "q": "Is Philadelphia property tax based on assessed value?",
-      "a": "Yes. Real estate tax is calculated using the property’s assessed value as determined by the Office of Property Assessment."
+      "q": "What is the Philadelphia property tax rate for 2026?",
+      "a": "The official secured property tax rate used by this calculator is 1.3998%. This rate combines the City of Philadelphia and School District of Philadelphia real estate tax rates."
     },
     {
-      "q": "Does Philadelphia have multiple property tax rates?",
-      "a": "Yes. Both the City of Philadelphia and the School District of Philadelphia impose real estate tax rates, which combine into the total rate."
+      "q": "How do I estimate my Philadelphia property tax?",
+      "a": "Multiply your assessed value by the official secured property tax rate. For example, $500,000 multiplied by 1.3998% gives an estimated annual property tax of about $6,999."
     },
     {
-      "q": "Is the rate uniform across the city?",
-      "a": "Yes. The City and School District rates apply uniformly to real estate within Philadelphia."
+      "q": "Is assessed value the same as market value?",
+      "a": "No. Assessed value is determined by the Philadelphia Office of Property Assessment and may differ from current market value."
     },
     {
-      "q": "Does this include the Homestead Exemption?",
-      "a": "No. This calculator estimates tax based on the values you enter. Eligible homestead properties may receive an assessed value reduction under city rules."
+      "q": "Why is there no 1% base rate like in California?",
+      "a": "Pennsylvania does not use a statewide 1% base property tax rate. In Philadelphia, property taxes are set locally and combine city and school district rates."
+    },
+    {
+      "q": "Can assessed value increase over time?",
+      "a": "Yes. Assessed value may change after reassessments, property sales, improvements, or other property-specific updates."
+    },
+    {
+      "q": "Does this calculator include all property tax costs?",
+      "a": "No. This calculator does not include exemptions, supplemental assessments, penalties, corrections, or parcel-specific charges."
     }
   ],
   "meta": {
-    "title": "Philadelphia property tax calculator 2026 — estimate real estate tax",
-    "description": "Estimate Philadelphia real estate tax using assessed value and the combined City and School District tax rate in decimal form.",
+    "title": "Philadelphia Property Tax Calculator 2026 (Official Rate 1.3998%)",
+    "description": "Estimate Philadelphia property tax using the official secured property tax rate of 1.3998% and your assessed value.",
     "canonicalPath": "/tools/property-tax/philadelphia-city-pennsylvania"
   }
 },
@@ -4479,7 +4655,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   "meta": {
-    "title": "Portland property tax calculator 2026 — estimate property taxes",
+    "title": "Portland property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Portland property tax using assessed value and your tax code area rate. Rates vary by district and actual tax bills may differ.",
     "canonicalPath": "/tools/property-tax/portland-city-oregon"
   }
@@ -4512,7 +4688,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   "meta": {
-    "title": "Raleigh property tax calculator 2026 — estimate property taxes",
+    "title": "Raleigh property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Raleigh property tax using assessed value and a combined local property tax rate you provide. Convert per-$100 rates to a decimal rate for calculation.",
     "canonicalPath": "/tools/property-tax/raleigh-city-north-carolina"
   }
@@ -4545,42 +4721,94 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     }
   ],
   "meta": {
-    "title": "Richmond property tax calculator 2026 — estimate real estate tax",
+    "title": "Richmond property tax calculator 2026 - estimate real estate tax",
     "description": "Estimate Richmond real estate tax using assessed value and the official $1.20 per $100 city tax rate.",
     "canonicalPath": "/tools/property-tax/richmond-city-virginia"
   }
 },
 
 "US-CA-SAN-FRANCISCO-CITY": {
-  "h1": "San Francisco property tax rate calculator 2026",
-  "intro": "This San Francisco property tax calculator provides an estimated property tax based on your property’s assessed value and the published secured property tax rate. Property tax in San Francisco is calculated using the assessed value established by the Assessor-Recorder.",
+  "h1": "San Francisco Property Tax Calculator 2026 (Official Rate & Estimate)",
+  "intro": "Estimate your San Francisco property tax using the official secured property tax rate published by the San Francisco Treasurer & Tax Collector. This calculator applies the rate to assessed value, not current market value. It reflects secured real property taxes only and does not include mortgage escrow, payment schedules, exemptions, penalties, supplemental assessments, or parcel-specific charges that may appear on an official bill.",
+  "trust": {
+    "lastReviewed": "May 2026",
+    "keyFacts": [
+      {
+        "label": "Location",
+        "value": "San Francisco, California, United States"
+      },
+      {
+        "label": "Official secured property tax rate",
+        "value": "1.18268325%"
+      },
+      {
+        "label": "Base property tax rate",
+        "value": "1.00% of assessed value under California Proposition 13"
+      },
+      {
+        "label": "Assessed value authority",
+        "value": "San Francisco Office of the Assessor-Recorder"
+      },
+      {
+        "label": "Tax billing authority",
+        "value": "San Francisco Treasurer & Tax Collector"
+      },
+      {
+        "label": "Data basis",
+        "value": "Official secured property tax rate and San Francisco assessment guidance"
+      }
+    ],
+    "sourceLinks": [
+      {
+        "label": "San Francisco secured property taxes - official overview",
+        "url": "https://sftreasurer.org/property/secured-property-taxes"
+      },
+      {
+        "label": "San Francisco Assessor-Recorder - property assessment information",
+        "url": "https://www.sfassessor.org/"
+      },
+      {
+        "label": "San Francisco Property Tax 101 - official homeowner guide",
+        "url": "https://media.api.sf.gov/documents/ASR_Factsheet_Property_Taxes_101_English_2021_yqzs9Dw.pdf"
+      }
+    ]
+  },
   "sections": {
-    "howItWorks": "San Francisco secured property tax is calculated by applying the published secured property tax rate to the property’s assessed value. The assessed value is determined by the Assessor-Recorder under California assessment rules. This calculator multiplies the assessed value by the secured property tax rate to estimate annual property tax.",
-"examples": "San Francisco property tax is calculated from the assessed value entered on the secured roll for the applicable fiscal year. For instance, if the roll value is 880,000, the 1 percent constitutional levy would produce 8,800 before bonded debt components are included. Supplemental assessments may apply if valuation changes occur after the initial roll is established.",
-    "limitations": "This tool provides an estimated property tax and does not replicate an official tax bill. Actual tax amounts depend on the assessed value assigned to the parcel and may include parcel-specific direct assessments or other legally authorized charges. Exemptions, such as the homeowners’ exemption or disabled veterans’ exemption, are not automatically applied in this estimate. Always confirm details with the appropriate local tax authority."
+    "howItWorks": "San Francisco secured property tax is calculated by applying the official secured property tax rate to the assessed value of the property.\n\nThe San Francisco Treasurer & Tax Collector publishes the secured property tax rate and issues secured property tax bills. The San Francisco Office of the Assessor-Recorder determines assessed values for real property.\n\nUnder California Proposition 13, the base property tax rate is 1% of assessed value. The total secured rate can be higher because voter-approved bond debt and other local charges may be included.\n\nAssessed value is not necessarily the same as market value. In most cases, assessed value increases are limited to no more than 2% per year unless a reassessment event occurs, such as a sale, change in ownership, or new construction.\n\nThis calculator multiplies the assessed value by the official secured property tax rate to estimate annual secured property tax.",
+    "examples": "Example 1: Using the official secured property tax rate of 1.18268325%, an assessed value of $500,000 results in an estimated annual secured property tax of approximately $5,913.\n\nExample 2: An assessed value of $800,000 results in an estimated annual secured property tax of approximately $9,461.\n\nExample 3: An assessed value of $1,200,000 results in an estimated annual secured property tax of approximately $14,192.\n\nThese examples use the official secured property tax rate but do not include exemptions, penalties, supplemental assessments, escape assessments, or parcel-specific charges that may appear separately on an official San Francisco property tax bill.",
+    "factors": "- Assessed value determined by the Assessor-Recorder\n- Official secured property tax rate\n- Voter-approved bond debt and local assessments\n- Supplemental assessments after a sale, ownership change, or new construction\n- Parcel-specific charges, exemptions, corrections, or penalties\n\nProperties with similar market values can have different property tax bills because assessed value history, ownership changes, exemptions, and parcel-specific charges can differ.",
+    "limitations": "This calculator provides an estimate only and does not replace an official San Francisco property tax bill.\n\nActual amounts may differ because of exemptions, supplemental assessments, escape assessments, parcel-specific charges, penalties, corrections to assessed value, or other property-specific factors.\n\nOfficial property tax bills are issued by the San Francisco Treasurer & Tax Collector. Assessed values are determined by the San Francisco Office of the Assessor-Recorder. Always confirm your final amount using your official tax bill or the appropriate San Francisco tax authority."
   },
   "faq": [
     {
-      "q": "What is the San Francisco property tax rate?",
-      "a": "San Francisco publishes a secured property tax rate that is applied to a property’s assessed value to determine annual secured property tax."
+      "q": "What is the San Francisco property tax rate for 2026?",
+      "a": "The official secured property tax rate used by this calculator is 1.18268325%. This rate is applied to assessed value for secured real property taxes."
     },
     {
-      "q": "Is San Francisco property tax based on assessed value?",
-      "a": "Yes. Secured property tax is calculated using the assessed value established annually by the Assessor-Recorder."
+      "q": "How do I estimate my San Francisco property tax?",
+      "a": "Multiply your assessed value by the secured property tax rate. For example, $500,000 multiplied by 1.18268325% gives an estimated annual secured property tax of about $5,913."
     },
     {
-      "q": "Does this calculator include exemptions?",
-      "a": "No. This calculator does not automatically apply property-specific exemptions. Certain exemptions may reduce taxable value if eligibility requirements are met."
+      "q": "Is assessed value the same as market value?",
+      "a": "No. Assessed value is determined by the San Francisco Office of the Assessor-Recorder and may differ from current market value."
     },
     {
-      "q": "Is this the exact amount I will pay?",
-      "a": "No. This tool provides an estimated property tax based on assessed value and the published secured property tax rate. Actual tax bills may differ due to parcel-specific factors."
+      "q": "Why is the San Francisco property tax rate higher than 1%?",
+      "a": "California Proposition 13 sets a base property tax rate of 1% of assessed value. The total secured property tax rate can be higher because voter-approved bond debt and local assessments may be included."
+    },
+    {
+      "q": "Can assessed value increase every year?",
+      "a": "Yes. In most cases, Proposition 13 limits annual assessed value increases to no more than 2% unless a reassessment event occurs."
+    },
+    {
+      "q": "Does this calculator include all property tax costs?",
+      "a": "No. This calculator does not include exemptions, supplemental assessments, penalties, escape assessments, or parcel-specific charges."
     }
   ],
   "meta": {
-    "title": "San Francisco property tax rate calculator 2026 — estimate property taxes",
-    "description": "Estimate your San Francisco property tax using the published secured property tax rate and your assessed value. Results are estimates and may differ from your official tax bill.",
-    "canonicalPath": "/tools/property-tax/san-francisco-city-california"
+    "title": "San Francisco Property Tax Calculator 2026 (Official Rate 1.18268325%)",
+    "description": "Estimate San Francisco property tax using the official secured property tax rate of 1.18268325% and your assessed value.",
+    "canonicalPath": "/tools/property-tax/san-francisco-california"
   }
 },
 
@@ -4599,7 +4827,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator show my exact Seattle property tax bill?", "a": "No. It provides an estimated property tax based on assessed value and a combined rate input. Actual bills depend on parcel-specific levy assignments and any qualifying exemptions." }
   ],
   "meta": {
-    "title": "Seattle property tax calculator 2026 — estimate property taxes",
+    "title": "Seattle property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Seattle property tax using assessed value and a combined local levy rate. Results are estimates and actual tax bills vary by taxing district.",
     "canonicalPath": "/tools/property-tax/seattle-city-washington"
   }
@@ -4620,7 +4848,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator include exemptions?", "a": "No. Exemptions and relief programs depend on eligibility and are not automatically included in this estimated property tax." }
   ],
   "meta": {
-    "title": "St. Louis property tax calculator 2026 — estimate property taxes",
+    "title": "St. Louis property tax calculator 2026 - estimate property taxes",
     "description": "Estimate St. Louis residential property tax using the 19% Missouri assessment ratio and a combined rate per $100 of assessed value. Results are estimates.",
     "canonicalPath": "/tools/property-tax/st-louis-city-missouri"
   }
@@ -4641,7 +4869,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator include exemptions or relief programs?", "a": "No. Exemptions and tax relief programs depend on eligibility criteria and are not automatically applied in this estimate." }
   ],
   "meta": {
-    "title": "Virginia Beach property tax calculator 2026 — estimate property taxes",
+    "title": "Virginia Beach property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Virginia Beach property tax using assessed value and the published base real estate tax rate per $100 of assessed value. Results are estimates.",
     "canonicalPath": "/tools/property-tax/virginia-beach-city-virginia"
   }
@@ -4662,7 +4890,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator show my exact property tax bill?", "a": "No. It provides an estimated property tax using the general levy and the assessed value you enter. The actual tax bill may differ based on parcel-specific charges." }
   ],
   "meta": {
-    "title": "Los Angeles County property tax calculator 2026 — estimate property taxes",
+    "title": "Los Angeles County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Los Angeles County property tax using assessed value and the 1 percent general levy. Understand how local rates may affect your annual property tax.",
     "canonicalPath": "/tools/property-tax/los-angeles-county-california"
   }
@@ -4683,7 +4911,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Does this calculator include exemptions and special assessments?", "a": "No. This estimator applies the general levy only and does not automatically account for eligibility-based exemptions or parcel-specific assessments." }
   ],
   "meta": {
-    "title": "Ventura County property tax calculator 2026 — estimate property taxes",
+    "title": "Ventura County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Ventura County property tax using assessed value and the 1 percent general levy. Understand how Tax Rate Areas and local charges affect annual property tax.",
     "canonicalPath": "/tools/property-tax/ventura-county-california"
   }
@@ -4704,7 +4932,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Do exemptions change property tax in Snohomish County?", "a": "They can, but many programs depend on eligibility factors such as age, disability, income, or land classification. This calculator does not assume any exemption unless you adjust the inputs." }
   ],
   "meta": {
-    "title": "Snohomish County property tax calculator 2026 — estimate property taxes",
+    "title": "Snohomish County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Snohomish County property tax using market value (assessed at true and fair value) and a combined local property tax rate you provide. Levy rates vary by tax code area.",
     "canonicalPath": "/tools/property-tax/snohomish-county-washington"
   }
@@ -4725,7 +4953,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Can this calculator show my exact Kauai property tax bill?", "a": "No. It provides an estimated property tax based on the inputs you provide. The actual tax bill may differ due to classification, tiered rates, or exemptions." }
   ],
   "meta": {
-    "title": "Kauai County property tax calculator 2026 — estimate property taxes",
+    "title": "Kauai County property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Kauai County property tax using assessed value, net taxable value, and the applicable county property tax rate by class. Rates vary by classification and tiers.",
     "canonicalPath": "/tools/property-tax/kauai-county-hawaii"
   }
@@ -4746,7 +4974,7 @@ export const propertyTaxSeoContent: Record<RegionId, PropertyTaxSEO> = {
     { "q": "Do exemptions change the Puerto Rico property tax base?", "a": "They can. Exemptions and exonerations are not uniform across all properties and often depend on eligibility or specific programs, so they are not applied automatically in this estimate." }
   ],
   "meta": {
-    "title": "Puerto Rico property tax calculator 2026 — estimate property taxes",
+    "title": "Puerto Rico property tax calculator 2026 - estimate property taxes",
     "description": "Estimate Puerto Rico property tax using assessed value and a combined municipal property tax rate you provide. Rates vary by municipality and local rules.",
     "canonicalPath": "/tools/property-tax/puerto-rico"
   }

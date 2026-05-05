@@ -360,10 +360,42 @@ if (!isMortgage && !region) {
         category={tool.id}
         region={isMortgage ? "United States" : region!.displayName}
       >
-        <div className="space-y-3">
-          <p className="text-sm text-slate-600">
-            Estimates only. Loan terms and approval depend on lender underwriting.
+        {seo.trust?.lastReviewed && (
+          <p className="mt-2 text-sm text-slate-500">
+            Last reviewed: {seo.trust.lastReviewed}
           </p>
+        )}
+
+        {Array.isArray(seo.trust?.keyFacts) &&
+          seo.trust.keyFacts.length > 0 && (
+            <section className="mt-6 rounded-xl border border-slate-200 bg-slate-50 p-5">
+              <h2 className="text-base font-semibold text-slate-900">
+                Key facts
+              </h2>
+
+              <dl className="mt-4 grid gap-4 sm:grid-cols-2">
+                {seo.trust.keyFacts.map(
+                  (fact: { label: string; value: string }) => (
+                    <div key={fact.label}>
+                      <dt className="text-xs font-medium uppercase tracking-wide text-slate-500">
+                        {fact.label}
+                      </dt>
+                      <dd className="mt-1 text-sm font-medium text-slate-900">
+                        {fact.value}
+                      </dd>
+                    </div>
+                  )
+                )}
+              </dl>
+            </section>
+          )}
+
+        <div className="space-y-3">
+        <p className="text-sm text-slate-600">
+  {tool.id === "mortgage"
+    ? "Estimates only. Loan terms and approval depend on lender underwriting."
+    : "Estimates only. Results may differ from official tax bills, pay stubs, or filed returns."}
+</p>
 
           <p className="text-sm text-slate-600">
           <Link
@@ -427,7 +459,7 @@ if (!isMortgage && !region) {
             <h2 className="text-xl font-semibold text-slate-900">
               How it works
             </h2>
-            <p className="text-slate-700">
+            <p className="whitespace-pre-line text-slate-700">
               {seo.sections.howItWorks}
             </p>
           </section>
@@ -438,18 +470,30 @@ if (!isMortgage && !region) {
             <h2 className="text-xl font-semibold text-slate-900">
               Examples
             </h2>
-            <p className="text-slate-700">
+            <p className="whitespace-pre-line text-slate-700">
               {seo.sections.examples}
             </p>
           </section>
         )}
+
+        {seo.sections?.factors && (
+          <section className="mt-10 space-y-6">
+            <h2 className="text-xl font-semibold text-slate-900">
+              What affects your property tax
+            </h2>
+            <p className="whitespace-pre-line text-slate-700">
+              {seo.sections.factors}
+            </p>
+          </section>
+        )}
+
 
         {seo.sections?.limitations && (
           <section className="mt-10 space-y-6">
             <h2 className="text-xl font-semibold text-slate-900">
               Limitations and important notes
             </h2>
-            <p className="text-slate-700">
+            <p className="whitespace-pre-line text-slate-700">
               {seo.sections.limitations}
             </p>
           </section>
@@ -476,7 +520,31 @@ if (!isMortgage && !region) {
           </section>
         )}
 
+        {Array.isArray(seo.trust?.sourceLinks) &&
+          seo.trust.sourceLinks.length > 0 && (
+            <section className="mt-10 border-t border-slate-200 pt-6">
+              <h2 className="text-xl font-semibold text-slate-900">
+                Sources
+              </h2>
 
+              <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-slate-700">
+                {seo.trust.sourceLinks.map(
+                  (source: { label: string; url: string }) => (
+                    <li key={source.url}>
+                      <a
+                        href={source.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-blue-600 underline underline-offset-2 hover:text-blue-700"
+                      >
+                        {source.label}
+                      </a>
+                    </li>
+                  )
+                )}
+              </ul>
+            </section>
+          )}
 
       </ToolLayout>
     </>

@@ -1568,10 +1568,9 @@ export const salesTaxSeoContent: Record<string, SalesTaxSeoEntry> = {
 
 "US-NY-SUFFOLK-COUNTY": {
   "h1": "Suffolk County Sales Tax Calculator 2026",
-  "intro": "Suffolk County sales tax follows a flat-rate structure based on a combined state and local system published by New York State. This calculator provides a simplified estimate for taxable transactions in Suffolk County using the official components that apply to the county.",
+"intro": "Estimate sales tax in Suffolk County using the combined New York State and local rates that apply to taxable purchases. This calculator reflects the total rate used in the county and provides a simplified estimate based on those components.",
   "sections": {
-    "howItWorks": "Suffolk County’s sales and use tax is calculated by combining multiple flat-rate components that apply to taxable transactions. These components include New York State sales and use tax at 4.00%, the Suffolk County local sales and use tax at 4.375%, and the Metropolitan Commuter Transportation District (MCTD) surcharge at 0.375%. New York State publishes combined state and local sales tax rates by jurisdiction and assigns a reporting code for Suffolk County based on this structure.",
-    "examples": "Because the system is flat-rate based, the combined sales tax rate for Suffolk County is the sum of the listed components: 4.00% (New York State) + 4.375% (Suffolk County) + 0.375% (MCTD), resulting in a total combined rate of 8.75%. For any taxable amount, the estimated sales tax is calculated by applying this combined percentage to the taxable portion of the transaction.",
+"howItWorks": "Sales tax in Suffolk County is calculated using a combined rate made up of several flat components. These include the New York State rate at 4.00%, the Suffolk County local rate at 4.375%, and the Metropolitan Commuter Transportation District surcharge at 0.375%. These components are applied together as a single percentage to the taxable amount. Combined rates are published by the New York State Department of Taxation and Finance for each jurisdiction.",    "examples": "Because the system is flat-rate based, the combined sales tax rate for Suffolk County is the sum of the listed components: 4.00% (New York State) + 4.375% (Suffolk County) + 0.375% (MCTD), resulting in a total combined rate of 8.75%. For any taxable amount, the estimated sales tax is calculated by applying this combined percentage to the taxable portion of the transaction.",
     "limitations": "Results are simplified estimates and may not match the tax charged on a specific transaction. This estimate reflects only the stated components for Suffolk County: New York State sales and use tax at 4.00%, the Suffolk County local sales and use tax at 4.375%, and the MCTD surcharge at 0.375%. Transaction sourcing rules, reporting requirements, and other administrative factors may affect how tax is applied in practice. For authoritative guidance, consult the New York State Department of Taxation and Finance."
   },
   "faq": [
@@ -1597,8 +1596,8 @@ export const salesTaxSeoContent: Record<string, SalesTaxSeoEntry> = {
     }
   ],
   "meta": {
-    "title": "Suffolk County Sales Tax Calculator 2026 | Combined NY State, County, and MCTD Rate",
-    "description": "Suffolk County sales tax calculator with a simplified estimate based on New York State sales and use tax at 4.00%, Suffolk County local sales and use tax at 4.375%, and the Metropolitan Commuter Transportation District surcharge at 0.375%.",
+  "title": "Suffolk County sales tax calculator 2026 — estimate the 8.75% rate",
+  "description": "Estimate sales tax in Suffolk County using the combined 8.75% rate, including New York State, county, and MCTD components. Simple and accurate calculation.",
     "canonicalPath": "/tools/sales-tax/suffolk-county-new-york"
   }
 },
