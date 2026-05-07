@@ -592,7 +592,7 @@ export const studiesContent = {
 
 "hidden-costs-of-homeownership": {
   meta: {
-    title: "Hidden Costs of Homeownership Buyers Often Overlook (2026) | Lavigate",
+    title: "Hidden Costs of Homeownership Buyers Often Overlook (2026)",
     description:
       "See the recurring homeownership costs buyers often overlook, including property taxes, homeowners insurance, HOA fees, maintenance, utilities, and regional cost differences.",
     canonicalPath: "/studies/hidden-costs-of-homeownership",
