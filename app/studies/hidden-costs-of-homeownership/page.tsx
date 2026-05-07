@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
     title:
-      "Hidden Costs of Homeownership Buyers Often Overlook (2026) | Lavigate",
+      "Hidden Costs of Homeownership Buyers Often Overlook (2026)",
     description:
       "Explore recurring homeownership costs buyers often underestimate, including property taxes, insurance, HOA fees, maintenance, utilities, and repairs.",
     alternates: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
         "https://lavigate.com/studies/hidden-costs-of-homeownership",
     },
   };
-  
+
 export default function HiddenCostsOfHomeownership() {
   const data = studiesContent["hidden-costs-of-homeownership"];
   const { sections } = data;
