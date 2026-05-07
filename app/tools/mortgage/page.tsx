@@ -38,6 +38,25 @@ export default function MortgageIndexPage() {
         </p>
       </header>
 
+      <section className="rounded-2xl border border-slate-200 bg-slate-50 p-5 md:p-6">
+        <h2 className="text-lg font-semibold text-slate-900">
+        Homeownership costs beyond the mortgage
+        </h2>
+
+        <p className="mt-2 max-w-3xl text-sm leading-6 text-slate-600">
+          A mortgage payment is only one part of the cost of owning a home.
+          Buyers may also need to budget for property taxes, insurance, HOA
+          fees, utilities, maintenance, and repairs.
+        </p>
+
+        <Link
+          href="/studies/hidden-costs-of-homeownership"
+          className="mt-4 inline-flex text-sm font-medium text-blue-600 hover:text-blue-700"
+        >
+          Read the homeownership cost guide →
+        </Link>
+      </section>
+
       <div className="rounded-2xl border border-slate-200 bg-white p-4 md:p-6">
         <ul className="flex flex-wrap gap-2 text-sm">
           {pages.map((p) => (

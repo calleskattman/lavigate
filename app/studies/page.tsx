@@ -43,6 +43,21 @@ export default function StudiesPage() {
           </p>
         </Link>
 
+        <Link
+  href="/studies/hidden-costs-of-homeownership"
+  className="border rounded-lg p-6 hover:bg-gray-50 transition"
+>
+  <h2 className="text-xl font-semibold mb-2">
+    Hidden Costs of Homeownership Buyers Often Overlook (2026)
+  </h2>
+
+  <p className="text-gray-600">
+    Explore the recurring ownership costs buyers often underestimate, including
+    property taxes, insurance, HOA fees, maintenance, utilities, and regional
+    housing expenses.
+  </p>
+</Link>
+
       </div>
 
     </main>
